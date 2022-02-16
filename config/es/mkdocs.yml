@@ -42,8 +42,8 @@ extra:
           lang: es
     social:
       - link: mailto:integrations@experticket.com
-        icon: fontawesome/solid/paper-plane
-        name: Contact email
+        icon: fontawesome/solid/envelope
+        name: Email de contacto
 markdown_extensions:
   - admonition
   - pymdownx.details
