@@ -11,17 +11,15 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
-      - name: "Install mkdocs-material"
+      - name: "Install mkdocs-material" #instalar aquí todos los plugin o ejecutables necesarios
         run: pip install mkdocs-material 
       - name: "Build English Docs"
-        #working-directory: ./config/en
         run: mkdir -p site/en | mkdocs build -f config/en/mkdocs.yml
       - name: "Build Spanish Docs"
-        #working-directory: ./config/es
         run: mkdir site/en | mkdocs build -f config/es/mkdocs.yml
       - name: "Make English Default"
         run: cp -r site/en/* site
-      - name: "Deploy to Github Pages"
+      - name: "Deploy to Github Pages" #deploy las web creada a la rama gh-pages para que se muestren en la web
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
         with:

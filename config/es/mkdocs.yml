@@ -24,10 +24,12 @@ theme:
         text: Roboto
         code: Roboto Mono
     features:
-        - navigation.instant
+        - navigation.instant #cargar las páginas como vistas parciales
         - navigation.tabs
         - navigation.tabs.sticky
-        - navigation.top
+        - navigation.top #botón de volver arriba
+        #- navigation.indexes #https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-integration 
+        #- toc.integrate #tabla de contenido integrada con barra de navegación
 extra_css:
     - stylesheets/extra.css
 extra:
@@ -38,6 +40,10 @@ extra:
         - name: Español
           link: /ExperthubAPIDocumentation/es/
           lang: es
+    social:
+      - link: mailto:integrations@experticket.com
+        icon: fontawesome/solid/paper-plane
+        name: Contact email
 markdown_extensions:
   - admonition
   - pymdownx.details
