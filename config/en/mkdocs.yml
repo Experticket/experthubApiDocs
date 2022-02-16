@@ -1,0 +1,55 @@
+site_name: Experthub API Documentation
+site_description: API documentation for Experthub.
+
+docs_dir: '../../docs/en'
+site_dir: '../../site/en'
+
+theme:
+    custom_dir: ../../overrides/
+    logo: assets/Logo.png
+    favicon: assets/imagotipo.svg
+    name: material
+    language: en
+    palette:
+        - scheme: experticket
+          toggle:
+              icon: material/toggle-switch-off-outline
+              name: Switch to dark mode
+        - scheme: slate
+          primary: blue grey
+          toggle:
+              icon: material/toggle-switch
+              name: Switch to light mode
+    font:
+        text: Roboto
+        code: Roboto Mono
+    features:
+        - navigation.instant
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.top
+extra_css:
+    - stylesheets/extra.css
+extra:
+    alternate:
+        - name: English
+          link: /en/
+          lang: en
+        - name: Español
+          link: /es/
+          lang: es
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.tasklist:
+      custom_checkbox: true
+plugins:
+  - search:
+      lang: 
+        - en
+
+nav:
+    - Principal: index.md
+    - About: about.md
