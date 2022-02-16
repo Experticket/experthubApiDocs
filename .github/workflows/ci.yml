@@ -15,7 +15,9 @@ jobs:
         run: pip install mkdocs-material 
       - name: "Deploy English Docs"
         working-directory: ./config/en
-        run: mkdocs gh-deploy --force -d ./en/
+        run: mkdir -p site/en | mkdocs build -f config/en/mkdocs.yml
       - name: "Deploy Spanish Docs"
         working-directory: ./config/es
-        run: mkdocs gh-deploy --force -d ./es/
+        run: mkdir site/en | mkdocs build -f config/es/mkdocs.yml
+      - name: "Make English Default"
+        run: cp -r site/en/* site
