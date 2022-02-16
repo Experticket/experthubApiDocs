@@ -33,10 +33,10 @@ extra_css:
 extra:
     alternate:
         - name: English
-          link: /en/
+          link: /ExperthubAPIDocumentation/en/
           lang: en
         - name: Español
-          link: /es/
+          link: /ExperthubAPIDocumentation/es/
           lang: es
 markdown_extensions:
   - admonition
