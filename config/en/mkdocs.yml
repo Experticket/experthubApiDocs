@@ -30,6 +30,7 @@ theme:
         - navigation.top #botón de volver arriba
         #- navigation.indexes #https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-integration 
         #- toc.integrate #tabla de contenido integrada con barra de navegación
+        - content.tabs.link
 extra_css:
     - stylesheets/extra.css
 extra:
@@ -42,7 +43,7 @@ extra:
           lang: es
     social:
       - link: mailto:integrations@experticket.com
-        icon: fontawesome/solid/paper-plane
+        icon: fontawesome/solid/envelope
         name: Contact email
 markdown_extensions:
   - admonition
@@ -51,10 +52,14 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.tasklist:
       custom_checkbox: true
+  - attr_list
+  - pymdownx.tabbed:
+      alternate_style: true
 plugins:
   - search:
       lang: 
         - en
+copyright: Copyright &copy; Experticket
 
 nav:
     - Principal: index.md

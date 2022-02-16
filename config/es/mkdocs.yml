@@ -30,6 +30,7 @@ theme:
         - navigation.top #botón de volver arriba
         #- navigation.indexes #https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-integration 
         #- toc.integrate #tabla de contenido integrada con barra de navegación
+        - content.tabs.link
 extra_css:
     - stylesheets/extra.css
 extra:
@@ -51,10 +52,14 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.tasklist:
       custom_checkbox: true
+  - attr_list
+  - pymdownx.tabbed:
+      alternate_style: true
 plugins:
   - search:
       lang: 
         - es
+copyright: Copyright &copy; Experticket
 
 nav:
     - Principal: index.md
