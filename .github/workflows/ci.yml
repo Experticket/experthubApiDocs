@@ -1,4 +1,4 @@
-name: ci 
+name: Deploy GitHub Pages
 on:
   push:
     branches:
@@ -15,7 +15,7 @@ jobs:
         run: pip install mkdocs-material 
       - name: "Deploy English Docs"
         working-directory: ./config/en
-        run: mkdocs gh-deploy --force
+        run: mkdocs gh-deploy --force -d ./en/
       - name: "Deploy Spanish Docs"
         working-directory: ./config/es
-        run: mkdocs gh-deploy --force
+        run: mkdocs gh-deploy --force -d ./es/
