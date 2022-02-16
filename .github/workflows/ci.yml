@@ -16,7 +16,7 @@ jobs:
       - name: "Build English Docs"
         run: mkdir -p site/en | mkdocs build -f config/en/mkdocs.yml
       - name: "Build Spanish Docs"
-        run: mkdir site/en | mkdocs build -f config/es/mkdocs.yml
+        run: mkdir site/es | mkdocs build -f config/es/mkdocs.yml
       - name: "Make English Default"
         run: cp -r site/en/* site
       - name: "Deploy to Github Pages" #deploy las web creada a la rama gh-pages para que se muestren en la web
