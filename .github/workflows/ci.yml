@@ -12,4 +12,7 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install mkdocs-material 
+      - run: cd config/es
+      - run: mkdocs gh-deploy --force
+      - run: cd config/en
       - run: mkdocs gh-deploy --force
