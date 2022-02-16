@@ -59,7 +59,7 @@ plugins:
   - search:
       lang: 
         - en
-copyright: Copyright &copy; Experticket
+#copyright: Copyright &copy; Experticket
 
 nav:
     - Principal: index.md
