@@ -13,11 +13,19 @@ jobs:
           python-version: 3.x
       - name: "Install mkdocs-material"
         run: pip install mkdocs-material 
-      - name: "Deploy English Docs"
+      - name: "Build English Docs"
         #working-directory: ./config/en
         run: mkdir -p site/en | mkdocs build -f config/en/mkdocs.yml
-      - name: "Deploy Spanish Docs"
+      - name: "Build Spanish Docs"
         #working-directory: ./config/es
         run: mkdir site/en | mkdocs build -f config/es/mkdocs.yml
       - name: "Make English Default"
         run: cp -r site/en/* site
+      - name: "Deploy to Github Pages"
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: gh-pages
+          build_dir: site
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
