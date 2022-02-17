@@ -55,6 +55,7 @@ markdown_extensions:
   - attr_list
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.snippets
 plugins:
   - search:
       lang: 

@@ -10,6 +10,9 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 * `mkdocs -h` - Print help message and exit.
 
 ## Project layout
+
+    --8<-- "../../includes/apiExamples.md"
+
     mkdocs.yml    # The configuration file.
     docs/
         index.md  # The documentation homepage.
