@@ -1,5 +1,0 @@
-´´´ 
-{
-    RealTimePrices example
-}
-´´´
