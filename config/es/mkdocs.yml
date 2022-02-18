@@ -63,5 +63,14 @@ plugins:
 #copyright: Copyright &copy; Experticket
 
 nav:
-    - Principal: index.md
+    - Introducción: index.md
+    - Documentación: 
+      - Actividades:
+        - Catálogo: activity/catalog.md
+      - Alojamiento: 
+        - Catálogo básico: accommodation/basicCatalog.md
+        - Catálogo completo: accomodation/fullCatalog.md
+      - Paquetes:
+        - Catálogo: package/catalog.md
+    - FAQ: faq.md
     - Acerca de: about.md
