@@ -30,7 +30,7 @@ theme:
         - navigation.top #botón de volver arriba
         #- navigation.indexes #https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-integration 
         #- toc.integrate #tabla de contenido integrada con barra de navegación
-        - content.tabs.link
+        #- content.tabs.link
 extra_css:
     - stylesheets/extra.css
 extra:
@@ -69,7 +69,7 @@ nav:
         - Catalog: activity/catalog.md
       - Accomodation: 
         - Basic catalog: accommodation/basicCatalog.md
-        - Full catalog: accomodation/fullCatalog.md
+        - Full catalog: accommodation/fullCatalog.md
       - Packages:
         - Catalog: package/catalog.md
     - FAQ: faq.md

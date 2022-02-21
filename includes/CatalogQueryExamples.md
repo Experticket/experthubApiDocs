@@ -1,48 +1,58 @@
-``` json
-{
-    "ProviderIds": [
-        "dj48vjsyufvyu",
-        "ajr7v0alt62hl"
-    ]
-}
-```
+=== "ProviderIds"
 
-``` json
-{
-    "ProductIds": [
-        "dj48vjsyufvyu",
-        "ajr7v0alt62hl"
-    ]
-}
-```
+    ``` json
+    {
+        "ProviderIds": [
+            "dj48vjsyufvyu",
+            "ajr7v0alt62hl"
+        ]
+    }
+    ```
 
-``` json
-{
-    "FromDate": "2023-06-23",
-    "ToDate": "2023-08-29"
-}
-```
+=== "ProductIds"
 
-``` json
-{
-    "ReferenceDate": "2023-10-05"
-}
-```
+    ``` json
+    {
+        "ProductIds": [
+            "dj48vjsyufvyu",
+            "ajr7v0alt62hl"
+        ]
+    }
+    ```
 
-``` json
-{
-    "ProviderIds": [
-        "dj48vjsyufvyu",
-        "ajr7v0alt62hl"
-    ],
-    "ProductBaseIds": [
-        "duvjsigjscujc"
-    ],
-    "ProductIds": [
-        "fkijskfqnidfk"
-    ],
-    "FromDate": "2023-06-23",
-    "ToDate": "2023-08-29"
+=== "FromDate-ToDate"
 
-}
-```
+    ``` json
+    {
+        "FromDate": "2023-06-23",
+        "ToDate": "2023-08-29"
+    }
+    ```
+
+=== "ReferenceDate"
+
+    ``` json
+    {
+        "ReferenceDate": "2023-10-05"
+    }
+    ```
+
+=== "Combined Filters"
+
+    ``` json
+    {
+        "ProviderIds": [
+            "dj48vjsyufvyu",
+            "ajr7v0alt62hl"
+        ],
+        "ProductBaseIds": [
+            "duvjsigjscujc"
+        ],
+        "ProductIds": [
+            "fkijskfqnidfk"
+        ],
+        "FromDate": "2023-06-23",
+        "ToDate": "2023-08-29"
+
+    }
+    ```
