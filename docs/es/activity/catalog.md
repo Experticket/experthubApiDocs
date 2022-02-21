@@ -18,14 +18,14 @@ Para obtener el catálogo podemos utilizar diferentes filtros en el body del mé
 
 Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por varios *ProductIds* pero no tiene sentido filtrar por *ProviderIds* y por *ProductIds* siendo este último de un proveedor diferente.
 
-- **`ProviderIds`**: `#!csharp List<string>` lista identificadores de proveedor.
-- **`ProductBaseIds`**: `#!csharp List<string>` lista identificadores de categoría.
-- **`ProductIds`**: `#!csharp List<string>` lista identificadores de producto.
-- **`FromDate`**: `#!csharp string` fecha de inicio. No permite valores menores al día actual. *Formato ISO 8601 (yyyy-MM-dd)*.
-- **`ToDate`**: `#!csharp string` fecha de fin. Por defecto su valor es el de la fecha correspondiente a dentro de un año. *Formato ISO 8601 (yyyy-MM-dd)*.
-- **`ReferenceDate`**: `#!csharp string` exige que el día que se tome como referencia para el cálculo de precios y disponibilidades no sea hoy, sino el indicado. Por ejemplo se usará si los precios cambian dependiendo de los días que quedan hasta la fecha de la entrada. *Formato ISO 8601 (yyyy-MM-dd)*
-- **`LanguageCode`**: `#!csharp string` define el idioma en que se mostrarán los textos del catálogo (nombre/descripción/condiciones de proveedor/producto/). Por defecto se devolverá el idioma configurado para el  colaborador.
-- **`ShowProductsOutOfActiveDateRange`**: `#!csharp bool` si su valor es `#!csharp true`, la respuesta devolverá productos en los que el día de hoy (o el día indicado en ReferenceDate) está fuera de su rango de fechas de venta. Por ejemplo, si estamos en diciembre y hay productos que se pueden vender a partir de enero, poniendo este valor a true nos permitirá descubrir que existen esos productos.
+- **`ProviderIds`**: lista identificadores de proveedor.
+- **`ProductBaseIds`**: lista identificadores de categoría.
+- **`ProductIds`**: lista identificadores de producto.
+- **`FromDate`**: fecha de inicio. No permite valores menores al día actual. *Formato ISO 8601 (yyyy-MM-dd)*.
+- **`ToDate`**: fecha de fin. Por defecto su valor es el de la fecha correspondiente a dentro de un año. *Formato ISO 8601 (yyyy-MM-dd)*.
+- **`ReferenceDate`**: exige que el día que se tome como referencia para el cálculo de precios y disponibilidades no sea hoy, sino el indicado. Por ejemplo se usará si los precios cambian dependiendo de los días que quedan hasta la fecha de la entrada. *Formato ISO 8601 (yyyy-MM-dd)*
+- **`LanguageCode`**: define el idioma en que se mostrarán los textos del catálogo (nombre, descripción, condiciones de proveedor, producto, etc.). Por defecto se devolverá el idioma configurado para el  colaborador.
+- **`ShowProductsOutOfActiveDateRange`**: si su valor es `#!csharp true`, la respuesta devolverá productos en los que el día de hoy (o el día indicado en `ReferenceDate`) está fuera de su rango de fechas de venta. Por ejemplo, si estamos en diciembre y hay productos que se pueden vender a partir de enero, poniendo este valor a true nos permitirá descubrir que existen esos productos.
 
 ### Ejemplos
 
@@ -33,19 +33,18 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
 
 ## Estructura de datos de respuesta
 
-- **`LastUpdatedDateTime`**: Fecha de la última modificación del catálogo.
-- **`Providers`**: Array de proveedores:
-  
-    - **`ProviderId`**: Identificador del proveedor. Alfanumérico de 13 caracteres.
-    - **`ProviderName`**: Nombre del Proveedor.
-    - **`ProviderDescription`**: Descripciones del proveedor.
-    - **`ProviderCommercialConditions`**: Condiciones comerciales de proveedor. Si no existen, este campo no se mostrará.
-    - **`ProviderAccessConditions`**: Condiciones de acceso del proveedor. Si no existen, este campo no se mostrará.
-
-        !!! info inline end ""
-            Más información sobre este punto en el Anexo II.
-
+- **`LastUpdatedDateTime`**: fecha de la última modificación del catálogo.
+- **`Providers`**: array de proveedores:
+    - **`ProviderId`**: identificador del proveedor. Alfanumérico de 13 caracteres.
+    - **`ProviderName`**: nombre del Proveedor.
+    - **`ProviderDescription`**: descripciones del proveedor.
+    - **`ProviderCommercialConditions`**: condiciones comerciales de proveedor. Si no existen, este campo no se mostrará.
+    - **`ProviderAccessConditions`**: condiciones de acceso del proveedor. Si no existen, este campo no se mostrará.
     - **`AdvancedDateSelectorMethodName`**: nombre del método que define si los tickets de un producto pueden tener su propia fecha de acceso particular.
+
+        ??? info "Posibles valores"
+            --8<-- "includes/AdvancedDateSelector.es.md"
+
     - **`CancellationPolicy`**: indica las políticas de cancelación que se aplican al cancelar una venta de este proveedor. Si un producto concreto no tiene políticas de cancelación se aplicarán estas.
         - **`IsRefundable`**: indica si el cliente puede cancelar gratis en algún momento.
         - **`Rules`**: reglas que se aplican al efectuar la cancelación.
@@ -128,8 +127,8 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                 - **`RequiresRealTimePrice`**: Indica si el producto requiere precio en tiempo real.
                 - **`ValidDays`**: Días de validez:
 
-            0. consecutivos.
-            1. no consecutivos.
+            1. consecutivos.
+            2. no consecutivos.
 
                 - **`PriceMode`**: 1 = PVP. 2 = Precio Neto.
                 - **`Commission`**: En caso de que PriceMode = PVP, nos indica la comisión:
