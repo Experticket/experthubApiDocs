@@ -51,8 +51,11 @@ Para obtener los precios en tiempo real debe especificarse la siguiente estructu
     - **`AccessDate`**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
     - **`Price`**: precio al que debe venderse el producto.
     - **`PriceMode`**: tipo de precio. Opciones:
-        - 1: PVP
-        - 2: precio neto
+
+        ??? example "Posibles valores"
+            - 1: PVP
+            - 2: precio neto
+
     - **`CombinedProductId`**: identificador del producto combinado.
     - **`CombinedProductProducts`**: array de productos incluidos en el proucto combinado.
         - **`ProductId`**: identificador del producto.
