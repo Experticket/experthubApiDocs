@@ -71,8 +71,11 @@ nav:
       - Conexión: connection.md
       - Actividades:
         - Catálogo: activity/catalog.md
+        - Última fecha de actualización del catálogo: activity/lastCatalogUpdatedDate.md
         - Precios en tiempo real: activity/realTimePrices.md
         - Sesiones: activity/sessions.md
+        - Comprobar sesiones auto asignadas: activity/autoAssignSession.md
+        - Aforo disponible: activity/availability.md
       - Alojamiento: 
         - Catálogo básico: accommodation/basicCatalog.md
         - Catálogo completo: accommodation/fullCatalog.md
