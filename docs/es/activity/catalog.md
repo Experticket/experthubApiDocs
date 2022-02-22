@@ -42,8 +42,8 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
     - **`ProviderAccessConditions`**: condiciones de acceso del proveedor. Si no existen, este campo no se mostrará.
     - **`AdvancedDateSelectorMethodName`**: nombre del método que define si los tickets de un producto pueden tener su propia fecha de acceso particular.
 
-        ??? info "Posibles valores"
-            --8<-- "includes/AdvancedDateSelector.es.md"
+        ??? example "Posibles valores"
+            --8<-- "includes/annex/AdvancedDateSelector.es.md"
 
     - **`CancellationPolicy`**: indica las políticas de cancelación que se aplican al cancelar una venta de este proveedor. Si un producto concreto no tiene políticas de cancelación se aplicarán estas.
         - **`IsRefundable`**: indica si el cliente puede cancelar gratis en algún momento.
@@ -51,38 +51,44 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
             - **`HoursInAdvanceOfAccess`**: indica la cantidad de horas de antelación con respecto a la fecha de acceso a partir de las cuales se aplicará la penalización de precio indicada en **Percentage**.
             - **`Percentage`**: porcentaje de penalización sobre el precio de la entrada.
     - **`DemandAccessDate`**: indica si la fecha de acceso es necesaria. En caso de no ser necesaria tanto en los métodos *Reservation* como *Transaction* debe usarse la fecha de compra.
-    - **`TaxType`**: indica el tipo de impuesto de los productos del proveedor. Opciones:
+    - **`TaxType`**: indica el tipo de impuesto de los productos del proveedor.
 
-        - 0: IVA
-        - 1: IGIC
+        ??? example "Posibles valores"
+            - 0: IVA
+            - 1: IGIC
 
-    - **`Type`**: indica el tipo de proveedor. Opciones:
+    - **`Type`**: indica el tipo de proveedor.
 
-        - 0: Actividad
-        - 1: Alojamiento
-        - 2: Transporte
+        ??? example "Posibles valores"
+            - 0: Actividad
+            - 1: Alojamiento
+            - 2: Transporte
 
     - **`IsForGroups`**: indica si los productos del proveedor están destinados a la venta para grupos.
     - **`LimitOfNumberOfPeopleToBeGroup`**: límite del número de personas que conforman un producto a partir del cual la transacción se considera para "grupos". Por ejemplo, si este límite es "19" y el proveedor no es para grupos (`#!csharp IsForGroups == false`), no se aceptarán transacciones con 20 o más personas. Por contra, si el proveedor es para grupos (`#!csharp IsForGroups == true`), solo se aceptarán transacciones para 20 o más personas.
-    - **`Logo`**: Url para descargar la imagen del logotipo del proveedor
-    - **`Location`**: Información de localización.
-        - **`CountryCode`**: Código de país (es, fr...).
-        - **`City`**: Ciudad.
-        - **`Address`**: Dirección.
-        - **`ZipCode`**: Código postal.
-        - **`Lat`**: Latitud.
-        - **`Lng`**: Longitud.
-    - **`Ticket enclosures`**: Información de los recintos del proveedor.
-        - **`TicketEnclosureId`**: Idenfificador del recinto.
-        - **`TicketEnclosureName`**: Nombre del recinto.
-        - **`TicketEnclosureConditions`**: [Opcional] Condiciones del recinto.
-        - **`TypeOfPersonDefinitionTypeChild`**: [Opcional] Indica qué atributo * se aplica a la persona para considerarla niño.
-        - **`TypeOfPersonDefinitionValueChild`**: [Opcional] Indica el valor asignado al tipo de persona niño.
-        - **`TypeOfPersonDefinitionTypeAdult`**: [Opcional] Indica qué atributo * se aplica a la persona para considerarla adulto.
-        - **`TypeOfPersonDefinitionValueAdult`**: [Opcional] Indica el valor asignado al tipo de persona adulto.
-        - **`TypeOfPersonDefinitionTypeSenior`**: [Opcional] Indica qué atributo * se aplica a la persona para considerarla senior.
-        - **`TypeOfPersonDefinitionValueSenior`**: [Opcional] Indica el valor asignado al tipo de persona senior.
-        - **`Sessions`**: [Opcional] Define la relación entre sesiones y contenido. Antes de continuar, es imprescindible estudiar el apartado Obtención de sesiones:
+    - **`Logo`**: url para descargar la imagen del logotipo del proveedor.
+    - **`Location`**: información de localización.
+        - **`CountryCode`**: código de país (es, fr...).
+        - **`City`**: ciudad.
+        - **`Address`**: dirección.
+        - **`ZipCode`**: código postal.
+        - **`Lat`**: latitud.
+        - **`Lng`**: longitud.
+    - **`Ticket enclosures`**: información de los recintos del proveedor.
+        - **`TicketEnclosureId`**: idenfificador del recinto.
+        - **`TicketEnclosureName`**: nombre del recinto.
+        - **`TicketEnclosureConditions`**: *opcional*, condiciones del recinto.
+        - **`TypeOfPersonDefinitionTypeChild`**: *opcional*, indica qué atributo se aplica a la persona para considerarla niño.
+
+            ??? example "Posibles valores"
+                --8<-- "includes/annex/TypeOfPersonDefinition.es.md"
+
+        - **`TypeOfPersonDefinitionValueChild`**: *opcional*, indica el valor asignado al tipo de persona niño.
+        - **`TypeOfPersonDefinitionTypeAdult`**: *opcional*, indica qué atributo se aplica a la persona para considerarla adulto.
+        - **`TypeOfPersonDefinitionValueAdult`**: *opcional*, indica el valor asignado al tipo de persona adulto.
+        - **`TypeOfPersonDefinitionTypeSenior`**: *opcional*, indica qué atributo se aplica a la persona para considerarla senior.
+        - **`TypeOfPersonDefinitionValueSenior`**: *opcional*, indica el valor asignado al tipo de persona senior.
+        - **`Sessions`**: *opcional*, define la relación entre sesiones y contenido. Antes de continuar, es imprescindible estudiar el apartado Obtención de sesiones:
             - **`SessionContentProfileId`**: Para más información acerca de este identificador, consulte la página de Sesiones.
             - **`SessionGroupProfileId`**: Para más información acerca de este identificador, consulte la página de Sesiones.
             - **`SessionsGroupSessionContents`**: Define la relación entre grupos de sesión y contenidos de sesión. Es decir, todas las sesiones del grupo de sesión tendrán asignado el contenido de sesión. SessionsGroupSessionContents es excluyente respecto a SessionSessionContents.
@@ -99,7 +105,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
             - **`ProductBaseName`**: Nombre del ProductBase.
             - **`ProductBaseDescription`**: Descripción del ProductBase. Suele contener las condiciones comunes al todos sus productos.
             - **`DaysWithLimitedCapacity`**: Fechas en los que todos los productos de este ProductBase tienen un aforo limitado. Por tanto, será imprescindible consultar la disponibilidad del ProductBase antes de crear una transacción. Las fechas tendrán formato ISO 8601 (yyyy-MM-dd), y estarán separadas entre sí por una coma. Más información al respecto en el punto Obtención de aforo disponible.
-            - **`LimitOfNumberOfPeopleToBeGroup`**: (Opcional) mismo significado que la propiedad LimitOfNumberOfPeopleToBeGroup en el nodo "Provider". Si está especificado se usará el más restrictivo entre este valor y el de proveedor.
+            - **`LimitOfNumberOfPeopleToBeGroup`**: *opcional*, mismo significado que la propiedad LimitOfNumberOfPeopleToBeGroup en el nodo "Provider". Si está especificado se usará el más restrictivo entre este valor y el de proveedor.
             - **`Products`**: Array de productos:
                 - **`ProductId`**: Identificador del producto. Alfanumérico de 13 caracteres (por ejemplo "ctgyir9m9q4bo").
                 - **`ProductName`**: Nombre del producto.
@@ -112,11 +118,11 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                     - **`Rules`**: reglas que se aplican al efectuar la cancelación.
                         - **`HoursInAdvanceOfAccess`**: indica la cantidad de horas de antelación con respecto a la fecha de acceso a partir de las cuales se aplicará la penalización de precio indicada en Percentage.
                         - **`Percentage`**: porcentaje de penalización sobre el precio de la entrada.
-                - **`StartIsActiveDate`**: [Opcional] Si existe, define la fecha a partir de la cual es posible vender el producto.
-                - **`EndIsActiveDate`**: [Opcional] Si existe, define la fecha hasta la cual es posible vender el producto.
+                - **`StartIsActiveDate`**: *opcional*, Si existe, define la fecha a partir de la cual es posible vender el producto.
+                - **`EndIsActiveDate`**: *opcional*, Si existe, define la fecha hasta la cual es posible vender el producto.
                 - **`DaysWithLimitedCapacity`**: Fechas en los que el producto tienen un aforo limitado. Por tanto, será imprescindible consultar la disponibilidad del producto antes de crear una transacción. Las fechas tendrán formato ISO 8601 (yyyy-MM-dd), y estarán separadas entre sí por una coma. Más información al respecto en el punto Obtención de aforo disponible.
                 - **`HoursInAdvanceOfPurchase`**: Horas de antelación de la compra respecto a las 00:00 del día siguiente al de la visita. Por ejemplo, si un producto tiene HoursInAdvanceOfPurchase = 4, y un cliente realiza una compra para el 15 de Agosto, el límite de tiempo que tiene el producto para venderse son las 20:00 del propio 15 de Agosto (es decir, 4 horas antes de las 00:00 del 16 de Agosto). Esto es importante, por ejemplo, para que un cliente no compre los productos para un día cuando el recinto ya está a cerrado.
-                - **`MaxHoursInAdvanceOfPurchase`**: [Opcional] Horas máximas de antelación de la compra respecto a las 00:00 del día siguiente al de la visita. Por ejemplo, si un producto tiene MaxHoursInAdvanceOfPurchase = 240, y un cliente realiza una compra para el 15 de Agosto, el producto no puede venderse antes del 6 de Agosto (es decir, 240 horas = 10 días antes de las 00:00 del 16 de Agosto). Esto es útil, por ejemplo, para limitar el período de venta de un producto a un plazo de días previos.
+                - **`MaxHoursInAdvanceOfPurchase`**: *opcional*, Horas máximas de antelación de la compra respecto a las 00:00 del día siguiente al de la visita. Por ejemplo, si un producto tiene MaxHoursInAdvanceOfPurchase = 240, y un cliente realiza una compra para el 15 de Agosto, el producto no puede venderse antes del 6 de Agosto (es decir, 240 horas = 10 días antes de las 00:00 del 16 de Agosto). Esto es útil, por ejemplo, para limitar el período de venta de un producto a un plazo de días previos.
                 - **`MinimumNumberByTransaction`**: Cantidad mínima del productos por cada venta. Por defecto es 1. Por ejemplo, imaginemos un producto del tipo "Entrada con descuento a partir de 3 productos". En ese caso MinimumNumberByTransaction sería 3.
                 - **`NumberOfPeople`**: Número de personas que computan para considerar una transacción como "grupo". Es decir, computa para el límite "LimitOfNumberOfPeopleToBeGroup".
                 - **`NumberOfAdults`**: Número de adultos, incluidos en el campo "NumberOfPeople".
@@ -137,7 +143,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                         - si Type = 1 y Value = 10, indica que la comisión es del 10% respecto al Price del producto. Es decir, si el Price = 100 €, la comisión calculada sería de 10 €.
                         - si Type = 2 y Value = 3, indica que la comisión por producto es de 3 €.
                 - **`AccessDateCriteria`**: Indica el criterio para la fecha de acceso. Puede tomar los siguientes valores **.
-                - **`BarcodeAssignment`**: [Opcional] Indica a qué se va asignar el código de barras. Sus posibles valores son:
+                - **`BarcodeAssignment`**: *opcional*, Indica a qué se va asignar el código de barras. Sus posibles valores son:
 
                     1. Ticket (valor por defecto si BarcodeAssignment no viene definido)
                     2. Persona
@@ -152,12 +158,12 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                     - **`Currency`**: Moneda del precio.
                     - **`CurrencyName`**: Nombre de la moneda del precio
                     - **`Dates`**: Fechas separadas por comas. Las fechas tendrán formato ISO 8601 (yyyy-MM-dd), y estarán separadas entre sí por una coma.
-                    - **`OriginalPrice`**: [Opcional] Precio del producto antes de aplicar descuentos si existen.
+                    - **`OriginalPrice`**: *opcional*, Precio del producto antes de aplicar descuentos si existen.
                     - **`TaxBreakdown`**: Array con el desglose de impuestos.
                         - **`TaxPercentage`**: Porcentaje de impuesto (sobre 100)
                         - **`PriceWithoutTaxes`**: Precio sin impuestos
                         - **`PriceWithTaxes`**: Precio con impuestos
-                - **`Release`**: [Opcional] Número de días de antelación necesarios para que el cliente pueda cancelar el producto sin coste. Ejemplos:
+                - **`Release`**: *opcional*, Número de días de antelación necesarios para que el cliente pueda cancelar el producto sin coste. Ejemplos:
 
                     1. El cliente puede cancelar el día de entrada al parque sin coste.
                     2. El cliente puede cancelar un día antes de la entrada al parque sin coste.
@@ -166,11 +172,11 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                     - **`Disable`**: Indica si no se generará documento de acceso para este producto.
                     - **`ShowPrice`**: Indica si se debe mostrar el precio en el documento de acceso.
                     - **`AccessDateCriteriaOpenDateSalesDocument`**: Solo en el caso de que AccessDateCriteria == 1 (Fecha Abierta). Indica qué debemos informar al cliente respecto a la fecha de acceso. Puede tomar los siguientes valores **.
-                - **`Tickets`**: [Opcional] Array de tickets. En caso de que el producto no trabaje con tickets, este campo no existirá:
+                - **`Tickets`**: *opcional*, Array de tickets. En caso de que el producto no trabaje con tickets, este campo no existirá:
                     - **`TicketId`**: Identificador de ticket. Alfanumérico de 13 caracteres (por ejemplo "1tqgtrf7ctefc").
                     - **`IsQuotaTicket`**: Booleano que indica si el ticket es o no de tipo aforo, lo que quiere decir que en caso de ser true el ticket computará para el total de aforo necesario para reservar el producto. Por ejemplo, si tenemos un producto donde tiene 3 tickets definidos pero únicamente 2 de ellos son de tipo aforo, entonces al consultar la disponibilidad para esté producto hay que tener en cuenta que a nivel de aforo necesita 2 de disponibilidad. En otras palabras en caso de que el aforo disponible fuese 1 no podríamos reservar este producto. Para más información consulta el endpoint Obtención de aforo disponible.
                     - **`TicketName`**: Nombre del ticket.
-                    - **`TicketConditions`**: [Opcional] Condiciones del ticket.
+                    - **`TicketConditions`**: *opcional*, Condiciones del ticket.
                     - **`TicketEnclosureId`**: Idenfificador del recinto al que pertenece el ticket. Varios tickets puede pertenecer al mismo recinto
                     - **`FromAccessDay`** y **`ToAccessDay`**: Si están definidos, indican para qué días respecto a la primera fecha de acceso es válido el ticket. Ejemplos,
                         - si el ticket define FromAccessDay = 1 y ToAccessDate = 1, el cliente deberá usarlo el primer día de acceso.
@@ -179,7 +185,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                         - si el ticket define FromAccessDay = 2 y ToAccessDate no definido, el cliente podrá entrar desde el segundo día hasta un día indefinido (por ejemplo hasta que termine la temporada, salvo que las condiciones del producto indiquen lo contrario).
                         - si el ticket no define ni FromAccessDay ni ToAccessDate, el cliente solo podrá entrar el primer día (salvo que se indique lo contrario en las condiciones).
             [NOTA: El resultado de la llamada al método del API "Transaction" ya nos devuelve el rango de fechas de acceso de cada ticket. Por tanto es totalmente factible no tratar "FromAccessDay" y "ToAccessDay" y basarnos en lo que nos devuelva el método Transaction]
-                    - **`TypeOfPerson`**: [Opcional] Define el tipo de persona y su numeración. La información viene dado por:
+                    - **`TypeOfPerson`**: *opcional*, Define el tipo de persona y su numeración. La información viene dado por:
                         - **`Type`**: Bebé = 1, Niño = 2, Adulto = 3, Senior = 4, Genérico = 5
                         - **`PersonNumber`**:
 
@@ -194,11 +200,11 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                             - Ticket Adulto primer día: adulto 2 (Type = 3, PersonNumber = 2)
                             - Ticket Adulto segundo día: adulto 1 (Type = 3, PersonNumber = 1)
                             - Ticket Adulto segundo día: adulto 2 (Type = 3, PersonNumber = 2)
-                - **`ProductPaxGroupingId`**: [Opcional] Identificador de la agrupación de productos a la que pertenece el producto.
+                - **`ProductPaxGroupingId`**: *opcional*, Identificador de la agrupación de productos a la que pertenece el producto.
             - **`ProductPaxGroupings`**: Agrupaciones de productos cuya diferencia principal son las personas que lo componen.
                 - **`ProductPaxGroupingId`**: Identificador de la agrupación. Alfanumérico de 13 caracteres (por ejemplo "dtpdj29bek3ja").
                 - **`ProductPaxGroupingName`**: Nombre de la a agrupación./li>
-        - **`Urls`**: [Opcional] Array de urls para acceder a la página de la taquilla del proveedor. Sólo en el caso de que Test It tenga DNS personalizadas.
+        - **`Urls`**: *opcional*, Array de urls para acceder a la página de la taquilla del proveedor. Sólo en el caso de que Test It tenga DNS personalizadas.
             - **`LanguageCode`**: Código del idioma con el que se va a acceder. Representado mediante el formato ISO 639-1.
             - **`Url`**: Url de acceso.
 - **`CombinedProducts`**: Array de productos combinados.

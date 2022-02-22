@@ -1,10 +1,10 @@
-#### None
+**None**
 
 Los tickets **NO** pueden tener una fecha de acceso diferente a la de la transacción.
 
 Por tanto, y siempre respecto al ticket, en Reserva de productos como en Creación de una transacción se prescindirá del valor AccessDateTime o se dejará a null.
 
-#### DatePerTicketEnclosure
+**DatePerTicketEnclosure**
 
 Los tickets SÍ pueden tener una fecha de acceso diferente a la de la transacción.
 
