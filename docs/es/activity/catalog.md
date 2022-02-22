@@ -81,7 +81,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
         - **`TypeOfPersonDefinitionTypeChild`**: *opcional*, indica qué atributo se aplica a la persona para considerarla niño.
 
             ??? example "Posibles valores"
-                --8<-- "includes/annex/TypeOfPersonDefinition.es.md
+                --8<-- "includes/annex/TypeOfPersonDefinition.es.md"
 
         - **`TypeOfPersonDefinitionValueChild`**: *opcional*, indica el valor asignado al tipo de persona niño.
         - **`TypeOfPersonDefinitionTypeAdult`**: *opcional*, indica qué atributo se aplica a la persona para considerarla adulto.
