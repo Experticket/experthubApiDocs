@@ -70,6 +70,11 @@ nav:
       - Connection: connection.md
       - Activity:
         - Catalog: activity/catalog.md
+        - Last catalog update date: activity/lastCatalogUpdatedDate.md
+        - Real time prices: activity/realTimePrices.md
+        - Sessions: activity/sessions.md
+        - Check auto assigned sessions: activity/autoAssignSession.md
+        - Available capacity: activity/availability.md
       - Accomodation: 
         - Basic catalog: accommodation/basicCatalog.md
         - Full catalog: accommodation/fullCatalog.md
