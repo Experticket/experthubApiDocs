@@ -68,10 +68,12 @@ nav:
     - Documentación: 
       - Actividades:
         - Catálogo: activity/catalog.md
+        - Precios en tiempo real: activity/realTimePrices.md
       - Alojamiento: 
         - Catálogo básico: accommodation/basicCatalog.md
         - Catálogo completo: accommodation/fullCatalog.md
       - Paquetes:
         - Catálogo: package/catalog.md
+        - Catálogo completo: package/fullCatalog.md
     - FAQ: faq.md
     - Acerca de: about.md
