@@ -64,8 +64,11 @@ plugins:
 #copyright: Copyright &copy; Experticket
 
 nav:
-    - Introducción: index.md
-    - Documentación: 
+    - Inicio: index.md
+    - Documentación:
+      - Introducción: intro.md 
+      - Estructura de datos: struct.md
+      - Conexión: connection.md
       - Actividades:
         - Catálogo: activity/catalog.md
         - Precios en tiempo real: activity/realTimePrices.md
