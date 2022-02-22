@@ -118,14 +118,18 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
             - **`ProductBaseId`**: identificador del ProductBase. Alfanumérico de 13 caracteres (por ejemplo "htpdj798ek8ja")
             - **`ProductBaseName`**: nombre del ProductBase.
             - **`ProductBaseDescription`**:  descripción del ProductBase. Suele contener las condiciones comunes al todos sus productos.
-            - **`DaysWithLimitedCapacity`**: fechas en los que todos los productos de este ProductBase tienen un aforo limitado. Por tanto, será imprescindible consultar la disponibilidad del ProductBase antes de crear una transacción. Las fechas tendrán formato ISO 8601 (yyyy-MM-dd), y estarán separadas entre sí por una coma. Más información al respecto en el punto Obtención de aforo disponible.
-            - **`LimitOfNumberOfPeopleToBeGroup`**: *opcional*, mismo significado que la propiedad LimitOfNumberOfPeopleToBeGroup en el nodo "Provider". Si está especificado se usará el más restrictivo entre este valor y el de proveedor.
+            - **`DaysWithLimitedCapacity`**: fechas en los que todos los productos de este ProductBase tienen un aforo limitado. Por tanto, será imprescindible consultar la disponibilidad del ProductBase antes de crear una transacción. Las fechas tendrán formato ISO 8601 (yyyy-MM-dd), y estarán separadas entre sí por una coma. Más información al respecto en el punto [obtención de aforo disponible](../availability.md).
+            - **`LimitOfNumberOfPeopleToBeGroup`**: *opcional*, mismo significado que la propiedad `LimitOfNumberOfPeopleToBeGroup` en el nodo `Provider`. Si está especificado se usará el más restrictivo entre este valor y el de proveedor.
             - **`Products`**: array de productos:
                 - **`ProductId`**: identificador del producto. Alfanumérico de 13 caracteres (por ejemplo "ctgyir9m9q4bo").
                 - **`ProductName`**: nombre del producto.
                 - **`SuggestedSalesProductName`**: nombre sugerido del producto de cara a la venta.
                 - **`ProductDescription`**:  descripción del producto. Suele contener las condiciones del producto.
-                - **`ProductInternalConsiderations`**: consideraciones internas del producto que solo debe conocer Test It. NUNCA mostrar al cliente final.
+
+                    !!! danger inline end "ProductInternalConsiderations"
+                        **NUNCA** mostrar al cliente final.
+
+                - **`ProductInternalConsiderations`**: consideraciones internas del producto que solo debe conocer el colaborador.
                 - **`ProductCancellationConditions`**: condiciones de cancelación para el producto.
                 - **`CancellationPolicy`**: indica las políticas de cancelación que se aplican al cancelar una venta de este producto. Si este nodo está presente, tiene preferencia sobre el nodo CancellationPolicy del proveedor.
                     - **`IsRefundable`**: indica si el cliente puede cancelar gratis en algún momento.
