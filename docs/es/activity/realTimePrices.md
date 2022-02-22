@@ -29,7 +29,7 @@ Para obtener los precios en tiempo real debe especificarse la siguiente estructu
 ### Ejemplos de envío
 
 --8<-- "includes/RealTimePricesQueryExamples.md"
-=== "Precio en tiempo real de dos productos"
+=== "ProductIds"
 
     ``` json
     {
@@ -66,7 +66,7 @@ Para obtener los precios en tiempo real debe especificarse la siguiente estructu
 ### Ejemplos de respuesta
 
 --8<-- "includes/RealTimePricesResultExamples.md"
-=== "Precio en tiempo real de dos productos"
+=== "ProductIds"
 
     ``` json
     {
