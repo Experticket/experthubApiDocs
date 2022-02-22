@@ -1,30 +1,30 @@
 # Sesiones
 
-Mediante este método podemos calcular los precios de uno o varios productos, para una o múltiples fechas de acceso.
+Una sesión está definida por una fecha, un hora, un contenido y, opcionalmente, el aforo disponible.
 
-!!! info "¿Por qué hablamos de tiempo real?"
+Según esta definición, se entiende que una misma sesión puede ser compartida por varios tickets. Los tickets "Entrada adulto", "Entrada niño", "Entrada junior", "Entrada senior" y "Entrada discapacitado" pueden tener asociadas las mismas sesiones durante el año en curso (por ejemplo, 10 sesiones al día durante los 365 días al año).
 
-    El precio de un producto depende del momento en que se hace la consulta del mismo. Existen factores como los días que faltan hasta la fecha de acceso o la temporada, que hacen que el precio varíe.
+Como esta casuística puede ser habitual, se ha procurado separar lo máximo posible la estructura de sesiones del catálogo de productos. Siguiendo con el ejemplo anterior, si se definiesen las sesiones en el catálogo de productos tendríamos 10 sesiones x 365 días = 3650 sesiones para cada uno de los 5 tickets ("Entrada adulto, "Entrada niño", "Entrada junior", "Entrada senior" y "Entrada discapacitado").
 
-Es necesario realizar esta llamada cada vez que queramos averiguar el precio de un producto para una fecha en concreto. El precio que tiene hoy la entrada a un parque para dentro de un mes no tiene por qué ser el mismo mañana.
+Por lo tanto, se define la estructura de sesiones, para minimizar la carga de datos y jerarquizar lo mejor posible el catálogo de sesiones.
 
 ## Método de acceso
 
-**POST** /realTimePrices
+**POST** /sessions
 
 ## Estructura de datos de envío
 
-Para obtener los precios en tiempo real debe especificarse la siguiente estructura de datos en el cuerpo del método.
+Para obtener las sesiones podemos utilizar diferentes filtros en el cuerpo del método. Cada filtro se considerará un ***AND***.
 
-- **`ProductIds`**: lista identificadores de producto.
-- **`AccessDates`**: lista fechas de entrada que queremos consultar.
-- **`StartDate`**: inicio del rango de fechas de entrada que queremos consultar. Complementa a `AccessDates` y necesita que se especifique `EndDate`. *Formato ISO 8601 (yyyy-MM-dd)*.
-- **`EndDate`**: fin del rango de fechas de entrada que queremos consultar. Complementa a `AccessDates` y necesita que se especifique `StartDate`. *Formato ISO 8601 (yyyy-MM-dd)*.
-- **`CombinedProducts`**: array de productos combinados.
-    - **`CombinedProductId`**: identificador del producto combinado.
-    - **`Products`**: array de productos incluidos en el producto combinado.
-        - **`ProductId`**: identificador del producto combinado.
-        - **`AccessDate`**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
+Debe especificarse la siguiente estructura de datos en el cuerpo del método.
+
+- **`SessionsGroupProfileIds`**: lista de perfiles de grupos de sesión.
+- **`SessionsGroupIds`**: lista de grupos de sesión.
+- **`SessionContentProfileIds`**: lista de perfiles de contenido de sesión.
+- **`FromDate`**: filtrado por fecha de inicio. No permite valores menores al día de hoy. El valor por defecto es el día actual. *Formato ISO 8601 (yyyy-MM-dd)*.
+- **`ToDate`**: filtrado por fecha de fin. Su valor por defecto es l fecha correnpondiente a dentro de un año. *Formato ISO 8601 (yyyy-MM-dd)*.
+- **`Dates`**: lista fechas por las que filtrar. *Formato ISO 8601 (yyyy-MM-dd)*.
+- **`LanguageCode`**: código del idioma de los contenidos.
 
 ### Ejemplos de envío
 
@@ -51,8 +51,9 @@ Para obtener los precios en tiempo real debe especificarse la siguiente estructu
     - **`AccessDate`**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
     - **`Price`**: precio al que debe venderse el producto.
     - **`PriceMode`**: tipo de precio. Opciones:
-        - 1: PVP
-        - 2: precio neto
+        ??? example "Posibles valores"
+            - 1: PVP
+            - 2: precio neto
     - **`CombinedProductId`**: identificador del producto combinado.
     - **`CombinedProductProducts`**: array de productos incluidos en el proucto combinado.
         - **`ProductId`**: identificador del producto.
