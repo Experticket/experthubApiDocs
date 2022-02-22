@@ -69,6 +69,7 @@ nav:
       - Actividades:
         - Catálogo: activity/catalog.md
         - Precios en tiempo real: activity/realTimePrices.md
+        - Sesiones: activity/sessions.md
       - Alojamiento: 
         - Catálogo básico: accommodation/basicCatalog.md
         - Catálogo completo: accommodation/fullCatalog.md
