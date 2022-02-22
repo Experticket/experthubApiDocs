@@ -131,36 +131,59 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
 
                 - **`ProductInternalConsiderations`**: consideraciones internas del producto que solo debe conocer el colaborador.
                 - **`ProductCancellationConditions`**: condiciones de cancelación para el producto.
-                - **`CancellationPolicy`**: indica las políticas de cancelación que se aplican al cancelar una venta de este producto. Si este nodo está presente, tiene preferencia sobre el nodo CancellationPolicy del proveedor.
+                - **`CancellationPolicy`**: indica las políticas de cancelación que se aplican al cancelar una venta de este producto. Si este nodo está presente, tiene preferencia sobre el nodo `CancellationPolicy` del proveedor.
                     - **`IsRefundable`**: indica si el cliente puede cancelar gratis en algún momento.
                     - **`Rules`**: reglas que se aplican al efectuar la cancelación.
                         - **`HoursInAdvanceOfAccess`**: indica la cantidad de horas de antelación con respecto a la fecha de acceso a partir de las cuales se aplicará la penalización de precio indicada en Percentage.
                         - **`Percentage`**: porcentaje de penalización sobre el precio de la entrada.
                 - **`StartIsActiveDate`**: *opcional*, si existe, define la fecha a partir de la cual es posible vender el producto.
                 - **`EndIsActiveDate`**: *opcional*, si existe, define la fecha hasta la cual es posible vender el producto.
-                - **`DaysWithLimitedCapacity`**: fechas en los que el producto tienen un aforo limitado. Por tanto, será imprescindible consultar la disponibilidad del producto antes de crear una transacción. Las fechas tendrán formato ISO 8601 (yyyy-MM-dd), y estarán separadas entre sí por una coma. Más información al respecto en el punto Obtención de aforo disponible.
-                - **`HoursInAdvanceOfPurchase`**: horas de antelación de la compra respecto a las 00:00 del día siguiente al de la visita. Por ejemplo, si un producto tiene HoursInAdvanceOfPurchase = 4, y un cliente realiza una compra para el 15 de Agosto, el límite de tiempo que tiene el producto para venderse son las 20:00 del propio 15 de Agosto (es decir, 4 horas antes de las 00:00 del 16 de Agosto). Esto es importante, por ejemplo, para que un cliente no compre los productos para un día cuando el recinto ya está a cerrado.
-                - **`MaxHoursInAdvanceOfPurchase`**: *opcional*, horas máximas de antelación de la compra respecto a las 00:00 del día siguiente al de la visita. Por ejemplo, si un producto tiene MaxHoursInAdvanceOfPurchase = 240, y un cliente realiza una compra para el 15 de Agosto, el producto no puede venderse antes del 6 de Agosto (es decir, 240 horas = 10 días antes de las 00:00 del 16 de Agosto). Esto es útil, por ejemplo, para limitar el período de venta de un producto a un plazo de días previos.
+                - **`DaysWithLimitedCapacity`**: fechas en los que el producto tienen un aforo limitado. Por tanto, será imprescindible consultar la disponibilidad del producto antes de crear una transacción. Las fechas tendrán formato ISO 8601 (yyyy-MM-dd), y estarán separadas entre sí por una coma. Más información al respecto en el punto [obtención de aforo disponible](availability.md).
+                - **`HoursInAdvanceOfPurchase`**: horas de antelación de la compra respecto a las 00:00 del día siguiente al de la visita. Por ejemplo, si un producto tiene `HoursInAdvanceOfPurchase = 4`, y un cliente realiza una compra para el 15 de Agosto, el límite de tiempo que tiene el producto para venderse son las 20:00 del propio 15 de Agosto (es decir, 4 horas antes de las 00:00 del 16 de Agosto). Esto es importante, por ejemplo, para que un cliente no compre los productos para un día cuando el recinto ya está a cerrado.
+                - **`MaxHoursInAdvanceOfPurchase`**: *opcional*, horas máximas de antelación de la compra respecto a las 00:00 del día siguiente al de la visita. Por ejemplo, si un producto tiene `MaxHoursInAdvanceOfPurchase = 240`, y un cliente realiza una compra para el 15 de Agosto, el producto no puede venderse antes del 6 de Agosto (es decir, 240 horas = 10 días antes de las 00:00 del 16 de Agosto). Esto es útil, por ejemplo, para limitar el período de venta de un producto a un plazo de días previos.
                 - **`MinimumNumberByTransaction`**: cantidad mínima del productos por cada venta. Por defecto es 1. Por ejemplo, imaginemos un producto del tipo "Entrada con descuento a partir de 3 productos". En ese caso MinimumNumberByTransaction sería 3.
-                - **`NumberOfPeople`**: número de personas que computan para considerar una transacción como "grupo". Es decir, computa para el límite "LimitOfNumberOfPeopleToBeGroup".
-                - **`NumberOfAdults`**: número de adultos, incluidos en el campo "NumberOfPeople".
-                - **`NumberOfBabies`**: número de bebés, incluidos en el campo "NumberOfPeople".
-                - **`NumberOfChildren`**: número de niños, incluidos en el campo "NumberOfPeople".
-                - **`NumberOfSenior`**: número de seniors, incluidos en el campo "NumberOfPeople".
-                - **`NumberOfGeneric`**: número de genéricos, incluidos en el campo "NumberOfPeople". Es un campo muy útil, por ejemplo, si un producto vale tanto para adulto como para niño como para senior.
+                - **`NumberOfPeople`**: número de personas que computan para considerar una transacción como "grupo". Es decir, computa para el límite `LimitOfNumberOfPeopleToBeGroup`.
+                - **`NumberOfAdults`**: número de adultos, incluidos en el campo `NumberOfPeople`.
+                - **`NumberOfBabies`**: número de bebés, incluidos en el campo `NumberOfPeople`.
+                - **`NumberOfChildren`**: número de niños, incluidos en el campo `NumberOfPeople`.
+                - **`NumberOfSenior`**: número de seniors, incluidos en el campo `NumberOfPeople`.
+                - **`NumberOfGeneric`**: número de genéricos, incluidos en el campo `NumberOfPeople`. Es un campo muy útil, por ejemplo, si un producto vale tanto para adulto como para niño como para senior.
                 - **`RequiresRealTimePrice`**: indica si el producto requiere precio en tiempo real.
-                - **`ValidDays`**: días de validez:
 
-            1. consecutivos.
-            2. no consecutivos.
+                    ??? tip "Implicaciones"
+                        En caso de estar definido como `#!csharp true` será necesario antes de iniciar cualquier venta hacer la llamada para [consultar el precio en tiempo real](realTimePrices.md). Ya que el precio del producto puede ser diferente en función de algunos criterios.
 
-                - **`PriceMode`**: 1 = PVP. 2 = Precio Neto.
-                - **`Commission`**: en caso de que PriceMode = PVP, nos indica la comisión:
-                    - **`Type`**: 1 = porcentaje. 2 = valor absoluto.
-                    - **`Value`**: valor de esa comisión. Por ejemplo:
-                        - si Type = 1 y Value = 10, indica que la comisión es del 10% respecto al Price del producto. Es decir, si el Price = 100 €, la comisión calculada sería de 10 €.
-                        - si Type = 2 y Value = 3, indica que la comisión por producto es de 3 €.
-                - **`AccessDateCriteria`**: indica el criterio para la fecha de acceso. Puede tomar los siguientes valores **.
+                - **`ValidDays`**: días de validez.
+                - **`ValidDaysType`**: tipo de días válidos.
+
+                    ??? example "Posibles valores"
+                        - 0: consecutivos.
+                        - 1: no consecutivos.
+
+                - **`PriceMode`**: indica el tipo de precio.
+
+                    ??? example "Posibles valores"
+                        - 1: PVP.
+                        - 2: precio neto.
+
+                - **`Commission`**: en caso de que `PriceMode = PVP`, nos indica la comisión.
+                    - **`Type`**: indica el tipo de comisión aplicada.
+
+                        ??? example "Posibles valores"
+                            - 1: porcentaje.
+                            - 2: valor absoluto.
+
+                    - **`Value`**: valor de esa comisión.
+
+                        ??? info "Ejemplo"
+                            - si `Type = 1` y `Value = 10`, indica que la comisión es del 10% respecto al `Price` del producto. Es decir, si el `Price` es igual a 100€, la comisión calculada sería de 10€.
+                            - si `Type = 2` y `Value = 3`, indica que la comisión por producto es de 3€.
+
+                - **`AccessDateCriteria`**: indica el criterio para la fecha de acceso.
+
+                    ??? example "Posibles valores"
+                        --8<-- "includes/annex/AccessDateCriteria.es.md"
+
                 - **`BarcodeAssignment`**: *opcional*, indica a qué se va asignar el código de barras. Sus posibles valores son:
 
                     1. Ticket (valor por defecto si BarcodeAssignment no viene definido)
