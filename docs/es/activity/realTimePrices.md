@@ -16,15 +16,15 @@ Es necesario realizar esta llamada cada vez que queramos averiguar el precio de 
 
 Para obtener los precios en tiempo real debe especificarse la siguiente estructura de datos en el cuerpo del método.
 
-- **`ProductIds`**: Lista identificadores de producto.
-- **`AccessDates`**: Lista fechas de entrada que queremos consultar.
-- **`StartDate`**: Inicio del rango de fechas de entrada que queremos consultar. Complementa a `AccessDates` y necesita que se especifique `EndDate`. *Formato ISO 8601 (yyyy-MM-dd)*.
-- **`EndDate`**: Fin del rango de fechas de entrada que queremos consultar. Complementa a `AccessDates` y necesita que se especifique `StartDate`. *Formato ISO 8601 (yyyy-MM-dd)*.
-- **`CombinedProducts`**: Arry de productos combinados.
-    - **`CombinedProductId`**: Identificador del producto combinado.
-    - **`Products`**: Array de productos incluidos en el producto combinado.
-        - **`ProductId`**: Identificador del producto combinado.
-        - **`AccessDate`**: Fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
+- **`ProductIds`**: lista identificadores de producto.
+- **`AccessDates`**: lista fechas de entrada que queremos consultar.
+- **`StartDate`**: inicio del rango de fechas de entrada que queremos consultar. Complementa a `AccessDates` y necesita que se especifique `EndDate`. *Formato ISO 8601 (yyyy-MM-dd)*.
+- **`EndDate`**: fin del rango de fechas de entrada que queremos consultar. Complementa a `AccessDates` y necesita que se especifique `StartDate`. *Formato ISO 8601 (yyyy-MM-dd)*.
+- **`CombinedProducts`**: array de productos combinados.
+    - **`CombinedProductId`**: identificador del producto combinado.
+    - **`Products`**: array de productos incluidos en el producto combinado.
+        - **`ProductId`**: identificador del producto combinado.
+        - **`AccessDate`**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
 
 ### Ejemplos de envío
 
@@ -46,22 +46,22 @@ Para obtener los precios en tiempo real debe especificarse la siguiente estructu
 
 ## Estructura de datos de respuesta
 
-- **`ProductsRealTimePrices`**: Array de precios en tiempo real.
-    - **`ProductId`**: Identificador del producto.
-    - **`AccessDate`**: Fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
-    - **`Price`**: Precio al que debe venderse el producto.
-    - **`PriceMode`**: Tipo de precio. Opciones:
+- **`ProductsRealTimePrices`**: array de precios en tiempo real.
+    - **`ProductId`**: identificador del producto.
+    - **`AccessDate`**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
+    - **`Price`**: precio al que debe venderse el producto.
+    - **`PriceMode`**: tipo de precio. Opciones:
         - 1: PVP
-        - 2: Precio neto
-    - **`CombinedProductId`**: Identificador del producto combinado.
-    - **`CombinedProductProducts`**: Arry de productos incluidos en el proucto combinado.
-        - **`ProductId`**: Identificador del producto.
-        - **`AccessDate`**: Fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
-    - **`Success`**: Booleano (true/false) que indica si la obtención del precio en tiempo real de este proucto ha sido correcta o no.
-    - **`ErrorMessage`**: Mensaje de error explicando por qué la obtención del precio en tiempo real de este producto no ha sido correcta. En caso que haya sido correcta, el campo no aparece.
-- **`Success`**: Booleano (true/false) que indica si la obtención de los precios en tiempo real ha sido correcta o no.
+        - 2: precio neto
+    - **`CombinedProductId`**: identificador del producto combinado.
+    - **`CombinedProductProducts`**: array de productos incluidos en el proucto combinado.
+        - **`ProductId`**: identificador del producto.
+        - **`AccessDate`**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
+    - **`Success`**: booleano (true/false) que indica si la obtención del precio en tiempo real de este proucto ha sido correcta o no.
+    - **`ErrorMessage`**: mensaje de error explicando por qué la obtención del precio en tiempo real de este producto no ha sido correcta. En caso que haya sido correcta, el campo no aparece.
+- **`Success`**: booleano (true/false) que indica si la obtención de los precios en tiempo real ha sido correcta o no.
 - **`Timestamp`**.
-- **`ErrorMessage`**: Mensaje de error explicando por qué la obtención de los precios en tiempo real no ha sido correcta. En caso que haya sido correcta, el campo no aparece.
+- **`ErrorMessage`**: mensaje de error explicando por qué la obtención de los precios en tiempo real no ha sido correcta. En caso que haya sido correcta, el campo no aparece.
 
 ### Ejemplos de respuesta
 
