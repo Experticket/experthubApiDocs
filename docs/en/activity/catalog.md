@@ -1,4 +1,4 @@
-# Obtaining the catalog of activities
+# Activities catalog
 
 The first step will be to get the complete catalog of providers, categories (productBases) and products for its internal processing.
 

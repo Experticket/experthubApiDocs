@@ -1,4 +1,4 @@
-# Obtención del catálogo de actividades
+# Catálogo de actividades
 
 El primer paso será obtener todo el catálogo completo de proveedores, categorías (productBases) y productos para su tratamiento interno.
 
