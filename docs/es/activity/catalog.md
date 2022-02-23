@@ -125,11 +125,11 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                 - **`ProductName`**: nombre del producto.
                 - **`SuggestedSalesProductName`**: nombre sugerido del producto de cara a la venta.
                 - **`ProductDescription`**:  descripción del producto. Suele contener las condiciones del producto.
+                - **`ProductInternalConsiderations`**: consideraciones internas del producto que solo debe conocer el colaborador.
 
-                    !!! danger inline end "ProductInternalConsiderations"
+                    ???+ danger "Importante"
                         **NUNCA** mostrar al cliente final.
 
-                - **`ProductInternalConsiderations`**: consideraciones internas del producto que solo debe conocer el colaborador.
                 - **`ProductCancellationConditions`**: condiciones de cancelación para el producto.
                 - **`CancellationPolicy`**: indica las políticas de cancelación que se aplican al cancelar una venta de este producto. Si este nodo está presente, tiene preferencia sobre el nodo `CancellationPolicy` del proveedor.
                     - **`IsRefundable`**: indica si el cliente puede cancelar gratis en algún momento.
