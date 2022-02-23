@@ -67,7 +67,7 @@ nav:
     - Inicio: index.md
     - Documentación:
       - Introducción: intro.md 
-      - Estructura de datos: struct.md
+      - Especificación de datos: struct.md
       - Conexión: connection.md
       - Actividades:
         - Catálogo: activity/catalog.md
