@@ -1,12 +1,12 @@
 # Obtención del catálogo de actividades
 
-En un primer paso, tendrá que obtener todo el catálogo completo de proveedores, categorías (productBases) y productos para su tratamiento interno.
+El primer paso será obtener todo el catálogo completo de proveedores, categorías (productBases) y productos para su tratamiento interno.
 
 La información del catálogo incluye los identificadores únicos de Proveedor, Producto y Ticket que posteriormente se usarán para añadir cualquier producto al carrito.
 
 También incluirá otros datos como el precio de los productos dependiendo de las fechas, o las condiciones comerciales del producto.
 
-Siguiendo con nuestro ejemplo, podría darse el caso de que el producto "Entrada 2x1 Niño" del proveedor PAC baje el precio y aumente el periodo de validez de la venta.
+Siguiendo con nuestro ejemplo, podría darse el caso en el que el producto "Entrada 2x1 Niño" del proveedor PAC baje el precio y aumente el periodo de validez de la venta.
 
 ## Método de acceso
 
@@ -24,7 +24,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
 - **`FromDate`**: fecha de inicio. No permite valores menores al día actual. *Formato ISO 8601 (yyyy-MM-dd)*.
 - **`ToDate`**: fecha de fin. Por defecto su valor es el de la fecha correspondiente a dentro de un año. *Formato ISO 8601 (yyyy-MM-dd)*.
 - **`ReferenceDate`**: exige que el día que se tome como referencia para el cálculo de precios y disponibilidades no sea hoy, sino el indicado. Por ejemplo se usará si los precios cambian dependiendo de los días que quedan hasta la fecha de la entrada. *Formato ISO 8601 (yyyy-MM-dd)*
-- **`LanguageCode`**: define el idioma en que se mostrarán los textos del catálogo (nombre, descripción, condiciones de proveedor, producto, etc.). Por defecto se devolverá el idioma configurado para el  colaborador.
+- **`LanguageCode`**: define el idioma en que se mostrarán los textos del catálogo (nombre, descripción, condiciones de proveedor, producto, etc.). Por defecto se devolverá el idioma configurado para el colaborador.
 - **`ShowProductsOutOfActiveDateRange`**: si su valor es `#!csharp true`, la respuesta devolverá productos en los que el día de hoy (o el día indicado en `ReferenceDate`) está fuera de su rango de fechas de venta. Por ejemplo, si estamos en diciembre y hay productos que se pueden vender a partir de enero, poniendo este valor a true nos permitirá descubrir que existen esos productos.
 
 ### Ejemplos de llamadas
@@ -34,9 +34,9 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
 ## Estructura de datos de respuesta
 
 - **`LastUpdatedDateTime`**: fecha de la última modificación del catálogo.
-- **`Providers`**: array de proveedores:
+- **`Providers`**: array de proveedores.
     - **`ProviderId`**: identificador del proveedor. Alfanumérico de 13 caracteres.
-    - **`ProviderName`**: nombre del Proveedor.
+    - **`ProviderName`**: nombre del proveedor.
     - **`ProviderDescription`**: descripciones del proveedor.
     - **`ProviderCommercialConditions`**: condiciones comerciales de proveedor. Si no existen, este campo no se mostrará.
     - **`ProviderAccessConditions`**: condiciones de acceso del proveedor. Si no existen, este campo no se mostrará.
@@ -65,7 +65,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
             - 2: Transporte
 
     - **`IsForGroups`**: indica si los productos del proveedor están destinados a la venta para grupos.
-    - **`LimitOfNumberOfPeopleToBeGroup`**: límite del número de personas que conforman un producto a partir del cual la venta se considera para "grupos". Por ejemplo, si este límite es "19" y el proveedor no es para grupos (`#!csharp IsForGroups == false`), no se aceptarán transacciones con 20 o más personas. Por contra, si el proveedor es para grupos (`#!csharp IsForGroups == true`), solo se aceptarán transacciones para 20 o más personas.
+    - **`LimitOfNumberOfPeopleToBeGroup`**: límite del número de personas que conforman un producto a partir del cual la venta se considera para "grupos". Por ejemplo, si este límite es "19" y el proveedor no es para grupos (`#!csharp IsForGroups == false`), no se aceptarán ventas con 20 o más personas. Por contra, si el proveedor es para grupos (`#!csharp IsForGroups == true`), solo se aceptarán ventas para 20 o más personas.
     - **`Logo`**: url para descargar la imagen del logotipo del proveedor.
     - **`Location`**: información de localización.
         - **`CountryCode`**: código de país (es, fr...).
@@ -107,7 +107,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                 - **`SessionContentId`**: identificador de contenido de sesión.
                 - **`SessionTime`**: fecha y hora de la sesión.
                 - **`HasLimitedCapacity`**: indica si la sesión tiene aforo. De ser así será imprescindible consultar la disponibilidad de la sesión antes de crear una venta. Más información al respecto en [obtención de aforo disponible](availability.md).
-            - **`TicketEnclosureAutoAssignSessionType`**: indica qué atributo se aplica a la hora de elegir sesiones. Pueden ser sesiones auto asignadas por el sistema, elegibles, o una mezcla de los dos casos. En el caso de sesiones auto asignadas se puede comprobar qué sesiones se van a asignar antes de hacer la reserva mediante el [método para comprobar la sesión autoasignada](autoAssignSession.md).
+            - **`TicketEnclosureAutoAssignSessionType`**: indica qué atributo se aplica a la hora de elegir sesiones. Pueden ser sesiones auto asignadas por el sistema, elegibles, o una mezcla de los dos casos. En el caso de sesiones auto asignadas se puede comprobar qué sesiones se van a asignar antes de añadir el producto al carrito mediante el [método para comprobar la sesión autoasignada](autoAssignSession.md).
 
                 ??? example "Posibles valores"
                     - **0: No**. las sesiones no se auto asignarán. Deben definirse durante el flujo de venta.
@@ -115,13 +115,13 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                     - **2: ForceSet**. Las sesiones se autoasignarán siempre de forma forzada, ignorando si se han definido durante el flujo de venta.
 
         - **`ProductBases`**: array de ProductBases.
-            - **`ProductBaseId`**: identificador del ProductBase. Alfanumérico de 13 caracteres (por ejemplo "htpdj798ek8ja")
+            - **`ProductBaseId`**: identificador del ProductBase. Alfanumérico de 13 caracteres.
             - **`ProductBaseName`**: nombre del ProductBase.
             - **`ProductBaseDescription`**:  descripción del ProductBase. Suele contener las condiciones comunes al todos sus productos.
             - **`DaysWithLimitedCapacity`**: fechas en los que todos los productos de este ProductBase tienen un aforo limitado. Por tanto, será imprescindible consultar la disponibilidad del ProductBase antes de crear una venta. Las fechas tendrán formato ISO 8601 (yyyy-MM-dd), y estarán separadas entre sí por una coma. Más información al respecto en el punto [obtención de aforo disponible](availability.md).
             - **`LimitOfNumberOfPeopleToBeGroup`**: *opcional*, mismo significado que la propiedad `LimitOfNumberOfPeopleToBeGroup` en el nodo `Provider`. Si está especificado se usará el más restrictivo entre este valor y el de proveedor.
-            - **`Products`**: array de productos:
-                - **`ProductId`**: identificador del producto. Alfanumérico de 13 caracteres (por ejemplo "ctgyir9m9q4bo").
+            - **`Products`**: array de productos.
+                - **`ProductId`**: identificador del producto. Alfanumérico de 13 caracteres.
                 - **`ProductName`**: nombre del producto.
                 - **`SuggestedSalesProductName`**: nombre sugerido del producto de cara a la venta.
                 - **`ProductDescription`**:  descripción del producto. Suele contener las condiciones del producto.
@@ -184,7 +184,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                     ??? example "Posibles valores"
                         --8<-- "includes/annex/AccessDateCriteria.es.md"
 
-                - **`BarcodeAssignment`**: *opcional*, indica a qué se va asignar el código de barras. Sus posibles valores son:
+                - **`BarcodeAssignment`**: *opcional*, indica a qué se va asignar el código de barras.
 
                     ??? example "Posibles valores"
                         - 1: Ticket (valor por defecto si BarcodeAssignment no viene definido).
@@ -196,7 +196,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                             - `BarcodeAssignment = Ticket`: cada uno de los tickets tendrá su propio código de barras
                             - `BarcodeAssignment = Persona`: solo habrá un código de barras (compartido por ambos tickets). Una consecuencia directa de este caso la tendríamos a la hora de imprimir un PDF con las entradas, ya que solo tendríamos que imprimir un PDF del producto, dado que a pesar de tener dos tickets solo hay un código de barras.
 
-                - **`PricesAndDates`**: array de "*precio y fechas*". Tiene una doble funcionalidad. Por una parte nos define qué fechas de acceso tiene disponible el producto, y por otra parte nos define qué precio se aplica a qué fechas:
+                - **`PricesAndDates`**: array de "*precio y fechas*". Tiene una doble funcionalidad. Por una parte nos define qué fechas de acceso tiene disponible el producto, y por otra parte nos define qué precio se aplica a qué fechas.
                     - **`Price`**: precio.
                     - **`Currency`**: moneda.
                     - **`CurrencyName`**: nombre de la moneda.
@@ -206,7 +206,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                         - **`TaxPercentage`**: porcentaje de impuesto (sobre 100)
                         - **`PriceWithoutTaxes`**: precio sin impuestos
                         - **`PriceWithTaxes`**: precio con impuestos
-                - **`Release`**: *opcional*, número de días de antelación necesarios para que el cliente pueda cancelar el producto sin coste. Ejemplos:
+                - **`Release`**: *opcional*, número de días de antelación necesarios para que el cliente pueda cancelar el producto sin coste.
 
                     ??? info "Ejemplo"
                         - 0: El cliente puede cancelar el día de entrada al parque sin coste.
@@ -225,7 +225,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                             --8<-- "includes/annex/AccessDateCriteria.es.md"
 
                 - **`Tickets`**: *opcional*, array de tickets. En caso de que el producto no trabaje con tickets, este campo no existirá.
-                    - **`TicketId`**: identificador de ticket. Alfanumérico de 13 caracteres (por ejemplo "1tqgtrf7ctefc").
+                    - **`TicketId`**: identificador de ticket. Alfanumérico de 13 caracteres.
                     - **`IsQuotaTicket`**: booleano que indica si el ticket es o no de tipo aforo, lo que quiere decir que en caso de ser `#!csharp true` el ticket computará para el total de aforo necesario para reservar el producto. Por ejemplo, si tenemos un producto donde tiene 3 tickets definidos pero únicamente 2 de ellos son de tipo aforo, entonces al consultar la disponibilidad para esté producto hay que tener en cuenta que a nivel de aforo necesita 2 de disponibilidad. En otras palabras en caso de que el aforo disponible fuese 1 no podríamos reservar este producto. Para más información consulta el endpoint [obtención de aforo disponible](availability.md).
                     - **`TicketName`**: nombre del ticket.
                     - **`TicketConditions`**: *opcional*, condiciones del ticket.
@@ -269,7 +269,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                 - **`ProductPaxGroupingId`**: *opcional*, identificador de la agrupación de productos a la que pertenece el producto.
 
         - **`ProductPaxGroupings`**: agrupaciones de productos cuya diferencia principal son las personas que lo componen.
-            - **`ProductPaxGroupingId`**: identificador de la agrupación. Alfanumérico de 13 caracteres (por ejemplo "dtpdj29bek3ja").
+            - **`ProductPaxGroupingId`**: identificador de la agrupación. Alfanumérico de 13 caracteres.
             - **`ProductPaxGroupingName`**: nombre de la a agrupación.
 
     - **`Urls`**: *opcional*, array de urls para acceder a la página de la taquilla del proveedor. Sólo en el caso de tener DNS personalizadas.
