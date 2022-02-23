@@ -22,83 +22,219 @@ Debe especificarse la siguiente estructura de datos en el cuerpo del método.
 - **`SessionsGroupIds`**: lista de grupos de sesión.
 - **`SessionContentProfileIds`**: lista de perfiles de contenido de sesión.
 - **`FromDate`**: filtrado por fecha de inicio. No permite valores menores al día de hoy. El valor por defecto es el día actual. *Formato ISO 8601 (yyyy-MM-dd)*.
-- **`ToDate`**: filtrado por fecha de fin. Su valor por defecto es l fecha correnpondiente a dentro de un año. *Formato ISO 8601 (yyyy-MM-dd)*.
+- **`ToDate`**: filtrado por fecha de fin. Su valor por defecto es la fecha correnpondiente a dentro de un año. *Formato ISO 8601 (yyyy-MM-dd)*.
 - **`Dates`**: lista fechas por las que filtrar. *Formato ISO 8601 (yyyy-MM-dd)*.
 - **`LanguageCode`**: código del idioma de los contenidos.
 
 ### Ejemplos de envío
 
---8<-- "includes/RealTimePricesQueryExamples.md"
-=== "ProductIds"
+--8<-- "includes/SessionsQueryExamples.md"
+=== "SessionsGroupProfileIds"
 
     ``` json
     {
-        "ProductIds": [
+        "SessionsGroupProfileIds": [
             "dj48vjsyufvyu",
             "ajr7v0alt62hl"
-        ],
-        "AccessDates": [
-            "2020-01-02",
-            "2022-05-15"
         ]
+    }
+    ```
+
+=== "SessionsGroupIds"
+
+    ``` json
+    {
+        "SessionsGroupProfileIds": [
+            "dj48vjsyufvyu"
+        ],
+        "SessionsGroupIds": [
+            "ajr7v0alt62hl"
+        ]
+    }
+    ```
+
+=== "SessionContentProfileIds"
+
+    ``` json
+    {
+        "SessionsGroupProfileIds": [
+            "dj48vjsyufvyu"
+        ],
+        "SessionsGroupIds": [
+            "ajr7v0alt62hl"
+        ],
+        "SessionContentProfileIds": [
+            "xar5v1blt61h2",
+            "z2rrv6alvb2hs"
+        ]
+    }
+    ```
+
+---
+
+=== "FromDate"
+
+    ``` json
+    {
+        "FromDate": "2000-01-06"
+    }
+    ```
+
+=== "ToDate"
+
+    ``` json
+    {
+        "ToDate": "2000-01-20"
+    }
+    ```
+
+=== "FromDate - ToDate"
+
+    ``` json
+    {
+        "FromDate": "2000-01-06",
+        "ToDate": "2000-01-20"
+    }
+    ```
+
+---
+
+=== "Dates"
+
+    ``` json
+    {
+        "Dates": [
+            "2000-01-06",
+            "2000-05-12",
+            "2000-07-21"
+        ]
+    }
+    ```
+
+---
+
+=== "Combined filters"
+
+    ``` json
+    {
+       "SessionsGroupProfileIds": [
+           "dj48vjsyufvyu"
+       ],
+       "SessionsGroupIds": [
+           "ajr7v0alt62hl"
+       ],
+       "SessionContentProfileIds": [
+            "xar5v1blt61h2",
+            "z2rrv6alvb2hs"
+       ],
+       "FromDate": "2000-01-06",
+       "ToDate": "2000-10-20"
     }
     ```
 
 ## Estructura de datos de respuesta
 
-- **`ProductsRealTimePrices`**: array de precios en tiempo real.
-    - **`ProductId`**: identificador del producto.
-    - **`AccessDate`**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
-    - **`Price`**: precio al que debe venderse el producto.
-    - **`PriceMode`**: tipo de precio. Opciones:
-        ??? example "Posibles valores"
-            - 1: PVP
-            - 2: precio neto
-    - **`CombinedProductId`**: identificador del producto combinado.
-    - **`CombinedProductProducts`**: array de productos incluidos en el proucto combinado.
-        - **`ProductId`**: identificador del producto.
-        - **`AccessDate`**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
-    - **`Success`**: booleano (true/false) que indica si la obtención del precio en tiempo real de este proucto ha sido correcta o no.
-    - **`ErrorMessage`**: mensaje de error explicando por qué la obtención del precio en tiempo real de este producto no ha sido correcta. En caso que haya sido correcta, el campo no aparece.
-- **`Success`**: booleano (true/false) que indica si la obtención de los precios en tiempo real ha sido correcta o no.
+- **`SessionsGroupProfiles`**: array de perfiles de grupos de sesión.
+    - **`SessionsGroupProfileId`**: identificador del perfil de grupos de sesión.
+    - **`SessionsGroupProfileName`**: nombre del perfil de grupos de sesión.
+    - **`SessionTimeAvailabilityOffset`**: cantidad de minutos antes (si el valor es negativo) o después (si el valor es positivo) en la que la sesión puede estar a la venta con respecto a la hora de la sesión.
+    - **`SessionsGroups`**: array de grupos de sesiones.
+        - **`SessionsGroupId`**: identificador del grupo de sesiones.
+        - **`SessionsGroupName`**: nombre del grupo de sesiones.
+        - **`Sessions`**: array de sesiones.
+            - **`SessionId`**: identificador de la sesión.
+            - **`SessionTime`**: fecha y hora de la sesión.
+            - **`AvailableCapacity`**: valor que indica el aforo de la sesión. Si este campo no existe, es que no hay un aforo limitado. Si sólo se quiere consultar el aforo de una sesión, se puede utilizar el método descrito en [Obtención del aforo disponible].
+- **`SessionContentProfiles`**: array de perfiles de contenidos de sesión.
+    - **`SessionContentProfileId`**: identificador del perfil de contenidos de sesión.
+    - **`SessionContentProfileName`**: nombre del perfil de contenidos de sesión.
+    - **`SessionContents`**: array de contenidos de sesión.
+        - **`SessionContentId`**: identificador del contenido de sesión.
+        - **`SessionContentName`**: nombre del contenido de sesión.
+        - **`SessionContentDescription`**: descripción del contenido de sesión.
+- **`Success`**: booleano (true/false) que indica si la obtención de las sesiones ha sido correcta o no.
 - **`Timestamp`**.
-- **`ErrorMessage`**: mensaje de error explicando por qué la obtención de los precios en tiempo real no ha sido correcta. En caso que haya sido correcta, el campo no aparece.
+- **`ErrorMessage`**: mensaje de error explicando por qué la obtención de las sesiones no ha sido correcta. En caso que haya sido correcta, el campo no aparece.
 
-### Ejemplos de respuesta
+### Ejemplo de respuesta
 
---8<-- "includes/RealTimePricesResultExamples.md"
+Como ejemplo, supongamos que tenemos un perfil de grupos de sesión por defecto y un perfil de contenidos de sesión por defecto.
+
+Dentro del perfil de grupos de sesión vemos que tenemos dos grupos de sesión:
+
+- Sesiones de mañana, que agrupa las sesiones de las 10:00h de la mañana.
+- Sesiones de tarde, que agrupa las sesiones de las 17:00h de la tarde.
+
+En el perfil de contenidos de sesión tenemos tres contenidos de sesión, que definen películas (la 1, la 2 y la 3).
+
+Observado desde un punto de vista inverso, las entidades más importantes son las sesiones por una parte y los contenidos por otra. Ambas entidades tienen agrupaciones superiores (grupos y perfiles), con el único objetivo de jerarquizar la estructura.
+
+!!! warning "Importante"
+    En este punto sólo se ha definido qué sesiones hay y qué contenidos existen, pero no sabemos qué relación hay entre sesiones y contenidos. Eso es responsabilidad del apartado de sesiones del catálogo de productos.
+
+--8<-- "includes/SessionResultExamples.md"
 === "ProductIds"
 
     ``` json
     {
-        "ProductsRealTimePrices": [
+        "SessionsGroupProfiles": [
             {
-                "ProductId": "dj48vjsyufvyu",
-                "AccessDate": "2020-01-02",
-                "Price": 29,
-                "PriceMode": 1,
-                "Success": true
-            },
+                "SessionsGroupProfileId": "cwj3q99xa8ara",
+                "SessionsGroupProfileName": "Perfil de grupos por defecto",
+                "SessionsGroups": [
+                    {
+                        "SessionsGroupId": "7q59grjg1tuxw",
+                        "SessionsGroupName": "Sesiones de mañana",
+                        "Sessions": [
+                            {
+                                "SessionId": "5b8qkqnmhdmk1",
+                                "SessionTime": "2017-06-21T10:00:00",
+                                "AvailableCapacity": 165
+                            },
+                            {
+                                "SessionId": "5o3bwhx1ze1m1",
+                                "SessionTime": "2017-09-06T10:00:00",
+                                "AvailableCapacity": 230
+                            }
+                        ]
+                    },
+                    {
+                        "SessionsGroupId": "gg5dfgrg1t12w",
+                        "SessionsGroupName": "Sesiones de tarde",
+                        "Sessions": [
+                            {
+                                "SessionId": "8qkqhdmknm5b1",
+                                "SessionTime": "2017-06-21T17:00:00",
+                                "AvailableCapacity": 165
+                            },
+                            {
+                                "SessionId": "5hx1z3bowe1m1",
+                                "SessionTime": "2017-09-06T17:00:00",
+                                "AvailableCapacity": 230
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "SessionContentProfiles": [
             {
-                "ProductId": "dj48vjsyufvyu",
-                "AccessDate": "2022-05-15",
-                "Price": 35,
-                "PriceMode": 1,
-                "Success": true
-            },
-            {
-                "ProductId": "ajr7v0alt62hl",
-                "AccessDate": "2020-01-02",
-                "Price": 18,
-                "PriceMode": 1,
-                "Success": true
-            },
-            {
-                "ProductId": "ajr7v0alt62hl",
-                "AccessDate": "2022-05-15",
-                "Price": 22,
-                "PriceMode": 1,
-                "Success": true
+                "SessionContentProfileId": "5e8f65nherwpc",
+                "SessionContentProfileName": "Perfil de contenidos por defecto",
+                "SessionContents": [
+                    {
+                        "SessionContentId": "fiajih99h79ak",
+                        "SessionContentName": "Película 1"
+                    },
+                    {
+                        "SessionContentId": "m6noaxhzr33an",
+                        "SessionContentName": "Película 2"
+                    },
+                    {
+                        "SessionContentId": "suefs1zzn5ser",
+                        "SessionContentName": "Película 3"
+                    }
+                ]
             }
         ],
         "Success": true,
