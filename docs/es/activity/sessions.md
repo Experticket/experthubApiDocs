@@ -173,7 +173,7 @@ Observado desde un punto de vista inverso, las entidades más importantes son la
     En este punto sólo se ha definido qué sesiones hay y qué contenidos existen, pero no sabemos qué relación hay entre sesiones y contenidos. Eso es responsabilidad del apartado de sesiones del catálogo de productos.
 
 --8<-- "includes/SessionResultExamples.md"
-=== "ProductIds"
+=== "Sessions"
 
     ``` json
     {
