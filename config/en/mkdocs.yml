@@ -31,6 +31,7 @@ theme:
         #- navigation.indexes #https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-integration 
         #- toc.integrate #tabla de contenido integrada con barra de navegación
         #- content.tabs.link
+        - toc.integrate
 extra_css:
     - stylesheets/extra.css
 extra:
