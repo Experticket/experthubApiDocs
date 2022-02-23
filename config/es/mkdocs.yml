@@ -81,6 +81,6 @@ nav:
         - Catálogo completo: accommodation/fullCatalog.md
       - Paquetes:
         - Catálogo: package/catalog.md
-        - Catálogo completo: package/fullCatalog.md
+        - Catálogo extendido: package/extendedCatalog.md
     - FAQ: faq.md
     - Acerca de: about.md
