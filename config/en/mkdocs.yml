@@ -29,9 +29,8 @@ theme:
         - navigation.tabs.sticky
         - navigation.top #botón de volver arriba
         #- navigation.indexes #https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-integration 
-        #- toc.integrate #tabla de contenido integrada con barra de navegación
+        - toc.integrate #tabla de contenido integrada con barra de navegación
         #- content.tabs.link
-        - toc.integrate
 extra_css:
     - stylesheets/extra.css
 extra:
@@ -67,7 +66,7 @@ nav:
     - Home: index.md
     - Documentation:
       - Introduction: intro.md 
-      - Data structure: struct.md
+      - Data specification: struct.md
       - Connection: connection.md
       - Activity:
         - Catalog: activity/catalog.md
@@ -81,5 +80,6 @@ nav:
         - Full catalog: accommodation/fullCatalog.md
       - Packages:
         - Catalog: package/catalog.md
+        - Extended Catalog: package/extendedCatalog.md
     - FAQ: faq.md
     - Acerca de: about.md
