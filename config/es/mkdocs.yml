@@ -29,9 +29,8 @@ theme:
         - navigation.tabs.sticky
         - navigation.top #botón de volver arriba
         #- navigation.indexes #https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-integration 
-        #- toc.integrate #tabla de contenido integrada con barra de navegación
-        # - content.tabs.link
-        - toc.integrate
+        - toc.integrate #tabla de contenido integrada con barra de navegación
+        #- content.tabs.link
 extra_css:
     - stylesheets/extra.css
 extra:
