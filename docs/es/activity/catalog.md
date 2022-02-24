@@ -284,6 +284,17 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
     - **`Products`**: array de productos que forman parte del producto combinado.
         - **`ProductId`**: identificador del producto.
     - **`RequiresRealTimePrice`**: indica si requiere consultar el precio en tiempo real para el producto combinado. Véase [obtención del precio en tiempo real](realTimePrices.md)
+- **`PartnerSettings`**: indica las configuraciones del colaborador.
+    - **`DemandClientData`**: valor de verdad `#!csharp true/false` que indica si es obligatorio indicar datos del cliente al añadir productos al carrito.
+    - **`EnableCancellationRequest`**: valor de verdad `#!csharp true/false` que indica si el colaborador tiene permitido solicitar cancelaciones vía API.
+    - **`PaymentType`**: indica el tipo de pago que realiza el colaborador.
+
+        ??? example "Posibles valores"
+            - 1: Débito
+            - 2: Crédito
+            - 3: Crédito excepto para grupos
+            - 4: Prepago
+
 - **`Success`**: valor de verdad, `#!csharp true/false` que indica si la obtención del catálogo ha sido o no correcta.
 - **`Timestamp`**: momento de la obtención del catálogo.
 - **`ErrorMessage`**: mensaje de error explicando por qué la obtención del catálogo no ha sido correcta. En caso que haya sido correcta, devolverá `#!csharp null`.
