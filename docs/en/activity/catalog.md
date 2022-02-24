@@ -284,6 +284,17 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
     - **`Products`**: array of products that are part of the combined product.
         - **`ProductId`**: product identifier.
     - **`RequiresRealTimePrice`**: indicates if you need to consult the price in real time for the combined product. See [obtaining the price in real time](realTimePrices.md)
+- **`PartnerSettings`**: shows the partner settings.
+    - **`DemandClientData`**: boolean `#!csharp true/false` that indicates if is mandatory to tell the client information when sale confirmation is done.
+    - **`EnableCancellationRequest`**:  boolean `#!csharp true/false` taht indicates if Test It is allowed to request cancellations via API.
+    - **`PaymentType`**: indicates the payment type for the partner.
+
+        ??? example "Possible values"
+            - 1: Debit
+            - 2: Credit
+            - 3: Credit, except for groups
+            - 4: Prepaid
+
 - **`Success`**: boolean, `#!csharp true/false` that indicates if the obtaining of the catalog has been successful or not.
 - **`Timestamp`**: time of obtaining the catalog.
 - **`ErrorMessage`**: error message explaining why the catalog fetch was unsuccessful. If it was correct, it will return `#!csharp null`.
