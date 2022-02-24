@@ -285,7 +285,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
         - **`ProductId`**: identificador del producto.
     - **`RequiresRealTimePrice`**: indica si requiere consultar el precio en tiempo real para el producto combinado. Véase [obtención del precio en tiempo real](realTimePrices.md)
 - **`PartnerSettings`**: indica las configuraciones del colaborador.
-    - **`DemandClientData`**: valor de verdad `#!csharp true/false` que indica si es obligatorio indicar datos del cliente al añadir productos al carrito.
+    - **`DemandClientData`**: valor de verdad `#!csharp true/false` que indica si es obligatorio indicar datos del cliente al confirmar una venta.
     - **`EnableCancellationRequest`**: valor de verdad `#!csharp true/false` que indica si el colaborador tiene permitido solicitar cancelaciones vía API.
     - **`PaymentType`**: indica el tipo de pago que realiza el colaborador.
 
