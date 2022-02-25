@@ -1,7 +1,0 @@
-- 0: **Fecha cerrada**. Válida para entrar únicamente el día especificado.
-- 1: **Fecha abierta**. Válida para entrar cualquier día de la temporada. Solo para este caso, debemos tener en cuenta el valor de **`AccessDateCriteriaOpenDateSalesDocument`**:
-    - 1: Ocultar fecha de acceso.
-    - 2: Válido para toda la temporada.
-    - 3: Ver condiciones.
-    - 4: Rango de fechas de validez del ticket.
-- 3: **Fecha de acceso válida solo para el periodo de alojamiento**.
