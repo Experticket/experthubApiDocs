@@ -29,7 +29,7 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
 
 ### Request example
 
---8<-- "includes/examples/activity/CatalogQueryExamples.md"
+--8<-- "includes/examples/activity/catalogQueryExamples.md"
 
 ## Response data structure
 
@@ -43,7 +43,7 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
     - **`AdvancedDateSelectorMethodName`**: name of the method that determines if product tickets can have their own access date.
 
         ??? example "Possible values"
-            --8<-- "includes/annex/AdvancedDateSelector.en.md"
+            --8<-- "includes/annex/advancedDateSelector.en.md"
 
     - **`CancellationPolicy`**: describe the cancellation policies that apply when canceling a sale from this provider. If a specific product does not have cancellation policies these will apply.
         - **`IsRefundable`**: indicates if the customer can cancel for free at some point in time.
@@ -81,19 +81,19 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
         - **`TypeOfPersonDefinitionTypeChild`**: *optional*, indicates which attribute applies to the person to consider him a child.
 
             ??? example "Possible values"
-                --8<-- "includes/annex/TypeOfPersonDefinition.en.md"
+                --8<-- "includes/annex/typeOfPersonDefinition.en.md"
 
         - **`TypeOfPersonDefinitionValueChild`**: *optional*, indicates the value assigned to the type of person child.
         - **`TypeOfPersonDefinitionTypeAdult`**: *optional*, indicates which attribute applies to the person to consider him an adult.
 
             ??? example "Possible values"
-                --8<-- "includes/annex/TypeOfPersonDefinition.en.md"
+                --8<-- "includes/annex/typeOfPersonDefinition.en.md"
 
         - **`TypeOfPersonDefinitionValueAdult`**: *optional*, indicates the value assigned to the type of person adult.
         - **`TypeOfPersonDefinitionTypeSenior`**: *optional*, indicates which attribute applies to the person to consider him a senior.
 
             ??? example "Possible values"
-                --8<-- "includes/annex/TypeOfPersonDefinition.en.md"
+                --8<-- "includes/annex/typeOfPersonDefinition.en.md"
 
         - **`TypeOfPersonDefinitionValueSenior`**: *optional*, indicates the value assigned to the type of person senior.
         - **`Sessions`**: *optional*, defines the relationship between sessions and content. Before continuing, it is essential to study the [sessions section](sessions.md).
@@ -182,7 +182,7 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
                 - **`AccessDateCriteria`**: indicates the criteria for the access date.
 
                     ??? example "Possible values"
-                        --8<-- "includes/annex/AccessDateCriteria.en.md"
+                        --8<-- "includes/annex/accessDateCriteria.en.md"
 
                 - **`BarcodeAssignment`**: *optional*, indicates what the barcode is to be assigned to.
 
@@ -222,7 +222,7 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
                     - **`AccessDateCriteriaOpenDateSalesDocument`**: only in case `AccessDateCriteria == 1` (open date). Indicates what we must inform the client regarding the date of access.
 
                         ??? example "Possible values of AccessDateCriteria and AccessDateCriteriaOpenDateSalesDocument"
-                            --8<-- "includes/annex/AccessDateCriteria.en.md"
+                            --8<-- "includes/annex/accessDateCriteria.en.md"
 
                 - **`Tickets`**: *optional*, ticket array. In case the product does not work with tickets, this field will not exist.
                     - **`TicketId`**: ticket identifier. 13 character alphanumeric.
@@ -301,4 +301,4 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
 
 ### Response example
 
---8<-- "includes/examples/activity/CatalogResponseExamples.md"
+--8<-- "includes/examples/activity/catalogResponseExamples.md"

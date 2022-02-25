@@ -11,4 +11,4 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Project layout
 
---8<-- "includes/CatalogQueryExamples.md"
+--8<-- "includes/catalogQueryExamples.md"
