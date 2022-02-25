@@ -1,0 +1,7 @@
+- 0: **Closed date**. The ticket will be only valid the on specified date.
+- 1: **Open date**. The ticket will be valid any day of the season. Only in this case we'll take care of **`AccessDateCriteriaOpenDateSalesDocument`**:
+    - 1: Hide access date.
+    - 2: Valid on season.
+    - 3: View conditions.
+    - 4: Access dates range.
+- 3: **Valid during the stay in the selected accomodation**.
