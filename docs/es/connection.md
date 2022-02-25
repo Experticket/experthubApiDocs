@@ -1,4 +1,4 @@
-# Interfaz de comunicación
+# Conexión
 
 El canal de comunicación será un API REST:
 
