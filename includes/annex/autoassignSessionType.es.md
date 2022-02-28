@@ -1,0 +1,3 @@
+- **0: No**. Las sesiones no se auto asignarán. Deben definirse durante el flujo de venta.
+- **1: IfNotSet**. Las sesiones se autoasignarán, siempre y cuando no se haya definido durante el flujo de venta.
+- **2: ForceSet**. Las sesiones se autoasignarán siempre de forma forzada, ignorando si se han definido durante el flujo de venta.

@@ -110,9 +110,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
             - **`TicketEnclosureAutoAssignSessionType`**: indica qué atributo se aplica a la hora de elegir sesiones. Pueden ser sesiones auto asignadas por el sistema, elegibles, o una mezcla de los dos casos. En el caso de sesiones auto asignadas se puede comprobar qué sesiones se van a asignar antes de añadir el producto al carrito mediante el [método para comprobar la sesión autoasignada](autoAssignSession.md).
 
                 ??? example "Posibles valores"
-                    - **0: No**. Las sesiones no se auto asignarán. Deben definirse durante el flujo de venta.
-                    - **1: IfNotSet**. Las sesiones se autoasignarán, siempre y cuando no se haya definido durante el flujo de venta.
-                    - **2: ForceSet**. Las sesiones se autoasignarán siempre de forma forzada, ignorando si se han definido durante el flujo de venta.
+                    --8<-- "includes/annex/autoAssignSessionType.es.md"
 
         - **`ProductBases`**: array de categorías.
             - **`ProductBaseId`**: identificador de la categoría. Alfanumérico de 13 caracteres.

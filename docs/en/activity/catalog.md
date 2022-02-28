@@ -110,9 +110,7 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
             - **`TicketEnclosureAutoAssignSessionType`**: indicates which attribute is applied when choosing sessions. They can be self-assigned sessions by the system, eligible, or a mixture of the two cases.In the case of self-assigned sessions, you can check which sessions are going to be assigned before adding the product to the cart using the method to [check the auto-assigned session](autoAssignSession.md).
 
                 ??? example "Possible values"
-                    - **0: No**. Sessions will not be auto-assigned. Must be defined during the sales flow.
-                    - **1: IfNotSet**. Sessions will be auto-assigned if they have not been defined during the sales flow.
-                    - **2: ForceSet**. Sessions will always be forcibly assigned, ignoring if they were defined during the sales flow.
+                    --8<-- "includes/annex/autoAssignSessionType.en.md"
 
         - **`ProductBases`**: categories array.
             - **`ProductBaseId`**: category identifier. 13 character alphanumeric.

@@ -1,10 +1,15 @@
 # Comprobar sesiones auto asignadas
 
-Existen ciertos productos cuyas sesiones no pueden ser elegidas explícitamente, es el sistema el que auto asigna las sesiones según la disponibilidad.
+Pueden existir productos cuyas sesiones no pueden ser elegidas o no es obligatorio elegirlas, en este caso es el sistema el que asigna las sesiones según la disponibilidad.
 
-Para saber si un producto tiene sesiones auto asignadas, se comprueba mirando en el [catálogo](catalog.md) la propiedad [TicketEnclosureAutoAssignSessionType](catalog.md#estructura-de-datos-de-respuesta) del nodo de sesiones de un recinto.
+Para saber si un producto tiene sesiones auto asignadas se comprueba mirando en el [catálogo](catalog.md) la propiedad **``TicketEnclosureAutoAssignSessionType``** del nodo de sesiones del recinto.
 
-Una vez lanza la consulta se devolverá, a modo informativo, las sesiones ue se auto asignarán cuando se realice el proceso de reserva.
+??? example "Posibles valores de TicketEnclosureAutoAssignSessionType"
+    --8<-- "includes/annex/autoAssignSessionType.es.md"
+
+Una vez lanzada la consulta se devolverá, a modo informativo, la sesión que se asignará cuando se confirme el carrito.
+
+!!! warning "La sesión obtenida puede no ser la sesión asignada en el momento de confirmar el carrito."
 
 ## Método de acceso
 
@@ -12,54 +17,18 @@ Una vez lanza la consulta se devolverá, a modo informativo, las sesiones ue se 
 
 ## Estructura de datos de envío
 
-- **`LanguageCode`**: define el idioma en que se mostrarán los textos.
-
-    ??? example "Posibles valores"
-        - es
-        - en
-        - fr
-        - it
-
-- **`Products`**: lista de productos para los que se quieren comprobar las sesiones.
+- **`LanguageCode`**: define el idioma en que se mostrarán los textos. *Formato ISO 639-1*.
+- **`Products`**: array de productos para los que se quieren comprobar las sesiones.
     - **`ProductId`**: identificador del producto.
-    - **`Quantity`**: cantidad.
+    - **`Quantity`**: cantidad del producto.
     - **`AccessDate`**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
-    - **`Tickets`**: lista de tickets para los que queremos comprobar la auto asignación.
+    - **`Tickets`**: array de tickets para los que queremos comprobar la auto asignación.
         - **`TicketId`**: identificador del ticket.
-        - **`AccessDate`**: (opcional) si se indica, tiene preferencia sobre la fecha indicada a nivel de producto. *Formato ISO 8601 (yyyy-MM-dd)*.
+        - **`AccessDate`**: *opcional*, si se indica, tiene preferencia sobre la fecha indicada a nivel de producto. *Formato ISO 8601 (yyyy-MM-dd)*.
 
 ### Ejemplo de envío
 
-En el siguiente ejemplo vamos a comprobar las sesiones auto asignadas para un producto con sesiones disponibles y otro sin sesiones disponibles.
-
---8<-- "includes/AutoAssignSessionQueryExamples.md"
-
-``` json
-{
-    "Products": [
-        {
-            "ProductId": "hwuk9huaqopwo",
-            "Quantity": 4,
-            "AccessDate": "2022-06-02",
-            "Tickets": [
-                {
-                    "TicketId": "654e5ytetr"
-                }
-            ]
-        },
-        {
-            "ProductId": "6asd55fa6s5f",
-            "Quantity": 4,
-            "AccessDate": "2022-06-02",
-            "Tickets": [
-                {
-                    "TicketId": "uy456i4yu6"
-                }
-            ]
-        }
-    ]
-}
-```
+--8<-- "includes/examples/activity/autoAssignSessionQueryExamples.md"
 
 ## Estructura de datos de respuesta
 
@@ -78,59 +47,15 @@ En el siguiente ejemplo vamos a comprobar las sesiones auto asignadas para un pr
         - **`ResultType`**: atributo que indica el resultado de la auto asignación.
 
             ??? example "Posibles valores"
-                Para definir el criterio de acceso utilizamos atributos de tipo entero, pudiendo tomar los siguientes valores:
-                
-                - `Ok`. Auto asignación correcta: 0.
-                - `HasNotTicketEnclosure`. El producto no tiene recintos, por lo tanto es un producto sin sesiones: 1.
-                - `TicketEnclosureSessionTypeIsNone`. El producto no tiene sesiones en ninguno de sus recintos: 2.
-                - `TicketEnclosureDoesNotAcceptAutoAssign`. El producto no tiene recintos con sesiones configuradas como auto asignables: 3.
-                - `TicketEnclosureHasNoSessionsAvailable`. No hay sesiones disponibles para el producto y fecha seleccionados: 4.
+                - 0: **Ok**. Auto asignación correcta.
+                - 1: **HasNotTicketEnclosure**. El producto no tiene recintos, por lo tanto es un producto sin sesiones.
+                - 2: **TicketEnclosureSessionTypeIsNone**. El producto no tiene sesiones en ninguno de sus recintos.
+                - 3: **TicketEnclosureDoesNotAcceptAutoAssign**. El producto no tiene recintos con sesiones configuradas como auto asignables.
+                - 4: **TicketEnclosureHasNoSessionsAvailable**. No hay sesiones disponibles para el producto y fecha seleccionados.
 
-- **`Timestamp`**.
-- **`ErrorMessage`**: mensaje de error explicando por qué la obtención de las sesiones no ha sido correcta. En caso que haya sido correcta, el campo no aparece.
+    - **`Timestamp`**: instante de tiempo en el que se recibe la respuesta.
+    - **`ErrorMessage`**: mensaje de error explicando por qué la obtención de las sesiones no ha sido correcta. En caso que haya sido correcta, el campo no aparece.
 
 ### Ejemplo de respuesta
 
 --8<-- "includes/AutoAssignSessionResultExamples.md"
-
-``` json
-{
-    "Products": [
-        {
-            "ProductId": "hwuk9huaqopwo",
-            "AccessDate": "2022-06-02",
-            "HasTicketEnclosures": true,
-            "Tickets": [
-                {
-                    "TicketId": "654e5ytetr",
-                    "AccessDate": "2022-06-02",
-                    "TicketEnclosureId": "09aslkdfj354",
-                    "SessionId": "lksdgjj4235",
-                    "SessionTime": "18:00",
-                    "SessionContentId": "nljkasdfjlk87",
-                    "SessionContentName": "Viaje al centro de la tierra",
-                    "ResultType": 0
-                }
-            ]
-        },
-        {
-            "ProductId": "6asd55fa6s5f",
-            "AccessDate": "2022-06-02",
-            "HasTicketEnclosures": true,
-            "Tickets": [
-                {
-                    "TicketId": "uy456i4yu654i",
-                    "AccessDate": "2022-06-02",
-                    "TicketEnclosureId": "09aslkdfj354",
-                    "SessionId": "999tre44143",
-                    "SessionContentId": "xcmnbvhasd00",
-                    "SessionContentName": "Robinson Crusoe",
-                    "ResultType": 0
-                }
-            ]
-        }
-    ],
-    "Success": true,
-    "Timestamp": "2022-02-18T17:02:27.8165916"
-}
-```

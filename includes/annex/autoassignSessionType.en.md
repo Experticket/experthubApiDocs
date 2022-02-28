@@ -1,0 +1,3 @@
+- **0: No**. Sessions will not be auto-assigned. Must be defined during the sales flow.
+- **1: IfNotSet**. Sessions will be auto-assigned if they have not been defined during the sales flow.
+- **2: ForceSet**. Sessions will always be forcibly assigned, ignoring if they were defined during the sales flow.
