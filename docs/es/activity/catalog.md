@@ -65,6 +65,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
             - 2: Transporte
 
     - **`IsForGroups`**: indica si los productos del proveedor están destinados a la venta para grupos.
+    - **``IsForSeasonTickets``**: indica si los productos del proveedor son abonos de temporada.
     - **`LimitOfNumberOfPeopleToBeGroup`**: límite del número de personas que conforman un producto a partir del cual la venta se considera para "grupos". Por ejemplo, si este límite es "19" y el proveedor no es para grupos (`#!csharp IsForGroups == false`), no se aceptarán ventas con 20 o más personas. Por contra, si el proveedor es para grupos (`#!csharp IsForGroups == true`), solo se aceptarán ventas para 20 o más personas.
     - **`Logo`**: url para descargar la imagen del logotipo del proveedor.
     - **`Location`**: información de localización.
@@ -99,6 +100,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
         - **`Sessions`**: *opcional*, define la relación entre sesiones y contenido. Antes de continuar, es imprescindible estudiar el apartado [obtención de sesiones](sessions.md).
             - **`SessionContentProfileId`**: para más información acerca de este identificador, consulte la página de [sesiones](sessions.md).
             - **`SessionGroupProfileId`**: para más información acerca de este identificador, consulte la página de [sesiones](sessions.md).
+            - **``HasSeating``**: indica si el recinto tiene asientos, en tal caso será necesario comprobar el tipo de asignación del asiento a nivel de ticket.
             - **`SessionsGroupSessionContents`**: define la relación entre grupos de sesión y contenidos de sesión. Es decir, todas las sesiones del grupo de sesión tendrán asignado el contenido de sesión. `SessionsGroupSessionContents` es excluyente respecto a `SessionSessionContents`.
                 - **`SessionsGroupId`**: identificador del grupo de sesiones.
                 - **`SessionContentId`**: identificador de contenido de sesión.
@@ -228,6 +230,12 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                     - **`TicketName`**: nombre del ticket.
                     - **`TicketConditions`**: *opcional*, condiciones del ticket.
                     - **`TicketEnclosureId`**: identificador del recinto al que pertenece el ticket. Varios tickets puede pertenecer al mismo recinto.
+                    - **``SeatingAssignType``**: Indica el tipo de asignación de asiento que aplica.
+
+                        ??? example "Posibles valores"
+                            - 1: **Auto asignados**, los asientos serán asignados automáticamente por el sistema.
+                            - 3: **Requiere procesamiento**, los asientos serán asignados posteriormente por el proveedor.
+
                     - **`FromAccessDay`** y **`ToAccessDay`**: si están definidos, indican para qué días respecto a la primera fecha de acceso es válido el ticket.
 
                         ???+ tip "Consejo"

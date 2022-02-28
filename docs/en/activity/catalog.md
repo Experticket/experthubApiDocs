@@ -65,6 +65,7 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
             - 2: Transport
 
     - **`IsForGroups`**: indicates if the provider's products are intended for sale to groups.
+    - **``IsForSeasonTickets``**: indicates if the provider's products are season tickets.
     - **`LimitOfNumberOfPeopleToBeGroup`**: limits the number of people that make up a product from which the sale is considered for "groups". For example, if this limit is "19" and the provider is not for groups (`#!csharp IsForGroups == false`), sales with 20 or more people will not be accepted. On the contrary, if the provider is for groups (`#!csharp IsForGroups == true`), sales for 20 or more people will only be accepted.
     - **`Logo`**: url to download the provider's logo.
     - **`Location`**: location information.
@@ -99,6 +100,7 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
         - **`Sessions`**: *optional*, defines the relationship between sessions and content. Before continuing, it is essential to study the [sessions section](sessions.md).
             - **`SessionContentProfileId`**: for more information about this identifier, see the [sessions page](sessions.md).
             - **`SessionGroupProfileId`**: for more information about this identifier, see the [sessions page](sessions.md).
+            - **``HasSeating``**: indicates if the enclosure has seats, in which case it will be necessary to check the type of seat assignment at ticket level.
             - **`SessionsGroupSessionContents`**: defines the relationship between session groups and session contents. That is, all sessions in the session group will have the session content assigned. `SessionsGroupSessionContents` is exclusive with respect to `SessionSessionContents`.
                 - **`SessionsGroupId`**: session group identifier.
                 - **`SessionContentId`**: session content identifier.
@@ -228,6 +230,12 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
                     - **`TicketName`**: ticket name.
                     - **`TicketConditions`**: *optional*, ticket conditions.
                     - **`TicketEnclosureId`**: identifier of the enclosure to which the ticket belongs. Several tickets can belong to the same enclosure.
+                    - **``SeatingAssignType``**: Indicates the type of seat assignment that applies.
+
+                        ??? example "Possible values"
+                            - 1: **Auto assigned**, seats will be automatically assigned by the system.
+                            - 3: **Processing required**, the seats will be assigned later by the provider.
+
                     - **`FromAccessDay`** and **`ToAccessDay`**: if they are defined, they indicate for which days with respect to the first date of access the ticket is valid.
 
                         ???+ tip "Advice"
