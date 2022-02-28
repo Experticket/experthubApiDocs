@@ -58,4 +58,4 @@ Once the query is launched, the session that will be assigned when the cart is c
 
 ### Response example
 
---8<-- "includes/AutoAssignSessionResultExamples.md"
+--8<-- "includes/examples/activity/autoAssignSessionResultExamples.md"

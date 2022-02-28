@@ -58,4 +58,4 @@ Una vez lanzada la consulta se devolverá, a modo informativo, la sesión que se
 
 ### Ejemplo de respuesta
 
---8<-- "includes/AutoAssignSessionResultExamples.md"
+--8<-- "includes/examples/activity/autoAssignSessionResultExamples.md"
