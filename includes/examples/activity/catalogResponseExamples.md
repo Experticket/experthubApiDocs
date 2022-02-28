@@ -1,7 +1,7 @@
 ``` json
 {
     "Success": true,
-    "Timestamp": "2021-02-18T17:02:27.8165916",
+    "Timestamp": "2022-01-01T17:02:27.8165916",
     "ErrorMessage": null,
     "Providers": 
     [
@@ -97,7 +97,7 @@
                     "ProductBaseId": "gfo753rgjfbw6",
                     "ProductBaseName": "Entradas",
                     "ProductBaseDescription": "No se permiten cambios ni devoluciones.",
-                    "DaysWithLimitedCapacity": "2001-11-01",
+                    "DaysWithLimitedCapacity": "2022-11-01",
                     "Products": 
                     [
                         {
@@ -135,19 +135,19 @@
                                     "Price": "20",
                                     "Currency": "€",
                                     "CurrencyName": "Euro",
-                                    "Dates": "2001-01-01,2001-01-02,2001-01-03,2001-07-31"
+                                    "Dates": "2022-01-01,2022-01-02,2022-01-03,2022-07-31"
                                 }, 
                                 {
                                     "Price": "30",
                                     "Currency": "€",
                                     "CurrencyName": "Euro",
-                                    "Dates": "2001-08-01,2001-08-02,2001-08-31"
+                                    "Dates": "2022-08-01,2022-08-02,2022-08-31"
                                 }, 
                                 {
                                     "Price": "15",
                                     "Currency": "€",
                                     "CurrencyName": "Euro",
-                                    "Dates": "2001-09-01,2001-09-02,2001-12-31"
+                                    "Dates": "2022-09-01,2022-09-02,2022-12-31"
                                 }
                             ],
                             "SalesDocumentSettingsViewModel":
@@ -168,7 +168,7 @@
                             "ProductId": "htgy4tgm9q21n",
                             "ProductName": "Entrada 3x2",
                             "ProductDescription": "Por cada dos adultos, entra un niño gratis.",
-                            "DaysWithLimitedCapacity": "2001-04-17,2001-08-15",
+                            "DaysWithLimitedCapacity": "2022-04-17,2022-08-15",
                             "HoursInAdvanceOfPurchase": 4,
                             "MinimumNumberByTransaction": 1,
                             "NumberOfPeople": 3,
@@ -185,19 +185,19 @@
                                     "Price": "35",
                                     "Currency": "€",
                                     "CurrencyName": "Euro",
-                                    "Dates": "2001-01-01,2001-01-02,2001-01-03,2001-07-31"
+                                    "Dates": "2022-01-01,2022-01-02,2022-01-03,2022-07-31"
                                 }, 
                                 {
                                     "Price": "50",
                                     "Currency": "€",
                                     "CurrencyName": "Euro",
-                                    "Dates": "2001-08-01,2001-08-02,2001-08-31"
+                                    "Dates": "2022-08-01,2022-08-02,2022-08-31"
                                 }, 
                                 {
                                     "Price": "25",
                                     "Currency": "€",
                                     "CurrencyName": "Euro",
-                                    "Dates": "2001-09-01,2001-09-02,2001-12-31"
+                                    "Dates": "2022-09-01,2022-09-02,2022-12-31"
                                 }
                             ],
                             "SalesDocumentSettingsViewModel":{
@@ -262,7 +262,7 @@
                                     "Price": "5",
                                     "Currency": "€",
                                     "CurrencyName": "Euro",
-                                    "Dates": "2001-01-01,2001-01-02,2001-01-03,2001-12-31"
+                                    "Dates": "2022-01-01,2022-01-02,2022-01-03,2022-12-31"
                                 }
                             ],
                             "SalesDocumentSettingsViewModel":

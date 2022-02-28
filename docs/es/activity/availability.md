@@ -24,7 +24,7 @@ El aforo concierne a los tickets de tipo aforo (``#!chsarp IsQuotaTicket == true
             "DaysWithLimitedCapacity": "2022-11-01"
         }
         ```
-    - El siguiente ``Product`` tiene marcados el 15 de agosto y el 17 de abril de 2001 como fechas en la que hay que consultar la disponibilidad.
+    - El siguiente ``Product`` tiene marcados el 15 de agosto y el 17 de abril de 2022 como fechas en la que hay que consultar la disponibilidad.
 
         ``` json hl_lines="3"
         {
@@ -174,7 +174,7 @@ El aforo concierne a los tickets de tipo aforo (``#!chsarp IsQuotaTicket == true
     - **`AvailableCapacity`**: capacidad disponible para la venta.
 - **`Sessions`**: array que contiene las sesiones solicitadas. Corresponde a cada día con acceso limitado de cada una de las sesiones.
     - **`SessionId`**: identificador de la sesión.
-    - **`Date`**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
+    - **`Date`**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-ddThh:mm:ss.fffffff)*.
     - **`AvailableCapacity`**: capacidad disponible para la venta.
 - **`Success`**: booleano (true/false) que indica si la obtención de la disponibilidad ha sido correcta o no.
 - **`Timestamp`**.
@@ -182,30 +182,4 @@ El aforo concierne a los tickets de tipo aforo (``#!chsarp IsQuotaTicket == true
 
 ### Ejemplo de respuesta
 
---8<-- "includes/AvailabilityResultExamples.md"
-
-``` json
-{
-    "ProductsBases": [],
-    "Products": [
-        {
-            "ProductId": "zqqucgr1njhfq",
-            "Date": "2021-07-20",
-            "AvailableCapacity": 0
-        },
-        {
-            "ProductId": "zqqucgr1njhfq",
-            "Date": "2021-07-22",
-            "AvailableCapacity": 0
-        },
-        {
-            "ProductId": "zqqucgr1njhfq",
-            "Date": "2021-07-23",
-            "AvailableCapacity": 99
-        }
-    ],
-    "Sessions": [],
-    "Success": true,
-    "Timestamp": "2022-02-18T17:02:27.8165916"
-}
-```
+--8<-- "includes/activity/availabilityResponseExamples.md"

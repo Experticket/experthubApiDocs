@@ -40,7 +40,7 @@ En el siguiente ejemplo vamos a comprobar las sesiones auto asignadas para un pr
         {
             "ProductId": "hwuk9huaqopwo",
             "Quantity": 4,
-            "AccessDate": "2021-06-02",
+            "AccessDate": "2022-06-02",
             "Tickets": [
                 {
                     "TicketId": "654e5ytetr"
@@ -50,7 +50,7 @@ En el siguiente ejemplo vamos a comprobar las sesiones auto asignadas para un pr
         {
             "ProductId": "6asd55fa6s5f",
             "Quantity": 4,
-            "AccessDate": "2021-06-02",
+            "AccessDate": "2022-06-02",
             "Tickets": [
                 {
                     "TicketId": "uy456i4yu6"
@@ -98,12 +98,12 @@ En el siguiente ejemplo vamos a comprobar las sesiones auto asignadas para un pr
     "Products": [
         {
             "ProductId": "hwuk9huaqopwo",
-            "AccessDate": "2021-06-02",
+            "AccessDate": "2022-06-02",
             "HasTicketEnclosures": true,
             "Tickets": [
                 {
                     "TicketId": "654e5ytetr",
-                    "AccessDate": "2021-06-02",
+                    "AccessDate": "2022-06-02",
                     "TicketEnclosureId": "09aslkdfj354",
                     "SessionId": "lksdgjj4235",
                     "SessionTime": "18:00",
@@ -115,12 +115,12 @@ En el siguiente ejemplo vamos a comprobar las sesiones auto asignadas para un pr
         },
         {
             "ProductId": "6asd55fa6s5f",
-            "AccessDate": "2021-06-02",
+            "AccessDate": "2022-06-02",
             "HasTicketEnclosures": true,
             "Tickets": [
                 {
                     "TicketId": "uy456i4yu654i",
-                    "AccessDate": "2021-06-02",
+                    "AccessDate": "2022-06-02",
                     "TicketEnclosureId": "09aslkdfj354",
                     "SessionId": "999tre44143",
                     "SessionContentId": "xcmnbvhasd00",
