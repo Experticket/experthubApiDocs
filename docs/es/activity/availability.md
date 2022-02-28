@@ -189,7 +189,7 @@ El aforo concierne a los tickets de tipo aforo (``#!chsarp IsQuotaTicket == true
     - **`SessionId`**: identificador de la sesión.
     - **`Date`**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-ddThh:mm:ss.fffffff)*.
     - **`AvailableCapacity`**: capacidad disponible para la venta.
-- **`Success`**: booleano (true/false) que indica si la obtención de la disponibilidad ha sido correcta o no.
+- **`Success`**: booleano (``#!csharp true/false``) que indica si la obtención de la disponibilidad ha sido correcta o no.
 - **`Timestamp`**: indica el momento de la obtención de la respuesta. *Formato ISO 8601 (yyyy-MM-ddThh:mm:ss.fffffff)*.
 - **`ErrorMessage`**: mensaje de error explicando por qué la obtención de la disponibilidad no ha sido correcta. En caso que haya sido correcta, el campo no aparece.
 
