@@ -160,7 +160,7 @@ El aforo concierne a los tickets de tipo aforo (``#!chsarp IsQuotaTicket == true
 
 ### Ejemplos de envío
 
---8<-- "includes/activity/AvailabilityQueryExamples.md"
+--8<-- "includes/examples/activity/availabilityQueryExamples.md"
 
 ## Estructura de datos de respuesta
 
@@ -182,4 +182,4 @@ El aforo concierne a los tickets de tipo aforo (``#!chsarp IsQuotaTicket == true
 
 ### Ejemplo de respuesta
 
---8<-- "includes/activity/availabilityResponseExamples.md"
+--8<-- "includes/examples/activity/availabilityResponseExamples.md"
