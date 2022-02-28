@@ -22,4 +22,4 @@ The product catalog is totally dynamic and can suffer changes. To easily detect 
 
 ### Ejemplo de respuesta
 
---8<-- "includes/examples/activity/catalogResponseExamples.md"
+--8<-- "includes/examples/activity/lastCatalogUpdatedDateResponseExamples.md"

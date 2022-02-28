@@ -22,4 +22,4 @@ El catálogo de productos es totalmente dinámico y puede sufrir cambios. Para d
 
 ### Ejemplo de respuesta
 
---8<-- "includes/examples/activity/catalogResponseExamples.md"
+--8<-- "includes/examples/activity/lastCatalogUpdatedDateResponseExamples.md"
