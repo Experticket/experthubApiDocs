@@ -11,13 +11,13 @@ The product catalog is totally dynamic and can suffer changes. To easily detect 
 
 ## Access method
 
-**POST** /activity/cataloglastupdateddatetime
+**GET** /activity/cataloglastupdateddatetime
 
 ## Response data structure
 
-- **``LastUpdatedDateTime``**: date of the last modification of the catalog. *Formato ISO 8601 (yyyy-MM-ddThh:mm:ss.fffffff)*.
+- **``LastUpdatedDateTime``**: date of the last modification of the catalog. *ISO 8601 format (yyyy-MM-ddThh:mm:ss.fffffff)*.
 - **``Success``**: boolean (``#!csharp true/false``) that indicates if the request has been correct or not.
-- **``Timestamp``**: time instant of request processing. *Formato ISO 8601 (yyyy-MM-ddThh:mm:ss.fffffff)*.
+- **``Timestamp``**: time instant of request processing. *ISO 8601 format (yyyy-MM-ddThh:mm:ss.fffffff)*.
 - **``ErrorMessage``**: error message explaining why the request was not successful. If it was correct, it will return ``#!csharp null``.
 
 ### Ejemplo de respuesta

@@ -12,7 +12,7 @@ The sales flow rules are used to automatically modify or add products to the sal
 
 ## Access method
 
-**POST** activity/saleflowrules
+**GET** activity/saleflowrules
 
 ## Response data structure
 
@@ -55,7 +55,7 @@ The sales flow rules are used to automatically modify or add products to the sal
             - **``PriceModifierValue``**: indicates what price value applies to the product.
 
 - **``Success``**: boolean (`#!csharp true/false`) that indicates if the request has been processed correctly.
-- **``Timestamp``**: instant of time when the request is processed.
+- **``Timestamp``**: instant of time when the request is processed. *ISO 8601 format (yyyy-MM-ddThh:mm:ss.fffffff)*.
 - **``ErrorMessage``**: in case of error includes a brief description of the problem.
 
 ### Response example
@@ -64,6 +64,6 @@ The sales flow rules are used to automatically modify or add products to the sal
     In the following example we can see two rules:
 
     - **Discount rule**: if the purchase contains the products "twy5yhbishk91" and "uspeg7nr5st96", the product "twy5yhbishk91" is updated with a €5 discount.
-    - **Free product rule 3x2**: if the purchase contains the product "hwuk9huaqopwo" with quantity 2, the product "twy5yhbishk91" is added with a 100% discount.
+    - **Free product rule (3x2)**: if the purchase contains the product "hwuk9huaqopwo" with quantity 2, the product "twy5yhbishk91" is added with a 100% discount.
 
 --8<-- "includes/examples/activity/saleFlowRulesResponseExamples.md"

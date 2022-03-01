@@ -11,7 +11,7 @@ El catálogo de productos es totalmente dinámico y puede sufrir cambios. Para d
 
 ## Método de acceso
 
-**POST** /activity/cataloglastupdateddatetime
+**GET** /activity/cataloglastupdateddatetime
 
 ## Estructura de datos de respuesta
 

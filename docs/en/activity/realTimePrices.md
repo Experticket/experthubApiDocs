@@ -60,7 +60,7 @@ Para obtener los precios en tiempo real debe especificarse la siguiente estructu
     - **`Success`**: booleano (true/false) que indica si la obtención del precio en tiempo real de este proucto ha sido correcta o no.
     - **`ErrorMessage`**: mensaje de error explicando por qué la obtención del precio en tiempo real de este producto no ha sido correcta. En caso que haya sido correcta, el campo no aparece.
 - **`Success`**: booleano (true/false) que indica si la obtención de los precios en tiempo real ha sido correcta o no.
-- **`Timestamp`**.
+- **`Timestamp`**. *ISO 8601 format (yyyy-MM-ddThh:mm:ss.fffffff)*
 - **`ErrorMessage`**: mensaje de error explicando por qué la obtención de los precios en tiempo real no ha sido correcta. En caso que haya sido correcta, el campo no aparece.
 
 ### Ejemplos de respuesta

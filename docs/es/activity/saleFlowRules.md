@@ -12,7 +12,7 @@ Las reglas de flujo de venta sirven para que se modifiquen o añadan productos a
 
 ## Método de acceso
 
-**POST** activity/saleflowrules
+**GET** activity/saleflowrules
 
 ## Estructura de datos de respuesta
 
@@ -55,7 +55,7 @@ Las reglas de flujo de venta sirven para que se modifiquen o añadan productos a
             - **``PriceModifierValue``**: indica qué valor de precio se aplica al producto.
 
 - **``Success``**: booleano (`#!csharp true/false`) que indica si la petición se ha procesado correctamente.
-- **``Timestamp``**: instante de tiempo del momento en que se procesa la petición.
+- **``Timestamp``**: instante de tiempo del momento en que se procesa la petición. *Formato ISO 8601 (yyyy-MM-ddThh:mm:ss.fffffff)*.
 - **``ErrorMessage``**: en caso de error incluye una breve descripción del problema.
 
 ### Ejemplo de respuesta
@@ -64,6 +64,6 @@ Las reglas de flujo de venta sirven para que se modifiquen o añadan productos a
     En el siguiente ejemplo podemos ver dos reglas:
 
     - **Regla descuento**: si la compra contiene los productos "twy5yhbishk91" y "uspeg7nr5st96" se actualiza el producto "twy5yhbishk91" con 5€ de descuento.
-    - **Regla producto gratis 3x2**: si la compra contiene el producto "hwuk9huaqopwo" con cantidad 2, se añade el producto "twy5yhbishk91" con un 100% de descuento.
+    - **Regla producto gratis (3x2)**: si la compra contiene el producto "hwuk9huaqopwo" con cantidad 2, se añade el producto "twy5yhbishk91" con un 100% de descuento.
 
 --8<-- "includes/examples/activity/saleFlowRulesResponseExamples.md"

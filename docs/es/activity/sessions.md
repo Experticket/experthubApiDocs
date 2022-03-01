@@ -153,7 +153,7 @@ Debe especificarse la siguiente estructura de datos en el cuerpo del método.
         - **`SessionContentName`**: nombre del contenido de sesión.
         - **`SessionContentDescription`**: descripción del contenido de sesión.
 - **`Success`**: booleano (true/false) que indica si la obtención de las sesiones ha sido correcta o no.
-- **`Timestamp`**.
+- **`Timestamp`**. *Formato ISO 8601 (yyyy-MM-ddThh:mm:ss.fffffff)*.
 - **`ErrorMessage`**: mensaje de error explicando por qué la obtención de las sesiones no ha sido correcta. En caso que haya sido correcta, el campo no aparece.
 
 ### Ejemplo de respuesta

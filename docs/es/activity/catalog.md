@@ -302,7 +302,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
             - 4: Prepago
 
 - **`Success`**: valor de verdad, `#!csharp true/false` que indica si la obtención del catálogo ha sido o no correcta.
-- **`Timestamp`**: momento de la obtención del catálogo.
+- **`Timestamp`**: momento de la obtención del catálogo. *Formato ISO 8601 (yyyy-MM-ddThh:mm:ss.fffffff)*.
 - **`ErrorMessage`**: mensaje de error explicando por qué la obtención del catálogo no ha sido correcta. En caso que haya sido correcta, devolverá `#!csharp null`.
 
 ### Ejemplo de respuesta

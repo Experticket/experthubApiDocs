@@ -75,7 +75,9 @@ nav:
         - Sessions: activity/sessions.md
         - Check auto assigned sessions: activity/autoAssignSession.md
         - Available capacity: activity/availability.md
-        - Sale flow rules: activity/saleFlowRules.md
+        - Sale flow rules: 
+          - Get rules: activity/saleFlowRules.md
+          - Check applied rules: activity/checkSaleFlowRules.md
       - Accomodation: 
         - Basic catalog: accommodation/basicCatalog.md
         - Full catalog: accommodation/fullCatalog.md

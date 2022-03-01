@@ -302,7 +302,7 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
             - 4: Prepaid
 
 - **`Success`**: boolean, `#!csharp true/false` that indicates if the obtaining of the catalog has been successful or not.
-- **`Timestamp`**: time of obtaining the catalog.
+- **`Timestamp`**: time of obtaining the catalog. *ISO 8601 format (yyyy-MM-ddThh:mm:ss.fffffff)*.
 - **`ErrorMessage`**: error message explaining why the catalog fetch was unsuccessful. If it was correct, it will return `#!csharp null`.
 
 ### Response example
