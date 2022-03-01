@@ -17,7 +17,7 @@ Es necesario realizar esta llamada cada vez que queramos averiguar el precio de 
 Para obtener los precios en tiempo real debe especificarse la siguiente estructura de datos en el cuerpo del método.
 
 - **`ProductIds`**: lista identificadores de producto.
-- **`AccessDates`**: lista fechas de entrada que queremos consultar.
+- **`AccessDates`**: lista fechas de entrada que queremos consultar. *Formato ISO 8601 (yyyy-MM-dd)*.
 - **`StartDate`**: inicio del rango de fechas de entrada que queremos consultar. Complementa a `AccessDates` y necesita que se especifique `EndDate`. *Formato ISO 8601 (yyyy-MM-dd)*.
 - **`EndDate`**: fin del rango de fechas de entrada que queremos consultar. Complementa a `AccessDates` y necesita que se especifique `StartDate`. *Formato ISO 8601 (yyyy-MM-dd)*.
 - **`CombinedProducts`**: array de productos combinados.

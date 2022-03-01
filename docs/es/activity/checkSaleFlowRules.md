@@ -11,10 +11,10 @@ Una vez lanzada la consulta se devolverá, a modo informativo, los datos suficie
 ## Estructura de datos de envío
 
 - **``ApiKey``**: clave única y privada que identifica al colaborador. *La ApiKey se obtendrá desde el AdminPartner*.
-- **``AccessDateTime``**: fecha de acceso.
+- **``AccessDateTime``**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
 - **``Products``**: productos que componen la venta.
     - **``AccessDateTime``**: *opcional*, fecha de acceso. Si se define a nivel de producto tiene precedencia sobre la fecha definida a nivel global.
-    - **``ProductId``**: identificador del producto.
+    - **``ProductId``**: identificador del producto. *Formato ISO 8601 (yyyy-MM-dd)*.
     - **``Quantity``**: *opcional*, cantidad. Por defecto su valor es 1.
 
 ### Ejemplo de envío
@@ -30,12 +30,12 @@ Una vez lanzada la consulta se devolverá, a modo informativo, los datos suficie
 
 - **``NotModifiedProducts``**: array que contiene productos que no han sido modificados.
     - **``ProductId``**: identificador del producto.
-    - **``AccessDateTime``**: fecha de acceso del producto.
+    - **``AccessDateTime``**: fecha de acceso del producto. *Formato ISO 8601 (yyyy-MM-dd)*.
     - **``OriginalPrice``**: precio sin modificar del producto.
     - **``Price``**: precio final producto.
 - **``ModifiedProducts``**: array que contiene productos modificados que ya estaban incluidos en la venta.
     - **``ProductId``**: identificador del producto.
-    - **``AccessDateTime``**: fecha de acceso del producto.
+    - **``AccessDateTime``**: fecha de acceso del producto. *Formato ISO 8601 (yyyy-MM-dd)*.
     - **``OriginalPrice``**: precio sin modificar del producto.
     - **``Price``**: precio final producto.
     - **``SaleFlowRuleId``**: identificador de la regla.
@@ -44,7 +44,7 @@ Una vez lanzada la consulta se devolverá, a modo informativo, los datos suficie
     - **``SaleFlowRuleName``**: nombre de la regla aplicada.
 - **``AddedProducts``**: array que contiene productos añadidos que no estaban incluidos en la venta.
     - **``ProductId``**: identificador del producto.
-    - **``AccessDateTime``**: fecha de acceso del producto.
+    - **``AccessDateTime``**: fecha de acceso del producto. *Formato ISO 8601 (yyyy-MM-dd)*.
     - **``OriginalPrice``**: precio sin modificar del producto.
     - **``Price``**: precio final producto.
     - **``SaleFlowRuleId``**: identificador de la regla.

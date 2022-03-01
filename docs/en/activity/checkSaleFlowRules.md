@@ -11,9 +11,9 @@ Once the query is launched, sufficient data will be returned, for information pu
 ## Request data structure
 
 - **``ApiKey``**: unique and private key that identifies the partner. *The ApiKey will be obtained from the AdminPartner*.
-- **``AccessDateTime``**: access date.
+- **``AccessDateTime``**: access date. *ISO 8601 format (yyyy-MM-dd)*.
 - **``Products``**: products that make up the sale.
-    - **``AccessDateTime``**: *optional*, access date. If defined, it has precedence over the date defined globally..
+    - **``AccessDateTime``**: *optional*, access date. If defined, it has precedence over the date defined globally. *ISO 8601 format (yyyy-MM-dd)*.
     - **``ProductId``**: product identifier.
     - **``Quantity``**: *optional*, amount. By default its value is 1.
 
@@ -30,12 +30,12 @@ Once the query is launched, sufficient data will be returned, for information pu
 
 - **``NotModifiedProducts``**: array containing products that have not been modified.
     - **``ProductId``**: product identifier.
-    - **``AccessDateTime``**: product access date.
+    - **``AccessDateTime``**: product access date. *ISO 8601 format (yyyy-MM-dd)*.
     - **``OriginalPrice``**: unchanged price of the product.
     - **``Price``**: final product price.
 - **``ModifiedProducts``**: array containing modified products that were already included in the sale.
     - **``ProductId``**: product identifier.
-    - **``AccessDateTime``**: product access date.
+    - **``AccessDateTime``**: product access date. *ISO 8601 format (yyyy-MM-dd)*.
     - **``OriginalPrice``**: unchanged price of the product.
     - **``Price``**: final product price.
     - **``SaleFlowRuleId``**: rule identifier.
@@ -44,7 +44,7 @@ Once the query is launched, sufficient data will be returned, for information pu
     - **``SaleFlowRuleName``**: applied rule name.
 - **``AddedProducts``**: array containing added products that were not included in the sale.
     - **``ProductId``**: product identifier.
-    - **``AccessDateTime``**: product access date.
+    - **``AccessDateTime``**: product access date. *ISO 8601 format (yyyy-MM-dd)*.
     - **``OriginalPrice``**: unchanged price of the product.
     - **``Price``**: final product price.
     - **``SaleFlowRuleId``**: rule identifier.
