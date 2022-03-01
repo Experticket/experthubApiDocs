@@ -66,9 +66,9 @@ plugins:
 nav:
     - Inicio: index.md
     - Documentación:
-      - Introducción: intro.md 
-      - Especificación de datos: struct.md
-      - Conexión: connection.md
+      - Introducción: docs/intro.md 
+      - Especificación de datos: docs/struct.md
+      - Conexión: docs/connection.md
       - Actividades:
         - Catálogo: docs/activity/catalog.md
         - Última fecha de actualización del catálogo: docs/activity/lastCatalogUpdatedDate.md
@@ -80,10 +80,10 @@ nav:
           - Obtener reglas: docs/activity/saleFlowRules.md
           - Comprobar reglas aplicadas: docs/activity/checkSaleFlowRules.md
       - Alojamiento: 
-        - Catálogo básico: accommodation/basicCatalog.md
-        - Catálogo completo: accommodation/fullCatalog.md
+        - Catálogo básico: docs/accommodation/basicCatalog.md
+        - Catálogo completo: docs/accommodation/fullCatalog.md
       - Paquetes:
-        - Catálogo: package/catalog.md
-        - Catálogo extendido: package/extendedCatalog.md
+        - Catálogo: docs/package/catalog.md
+        - Catálogo extendido: docs/package/extendedCatalog.md
     - FAQ: faq.md
     - Acerca de: about.md
