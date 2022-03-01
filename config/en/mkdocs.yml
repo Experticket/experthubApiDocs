@@ -69,15 +69,15 @@ nav:
       - Data specification: struct.md
       - Connection: connection.md
       - Activity:
-        - Catalog: activity/catalog.md
-        - Last catalog update date: activity/lastCatalogUpdatedDate.md
-        - Real time prices: activity/realTimePrices.md
-        - Sessions: activity/sessions.md
-        - Check auto assigned sessions: activity/autoAssignSession.md
-        - Available capacity: activity/availability.md
+        - Catalog: docs/activity/catalog.md
+        - Last catalog update date: docs/activity/lastCatalogUpdatedDate.md
+        - Real time prices: docs/activity/realTimePrices.md
+        - Sessions: docs/activity/sessions.md
+        - Check auto assigned sessions: docs/activity/autoAssignSession.md
+        - Available capacity: docs/activity/availability.md
         - Sale flow rules: 
-          - Get rules: activity/saleFlowRules.md
-          - Check applied rules: activity/checkSaleFlowRules.md
+          - Get rules: docs/activity/saleFlowRules.md
+          - Check applied rules: docs/activity/checkSaleFlowRules.md
       - Accomodation: 
         - Basic catalog: accommodation/basicCatalog.md
         - Full catalog: accommodation/fullCatalog.md

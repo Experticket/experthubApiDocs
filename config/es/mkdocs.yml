@@ -70,15 +70,15 @@ nav:
       - Especificación de datos: struct.md
       - Conexión: connection.md
       - Actividades:
-        - Catálogo: activity/catalog.md
-        - Última fecha de actualización del catálogo: activity/lastCatalogUpdatedDate.md
-        - Precios en tiempo real: activity/realTimePrices.md
-        - Sesiones: activity/sessions.md
-        - Comprobar sesiones auto asignadas: activity/autoAssignSession.md
-        - Aforo disponible: activity/availability.md
+        - Catálogo: docs/activity/catalog.md
+        - Última fecha de actualización del catálogo: docs/activity/lastCatalogUpdatedDate.md
+        - Precios en tiempo real: docs/activity/realTimePrices.md
+        - Sesiones: docs/activity/sessions.md
+        - Comprobar sesiones auto asignadas: docs/activity/autoAssignSession.md
+        - Aforo disponible: docs/activity/availability.md
         - Reglas de flujo de venta: 
-          - Obtener reglas: activity/saleFlowRules.md
-          - Comprobar reglas aplicadas: activity/checkSaleFlowRules.md
+          - Obtener reglas: docs/activity/saleFlowRules.md
+          - Comprobar reglas aplicadas: docs/activity/checkSaleFlowRules.md
       - Alojamiento: 
         - Catálogo básico: accommodation/basicCatalog.md
         - Catálogo completo: accommodation/fullCatalog.md
