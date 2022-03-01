@@ -2,7 +2,7 @@
 
 The sales flow rules are used to automatically modify or add products to the sale according to a series of conditions that are met depending on the selected products.
 
-??? info "Example"
+??? info "Examples"
     - If four units of the product 'Product1' are added to the sale, a fifth unit of the product is automatically added at zero cost.
     - If the product 'Product2' is added and the product 'Product3' is also added, a 50% discount will be applied to the product 'Product3'.
     - For every 20 children added to a school group, a free teacher ticket is added.

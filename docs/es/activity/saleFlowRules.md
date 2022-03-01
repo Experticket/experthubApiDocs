@@ -2,7 +2,7 @@
 
 Las reglas de flujo de venta sirven para que se modifiquen o añadan productos automáticamente a la venta según una serie de condiciones que se cumplen dependiendo de los productos seleccionados.
 
-??? info "Ejemplo"
+??? info "Ejemplos"
     - Si se añaden cuatro unidades del producto 'Producto1' a la venta, se añade automáticamente una quinta unidad del producto a coste cero.
     - Si se añade el producto 'Product2' y además se añade el producto 'Producto3', se aplicará un 50% de descuento al producto 'Producto3'.
     - Por cada 20 niños añadidos a un grupo escolar, se añade una entrada de maestro gratis.
