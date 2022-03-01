@@ -76,6 +76,7 @@ nav:
         - Sesiones: activity/sessions.md
         - Comprobar sesiones auto asignadas: activity/autoAssignSession.md
         - Aforo disponible: activity/availability.md
+        - Reglas de flujo de venta: activity/saleFlowRules.md
       - Alojamiento: 
         - Catálogo básico: accommodation/basicCatalog.md
         - Catálogo completo: accommodation/fullCatalog.md
