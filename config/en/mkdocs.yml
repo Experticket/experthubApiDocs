@@ -78,6 +78,8 @@ nav:
         - Sale flow rules: 
           - Get rules: docs/activity/saleFlowRules.md
           - Check applied rules: docs/activity/checkSaleFlowRules.md
+        - Delivery methods:
+          - Get available methods: docs/activity/deliveryMethods.md
       - Accomodation: 
         - Basic catalog: docs/accommodation/basicCatalog.md
         - Full catalog: docs/accommodation/fullCatalog.md

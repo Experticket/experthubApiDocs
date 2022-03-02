@@ -224,6 +224,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                         ??? example "Posibles valores de AccessDateCriteria y AccessDateCriteriaOpenDateSalesDocument"
                             --8<-- "includes/annex/accessDateCriteria.es.md"
 
+                - **`HasSaleFlowRule`**: indica si el producto tiene alguna regla asociada de flujo de venta. En el caso de ser ``#!csharp true`` se recomienda consultar el método [Comprobar reglas de flujo de venta](checkSaleFlowRules.md) para comprobar qué cambios va a producir la inclusión de este producto a la hora de añadirlo al carrito.
                 - **`Tickets`**: *opcional*, array de tickets. En caso de que el producto no trabaje con tickets, este campo no existirá.
                     - **`TicketId`**: identificador de ticket. Alfanumérico de 13 caracteres.
                     - **`IsQuotaTicket`**: booleano que indica si el ticket es o no de tipo aforo, lo que quiere decir que en caso de ser `#!csharp true` el ticket computará para el total de aforo necesario para reservar el producto. Por ejemplo, si tenemos un producto donde tiene 3 tickets definidos pero únicamente 2 de ellos son de tipo aforo, entonces al consultar la disponibilidad para esté producto hay que tener en cuenta que a nivel de aforo necesita 2 de disponibilidad. En otras palabras en caso de que el aforo disponible fuese 1 no podríamos reservar este producto. Para más información consulta el endpoint [obtención de aforo disponible](availability.md).
@@ -271,6 +272,8 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                                 - Ticket Adulto primer día: adulto 2 (Type = 3, PersonNumber = 2)
                                 - Ticket Adulto segundo día: adulto 1 (Type = 3, PersonNumber = 1)
                                 - Ticket Adulto segundo día: adulto 2 (Type = 3, PersonNumber = 2)
+
+                    - **``RequiresDeliveryManagement``**: indica si es un ticket que requiere de entrega física. En caso afirmativo, habrá que elegir el método de entrega al añadir el producto al carrito. Puede consultar los métodos de entrega disponibles en el apartado [Obtener Métodos de entrega](deliveryMethods.md).
 
                 - **`ProductPaxGroupingId`**: *opcional*, identificador de la agrupación de productos a la que pertenece el producto.
 

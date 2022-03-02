@@ -224,6 +224,7 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
                         ??? example "Possible values of AccessDateCriteria and AccessDateCriteriaOpenDateSalesDocument"
                             --8<-- "includes/annex/accessDateCriteria.en.md"
 
+                - **`HasSaleFlowRule`**: indicates if the product has any associated sales flow rule. In the case of being ``#!csharp true``, it is recommended to consult the method [Check sale flow rules](checkSaleFlowRules.md) to check what changes the inclusion of this product will produce when adding it to the cart.
                 - **`Tickets`**: *optional*, ticket array. In case the product does not work with tickets, this field will not exist.
                     - **`TicketId`**: ticket identifier. 13 character alphanumeric.
                     - **`IsQuotaTicket`**: boolean indicating whether or not the ticket is capacity type, which means that if `#!csharp true` the ticket will compute for the total capacity necessary to reserve the product. For example, if we have a product where it has 3 defined tickets but only 2 of them are capacity type, then when checking the availability for this product we must take into account that at the capacity level it needs 2 availability. In other words, if the available capacity was 1, we could not reserve this product. More information about it in the section on [obtaining available capacity](availability.md).
@@ -271,6 +272,8 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
                                 - Adult First Day Ticket: adult 2 (Type = 3, PersonNumber = 2)
                                 - Second Day Adult Ticket: adult 1 (Type = 3, PersonNumber = 1)
                                 - Second Day Adult Ticket: adult 2 (Type = 3, PersonNumber = 2)
+
+                    - **``RequiresDeliveryManagement``**: indicates if it is a ticket that requires physical delivery. If so, you will have to choose the delivery method when adding the product to the cart. You can check the available delivery methods in the section [Get Delivery Methods](deliveryMethods.md).
 
                 - **`ProductPaxGroupingId`**: *optional*, identifier of the product group to which the product belongs.
 
