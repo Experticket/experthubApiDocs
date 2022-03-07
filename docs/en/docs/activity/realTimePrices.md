@@ -12,7 +12,7 @@ Es necesario realizar esta llamada cada vez que queramos averiguar el precio de 
 
 **POST** /realTimePrices
 
-## Estructura de datos de envío
+## Estructura de datos de la petición
 
 Para obtener los precios en tiempo real debe especificarse la siguiente estructura de datos en el cuerpo del método.
 
@@ -26,7 +26,7 @@ Para obtener los precios en tiempo real debe especificarse la siguiente estructu
         - **`ProductId`**: identificador del producto combinado.
         - **`AccessDate`**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
 
-### Ejemplos de envío
+### Ejemplos de petición
 
 --8<-- "includes/RealTimePricesQueryExamples.md"
 === "ProductIds"
@@ -44,7 +44,7 @@ Para obtener los precios en tiempo real debe especificarse la siguiente estructu
     }
     ```
 
-## Estructura de datos de respuesta
+## Estructura de datos de la respuesta
 
 - **`ProductsRealTimePrices`**: array de precios en tiempo real.
     - **`ProductId`**: identificador del producto.

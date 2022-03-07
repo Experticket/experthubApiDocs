@@ -14,7 +14,7 @@ Las reglas de flujo de venta sirven para que se modifiquen o añadan productos a
 
 **GET** activity/saleflowrules
 
-## Estructura de datos de respuesta
+## Estructura de datos de la respuesta
 
 - **``Rules``**: array de reglas.
     - **``Id``**: identificador de la regla.

@@ -78,6 +78,7 @@ nav:
         - Sale flow rules: 
           - Get rules: docs/activity/saleFlowRules.md
           - Check applied rules: docs/activity/checkSaleFlowRules.md
+        - Payment methods: docs/activity/paymentMethods.md
         - Delivery methods:
           - Get available methods: docs/activity/deliveryMethods.md
       - Accomodation: 

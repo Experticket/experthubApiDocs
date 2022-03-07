@@ -8,7 +8,7 @@ Una vez lanzada la consulta se devolverá, a modo informativo, los datos suficie
 
 **POST** activity/saleflowrules
 
-## Estructura de datos de envío
+## Estructura de datos de la petición
 
 - **``ApiKey``**: clave única y privada que identifica al colaborador. *La ApiKey se obtendrá desde el AdminPartner*.
 - **``AccessDateTime``**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
@@ -17,7 +17,7 @@ Una vez lanzada la consulta se devolverá, a modo informativo, los datos suficie
     - **``ProductId``**: identificador del producto. *Formato ISO 8601 (yyyy-MM-dd)*.
     - **``Quantity``**: *opcional*, cantidad. Por defecto su valor es 1.
 
-### Ejemplo de envío
+### Ejemplo de petición
 
 !!! info "Ejemplo 1: regla producto gratis (3x2)"
     En este ejemplo vamos a elegir 4 productos "hwuk9huaqopwo". Por lo tanto en los datos de salida deberemos ver aplicada la regla "Regla producto gratis 3x2" vista en los [ejemplos Reglas de flujo de venta](saleFlowRules.md#ejemplo-de-respuesta). Es decir, como pedimos 4 productos "hwuk9huaqopwo" debemos obtener gratis otros dos productos "twy5yhbishk91".
@@ -26,7 +26,7 @@ Una vez lanzada la consulta se devolverá, a modo informativo, los datos suficie
 
 --8<-- "includes/examples/activity/checkSaleFlowRulesQueryExamples.md"
 
-## Estructura de datos de respuesta
+## Estructura de datos de la respuesta
 
 - **``NotModifiedProducts``**: array que contiene productos que no han sido modificados.
     - **``ProductId``**: identificador del producto.

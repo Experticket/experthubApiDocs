@@ -79,6 +79,7 @@ nav:
         - Reglas de flujo de venta: 
           - Obtener reglas: docs/activity/saleFlowRules.md
           - Comprobar reglas aplicadas: docs/activity/checkSaleFlowRules.md
+        - Métodos de pago: docs/activity/paymentMethods.md
         - Métodos de entrega:
           - Obtener métodos disponibles: docs/activity/deliveryMethods.md
       - Alojamiento: 

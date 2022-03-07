@@ -13,7 +13,7 @@ El catálogo de productos es totalmente dinámico y puede sufrir cambios. Para d
 
 **GET** /activity/cataloglastupdateddatetime
 
-## Estructura de datos de respuesta
+## Estructura de datos de la respuesta
 
 - **``LastUpdatedDateTime``**: fecha de la última modificación del catálogo. *Formato ISO 8601 (yyyy-MM-ddThh:mm:ss.fffffff)*.
 - **``Success``**: booleano (``#!csharp true/false``) que indica si la petición ha sido o no correcta.
