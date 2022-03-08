@@ -54,9 +54,7 @@ Las reglas de flujo de venta sirven para que se modifiquen o añadan productos a
 
             - **``PriceModifierValue``**: indica qué valor de precio se aplica al producto.
 
-- **``Success``**: booleano (`#!csharp true/false`) que indica si la petición se ha procesado correctamente.
-- **``Timestamp``**: instante de tiempo del momento en que se procesa la petición. *Formato ISO 8601 (yyyy-MM-ddThh:mm:ss.fffffff)*.
-- **``ErrorMessage``**: en caso de error incluye una breve descripción del problema.
+--8<-- "includes/responseBaseDocumentation.es.md"
 
 ### Ejemplo de respuesta
 

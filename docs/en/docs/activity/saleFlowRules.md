@@ -54,9 +54,7 @@ The sales flow rules are used to automatically modify or add products to the sal
 
             - **``PriceModifierValue``**: indicates what price value applies to the product.
 
-- **``Success``**: boolean (`#!csharp true/false`) that indicates if the request has been processed correctly.
-- **``Timestamp``**: instant of time when the request is processed. *ISO 8601 format (yyyy-MM-ddThh:mm:ss.fffffff)*.
-- **``ErrorMessage``**: in case of error includes a brief description of the problem.
+--8<-- "includes/responseBaseDocumentation.en.md"
 
 ### Response example
 

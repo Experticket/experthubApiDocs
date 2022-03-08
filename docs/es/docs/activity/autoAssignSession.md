@@ -53,8 +53,7 @@ Una vez lanzada la consulta se devolverá, a modo informativo, la sesión que se
                 - 3: **TicketEnclosureDoesNotAcceptAutoAssign**. El producto no tiene recintos con sesiones configuradas como auto asignables.
                 - 4: **TicketEnclosureHasNoSessionsAvailable**. No hay sesiones disponibles para el producto y fecha seleccionados.
 
-    - **`Timestamp`**: instante de tiempo en el que se recibe la respuesta. *Formato ISO 8601 (yyyy-MM-ddThh:mm:ss.fffffff)*.
-    - **`ErrorMessage`**: mensaje de error explicando por qué la obtención de las sesiones no ha sido correcta. En caso que haya sido correcta, el campo no aparece.
+--8<-- "includes/responseBaseDocumentation.es.md"
 
 ### Ejemplo de respuesta
 

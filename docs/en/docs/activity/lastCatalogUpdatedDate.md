@@ -16,9 +16,7 @@ The product catalog is totally dynamic and can suffer changes. To easily detect 
 ## Response data structure
 
 - **``LastUpdatedDateTime``**: date of the last modification of the catalog. *ISO 8601 format (yyyy-MM-ddThh:mm:ss.fffffff)*.
-- **``Success``**: boolean (``#!csharp true/false``) that indicates if the request has been correct or not.
-- **``Timestamp``**: time instant of request processing. *ISO 8601 format (yyyy-MM-ddThh:mm:ss.fffffff)*.
-- **``ErrorMessage``**: error message explaining why the request was not successful. If it was correct, it will return ``#!csharp null``.
+--8<-- "includes/responseBaseDocumentation.en.md"
 
 ### Ejemplo de respuesta
 

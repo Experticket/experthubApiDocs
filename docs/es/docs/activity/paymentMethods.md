@@ -25,9 +25,7 @@ Este es un paso intermedio que debemos realizar antes de confirmar el carrito. V
     - **``Type``**: identificador del tipo de método de pago.
     - **``Name``**: nombre del método de pago.
     - **``EnableSendByEmails``**: indica si podemos usar este método de pago para mandar automaticamente un enlace de pago al cliente final vía email.
-- **`Success`**: booleano `#!csharp true/false` que indica si la llamada ha sido procesada correctamente o no.
-- **`Timestamp`**: instante de tiempo en el que se procesó la petición. *Formato ISO 8601 (yyyy-MM-ddThh:mm:ss.fffffff)*.
-- **`ErrorMessage`**: mensaje de error explicando por qué la petición no ha sido correcta. En caso que haya sido correcta, devolverá `#!csharp null`.
+--8<-- "includes/responseBaseDocumentation.es.md"
 
 ### Ejemplo de respuesta
 

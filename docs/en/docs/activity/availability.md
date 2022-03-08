@@ -189,9 +189,7 @@ Available capacity refers to quota type tickets (``#!csharp IsQuotaTicket == tru
     - **`SessionId`**: identificador de la sesión.
     - **`Date`**: access date. *ISO 8601 format (yyyy-MM-ddThh:mm:ss.fffffff)*.
     - **`AvailableCapacity`**: capacity available for sale.
-- **`Success`**: boolean (``#!csharp true/false``) that indicates if obtaining the availability has been correct or not.
-- **`Timestamp`**: indicates the time of obtaining the response. *ISO 8601 format (yyyy-MM-ddThh:mm:ss.fffffff)*.
-- **`ErrorMessage`**: error message explaining why obtaining the availability was not successful. If it was correct, the field does not appear.
+--8<-- "includes/responseBaseDocumentation.en.md"
 
 ### Response example
 

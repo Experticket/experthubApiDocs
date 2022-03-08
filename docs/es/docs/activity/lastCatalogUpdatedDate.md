@@ -16,9 +16,7 @@ El catálogo de productos es totalmente dinámico y puede sufrir cambios. Para d
 ## Estructura de la respuesta
 
 - **``LastUpdatedDateTime``**: fecha de la última modificación del catálogo. *Formato ISO 8601 (yyyy-MM-ddThh:mm:ss.fffffff)*.
-- **``Success``**: booleano (``#!csharp true/false``) que indica si la petición ha sido o no correcta.
-- **``Timestamp``**: instante de tiempo del procesamiento de la solicitud. *Formato ISO 8601 (yyyy-MM-ddThh:mm:ss.fffffff)*.
-- **``ErrorMessage``**: mensaje de error explicando por qué la petición no ha sido correcta. En caso que haya sido correcta, devolverá ``#!csharp null``.
+--8<-- "includes/responseBaseDocumentation.es.md"
 
 ### Ejemplo de respuesta
 

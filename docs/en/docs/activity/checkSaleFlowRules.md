@@ -51,9 +51,7 @@ Once the query is launched, sufficient data will be returned, for information pu
     - **``SaleFlowRuleCommercialName``**: descriptive name given to the rule to display to the user.
     - **``SaleFlowRuleDescripción``**: description of the applied rule.
     - **``SaleFlowRuleName``**: applied rule name.
-- **``Success``**: boolean (``#!csharp true/false``) that indicates if the request has been processed correctly.
-- **``Timestamp``**: instant of time in which the request is processed. *ISO 8601 format (yyyy-MM-ddThh:mm:ss.fffffff)*.
-- **``ErrorMessage``**: in case of error contains a brief description of the problem.
+--8<-- "includes/responseBaseDocumentation.en.md"
 
 ### Response example
 

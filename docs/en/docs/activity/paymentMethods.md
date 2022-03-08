@@ -25,9 +25,7 @@ This is an intermediate step that we must perform before confirming the cart. Se
     - **``Type``**: payment method type identifier.
     - **``Name``**: payment method name.
     - **``EnableSendByEmails``**: indicates if we can use this payment method to automatically send a payment link to the end customer via email.
-- **`Success`**: boolean `#!csharp true/false` that indicates whether or not the call was processed correctly.
-- **`Timestamp`**: instant of time in which the request was processed. *ISO 8601 format (yyyy-MM-ddThh:mm:ss.fffffff)*.
-- **`ErrorMessage`**: error message explaining why the request was not successful. If it was correct, it will return `#!csharp null`.
+--8<-- "includes/responseBaseDocumentation.en.md"
 
 ### Response example
 

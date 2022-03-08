@@ -53,8 +53,7 @@ Once the query is launched, the session that will be assigned when the cart is c
                 - 3: **TicketEnclosureDoesNotAcceptAutoAssign**. The product does not have enclosures with sessions configured as auto-assignable.
                 - 4: **TicketEnclosureHasNoSessionsAvailable**. There are no sessions available for the selected product and date.
 
-    - **`Timestamp`**: instant of time in which the response is received. *ISO 8601 format (yyyy-MM-ddThh:mm:ss.fffffff)*.
-    - **`ErrorMessage`**: error message explaining why the fetching of the sessions was unsuccessful. If it was correct, the field does not appear.
+--8<-- "includes/responseBaseDocumentation.en.md"
 
 ### Response example
 

@@ -51,9 +51,7 @@ Una vez lanzada la consulta se devolverá, a modo informativo, los datos suficie
     - **``SaleFlowRuleCommercialName``**: nombre descriptivo que se da a la regla para poder mostrar al usuario.
     - **``SaleFlowRuleDescripción``**: descripción de la regla aplicada.
     - **``SaleFlowRuleName``**: nombre de la regla aplicada.
-- **``Success``**: booleano (``#!csharp true/false``) que indica si la petición se ha procesado correctamente.
-- **``Timestamp``**: instante de tiempo en el que se procesa la petición. *Formato ISO 8601 (yyyy-MM-ddThh:mm:ss.fffffff)*.
-- **``ErrorMessage``**: en caso de error contiene una breve descripción del problema.
+--8<-- "includes/responseBaseDocumentation.es.md"
 
 ### Ejemplo de respuesta
 
