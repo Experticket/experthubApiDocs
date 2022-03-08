@@ -6,7 +6,7 @@ site_dir: '../../site/en'
 
 theme:
     custom_dir: ../../overrides/
-    logo: assets/Logo.png
+    logo: assets/Logo.svg
     favicon: assets/imagotipo.svg
     name: material
     language: en
