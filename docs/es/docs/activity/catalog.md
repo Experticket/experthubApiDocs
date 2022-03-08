@@ -40,6 +40,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
     - **`ProviderDescription`**: descripciones del proveedor.
     - **`ProviderCommercialConditions`**: condiciones comerciales de proveedor. Si no existen, este campo no se mostrará.
     - **`ProviderAccessConditions`**: condiciones de acceso del proveedor. Si no existen, este campo no se mostrará.
+    - **`ExchangeVoucherPoint`**: lugar en el que las entradas puedes ser usadas o canjeadas.
     - **`AdvancedDateSelectorMethodName`**: nombre del método que define si los tickets de un producto pueden tener su propia fecha de acceso particular.
 
         ??? example "Posibles valores"
@@ -63,6 +64,12 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
             - 0: Actividad
             - 1: Alojamiento
             - 2: Transporte
+
+    - **`PurchaseFlowType`**: indica el tipo de flujo de venta que tiene el proveedor. Sirve para saber si las entradas y los códigos de acceso estarán disponibles en el momento de la compra o posteriormente.
+
+        ??? example "Posibles valores"
+            - 1: Venta libre.
+            - 2: Requiere tramitación por parte del proveedor.
 
     - **`IsForGroups`**: indica si los productos del proveedor están destinados a la venta para grupos.
     - **``IsForSeasonTickets``**: indica si los productos del proveedor son abonos de temporada.

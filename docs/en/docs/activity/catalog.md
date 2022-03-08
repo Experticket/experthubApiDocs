@@ -40,6 +40,7 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
     - **`ProviderDescription`**: provider description.
     - **`ProviderCommercialConditions`**: provider comercial terms. This field will not be displayed if it is not defined.
     - **`ProviderAccessConditions`**: provider access conditions. This field will not be displayed if it is not defined.
+    - **`ExchangeVoucherPoint`**: place where the tickets can be used or exchabge.
     - **`AdvancedDateSelectorMethodName`**: name of the method that determines if product tickets can have their own access date.
 
         ??? example "Possible values"
@@ -63,6 +64,12 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
             - 0: Activity
             - 1: Accommodation
             - 2: Transport
+
+    - **`PurchaseFlowType`**: indicates the sale flow. It can be used to know if the tickets and the access codes are going to be accsibles instantly or if require some processing.
+
+        ??? example "Possible values"
+            - 1: Open sale.
+            - 2: Requires processing by the provider.
 
     - **`IsForGroups`**: indicates if the provider's products are intended for sale to groups.
     - **``IsForSeasonTickets``**: indicates if the provider's products are season tickets.
