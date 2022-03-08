@@ -10,7 +10,6 @@ Una vez lanzada la consulta se devolverá, a modo informativo, los datos suficie
 
 ## Estructura de la petición
 
-- **``ApiKey``**: clave única y privada que identifica al colaborador. *La ApiKey se obtendrá desde el AdminPartner*.
 - **``AccessDateTime``**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
 - **``Products``**: productos que componen la venta.
     - **``AccessDateTime``**: *opcional*, fecha de acceso. Si se define a nivel de producto tiene precedencia sobre la fecha definida a nivel global.

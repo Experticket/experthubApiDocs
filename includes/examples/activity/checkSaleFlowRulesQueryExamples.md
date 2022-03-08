@@ -2,7 +2,6 @@
 
     ``` json
     {
-        "ApiKey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
         "AccessDateTime": "2022-06-02",
         "Products": 
         [
@@ -18,7 +17,6 @@
 
     ``` json
     {
-        "ApiKey": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
         "AccessDateTime": "2022-06-02",
         "Products": 
         [

@@ -10,7 +10,6 @@ Once the query is launched, sufficient data will be returned, for information pu
 
 ## Request data structure
 
-- **``ApiKey``**: unique and private key that identifies the partner. *The ApiKey will be obtained from the AdminPartner*.
 - **``AccessDateTime``**: access date. *ISO 8601 format (yyyy-MM-dd)*.
 - **``Products``**: products that make up the sale.
     - **``AccessDateTime``**: *optional*, access date. If defined, it has precedence over the date defined globally. *ISO 8601 format (yyyy-MM-dd)*.
