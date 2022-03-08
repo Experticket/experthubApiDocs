@@ -81,7 +81,9 @@ nav:
           - Comprobar reglas aplicadas: docs/activity/checkSaleFlowRules.md
         - Métodos de pago: docs/activity/paymentMethods.md
         - Métodos de entrega:
-          - Obtener métodos disponibles: docs/activity/deliveryMethods.md
+          - Obtener métodos de entrega: docs/activity/deliveryMethods.md
+          - Comprobar método de entrega: docs/activity/checkDeliveryMethods.md
+          - Canje de tickets: docs/activity/ticketExchange.md
       - Alojamiento: 
         - Catálogo básico: docs/accommodation/basicCatalog.md
         - Catálogo completo: docs/accommodation/fullCatalog.md
