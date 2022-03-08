@@ -1,11 +1,11 @@
 # Métodos de pago
 
-Esté es un paso intermedio que debemos realizar antes de confirmar el carrito. Véase el campo ``PartnerSettings`` en el [catálogo](catalog.md).
+Este es un paso intermedio que debemos realizar antes de confirmar el carrito. Véase el campo ``PartnerSettings`` en el [catálogo](catalog.md).
 
 !!! success ""
-    Si PaymentType en el catálogo indica que nuestra forma de pago es diferente de débito está llamada es irrelevante para nosotros.
+    Si **``PaymentType``** en el catálogo indica que nuestra forma de pago es diferente de débito está llamada es irrelevante para nosotros.
 !!! warning ""
-    Si PaymentType en el catálogo indica que nuestra forma de pago al distribuidor es débito deberemos hacer uso de está llamada.
+    Si **``PaymentType``** en el catálogo indica que nuestra forma de pago al distribuidor es débito deberemos hacer uso de está llamada.
 
 ## Método de acceso
 
