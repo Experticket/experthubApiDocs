@@ -6,7 +6,8 @@ La información del catálogo incluye los identificadores únicos de Proveedor, 
 
 También incluirá otros datos como el precio de los productos dependiendo de las fechas, o las condiciones comerciales del producto.
 
-Siguiendo con nuestro ejemplo, podría darse el caso en el que el producto "Entrada 2x1 Niño" del proveedor PAC baje el precio y aumente el periodo de validez de la venta.
+!!! caution "Mal uso del API"
+    Un mal uso de está llamada sería realizar una consulta con cada venta que se incia, el uso correcto debe ser almacenar y procesar de forma local y consultar periodicamente la [fecha de la última modificación del catálogo](lastCatalogUpdatedDate.md). Unicamente en caso de que esa fecha de modificación sea posterior a la obtenida en el catálogo debemos volver a obtener el catálogo.
 
 ## Método de acceso
 

@@ -6,7 +6,8 @@ The information in the catalog includes unique identifiers for Provider, Product
 
 It will also include other data such as product price, depending on the dates, or the product’s commercial terms.
 
-Continuing with our example, it could be the case that the provider PAC’s "2x1 Children’s Ticket” product price drops and prolongs the sale’s validity.
+!!! caution "Misuse of the API"
+    A misuse of this call could be to perform a query with each sale, the correct use must be to store and process locally and consult periodically the [date of the last modification of the catalog](lastCatalogUpdatedDate.md). Only in the event that this date of modification is later than the one obtained in the catalog must we obtain the catalog again.
 
 ## Access method
 
