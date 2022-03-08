@@ -1,3 +1,3 @@
 ``` html
-    GET /activity/paymentmethods?ReservationId=jahdurnwudr56
+GET BASEURL/activity/paymentmethods?ReservationId=jahdurnwudr56
 ```
