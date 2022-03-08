@@ -12,7 +12,7 @@ Siguiendo con nuestro ejemplo, podría darse el caso en el que el producto "Entr
 
 **POST** /activity/catalog
 
-## Estructura de datos de la petición
+## Estructura de la petición
 
 Para obtener el catálogo podemos utilizar diferentes filtros en el cuerpo del método. Aunque podemos realizar la llamada sin ningún filtro.
 
@@ -31,7 +31,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
 
 --8<-- "includes/examples/activity/catalogQueryExamples.md"
 
-## Estructura de datos de la respuesta
+## Estructura de la respuesta
 
 - **`LastUpdatedDateTime`**: fecha de la última modificación del catálogo. *Formato ISO 8601 (yyyy-MM-ddThh:mm:ss.fffffff)*.
 - **`Providers`**: array de proveedores.

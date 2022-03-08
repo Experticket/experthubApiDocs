@@ -12,7 +12,7 @@ Es necesario realizar esta llamada cada vez que queramos averiguar el precio de 
 
 **POST** /realTimePrices
 
-## Estructura de datos de la petición
+## Estructura de la petición
 
 Para obtener los precios en tiempo real debe especificarse la siguiente estructura de datos en el cuerpo del método.
 
@@ -44,7 +44,7 @@ Para obtener los precios en tiempo real debe especificarse la siguiente estructu
     }
     ```
 
-## Estructura de datos de la respuesta
+## Estructura de la respuesta
 
 - **`ProductsRealTimePrices`**: array de precios en tiempo real.
     - **`ProductId`**: identificador del producto.

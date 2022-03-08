@@ -159,7 +159,7 @@ El aforo concierne a los tickets de tipo aforo (``#!chsarp IsQuotaTicket == true
 
 **POST** /availablecapacity
 
-## Estructura de datos de la petición
+## Estructura de la petición
 
 - **`ProductBaseIds`**: array de identificadores de categorías por las que filtrar.
 - **`ProductIds`**: array de identificadores de productos por los que filtrar.
@@ -175,7 +175,7 @@ El aforo concierne a los tickets de tipo aforo (``#!chsarp IsQuotaTicket == true
 
 --8<-- "includes/examples/activity/availabilityQueryExamples.md"
 
-## Estructura de datos de la respuesta
+## Estructura de la respuesta
 
 - **`ProductBases`**: array que contiene los `ProductBase` solicitados. Corresponde a cada día con acceso limitado de cada uno de los `ProductBase`.
     - **`ProductBaseId`**: identificador del `ProductBase`.

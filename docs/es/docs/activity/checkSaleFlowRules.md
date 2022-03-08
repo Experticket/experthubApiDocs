@@ -8,7 +8,7 @@ Una vez lanzada la consulta se devolverá, a modo informativo, los datos suficie
 
 **POST** activity/saleflowrules
 
-## Estructura de datos de la petición
+## Estructura de la petición
 
 - **``ApiKey``**: clave única y privada que identifica al colaborador. *La ApiKey se obtendrá desde el AdminPartner*.
 - **``AccessDateTime``**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
@@ -26,7 +26,7 @@ Una vez lanzada la consulta se devolverá, a modo informativo, los datos suficie
 
 --8<-- "includes/examples/activity/checkSaleFlowRulesQueryExamples.md"
 
-## Estructura de datos de la respuesta
+## Estructura de la respuesta
 
 - **``NotModifiedProducts``**: array que contiene productos que no han sido modificados.
     - **``ProductId``**: identificador del producto.

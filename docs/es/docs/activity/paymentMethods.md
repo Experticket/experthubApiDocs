@@ -11,7 +11,7 @@ Este es un paso intermedio que debemos realizar antes de confirmar el carrito. V
 
 **GET** activity/paymentmethods
 
-## Estructura de datos de la petición
+## Estructura de la petición
 
 - **`ReservationId`**: identificador de la reserva obtenido al confirmar el carrito.
 
@@ -19,13 +19,13 @@ Este es un paso intermedio que debemos realizar antes de confirmar el carrito. V
 
 --8<-- "includes/examples/activity/paymentMethodsQueryExamples.md"
 
-## Estructura de datos de la respuesta
+## Estructura de la respuesta
 
 - **`PaymentMethods`**: array de métodos de pago.
     - **``Type``**: identificador del tipo de método de pago.
     - **``Name``**: nombre del método de pago.
     - **``EnableSendByEmails``**: indica si podemos usar este método de pago para mandar automaticamente un enlace de pago al cliente final vía email.
-- **`Success`**: valor de verdad, `#!csharp true/false` que indica si la llamada ha sido procesada correctamente o no.
+- **`Success`**: booleano `#!csharp true/false` que indica si la llamada ha sido procesada correctamente o no.
 - **`Timestamp`**: instante de tiempo en el que se procesó la petición. *Formato ISO 8601 (yyyy-MM-ddThh:mm:ss.fffffff)*.
 - **`ErrorMessage`**: mensaje de error explicando por qué la petición no ha sido correcta. En caso que haya sido correcta, devolverá `#!csharp null`.
 

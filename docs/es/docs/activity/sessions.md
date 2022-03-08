@@ -12,7 +12,7 @@ Por lo tanto, se define la estructura de sesiones, para minimizar la carga de da
 
 **POST** /sessions
 
-## Estructura de datos de la petición
+## Estructura de la petición
 
 Para obtener las sesiones podemos utilizar diferentes filtros en el cuerpo del método. Cada filtro se considerará un ***AND***.
 
@@ -132,7 +132,7 @@ Debe especificarse la siguiente estructura de datos en el cuerpo del método.
     }
     ```
 
-## Estructura de datos de la respuesta
+## Estructura de la respuesta
 
 - **`SessionsGroupProfiles`**: array de perfiles de grupos de sesión.
     - **`SessionsGroupProfileId`**: identificador del perfil de grupos de sesión.

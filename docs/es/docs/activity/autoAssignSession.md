@@ -15,7 +15,7 @@ Una vez lanzada la consulta se devolverá, a modo informativo, la sesión que se
 
 **POST** /autoassignsessions
 
-## Estructura de datos de la petición
+## Estructura de la petición
 
 - **`LanguageCode`**: define el idioma en que se mostrarán los textos. *Formato ISO 639-1*.
 - **`Products`**: array de productos para los que se quieren comprobar las sesiones.
@@ -30,7 +30,7 @@ Una vez lanzada la consulta se devolverá, a modo informativo, la sesión que se
 
 --8<-- "includes/examples/activity/autoAssignSessionQueryExamples.md"
 
-## Estructura de datos de la respuesta
+## Estructura de la respuesta
 
 - **`Products`**: array que contiene los productos solicitados.
     - **`ProductId`**: identificador del producto.
