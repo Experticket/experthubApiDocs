@@ -14,7 +14,7 @@ Con este método del API es posible realizar el canje de tickets.
 
 ### Ejemplo de petición
 
---8<-- "includes/examples/activity/ticketExchangesQueryExamples.md"
+--8<-- "includes/examples/activity/ticketExchangeQueryExamples.md"
 
 ## Estructura de la respuesta
 
@@ -22,4 +22,4 @@ Con este método del API es posible realizar el canje de tickets.
 
 ### Ejemplo de respuesta
 
---8<-- "includes/examples/activity/ticketExchangesResponseExamples.md"
+--8<-- "includes/examples/activity/ticketExchangeResponseExamples.md"

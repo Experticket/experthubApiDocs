@@ -14,7 +14,7 @@ With this API method it is possible to exchange tickets.
 
 ### Request example
 
---8<-- "includes/examples/activity/ticketExchangesQueryExamples.md"
+--8<-- "includes/examples/activity/ticketExchangeQueryExamples.md"
 
 ## Response structure
 
@@ -22,4 +22,4 @@ With this API method it is possible to exchange tickets.
 
 ### Response example
 
---8<-- "includes/examples/activity/ticketExchangesResponseExamples.md"
+--8<-- "includes/examples/activity/ticketExchangeResponseExamples.md"
