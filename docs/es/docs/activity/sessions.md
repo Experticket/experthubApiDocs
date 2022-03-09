@@ -42,7 +42,7 @@ Debe especificarse la siguiente estructura de datos en el cuerpo del método.
         - **`Sessions`**: array de sesiones.
             - **`SessionId`**: identificador de la sesión.
             - **`SessionTime`**: fecha y hora de la sesión.
-            - **`AvailableCapacity`**: valor que indica el aforo de la sesión. Si este campo no existe, es que no hay un aforo limitado. Si sólo se quiere consultar el aforo de una sesión, se puede utilizar el método descrito en [Obtención del aforo disponible].
+            - **`AvailableCapacity`**: valor que indica el aforo de la sesión. Si este campo no existe, es que no hay un aforo limitado. Si sólo se quiere consultar el aforo de una sesión, se puede utilizar el método descrito en [Obtención del aforo disponible](availability.md).
 - **`SessionContentProfiles`**: array de perfiles de contenidos de sesión.
     - **`SessionContentProfileId`**: identificador del perfil de contenidos de sesión.
     - **`SessionContentProfileName`**: nombre del perfil de contenidos de sesión.
