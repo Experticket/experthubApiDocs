@@ -34,7 +34,7 @@ En este método podemos obtener información sobre los paquetes (actividad + hot
 
 ### Ejemplo de petición
 
---8<-- "includes/examples/package/catalogQueryExamples.md"
+--8<-- "includes/examples/package/catalogResponseExamples.md"
 
 ## Estructura de la respuesta
 
