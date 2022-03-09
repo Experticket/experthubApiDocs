@@ -60,8 +60,8 @@ Para obtener los precios en tiempo real debe especificarse la siguiente estructu
     - **`CombinedProductProducts`**: array de productos incluidos en el proucto combinado.
         - **`ProductId`**: identificador del producto.
         - **`AccessDate`**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
-    - **`Success`**: booleano (true/false) que indica si la obtención del precio en tiempo real de este proucto ha sido correcta o no.
-    - **`ErrorMessage`**: mensaje de error explicando por qué la obtención del precio en tiempo real de este producto no ha sido correcta. En caso que haya sido correcta, el campo no aparece.
+    --8<-- "includes/responseBaseDocumentation.es.md"
+
 --8<-- "includes/responseBaseDocumentation.es.md"
 
 ### Ejemplos de respuesta
