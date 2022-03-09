@@ -32,24 +32,24 @@ The following data structure must be specified in the method body.
 
 ## Response data structure
 
-- **`SessionsGroupProfiles`**: array de perfiles de grupos de sesión.
-    - **`SessionsGroupProfileId`**: identificador del perfil de grupos de sesión.
-    - **`SessionsGroupProfileName`**: nombre del perfil de grupos de sesión.
-    - **`SessionTimeAvailabilityOffset`**: cantidad de minutos antes (si el valor es negativo) o después (si el valor es positivo) en la que la sesión puede estar a la venta con respecto a la hora de la sesión.
-    - **`SessionsGroups`**: array de grupos de sesiones.
-        - **`SessionsGroupId`**: identificador del grupo de sesiones.
-        - **`SessionsGroupName`**: nombre del grupo de sesiones.
-        - **`Sessions`**: array de sesiones.
-            - **`SessionId`**: identificador de la sesión.
-            - **`SessionTime`**: fecha y hora de la sesión.
-            - **`AvailableCapacity`**: valor que indica el aforo de la sesión. Si este campo no existe, es que no hay un aforo limitado. Si sólo se quiere consultar el aforo de una sesión, se puede utilizar el método descrito en [Obtención del aforo disponible].
-- **`SessionContentProfiles`**: array de perfiles de contenidos de sesión.
-    - **`SessionContentProfileId`**: identificador del perfil de contenidos de sesión.
-    - **`SessionContentProfileName`**: nombre del perfil de contenidos de sesión.
-    - **`SessionContents`**: array de contenidos de sesión.
-        - **`SessionContentId`**: identificador del contenido de sesión.
-        - **`SessionContentName`**: nombre del contenido de sesión.
-        - **`SessionContentDescription`**: descripción del contenido de sesión.
+- **`SessionsGroupProfiles`**: array of session groups profile.
+    - **`SessionsGroupProfileId`**: identifier of session groups profile.
+    - **`SessionsGroupProfileName`**: name of the session groups profile.
+    - **`SessionTimeAvailabilityOffset`**: amount of minutes before (negative value) or after (positive value) the session time when the session can be available to purchase.
+    - **`SessionsGroups`**: array of session groups.
+        - **`SessionsGroupId`**: the session’s group identifier.
+        - **`SessionsGroupName`**: name of the sessions group.
+        - **`Sessions`**: array of sessions.
+            - **`SessionId`**: session identifier.
+            - **`SessionTime`**: date and time of the session.
+            - **`AvailableCapacity`**: value that indicates the session’s capacity. If this field does not exist it is because there is no limited capacity. If one only wants to see a session’s capacity, use the method described in the unit on [obtaining available capacity](availability.md).
+- **`SessionContentProfiles`**: array of session contents profile.
+    - **`SessionContentProfileId`**: session contents profile identifier.
+    - **`SessionContentProfileName`**: name of session contents profile.
+    - **`SessionContents`**: Session contents.
+        - **`SessionContentId`**: the session’s content identifier.
+        - **`SessionContentName`**: session content name.
+        - **`SessionContentDescription`**: session content description.
 --8<-- "includes/responseBaseDocumentation.en.md"
 
 ### Response example
