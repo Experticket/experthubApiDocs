@@ -1,104 +1,57 @@
-# Precios en tiempo real
+# Real time prices
 
-Mediante este método podemos calcular los precios de uno o varios productos, para una o múltiples fechas de acceso.
+Through this method we can calculate the prices of one or several products, for one or multiple dates of access.
 
-!!! info "¿Por qué hablamos de tiempo real?"
+!!! success ""
+    If the product does not have the **`RequiresRealTimePrice`** field in [catalog](catalog.md) set to `#!csharp true` then there is no need to make this call.
 
-    El precio de un producto depende del momento en que se hace la consulta del mismo. Existen factores como los días que faltan hasta la fecha de acceso o la temporada, que hacen que el precio varíe.
+!!! warning ""
+    If the product has the **`RequiresRealTimePrice`** field of the [catalog](catalog.md) set to `#!csharp true` then we must make this call every time we want to offer to the customer that product to know its current price. In the [catalog](catalog.md) a base price is offered which can be altered (increase or discount) depending on certain factors.
 
-Es necesario realizar esta llamada cada vez que queramos averiguar el precio de un producto para una fecha en concreto. El precio que tiene hoy la entrada a un parque para dentro de un mes no tiene por qué ser el mismo mañana.
+!!! info "Why do we talk about price in real time?"
 
-## Método de acceso
+    The price of a product depends on the moment in which the consultation is made. There are factors such as the days remaining until the date of access or the season, which cause the price to vary.
+
+## Access method
 
 **POST** /realTimePrices
 
-## Estructura de la petición
+## Request structure
 
-Para obtener los precios en tiempo real debe especificarse la siguiente estructura de datos en el cuerpo del método.
+- **`ProductIds`**: array of product identifiers.
+- **`AccessDates`**: array of input dates that we want to query. *ISO 8601 format (yyyy-MM-dd)**.
+- **`StartDate`**: start of the input date range we want to query. Complements `AccessDates` and requires `EndDate` to be specified. *ISO 8601 format (yyyy-MM-dd)*.
+- **`EndDate`**: end of the input date range we want to query. Complements `AccessDates` and requires `StartDate` to be specified. *ISO 8601 format (yyyy-MM-dd)*.
+- **`CombinedProducts`**: array of combined products.
+    - **`CombinedProductId`**: combined product identifier.
+    - **`Products`**: array of products included in the combined product.
+        - **`ProductId`**: combined product identifier.
+        - **`AccessDate`**: access date. *ISO 8601 format (yyyy-MM-dd)*.
 
-- **`ProductIds`**: lista identificadores de producto.
-- **`AccessDates`**: lista fechas de entrada que queremos consultar. *Formato ISO 8601 (yyyy-MM-dd)*.
-- **`StartDate`**: inicio del rango de fechas de entrada que queremos consultar. Complementa a `AccessDates` y necesita que se especifique `EndDate`. *Formato ISO 8601 (yyyy-MM-dd)*.
-- **`EndDate`**: fin del rango de fechas de entrada que queremos consultar. Complementa a `AccessDates` y necesita que se especifique `StartDate`. *Formato ISO 8601 (yyyy-MM-dd)*.
-- **`CombinedProducts`**: array de productos combinados.
-    - **`CombinedProductId`**: identificador del producto combinado.
-    - **`Products`**: array de productos incluidos en el producto combinado.
-        - **`ProductId`**: identificador del producto combinado.
-        - **`AccessDate`**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
+### Request examples
 
-### Ejemplos de petición
+--8<-- "includes/examples/activity/realTimePricesQueryExamples.md"
 
---8<-- "includes/RealTimePricesQueryExamples.md"
-=== "ProductIds"
+## Response structure
 
-    ``` json
-    {
-        "ProductIds": [
-            "dj48vjsyufvyu",
-            "ajr7v0alt62hl"
-        ],
-        "AccessDates": [
-            "2020-01-02",
-            "2022-05-15"
-        ]
-    }
-    ```
+- **`ProductsRealTimePrices`**: array of prices in real time.
+    - **`ProductId`**: product identifier.
+    - **`AccessDate`**: access date. *ISO 8601 format (yyyy-MM-dd)*.
+    - **`Price`**: price at which the product should be sold.
+    - **`PriceMode`**: price kind.
 
-## Estructura de la respuesta
+        ??? example "Possible values"
+            - 1: RRP
+            - 2: Net price
 
-- **`ProductsRealTimePrices`**: array de precios en tiempo real.
-    - **`ProductId`**: identificador del producto.
-    - **`AccessDate`**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
-    - **`Price`**: precio al que debe venderse el producto.
-    - **`PriceMode`**: tipo de precio. Opciones:
-        - 1: PVP
-        - 2: precio neto
-    - **`CombinedProductId`**: identificador del producto combinado.
-    - **`CombinedProductProducts`**: array de productos incluidos en el proucto combinado.
-        - **`ProductId`**: identificador del producto.
-        - **`AccessDate`**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
-    - **`Success`**: booleano (true/false) que indica si la obtención del precio en tiempo real de este proucto ha sido correcta o no.
-    - **`ErrorMessage`**: mensaje de error explicando por qué la obtención del precio en tiempo real de este producto no ha sido correcta. En caso que haya sido correcta, el campo no aparece.
---8<-- "includes/responseBaseDocumentation.en.md"
+    - **`CombinedProductId`**: combined product identifier.
+    - **`CombinedProductProducts`**: array of products included in the combined product.
+        - **`ProductId`**: product identifier.
+        - **`AccessDate`**: access date. *ISO 8601 format (yyyy-MM-dd)*.
+    --8<-- "includes/responseBaseDocumentation.es.md"
 
-### Ejemplos de respuesta
+--8<-- "includes/responseBaseDocumentation.es.md"
 
---8<-- "includes/RealTimePricesResultExamples.md"
-=== "ProductIds"
+### Response examples
 
-    ``` json
-    {
-        "ProductsRealTimePrices": [
-            {
-                "ProductId": "dj48vjsyufvyu",
-                "AccessDate": "2020-01-02",
-                "Price": 29,
-                "PriceMode": 1,
-                "Success": true
-            },
-            {
-                "ProductId": "dj48vjsyufvyu",
-                "AccessDate": "2022-05-15",
-                "Price": 35,
-                "PriceMode": 1,
-                "Success": true
-            },
-            {
-                "ProductId": "ajr7v0alt62hl",
-                "AccessDate": "2020-01-02",
-                "Price": 18,
-                "PriceMode": 1,
-                "Success": true
-            },
-            {
-                "ProductId": "ajr7v0alt62hl",
-                "AccessDate": "2022-05-15",
-                "Price": 22,
-                "PriceMode": 1,
-                "Success": true
-            }
-        ],
-        "Success": true,
-        "Timestamp": "2022-02-18T17:02:27.8165916"
-    }
-    ```
+--8<-- "includes/examples/activity/realTimePricesResponseExamples.md"
