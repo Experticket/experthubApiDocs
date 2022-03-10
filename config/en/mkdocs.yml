@@ -87,6 +87,7 @@ nav:
         - Basic catalog: docs/accommodation/basicCatalog.md
         - Full catalog: docs/accommodation/fullCatalog.md
       - Packages:
+        - Prepackages: docs/package/prePackage.md
         - Catalog: docs/package/catalog.md
         - Extended Catalog: docs/package/extendedCatalog.md
     - FAQ: faq.md
