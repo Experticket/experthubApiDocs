@@ -10,17 +10,6 @@
     }
     ```
 
-=== "SessionsGroupIds"
-
-    ``` json
-    {
-        "SessionsGroupIds": 
-        [
-            "ajr7v0alt62hl"
-        ]
-    }
-    ```
-
 === "SessionContentProfileIds"
 
     ``` json
@@ -29,6 +18,17 @@
         [
             "xar5v1blt61h2",
             "z2rrv6alvb2hs"
+        ]
+    }
+    ```
+
+=== "SessionsGroupIds"
+
+    ``` json
+    {
+        "SessionsGroupIds": 
+        [
+            "ajr7v0alt62hl"
         ]
     }
     ```
@@ -46,7 +46,8 @@
 
     ``` json
     {
-        "Dates": [
+        "Dates": 
+        [
             "2000-01-06",
             "2000-05-12",
             "2000-07-21"
@@ -58,12 +59,13 @@
 
     ``` json
     {
-       "SessionsGroupProfileIds": [
+       "SessionsGroupProfileIds": 
+       [
            "dj48vjsyufvyu"
        ],
-       "SessionContentProfileIds": [
-            "xar5v1blt61h2",
-            "z2rrv6alvb2hs"
+       "SessionContentProfileIds": 
+       [
+            "xar5v1blt61h2"
        ],
        "FromDate": "2000-01-06",
        "ToDate": "2000-10-20"
