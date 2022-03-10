@@ -84,7 +84,9 @@ nav:
           - Obtener métodos de entrega: docs/activity/deliveryMethods.md
           - Comprobar método de entrega: docs/activity/checkDeliveryMethods.md
           - Canje de tickets: docs/activity/ticketExchange.md
-      - Alojamiento: 
+        - Cupones descuento:
+          - Comprobar cupones descuento: docs/activity/checkDiscountCoupons.md
+      - Alojamiento:
         - Catálogo básico: docs/accommodation/basicCatalog.md
         - Catálogo completo: docs/accommodation/fullCatalog.md
       - Paquetes:
