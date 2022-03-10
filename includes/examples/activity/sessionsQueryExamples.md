@@ -2,7 +2,8 @@
 
     ``` json
     {
-        "SessionsGroupProfileIds": [
+        "SessionsGroupProfileIds": 
+        [
             "dj48vjsyufvyu",
             "ajr7v0alt62hl"
         ]
@@ -13,10 +14,8 @@
 
     ``` json
     {
-        "SessionsGroupProfileIds": [
-            "dj48vjsyufvyu"
-        ],
-        "SessionsGroupIds": [
+        "SessionsGroupIds": 
+        [
             "ajr7v0alt62hl"
         ]
     }
@@ -26,38 +25,15 @@
 
     ``` json
     {
-        "SessionsGroupProfileIds": [
-            "dj48vjsyufvyu"
-        ],
-        "SessionsGroupIds": [
-            "ajr7v0alt62hl"
-        ],
-        "SessionContentProfileIds": [
+        "SessionContentProfileIds": 
+        [
             "xar5v1blt61h2",
             "z2rrv6alvb2hs"
         ]
     }
     ```
 
----
-
-=== "FromDate"
-
-    ``` json
-    {
-        "FromDate": "2000-01-06"
-    }
-    ```
-
-=== "ToDate"
-
-    ``` json
-    {
-        "ToDate": "2000-01-20"
-    }
-    ```
-
-=== "FromDate - ToDate"
+=== "From/ToDate"
 
     ``` json
     {
@@ -65,8 +41,6 @@
         "ToDate": "2000-01-20"
     }
     ```
-
----
 
 === "Dates"
 
@@ -80,17 +54,12 @@
     }
     ```
 
----
-
 === "Combined filters"
 
     ``` json
     {
        "SessionsGroupProfileIds": [
            "dj48vjsyufvyu"
-       ],
-       "SessionsGroupIds": [
-           "ajr7v0alt62hl"
        ],
        "SessionContentProfileIds": [
             "xar5v1blt61h2",

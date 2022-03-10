@@ -1,6 +1,6 @@
 # Sessions
 
-A session is defined by date, time, content, and, optionally, available capacity.
+A session is defined by date and time, content, and, optionally, available capacity.
 
 Under this definition, we understand a given session can be shared by multiple products. E.g. products "Adult Ticket", "Children’s Ticket", "Junior Ticket", "Senior Ticket" and "Special Needs Ticket” can be associated with the same sessions in the present year, e.g. 10 sessions per day, 365 days of the year.
 
@@ -10,9 +10,9 @@ Therefore, to minimize the uploading of data, and to prioritize the best possibl
 
 ## Access method
 
-**POST** /sessions
+**POST** activity/sessions
 
-## Request dat structure
+## Request data structure
 
 To obtain the sessions we can use different filters in the body of the method. Each filter will be considered an ***AND***.
 

@@ -1,8 +1,8 @@
 # Sesiones
 
-Una sesión está definida por una fecha, un hora, un contenido y, opcionalmente, el aforo disponible.
+Una sesión está definida por una fecha y hora, un contenido y, opcionalmente, el aforo disponible.
 
-Según esta definición, se entiende que una misma sesión puede ser compartida por varios tickets. Los tickets "Entrada adulto", "Entrada niño", "Entrada junior", "Entrada senior" y "Entrada discapacitado" pueden tener asociadas las mismas sesiones durante el año en curso (por ejemplo, 10 sesiones al día durante los 365 días al año).
+Según esta definición, se entiende que una misma sesión puede ser compartida por varios tickets. Los tickets "Entrada adulto", "Entrada niño", "Entrada junior", "Entrada senior" y "Entrada discapacitado" pueden tener asociadas las mismas sesiones durante el año en curso (por ejemplo, 10 sesiones al día durante los 365 días del año).
 
 Como esta casuística puede ser habitual, se ha procurado separar lo máximo posible la estructura de sesiones del catálogo de productos. Siguiendo con el ejemplo anterior, si se definiesen las sesiones en el catálogo de productos tendríamos 10 sesiones x 365 días = 3650 sesiones para cada uno de los 5 tickets ("Entrada adulto, "Entrada niño", "Entrada junior", "Entrada senior" y "Entrada discapacitado").
 
@@ -10,23 +10,21 @@ Por lo tanto, se define la estructura de sesiones, para minimizar la carga de da
 
 ## Método de acceso
 
-**POST** /sessions
+**POST** actvity/sessions
 
 ## Estructura de la petición
 
 Para obtener las sesiones podemos utilizar diferentes filtros en el cuerpo del método. Cada filtro se considerará un ***AND***.
 
-Debe especificarse la siguiente estructura de datos en el cuerpo del método.
-
-- **`SessionsGroupProfileIds`**: lista de perfiles de grupos de sesión.
-- **`SessionsGroupIds`**: lista de grupos de sesión.
-- **`SessionContentProfileIds`**: lista de perfiles de contenido de sesión.
+- **`SessionsGroupProfileIds`**: array de perfiles de grupos de sesión.
+- **`SessionsGroupIds`**: array de grupos de sesión.
+- **`SessionContentProfileIds`**: array de perfiles de contenido de sesión.
 - **`FromDate`**: filtrado por fecha de inicio. No permite valores menores al día de hoy. El valor por defecto es el día actual. *Formato ISO 8601 (yyyy-MM-dd)*.
 - **`ToDate`**: filtrado por fecha de fin. Su valor por defecto es la fecha correnpondiente a dentro de un año. *Formato ISO 8601 (yyyy-MM-dd)*.
-- **`Dates`**: lista fechas por las que filtrar. *Formato ISO 8601 (yyyy-MM-dd)*.
+- **`Dates`**: array de fechas por las que filtrar. *Formato ISO 8601 (yyyy-MM-dd)*.
 - **`LanguageCode`**: código del idioma de los contenidos.
 
-### Ejemplos de llamdas
+### Ejemplos de petición
 
 --8<-- "includes/examples/activity/sessionsQueryExamples.md"
 
