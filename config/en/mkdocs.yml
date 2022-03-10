@@ -83,6 +83,8 @@ nav:
           - Get delivery methods: docs/activity/deliveryMethods.md
           - Check delivery method: docs/activity/checkDeliveryMethods.md
           - Ticket exchange: docs/activity/ticketExchange.md
+        - Discount coupons:
+          - Check discount coupons: docs/activity/checkDiscountCoupons.md
       - Accomodation: 
         - Basic catalog: docs/accommodation/basicCatalog.md
         - Full catalog: docs/accommodation/fullCatalog.md
