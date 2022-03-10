@@ -60,15 +60,18 @@
 
     ``` json
     {
-        "ProductBaseIds": [
+        "ProductBaseIds": 
+        [
             "dj48vjsyufvyu",
             "ajr7v0alt62hl"
         ],
-        "ProductIds": [
+        "ProductIds": 
+        [
             "dj48vjsyufvyu",
             "jnvfnvjkivnnf"
         ],
-        "Dates": [
+        "Dates": 
+        [
             "2022-08-15",
             "2022-11-01"
         ]

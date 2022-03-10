@@ -200,7 +200,8 @@
                                     "Dates": "2022-09-01,2022-09-02,2022-12-31"
                                 }
                             ],
-                            "SalesDocumentSettingsViewModel":{
+                            "SalesDocumentSettingsViewModel":
+                            {
                                 "ShowPrice": true
                             },
                             "Tickets": 

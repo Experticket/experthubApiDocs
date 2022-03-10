@@ -2,7 +2,8 @@
 
     ``` json
     {
-        "Products": [
+        "Products": 
+        [
             {
                 "ProductId": "hwuk9huaqopwo",
                 "Quantity": 4,
@@ -12,7 +13,7 @@
     }
     ```
 
-=== "Ticket"
+=== "With Ticket"
 
     ``` json
     {
@@ -21,7 +22,8 @@
                 "ProductId": "hwuk9huaqopwo",
                 "Quantity": 4,
                 "AccessDate": "2022-06-02",
-                "Tickets": [
+                "Tickets": 
+                [
                     {
                         "TicketId": "654e5ytetr"
                     }
@@ -31,7 +33,7 @@
     }
     ```
 
-=== "Ticket AccessDate"
+=== "With Ticket & AccessDate"
 
     ``` json
     {
@@ -40,7 +42,8 @@
                 "ProductId": "hwuk9huaqopwo",
                 "Quantity": 4,
                 "AccessDate": "2022-06-02",
-                "Tickets": [
+                "Tickets": 
+                [
                     {
                         "TicketId": "654e5ytetr",
                         "AccessDate": "2022-06-05"

@@ -1,6 +1,7 @@
 ``` json
 {
-    "Methods": [
+    "Methods": 
+    [
         {
             "Id": "hen3s1e7ao4ch",
             "Name": "Ship to home",
@@ -12,7 +13,8 @@
             "Name": "Hotel Pickup",
             "Description": "Pickup test",
             "Type": 1,
-            "DeliveryPoints": [
+            "DeliveryPoints": 
+            [
                 {
                     "Id": "md8jo6fumzj56",
                     "Name": "Hotel Prueba",

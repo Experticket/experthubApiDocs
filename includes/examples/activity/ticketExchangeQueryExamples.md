@@ -1,6 +1,7 @@
 ``` json
 {
-    "Exchanges": [
+    "Exchanges": 
+    [
         {
             "TicketAccessCode": "MyAccessCode1",
             "InternalCode": "MycustomCode1"

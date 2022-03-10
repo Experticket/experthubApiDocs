@@ -2,7 +2,8 @@
 
     ``` json
     {
-        "ProductsRealTimePrices": [
+        "ProductsRealTimePrices": 
+        [
             {
                 "ProductId": "dj48vjsyufvyu",
                 "AccessDate": "2020-01-02",

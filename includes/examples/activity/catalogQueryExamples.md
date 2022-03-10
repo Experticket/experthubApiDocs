@@ -2,7 +2,8 @@
 
     ``` json
     {
-        "ProviderIds": [
+        "ProviderIds": 
+        [
             "dj48vjsyufvyu",
             "ajr7v0alt62hl"
         ]
@@ -13,7 +14,8 @@
 
     ``` json
     {
-        "ProductIds": [
+        "ProductIds": 
+        [
             "dj48vjsyufvyu",
             "ajr7v0alt62hl"
         ]
@@ -41,14 +43,17 @@
 
     ``` json
     {
-        "ProviderIds": [
+        "ProviderIds": 
+        [
             "dj48vjsyufvyu",
             "ajr7v0alt62hl"
         ],
-        "ProductBaseIds": [
+        "ProductBaseIds": 
+        [
             "duvjsigjscujc"
         ],
-        "ProductIds": [
+        "ProductIds": 
+        [
             "fkijskfqnidfk"
         ],
         "FromDate": "2023-06-23",

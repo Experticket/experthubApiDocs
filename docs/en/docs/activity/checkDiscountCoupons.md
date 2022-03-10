@@ -8,7 +8,6 @@ Through this call, it is verified if one or more discount coupons can be applied
 
 ## Request data structure
 
-- **`ApiKey`**: unique and private to the partner. It is very important to keep this key secret.
 - **`DiscountCouponCodes`**: discount coupon codes that we want to check.
 - **`Sale`**: sale information.
     - **`Products`**: array of products.

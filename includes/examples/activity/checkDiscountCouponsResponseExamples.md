@@ -1,6 +1,7 @@
 ``` json
 {
-    "DiscountCoupons": [
+    "DiscountCoupons": 
+    [
         {
             "Code": "CC20201%",
             "IsValid": true,
@@ -9,12 +10,15 @@
             "Id": "a1swa4y5monf4"
         }
     ],
-    "Sale": {
-        "Products": [
+    "Sale": 
+    {
+        "Products": 
+        [
             {
                 "Id": "uniqueId",
                 "ProductId": "v1swa4y7monf5",
-                "AppliedCoupons": [
+                "AppliedCoupons": 
+                [
                     {
                         "Id": "yik6xjaha6ye6",
                         "Code": "CC20201%",

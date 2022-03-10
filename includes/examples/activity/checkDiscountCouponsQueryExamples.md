@@ -1,11 +1,13 @@
 ``` json
 {
-    "ApiKey": "{{ApiKey}}",
-    "DiscountCouponCodes": [
+    "DiscountCouponCodes": 
+    [
         "CC20201%"
     ],
-    "Sale": {
-        "Products": [
+    "Sale": 
+    {
+        "Products": 
+        [
             {
                 "Id": "uniqueId",
                 "ProductId": "v1swa4y7monf5",

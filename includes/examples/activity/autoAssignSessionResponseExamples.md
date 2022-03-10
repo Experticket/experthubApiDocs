@@ -1,11 +1,13 @@
 ``` json
 {
-    "Products": [
+    "Products": 
+    [
         {
             "ProductId": "hwuk9huaqopwo",
             "AccessDate": "2022-06-02",
             "HasTicketEnclosures": true,
-            "Tickets": [
+            "Tickets": 
+            [
                 {
                     "TicketId": "654e5ytetr",
                     "AccessDate": "2022-06-02",
@@ -22,7 +24,8 @@
             "ProductId": "6asd55fa6s5f",
             "AccessDate": "2022-06-02",
             "HasTicketEnclosures": true,
-            "Tickets": [
+            "Tickets": 
+            [
                 {
                     "TicketId": "uy456i4yu654i",
                     "AccessDate": "2022-06-02",
