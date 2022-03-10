@@ -1,6 +1,6 @@
 # Comprobar cupones descuento
 
-A través de esta llamda se comprueba si se pueden aplicar uno o más cupones de descuento, y los efectos que producen en la venta.
+A través de esta llamada se comprueba si se pueden aplicar uno o más cupones de descuento, y los efectos que producen en la venta.
 
 ## Método de acceso
 
@@ -40,7 +40,7 @@ A través de esta llamda se comprueba si se pueden aplicar uno o más cupones de
                     - 1: descuento porcentual.
                     - 3: descuento de valor absoluto.
 
-            - **`PriceModifieralue`**: importe del descuento aplicado. Su interpretación depende del valor del atributo `PriceModifierType`.
+            - **`PriceModifierValue`**: importe del descuento aplicado. Su interpretación depende del valor del atributo `PriceModifierType`.
 
 ### Ejemplo de petición
 
