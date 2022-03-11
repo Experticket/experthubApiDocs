@@ -55,6 +55,7 @@ A través de esta llamada se comprueba si se pueden aplicar uno o más cupones d
                     - 3: descuento de valor absoluto.
 
             - **`PriceModifierValue`**: importe del descuento aplicado. Su interpretación depende del valor del atributo `PriceModifierType`.
+
 --8<-- "includes/responseBaseDocumentation.es.md"
 
 ### Ejemplo de respuesta

@@ -55,6 +55,7 @@ Through this call, it is verified if one or more discount coupons can be applied
                     - 3: absolute value discount.
 
             - **`PriceModifierValue`**: applied discount amount. It intepretation depends on the value of the attribute `PriceModifierType`.
+
 --8<-- "includes/responseBaseDocumentation.en.md"
 
 ### Response example
