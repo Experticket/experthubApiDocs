@@ -8,6 +8,20 @@ A través de esta llamada se comprueba si se pueden aplicar uno o más cupones d
 
 ## Estructura de la petición
 
+- **``DiscountCouponCodes``**: array de cupones descuento a comprobar.
+- **``Sale``**: información de la venta.
+    - **``Products``**: array de productos.
+        - **``Id``**: identificador único del producto generado por el colaborador.
+        - **``ProductId``**: identificador del producto.
+        - **``Price``**: precio del producto.
+        - **``AccessDate``**: *opcional*, fecha de acceso del produto.
+
+### Ejemplo de petición
+
+--8<-- "includes/examples/activity/checkDiscountCouponsQueryExamples.md"
+
+## Estructura de la respuesta
+
 - **`DiscountCoupons`**: resumen de resultados de cupones de descuento.
     - **`Id`**: identificador de cupón de descuento.
     - **`Code`**: código de cupón de descuento.
@@ -16,8 +30,8 @@ A través de esta llamada se comprueba si se pueden aplicar uno o más cupones d
     - **`IsValid`**: `true` si el cupón es válido, de lo contrario `false`.
 - **`Sale`**: información de venta.
     - **`Products`**: lista de productos.
-        - **`Id`**: identificador único del producto.
-        - **`ProductId`**: identificador de producto obtenido por una llamada previa al catálogo.
+        - **`Id`**: identificador único del producto generado por el colaborador.
+        - **`ProductId`**: identificador de producto.
         - **`Price`**: precio final, después de aplicar los descuentos.
         - **`Discounts`**: descuento total aplicado.
         - **`PriceWithoutDiscounts`**: precio del producto antes de aplicar los descuentos.
@@ -41,15 +55,6 @@ A través de esta llamada se comprueba si se pueden aplicar uno o más cupones d
                     - 3: descuento de valor absoluto.
 
             - **`PriceModifierValue`**: importe del descuento aplicado. Su interpretación depende del valor del atributo `PriceModifierType`.
-
-### Ejemplo de petición
-
---8<-- "includes/examples/activity/checkDiscountCouponsQueryExamples.md"
-
-## Estructura de la respuesta
-
-- **`ShippingCosts`**: gastos de envío.
-- **`DeliveryDays`**: estimación de los días necesarios para que los productos lleguen a su destino.
 --8<-- "includes/responseBaseDocumentation.es.md"
 
 ### Ejemplo de respuesta
