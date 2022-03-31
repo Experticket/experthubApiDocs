@@ -8,7 +8,7 @@ Once the query is launched, sufficient data will be returned, for information pu
 
 **POST** activity/saleflowrules
 
-## Request data structure
+## Request structure
 
 - **``AccessDateTime``**: access date. *ISO 8601 format (yyyy-MM-dd)*.
 - **``Products``**: products that make up the sale.
@@ -25,7 +25,7 @@ Once the query is launched, sufficient data will be returned, for information pu
 
 --8<-- "includes/examples/activity/checkSaleFlowRulesQueryExamples.md"
 
-## Response data structure
+## Response structure
 
 - **``NotModifiedProducts``**: array containing products that have not been modified.
     - **``ProductId``**: product identifier.

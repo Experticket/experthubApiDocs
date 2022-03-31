@@ -6,7 +6,7 @@ With this API method it is possible to exchange tickets.
 
 **POST** activity/ticketexchange
 
-## Request data structure
+## Request structure
 
 - **`Exchanges`**: array with the data of the tickets that we want to exchange.
     - **`TicketAccessCode`**: ticket access code.

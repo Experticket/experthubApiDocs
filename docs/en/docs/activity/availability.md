@@ -159,7 +159,7 @@ Available capacity refers to quota type tickets (``#!csharp IsQuotaTicket == tru
 
 **POST** /availablecapacity
 
-## Request data structure
+## Request structure
 
 - **`ProductBaseIds`**: array of category identifiers to filter by.
 - **`ProductIds`**: array of product identifiers to filter by.
@@ -175,7 +175,7 @@ Available capacity refers to quota type tickets (``#!csharp IsQuotaTicket == tru
 
 --8<-- "includes/examples/activity/availabilityQueryExamples.md"
 
-## Response data structure
+## Response structure
 
 - **`ProductBases`**: array containing the requested `ProductBase`. Corresponds to each day with limited access to each of the `ProductBase`.
     - **`ProductBaseId`**: identifier of the `ProductBase`.

@@ -6,7 +6,7 @@ As seen when obtaining the [catalog](catalog.md), the tickets have the `Requires
 
 **GET** activity/deliverymethods
 
-## Request data structure
+## Request structure
 
 - **`ReservationId`**: identifier of the reservation obtained when confirming the cart.
 
@@ -14,7 +14,7 @@ As seen when obtaining the [catalog](catalog.md), the tickets have the `Requires
 
 --8<-- "includes/examples/activity/deliveryMethodsQueryExamples.md"
 
-## Response data structure
+## Response structure
 
 - **`Methods`**: delivery methods array.
     - **`Id`**: delivery method identifier.

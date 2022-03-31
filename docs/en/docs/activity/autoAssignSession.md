@@ -15,7 +15,7 @@ Once the query is launched, the session that will be assigned when the cart is c
 
 **POST** /autoassignsessions
 
-## Request data structure
+## Request structure
 
 - **`LanguageCode`**: defines the language in which the texts will be displayed. *ISO 639-1 Format*.
 - **`Products`**: array of products for which you want to check the sessions.
@@ -30,7 +30,7 @@ Once the query is launched, the session that will be assigned when the cart is c
 
 --8<-- "includes/examples/activity/autoAssignSessionQueryExamples.md"
 
-## Response data structure
+## Response structure
 
 - **`Products`**: array containing the requested products.
     - **`ProductId`**: product identifier.

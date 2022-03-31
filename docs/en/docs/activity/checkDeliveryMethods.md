@@ -6,7 +6,7 @@ This call checks if a delivery method allows delivery to an address, the estimat
 
 **GET** activity/deliverymethodcheck
 
-## Request data structure
+## Request structure
 
 - **`ReservationId`**: reservation identifier obtained when confirming the cart.
 - **`DeliveryMethodId`**: identifier of the delivery method obtained in the call to [delivery methods](deliveryMethods.md).
@@ -17,7 +17,7 @@ This call checks if a delivery method allows delivery to an address, the estimat
 
 --8<-- "includes/examples/activity/checkDeliveryMethodsQueryExamples.md"
 
-## Response data structure
+## Response structure
 
 - **`ShippingCosts`**: shipping costs.
 - **`DeliveryDays`**: estimation of the days needed for the products to arrive at their destination.

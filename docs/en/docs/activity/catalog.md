@@ -13,7 +13,7 @@ It will also include other data such as product price, depending on the dates, o
 
 **POST** /activity/catalog
 
-## Request data structure
+## Request structure
 
 We can filter the catalog result using different filters in the request's body.
 
@@ -32,7 +32,7 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
 
 --8<-- "includes/examples/activity/catalogQueryExamples.md"
 
-## Response data structure
+## Response structure
 
 - **`LastUpdatedDateTime`**: last catalog modification date. *ISO 8601 format (yyyy-MM-ddThh:mm:ss.fffffff)*.
 - **`Providers`**: providers array.
@@ -161,6 +161,7 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
                     ??? tip "Implications"
                         In case it is defined as `#!csharp true` it will be necessary before starting any sale to make the call to [check the price in real time](realTimePrices.md). Since the product price may be different depending on some criteria.
 
+                - **``IsForPackaging``**: indicates if the product has to be packaged, e.g. with an accommodation.
                 - **`ValidDays`**: days of validity.
                 - **`ValidDaysType`**: type of valid days.
 

@@ -14,7 +14,7 @@ The sales flow rules are used to automatically modify or add products to the sal
 
 **GET** activity/saleflowrules
 
-## Response data structure
+## Response structure
 
 - **``Rules``**: array of rules.
     - **``Id``**: rule identifier.

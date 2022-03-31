@@ -30,7 +30,7 @@ A través de esta llamada se comprueba si se pueden aplicar uno o más cupones d
     - **`IsValid`**: `true` si el cupón es válido, de lo contrario `false`.
 - **`Sale`**: información de venta.
     - **`Products`**: lista de productos.
-        - **`Id`**: identificador único del producto generado por el colaborador.
+        - **`Id`**: identificador único del producto generado por el colaborador, sirve para identificar a que producto concreto aplica el descuento en caso de tener varios productos iguales en el carrito.
         - **`ProductId`**: identificador de producto.
         - **`Price`**: precio final, después de aplicar los descuentos.
         - **`Discounts`**: descuento total aplicado.

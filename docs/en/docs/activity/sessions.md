@@ -12,7 +12,7 @@ Therefore, to minimize the uploading of data, and to prioritize the best possibl
 
 **POST** activity/sessions
 
-## Request data structure
+## Request structure
 
 To obtain the sessions we can use different filters in the body of the method. Each filter will be considered an ***AND***.
 
@@ -30,7 +30,7 @@ The following data structure must be specified in the method body.
 
 --8<-- "includes/examples/activity/sessionsQueryExamples.md"
 
-## Response data structure
+## Response structure
 
 - **`SessionsGroupProfiles`**: array of session groups profile.
     - **`SessionsGroupProfileId`**: identifier of session groups profile.

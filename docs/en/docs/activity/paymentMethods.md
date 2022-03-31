@@ -11,7 +11,7 @@ This is an intermediate step that we must perform before confirming the cart. Se
 
 **GET** activity/paymentmethods
 
-## Request data structure
+## Request structure
 
 - **`ReservationId`**: reservation identifier obtained when confirming the cart.
 
@@ -19,7 +19,7 @@ This is an intermediate step that we must perform before confirming the cart. Se
 
 --8<-- "includes/examples/activity/paymentMethodsQueryExamples.md"
 
-## Response data structure
+## Response structure
 
 - **`PaymentMethods`**: array of payment methods.
     - **``Type``**: payment method type identifier.

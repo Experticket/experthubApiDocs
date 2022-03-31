@@ -1,6 +1,6 @@
 # Prepaquetes
 
-Con este método podemos obtener los prepaquetes de activvidades disponibles.
+Con este método podemos obtener los prepaquetes de actividades disponibles.
 
 ## Método de acceso
 
@@ -27,7 +27,7 @@ Con este método podemos obtener los prepaquetes de activvidades disponibles.
 
 - **``PrePackages``**: array de prepaquetes.
     - **``Id``**: identificador del prepaquete.
-    - **``Order``**: ????????????????????????????
+    - **``Order``**: orden para ser mostrados.
     - **``Image``**: imagen promocional del prepaquete.
     - **``Description``**: descripción del prepaquete.
     - **``Name``**: nombre del prepaquete.
@@ -37,8 +37,8 @@ Con este método podemos obtener los prepaquetes de activvidades disponibles.
         - **``ProviderName``**: nombre del proveedor.
         - **``ProviderLocation``**: localización del proveedor.
             - **`Lat`**: coordenadas de latitud.
-            - **`Lng`**: coordernadas de longitud.
-        - **``DatePolicyKey``**: clave de politicas de fecha.
+            - **`Lng`**: coordenadas de longitud.
+        - **``DatePolicyKey``**: clave de políticas de fecha.
         - **``TicketEnclosures``**: array de recintos.
             - **``Id``**: identificador del recinto.
             - **``Name``**: nombre del recinto.
@@ -47,7 +47,7 @@ Con este método podemos obtener los prepaquetes de activvidades disponibles.
         - **``ValidDaysType``**: tipo de días de validez.
     - **``SuggestedLocation``**: localización sugerida para busqueda de alojamiento. Suele ser unas coordenadas calculadas centricas entre todos los recintos del prepaquete.
         - **`Lat`**: coordenadas de latitud.
-        - **`Lng`**: coordernadas de longitud.
+        - **`Lng`**: coordenadas de longitud.
 --8<-- "includes/responseBaseDocumentation.es.md"
 
 ### Ejemplo de respuesta

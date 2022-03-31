@@ -2,19 +2,6 @@
 
     ``` json
     {
-        "People": 
-        [
-            {
-                "Type": 2
-            },
-            {
-                "Type": 2
-            },
-            {
-                "Type": 1,
-                "Age": 6
-            }
-        ],
         "Activity": 
         {
             "FromDate": "2021-12-24",
@@ -35,8 +22,26 @@
             "CheckOut": "2021-12-26",
             "RoomDistribution": 
             [
-                [0, 2],
-                [1]
+                {
+                    "People":
+                    [
+                        {
+                            "Type": 2
+                        },
+                        {
+                            "Type": 1,
+                            "Age": 6
+                        }
+                    ]
+                },
+                {
+                    "People":
+                    [
+                        {
+                            "Type": 2
+                        }
+                    ]
+                }
             ]
         }
     }
@@ -46,23 +51,6 @@
 
     ``` json
     {
-        "People": 
-        [
-            {
-                "Type": 2
-            },
-            {
-                "Type": 2
-            },
-            {
-                "Type": 1,
-                "Age": 6
-            },
-            {
-                "Type": 1,
-                "Age": 10
-            }
-        ],
         "Activity": 
         {
             "FromDate": "2021-12-24",
@@ -83,7 +71,25 @@
             "CheckOut": "2021-12-26",
             "RoomDistribution": 
             [
-                [0, 1, 2, 3]
+                {
+                    "People":
+                    [
+                        {
+                            "Type": 2
+                        },
+                        {
+                            "Type": 1,
+                            "Age": 6
+                        },
+                        {
+                            "Type": 2
+                        },
+                        {
+                            "Type": 1,
+                            "Age": 10
+                        }
+                    ]
+                }
             ]
         }
     }

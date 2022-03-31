@@ -161,6 +161,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                     ??? tip "Implicaciones"
                         En caso de estar definido como `#!csharp true` será necesario antes de iniciar cualquier venta hacer la llamada para [consultar el precio en tiempo real](realTimePrices.md). Ya que el precio del producto puede ser diferente en función de algunos criterios.
 
+                - **``IsForPackaging``**: indica si el producto requiere ser empaquetado, por ejemplo, con alojamiento.
                 - **`ValidDays`**: días de validez.
                 - **`ValidDaysType`**: tipo de días válidos.
 

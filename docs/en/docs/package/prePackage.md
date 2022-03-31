@@ -1,53 +1,55 @@
-# Prepaquetes
+# Prepackages
 
-Con este método podemos obtener los prepaquetes de activvidades disponibles.
+With this method we can obtain the prepackages of available activities.
 
-## Método de acceso
+## Access method
 
 **POST** activity/prepackages
 
-## Estructura de la petición
+## Request structure
 
-- **``ProviderIds``**: array de proveedores para filtrar.
-- **``PrePackageIds``**: array de prepaquetes para filtrar.
-- **``FromDate``**: fecha desde para filtrar prepaquetes. Por defecto se coge el día actual. *Formato ISO 8601 (yyyy-MM-dd)*.
-- **``ToDate``**: fecha hasta para filtrar prepaquetes. Por defecto será la fecha dentro de un año. *Formato ISO 8601 (yyyy-MM-dd)*.
-- **``PeopleDistributions``**: tipo de personas para filtrar prepaquetes.
-    - **``NumberOfAdults``**: número de adultos.
-    - **``NumberOfChildren``**: número de niños.
-    - **``NumberOfSeniors``**: número de seniors.
-    - **``NumberOfBabies``**: número de bebés.
-    - **``ChildrenAges``**: array de edades de niños y bebés.
+- **``ProviderIds``**: array of providers to filter.
+- **``PrePackageIds``**: array of prepackets to filter.
+- **``FromDate``**: date from to filter prepackages. By default the current day is taken. *ISO 8601 format (yyyy-MM-dd)*.
+- **``ToDate``**: date until to filter pre-packages. By default it will be the date within a year. *ISO 8601 format (yyyy-MM-dd)*.
+- **``PeopleDistributions``**: type of people to filter prepackages.
+    - **``NumberOfAdults``**: number of adults.
+    - **``NumberOfChildren``**: number of children.
+    - **``NumberOfSeniors``**: number of seniors.
+    - **``NumberOfBabies``**: number of babies.
+    - **``ChildrenAges``**: array of ages of children and babies.
 
-### Ejemplo de petición
+### Request example
 
 --8<-- "includes/examples/package/prepackageQueryExamples.md"
 
-## Estructura de la respuesta
+## Response structure
 
-- **``PrePackages``**: array de prepaquetes.
-    - **``Id``**: identificador del prepaquete.
-    - **``Order``**: ????????????????????????????
-    - **``Image``**: imagen promocional del prepaquete.
-    - **``Description``**: descripción del prepaquete.
-    - **``Name``**: nombre del prepaquete.
-    - **``CommercialName``**: nombre comercial del prepaquete.
-    - **``ProductPaxGroupings``**: agrupación de productos.
-        - **``ProviderId``**: identificador del proveedor.
-        - **``ProviderName``**: nombre del proveedor.
-        - **``ProviderLocation``**: localización del proveedor.
-            - **`Lat`**: coordenadas de latitud.
-            - **`Lng`**: coordernadas de longitud.
-        - **``DatePolicyKey``**: clave de politicas de fecha.
-        - **``TicketEnclosures``**: array de recintos.
-            - **``Id``**: identificador del recinto.
-            - **``Name``**: nombre del recinto.
-            - **``Logo``**: imagen con el logotipo del recinto.
-        - **``ValidDays``**: días de validez.
-        - **``ValidDaysType``**: tipo de días de validez.
-    - **``SuggestedLocation``**: localización sugerida para busqueda de alojamiento. Suele ser unas coordenadas calculadas centricas entre todos los recintos del prepaquete.
-        - **`Lat`**: coordenadas de latitud.
-        - **`Lng`**: coordernadas de longitud.
+- **``PrePackages``**: prepackage array.
+    - **``Id``**: prepackage identifier.
+    - **``Order``**: order to be displayed.
+    - **``Image``**: prepackage promotional image.
+    - **``Description``**: prepackage description.
+    - **``Name``**: prepackage name.
+    - **``CommercialName``**: commercial name of the prepackage.
+    - **``ProductPaxGroupings``**: product grouping.
+        - **``ProviderId``**: provider identifier.
+        - **``ProviderName``**: provider name.
+        - **``ProviderLocation``**: provider location.
+            - **`Lat`**: latitude coordinates.
+            - **`Lng`**: longitude coordinates.
+        - **``DatePolicyKey``**: date policies key.
+        - **``TicketEnclosures``**: array of enclosures.
+            - **``Id``**: enclosure identifier.
+            - **``Name``**: enclosure name.
+            - **``Logo``**: image with the enclosure logo.
+        - **``ValidDays``**: days of validity.
+        - **``ValidDaysType``**: type of validity days.
+    - **``SuggestedLocation``**: suggested location to search for accommodation. It is usually a calculated central coordinates between all the prepackage enclosures.
+        - **`Lat`**: latitude coordinates.
+        - **`Lng`**: longitude coordinates.
 --8<-- "includes/responseBaseDocumentation.es.md"
 
-### Ejemplo de respuesta
+### Response example
+
+--8<-- "includes/examples/package/prepackageResponseExamples.md"

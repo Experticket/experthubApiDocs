@@ -29,7 +29,7 @@ theme:
         - navigation.tabs.sticky
         - navigation.top #botón de volver arriba
         #- navigation.indexes #https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-integration 
-        - toc.integrate #tabla de contenido integrada con barra de navegación
+        #- toc.integrate #tabla de contenido integrada con barra de navegación
         #- content.tabs.link
 extra_css:
     - stylesheets/extra.css
@@ -51,12 +51,17 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - tables
+  #- meta
   - pymdownx.tasklist:
       custom_checkbox: true
   - attr_list
   - md_in_html
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 plugins:
   - search:
       lang: 
