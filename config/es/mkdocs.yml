@@ -97,5 +97,7 @@ nav:
         - Prepaquetes: docs/package/prePackage.md
         - Catálogo: docs/package/catalog.md
         - Catálogo extendido: docs/package/extendedCatalog.md
+      - Anexos:
+        - Códigos de error: docs/annex/errorCodes.md
     - FAQ: faq.md
     - Acerca de: about.md
