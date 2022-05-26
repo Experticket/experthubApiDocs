@@ -15,7 +15,7 @@ The product catalog is totally dynamic and can suffer changes. To easily detect 
 
 ## Response structure
 
-- **``LastUpdatedDateTime``**: date of the last modification of the catalog. *ISO 8601 format (yyyy-MM-ddThh:mm:ss.fffffff)*.
+- **``LastUpdatedDateTime``**: date of the last modification of the catalog. *ISO 8601 format (yyyy-MM-ddThh\:mm\:ss.fffffff)*.
 --8<-- "includes/responseBaseDocumentation.en.md"
 
 ### Ejemplo de respuesta

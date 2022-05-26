@@ -1,3 +1,3 @@
 - **`Success`**: boolean `#!csharp true/false` that indicates whether or not the call was processed correctly.
-- **`Timestamp`**: instant of time in which the request was processed. *ISO 8601 format (yyyy-MM-ddThh:mm:ss.fffffff)*.
+- **`Timestamp`**: instant of time in which the request was processed. *ISO 8601 format (yyyy-MM-ddThh\:mm\:ss.fffffff)*.
 - **`ErrorMessage`**: error message explaining why the request was not successful. If it was correct, it will return `#!csharp null`.

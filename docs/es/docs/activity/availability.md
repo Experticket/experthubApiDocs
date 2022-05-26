@@ -187,7 +187,7 @@ El aforo concierne a los tickets de tipo aforo (``#!chsarp IsQuotaTicket == true
     - **`AvailableCapacity`**: capacidad disponible para la venta.
 - **`Sessions`**: array que contiene las sesiones solicitadas. Corresponde a cada día con acceso limitado de cada una de las sesiones.
     - **`SessionId`**: identificador de la sesión.
-    - **`Date`**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-ddThh:mm:ss.fffffff)*.
+    - **`Date`**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-ddThh\:mm\:ss.fffffff)*.
     - **`AvailableCapacity`**: capacidad disponible para la venta.
 --8<-- "includes/responseBaseDocumentation.es.md"
 

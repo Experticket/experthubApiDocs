@@ -34,7 +34,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
 
 ## Estructura de la respuesta
 
-- **`LastUpdatedDateTime`**: fecha de la última modificación del catálogo. *Formato ISO 8601 (yyyy-MM-ddThh:mm:ss.fffffff)*.
+- **`LastUpdatedDateTime`**: fecha de la última modificación del catálogo. *Formato ISO 8601 (yyyy-MM-ddThh\:mm\:ss.fffffff)*.
 - **`Providers`**: array de proveedores.
     - **`ProviderId`**: identificador del proveedor. Alfanumérico de 13 caracteres.
     - **`ProviderName`**: nombre del proveedor.

@@ -187,7 +187,7 @@ Available capacity refers to quota type tickets (``#!csharp IsQuotaTicket == tru
     - **`AvailableCapacity`**: capacity available for sale.
 - **`Sessions`**: array containing the requested sessions. Corresponds to each day with limited access to each of the sessions.
     - **`SessionId`**: identificador de la sesión.
-    - **`Date`**: access date. *ISO 8601 format (yyyy-MM-ddThh:mm:ss.fffffff)*.
+    - **`Date`**: access date. *ISO 8601 format (yyyy-MM-ddThh\:mm\:ss.fffffff)*.
     - **`AvailableCapacity`**: capacity available for sale.
 --8<-- "includes/responseBaseDocumentation.en.md"
 

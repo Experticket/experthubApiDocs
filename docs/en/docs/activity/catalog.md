@@ -34,7 +34,7 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
 
 ## Response structure
 
-- **`LastUpdatedDateTime`**: last catalog modification date. *ISO 8601 format (yyyy-MM-ddThh:mm:ss.fffffff)*.
+- **`LastUpdatedDateTime`**: last catalog modification date. *ISO 8601 format (yyyy-MM-ddThh\:mm\:ss.fffffff)*.
 - **`Providers`**: providers array.
     - **`ProviderId`**: provider identifier. Alphanumeric of 13 characters.
     - **`ProviderName`**: provider name.
