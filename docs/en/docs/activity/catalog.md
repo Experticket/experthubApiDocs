@@ -76,6 +76,7 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
     - **``IsForSeasonTickets``**: indicates if the provider's products are season tickets.
     - **`LimitOfNumberOfPeopleToBeGroup`**: limits the number of people that make up a product from which the sale is considered for "groups". For example, if this limit is "19" and the provider is not for groups (`#!csharp IsForGroups == false`), sales with 20 or more people will not be accepted. On the contrary, if the provider is for groups (`#!csharp IsForGroups == true`), sales for 20 or more people will only be accepted.
     - **`Logo`**: url to download the provider's logo.
+    - **`Tags`**: array of [tag identifiers](tags.md) applied to the provider.
     - **`Location`**: location information.
         - **`CountryCode`**: country code (es, fr...).
         - **`City`**: city.
@@ -126,7 +127,6 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
             - **`ProductBaseId`**: category identifier. 13 character alphanumeric.
             - **`ProductBaseName`**: category name.
             - **`ProductBaseDescription`**:  category description. It usually contains the conditions common to all its products.
-            - **`DaysWithLimitedCapacity`**: fdates in which all the products in this category have a limited capacity. Therefore, it will be essential to check the availability of the category before creating a sale. The dates will be in *ISO 8601 format (yyyy-MM-dd)*, and will be separated from each other by a comma. More information about it in the section on [obtaining available capacity](availability.md).
             - **`LimitOfNumberOfPeopleToBeGroup`**: *optional*, same meaning as the `LimitOfNumberOfPeopleToBeGroup` property in the `Provider` node. If specified, the most restrictive between this value and that of the provider will be used.
             - **`Products`**: product array.
                 - **`ProductId`**: product identifier. 13 character alphanumeric.
@@ -304,6 +304,7 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
     - **`RequiresRealTimePrice`**: indicates if you need to consult the price in real time for the combined product. See [obtaining the price in real time](realTimePrices.md)
 - **`PartnerSettings`**: shows the partner settings.
     - **`DemandClientData`**: boolean `#!csharp true/false` that indicates if is mandatory to tell the client information when sale confirmation is done.
+    - **`DemandClientTaxData`**: boolean `#!csharp true/false` that indicates if is mandatory to tell the client tax information when sale confirmation is done.
     - **`EnableCancellationRequest`**:  boolean `#!csharp true/false` taht indicates if Test It is allowed to request cancellations via API.
     - **`PaymentType`**: indicates the payment type for the partner.
 

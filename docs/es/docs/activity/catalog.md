@@ -76,6 +76,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
     - **``IsForSeasonTickets``**: indica si los productos del proveedor son abonos de temporada.
     - **`LimitOfNumberOfPeopleToBeGroup`**: límite del número de personas que conforman un producto a partir del cual la venta se considera para "grupos". Por ejemplo, si este límite es "19" y el proveedor no es para grupos (`#!csharp IsForGroups == false`), no se aceptarán ventas con 20 o más personas. Por contra, si el proveedor es para grupos (`#!csharp IsForGroups == true`), solo se aceptarán ventas para 20 o más personas.
     - **`Logo`**: url para descargar la imagen del logotipo del proveedor.
+    - **`Tags`**: array de [identificadores de etiquetas](tags.md) aplicadas al proveedor.
     - **`Location`**: información de localización.
         - **`CountryCode`**: código de país (es, fr...).
         - **`City`**: ciudad.
@@ -126,7 +127,6 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
             - **`ProductBaseId`**: identificador de la categoría. Alfanumérico de 13 caracteres.
             - **`ProductBaseName`**: nombre de la categoría.
             - **`ProductBaseDescription`**:  descripción de la categoría. Suele contener las condiciones comunes al todos sus productos.
-            - **`DaysWithLimitedCapacity`**: fechas en los que todos los productos de esta categoría tienen un aforo limitado. Por tanto, será imprescindible consultar la disponibilidad de la categoría antes de crear una venta. Las fechas tendrán *formato ISO 8601 (yyyy-MM-dd)*, y estarán separadas entre sí por una coma. Más información al respecto en el punto [obtención de aforo disponible](availability.md).
             - **`LimitOfNumberOfPeopleToBeGroup`**: *opcional*, mismo significado que la propiedad `LimitOfNumberOfPeopleToBeGroup` en el nodo `Provider`. Si está especificado se usará el más restrictivo entre este valor y el de proveedor.
             - **`Products`**: array de productos.
                 - **`ProductId`**: identificador del producto. Alfanumérico de 13 caracteres.
@@ -304,6 +304,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
     - **`RequiresRealTimePrice`**: indica si requiere consultar el precio en tiempo real para el producto combinado. Véase [obtención del precio en tiempo real](realTimePrices.md)
 - **`PartnerSettings`**: indica las configuraciones del colaborador.
     - **`DemandClientData`**: valor de verdad `#!csharp true/false` que indica si es obligatorio indicar datos del cliente al confirmar una venta.
+    - **`DemandClientTaxData`**: valor de verdad `#!csharp true/false` que indica si es obligatorio indicar los datos fiscales del cliente al confirmar una venta.
     - **`EnableCancellationRequest`**: valor de verdad `#!csharp true/false` que indica si el colaborador tiene permitido solicitar cancelaciones vía API.
     - **`PaymentType`**: indica el tipo de pago que realiza el colaborador.
 

@@ -1,14 +1,3 @@
-=== "ProductBaseIds"
-
-    ``` json
-    {
-        "ProductBaseIds": [
-            "dj48vjsyufvyu",
-            "ajr7v0alt62hl"
-        ]
-    }
-    ```
-
 === "ProductIds"
 
     ``` json
@@ -60,15 +49,14 @@
 
     ``` json
     {
-        "ProductBaseIds": 
-        [
-            "dj48vjsyufvyu",
-            "ajr7v0alt62hl"
-        ],
         "ProductIds": 
         [
             "dj48vjsyufvyu",
             "jnvfnvjkivnnf"
+        ],
+        "SessionIds": [
+            "usdhdsa124asd",
+            "iujnvi83nd347"
         ],
         "Dates": 
         [

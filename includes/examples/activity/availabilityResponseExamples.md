@@ -1,18 +1,5 @@
 ``` json
 {
-    "ProductsBases":
-    [
-        {
-            "ProductBaseId": "dj48vjsyufvyu",
-            "Date": "2022-07-20",
-            "AvailableCapacity": 15
-        },
-        {
-            "ProductBaseId": "ajr7v0alt62hl",
-            "Date": "2022-07-22",
-            "AvailableCapacity": 500
-        }
-    ],
     "Products":
     [
         {

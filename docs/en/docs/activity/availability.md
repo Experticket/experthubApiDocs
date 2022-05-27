@@ -1,29 +1,21 @@
 # Available capacity
 
-As we have seen in the point [obtain catalog](catalog.md), both ``ProductBases`` and ``Products`` have the property **``DaysWithLimitedCapacity``**, as well as through the [call to get sessions](sessions.md) we see that ``Sessions`` can have **``AvailableCapacity``** defined.
+As we have seen in the point [obtain catalog](catalog.md), ``Products`` have the property **``DaysWithLimitedCapacity``**, as well as through the [call to get sessions](sessions.md) we see that ``Sessions`` can have **``AvailableCapacity``** defined.
 
 !!! success ""
     If the field ``DaysWithLimitedCapacity`` is empty and, in case the product has non-auto assigned sessions (see in [catalog](catalog.md)), if the sessions do not have the ``AvailableCapacity`` field defined means that you do not have to check the availability for any date, therefore it is not necessary to make this API call.
 
 !!! warning ""
-    If the ``DaysWithLimitedCapacity`` field has days defined or the sessions have ``AvailableCapacity`` defined, we must check the available capacity of the category (ProductBase), the product, and/or the corresponding session before offering the product to the customer.
+    If the ``DaysWithLimitedCapacity`` field has days defined or the sessions have ``AvailableCapacity`` defined, we must check the available capacity of the product and/or the corresponding session before offering the product to the customer.
 
 !!! error ""
     If when trying to confirm the cart the capacity has been exceeded, that is, there is not enough capacity left to carry out the reservation, an error will be returned.
 
-Available capacity refers to quota type tickets (``#!csharp IsQuotaTicket == true``). Therefore, the capacity of a product is the number of quota type tickets that can be sold for that product. And the capacity of a ProductBase is the amount of quota type tickets that can be sold from the sum of all products of the ProductBase.
+Available capacity refers to quota type tickets (``#!csharp IsQuotaTicket == true``). Therefore, the capacity of a product is the number of quota type tickets that can be sold for that product.
 
 ??? info "Example"
     Obtain the following information from the catalog:
 
-    - The following ``ProductBase`` has November 1, 2022 marked as the date on which availability must be checked.
-
-        ``` json hl_lines="3"
-        {
-            "ProductBaseId": "gfo753rgjfbw6",
-            "DaysWithLimitedCapacity": "2022-11-01"
-        }
-        ```
     - The following ``Product`` has August 15 and April 17, 2022 marked as dates to check availability.
 
         ``` json hl_lines="3"
@@ -106,54 +98,6 @@ Available capacity refers to quota type tickets (``#!csharp IsQuotaTicket == tru
             ]
         }
         ```
-    - The following ``ProductBase`` is made up of a product with a capacity-type ticket and another product with three capacity-type tickets:
-
-        ``` json hl_lines="10 14 18 31"
-        {
-            "ProductBaseId": "gfo753rgjfbw6",
-            "DaysWithLimitedCapacity": "2022-08-31",
-            "Products": [
-                {
-                    "ProductId": "htgy4tgm9q21n",
-                    "Tickets": [
-                        {
-                            "TicketId": "1tqgtrf7ctefc",
-                            "IsQuotaTicket": true
-                        }, 
-                        {
-                            "TicketId": "2lob55g8w3fff",
-                            "IsQuotaTicket": true
-                        }, 
-                        {
-                            "TicketId": "jkp78j40cnfh3",
-                            "IsQuotaTicket": true
-                        }, 
-                        {
-                            "TicketId": "gggsijt911am4",
-                            "IsQuotaTicket": false
-                        }
-                    ]
-                },
-                {
-                    "ProductId": "q2oghu9mye7h2",
-                    "Tickets": [
-                        {
-                            "TicketId": "fb8mcqxyo22rg",
-                            "IsQuotaTicket": true
-                        }
-                    ]
-                }
-            ]
-        }
-        ```
-
-        So, if the capacity of the ``ProductBase`` were 21, we could sell combinations like the following:
-
-          - 21 products of "q2oghu9mye7h2" (21 x 1 = 21)
-          - 7 products of "htgy4tgm9q21n" (7 x 3 = 21)
-          - 6 products of "q2oghu9mye7h2" and 5 of "htgy4tgm9q21n" (6 x 1 + 5 x 3 = 21)
-          - 15 products of "q2oghu9mye7h2" and 3 of "htgy4tgm9q21n" (15 x 1 + 3 x 3 = 21)
-          - And any other combination we can think of.
 
 ## Access Method
 
@@ -161,7 +105,6 @@ Available capacity refers to quota type tickets (``#!csharp IsQuotaTicket == tru
 
 ## Request structure
 
-- **`ProductBaseIds`**: array of category identifiers to filter by.
 - **`ProductIds`**: array of product identifiers to filter by.
 - **`SessionIds`**: array of session identifiers to filter by.
 - **`Dates`**: array of dates to filter by. *ISO 8601 format (yyyy-MM-dd)*.
@@ -169,7 +112,7 @@ Available capacity refers to quota type tickets (``#!csharp IsQuotaTicket == tru
 - **`ToDate`**: if you want to filter by a range of dates, you can filter by end date. Its default value is the date corresponding to one year from now. *ISO 8601 format (yyyy-MM-dd)*.
 
 !!! tip "Important"
-    At least one `ProductBaseId`, `ProductId`, or `SessionId` must be defined. You can add as many as you want and they will be considered an ***OR***.
+    At least one `ProductId`, or `SessionId` must be defined. You can add as many as you want and they will be considered an ***OR***.
 
 ### Request example
 
@@ -177,10 +120,6 @@ Available capacity refers to quota type tickets (``#!csharp IsQuotaTicket == tru
 
 ## Response structure
 
-- **`ProductBases`**: array containing the requested `ProductBase`. Corresponds to each day with limited access to each of the `ProductBase`.
-    - **`ProductBaseId`**: identifier of the `ProductBase`.
-    - **`Date`**: access date. *ISO 8601 format (yyyy-MM-dd)*.
-    - **`AvailableCapacity`**: capacity available for sale.
 - **`Products`**: array containing the requested products. Corresponds to each day with limited access to each of the products.
     - **`ProductId`**: identificador del producto.
     - **`Date`**: access date. *ISO 8601 format (yyyy-MM-dd)*.
