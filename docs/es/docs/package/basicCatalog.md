@@ -39,7 +39,7 @@ En este método podemos obtener la información más básica e indispensable sob
         - **``(int)``**: Indica si se quiere o no con reembolso. Ver [AccommodationRateClasses](/experthubApiDocs/es/docs/struct/).
     - **``AccommodationTypes``**: Listado de tipos de alojamiento.
         - **``(int)``**: Indica el tipo de alojamiento.
-          --8<-- "docs/es/docs/enum/accommodationType.md"
+--8<-- "docs/es/docs/enum/accommodationType.md"
     - **``Cities``**: Listado de ciudades.
         - **``(string)``**: Nombre de la ciudad.
     - **``DistanceRanges``**: Listado de rangos de distancia.
