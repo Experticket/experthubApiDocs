@@ -25,6 +25,7 @@
         - **``(int)``**: Tipo de régimen alimenticio. Ver [AccommodationBoards](/experthubApiDocs/es/docs/struct/).
     - **``AccommodationCategories``**: Listado con las categorías del alojamiento deseadas.
         - **``(int)``**: Tipo de categoría del alojamiento. Ver [AccommodationCategories](/experthubApiDocs/es/docs/struct/).
+        --8<-- "docs/es/docs/enum/accommodationType.md"
     - **``AccommodationRateClasses``**: Listado de alojamientos con o sin reembolso.
         - **``(int)``**: Indica si se quiere o no con reembolso. Ver [AccommodationRateClasses](/experthubApiDocs/es/docs/struct/).
     - **``AccommodationTypes``**: Listado de tipos de alojamiento.
