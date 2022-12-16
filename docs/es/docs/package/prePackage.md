@@ -2,11 +2,16 @@
 
 Con este método podemos obtener los prepaquetes de actividades disponibles.
 
+Los prepaquetes son estructuras previas a la creación de un paquete y pueden estar compuestos por uno o más recintos (ej. "Oceanogràfic + Bioparc"). Cada prepaquete, a su vez, dispondrá de uno o varios grupos de productos (ProductPaxGroupings).
+
+Es relevante tener en cuenta la geolocalización sugerida. Esta se utiliza en los distintos métodos de catálogo para ubicar una zona a partir de la cual buscar hoteles.
+
 ## Método de acceso
 
 **POST** activity/prepackages
 
 ## Estructura de la petición
+Todos los parámetros de la petición son opcionales.
 
 - **``ProviderIds``**: array de proveedores para filtrar.
 - **``PrePackageIds``**: array de prepaquetes para filtrar.
@@ -45,7 +50,7 @@ Con este método podemos obtener los prepaquetes de actividades disponibles.
             - **``Logo``**: imagen con el logotipo del recinto.
         - **``ValidDays``**: días de validez.
         - **``ValidDaysType``**: tipo de días de validez.
-    - **``SuggestedLocation``**: localización sugerida para busqueda de alojamiento. Suele ser unas coordenadas calculadas centricas entre todos los recintos del prepaquete.
+    - **``SuggestedLocation``**: localización sugerida para búsqueda de alojamiento. Suele ser unas coordenadas calculadas céntricas entre todos los recintos del prepaquete.
         - **`Lat`**: coordenadas de latitud.
         - **`Lng`**: coordenadas de longitud.
 --8<-- "includes/responseBaseDocumentation.es.md"
