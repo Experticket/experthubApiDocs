@@ -32,13 +32,13 @@ En este método podemos obtener la información más básica e indispensable sob
             - **``int``**: Índice correspondiente a la posición de la persona en el listado de Personas (People).
 - **``Filter``**: Filtros para acotar la obtención de paquetes. Los distintos filtros se añaden como de un operador ``AND`` se tratara.
     - **``AccommodationBoards``**: Listado con los regímenes del alojamiento deseados.
-        - **``(int)``**: Tipo de régimen alimenticio. Ver [AccommodationBoards](#accommodationboard).
+        - **``(int)``**: Tipo de régimen alimenticio. Ver [AccommodationBoard](#accommodationboard).
     - **``AccommodationCategories``**: Listado con las categorías del alojamiento deseadas.
-        - **``(int)``**: Tipo de categoría del alojamiento. Ver [AccommodationCategories](#accommodationcategory).
+        - **``(int)``**: Tipo de categoría del alojamiento. Ver [AccommodationCategory](#accommodationcategory).
     - **``AccommodationRateClasses``**: Listado de alojamientos con o sin reembolso.
-        - **``(int)``**: Indica si se quiere o no con reembolso. Ver [AccommodationRateClasses](#accommodationrateclass).
+        - **``(int)``**: Indica si se quiere o no con reembolso. Ver [AccommodationRateClass](#accommodationrateclass).
     - **``AccommodationTypes``**: Listado de tipos de alojamiento.
-        - **``(int)``**: Indica el tipo de alojamiento. [Ver Accomodation Types](#accomodation-types)
+        - **``(int)``**: Indica el tipo de alojamiento. [Ver Accomodation Type](#accomodation-types)
     - **``Cities``**: Listado de ciudades.
         - **``(string)``**: Nombre de la ciudad.
     - **``DistanceRanges``**: Listado de rangos de distancia.
