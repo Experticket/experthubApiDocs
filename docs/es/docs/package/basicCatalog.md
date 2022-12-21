@@ -57,20 +57,20 @@ En este método podemos obtener la información más básica e indispensable sob
 - **``Success``** (boolean) Estado de la respuesta.
 - **``AvailableFilters``** (list) Listado de filtros disponibles para la configuración de actividad y alojamiento.
     - **``AccommodationBoards``** (list) Listado de regímenes alimenticios.
-      - **``Value``** (int) Tipo de régimen alimenticio.  Ver [AccommodationBoard](#accommodationboard).
-      - **``Count``** (int) Número de resultados disponibles para este régimen alimenticio.
+        - **``Value``** (int) Tipo de régimen alimenticio. Ver [AccommodationBoard](#accommodationboard).
+        - **``Count``** (int) Número de resultados disponibles para este régimen alimenticio.
     - **``AccommodationCategories``** (list) Listado con las categorías del alojamiento deseadas.
-      - **``Value``** (int) Tipo de régimen alimenticio. Ver [AccommodationCategory](#accommodationcategory).
-      - **``Count``** (int) Número de resultados disponibles para este régimen alimenticio.
+        - **``Value``** (int) Categoría del alojamiento. Ver [AccommodationCategory](#accommodationcategory).
+        - **``Count``** (int) Número de resultados disponibles para esta categoría.
     - **``AccommodationCities``** (list) Listado con las ciudades disponibles.
-      - **``Value``** (string) Nombre de la ciudad.
-      - **``Count``** (int) Número de resultados disponibles la ciudad en cuestión.
+        - **``Value``** (string) Nombre de la ciudad.
+        - **``Count``** (int) Número de resultados disponibles la ciudad en cuestión.
     - **``AccommodationRateClasses``** (list) Listado de alojamientos con o sin reembolso.
-      - **``Value``** (int) Indica si permite reembolso. Ver [AccommodationRateClass](#accommodationrateclass).
-      - **``Count``** (int) Número de resultados para cada reembolsos y no reembolsos.
+        - **``Value``** (int) Indica si permite reembolso. Ver [AccommodationRateClass](#accommodationrateclass).
+        - **``Count``** (int) Número de resultados para cada reembolsos y no reembolsos.
     - **``AccommodationTypes``**  (list) Listado de tipos de alojamiento.
-      - **``Value``**  (int) Indica el tipo de alojamiento. [Ver Accomodation Type](#accomodation-types)
-      - **``Count``** (int) Número de resultados para cada el tipo alojamiento.
+        - **``Value``**  (int) Indica el tipo de alojamiento. [Ver Accomodation Type](#accomodation-types)
+        - **``Count``** (int) Número de resultados para cada el tipo alojamiento.
 - **``Packages``** (list) Listado de paquetes con base en los criterios de búsqueda: Actividad, Alojamiento y Filtros.
 
 ## Tipo de datos
