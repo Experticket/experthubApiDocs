@@ -4,7 +4,7 @@ En este método podemos obtener la información más básica e indispensable sob
 
 ## Método de acceso
 
-**POST** package/basiccatalog
+**POST** Package/BasicCatalog
 
 ## Estructura de la petición
 
