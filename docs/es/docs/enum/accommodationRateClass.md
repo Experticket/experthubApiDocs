@@ -1,4 +1,5 @@
 ### AccommodationRateClass
+
 Indica si es reembolsable
 
 - ``1``: No reembolsable

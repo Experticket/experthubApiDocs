@@ -1,4 +1,4 @@
-### Person.Type
+### People.Type
 Indica el tipo de persona.
 
 - ``0``: Bebé
