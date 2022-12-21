@@ -61,4 +61,4 @@ En este método podemos obtener la información más básica e indispensable sob
 
 --8<-- "docs/es/docs/enum/accommodationRateClass.md"
 
---8<-- "docs/es/docs/enum/sortcriteria.md"
+--8<-- "docs/es/docs/enum/sortCriteria.md"
