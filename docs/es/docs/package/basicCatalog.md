@@ -8,51 +8,73 @@ En este método podemos obtener la información más básica e indispensable sob
 
 ## Estructura de la petición
 
-- **``People``**: Listado de personas que componen el paquete.
-    - **``Person``**: Información de la persona
-        - **``Type``**: Tipo de persona. Ver [Person.Type](#persontype).
-        - **``Age``**: En caso de ser niño, edad del mismo.
+- **``People``**: (list) Listado de personas que componen el paquete.
+    - **``Person``**: (object) Información de la persona
+        - **``Type``**: (int) Tipo de persona. Ver [Person.Type](#persontype).
+        - **``Age``**: (int) En caso de ser niño, edad del mismo.
 
-- **``Activity``**: Información sobre la actividad.
-- **``FromDate``**: Fecha de inicio de la actividad. Formato IS0 8601 (YYYY-MM-DD).
-    - **``ToDate``**: Fecha de finalización de la actividad. Formato IS0 8601 (YYYY-MM-DD).
-    - **``PrePackageIds``**: Listado de prepaquetes.
+- **``Activity``**: (object) Información sobre la actividad.
+    - **``FromDate``**: (date) Fecha de inicio de la actividad. Formato IS0 8601 (YYYY-MM-DD).
+    - **``ToDate``**: (date) Fecha de finalización de la actividad. Formato IS0 8601 (YYYY-MM-DD).
+    - **``PrePackageIds``**: (list) Listado de prepaquetes.
         - **``(string)``**: Identificador del prepaquete.
 
-- **``Accomodation``**: Información sobre los hoteles a obtener.
-    - **``AccommodationIds``**: Listado que permite obtener únicamente paquetes de un conjunto de hoteles.
+- **``Accomodation``**: (object) Información sobre los hoteles a obtener.
+    - **``AccommodationIds``**: (list) Listado que permite obtener únicamente paquetes de un conjunto de hoteles.
         - **``(string)``**: Identificador del hotel.
-    - **``Destination``**: Geolocalización a partir de la cual se realizará la búsqueda de hoteles. Ver [SuggestedLocation](/experthubApiDocs/es/docs/package/prePackage/).
+    - **``Destination``**: (object) Geolocalización a partir de la cual se realizará la búsqueda de hoteles. Ver [SuggestedLocation](/experthubApiDocs/es/docs/package/prePackage/).
         - **``Latitude``**: Latitud de la geoposición.
-            - **``Longitude``**: Longitud de la geoposición.
-    - **``CheckIn``**: Fecha de entrada al alojamiento. Formato ISO 8601 (YYYY-MM-DD).
-    - **``CheckOut``**: Fecha de salida del alojamiento. Formato ISO 8601 (YYYY-MM-DD).
-    - **``RoomDistribution``**: Listado con la distribución de habitaciones.
-        - **``Room``**: Información de las Personas que componen esta habitación.
-            - **``int``**: Índice correspondiente a la posición de la persona en el listado de Personas (People).
-- **``Filter``**: Filtros para acotar la obtención de paquetes. Los distintos filtros se añaden como de un operador ``AND`` se tratara.
-    - **``AccommodationBoards``**: Listado con los regímenes del alojamiento deseados.
+        - **``Longitude``**: Longitud de la geoposición.
+    - **``CheckIn``**: (date) Fecha de entrada al alojamiento. Formato ISO 8601 (YYYY-MM-DD).
+    - **``CheckOut``**: (date) Fecha de salida del alojamiento. Formato ISO 8601 (YYYY-MM-DD).
+    - **``RoomDistribution``**: (list) Listado habitaciones que compondrán el paquete.
+        - **``Room``**: (list) Información de las Personas que componen esta habitación.
+            - **``(int)``**: Índice correspondiente a la posición de la persona en el listado de Personas (People).
+- **``Filter``**: (list) Filtros para acotar la obtención de paquetes. Los distintos filtros se añaden como si de un operador ``AND`` se tratase.
+    - **``AccommodationBoards``**: (list) Listado con los regímenes del alojamiento deseados.
         - **``(int)``**: Tipo de régimen alimenticio. Ver [AccommodationBoard](#accommodationboard).
-    - **``AccommodationCategories``**: Listado con las categorías del alojamiento deseadas.
+    - **``AccommodationCategories``**: (list) Listado con las categorías del alojamiento deseadas.
         - **``(int)``**: Tipo de categoría del alojamiento. Ver [AccommodationCategory](#accommodationcategory).
-    - **``AccommodationRateClasses``**: Listado de alojamientos con o sin reembolso.
+    - **``AccommodationRateClasses``**: (list) Listado de alojamientos con o sin reembolso.
         - **``(int)``**: Indica si se quiere o no con reembolso. Ver [AccommodationRateClass](#accommodationrateclass).
-    - **``AccommodationTypes``**: Listado de tipos de alojamiento.
+    - **``AccommodationTypes``**: (list) Listado de tipos de alojamiento.
         - **``(int)``**: Indica el tipo de alojamiento. [Ver Accomodation Type](#accomodation-types)
-    - **``Cities``**: Listado de ciudades.
+    - **``Cities``**: (list) Listado de ciudades.
         - **``(string)``**: Nombre de la ciudad.
-    - **``DistanceRanges``**: Listado de rangos de distancia.
-        - **``DistanceRange``**: Rango de distancia en metros.
-            - **``Min``**: Distancia mínima.
-            - **``Max``**: Distancia máxima.
-        - **``PriceRange``**: Rango de precios del paquete.
-            - **``Min``**: Precio mínimo.
-            - **``Max``**: Precio máximo.
-- **``Sort``**: Ordenación de los resultados
-    - **``Criteria``**: Tipo de ordenación. Ver [Sort.Criteria](#sortcriteria).
+    - **``DistanceRanges``**: (list) Listado de rangos de distancia. En caso de más de un elemento, actuarán como un operador de union ``OR``.
+        - **``DistanceRange``**: (object)Rango de distancia en metros.
+            - **``Min``**: (int) Distancia mínima.
+            - **``Max``**: (int) Distancia máxima.
+        - **``PriceRange``**: Rango de precios del paquete. En caso de más de un elemento, actuarán como un operador de union ``OR``.
+            - **``Min``**: (int) Precio mínimo.
+            - **``Max``**: (int) Precio máximo.
+- **``Sort``**: (object) Ordenación de los resultados
+    - **``Criteria``**: (int) Tipo de ordenación. Ver [Sort.Criteria](#sortcriteria).
 
+## Estructura de la respuesta
+
+- **``TotalPages``** (int) Número total de páginas.
+- **``Success``** (boolean) Estado de la respuesta.
+- **``AvailableFilters``** (list) Listado de filtros disponibles para la configuración de actividad y alojamiento.
+    - **``AccommodationBoards``** (list) Listado de regímenes alimenticios.
+      - **``Value``** (int) Tipo de régimen alimenticio.  Ver [AccommodationBoard](#accommodationboard).
+      - **``Count``** (int) Número de resultados disponibles para este régimen alimenticio.
+    - **``AccommodationCategories``** (list) Listado con las categorías del alojamiento deseadas.
+      - **``Value``** (int) Tipo de régimen alimenticio. Ver [AccommodationCategory](#accommodationcategory).
+      - **``Count``** (int) Número de resultados disponibles para este régimen alimenticio.
+    - **``AccommodationCities``** (list) Listado con las ciudades disponibles.
+      - **``Value``** (string) Nombre de la ciudad.
+      - **``Count``** (int) Número de resultados disponibles la ciudad en cuestión.
+    - **``AccommodationRateClasses``** (list) Listado de alojamientos con o sin reembolso.
+      - **``Value``** (int) Indica si permite reembolso. Ver [AccommodationRateClass](#accommodationrateclass).
+      - **``Count``** (int) Número de resultados para cada reembolsos y no reembolsos.
+    - **``AccommodationTypes``**  (list) Listado de tipos de alojamiento.
+      - **``Value``**  (int) Indica el tipo de alojamiento. [Ver Accomodation Type](#accomodation-types)
+      - **``Count``** (int) Número de resultados para cada el tipo alojamiento.
+- **``Packages``** (list) Listado de paquetes con base en los criterios de búsqueda: Actividad, Alojamiento y Filtros.
 
 ## Tipo de datos
+
 --8<-- "docs/es/docs/enum/personType.md"
 
 --8<-- "docs/es/docs/enum/accommodationType.md"
