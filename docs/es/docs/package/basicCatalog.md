@@ -53,4 +53,13 @@ En este método podemos obtener la información más básica e indispensable sob
 
 
 ## Tipo de datos
+
+--8<-- "docs/es/docs/enum/personType.md"
+
 --8<-- "docs/es/docs/enum/accommodationType.md"
+
+--8<-- "docs/es/docs/enum/accommodationCategory.md"
+
+--8<-- "docs/es/docs/enum/accommodationRateClass.md"
+
+--8<-- "docs/es/docs/enum/sortCriteria.md"
