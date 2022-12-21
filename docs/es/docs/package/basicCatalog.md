@@ -10,7 +10,7 @@ En este método podemos obtener la información más básica e indispensable sob
 
 - **``People``**: Listado de personas que componen el paquete.
     - **``Person``**: Información de la persona
-        - **``Type``**: Tipo de persona. Ver [People.Type](/experthubApiDocs/es/docs/struct/).
+        - **``Type``**: Tipo de persona. Ver [Person.Type](#persontype).
         - **``Age``**: En caso de ser niño, edad del mismo.
 
 - **``Activity``**: Información sobre la actividad.
@@ -32,11 +32,11 @@ En este método podemos obtener la información más básica e indispensable sob
             - **``int``**: Índice correspondiente a la posición de la persona en el listado de Personas (People).
 - **``Filter``**: Filtros para acotar la obtención de paquetes. Los distintos filtros se añaden como de un operador ``AND`` se tratara.
     - **``AccommodationBoards``**: Listado con los regímenes del alojamiento deseados.
-        - **``(int)``**: Tipo de régimen alimenticio. Ver [AccommodationBoards](/experthubApiDocs/es/docs/struct/).
+        - **``(int)``**: Tipo de régimen alimenticio. Ver [AccommodationBoards](#accommodationboard).
     - **``AccommodationCategories``**: Listado con las categorías del alojamiento deseadas.
-        - **``(int)``**: Tipo de categoría del alojamiento. Ver [AccommodationCategories](/experthubApiDocs/es/docs/struct/).
+        - **``(int)``**: Tipo de categoría del alojamiento. Ver [AccommodationCategories](#accommodationcategory).
     - **``AccommodationRateClasses``**: Listado de alojamientos con o sin reembolso.
-        - **``(int)``**: Indica si se quiere o no con reembolso. Ver [AccommodationRateClasses](/experthubApiDocs/es/docs/struct/).
+        - **``(int)``**: Indica si se quiere o no con reembolso. Ver [AccommodationRateClasses](#accommodationrateclass).
     - **``AccommodationTypes``**: Listado de tipos de alojamiento.
         - **``(int)``**: Indica el tipo de alojamiento. [Ver Accomodation Types](#accomodation-types)
     - **``Cities``**: Listado de ciudades.
@@ -49,8 +49,16 @@ En este método podemos obtener la información más básica e indispensable sob
             - **``Min``**: Precio mínimo.
             - **``Max``**: Precio máximo.
 - **``Sort``**: Ordenación de los resultados
-    - **``Criteria``**: Tipo de ordenación. Ver [Sort.Criteria](/experthubApiDocs/es/docs/struct/).
+    - **``Criteria``**: Tipo de ordenación. Ver [Sort.Criteria](#sortcriteria).
 
 
 ## Tipo de datos
+--8<-- "docs/es/docs/enum/personType.md"
+
 --8<-- "docs/es/docs/enum/accommodationType.md"
+
+--8<-- "docs/es/docs/enum/accommodationCategory.md"
+
+--8<-- "docs/es/docs/enum/accommodationRateClass.md"
+
+--8<-- "docs/es/docs/enum/sortcriteria.md"
