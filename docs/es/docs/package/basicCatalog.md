@@ -38,8 +38,7 @@ En este método podemos obtener la información más básica e indispensable sob
     - **``AccommodationRateClasses``**: Listado de alojamientos con o sin reembolso.
         - **``(int)``**: Indica si se quiere o no con reembolso. Ver [AccommodationRateClasses](/experthubApiDocs/es/docs/struct/).
     - **``AccommodationTypes``**: Listado de tipos de alojamiento.
-        - **``(int)``**: Indica el tipo de alojamiento.
-            - --8<-- "docs/es/docs/enum/accommodationType.md"
+        - **``(int)``**: Indica el tipo de alojamiento. [Ver Accomodation Types](#accomodation-types)
     - **``Cities``**: Listado de ciudades.
         - **``(string)``**: Nombre de la ciudad.
     - **``DistanceRanges``**: Listado de rangos de distancia.
@@ -51,3 +50,7 @@ En este método podemos obtener la información más básica e indispensable sob
             - **``Max``**: Precio máximo.
 - **``Sort``**: Ordenación de los resultados
     - **``Criteria``**: Tipo de ordenación. Ver [Sort.Criteria](/experthubApiDocs/es/docs/struct/).
+
+
+## Tipo de datos
+--8<-- "docs/es/docs/enum/accommodationType.md"

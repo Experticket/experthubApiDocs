@@ -1,4 +1,4 @@
-??? example "AccommodationTypes"
+### Accomodation Types
     - 0: Sin clasificar
     - 1: Hotel
     - 2: Hostal
