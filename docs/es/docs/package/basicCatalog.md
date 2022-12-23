@@ -65,11 +65,11 @@ En este método podemos obtener la información más básica e indispensable sob
 
 ### Ejemplos de peticiones
 
-??? example "Example: 2 rooms: "1 adult + 1 child" y "1 adult""
+??? tip "Example: 2 rooms: "1 adult + 1 child" y "1 adult""
 
 --8<-- "includes/examples/package/basicCatalogRequest001.md"
 
-??? example "Example: 1 rooms: "1 adult + 1 child" in 3* accommodation"
+??? tip "Example: 1 rooms: "1 adult + 1 child" in 3* accommodation"
 
 --8<-- "includes/examples/package/basicCatalogRequest002.md"
 
