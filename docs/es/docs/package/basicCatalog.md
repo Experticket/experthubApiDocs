@@ -10,7 +10,11 @@ En este método podemos obtener la información más básica e indispensable sob
 
 - **``People``**: (list) Listado de personas que componen el paquete.
     - **``Person``**: (object) Información de la persona
-        - **``Type``**: (int) Tipo de persona. Ver [Person.Type](#persontype).
+        - **``Type``**: (int) Tipo de persona.
+
+            ??? example "Posibles valores"
+                --8<-- "docs/es/docs/enum/personType.md"
+
         - **``Age``**: (int) En caso de ser niño, edad del mismo.
 
 - **``Activity``**: (object) Información sobre la actividad.
@@ -96,7 +100,7 @@ En este método podemos obtener la información más básica e indispensable sob
             - **``City``** (string) Ciudad donde se ubica el alojamiento.
             - **``PostalCode``** (string) Código postal del alojamiento.
             - **``Country``** (string) País donde está ubicado el alojamiento.
-            - **``Type``** (string) Tipo de alojamiento. Ver [Accomodation Type](#accomodation-types)
+            - **``Type``** (string) Tipo de alojamiento.
 
                 ??? example "Posibles valores"
                     --8<-- "docs/es/docs/enum/accommodationType.md"
@@ -105,10 +109,6 @@ En este método podemos obtener la información más básica e indispensable sob
         - **``PriceFrom``** (decimal) Precio de la combinatoria más baja.
 
 ## Tipo de datos
-
---8<-- "docs/es/docs/enum/personType.md"
-
---8<-- "docs/es/docs/enum/accommodationType.md"
 
 --8<-- "docs/es/docs/enum/accommodationCategory.md"
 
