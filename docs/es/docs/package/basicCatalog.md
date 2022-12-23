@@ -36,7 +36,11 @@ En este método podemos obtener la información más básica e indispensable sob
             - **``(int)``**: Índice correspondiente a la posición de la persona en el listado de Personas (People).
 - **``Filter``**: (list) Filtros para acotar la obtención de paquetes. Los distintos filtros se añaden como si de un operador ``AND`` se tratase.
     - **``AccommodationBoards``**: (list) Listado con los regímenes del alojamiento deseados.
-        - **``(int)``**: Tipo de régimen alimenticio. Ver [AccommodationBoard](#accommodationboard).
+        - **``(int)``**: Tipo de régimen alimenticio.
+
+            ??? example "Posibles valores"
+                --8<-- "docs/es/docs/enum/accommodationBoard.md"
+
     - **``AccommodationCategories``**: (list) Listado con las categorías del alojamiento deseadas.
         - **``(int)``**: Tipo de categoría del alojamiento. Ver [AccommodationCategory](#accommodationcategory).
     - **``AccommodationRateClasses``**: (list) Listado de alojamientos con o sin reembolso.
@@ -75,7 +79,11 @@ En este método podemos obtener la información más básica e indispensable sob
 - **``Success``** (boolean) Estado de la respuesta.
 - **``AvailableFilters``** (list) Listado de filtros disponibles para la configuración de actividad y alojamiento. Hay que tener en cuenta que, los resultados, reflejan el número de alojamientos posibles a empaquetar y no el número de paquetes resultantes.
     - **``AccommodationBoards``** (list) Listado de regímenes alimenticios.
-        - **``Value``** (int) Tipo de régimen alimenticio. Ver [AccommodationBoard](#accommodationboard).
+        - **``Value``** (int) Tipo de régimen alimenticio.
+
+            ??? example "Posibles valores"
+                --8<-- "docs/es/docs/enum/accommodationBoard.md"
+
         - **``Count``** (int) Número de resultados disponibles para este régimen alimenticio.
     - **``AccommodationCategories``** (list) Listado con las categorías del alojamiento deseadas.
         - **``Value``** (int) Categoría del alojamiento. Ver [AccommodationCategory](#accommodationcategory).
@@ -113,7 +121,5 @@ En este método podemos obtener la información más básica e indispensable sob
 --8<-- "docs/es/docs/enum/accommodationCategory.md"
 
 --8<-- "docs/es/docs/enum/accommodationRateClass.md"
-
---8<-- "docs/es/docs/enum/accommodationBoard.md"
 
 --8<-- "docs/es/docs/enum/sortCriteria.md"
