@@ -38,7 +38,11 @@ En este método podemos obtener la información más básica e indispensable sob
     - **``AccommodationRateClasses``**: (list) Listado de alojamientos con o sin reembolso.
         - **``(int)``**: Indica si se quiere o no con reembolso. Ver [AccommodationRateClass](#accommodationrateclass).
     - **``AccommodationTypes``**: (list) Listado de tipos de alojamiento.
-        - **``(int)``**: Indica el tipo de alojamiento. [Ver Accomodation Type](#accomodation-types)
+        - **``(int)``**: Indica el tipo de alojamiento.
+          
+            - ??? example "Posibles valores"
+                --8<-- "docs/es/docs/enum/accommodationType.md"
+
     - **``Cities``**: (list) Listado de ciudades.
         - **``(string)``**: Nombre de la ciudad.
     - **``DistanceRanges``**: (list) Listado de rangos de distancia. En caso de más de un elemento, actuarán como un operador de union ``OR``.
