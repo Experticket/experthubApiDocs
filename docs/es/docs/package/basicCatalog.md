@@ -93,6 +93,10 @@ En este método podemos obtener la información más básica e indispensable sob
             - **``PostalCode``** (string) Código postal del alojamiento.
             - **``Country``** (string) País donde está ubicado el alojamiento.
             - **``Type``** (string) Tipo de alojamiento. Ver [Accomodation Type](#accomodation-types)
+
+                ??? example "Posibles valores"
+                    --8<-- "docs/es/docs/enum/accommodationType.md"
+
             - **``Category``** (string) Categoría del alojamiento. Ver [AccommodationCategory](#accommodationcategory).
         - **``PriceFrom``** (decimal) Precio de la combinatoria más baja.
 

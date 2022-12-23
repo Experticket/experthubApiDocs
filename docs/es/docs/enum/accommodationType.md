@@ -1,6 +1,3 @@
-### Accomodation Types
-Indica el tipo de alojamiento
-
 - ``0``: Sin clasificar
 - ``1``: Hotel
 - ``2``: Hostal
