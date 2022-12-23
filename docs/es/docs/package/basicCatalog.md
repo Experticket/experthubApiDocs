@@ -40,7 +40,7 @@ En este método podemos obtener la información más básica e indispensable sob
     - **``AccommodationTypes``**: (list) Listado de tipos de alojamiento.
         - **``(int)``**: Indica el tipo de alojamiento.
           
-            - ??? example "Posibles valores"
+            ??? example "Posibles valores"
                 --8<-- "docs/es/docs/enum/accommodationType.md"
 
     - **``Cities``**: (list) Listado de ciudades.
