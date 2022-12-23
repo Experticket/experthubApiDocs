@@ -82,7 +82,7 @@ Las actividades pueden tener ninguna, una o varias restricciones de alojamientos
     - **``Number``**: (``int``) ``Opcional``. Número de pagina solicitada.
     - **``Size``**: (``int``) ``Opcional``. Número de elementos por página.
 
-### Ejemplos de peticiones
+### Ejemplos
 
 ??? tip "Example: 2 rooms: "1 adult + 1 child" y "1 adult""
 
@@ -156,3 +156,8 @@ Las actividades pueden tener ninguna, una o varias restricciones de alojamientos
 
         - **``PriceFrom``** (``decimal``) Precio de la combinatoria más baja para el paquete en cuestión.
 
+### Ejemplos
+
+??? tip "Ejemplo 1"
+
+--8<-- "includes/examples/package/basicCatalogResponse001.md"
