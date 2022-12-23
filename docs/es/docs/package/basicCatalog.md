@@ -51,11 +51,21 @@ En este método podemos obtener la información más básica e indispensable sob
 - **``Sort``**: (object) Ordenación de los resultados
     - **``Criteria``**: (int) Tipo de ordenación. Ver [Sort.Criteria](#sortcriteria).
 
+### Ejemplos de peticiones
+
+??? example "Example: 2 rooms: "1 adult + 1 child" y "1 adult""
+
+--8<-- "includes/examples/package/basicCatalogRequest001.md"
+
+??? example "Example: 1 rooms: "1 adult + 1 child" in 3* accommodation"
+
+--8<-- "includes/examples/package/basicCatalogRequest002.md"
+
 ## Estructura de la respuesta
 
 - **``TotalPages``** (int) Número total de páginas.
 - **``Success``** (boolean) Estado de la respuesta.
-- **``AvailableFilters``** (list) Listado de filtros disponibles para la configuración de actividad y alojamiento.
+- **``AvailableFilters``** (list) Listado de filtros disponibles para la configuración de actividad y alojamiento. Hay que tener en cuenta que, los resultados, reflejan el número de alojamientos posibles a empaquetar y no el número de paquetes resultantes.
     - **``AccommodationBoards``** (list) Listado de regímenes alimenticios.
         - **``Value``** (int) Tipo de régimen alimenticio. Ver [AccommodationBoard](#accommodationboard).
         - **``Count``** (int) Número de resultados disponibles para este régimen alimenticio.
@@ -69,9 +79,22 @@ En este método podemos obtener la información más básica e indispensable sob
         - **``Value``** (int) Indica si permite reembolso. Ver [AccommodationRateClass](#accommodationrateclass).
         - **``Count``** (int) Número de resultados para cada reembolsos y no reembolsos.
     - **``AccommodationTypes``**  (list) Listado de tipos de alojamiento.
-        - **``Value``**  (int) Indica el tipo de alojamiento. [Ver Accomodation Type](#accomodation-types)
+        - **``Value``**  (int) Indica el tipo de alojamiento. Ver [Accomodation Type](#accomodation-types)
         - **``Count``** (int) Número de resultados para cada el tipo alojamiento.
 - **``Packages``** (list) Listado de paquetes con base en los criterios de búsqueda: Actividad, Alojamiento y Filtros.
+    - **``Package``** (object) Información del paquete.
+        - **``Accommodation``** (object) Información del alojamiento.
+            - **``DistanceToActivity``** (decimal) Distancia, en metros, desde el alojamiento hasta el punto inicial de la actividad.
+            - **``MainImageUrl``** (string) Url de la imagen principal del alojamiento.
+            - **``Name``** (string) Nombre del alojamiento.
+            - **``Description``** (string) Descripción del alojamiento.
+            - **``Address``** (string) Dirección del alojamiento.
+            - **``City``** (string) Ciudad donde se ubica el alojamiento.
+            - **``PostalCode``** (string) Código postal del alojamiento.
+            - **``Country``** (string) País donde está ubicado el alojamiento.
+            - **``Type``** (string) Tipo de alojamiento. Ver [Accomodation Type](#accomodation-types)
+            - **``Category``** (string) Categoría del alojamiento. Ver [AccommodationCategory](#accommodationcategory).
+        - **``PriceFrom``** (decimal) Precio de la combinatoria más baja.
 
 ## Tipo de datos
 
