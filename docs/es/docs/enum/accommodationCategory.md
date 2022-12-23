@@ -1,6 +1,3 @@
-### AccommodationCategory
-Indica la categoría del alojamiento
-
 - ``0``: Desconocida.
 - ``1``: 1 Estrella.
 - ``2``: 2 Estrellas.
