@@ -95,7 +95,11 @@ En este método podemos obtener la información más básica e indispensable sob
         - **``Value``** (int) Indica si permite reembolso. Ver [AccommodationRateClass](#accommodationrateclass).
         - **``Count``** (int) Número de resultados para cada reembolsos y no reembolsos.
     - **``AccommodationTypes``**  (list) Listado de tipos de alojamiento.
-        - **``Value``**  (int) Indica el tipo de alojamiento. Ver [Accomodation Type](#accomodation-types)
+        - **``Value``**  (int) Indica el tipo de alojamiento.
+
+            ??? example "Posibles valores"
+                --8<-- "docs/es/docs/enum/accommodationType.md"
+
         - **``Count``** (int) Número de resultados para cada el tipo alojamiento.
 - **``Packages``** (list) Listado de paquetes con base en los criterios de búsqueda: Actividad, Alojamiento y Filtros.
     - **``Package``** (object) Información del paquete.
