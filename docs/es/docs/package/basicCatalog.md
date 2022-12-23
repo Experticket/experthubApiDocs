@@ -4,7 +4,7 @@ En este método podemos obtener la información más básica e indispensable sob
 
 ## Método de acceso
 
-**POST** Package/BasicCatalog
+**POST** /Package/BasicCatalog
 
 ## Estructura de la petición
 
@@ -89,6 +89,11 @@ En este método podemos obtener la información más básica e indispensable sob
 - **``TotalPages``** (int) Número total de páginas.
 - **``Success``** (boolean) Estado de la respuesta.
 - **``AvailableFilters``** (list) Listado de filtros disponibles para la configuración de actividad y alojamiento. Hay que tener en cuenta que, los resultados, reflejan el número de alojamientos posibles a empaquetar y no el número de paquetes resultantes.
+
+    !!! caution ""
+        Es posible que un prepaquete tenga alguna restricción interna, por ejemplo, que solo se pueda empaquetar con un alojamiento específico, por lo que, aunque haya alojamientos en la zona y así aparezcan en los distintos filtros de la respuesta, este prepaquete no aparezca en los resultados. 
+
+
     - **``AccommodationBoards``** (list) Listado de regímenes alimenticios.
         - **``Value``** (int) Tipo de régimen alimenticio.
 
