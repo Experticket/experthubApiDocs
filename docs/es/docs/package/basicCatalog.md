@@ -42,7 +42,11 @@ En este método podemos obtener la información más básica e indispensable sob
                 --8<-- "docs/es/docs/enum/accommodationBoard.md"
 
     - **``AccommodationCategories``**: (list) Listado con las categorías del alojamiento deseadas.
-        - **``(int)``**: Tipo de categoría del alojamiento. Ver [AccommodationCategory](#accommodationcategory).
+        - **``(int)``**: Tipo de categoría del alojamiento.
+
+            ??? example "Posibles valores"
+                --8<-- "docs/es/docs/enum/accommodationCategory.md"
+
     - **``AccommodationRateClasses``**: (list) Listado de alojamientos con o sin reembolso.
         - **``(int)``**: Indica si se quiere o no con reembolso. Ver [AccommodationRateClass](#accommodationrateclass).
     - **``AccommodationTypes``**: (list) Listado de tipos de alojamiento.
@@ -117,12 +121,16 @@ En este método podemos obtener la información más básica e indispensable sob
                 ??? example "Posibles valores"
                     --8<-- "docs/es/docs/enum/accommodationType.md"
 
-            - **``Category``** (string) Categoría del alojamiento. Ver [AccommodationCategory](#accommodationcategory).
+            - **``Category``** (string) Categoría del alojamiento.
+
+                ??? example "Posibles valores"
+                    --8<-- "docs/es/docs/enum/accommodationCategory.md"
+
         - **``PriceFrom``** (decimal) Precio de la combinatoria más baja.
 
 ## Tipo de datos
 
---8<-- "docs/es/docs/enum/accommodationCategory.md"
+
 
 --8<-- "docs/es/docs/enum/accommodationRateClass.md"
 
