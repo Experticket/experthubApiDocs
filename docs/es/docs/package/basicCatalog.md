@@ -158,6 +158,5 @@ Las actividades pueden tener ninguna, una o varias restricciones de alojamientos
 
 ### Ejemplos
 
-??? tip "Ejemplo 1"
-
---8<-- "includes/examples/package/basicCatalogResponse001.md"
+??? tip "Example"
+    --8<-- "includes/examples/package/basicCatalogResponse001.md"
