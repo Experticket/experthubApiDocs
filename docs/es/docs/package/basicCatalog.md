@@ -48,7 +48,11 @@ En este método podemos obtener la información más básica e indispensable sob
                 --8<-- "docs/es/docs/enum/accommodationCategory.md"
 
     - **``AccommodationRateClasses``**: (list) Listado de alojamientos con o sin reembolso.
-        - **``(int)``**: Indica si se quiere o no con reembolso. Ver [AccommodationRateClass](#accommodationrateclass).
+        - **``(int)``**: Indica si se quiere o no con reembolso.
+
+            ??? example "Posibles valores"
+                --8<-- "docs/es/docs/enum/accommodationRateClass.md"
+
     - **``AccommodationTypes``**: (list) Listado de tipos de alojamiento.
         - **``(int)``**: Indica el tipo de alojamiento.
           
@@ -65,7 +69,10 @@ En este método podemos obtener la información más básica e indispensable sob
             - **``Min``**: (int) Precio mínimo.
             - **``Max``**: (int) Precio máximo.
 - **``Sort``**: (object) Ordenación de los resultados
-    - **``Criteria``**: (int) Tipo de ordenación. Ver [Sort.Criteria](#sortcriteria).
+    - **``Criteria``**: (int) Tipo de ordenación.
+
+        ??? example "Posibles valores"
+            --8<-- "docs/es/docs/enum/sortCriteria.md"
 
 ### Ejemplos de peticiones
 
@@ -100,7 +107,11 @@ En este método podemos obtener la información más básica e indispensable sob
         - **``Value``** (string) Nombre de la ciudad.
         - **``Count``** (int) Número de resultados disponibles la ciudad en cuestión.
     - **``AccommodationRateClasses``** (list) Listado de alojamientos con o sin reembolso.
-        - **``Value``** (int) Indica si permite reembolso. Ver [AccommodationRateClass](#accommodationrateclass).
+        - **``Value``** (int) Indica si permite reembolso.
+
+            ??? example "Posibles valores"
+                --8<-- "docs/es/docs/enum/accommodationRateClass.md"
+
         - **``Count``** (int) Número de resultados para cada reembolsos y no reembolsos.
     - **``AccommodationTypes``**  (list) Listado de tipos de alojamiento.
         - **``Value``**  (int) Indica el tipo de alojamiento.
@@ -132,10 +143,3 @@ En este método podemos obtener la información más básica e indispensable sob
 
         - **``PriceFrom``** (decimal) Precio de la combinatoria más baja.
 
-## Tipo de datos
-
-
-
---8<-- "docs/es/docs/enum/accommodationRateClass.md"
-
---8<-- "docs/es/docs/enum/sortCriteria.md"
