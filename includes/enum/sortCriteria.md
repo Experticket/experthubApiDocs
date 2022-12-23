@@ -1,0 +1,3 @@
+- ``1``: Más baratos primero.
+- ``2``: Más caros primero.
+- ``3``: Más cercanos primero.

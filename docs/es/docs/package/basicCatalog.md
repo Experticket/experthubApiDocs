@@ -13,7 +13,7 @@ En este método podemos obtener la información más básica e indispensable sob
         - **``Type``**: (int) Tipo de persona.
 
             ??? example "Posibles valores"
-                --8<-- "docs/es/docs/enum/personType.md"
+                --8<-- "includes/enum/personType.md"
 
         - **``Age``**: (int) En caso de ser niño, edad del mismo.
 
@@ -39,25 +39,25 @@ En este método podemos obtener la información más básica e indispensable sob
         - **``(int)``**: Tipo de régimen alimenticio.
 
             ??? example "Posibles valores"
-                --8<-- "docs/es/docs/enum/accommodationBoard.md"
+                --8<-- "includes/enum/accommodationBoard.md"
 
     - **``AccommodationCategories``**: (list) Listado con las categorías del alojamiento deseadas.
         - **``(int)``**: Tipo de categoría del alojamiento.
 
             ??? example "Posibles valores"
-                --8<-- "docs/es/docs/enum/accommodationCategory.md"
+                --8<-- "includes/enum/accommodationCategory.md"
 
     - **``AccommodationRateClasses``**: (list) Listado de alojamientos con o sin reembolso.
         - **``(int)``**: Indica si se quiere o no con reembolso.
 
             ??? example "Posibles valores"
-                --8<-- "docs/es/docs/enum/accommodationRateClass.md"
+                --8<-- "includes/enum/accommodationRateClass.md"
 
     - **``AccommodationTypes``**: (list) Listado de tipos de alojamiento.
         - **``(int)``**: Indica el tipo de alojamiento.
           
             ??? example "Posibles valores"
-                --8<-- "docs/es/docs/enum/accommodationType.md"
+                --8<-- "includes/enum/accommodationType.md"
 
     - **``Cities``**: (list) Listado de ciudades.
         - **``(string)``**: Nombre de la ciudad.
@@ -72,7 +72,7 @@ En este método podemos obtener la información más básica e indispensable sob
     - **``Criteria``**: (int) Tipo de ordenación.
 
         ??? example "Posibles valores"
-            --8<-- "docs/es/docs/enum/sortCriteria.md"
+            --8<-- "includes/enum/sortCriteria.md"
 
 ### Ejemplos de peticiones
 
@@ -98,14 +98,14 @@ En este método podemos obtener la información más básica e indispensable sob
         - **``Value``** (int) Tipo de régimen alimenticio.
 
             ??? example "Posibles valores"
-                --8<-- "docs/es/docs/enum/accommodationBoard.md"
+                --8<-- "includes/enum/accommodationBoard.md"
 
         - **``Count``** (int) Número de resultados disponibles para este régimen alimenticio.
     - **``AccommodationCategories``** (list) Listado con las categorías del alojamiento deseadas.
         - **``Value``** (int) Categoría del alojamiento.
 
             ??? example "Posibles valores"
-                --8<-- "docs/es/docs/enum/accommodationCategory.md"
+                --8<-- "includes/enum/accommodationCategory.md"
 
         - **``Count``** (int) Número de resultados disponibles para esta categoría.
     - **``AccommodationCities``** (list) Listado con las ciudades disponibles.
@@ -115,14 +115,14 @@ En este método podemos obtener la información más básica e indispensable sob
         - **``Value``** (int) Indica si permite reembolso.
 
             ??? example "Posibles valores"
-                --8<-- "docs/es/docs/enum/accommodationRateClass.md"
+                --8<-- "includes/enum/accommodationRateClass.md"
 
         - **``Count``** (int) Número de resultados para cada reembolsos y no reembolsos.
     - **``AccommodationTypes``**  (list) Listado de tipos de alojamiento.
         - **``Value``**  (int) Indica el tipo de alojamiento.
 
             ??? example "Posibles valores"
-                --8<-- "docs/es/docs/enum/accommodationType.md"
+                --8<-- "includes/enum/accommodationType.md"
 
         - **``Count``** (int) Número de resultados para cada el tipo alojamiento.
 - **``Packages``** (list) Listado de paquetes con base en los criterios de búsqueda: Actividad, Alojamiento y Filtros.
@@ -139,12 +139,12 @@ En este método podemos obtener la información más básica e indispensable sob
             - **``Type``** (string) Tipo de alojamiento.
 
                 ??? example "Posibles valores"
-                    --8<-- "docs/es/docs/enum/accommodationType.md"
+                    --8<-- "includes/enum/accommodationType.md"
 
             - **``Category``** (string) Categoría del alojamiento.
 
                 ??? example "Posibles valores"
-                    --8<-- "docs/es/docs/enum/accommodationCategory.md"
+                    --8<-- "includes/enum/accommodationCategory.md"
 
         - **``PriceFrom``** (decimal) Precio de la combinatoria más baja.
 
