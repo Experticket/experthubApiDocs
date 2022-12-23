@@ -90,7 +90,11 @@ En este método podemos obtener la información más básica e indispensable sob
 
         - **``Count``** (int) Número de resultados disponibles para este régimen alimenticio.
     - **``AccommodationCategories``** (list) Listado con las categorías del alojamiento deseadas.
-        - **``Value``** (int) Categoría del alojamiento. Ver [AccommodationCategory](#accommodationcategory).
+        - **``Value``** (int) Categoría del alojamiento.
+
+            ??? example "Posibles valores"
+                --8<-- "docs/es/docs/enum/accommodationCategory.md"
+
         - **``Count``** (int) Número de resultados disponibles para esta categoría.
     - **``AccommodationCities``** (list) Listado con las ciudades disponibles.
         - **``Value``** (string) Nombre de la ciudad.
