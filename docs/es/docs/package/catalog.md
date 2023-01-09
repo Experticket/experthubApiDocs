@@ -47,21 +47,12 @@ En este método podemos obtener información sobre los paquetes disponibles.
         - **``Type``**: tipo de alojamiento.
 
             ??? example "Posibles valores"
-                - 0: Sin clasificar
-                - 1: Hotel
-                - 2: Hostal
-                - 3: Camping
-                - 4: Apartamento
+                --8<-- "includes/enum/accommodationType.md"
 
-        - **``Category``**: indica la categoría del alojamiento en base a estrellas.
+        - **``Category``**: indica la categoría del alojamiento basándose en estrellas.
 
             ??? example "Posibles valores"
-                - 0: Sin clasificar
-                - 1: Una estrella :star:
-                - 2: Dos entrellas :star::star:
-                - 3: Tres estrellas :star::star::star:
-                - 4: Cuatro estrellas :star::star::star::star:
-                - 5: Cinco estrellas :star::star::star::star::star:
+                --8<-- "includes/enum/accommodationCategory.md"
 
         - **``DistanceToActivity``**: distancia del alojamiento hasta la actividad del paquete.
         - **`MainImageUrl`**: URL a la imagen principal del alojamiento.
@@ -76,11 +67,7 @@ En este método podemos obtener información sobre los paquetes disponibles.
         - **``Value``**: tipo de pensión.
 
             ??? example "Posibles Valores"
-                - 10: Solo alojamiento
-                - 20: Desayuno incluido
-                - 30: Media pensión
-                - 40: Pensión completa
-                - 50: Todo incluido
+                --8<-- "includes/enum/accommodationBoard.md"
 
         - **``Count``**: cantidad de alojamientos.
 
@@ -88,12 +75,7 @@ En este método podemos obtener información sobre los paquetes disponibles.
         - **``Value``**: tipo de categoría.
 
             ??? example "Posibles valores"
-                - 0: Sin clasificar
-                - 1: Una estrella :star:
-                - 2: Dos entrellas :star::star:
-                - 3: Tres estrellas :star::star::star:
-                - 4: Cuatro estrellas :star::star::star::star:
-                - 5: Cinco estrellas :star::star::star::star::star:
+                --8<-- "includes/enum/accommodationCategory.md"
 
         - **``Count``**: cantidad de alojamientos.
 
@@ -105,8 +87,7 @@ En este método podemos obtener información sobre los paquetes disponibles.
         - **``Value``**: tipo de tarifa.
 
             ??? example "Posibles valores"
-                - 1: No reembolsable
-                - 2: Reembolsable
+                --8<-- "includes/enum/accommodationRateClass.md"
 
         - **``Count``**: cantidad de alojamientos.
 
@@ -114,11 +95,7 @@ En este método podemos obtener información sobre los paquetes disponibles.
         - **``Value``**: tipo de alojamiento.
 
             ??? example "Posibles valores"
-                - 0: Sin clasificar
-                - 1: Hotel
-                - 2: Hostal
-                - 3: Camping
-                - 4: Apartamento
+                --8<-- "includes/enum/accommodationType.md"
 
         - **``Count``**: cantidad de alojamientos.
 
