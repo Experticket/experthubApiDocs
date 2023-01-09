@@ -97,7 +97,6 @@ nav:
       - Paquetes:
         - Prepaquetes: docs/package/prePackage.md
         - Catalogo básico: docs/package/basicCatalog.md
-        - Catálogo: docs/package/catalog.md
         - Catálogo extendido: docs/package/extendedCatalog.md
       - Anexos:
         - Códigos de error: docs/annex/errorCodes.md
