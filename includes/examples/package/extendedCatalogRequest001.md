@@ -23,7 +23,7 @@
             ]
         },
         "Accommodation": {
-            "AccommodationId": "{{AccommodationId}}",
+            "AccommodationId": "291641/weqn6yqht5bfw",
             "CheckIn": "2023-01-25",
             "CheckOut": "2023-01-28",
             "RoomDistribution": [
