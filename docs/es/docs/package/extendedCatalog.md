@@ -37,9 +37,10 @@ En este método podemos obtener información extendida sobre los paquetes (activ
 
 ??? tip "Example: 2 rooms: "2 adult + 1 child" y "1 adult""
 
---8<-- "includes/examples/package/extendedCatalogRequest001.md"
+    --8<-- "includes/examples/package/extendedCatalogRequest001.md"
 
 ## Estructura de la respuesta
+.
 
 - **``Echotoken``**: token necesario para poder añadir paquetes al carrito.
 - **``Activities``**: este campo contiene la definición del [catálogo de actividades](../activity/catalog.md#estructura-de-la-respuesta).
