@@ -1,6 +1,6 @@
 # Catálogo extendido de paquetes
 
-En este método podemos obtener información extendida sobre los paquetes (actividad + hotel) disponibles. Aquí se incluye información sobre las tarifas de las diferentes habitaciones disponibles del hotel.
+En este método podemos obtener información extendida sobre los paquetes (actividad + alojamiento) disponibles. Aquí se incluye información sobre las tarifas de las diferentes habitaciones disponibles del alojamento.
 
 ## Método de acceso
 

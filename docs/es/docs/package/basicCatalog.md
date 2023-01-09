@@ -4,7 +4,7 @@ Este método nos permite obtener la información mínima e indispensable sobre l
 
 El resultado será una matriz de las distintas actividades (``PrePackageIds``) y de los alojamientos disponibles para cada uno de esas actividades. 
 
-Las actividades pueden tener ninguna, una o varias restricciones de alojamientos configurados internamente, como por ejemplo, únicamente poder empaquetarse con un alojamiento específico o una restricción de distancia máxima al recinto. Esta restricción puede provocar que, aunque haya hoteles en la zona o radio específicos, no aparecer en la lista de resultados de paquetes (``Packages``).
+Las actividades pueden tener ninguna, una o varias restricciones de alojamientos configurados internamente, como por ejemplo, únicamente poder empaquetarse con un alojamiento específico o una restricción de distancia máxima al recinto. Esta restricción puede provocar que, aunque haya alojamientos en la zona o radio específicos, no aparecer en la lista de resultados de paquetes (``Packages``).
 
 ## Método de acceso
 
@@ -27,10 +27,10 @@ Las actividades pueden tener ninguna, una o varias restricciones de alojamientos
     - **``PrePackageIds``**: (``list``) ``Requerido``. Listado de prepaquetes.
         - **``(string)``**: ``Requerido``. Identificador del prepaquete.
 
-- **``Accomodation``**: (``object``) ``Requerido``. Información sobre los hoteles a obtener.
-    - **``AccommodationIds``**: (``list``) ``Opcional``. Listado que permite obtener únicamente paquetes de un conjunto de hoteles.
-        - **``(string)``**:  ``Opcional``. Identificador del hotel.
-    - **``Destination``**: (``object``) ``Requerido``. Geolocalización a partir de la cual se realizará la búsqueda de hoteles. Ver [SuggestedLocation](/experthubApiDocs/es/docs/package/prePackage/#estructura-de-la-respuesta).
+- **``Accomodation``**: (``object``) ``Requerido``. Información sobre los alojamientos a obtener.
+    - **``AccommodationIds``**: (``list``) ``Opcional``. Listado que permite obtener únicamente paquetes de un conjunto de alojamientos.
+        - **``(string)``**:  ``Opcional``. Identificador del alojamiento.
+    - **``Destination``**: (``object``) ``Requerido``. Geolocalización a partir de la cual se realizará la búsqueda de alojamientos. Ver [SuggestedLocation](/experthubApiDocs/es/docs/package/prePackage/#estructura-de-la-respuesta).
         - **``Latitude``**: (``decimal``) ``Requerido``. Latitud de la geoposición.
         - **``Longitude``**: (``decimal``) ``Requerido``. Longitud de la geoposición.
     - **``CheckIn``**: (``date``) ``Requerido``. Fecha de entrada al alojamiento. Formato ISO 8601 (YYYY-MM-DD).
