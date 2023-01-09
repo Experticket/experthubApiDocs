@@ -4,7 +4,7 @@ En este método podemos obtener información extendida sobre los paquetes (activ
 
 ## Método de acceso
 
-**POST** package/fullcatalog
+**POST** Package/FullCatalog
 
 ## Estructura de la petición
 - **``People``**: (``list``) ``Requerido``. Listado de personas que componen el paquete. El orden en el cual se añaden las personas en este listado repercute, posteriormente, en el índice a usar en la propiedad ``Room``
@@ -12,7 +12,7 @@ En este método podemos obtener información extendida sobre los paquetes (activ
         - **``Type``**: (``int``) ``Requerido``. Tipo de persona.
 
             ??? example "Posibles valores"
-              --8<-- "includes/enum/personType.md"
+                --8<-- "includes/enum/personType.md"
 
         - **``Age``**: (``int``) ``Opcional``. Edad de la persona. Obligatorio, únicamente, si se trata de un niño (tipo ``1``).
 
