@@ -37,7 +37,7 @@ En este método podemos obtener información extendida sobre los paquetes (activ
 
 ??? tip "Example: 2 rooms: "2 adult + 1 child" y "1 adult""
 
-    --8<-- "includes/examples/package/extendedCatalogRequest001.md"
+    --8<-- "includes/examples/package/extendedCatalog.request.1.md"
 
 ## Estructura de la respuesta
 .
