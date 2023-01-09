@@ -30,7 +30,7 @@ Las actividades pueden tener ninguna, una o varias restricciones de alojamientos
 - **``Accomodation``**: (``object``) ``Requerido``. Información sobre los hoteles a obtener.
     - **``AccommodationIds``**: (``list``) ``Opcional``. Listado que permite obtener únicamente paquetes de un conjunto de hoteles.
         - **``(string)``**:  ``Opcional``. Identificador del hotel.
-    - **``Destination``**: (``object``) ``Requerido``. Geolocalización a partir de la cual se realizará la búsqueda de hoteles. Ver [SuggestedLocation](/experthubApiDocs/es/docs/package/prePackage/).
+    - **``Destination``**: (``object``) ``Requerido``. Geolocalización a partir de la cual se realizará la búsqueda de hoteles. Ver [SuggestedLocation](/experthubApiDocs/es/docs/package/prePackage/#estructura-de-la-respuesta).
         - **``Latitude``**: (``decimal``) ``Requerido``. Latitud de la geoposición.
         - **``Longitude``**: (``decimal``) ``Requerido``. Longitud de la geoposición.
     - **``CheckIn``**: (``date``) ``Requerido``. Fecha de entrada al alojamiento. Formato ISO 8601 (YYYY-MM-DD).
