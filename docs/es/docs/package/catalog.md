@@ -33,7 +33,7 @@ En este método podemos obtener información sobre los paquetes disponibles.
 
 ??? tip "Example: 2 rooms: "1 adult + 1 child" y "1 adult""
 
---8<-- "includes/examples/package/catalogQueryExamples.md"
+    --8<-- "includes/examples/package/catalogQueryExamples.md"
 
 ## Estructura de la respuesta
 
