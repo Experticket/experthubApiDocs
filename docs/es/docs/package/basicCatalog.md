@@ -86,11 +86,11 @@ Las actividades pueden tener ninguna, una o varias restricciones de alojamientos
 
 ??? tip "Example: 2 rooms: "1 adult + 1 child" y "1 adult""
 
---8<-- "includes/examples/package/basicCatalogRequest001.md"
+--8<-- "includes/examples/package/basicCatalog.request.1.md"
 
 ??? tip "Example: 1 rooms: "1 adult + 1 child" in 3* accommodation"
 
---8<-- "includes/examples/package/basicCatalogRequest002.md"
+--8<-- "includes/examples/package/basicCatalog.request.2.md"
 
 ## Estructura de la respuesta
 
@@ -122,4 +122,4 @@ Las actividades pueden tener ninguna, una o varias restricciones de alojamientos
 ### Ejemplos
 
 ??? tip "Example"
-    --8<-- "includes/examples/package/basicCatalogResponse001.md"
+    --8<-- "includes/examples/package/basicCatalog.response.1.md"

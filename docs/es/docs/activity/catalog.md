@@ -288,7 +288,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
 
         - **`ProductPaxGroupings`**: agrupaciones de productos cuya diferencia principal son las personas que lo componen.
             - **`ProductPaxGroupingId`**: identificador de la agrupación. Alfanumérico de 13 caracteres.
-            - **`ProductPaxGroupingName`**: nombre de la a agrupación.
+            - **`ProductPaxGroupingName`**: nombre de la agrupación.
 
     - **`Urls`**: *opcional*, array de urls para acceder a la página de la taquilla del proveedor. Sólo en el caso de tener DNS personalizadas.
         - **`LanguageCode`**: código del idioma con el que se va a acceder. Representado mediante el *formato ISO 639-1*.
