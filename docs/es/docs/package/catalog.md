@@ -114,6 +114,7 @@ En este método podemos obtener información sobre los paquetes disponibles.
 - **``TotalPages``**: número total de páginas.
 --8<-- "includes/experthubResponseBaseDocumentation.es.md"
 
-### Ejemplo de respuesta
+### Ejemplos
 
---8<-- "includes/examples/package/catalogResponseExamples.md"
+??? tip "Example"
+    --8<-- "includes/examples/package/catalogResponseExamples.md"
