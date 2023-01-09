@@ -31,7 +31,7 @@ En este método podemos obtener información sobre los paquetes disponibles.
 
 ### Ejemplo de petición
 
-??? tip "Example: 2 rooms: "1 adult + 1 child" y "1 adult""
+??? tip "Example"
 
     --8<-- "includes/examples/package/catalogQueryExamples.md"
 
