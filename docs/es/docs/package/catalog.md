@@ -8,9 +8,30 @@ En este método podemos obtener información sobre los paquetes disponibles.
 
 ## Estructura de la petición
 
---8<-- "includes/packageCatalogQuery.es.md"
+- **``Activity``**: actividad con la que queremos el paquete.
+    - **``PrePackageIds``**: identificador del prepaquete de la actividad.
+    - **``FromDate``**: fecha desde la que queremos hacer uso de la actividad.
+    - **``ToDate``**: fecha hasta la que queremos hacer uso la actividad.
+
+- **``Accommodation``**: información sobre el alojamiento.
+    - **``CheckIn``**: fecha de acceso al alojamiento.
+    - **``CheckOut``**: fecha de salida del alojamiento.
+    - **``Destination``**: coordenadas del destino, para buscar hoteles cercanos.
+        - **``Latitude``**: latitud.
+        - **``Longitude``**: longitud.
+    - **``RoomDistribution``**: array de habitaciones.
+        - **`People`**: array de personas.
+            - **``Type``**: tipo de persona.
+
+                ??? example "Posibles valores"
+                    --8<-- "includes/enum/personType.md"
+
+            - **``Age``**: edad de la persona, obligatorio en caso de ser bebé o niño.
+
 
 ### Ejemplo de petición
+
+??? tip "Example: 2 rooms: "1 adult + 1 child" y "1 adult""
 
 --8<-- "includes/examples/package/catalogQueryExamples.md"
 
