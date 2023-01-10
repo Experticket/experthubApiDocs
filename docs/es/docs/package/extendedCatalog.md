@@ -85,61 +85,61 @@ La respuesta contiene 5 propiedades importantes:
                 ??? info "Ejemplo"
                     --8<-- "includes/examples/package/extendedCatalog.request.2.md"
 
-            - **``TypeName``**: nombre del tipo de habitación.
-            - **``AccommodationRoomRates``**: array con las tarifas de las habitaciones del alojamiento.
-                - **``Id``**: identificador de la habitación.
-                - **``Code``**: código de la habitación.
-                - **``RateId``**: identificador de la tarifa.
-                - **``RateComments``**: comentarios de la tarifa.
-                - **``BoardCode``**: código del tipo de pensión.
+            - **``TypeName``**: (``string``). Nombre del tipo de habitación.
+            - **``AccommodationRoomRates``**: (``list``). Listado array con las tarifas de las habitaciones del alojamiento.
+                - **``AccommodationRoomRate``**: (``list``). Información de la tarifa de las habitaciones del alojamiento.
+                    - **``Id``**: (``string``). identificador de la habitación.
+                    - **``Recheck``**: (``boolean``). XXX
+                    - **``BoardCode``**: (``int``) código del tipo de pensión.
 
-                    ??? example "Posibles valores"
-                        - 10: solo alojamiento
-                        - 20: desayuno incluido
-                        - 30: media pensión
-                        - 40: pensión completa
-                        - 50: todo incluido
+                        ??? example "Posibles valores"
+                            --8<-- "includes/examples/package/accommodationBoard.md"
 
-                - **``BoardName``**: nombre de la pensión.
-                - **``Adults``**: número de adultos.
-                - **``Children``**: número de niños.
-                - **``RateClass``**: tipo de tarifa.
+                    - **``BoardName``**: (``string``). Nombre del tipo de alojamiento.
+                    - **``Adults``**: (``int``). Número de adultos.
+                    - **``Children``**: (``int``). Número de niños.
+                    - **``RateClass``**: tipo de tarifa.
 
-                    ??? example "Posibles valores"
-                        - 1: No reembolsable
-                        - 2: Reembolsable
+                        ??? example "Posibles valores"
+                            --8<-- "includes/examples/package/accommodationRateClass.md"
+                                        
+                    - **``Price``**: (``decimal``). Precio de la tarifa.
+                    - **``PriceMode``**: (``int``). Tipo de precio.
 
-                - **``Price``**: precio de la tarifa.
-                - **``PriceMode``**: tipo de precio.
+                        ??? example "Posibles valores"
+                            --8<-- "includes/enum/priceMode.md"
 
-                    ??? example "Posibles valores"
-                        - 1: PVP
-                        - 2: Neto
-
-    - **``Flags``**: información adicional.
-        - **``IncludesTickets``**: indica si incluye tickets.
-        - **``Promoted``**: indica si está promocionado.
-- **``PrePackages``**: array de prepaquetes.
-    - **``Id``**: identificador del prepaquete.
-    - **``Name``**: nombre del prepaquete.
-- **``ActivityPackages``**: array de actividades del paquete.
-    - **``Id``**: identificador del paquete de actividades
-    - **``Activities``**: array de actividades incluidas en el paquete.
-        - **``ActivityId``**: identificador de la actividad.
-        - **``Quantity``**: cantidad que se incluye.
-- **``Packages``**: array de paquetes.
-    - **``Id``**: identificador del paquete.
-    - **``PrePackageId``**: identificador del prepaquete.
-    - **``AccommodationRateId``**: identificador de la tarifa de alojamiento.
-    - **``AccommodationId``**: identificador del alojamiento.
-    - **``ActivityPackageId``**: identificador del paquete de actividades.
-    - **``Price``**: precio del paquete.
-    - **``CancellationPolicy``**: politicas de cancelación.
-        - **``IsRefundable``**: indica si el paquete es reembolsable o no en algún momento.
-        - **``Rules``**: reglas que definen las politicas de cancelación.
-            - **``HoursInAdvanceOfAccess``**: horas de antelación respecto a la fecha de acceso sobre el que aplica esta regla.
-            - **``Percentage``**: porcentaje de penalización respecto al precio.
+- **``Flags``**: (``list``). Listado con información adicional.
+    - **``Flag``**: (``object``). Información adicional.
+        - **``IncludesTickets``**: (``boolean``). Indica si incluye tickets.
+        - **``Promoted``**: (``boolean``). Indica si está promocionado.
+- **``PrePackages``**: (``list``). Listado de prepaquetes.
+    - **``PrePackage``**: (``object``). Información del prepaquete.
+        - **``Id``**: (``string``). Identificador del prepaquete.
+        - **``Name``**: (``string``). Nombre del prepaquete.
+- **``ActivityPackages``**: (``list``). Listado de actividades del paquete.
+    - **``ActivityPackage``**: (``object``). Información de la actividad del paquete.
+        - **``Id``**: (``string``). Identificador del paquete de actividades
+        - **``Activities``**: (``list``). Listado de actividades incluidas en el paquete.
+            - **``Activities``**: (``object``). Información de la actividad incluidas en el paquete.
+                - **``ActivityId``**: (``string``). Identificador de la actividad.
+                - **``Quantity``**: (``int``). Cantidad que se incluye.
+- **``Packages``**: (``list``) Listado de paquetes.
+    - **``Package``**: (``list``) Información del paquete.
+        - **``Id``**: (``string``). Identificador del paquete.
+        - **``PrePackageId``**: (``string``). Identificador del prepaquete.
+        - **``AccommodationRateId``**: (``string``). Identificador de la tarifa de alojamiento.
+        - **``AccommodationId``**: (``string``). Identificador del alojamiento.
+        - **``ActivityPackageId``**: (``string``). Identificador del paquete de actividades.
+        - **``Price``**: (``decimal``). Precio del paquete.
+        - **``CancellationPolicy``**: (``object``). Politicas de cancelación.
+            - **``IsRefundable``**: (``boolean``). Indica si el paquete es reembolsable o no en algún momento.
+            - **``Rules``**: (``list``). Reglas que definen las políticas de cancelación.
+                - **``Rule``**: (``object``). Regla que define esta política de cancelación.
+                    - **``HoursInAdvanceOfAccess``**: (``int``).  Horas de antelación respecto a la fecha de acceso sobre el que aplica esta regla.
+                    - **``Percentage``**: (``decimal``). Porcentaje de penalización respecto al precio.
 
 ### Ejemplo de respuesta
 
---8<-- "includes/examples/package/extendedCatalogResponseExamples.md"
+??? tip "Example: 2 rooms: "2 adult + 1 child" y "1 adult""
+    --8<-- "includes/examples/package/extendedCatalog.response.1.md"
