@@ -62,66 +62,59 @@ La respuesta contiene 5 propiedades importantes:
             --8<-- "includes/enum/accommodationCategory.md"
 
     - **``CategoryName``**: (``string``). Nombre de la categoría.
-    - **``TypeName``**: nombre del tipo de alojamiento.
-    - **``Location``**: localización exacta del alojamiento.
-        - **``Longitude``**: coordenadas longitudinales.
-        - **``Latitude``**: coordenadas latitudinales.
-    - **``Distances``**: array de distancia a las diferentes actividades del paquete.
-        - **``ActivityProviderId``**: identificador del proveedor de la actividad.
-        - **``Distance``**: distancia entre el alojamiento y la actividad.
+    - **``TypeName``**: (``string``). Nombre del tipo de alojamiento.
+    - **``Location``**: (``object``). Localización exacta del alojamiento.
+        - **``Longitude``**: (``decimal``). Longitud de la geoposición.
+        - **``Latitude``**: (``decimal``). Latitud de la geoposición.
+    - **``Distances``**: (``list``). Listado de distancia a las diferentes actividades del paquete.
+        - **``Distance``**: (``object``). Información de la distancia a la actividad del paquete.
+            - **``ActivityProviderId``**: (``string``). Identificador del proveedor de la actividad. Ver [ProviderId en el catálogo de actividades](../activity/catalog.md#estructura-de-la-respuesta).
+            - **``Distance``**: (``decimal``). Distancia entre el alojamiento y la actividad en metros.
     - **``AccommodationServices``**: array de servicios disponibles en el alojamiento.
         - **``Name``**: nombre del servicio.
         - **``IsFree``**: indica si está incluido en el precio.
-    - **``AccommodationImages``**: array de imágenes del alojamiento.
-        - **``Description``**: descripción de la imagen.
-        - **``Order``**: orden para ser mostradas.
-        - **``Url``**: dirección URL de la imagen.
-    - **``AccommodationRooms``**: distintas habitaciones del alojamiento.
-        - **``RoomRequestNumber``**: identificador de la distribución solicitada en función de la habitación.
+    - **``AccommodationImages``**: (``list``). Listado de imágenes del alojamiento.
+        - **``AccommodationImage``**: (``object``). Imagen del alojamiento
+            - **``Description``**: (``string``). Descripción de la imagen.
+            - **``Order``**: (``int``). Orden para ser mostradas.
+            - **``Url``**: (``string``). Dirección URL de la imagen.
+    - **``AccommodationRooms``**: (``list``). Listado con las distintas habitaciones del alojamiento.
+        - **``AccommodationRoom``**: (``object``). Información de la habitación del alojamiento.
+            - **``RoomRequestNumber``**: identificador de la distribución solicitada en función de la habitación.
 
-            ??? info "Ejemplo"
-                - Si se solicitan 3 habitaciones de 2 adultos cada una.
+                ??? info "Ejemplo"
+                    --8<-- "includes/examples/package/extendedCatalog.request.2.md"
 
-                    En este caso aparecerán los identificadores definidos entre 1 y 3 pero será posible seleccionar las habitaciones como se quiera. Ejemplos:
+            - **``TypeName``**: nombre del tipo de habitación.
+            - **``AccommodationRoomRates``**: array con las tarifas de las habitaciones del alojamiento.
+                - **``Id``**: identificador de la habitación.
+                - **``Code``**: código de la habitación.
+                - **``RateId``**: identificador de la tarifa.
+                - **``RateComments``**: comentarios de la tarifa.
+                - **``BoardCode``**: código del tipo de pensión.
 
-                    - 3 del tipo ``RoomRequestNumber = 1``
-                    - 2 del tipo ``RoomRequestNumber = 1`` y 1 del tipo ``RoomRequestNumber = 3``
-                    - 1 del tipo ``RoomRequestNumber = 1``, otra del tipo ``RoomRequestNumber = 2`` y otra del tipo ``RoomRequestNumber = 3``
+                    ??? example "Posibles valores"
+                        - 10: solo alojamiento
+                        - 20: desayuno incluido
+                        - 30: media pensión
+                        - 40: pensión completa
+                        - 50: todo incluido
 
-                - Si se solicitan 3 habitaciones, una de 2 adultos, otra de 2 niños y otra de 1 niño y 1 adulto.
+                - **``BoardName``**: nombre de la pensión.
+                - **``Adults``**: número de adultos.
+                - **``Children``**: número de niños.
+                - **``RateClass``**: tipo de tarifa.
 
-                    Será necesario seleccionar una del tipo ``RoomRequestNumber = 1``, una ``RoomRequestNumber = 2`` y otra ``RoomRequestNumber = 3``.
+                    ??? example "Posibles valores"
+                        - 1: No reembolsable
+                        - 2: Reembolsable
 
-        - **``TypeName``**: nombre del tipo de habitación.
-        - **``AccommodationRoomRates``**: array con las tarifas de las habitaciones del alojamiento.
-            - **``Id``**: identificador de la habitación.
-            - **``Code``**: código de la habitación.
-            - **``RateId``**: identificador de la tarifa.
-            - **``RateComments``**: comentarios de la tarifa.
-            - **``BoardCode``**: código del tipo de pensión.
+                - **``Price``**: precio de la tarifa.
+                - **``PriceMode``**: tipo de precio.
 
-                ??? example "Posibles valores"
-                    - 10: solo alojamiento
-                    - 20: desayuno incluido
-                    - 30: media pensión
-                    - 40: pensión completa
-                    - 50: todo incluido
-
-            - **``BoardName``**: nombre de la pensión.
-            - **``Adults``**: número de adultos.
-            - **``Children``**: número de niños.
-            - **``RateClass``**: tipo de tarifa.
-
-                ??? example "Posibles valores"
-                    - 1: No reembolsable
-                    - 2: Reembolsable
-
-            - **``Price``**: precio de la tarifa.
-            - **``PriceMode``**: tipo de precio.
-
-                ??? example "Posibles valores"
-                    - 1: PVP
-                    - 2: Neto
+                    ??? example "Posibles valores"
+                        - 1: PVP
+                        - 2: Neto
 
     - **``Flags``**: información adicional.
         - **``IncludesTickets``**: indica si incluye tickets.
