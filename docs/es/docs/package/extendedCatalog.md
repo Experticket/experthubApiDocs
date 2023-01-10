@@ -40,36 +40,28 @@ En este método podemos obtener información extendida sobre los paquetes (activ
     --8<-- "includes/examples/package/extendedCatalog.request.1.md"
 
 ## Estructura de la respuesta
-.
 
-- **``Echotoken``**: token necesario para poder añadir paquetes al carrito.
-- **``Activities``**: este campo contiene la definición del [catálogo de actividades](../activity/catalog.md#estructura-de-la-respuesta).
-- **``Accommodation``**: información sobre el alojamiento del paquete.
-    - **``Id``**: identificador del alojamiento.
-    - **``Name``**: nombre del alojamiento.
-    - **``Description``**: descripción del alojamiento.
-    - **``Address``**: dirección del alojamiento.
-    - **``City``**: ciudad del alojamiento.
-    - **``Type``**: tipo de alojamiento.
+La respuesta contiene 5 propiedades importantes:
 
-        ??? example "Posibles valores"
-            - 0: Sin clasificar
-            - 1: Hotel
-            - 2: Hostal
-            - 3: Camping
-            - 4: Apartamento
-
-    - **``Category``**: tipo de categoría.
+- **``Echotoken``**: (``string``). Token necesario para poder añadir paquetes al carrito.
+- **``Activities``**: (``object``). Propiedad que contiene la definición del [catálogo de actividades](../activity/catalog.md#estructura-de-la-respuesta).
+- **``Accommodation``**: (``object``). Información sobre el alojamiento del paquete.
+    - **``Id``**: (``string``). Identificador del alojamiento.
+    - **``Name``**: (``string``). Nombre del alojamiento.
+    - **``Description``**: (``string``). Descripción del alojamiento.
+    - **``Address``**: (``string``). Dirección del alojamiento.
+    - **``City``**: (``string``). Ciudad del alojamiento.
+    - **``Type``**: (``int``). tipo de alojamiento.
 
         ??? example "Posibles valores"
-            - 0: Sin clasificar
-            - 1: Una estrella :star:
-            - 2: Dos estrellas :star::star:
-            - 3: Tres estrellas :star::star::star:
-            - 4: Cuatro estrellas :star::star::star::star:
-            - 5: Cinco estrellas :star::star::star::star::star:
+            --8<-- "includes/enum/accommodationType.md"
 
-    - **``CategoryName``**: nombre de la categoría.
+    - **``Category``**: (``int``). Tipo de categoría.
+
+        ??? example "Posibles valores"
+            --8<-- "includes/enum/accommodationCategory.md"
+
+    - **``CategoryName``**: (``string``). Nombre de la categoría.
     - **``TypeName``**: nombre del tipo de alojamiento.
     - **``Location``**: localización exacta del alojamiento.
         - **``Longitude``**: coordenadas longitudinales.
