@@ -68,6 +68,7 @@ Todos los parámetros de la petición son opcionales.
 
                 - **``ProductPaxGroupingId``**: (``string``). Identificador del producto agrupado.
                 - **``ProductPaxGroupingName``**: (``string``). Nombre del producto agrupado.
+
             - **``SuggestedLocation``**: (``object``). Localización sugerida para búsqueda de alojamiento. Suele ser unas coordenadas calculadas céntricas entre todos los recintos del prepaquete.
                 - **`Lat`**: (``decimal``). Coordenadas de latitud.
                 - **`Lng`**: (``decimal``). Coordenadas de longitud.
