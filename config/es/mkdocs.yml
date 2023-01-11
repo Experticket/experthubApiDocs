@@ -100,6 +100,8 @@ nav:
         - Catálogo extendido: docs/package/extendedCatalog.md
         - Disponibilidad de fechas: docs/package/availableDates.md
         - Precios: docs/package/pricesAndCancellationsConditions.md
+      - Carrito de la compra:
+        - Creación: docs/shoppingCart/create.md
       - Anexos:
         - Códigos de error: docs/annex/errorCodes.md
     - FAQ: faq.md
