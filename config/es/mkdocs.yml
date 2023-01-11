@@ -98,6 +98,7 @@ nav:
         - Prepaquetes: docs/package/prePackage.md
         - Catalogo básico: docs/package/basicCatalog.md
         - Catálogo extendido: docs/package/extendedCatalog.md
+        - Disponibilidad de fechas: docs/package/availableDates.md
       - Anexos:
         - Códigos de error: docs/annex/errorCodes.md
     - FAQ: faq.md

@@ -91,7 +91,6 @@ La respuesta contiene 5 propiedades importantes (``Activities``, ``Accommodation
             - **``AccommodationRoomRates``**: (``list``). Listado array con las tarifas de las habitaciones del alojamiento.
                 - **``AccommodationRoomRate``**: (``list``). Información de la tarifa de las habitaciones del alojamiento.
                     - **``Id``**: (``string``). identificador de la habitación.
-                    - **``Recheck``**: (``boolean``). XXX
                     - **``BoardCode``**: (``int``) código del tipo de pensión.
 
                         ??? example "Posibles valores"
