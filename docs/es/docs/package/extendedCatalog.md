@@ -14,7 +14,7 @@ En este método podemos obtener información extendida sobre los paquetes (activ
             ??? example "Posibles valores"
                 --8<-- "includes/enum/personType.md"
 
-        - **``Age``**: (``int``) ``Opcional``. Edad de la persona. Obligatorio, únicamente, si se trata de un niño (tipo ``1``).
+        - **``Age``**: (``int``) ``Opcional``. Edad de la persona. Obligatorio, únicamente, si se trata de un niño o bebé (tipo ``1`` y ``2``).
 
 - **``Activity``**: (``object``) ``Requerido``. Información sobre la actividad.
     - **``FromDate``**: (``date``) ``Requerido``. Fecha de inicio de la actividad. Formato IS0 8601 (YYYY-MM-DD).
@@ -22,7 +22,7 @@ En este método podemos obtener información extendida sobre los paquetes (activ
     - **``PrePackageIds``**: (``list``) ``Requerido``. Listado de identificadores de prepaquetes de la actividad.
         - ``(string)``: ``Requerido``. Identificador del prepaquete
 
-- **``Accommodation``**: información sobre el alojamiento.
+- **``Accommodation``**: (``object``) ``Requerido``. información sobre el alojamiento.
     - **``AccommodationId``**: (``string``) ``Requerido``. Identificador del alojamiento
     - **``CheckIn``**: (``date``) ``Requerido``. Fecha de entrada al alojamiento. Formato ISO 8601 (YYYY-MM-DD).
     - **``CheckOut``**: (``date``) ``Requerido``. Fecha de salida del alojamiento. Formato ISO 8601 (YYYY-MM-DD).
@@ -41,10 +41,8 @@ En este método podemos obtener información extendida sobre los paquetes (activ
 
 ## Estructura de la respuesta
 
-La respuesta contiene 5 propiedades importantes (``Activities``, ``Accommodation``, ``PrePackages``, ``ActivityPackages`` y ``Packages``).
-
-
-- **``Echotoken``**: (``string``). Token necesario para poder añadir paquetes al carrito.
+- **`Success`**: (``boolean``). Indica si la llamada ha sido procesada satisfactoriamente.
+- **``Echotoken``**: (``string``). Token necesario para las siguientes peticiones: solicitar precios, añadir elementos al carro, etc.
 - **``Activities``**: (``object``). Propiedad que contiene la definición del [catálogo de actividades](../activity/catalog.md#estructura-de-la-respuesta). Aquí están listadas todas las actividades disponibles para el prepaquete indicado.
 - **``Accommodation``**: (``object``). Información sobre el alojamiento del paquete, indicado en la petición.
     - **``Id``**: (``string``). Identificador del alojamiento.
