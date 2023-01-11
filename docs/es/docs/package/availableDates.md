@@ -26,3 +26,7 @@ Este método nos permite obtener la disponibildiad de fechas para un paquete esp
             - **``(date)``**: Fecha con disponibilidad. Formato IS0 8601 (YYYY-MM-DD). 
 
 ### Ejemplos
+
+??? tip "Example"
+    
+    --8<-- "includes/examples/package/availableDates.response.1.md"
