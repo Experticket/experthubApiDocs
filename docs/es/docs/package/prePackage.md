@@ -62,8 +62,10 @@ Todos los parámetros de la petición son opcionales.
                         - **``Logo``**: (``string``). Url de la imagen con el logotipo del recinto.
                 - **``ValidDays``**: (``int``). Días de validez.
                 - **``ValidDaysType``**: (``int``). Tipo de días de validez.
+                    
                     ??? example "Posibles valores"
                         --8<-- "includes/enum/validDayType.md"
+
                 - **``ProductPaxGroupingId``**: (``string``). Identificador del producto agrupado.
                 - **``ProductPaxGroupingName``**: (``string``). Nombre del producto agrupado.
             - **``SuggestedLocation``**: (``object``). Localización sugerida para búsqueda de alojamiento. Suele ser unas coordenadas calculadas céntricas entre todos los recintos del prepaquete.
