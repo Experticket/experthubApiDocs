@@ -8,9 +8,9 @@ Este método nos permite obtener la disponibildiad de fechas para cada actividad
 
     Por lo tanto, deberemos llamar a este método tantas veces como actividades compongan el paquete solicitado.
 
-    En la primera llamada indicaremos el identificador de paquete (``PackageId``) y omitiremos las agrupaciones por fechas (``PaxGroupingsDates``). La respuesta contendrá un listado con la disponibilidad de las distintas actividades que compongan el paquete. De esta forma, el cliente, podrá seleccionar la fecha de acceso de la **primera** actividad.
+    En la primera llamada indicaremos el identificador de paquete (``PackageId``) y omitiremos las agrupaciones por fechas (``PaxGroupingsDates``). La respuesta mostrará un listado con la disponibilidad de las distintas actividades que compongan el paquete. De esta forma, el cliente, podrá seleccionar la fecha de acceso de la **primera** actividad.
 
-    Una vez tengamos la información de la primera actividad y fecha elegida por el cliente, llamaremos nuevamente a este método indicando, en ``PaxGroupingsDates``, esta elección. La Respuesta contendrá un listado con la disponibilidad de las siguientes actividades que compongan el paquete, teniendo en cuenta las posibles restricciones y, de esta forma, permitir al cliente que escoga esa segunda actividad y fecha de acceso.
+    Una vez tengamos la información de la primera actividad y fecha elegida por el cliente, llamaremos nuevamente a este método indicando, en ``PaxGroupingsDates``, esta elección. La respuesta mostrará un listado con la disponibilidad de las siguientes actividades que compongan el paquete, teniendo en cuenta las posibles restricciones y, de esta forma, permitir al cliente escoger esa segunda actividad y fecha de acceso.
 
     Tal como se mencionaba anteriormente, esta acción habrá que relizarla tantas veces, como actividades tenga el paquete. Así iremos descartando uno a una las posibles restricciones de fecha de acceso para cada actividad.
 
@@ -18,9 +18,13 @@ Este método nos permite obtener la disponibildiad de fechas para cada actividad
 
         --8<-- "includes/examples/package/availableDates.request.1.md"
 
-    === "Ejemplo segunda llamada y sucesivas"
+    === "Ejemplo segunda llamada"
 
         --8<-- "includes/examples/package/availableDates.request.2.md"
+    
+    === "Ejemplo tercera llamada y sucesivas"
+
+        --8<-- "includes/examples/package/availableDates.request.3.md"
 
 
 ## Método de acceso
