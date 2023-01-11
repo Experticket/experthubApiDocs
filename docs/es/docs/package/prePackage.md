@@ -8,7 +8,7 @@ Es relevante tener en cuenta la geolocalización sugerida. Esta se utiliza en lo
 
 ## Método de acceso
 
-**POST** Activity/Prepackages
+**POST** /Activity/Prepackages
 
 ## Estructura de la petición
 Todos los parámetros de la petición son opcionales.

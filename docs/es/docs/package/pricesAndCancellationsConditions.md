@@ -10,14 +10,14 @@ La definición de las agrupaciones (``PaxGroupings``) toma relevancia cuando el 
 
 ## Estructura de la petición
 
-- **``EchoToken``**: (``string``). Token que identifica a la secuencia de peticiones. Ver [catálogo extendido](../extendedCatalog#estructura-de-la-respuesta)
-- **``Packages``**: (``list``). Listado de paquetes a solicitar.
-    - **``Package``**: (``object``). Información del paquete.
-        - **``Id``**: (``string``). Identificador del paquete.
-        - **``PaxGroupings``**: (``list``). Listado de agrupaciones.
-            - **``PaxGrouping``**: (``object``). Información de la agrupación.
-                - **``Id``**: (``string``). Identificador de la agrupación.
-                - **``AccessDate``**: (``date``). Fecha de inicio de la actividad. Formato IS0 8601 (YYYY-MM-DD).
+- **``EchoToken``**: (``string``) ``Requerido``. Token que identifica a la secuencia de peticiones. Ver [catálogo extendido](../extendedCatalog#estructura-de-la-respuesta)
+- **``Packages``**: (``list``) ``Requerido``. Listado de paquetes a solicitar.
+    - **``Package``**: (``object``) ``Requerido``. Información del paquete.
+        - **``Id``**: (``string``) ``Requerido``. Identificador del paquete.
+        - **``PaxGroupings``**: (``list``) ``Requerido``. Listado de agrupaciones.
+            - **``PaxGrouping``**: (``object``) ``Requerido``. Información de la agrupación.
+                - **``Id``**: (``string``) ``Requerido``. Identificador de la agrupación.
+                - **``AccessDate``**: (``date``) ``Requerido``. Fecha de inicio de la actividad. Formato IS0 8601 (YYYY-MM-DD).
 
 ### Ejemplos
 

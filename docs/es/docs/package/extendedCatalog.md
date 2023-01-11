@@ -4,7 +4,7 @@ En este método podemos obtener información extendida sobre los paquetes (activ
 
 ## Método de acceso
 
-**POST** Package/FullCatalog
+**POST** /Package/FullCatalog
 
 ## Estructura de la petición
 - **``People``**: (``list``) ``Requerido``. Listado de personas que componen el paquete. El orden en el cual se añaden las personas en este listado repercute, posteriormente, en el índice a usar en la propiedad ``Room``
