@@ -4,7 +4,7 @@ Este método nos permite obtener la información mínima e indispensable sobre l
 
 El resultado será una matriz de las distintas actividades (``PrePackageIds``) y de los alojamientos disponibles para cada uno de esas actividades. 
 
-Las actividades pueden tener ninguna, una o varias restricciones de alojamientos configurados internamente, como por ejemplo, únicamente poder empaquetarse con un alojamiento específico o una restricción de distancia máxima al recinto. Esta restricción puede provocar que, aunque haya alojamientos en la zona o radio específicos, no aparecer en la lista de resultados de paquetes (``Packages``).
+Las actividades pueden tener ninguna, una o varias restricciones de alojamientos configurados internamente, como por ejemplo, únicamente poder empaquetarse con un alojamiento específico o una restricción de distancia máxima al recinto. Estas restricciones pueden provocar que, aunque haya alojamientos en la zona o radio específicos, no aparezcan en la lista de resultados de paquetes (``Packages``).
 
 ## Método de acceso
 
@@ -94,30 +94,30 @@ Las actividades pueden tener ninguna, una o varias restricciones de alojamientos
 
 ## Estructura de la respuesta
 
-- **``TotalPages``** (``int``) Número total de páginas.
-- **``Success``** (``boolean``) Si la petición ha podido ser procesada.
-- **``Packages``** (``list``) Listado de paquetes con base en los criterios de búsqueda: Actividad/es, Alojamiento/s y Filtros.
-    - **``Package``** (``object``) Información del paquete.
-        - **``Accommodation``** (``object``) Información del alojamiento.
-            - **``DistanceToActivity``** (``decimal``) Distancia, en metros, desde el alojamiento hasta el punto inicial de la actividad.
-            - **``MainImageUrl``** (``string``) Url de la imagen principal del alojamiento.
-            - **``Name``** (``string``) Nombre del alojamiento.
-            - **``Description``** (``string``) Descripción del alojamiento.
-            - **``Address``** (``string``) Dirección del alojamiento.
-            - **``City``** (``string``) Ciudad donde se ubica el alojamiento.
-            - **``PostalCode``** (``string``) Código postal del alojamiento.
-            - **``Country``** (``string``) País donde está ubicado el alojamiento.
-            - **``Type``** (``string``) Tipo de alojamiento.
+- **``TotalPages``**: (``int``). Número total de páginas.
+- **``Success``**: (``boolean``). Si la petición ha podido ser procesada.
+- **``Packages``**: (``list``). Listado de paquetes con base en los criterios de búsqueda: Actividad/es, Alojamiento/s y Filtros.
+    - **``Package``**: (``object``). Información del paquete.
+        - **``Accommodation``**: (``object``). Información del alojamiento.
+            - **``DistanceToActivity``**: (``decimal``). Distancia, en metros, desde el alojamiento hasta el punto inicial de la actividad.
+            - **``MainImageUrl``**: (``string``). Url de la imagen principal del alojamiento.
+            - **``Name``**: (``string``). Nombre del alojamiento.
+            - **``Description``**: (``string``). Descripción del alojamiento.
+            - **``Address``**: (``string``). Dirección del alojamiento.
+            - **``City``**: (``string``). Ciudad donde se ubica el alojamiento.
+            - **``PostalCode``**: (``string``). Código postal del alojamiento.
+            - **``Country``**: (``string``). País donde está ubicado el alojamiento.
+            - **``Type``**: (``string``). Tipo de alojamiento.
 
                 ??? example "Posibles valores"
                     --8<-- "includes/enum/accommodationType.md"
 
-            - **``Category``** (``string``) Categoría del alojamiento.
+            - **``Category``**: (``string``). Categoría del alojamiento.
 
                 ??? example "Posibles valores"
                     --8<-- "includes/enum/accommodationCategory.md"
 
-        - **``PriceFrom``** (``decimal``) Precio de la combinatoria más baja para el paquete en cuestión.
+        - **``PriceFrom``**: (``decimal``). Precio de la combinatoria más baja para el paquete en cuestión.
 
 ### Ejemplos
 
