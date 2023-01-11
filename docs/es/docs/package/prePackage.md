@@ -8,21 +8,25 @@ Es relevante tener en cuenta la geolocalización sugerida. Esta se utiliza en lo
 
 ## Método de acceso
 
-**POST** activity/prepackages
+**POST** Activity/Prepackages
 
 ## Estructura de la petición
 Todos los parámetros de la petición son opcionales.
 
-- **``ProviderIds``**: array de proveedores para filtrar.
-- **``PrePackageIds``**: array de prepaquetes para filtrar.
-- **``FromDate``**: fecha desde para filtrar prepaquetes. Por defecto se coge el día actual. *Formato ISO 8601 (yyyy-MM-dd)*.
-- **``ToDate``**: fecha hasta para filtrar prepaquetes. Por defecto será la fecha dentro de un año. *Formato ISO 8601 (yyyy-MM-dd)*.
-- **``PeopleDistributions``**: tipo de personas para filtrar prepaquetes.
-    - **``NumberOfAdults``**: número de adultos.
-    - **``NumberOfChildren``**: número de niños.
-    - **``NumberOfSeniors``**: número de seniors.
-    - **``NumberOfBabies``**: número de bebés.
-    - **``ChildrenAges``**: array de edades de niños y bebés.
+- **``ProviderIds``**: (``list``) ``Opcional``. Listado de proveedores para filtrar.
+    - **``(string)``**: ``Opcional``. Identificador del proveedor.
+- **``PrePackageIds``**: (``list``) ``Opcional``. Listado de prepaquetes para filtrar.
+    - **``(string)``**: ``Opcional``. Identificador del prepaquete.
+- **``FromDate``**: (``date``) ``Opcional``. Fecha incial para filtrar prepaquetes. Valor por defecto: día actual. Formato IS0 8601 (YYYY-MM-DD).
+- **``ToDate``**: (``date``) ``Opcional``. Fecha final para filtrar prepaquetes. Valor por defecto: un año a futuro. Formato IS0 8601 (YYYY-MM-DD).
+- **``PeopleDistributions``**: (``list``) ``Opcional``. Listado con la distribución de personas en las distintas habitaciones.
+    - **``PeopleDistribution``**: (``object``) ``Opcional``. Información de la distribución en la habitación correspondiente.
+        - **``NumberOfAdults``**: (``int``) ``Opcional``. Número de adultos.
+        - **``NumberOfChildren``**: (``int``) ``Opcional``. Número de niños.
+        - **``NumberOfSeniors``**: (``int``) ``Opcional``. Número de seniors.
+        - **``NumberOfBabies``**: (``int``) ``Opcional``. Número de bebés.
+        - **``ChildrenAges``**: (``list``) ``Opcional``. Listado con las edades de los bebés y niños.
+            - **``(int)``**: ``Opcional``. Edad del bebe o niño.
 
 ### Ejemplo de petición
 
