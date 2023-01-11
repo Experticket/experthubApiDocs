@@ -1,0 +1,2 @@
+- 1: porcentaje.
+- 2: valor absoluto.

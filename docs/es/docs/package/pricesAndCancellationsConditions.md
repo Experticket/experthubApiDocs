@@ -19,20 +19,33 @@ Este método nos permite obtener un listado de precios para cada paquete y grupo
 
 ### Ejemplos
 
-??? tip "Example"
+??? tip "Ejemplos"
     
     --8<-- "includes/examples/package/pricesAndCancellationsConditions.request.1.md"
 
 ## Estructura de la respuesta
 
-- **``PaxGroupingsDates``**: (``list``). Listado de agrupaciones.
-    - **``PaxGroupingDates``**: (``object``). Información de la agrupación.
-        - **``Id``**: (``string``). Identificador de la agrupación (``PaxGroupingId``).
-        - **``Dates``**: (``list``). Listado de fechas disponibles.
-            - **``(date)``**: Fecha con disponibilidad. Formato IS0 8601 (YYYY-MM-DD). 
+- **``EchoToken``**: (``string``). Token que identifica a la secuencia de peticiones. Ver [catálogo extendido](../extendedCatalog#estructura-de-la-respuesta)
+- **``Success``**: (``boolean``). Indica si la solicitud se ha podido satisfacer correctamente.
+- **``Packages``**: (``list``). Listado de paquetes solicitados en la petición.
+    - **``Package``**: (``object``). Información del paquete.
+        - **``Id``**: (``string``). Identificador del paquete.
+        - **``Price``**: (``decimal``). Precio del paquete.
+        - **``PriceMode``**: (``int``). Tipo de precio.
+
+            ??? example "Posibles valores"
+                --8<-- "includes/enum/priceMode.md"
+
+        - **``Commission``**: (``object``). Información sobre la comisión.
+            - **``Type``**: (``int``). Tipo de comisión
+
+                ??? example "Posibles valores"
+                    --8<-- "includes/enum/comissionType.md"
+
+            - **``Value``**: (``decimal``). Valor de la comisión.
 
 ### Ejemplos
 
-??? tip "Example"
+??? tip "Ejemplos"
     
     --8<-- "includes/examples/package/availableDates.response.1.md"
