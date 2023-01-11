@@ -141,5 +141,5 @@ La respuesta contiene 5 propiedades importantes:
 
 ### Ejemplo de respuesta
 
-??? tip "Example: 2 rooms: "2 adult + 1 child" y "1 adult""
+??? tip "Example"
     --8<-- "includes/examples/package/extendedCatalog.response.1.md"
