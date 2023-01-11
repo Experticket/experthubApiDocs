@@ -37,6 +37,8 @@ Todos los parámetros de la petición son opcionales.
 
 ## Estructura de la respuesta
 
+- **`Success`**: (``boolean``). Indica si la llamada ha sido procesada satisfactoriamente.
+- **`Timestamp`**: (``dateTime``). instante de tiempo en el que se procesó la petición. Formato ISO 8601 (yyyy-MM-ddThh\:mm\:ss.fffffff).
 - **``PrePackages``**: (``list``). Listado de prepaquetes disponibles.
     - **``PrePackage``**: (``object``). Información del prepaquete.
         - **``Id``**: (``string``). Identificador del prepaquete.
@@ -65,8 +67,6 @@ Todos los parámetros de la petición son opcionales.
             - **``SuggestedLocation``**: (``object``). Localización sugerida para búsqueda de alojamiento. Suele ser unas coordenadas calculadas céntricas entre todos los recintos del prepaquete.
                 - **`Lat`**: (``decimal``). Coordenadas de latitud.
                 - **`Lng`**: (``decimal``). Coordenadas de longitud.
-
---8<-- "includes/responseBaseDocumentation.es.md"
 
 ### Ejemplo de respuesta
 

@@ -12,7 +12,7 @@ No hay cuerpo en la petición.
 
 ## Estructura de la respuesta
 
-- **``Success``**: (``boolean``). Indica si la solicitud se ha podido satisfacer correctamente.
+- **``Success``**: (``boolean``). Indica si la llamada ha sido procesada satisfactoriamente.
 - **``Id``**: (``string``). Identificador del carrito.
 
 ### Ejemplos
