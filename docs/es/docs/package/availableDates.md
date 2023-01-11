@@ -1,6 +1,27 @@
 # Disponibilidad de fechas
 
-Este método nos permite obtener la disponibildiad de fechas para un paquete específico.
+Este método nos permite obtener la disponibildiad de fechas para cada actividad disponible dentro del paquete solicitado. 
+
+??? important "Implicaciones"
+
+    Teniendo en cuenta que un paquete puede estar compuesto por una o más actividades, es posible que exista alguna restricción de acceso y no se puedan relizar todas las actividades el mismo día. Esto podría deberse a la distancia entre ellas, por el tiempo requerido para hacer cada una de esas actividades o por cualquier otra restricción/incompatibildiad que se haya creado.
+
+    Por lo tanto, deberemos llamar a este método tantas veces como actividades compongan el paquete solicitado.
+
+    En la primera llamada indicaremos el identificador de paquete (``PackageId``) y omitiremos las agrupaciones por fechas (``PaxGroupingsDates``). La respuesta contendrá un listado con la disponibilidad de las distintas actividades que compongan el paquete. De esta forma, el cliente, podrá seleccionar la fecha de acceso de la **primera** actividad.
+
+    Una vez tengamos la información de la primera actividad y fecha elegida por el cliente, llamaremos nuevamente a este método indicando, en ``PaxGroupingsDates``, esta elección. La Respuesta contendrá un listado con la disponibilidad de las siguientes actividades que compongan el paquete, teniendo en cuenta las posibles restricciones y, de esta forma, permitir al cliente que escoga esa segunda actividad y fecha de acceso.
+
+    Tal como se mencionaba anteriormente, esta acción habrá que relizarla tantas veces, como actividades tenga el paquete. Así iremos descartando uno a una las posibles restricciones de fecha de acceso para cada actividad.
+
+    === "Ejemplo primera llamada"
+
+        --8<-- "includes/examples/package/availableDates.request.1.md"
+
+    === "Ejemplo segunda llamada y sucesivas"
+
+        --8<-- "includes/examples/package/availableDates.request.2.md"
+
 
 ## Método de acceso
 
@@ -8,8 +29,9 @@ Este método nos permite obtener la disponibildiad de fechas para un paquete esp
 
 ## Estructura de la petición
 
-- **``EchoToken``**: (``string``). Token que identifica a la secuencia de peticiones. Ver [catálogo extendido](../extendedCatalog#estructura-de-la-respuesta)
-- **``PackageId``**: (``string``). Identificador del paquete. Ver la propiedad ``Packages.Package.Id`` de [catálogo extendido](../extendedCatalog#estructura-de-la-respuesta)
+- **``EchoToken``**: (``string``). ``Requerido``. Token que identifica a la secuencia de peticiones. Ver [catálogo extendido](../extendedCatalog#estructura-de-la-respuesta)
+- **``PackageId``**: (``string``). ``Requerido``. Identificador del paquete. Ver la propiedad ``Packages.Package.Id`` de [catálogo extendido](../extendedCatalog#estructura-de-la-respuesta)
+- **``PaxGroupingsDates``**: (``list``). ``Opcional``. Listado de agrupaciones y fechas ya seleccionadas.
 
 ### Ejemplos
 

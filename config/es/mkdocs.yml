@@ -99,6 +99,7 @@ nav:
         - Catalogo básico: docs/package/basicCatalog.md
         - Catálogo extendido: docs/package/extendedCatalog.md
         - Disponibilidad de fechas: docs/package/availableDates.md
+        - Precios: docs/package/pricesAndCancellationsConditions.md
       - Anexos:
         - Códigos de error: docs/annex/errorCodes.md
     - FAQ: faq.md
