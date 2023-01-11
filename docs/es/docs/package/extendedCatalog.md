@@ -93,7 +93,7 @@ La respuesta contiene 5 propiedades importantes:
                     - **``BoardCode``**: (``int``) código del tipo de pensión.
 
                         ??? example "Posibles valores"
-                            --8<-- "includes/examples/package/accommodationBoard.md"
+                            --8<-- "includes/enum/accommodationBoard.md"
 
                     - **``BoardName``**: (``string``). Nombre del tipo de alojamiento.
                     - **``Adults``**: (``int``). Número de adultos.
@@ -101,7 +101,7 @@ La respuesta contiene 5 propiedades importantes:
                     - **``RateClass``**: tipo de tarifa.
 
                         ??? example "Posibles valores"
-                            --8<-- "includes/examples/package/accommodationRateClass.md"
+                            --8<-- "includes/enum/accommodationRateClass.md"
                                         
                     - **``Price``**: (``decimal``). Precio de la tarifa.
                     - **``PriceMode``**: (``int``). Tipo de precio.
