@@ -28,6 +28,9 @@ Todos los parámetros de la petición son opcionales.
         - **``ChildrenAges``**: (``list``) ``Opcional``. Listado con las edades de los bebés y niños.
             - **``(int)``**: ``Opcional``. Edad del bebe o niño.
 
+!!! caution "Edad de los bebés/niños"
+    Se deberá preguntar la edad de todas aquellas personas que tengan 17 años o menos.
+
 ### Ejemplo de petición
 
 --8<-- "includes/examples/package/prepackageQueryExamples.md"
