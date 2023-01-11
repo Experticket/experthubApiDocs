@@ -37,29 +37,35 @@ Todos los parámetros de la petición son opcionales.
 
 ## Estructura de la respuesta
 
-- **``PrePackages``**: array de prepaquetes.
-    - **``Id``**: identificador del prepaquete.
-    - **``Order``**: orden para ser mostrados.
-    - **``Image``**: imagen promocional del prepaquete.
-    - **``Description``**: descripción del prepaquete.
-    - **``Name``**: nombre del prepaquete.
-    - **``CommercialName``**: nombre comercial del prepaquete.
-    - **``ProductPaxGroupings``**: agrupación de productos.
-        - **``ProviderId``**: identificador del proveedor.
-        - **``ProviderName``**: nombre del proveedor.
-        - **``ProviderLocation``**: localización del proveedor.
-            - **`Lat`**: coordenadas de latitud.
-            - **`Lng`**: coordenadas de longitud.
-        - **``DatePolicyKey``**: clave de políticas de fecha.
-        - **``TicketEnclosures``**: array de recintos.
-            - **``Id``**: identificador del recinto.
-            - **``Name``**: nombre del recinto.
-            - **``Logo``**: imagen con el logotipo del recinto.
-        - **``ValidDays``**: días de validez.
-        - **``ValidDaysType``**: tipo de días de validez.
-    - **``SuggestedLocation``**: localización sugerida para búsqueda de alojamiento. Suele ser unas coordenadas calculadas céntricas entre todos los recintos del prepaquete.
-        - **`Lat`**: coordenadas de latitud.
-        - **`Lng`**: coordenadas de longitud.
+- **``PrePackages``**: (``list``). Listado de prepaquetes disponibles.
+    - **``PrePackage``**: (``object``). Información del prepaquete.
+        - **``Id``**: (``string``). Identificador del prepaquete.
+        - **``Order``**: (``int``). Orden para ser mostrados.
+        - **``Image``**: (``string``). Url de la imagen promocional del prepaquete.
+        - **``Description``**: (``string``). Descripción del prepaquete.
+        - **``Name``**: (``string``). Nombre del prepaquete.
+        - **``CommercialName``**: (``string``). Nombre comercial del prepaquete.
+        - **``ProductPaxGroupings``**: (``list``). Listado de agrupación de productos.
+            - **``ProductPaxGrouping``**: (``object``). Información de la agrupación de productos.
+                - **``ProviderId``**: (``string``). Identificador del proveedor.
+                - **``ProviderName``**: (``string``). Nombre del proveedor.
+                - **``ProviderLocation``**: (``string``). Localización del proveedor.
+                    - **`Lat`**: (``decimal``). Coordenadas de latitud.
+                    - **`Lng`**: (``string``). Coordenadas de longitud.
+                - **``DatePolicyKey``**: (``int``). Clave de políticas de fecha. Todos los productos con la misma clave, deberán compartir fecha de acceso.
+                - **``TicketEnclosures``**: (``list``). Listado de recintos.
+                    - **``TicketEnclosure``**: (``object``). Información del recinto.
+                        - **``Id``**: (``string``). Identificador del recinto.
+                        - **``Name``**: (``string``). Nombre del recinto.
+                        - **``Logo``**: (``string``). Url de la imagen con el logotipo del recinto.
+                - **``ValidDays``**: (``int``). Días de validez.
+                - **``ValidDaysType``**: (``int``). Tipo de días de validez.
+                - **``ProductPaxGroupingId``**: (``string``). Identificador del producto agrupado.
+                - **``ProductPaxGroupingName``**: (``string``). Nombre del producto agrupado.
+            - **``SuggestedLocation``**: (``object``). Localización sugerida para búsqueda de alojamiento. Suele ser unas coordenadas calculadas céntricas entre todos los recintos del prepaquete.
+                - **`Lat`**: (``decimal``). Coordenadas de latitud.
+                - **`Lng`**: (``decimal``). Coordenadas de longitud.
+
 --8<-- "includes/responseBaseDocumentation.es.md"
 
 ### Ejemplo de respuesta
