@@ -10,9 +10,9 @@ Este método nos permite obtener la disponibildiad de fechas para cada actividad
 
     En la primera llamada indicaremos el identificador de paquete (``PackageId``) y omitiremos las agrupaciones por fechas (``PaxGroupingsDates``). La respuesta mostrará un listado con la disponibilidad de las distintas actividades que compongan el paquete. De esta forma, el cliente, podrá seleccionar la fecha de acceso de la **primera** actividad.
 
-    Una vez tengamos la información de la primera actividad y fecha elegida por el cliente, llamaremos nuevamente a este método indicando, en ``PaxGroupingsDates``, esta elección. La respuesta mostrará un listado con la disponibilidad de las siguientes actividades que compongan el paquete, teniendo en cuenta las posibles restricciones y, de esta forma, permitir al cliente escoger esa segunda actividad y fecha de acceso.
+    Una vez tengamos la información de la primera actividad y la fecha elegida por el cliente, llamaremos nuevamente a este método añadiendo, en ``PaxGroupingsDates``, esta elección. La respuesta mostrará un listado con la disponibilidad de las **siguientes** actividades que compongan el paquete, teniendo en cuenta las **posibles** restricciones y, de esta forma, permitir al cliente escoger esa segunda actividad y fecha de acceso.
 
-    Tal como se mencionaba anteriormente, esta acción habrá que relizarla tantas veces, como actividades tenga el paquete. Así iremos descartando uno a una las posibles restricciones de fecha de acceso para cada actividad.
+    Iremos repitiendo esta última acción, con el resto de actividades.
 
     === "Ejemplo primera llamada"
 
