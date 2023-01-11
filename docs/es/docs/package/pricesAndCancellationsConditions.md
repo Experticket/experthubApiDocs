@@ -48,4 +48,4 @@ Este método nos permite obtener un listado de precios para cada paquete y grupo
 
 ??? tip "Ejemplos"
     
-    --8<-- "includes/examples/package/availableDates.response.1.md"
+    --8<-- "includes/examples/package/pricesAndCancellationsConditions.response.1.md"
