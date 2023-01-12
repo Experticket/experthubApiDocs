@@ -1,4 +1,4 @@
-=== "Add activities"
+=== "Add an activity"
 
     ``` json
     {
@@ -13,7 +13,7 @@
     }
     ```
 
-=== "Add accommodations"
+=== "Add an accommodation"
 
     ``` json
     {
@@ -29,7 +29,7 @@
     }
     ```
 
-=== "Add packages"
+=== "Add a package"
 
     ``` json
     {

@@ -37,6 +37,8 @@ Podemos añadir uno o varios productos en una o varias llamadas, según las nece
 
 ## Estructura de la respuesta
 
+Es relevante tener en cuenta las propiedades **``Id``** que son devueltas en la respuesta dado que serán necesarios para manipularlos una vez añadidos al carrito.
+
 - **`Success`**: (``boolean``). Indica si la llamada ha sido procesada satisfactoriamente.
 - **`Activities`**: (``list``). Listado de las actividades añadidas en la **petición actual**. Si no se ha añadido actividades, esta propiedad no aparecerá.
     - **`Activity`**: (``object``). Información de la actividad añadida.
@@ -44,9 +46,13 @@ Podemos añadir uno o varios productos en una o varias llamadas, según las nece
         - **`Activity`**: (``object``). Información de la actividad añadida.
             - **`ProductId`**: (``string``). Identificador de producto.
             - **`Quantity`**: (``string``). Cantidad añadida.
-            - **`AccessDateTime`**: (``dateTime``). Fecha de acceso. Formato ISO 8601 (YYYY-MM-DDThh:mm:ss)
+            - **`AccessDateTime`**: (``dateTime``). Fecha de acceso. Formato ISO 8601 (YYYY-MM-DDThh\:mm\:ss)
             - **`ForceNotAutoAssignSeating`**: (``boolean``).
 - **`Accommodations`**: (``list``). Listado de las alojamientos añadidos en la **petición actual**. Si no se ha añadido alojamientos, esta propiedad no aparecerá.
     - **`Accommodation`**: (``object``). Información del alojamiento añadido.
         - **`Id`**: (``string``). Identificador que se ha asignado a este alojamiento dentro del carrito.
         - **`RateId`**: (``string``). Identificador de la tarifa.
+
+??? tip "Examples"
+
+    --8<-- "includes/examples/shoppingCart/add.response.1.md"
