@@ -36,3 +36,17 @@ Podemos añadir uno o varios productos en una o varias llamadas, según las nece
     --8<-- "includes/examples/shoppingCart/add.request.1.md"
 
 ## Estructura de la respuesta
+
+- **`Success`**: (``boolean``). Indica si la llamada ha sido procesada satisfactoriamente.
+- **`Activities`**: (``list``). Listado de las actividades añadidas en la **petición actual**. Si no se ha añadido actividades, esta propiedad no aparecerá.
+    - **`Activity`**: (``object``). Información de la actividad añadida.
+        - **`Id`**: (``string``). Identificador que se ha asignado a esta actividad dentro del carrito.
+        - **`Activity`**: (``object``). Información de la actividad añadida.
+            - **`ProductId`**: (``string``). Identificador de producto.
+            - **`Quantity`**: (``string``). Cantidad añadida.
+            - **`AccessDateTime`**: (``dateTime``). Fecha de acceso. Formato ISO 8601 (YYYY-MM-DDThh:mm:ss)
+            - **`ForceNotAutoAssignSeating`**: (``boolean``).
+- **`Accommodations`**: (``list``). Listado de las alojamientos añadidos en la **petición actual**. Si no se ha añadido alojamientos, esta propiedad no aparecerá.
+    - **`Accommodation`**: (``object``). Información del alojamiento añadido.
+        - **`Id`**: (``string``). Identificador que se ha asignado a este alojamiento dentro del carrito.
+        - **`RateId`**: (``string``). Identificador de la tarifa.
