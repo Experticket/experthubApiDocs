@@ -33,6 +33,6 @@ Podemos añadir uno o varios productos en una o varias llamadas, según las nece
 
 ??? tip "Examples"
 
---8<-- "includes/examples/shoppingCart/add.request.1.md"
+    --8<-- "includes/examples/shoppingCart/add.request.1.md"
 
 ## Estructura de la respuesta
