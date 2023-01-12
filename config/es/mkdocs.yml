@@ -104,6 +104,7 @@ nav:
         - Introducción: docs/shoppingCart/introduction.md
         - Creación: docs/shoppingCart/create.md
         - Añadir al carrito: docs/shoppingCart/add.md
+        - Eliminar elemento del carrito: docs/shoppingCart/remove.md
       - Anexos:
         - Códigos de error: docs/annex/errorCodes.md
     - FAQ: faq.md

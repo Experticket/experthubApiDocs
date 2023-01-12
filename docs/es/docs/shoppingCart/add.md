@@ -37,7 +37,7 @@ Podemos añadir uno o varios productos en una o varias llamadas, según las nece
 
 ## Estructura de la respuesta
 
-Es relevante tener en cuenta las propiedades **``Id``** que son devueltas en la respuesta dado que serán necesarios para manipularlos una vez añadidos al carrito.
+Es relevante tener en cuenta las propiedades **``Id``** que son devueltas en la respuesta, dado que serán necesarios para manipular los productos una vez han sido añadidos al carrito.
 
 - **`Success`**: (``boolean``). Indica si la llamada ha sido procesada satisfactoriamente.
 - **`Activities`**: (``list``). Listado de las actividades añadidas en la **petición actual**. Si no se ha añadido actividades, esta propiedad no aparecerá.
