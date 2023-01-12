@@ -1,6 +1,10 @@
 # Creación de un carrito
 
-Este método nos permite crear un carrito de la compra para ir añadiendo productos.
+Este método nos permite crear un carrito de la compra (en adelante **carrito**).
+
+El carrito es un contenedor de productos (actividades, alojamientos y/o paquetes). Puede contener 0 o ℕ productos.
+
+Este carrito no expira. No obstante, los productos añadidos sí.
 
 ## Método de acceso
 
