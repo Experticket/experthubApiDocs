@@ -10,13 +10,13 @@ Este método permite elimianr un elemento existe en el carrito. Para ello es nec
 
 - **``ShoppingCartId``**: (``string``) ``Requerido``. Identificador del carrito.
 - **``ShoppingCartItemIdsToRemove``**: (``list``) ``Requerido``. Listado de identificadores a eliminar.
-    - **``(string)``**: ``Requerido``. Identificador mostrado en la respuesta del método [**``Add``**](./add.md#estructura-de-la-respuesta).
+    - **``(string)``**: ``Requerido``. Identificador a eliminar. Este identificador es mostrado en la respuesta del método [**``Add``**](./add.md#estructura-de-la-respuesta).
 
 ### Ejemplos
 
 ??? tip "Examples"
 
-    --8<-- "includes/examples/shoppingCart/add.request.1.md"
+    --8<-- "includes/examples/shoppingCart/remove.request.1.md"
 
 ## Estructura de la respuesta
 
@@ -24,4 +24,4 @@ Este método permite elimianr un elemento existe en el carrito. Para ello es nec
 
 ??? tip "Examples"
 
-    --8<-- "includes/examples/shoppingCart/add.response.1.md"
+    --8<-- "includes/examples/shoppingCart/remove.response.1.md"
