@@ -3,7 +3,7 @@
 El proceso de compra consta de, básicamente, 5 pasos:
 
 1. [Creación del carrito de la compra.](./create.md)
-2. Adición del/los producto/s deseados al carrito.
+2. [Adición del/los producto/s deseados al carrito.](./add.md)
 3. Reserva de los precios de los productos del carrito.
 4. Confirmación del carrito.
 5. Obtención de la documentación.

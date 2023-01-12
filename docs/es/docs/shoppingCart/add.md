@@ -4,7 +4,7 @@ Este método nos permite añadir actividades, alojamientos y/o paquetes al carri
 
 Puede ser llamado una o varias veces, según nuestras necesidades para ir añadiendo elementos al carrito.
 
-Podemos añadir uno o varios elementos en una o varias llamadas, según las necesidades en el proceso de integración.
+Podemos añadir uno o varios productos en una o varias llamadas, según las necesidades en el proceso de integración.
 
 ## Método de acceso
 
@@ -16,4 +16,23 @@ Podemos añadir uno o varios elementos en una o varias llamadas, según las nece
 - **``Activities``**: (``list``) ``Opcional``. Listado de actividades a añadir al carrito.
     - **``Activity``**: (``object``) ``Opcional``. Información de la actividad.
         - **``ProductId``**: (``string``) ``Requerido``. Indentificador del producto.
-        - **``AccessDateTime``**: (``dateTime``) ``Requerido``. Indentificador del producto.
+        - **``AccessDateTime``**: (``date``) ``Requerido``. Fecha de acceso. Formato IS0 8601 (YYYY-MM-DD).
+- **``Accommodations``**: (``list``) ``Opcional``. Listado de alojamientos a añadir al carrito.
+    - **``Accommodation``**: (``object``) ``Opcional``. Información del alojamiento.
+        - **``EchoToken``**: (``string``) ``Requerido``. Token obtenido en la petición de alojamientos.
+        - **``Rates``**: (``list``) ``Requerido``. Listado de identificadores de tarifas.
+            - **``(string)``**:``Requerido``. Identificador de la tarifa.
+- **``Packages``**: (``list``) ``Opcional``. Listado de agrupaciones de paquetes a añadir al carrito.
+    - **``Package``**: (``object``) ``Opcional``. Información del grupo paquete.
+        - **``EchoToken``**: (``string``) ``Requerido``. Token obtenido en la petición de paquetes.
+        - **``Packages``**: (``list``) ``Requerido``. Listado de paquetes.
+            - **``Package``**: (``object``) ``Requerido``. Información del paquete.
+                - **``Id``**:``Requerido``. Identificador del paquete.
+
+### Ejemplos
+
+??? tip "Examples"
+
+--8<-- "includes/examples/shoppingCart/create.request.1.md"
+
+## Estructura de la respuesta
