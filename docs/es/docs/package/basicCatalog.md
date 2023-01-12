@@ -95,7 +95,7 @@ Las actividades pueden tener ninguna, una o varias restricciones de alojamientos
 ## Estructura de la respuesta
 
 - **``TotalPages``**: (``int``). Número total de páginas.
-- **``Success``**: (``boolean``). Si la petición ha podido ser procesada.
+- **`Success`**: (``boolean``). Indica si la llamada ha sido procesada satisfactoriamente.
 - **``Packages``**: (``list``). Listado de paquetes con base en los criterios de búsqueda: Actividad/es, Alojamiento/s y Filtros.
     - **``Package``**: (``object``). Información del paquete.
         - **``Accommodation``**: (``object``). Información del alojamiento.
