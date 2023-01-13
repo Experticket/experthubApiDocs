@@ -27,7 +27,6 @@ Una vez que se ha confirmado la reserva, ya no es posible añadir más productos
         - **`ProductId`**: (``string``). Identificador del producto añadido.
         - **`ProductName`**: (``string``). Nombre del producto añadido.
         - **`AccessDateTime`**: (``dateTime``). Fecha y hora de acceso. Formato IS0 8601 (YYYY-MM-DDThh\:mm\:ss.d).
-        - **`Quantity`**: (``int``). Cantidad de unidades añadidas.
         - **``Price``**: (``decimal``). Precio de la tarifa.
         - **``PriceMode``**: (``int``). Tipo de precio.
 
@@ -46,12 +45,13 @@ Una vez que se ha confirmado la reserva, ya no es posible añadir más productos
                     - **`Percentage`**: (``decimal``). Porcentaje de penalización sobre el precio de la entrada.
                     - **`Amount`**: (``decimal``). Valor total de la penalización que se aplicará.
                     - **`FromInclusiveDateTime`**: (``dateTime``). Fecha/hora a partir de la cual se aplicará esta regla.
+                    - **`ToExclusiveDateTime`**: (``dateTime``). Fecha/hora hasta la cual se aplicará esta regla.
 - **`Accommodations`**: (``list``). Información sobre los alojamientos/habitaciones añadidos al carrito.
     - **`Accommodation`**: (``object``). Información sobre el alojamiento.
         - **`ProductId`**: (``string``). Identificador de la tarifa.
         - **`ProductConditions`**: (``string``). Condiciones del producto.
-        - **`AccessDateTime`**: (``dateTime``). Fecha de llegada. Formato IS0 8601 (YYYY-MM-DDThh\:mm\:ss).
-        - **`AccessEndDateTime`**: (``dateTime``). Fecha de salida. Formato IS0 8601 (YYYY-MM-DDThh\:mm\:ss).
+        - **`AccessDateTime`**: (``dateTime``). tbd
+        - **`AccessEndDateTime`**: (``dateTime``). tbd
         - **`Quantity`**: (``int``). Cantidad de unidades añadidas.
         - **``Price``**: (``decimal``). Precio de la tarifa.
         - **``PriceMode``**: (``int``). Tipo de precio.
@@ -60,7 +60,7 @@ Una vez que se ha confirmado la reserva, ya no es posible añadir más productos
                 --8<-- "includes/enum/priceMode.md"
 
         - **``Success``**: (``boolean``). Si ha sido correctamente reservado.
-        - **``ErrorMessage``**: (``boolean``). Si ha sido correctamente reservado.
+        - **``ErrorMessage``**: (``boolean``). En caso de error en la reserva, mensaje asociado.
         - **``ChildrenAges``**: (``list``). Listado con las edades de los bebés/niños.
             - **``int``**: Edad del bebé/niño
         - **``NumberOfAdults``**: (``int``). Número de adultos en esta habitación.

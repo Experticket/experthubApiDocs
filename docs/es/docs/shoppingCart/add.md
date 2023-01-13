@@ -47,7 +47,6 @@ Es relevante tener en cuenta las propiedades **``Id``** que son devueltas en la 
             - **`ProductId`**: (``string``). Identificador de producto.
             - **`Quantity`**: (``string``). Cantidad añadida.
             - **`AccessDateTime`**: (``dateTime``). Fecha de acceso. Formato ISO 8601 (YYYY-MM-DDThh\:mm\:ss)
-            - **`ForceNotAutoAssignSeating`**: (``boolean``).
 - **`Accommodations`**: (``list``). Listado de las alojamientos añadidos en la **petición actual**. Si no se ha añadido alojamientos, esta propiedad no aparecerá.
     - **`Accommodation`**: (``object``). Información del alojamiento añadido.
         - **`Id`**: (``string``). Identificador que se ha asignado a este alojamiento dentro del carrito.
