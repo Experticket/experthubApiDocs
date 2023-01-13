@@ -108,6 +108,7 @@ nav:
         - Reserva de precios: docs/shoppingCart/confirm.md
         - Cancelación de la reserva: docs/shoppingCart/cancelConfirm.md
         - Confirmación de la reseva: docs/shoppingCart/sale.md
+        - Documentación: docs/shoppingCart/documentation.md
       - Anexos:
         - Códigos de error: docs/annex/errorCodes.md
     - FAQ: faq.md
