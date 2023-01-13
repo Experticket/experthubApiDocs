@@ -19,10 +19,6 @@ Requiere pasarle, como parámetro de la url (`query string`), los siguientes par
 
     --8<-- "includes/examples/shoppingCart/documentation.request.1.md"
 
-```
-{{url}}/ShoppingCart/Documentation?ShoppingCartId=gghy31ch6g3rs
-```
-
 ## Estructura de la respuesta
 
 - **`Success`**: (``boolean``). Indica si la llamada ha sido procesada satisfactoriamente.
