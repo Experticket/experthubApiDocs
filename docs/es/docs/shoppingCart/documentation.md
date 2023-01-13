@@ -1,4 +1,4 @@
-# Confirmación de la reserva
+# Obtención de la documentación
 
 Este método permite obtener la documentación de una venta confirmada.
 
