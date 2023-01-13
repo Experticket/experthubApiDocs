@@ -1,10 +1,13 @@
-# Conexión
+# Interfaz de comunicación
 
-El canal de comunicación será un API REST:
+La interfaz de comunicación se basa en una API Rest.
 
-- Llamadas HTTP (POST, GET, DELETE...) a una URL.
-- La información se enviará a través de un *query string* que forme parte de la URL o mediante un *request body* en función del método HTTP que usemos.
-- REQUEST HEADERS:
-    - "Accept" debe ser "application/json".
-    - "Content-Type" debe ser "application/json".
-    - "Authorization" debe de contener la palabra *ApiKey* seguida de un espacio y el ApiKey que tengamos (p.ej. `Authorization: ApiKey XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`).
+- Llamadas HTTP (POST, GET, DELETE...) a una método específico (*endpoint*).
+- Dependiendo del método a utilizar, los datos pueden enviarse mediante *query string*, que forme parte de la URL, o mediante un *request body*, en formato JSON.
+- Será necesario añadir las siguientes cabeceras HTTP en todas las peticiones:
+
+    | Nombre de la cabecera | Valor de la cabecera |
+    | --- | --- |
+    |``Accept`` | ``application/json`` |
+    |``Content-Type`` | ``application/json`` |
+    |``Authorization`` | ``ApiKey YOUR_API_KEY`` |

@@ -72,8 +72,8 @@ nav:
     - Inicio: index.md
     - Documentación:
       - Introducción: docs/intro.md 
+      - Interfaz de comunicación: docs/connection.md
       - Especificación de datos: docs/struct.md
-      - Conexión: docs/connection.md
       - Actividades:
         - Catálogo: docs/activity/catalog.md
         - Última fecha de actualización del catálogo: docs/activity/lastCatalogUpdatedDate.md
