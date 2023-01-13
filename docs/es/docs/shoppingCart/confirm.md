@@ -1,6 +1,6 @@
 # Reserva de productos
 
-Este método permite reservar los productos añadidos al carrito de la compra durante un periodo.
+Este método permite reservar los productos añadidos al carrito de la compra durante un periodo de tiempo.
 
 Una vez que se ha confirmado la reserva, ya no es posible añadir más productos al carrito.
 
