@@ -1,6 +1,6 @@
 # Disponibilidad de fechas
 
-Este método nos permite obtener un listado de precios para el conjunto de paquete, grupo y fecha solicitadas.
+Este método nos permite obtener un listado de precios para el conjunto de paquete, grupo y fecha solicitados.
 
 La definición de las agrupaciones (``PaxGroupings``) toma relevancia cuando el paquete consta de varias actividades y, por tanto, posibles diferentes fechas para la realización de cada una de las actividades.
 

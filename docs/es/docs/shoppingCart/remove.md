@@ -1,6 +1,6 @@
 # Eliminar un elemento del carrito
 
-Este método permite elimianr un elemento existe en el carrito. Para ello es necesario utilizar el Identificador (**``Id``**) que se muestra en la respuesta del método [**``Add``**](./add.md#estructura-de-la-respuesta)
+Este método permite eliminar un elemento existe en el carrito. Para ello es necesario utilizar el Identificador (**``Id``**) que se muestra en la respuesta del método [**``Add``**](./add.md#estructura-de-la-respuesta)
 
 ## Método de acceso
 

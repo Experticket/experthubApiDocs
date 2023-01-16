@@ -34,7 +34,7 @@ Este método confirma la reserva realizada previamente en nuestros sistemas.
 
 - **`Success`**: (``boolean``). Indica si la llamada ha sido procesada satisfactoriamente.
 - **`PaymentRedirectUrl`**: (``string``). En caso de colaborador con pago a débito, esta propiedad indica la URL donde habrá que redirigir al cliente para hacer el pago.
-- **`ExperticketSales`**: (``list``). Listado de ventas asociadas en Experticket.
+- **`ExperticketSales`**: (``list``). Listado de ventas asociadas.
     - **`ExperticketSale`**: (``object``). Información de la venta.
         - **`Id`**: (``string``). Identificador de la venta.
 

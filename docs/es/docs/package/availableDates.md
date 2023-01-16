@@ -1,10 +1,10 @@
 # Disponibilidad de fechas
 
-Este método nos permite obtener la disponibildiad de fechas para cada actividad disponible dentro del paquete solicitado. 
+Este método nos permite obtener la disponibilidad de fechas para cada actividad disponible dentro del paquete solicitado. 
 
 ??? important "Implicaciones"
 
-    Teniendo en cuenta que un paquete puede estar compuesto por una o más actividades, es posible que exista alguna restricción de acceso y no se puedan relizar todas las actividades el mismo día. Esto podría deberse a la distancia entre ellas, por el tiempo requerido para hacer cada una de esas actividades o por cualquier otra restricción/incompatibildiad que se haya creado.
+    Teniendo en cuenta que un paquete puede estar compuesto por una o más actividades, es posible que exista alguna restricción de acceso y no se puedan realizar todas las actividades el mismo día. Esto podría deberse a la distancia entre ellas, por el tiempo requerido para hacer cada una de esas actividades o por cualquier otra restricción/incompatibilidad que se haya creado.
 
     Por lo tanto, deberemos llamar a este método tantas veces como actividades compongan el paquete solicitado.
 

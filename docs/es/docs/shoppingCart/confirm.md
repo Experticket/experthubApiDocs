@@ -50,8 +50,8 @@ Una vez que se ha confirmado la reserva, ya no es posible añadir más productos
     - **`Accommodation`**: (``object``). Información sobre el alojamiento.
         - **`ProductId`**: (``string``). Identificador de la tarifa.
         - **`ProductConditions`**: (``string``). Condiciones del producto.
-        - **`AccessDateTime`**: (``dateTime``). tbd
-        - **`AccessEndDateTime`**: (``dateTime``). tbd
+        - **`AccessDateTime`**: (``dateTime``). Fecha de entrada.
+        - **`AccessEndDateTime`**: (``dateTime``). Fecha de salida.
         - **`Quantity`**: (``int``). Cantidad de unidades añadidas.
         - **``Price``**: (``decimal``). Precio de la tarifa.
         - **``PriceMode``**: (``int``). Tipo de precio.
@@ -77,7 +77,7 @@ Una vez que se ha confirmado la reserva, ya no es posible añadir más productos
                     - **`Amount`**: (``decimal``). Valor total de la penalización que se aplicará.
                     - **`FromInclusiveDateTime`**: (``dateTime``). Fecha/hora a partir de la cual se aplicará esta regla.
 - **`PaymentMethodsNotApplicable`**: (``boolean``). Indica si los método de pago serán aplicables o no a este colaborador. Los colaboradores con contrato "débito" tendrán que aplicar los métodos de pago (`#!csharp PaymentMethodsNotApplicable = false`).
-- **`PaymentMethods`**: (``list``). Métodos de pago soportados para el colabador en caso de ser a débito.
+- **`PaymentMethods`**: (``list``). Métodos de pago soportados para el colaborador en caso de ser a débito.
     - **`PaymentMethod`**: (``object``). Información sobre el método de pago.
         - **`Type`**: (``int``). Identificador del método de pago.
         - **`Name`**: (``string``). Nombre del método de pago.

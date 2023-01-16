@@ -15,7 +15,7 @@ Podemos añadir uno o varios productos en una o varias llamadas, según las nece
 - **``ShoppingCartId``**: (``string``) ``Requerido``. Identificador del carrito.
 - **``Activities``**: (``list``) ``Opcional``. Listado de actividades a añadir al carrito.
     - **``Activity``**: (``object``) ``Opcional``. Información de la actividad.
-        - **``ProductId``**: (``string``) ``Requerido``. Indentificador del producto.
+        - **``ProductId``**: (``string``) ``Requerido``. Identificador del producto.
         - **``AccessDateTime``**: (``date``) ``Requerido``. Fecha de acceso. Formato IS0 8601 (YYYY-MM-DD).
 - **``Accommodations``**: (``list``) ``Opcional``. Listado de alojamientos a añadir al carrito.
     - **``Accommodation``**: (``object``) ``Opcional``. Información del alojamiento.

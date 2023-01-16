@@ -1,6 +1,6 @@
 # Catálogo extendido de paquetes
 
-En este método podemos obtener información extendida sobre los paquetes (actividad + alojamiento) disponibles. Aquí se incluye información sobre las tarifas de las diferentes habitaciones disponibles del alojamento.
+En este método podemos obtener información extendida sobre los paquetes (actividad + alojamiento) disponibles. Aquí se incluye información sobre las tarifas de las diferentes habitaciones disponibles del alojamiento.
 
 ## Método de acceso
 
@@ -22,11 +22,11 @@ En este método podemos obtener información extendida sobre los paquetes (activ
     - **``PrePackageIds``**: (``list``) ``Requerido``. Listado de identificadores de prepaquetes de la actividad.
         - ``(string)``: ``Requerido``. Identificador del prepaquete
 
-- **``Accommodation``**: (``object``) ``Requerido``. información sobre el alojamiento.
+- **``Accommodation``**: (``object``) ``Requerido``. Información sobre el alojamiento.
     - **``AccommodationId``**: (``string``) ``Requerido``. Identificador del alojamiento
     - **``CheckIn``**: (``date``) ``Requerido``. Fecha de entrada al alojamiento. Formato ISO 8601 (YYYY-MM-DD).
     - **``CheckOut``**: (``date``) ``Requerido``. Fecha de salida del alojamiento. Formato ISO 8601 (YYYY-MM-DD).
-    - **``Destination``**: coordenadas del destino, para buscar alojaminetos cercanos.
+    - **``Destination``**: coordenadas del destino, para buscar alojamientos cercanos.
         - **``Latitude``**: latitud.
         - **``Longitude``**: longitud.
     - **``RoomDistribution``**: (``list``) ``Requerido``. Listado habitaciones que compondrán el paquete.
@@ -50,7 +50,7 @@ En este método podemos obtener información extendida sobre los paquetes (activ
     - **``Description``**: (``string``). Descripción del alojamiento.
     - **``Address``**: (``string``). Dirección del alojamiento.
     - **``City``**: (``string``). Ciudad del alojamiento.
-    - **``Type``**: (``int``). tipo de alojamiento.
+    - **``Type``**: (``int``). Tipo de alojamiento.
 
         ??? example "Posibles valores"
             --8<-- "includes/enum/accommodationType.md"
@@ -88,7 +88,7 @@ En este método podemos obtener información extendida sobre los paquetes (activ
             - **``TypeName``**: (``string``). Nombre del tipo de habitación.
             - **``AccommodationRoomRates``**: (``list``). Listado array con las tarifas de las habitaciones del alojamiento.
                 - **``AccommodationRoomRate``**: (``list``). Información de la tarifa de las habitaciones del alojamiento.
-                    - **``Id``**: (``string``). identificador de la habitación.
+                    - **``Id``**: (``string``). Identificador de la habitación.
                     - **``BoardCode``**: (``int``) código del tipo de pensión.
 
                         ??? example "Posibles valores"
@@ -120,7 +120,7 @@ En este método podemos obtener información extendida sobre los paquetes (activ
     - **``ActivityPackage``**: (``object``). Información de la actividad del paquete.
         - **``Id``**: (``string``). Identificador del paquete de actividades
         - **``Activities``**: (``list``). Listado de actividades incluidas en el paquete.
-            - **``Activities``**: (``object``). Información de la actividad incluidas en el paquete.
+            - **``Activities``**: (``object``). Información de la actividad incluida en el paquete.
                 - **``ActivityId``**: (``string``). Identificador de la actividad.
                 - **``Quantity``**: (``int``). Cantidad que se incluye.
 - **``Packages``**: (``list``) Listado de paquetes. Este listado es la unión entre los prepaquetes solicitados, el alojamineto y las actividaes.

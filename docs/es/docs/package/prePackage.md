@@ -17,7 +17,7 @@ Todos los parámetros de la petición son opcionales.
     - **``(string)``**: ``Opcional``. Identificador del proveedor.
 - **``PrePackageIds``**: (``list``) ``Opcional``. Listado de prepaquetes para filtrar.
     - **``(string)``**: ``Opcional``. Identificador del prepaquete.
-- **``FromDate``**: (``date``) ``Opcional``. Fecha incial para filtrar prepaquetes. Valor por defecto: día actual. Formato IS0 8601 (YYYY-MM-DD).
+- **``FromDate``**: (``date``) ``Opcional``. Fecha inicial para filtrar prepaquetes. Valor por defecto: día actual. Formato IS0 8601 (YYYY-MM-DD).
 - **``ToDate``**: (``date``) ``Opcional``. Fecha final para filtrar prepaquetes. Valor por defecto: un año a futuro. Formato IS0 8601 (YYYY-MM-DD).
 - **``PeopleDistributions``**: (``list``) ``Opcional``. Listado con la distribución de personas en las distintas habitaciones.
     - **``PeopleDistribution``**: (``object``) ``Opcional``. Información de la distribución en la habitación correspondiente.
@@ -38,7 +38,7 @@ Todos los parámetros de la petición son opcionales.
 ## Estructura de la respuesta
 
 - **`Success`**: (``boolean``). Indica si la llamada ha sido procesada satisfactoriamente.
-- **`Timestamp`**: (``dateTime``). instante de tiempo en el que se procesó la petición. Formato ISO 8601 (yyyy-MM-ddThh\:mm\:ss.fffffff).
+- **`Timestamp`**: (``dateTime``). Instante de tiempo en el que se procesó la petición. Formato ISO 8601 (yyyy-MM-ddThh\:mm\:ss.fffffff).
 - **``PrePackages``**: (``list``). Listado de prepaquetes disponibles.
     - **``PrePackage``**: (``object``). Información del prepaquete.
         - **``Id``**: (``string``). Identificador del prepaquete.

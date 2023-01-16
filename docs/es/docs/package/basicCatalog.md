@@ -79,7 +79,7 @@ Las actividades pueden tener ninguna, una o varias restricciones de alojamientos
             --8<-- "includes/enum/sortCriteria.md"
 
 - **``Paging``**: (``object``) ``Opcional``. Información de la paginación.
-    - **``Number``**: (``int``) ``Opcional``. Número de pagina solicitada.
+    - **``Number``**: (``int``) ``Opcional``. Número de página solicitada.
     - **``Size``**: (``int``) ``Opcional``. Número de elementos por página.
 
 ### Ejemplos
