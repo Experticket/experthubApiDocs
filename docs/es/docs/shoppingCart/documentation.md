@@ -10,7 +10,9 @@ Este método permite obtener la documentación de una venta confirmada.
 
 Requiere pasarle, como parámetro de la url (`query string`), los siguientes parámetros:
 
-- **``ShoppingCartId``**: (``string``) ``Requerido``. Identificador del carrito.
+| Parámetro | Descripción |
+| --- | --- |
+|``ShoppingCartId`` | ``Requerido`` Identificador del carrito |
 
 
 ### Ejemplos

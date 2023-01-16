@@ -13,7 +13,7 @@ Filtros disponibles para la obtención del listado de ventas. Estos filtros se e
 
 | Parámetro | Descripción |
 | --- | --- |
-|``PartnerSaleId`` | ``Obligatorio`` Identificador del colaborador |
+|``PartnerSaleId`` | ``Requerido`` Identificador del colaborador |
 |``FromTransactionDateTime`` | ``Opcional`` Fecha inicial de creación de la transacción. Formato IS0 8601 (YYYY-MM-DD) |
 |``ToTransactionDateTime`` | ``Opcional`` Fecha final de creación de la transacción. Formato IS0 8601 (YYYY-MM-DD) |
 |``FromAccessDateTime`` | ``Opcional`` Fecha inicial de acceso. Formato IS0 8601 (YYYY-MM-DD) |
