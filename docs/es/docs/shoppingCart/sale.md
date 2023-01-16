@@ -21,7 +21,7 @@ Este método confirma la reserva realizada previamente en nuestros sistemas.
     - **``PaymentMethodType``**: (``int``) ``Requerido``. Identificador del método de pago.
     - **``ReturnUrlOk``**: (``string``) ``Requerido``. Url en la cual se notificará que el cobro ha ido correctamente.
     - **``ReturnUrlKo``**: (``string``) ``Requerido``. Url en la cual se notificará que el cobro ha sido fallido.
-    - **``SendByEmail``**: (``boolean``) ``Requerido``. tbd.
+    - **``SendByEmail``**: (``boolean``) ``Requerido``. Indica que queremos hacerle llegar un enlace por email al cliente para que realice el pago, en caso de tener la opción de hacer llegar un enlace de pago al cliente por email disponible. Ver [PaymentMethods.PaymentMethod.EnableSendByEmail](./confirm.md#estructura-de-la-respuesta)
 
 
 ### Ejemplos
@@ -33,9 +33,10 @@ Este método confirma la reserva realizada previamente en nuestros sistemas.
 ## Estructura de la respuesta
 
 - **`Success`**: (``boolean``). Indica si la llamada ha sido procesada satisfactoriamente.
+- **`PaymentRedirectUrl`**: (``string``). En caso de colaborador con pago a débito, esta propiedad indica la URL donde habrá que redirigir al cliente para hacer el pago.
 - **`ExperticketSales`**: (``list``). Listado de ventas asociadas en Experticket.
     - **`ExperticketSale`**: (``object``). Información de la venta.
-        - **`Id`**: (``string``). tbd
+        - **`Id`**: (``string``). Identificador de la venta.
 
 ??? tip "Examples"
 

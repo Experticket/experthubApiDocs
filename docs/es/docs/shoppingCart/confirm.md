@@ -76,12 +76,12 @@ Una vez que se ha confirmado la reserva, ya no es posible añadir más productos
                     - **`Percentage`**: (``decimal``). Porcentaje de penalización sobre el precio de la entrada.
                     - **`Amount`**: (``decimal``). Valor total de la penalización que se aplicará.
                     - **`FromInclusiveDateTime`**: (``dateTime``). Fecha/hora a partir de la cual se aplicará esta regla.
-- **`PaymentMethodsNotApplicable`**: (``boolean``). Fecha/hora a partir de la cual se aplicará esta regla.
-- **`PaymentMethods`**: (``list``). Métodos de pago soportados para el colabador.
+- **`PaymentMethodsNotApplicable`**: (``boolean``). Indica si los método de pago serán aplicables o no a este colaborador. Los colaboradores con contrato "débito" tendrán que aplicar los métodos de pago (`#!csharp PaymentMethodsNotApplicable = false`).
+- **`PaymentMethods`**: (``list``). Métodos de pago soportados para el colabador en caso de ser a débito.
     - **`PaymentMethod`**: (``object``). Información sobre el método de pago.
         - **`Type`**: (``int``). Identificador del método de pago.
         - **`Name`**: (``string``). Nombre del método de pago.
-        - **`EnableSendByEmail`**: (``boolean``). tbd.
+        - **`EnableSendByEmail`**: (``boolean``). En algunos casos, es posible que el cliente pueda realizar el cobro desde un enlace que se le hace llegar por email. En tal caso se indicará, en esta propiedad, de tal opción.
 
 
 ??? tip "Examples"
