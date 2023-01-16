@@ -10,7 +10,8 @@ Este método confirma la reserva realizada previamente en nuestros sistemas.
 
 - **``ShoppingCartId``**: (``string``) ``Requerido``. Identificador del carrito.
 - **``PartnerSaleId``**: (``string``) ``Requerido``. Identificador del colaborador.
-- **``DiscountCouponCodes``**: (``list``) ``Requerido``. Identificador del colaborador.
+- **``DiscountCouponCodes``**: (``list``) ``Opcional``. Listado de cupones (descuentos/promociones) que emite el recinto mediante esta plataforma.
+    - **``(string)``**: (``list``) ``Requerido``. Código del cupón.
 - **``Client``**: (``object``) ``Opcional``. Información del cliente. Si la venta contiene hoteles, esta propiedad es obligatoria. Si únicamente contiene actividades, este parámetro dependerá de la configuración que se haya acordado con el colaborador.
     - **``FullName``**: (``string``) ``Requerido``. Nombre.
     - **``Surname``**: (``string``) ``Requerido``. Apellidos.

@@ -1,0 +1,1 @@
+`example.com/Sale?PartnerSaleId=r85ijh89dd5&FromTransactionDateTime=2022-10-07&Page=1&ClientName=Sylvanas`
