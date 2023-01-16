@@ -35,9 +35,9 @@ extra_css:
     - stylesheets/extra.css
 extra:
     alternate:
-        - name: English
-          link: /experthubApiDocs/en/
-          lang: en
+        #- name: English
+        #  link: /experthubApiDocs/en/
+        #  lang: en
         - name: Español
           link: /experthubApiDocs/es/
           lang: es
