@@ -10,7 +10,7 @@ Este método permite eliminar la reserva ya creada e invalida el carrito.
 
 - **``ShoppingCartId``**: (``string``) ``Requerido``. Identificador del carrito.
 
-### Ejemplos
+### Ejemplo de llamada
 
 ??? tip "Examples"
 
@@ -18,7 +18,9 @@ Este método permite eliminar la reserva ya creada e invalida el carrito.
 
 ## Estructura de la respuesta
 
-- **`Success`**: (``boolean``). Indica si la llamada ha sido procesada satisfactoriamente.
+--8<-- "includes/experthubResponseBaseDocumentation.es.md"
+
+### Ejemplo de respuesta
 
 ??? tip "Examples"
 

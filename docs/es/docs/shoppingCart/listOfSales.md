@@ -11,23 +11,19 @@ Este método permite obtener el listado de ventas.
 Requiere pasarle, como parámetro de la url (query string), los siguientes parámetros:
 Filtros disponibles para la obtención del listado de ventas. Estos filtros se envían como parámetros en la URL (`query string`). Filtros disponibles:
 
-| Parámetro | Descripción |
-| --- | --- |
-|``PartnerSaleId`` | ``Requerido`` Identificador del colaborador |
-|``FromTransactionDateTime`` | ``Opcional`` Fecha inicial de creación de la transacción. Formato IS0 8601 (YYYY-MM-DD) |
-|``ToTransactionDateTime`` | ``Opcional`` Fecha final de creación de la transacción. Formato IS0 8601 (YYYY-MM-DD) |
-|``FromAccessDateTime`` | ``Opcional`` Fecha inicial de acceso. Formato IS0 8601 (YYYY-MM-DD) |
-|``ToAccessDateTime`` | ``Opcional`` Fecha final de acceso. Formato IS0 8601 (YYYY-MM-DD) |
-|``ToAccessDateTime`` | ``Opcional`` Fecha final de acceso. Formato IS0 8601 (YYYY-MM-DD) |
-|``ClientName`` | ``Opcional`` Nombre del cliente |
-|``ClientEmail`` | ``Opcional`` Email del cliente |
-|``ClientPhone`` | ``Opcional`` Teléfono del cliente |
-|``ClientDocumentIdentifier`` | ``Opcional`` Documento de identidad del cliente |
-|``Page`` | ``Opcional`` Número de página a obtener. Valor por defecto `1` |
-|``PageSize`` | ``Opcional`` Número de resultados a obtener|
-
-
-### Ejemplos
+- **`PartnerSaleId`**: (``string``).  ``Opcional`` Identificador del colaborador.
+- **`FromTransactionDateTime`**: (``date``).  ``Opcional`` Fecha inicial de creación de la transacción. Formato IS0 8601 (YYYY-MM-DD).
+- **`ToTransactionDateTime`**: (``date``).  ``Opcional`` Fecha final de creación de la transacción. Formato IS0 8601 (YYYY-MM-DD).
+- **`FromAccessDateTime`**: (``date``).  ``Opcional`` Fecha inicial de acceso. Formato IS0 8601 (YYYY-MM-DD).
+- **`ToAccessDateTime`**: (``date``).  ``Opcional`` Fecha final de acceso. Formato IS0 8601 (YYYY-MM-DD).
+- **`ClientName`**: (``string``).  ``Opcional`` Nombre del cliente.
+- **`ClientEmail`**: (``string``).  ``Opcional`` Email del cliente.
+- **`ClientPhone`**: (``string``).  ``Opcional`` Teléfono del cliente.
+- **`ClientDocumentIdentifier`**: (``string``).  ``Opcional`` Documento de identidad del cliente.
+- **`Page`**: (``int``).  ``Opcional`` Número de página a obtener. Valor por defecto `1`.
+- **`PageSize`**: (``int``).  ``Opcional`` Número de resultados a obtener.
+  
+### Ejemplo de llamada
 
 ??? tip "Examples"
 
@@ -35,12 +31,15 @@ Filtros disponibles para la obtención del listado de ventas. Estos filtros se e
 
 ## Estructura de la respuesta
 
-- **`Success`**: (``boolean``). Indica si la llamada ha sido procesada satisfactoriamente.
 - **`Sales`**: (``list``). Listado de ventas.
 - **`PageNumber`**: (``int``). Indica la página solicitada.
 - **`HasPreviousPage`**: (``boolean``). Indica si hay una página previa a la solicitada.
 - **`HasNextPage`**: (``boolean``). Indica si hay una siguiente página.
 - **`IsFirstPage`**: (``boolean``). Indica si la página solicitada corresponde a la primera página
+
+--8<-- "includes/experthubResponseBaseDocumentation.es.md"
+
+### Ejemplo de respuesta
 
 ??? tip "Examples"
 

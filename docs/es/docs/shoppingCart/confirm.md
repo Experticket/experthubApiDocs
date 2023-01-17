@@ -12,7 +12,7 @@ Una vez que se ha confirmado la reserva, ya no es posible añadir más productos
 
 - **``ShoppingCartId``**: (``string``) ``Requerido``. Identificador del carrito.
 
-### Ejemplos
+### Ejemplos de llamadas
 
 ??? tip "Examples"
 
@@ -20,7 +20,6 @@ Una vez que se ha confirmado la reserva, ya no es posible añadir más productos
 
 ## Estructura de la respuesta
 
-- **`Success`**: (``boolean``). Indica si la llamada ha sido procesada satisfactoriamente.
 - **`ExpirationDateTime`**: (``dateTime``). Indica cuándo la reserva expirará. Formato IS0 8601 (YYYY-MM-DDThh\:mm\:ss.d).
 - **`Activities`**: (``object``). Información sobre la actividad añadida.
     - **`Products`**: (``list``). Listado de productos añadidos.
@@ -77,7 +76,7 @@ Una vez que se ha confirmado la reserva, ya no es posible añadir más productos
                     - **`Percentage`**: (``decimal``). Porcentaje de penalización sobre el precio de la entrada.
                     - **`Amount`**: (``decimal``). Valor total de la penalización que se aplicará.
                     - **`FromInclusiveDateTime`**: (``dateTime``). Fecha/hora a partir de la cual se aplicará esta regla.
-                    
+
 - **`PaymentMethodsNotApplicable`**: (``boolean``). Indica si los método de pago serán aplicables o no a este colaborador. Los colaboradores con contrato "débito" tendrán que aplicar los métodos de pago (`#!csharp PaymentMethodsNotApplicable = false`).
 - **`PaymentMethods`**: (``list``). Métodos de pago soportados para el colaborador en caso de ser a débito.
     - **`PaymentMethod`**: (``object``). Información sobre el método de pago.
@@ -85,6 +84,9 @@ Una vez que se ha confirmado la reserva, ya no es posible añadir más productos
         - **`Name`**: (``string``). Nombre del método de pago.
         - **`EnableSendByEmail`**: (``boolean``). En algunos casos, es posible que el cliente pueda realizar el cobro desde un enlace que se le hace llegar por email. En tal caso se indicará, en esta propiedad, de tal opción.
 
+--8<-- "includes/experthubResponseBaseDocumentation.es.md"
+
+### Ejemplos de respuestas
 
 ??? tip "Examples"
 

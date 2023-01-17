@@ -9,6 +9,7 @@ El proceso de compra consta de, básicamente, 5 pasos:
 5. [Obtención de la documentación.](./documentation.md)
 
 ## Flujo del proceso de compra
+
 ![Purchase Workflow](../../media/shoppingCart/purchase_workflow.png)
 
 Además de los 5 pasos/métodos listados anteriormente, existen otros métodos que nos permitirán modificar elementos del proceso.

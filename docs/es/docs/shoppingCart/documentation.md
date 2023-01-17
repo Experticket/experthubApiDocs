@@ -10,12 +10,9 @@ Este método permite obtener la documentación de una venta confirmada.
 
 Requiere pasarle, como parámetro de la url (`query string`), los siguientes parámetros:
 
-| Parámetro | Descripción |
-| --- | --- |
-|``ShoppingCartId`` | ``Requerido`` Identificador del carrito |
+- **`ShoppingCartId`**: (``string``).  ``Requerido``Indica si la llamada ha sido procesada satisfactoriamente.
 
-
-### Ejemplos
+### Ejemplo de llamada
 
 ??? tip "Examples"
 
@@ -23,11 +20,4 @@ Requiere pasarle, como parámetro de la url (`query string`), los siguientes par
 
 ## Estructura de la respuesta
 
-- **`Success`**: (``boolean``). Indica si la llamada ha sido procesada satisfactoriamente.
-- **`Documents`**: (``list``). Listado de documentos.
-    - **`Document`**: (``object``). Información del documento.
-        - **`SalesDocumentUrl`**: (``string``). Url del documento.
-
-??? tip "Examples"
-
-    --8<-- "includes/examples/shoppingCart/documentation.response.1.md"
+Devuelve un array de bytes, que conforman el PDF (``Byte[]``).
