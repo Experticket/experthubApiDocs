@@ -36,10 +36,10 @@ extra_css:
 extra:
     alternate:
         #- name: English
-        #  link: /experthubApiDocs/en/
+        #  link: /en/
         #  lang: en
         - name: Español
-          link: /experthubApiDocs/es/
+          link: /es/
           lang: es
     social:
       - link: mailto:integrations@experticket.com

@@ -17,8 +17,8 @@ jobs:
         run: mkdir -p site/en | mkdocs build -f config/en/mkdocs.yml
       - name: "Build Spanish Docs"
         run: mkdir site/es | mkdocs build -f config/es/mkdocs.yml
-      - name: "Make English Default"
-        run: cp -r site/en/* site
+      - name: "Make Spanish Default"
+        run: cp -r site/es/* site
       - name: "Deploy to Github Pages" #deploy las web creada a la rama gh-pages para que se muestren en la web
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
