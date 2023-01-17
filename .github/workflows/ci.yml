@@ -19,6 +19,8 @@ jobs:
         run: mkdir site/es | mkdocs build -f config/es/mkdocs.yml
       - name: "Make Spanish Default"
         run: cp -r site/es/* site
+      - name: "Move CNAME"
+        run: cp docs/CNAME .
       - name: "Deploy to Github Pages" #deploy las web creada a la rama gh-pages para que se muestren en la web
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
