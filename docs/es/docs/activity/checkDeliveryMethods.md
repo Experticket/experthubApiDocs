@@ -8,10 +8,10 @@ Mediante esta llamada se comprueba si un método de entrega permite el envío a 
 
 ## Estructura de la petición
 
-- **`ReservationId`**: identificador de la reserva obtenido al confirmar el carrito.
-- **`DeliveryMethodId`**: identificador del método de entrega obtenido en la llamada a [métodos de entrega](deliveryMethods.md).
-- **`CountryCode`**: código *Alpha-2* del país, según la [norma ISO 3166](https://www.iban.com/country-codes).
-- **`ZipCode`**: código postal.
+- **`ReservationId`**: (``string``). Identificador de la reserva obtenido al confirmar el carrito.
+- **`DeliveryMethodId`**: (``string``). Identificador del método de entrega obtenido en la llamada a [métodos de entrega](deliveryMethods.md).
+- **`CountryCode`**: (``string``). Código *Alpha-2* del país, según la [norma ISO 3166](https://www.iban.com/country-codes).
+- **`ZipCode`**: (``string``). Código postal.
 
 ### Ejemplo de petición
 
@@ -19,8 +19,8 @@ Mediante esta llamada se comprueba si un método de entrega permite el envío a 
 
 ## Estructura de la respuesta
 
-- **`ShippingCosts`**: gastos de envío.
-- **`DeliveryDays`**: estimación de los días necesarios para que los productos lleguen a su destino.
+- **`ShippingCosts`**: (``decimal``). Gastos de envío.
+- **`DeliveryDays`**: (``short``). Estimación de los días necesarios para que los productos lleguen a su destino.
 --8<-- "includes/responseBaseDocumentation.es.md"
 
 ### Ejemplo de respuesta

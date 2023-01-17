@@ -18,15 +18,17 @@ Mediante este método podemos calcular los precios de uno o varios productos, pa
 
 ## Estructura de la petición
 
-- **`ProductIds`**: array de identificadores de producto.
-- **`AccessDates`**: array de fechas de entrada que queremos consultar. *Formato ISO 8601 (yyyy-MM-dd)*.
-- **`StartDate`**: inicio del rango de fechas de entrada que queremos consultar. Complementa a `AccessDates` y necesita que se especifique `EndDate`. *Formato ISO 8601 (yyyy-MM-dd)*.
-- **`EndDate`**: fin del rango de fechas de entrada que queremos consultar. Complementa a `AccessDates` y necesita que se especifique `StartDate`. *Formato ISO 8601 (yyyy-MM-dd)*.
-- **`CombinedProducts`**: array de productos combinados.
-    - **`CombinedProductId`**: identificador del producto combinado.
-    - **`Products`**: array de productos incluidos en el producto combinado.
-        - **`ProductId`**: identificador del producto combinado.
-        - **`AccessDate`**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
+- **`ProductIds`**: (``list``). Array de identificadores de producto.
+    - **``(string)``**: Identificador del producto.
+- **`AccessDates`**: (``string``). Array de fechas de entrada que queremos consultar. *Formato ISO 8601 (yyyy-MM-dd)*.
+    - **``(date)``**: Fechas a consultar.
+- **`StartDate`**: (``date``). Inicio del rango de fechas de entrada que queremos consultar. Complementa a `AccessDates` y necesita que se especifique `EndDate`. *Formato ISO 8601 (yyyy-MM-dd)*.
+- **`EndDate`**: (``date``). Fin del rango de fechas de entrada que queremos consultar. Complementa a `AccessDates` y necesita que se especifique `StartDate`. *Formato ISO 8601 (yyyy-MM-dd)*.
+- **`CombinedProducts`**: (``list``). Array de productos combinados.
+    - **`CombinedProductId`**: (``string``). Identificador del producto combinado.
+    - **`Products`**: (``list``). Array de productos incluidos en el producto combinado.
+        - **`ProductId`**: (``string``). Identificador del producto combinado.
+        - **`AccessDate`**: (``date``). Fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
 
 ### Ejemplos de petición
 
@@ -34,20 +36,20 @@ Mediante este método podemos calcular los precios de uno o varios productos, pa
 
 ## Estructura de la respuesta
 
-- **`ProductsRealTimePrices`**: array de precios en tiempo real.
-    - **`ProductId`**: identificador del producto.
-    - **`AccessDate`**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
-    - **`Price`**: precio al que debe venderse el producto.
-    - **`PriceMode`**: tipo de precio.
+- **`ProductsRealTimePrices`**: (``list``). Array de precios en tiempo real.
+    - **`ProductId`**: (``string``). Identificador del producto.
+    - **`AccessDate`**: (``date``). Fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
+    - **`Price`**: (``decimal``). Precio al que debe venderse el producto.
+    - **`PriceMode`**: (``byte``). Tipo de precio.
 
         ??? example "Posibles valores"
             - 1: PVP
             - 2: precio neto
 
-    - **`CombinedProductId`**: identificador del producto combinado.
-    - **`CombinedProductProducts`**: array de productos incluidos en el producto combinado.
-        - **`ProductId`**: identificador del producto.
-        - **`AccessDate`**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
+    - **`CombinedProductId`**: (``string``). Identificador del producto combinado.
+    - **`CombinedProductProducts`**: (``string``). Array de productos incluidos en el producto combinado.
+        - **`ProductId`**: (``string``). Identificador del producto.
+        - **`AccessDate`**: (``date``). Fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
     --8<-- "includes/responseBaseDocumentation.es.md"
 
 --8<-- "includes/responseBaseDocumentation.es.md"

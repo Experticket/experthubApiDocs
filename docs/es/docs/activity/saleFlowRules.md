@@ -16,15 +16,15 @@ Las reglas de flujo de venta sirven para que se modifiquen o añadan productos a
 
 ## Estructura de la respuesta
 
-- **``Rules``**: array de reglas.
-    - **``Id``**: identificador de la regla.
-    - **``Name``**: nombre de la regla.
-    - **``Order``**: prioridad de la regla. Este campo indica el orden en que se aplicarán las reglas, ya que no se puede aplicar más de una regla a un mismo producto.
-    - **``Inputs``**: array de productos a los que se aplican las reglas.
-        - **``ProductId``**: identificador de producto.
-    - **``Processors``**: array de procesadores que se encarga de aplicar las condiciones para los productos del campo ``Inputs``.
-        - **``Value``**: cantidad de productos que se deben añadir a la venta para que se aplique este procesador.
-        - **``OutputIfExistsApplicability``**: valor que indica como se procesarán las salidas producidas por este procesador.
+- **``Rules``**: (``list``). Array de reglas.
+    - **``Id``**: (``string``). Identificador de la regla.
+    - **``Name``**: (``string``). Nombre de la regla.
+    - **``Order``**: (``byte``). Prioridad de la regla. Este campo indica el orden en que se aplicarán las reglas, ya que no se puede aplicar más de una regla a un mismo producto.
+    - **``Inputs``**: (``lista``). Array de productos a los que se aplican las reglas.
+        - **``ProductId``**: (``string``). Identificador de producto.
+    - **``Processors``**: (``lista``). Array de procesadores que se encarga de aplicar las condiciones para los productos del campo ``Inputs``.
+        - **``Value``**: (``byte``). cantidad de productos que se deben añadir a la venta para que se aplique este procesador.
+        - **``OutputIfExistsApplicability``**: (``byte``). Valor que indica como se procesarán las salidas producidas por este procesador.
 
             ??? example "Posibles valores"
                 - 0: sin definir.
@@ -33,17 +33,17 @@ Las reglas de flujo de venta sirven para que se modifiquen o añadan productos a
                 - 3: el más caro.
                 - 4: todos.
 
-        - **``Outputs``**: son las salidas que produce la aplicación de procesador.
-            - **``ProductId``**: identificador de producto que produce esta salida.
-            - **``Order``**: prioridad de la salida. Se aplica si hay varias salidas y el valor del campo ``OutputIfExistsApplicability`` del procesador es igual a 1.
-            - **``Quantity``**: cantidad de productos que produce esta salida.
-            - **``ApplicationType``**: indica si esta salida se refiere a un producto que ya existía en la compra o se ha añadido uno nuevo.
+        - **``Outputs``**: (``list``). Son las salidas que produce la aplicación de procesador.
+            - **``ProductId``**: (``string``). Identificador de producto que produce esta salida.
+            - **``Order``**: (``byte``). Prioridad de la salida. Se aplica si hay varias salidas y el valor del campo ``OutputIfExistsApplicability`` del procesador es igual a 1.
+            - **``Quantity``**: (``byte``). Cantidad de productos que produce esta salida.
+            - **``ApplicationType``**: (``byte``). Indica si esta salida se refiere a un producto que ya existía en la compra o se ha añadido uno nuevo.
 
                 ??? example "Posibles valores"
                     - 1: se añade un nuevo producto a la salida.
                     - 2: se actualiza un producto que ya existe en ``Inputs``.
 
-            - **``PriceModifierType``**: indica qué modificador de precio se aplica al producto.
+            - **``PriceModifierType``**: (``byte``). Indica qué modificador de precio se aplica al producto.
 
                 ??? example "Posibles valores"
                     - 1: porcentaje de descuento.
@@ -52,7 +52,7 @@ Las reglas de flujo de venta sirven para que se modifiquen o añadan productos a
                     - 4: incremento en valor absoluto.
                     - 5: precio total.
 
-            - **``PriceModifierValue``**: indica qué valor de precio se aplica al producto.
+            - **``PriceModifierValue``**: (``decimal``). Indica qué valor de precio se aplica al producto.
 
 --8<-- "includes/responseBaseDocumentation.es.md"
 

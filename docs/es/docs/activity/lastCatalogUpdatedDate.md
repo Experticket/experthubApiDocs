@@ -15,7 +15,7 @@ El catálogo de productos es totalmente dinámico y puede sufrir cambios. Para d
 
 ## Estructura de la respuesta
 
-- **``LastUpdatedDateTime``**: fecha de la última modificación del catálogo. *Formato ISO 8601 (yyyy-MM-ddThh\:mm\:ss.fffffff)*.
+- **``LastUpdatedDateTime``**: (``date``). Fecha de la última modificación del catálogo. *Formato ISO 8601 (yyyy-MM-ddThh\:mm\:ss.fffffff)*.
 --8<-- "includes/responseBaseDocumentation.es.md"
 
 ### Ejemplo de respuesta

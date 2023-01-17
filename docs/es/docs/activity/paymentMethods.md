@@ -13,7 +13,7 @@ Este es un paso intermedio que debemos realizar antes de confirmar el carrito. V
 
 ## Estructura de la petición
 
-- **`ReservationId`**: identificador de la reserva obtenido al confirmar el carrito.
+- **`ReservationId`**: (``string``). Identificador de la reserva obtenido al confirmar el carrito.
 
 ### Ejemplo de petición
 
@@ -21,10 +21,10 @@ Este es un paso intermedio que debemos realizar antes de confirmar el carrito. V
 
 ## Estructura de la respuesta
 
-- **`PaymentMethods`**: array de métodos de pago.
-    - **``Type``**: identificador del tipo de método de pago.
-    - **``Name``**: nombre del método de pago.
-    - **``EnableSendByEmails``**: indica si podemos usar este método de pago para mandar automaticamente un enlace de pago al cliente final vía email.
+- **`PaymentMethods`**: (``list``). Array de métodos de pago.
+    - **``Type``**: (``byte``). Identificador del tipo de método de pago.
+    - **``Name``**: (``string``). Nombre del método de pago.
+    - **``EnableSendByEmails``**: (``boolean``). Indica si podemos usar este método de pago para mandar automaticamente un enlace de pago al cliente final vía email.
 --8<-- "includes/responseBaseDocumentation.es.md"
 
 ### Ejemplo de respuesta

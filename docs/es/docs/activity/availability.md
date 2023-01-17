@@ -105,11 +105,15 @@ El aforo concierne a los tickets de tipo aforo (``#!chsarp IsQuotaTicket == true
 
 ## Estructura de la petición
 
-- **`ProductIds`**: array de identificadores de productos por los que filtrar.
-- **`SessionIds`**: array de identificadores de sesión por los que filtrar.
-- **`Dates`**: array de fechas por las que filtrar. *Formato ISO 8601 (yyyy-MM-dd)*.
-- **`FromDate`**: si se quiere filtrar mediante un rango de fechas, se puede filtar por fecha de inicio. No permite valores anteriores al día de hoy. Su valor por defecto es el día de hoy. *Formato ISO 8601 (yyyy-MM-dd)*.
-- **`ToDate`**: si se quiere filtrar mediante un rango de fechas, se puede filtrar por fecha de fin. Su valor por defecto es la fecha correspondiente a dentro de un año. *Formato ISO 8601 (yyyy-MM-dd)*.
+- **`ProductIds`**: (``list``). Array de identificadores de productos por los que filtrar.
+    - **``(string)``**: Identificador del producto.
+
+- **`SessionIds`**: (``list``). Array de identificadores de sesión por los que filtrar.
+    - **``(string)``**: Identificador del proveedor.
+- **`Dates`**: (``list``). Array de fechas por las que filtrar. *Formato ISO 8601 (yyyy-MM-dd)*.
+    - **``(date)``**: Identificador del proveedor.
+- **`FromDate`**: (``date``). Si se quiere filtrar mediante un rango de fechas, se puede filtar por fecha de inicio. No permite valores anteriores al día de hoy. Su valor por defecto es el día de hoy. *Formato ISO 8601 (yyyy-MM-dd)*.
+- **`ToDate`**: (``date``). Si se quiere filtrar mediante un rango de fechas, se puede filtrar por fecha de fin. Su valor por defecto es la fecha correspondiente a dentro de un año. *Formato ISO 8601 (yyyy-MM-dd)*.
 
 !!! tip "Importante"
     Se debe definir al menos un `ProductId` o un `SessionId`. Se pueden añadir tantos como se desee y se considerarán un ***OR***.
@@ -120,14 +124,14 @@ El aforo concierne a los tickets de tipo aforo (``#!chsarp IsQuotaTicket == true
 
 ## Estructura de la respuesta
 
-- **`Products`**: array que contiene los productos solicitados. Corresponde a cada día con acceso limitado de cada uno de los productos.
-    - **`ProductId`**: identificador del producto.
-    - **`Date`**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
-    - **`AvailableCapacity`**: capacidad disponible para la venta.
-- **`Sessions`**: array que contiene las sesiones solicitadas. Corresponde a cada día con acceso limitado de cada una de las sesiones.
-    - **`SessionId`**: identificador de la sesión.
-    - **`Date`**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-ddThh\:mm\:ss.fffffff)*.
-    - **`AvailableCapacity`**: capacidad disponible para la venta.
+- **`Products`**: (``list``). Array que contiene los productos solicitados. Corresponde a cada día con acceso limitado de cada uno de los productos.
+    - **`ProductId`**: (``string``). Identificador del producto.
+    - **`Date`**: (``date``). Fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
+    - **`AvailableCapacity`**: (``int``). Capacidad disponible para la venta.
+- **`Sessions`**: (``list``). Array que contiene las sesiones solicitadas. Corresponde a cada día con acceso limitado de cada una de las sesiones.
+    - **`SessionId`**: (``string``). dentificador de la sesión.
+    - **`Date`**: (``date``). Fecha de acceso. *Formato ISO 8601 (yyyy-MM-ddThh\:mm\:ss.fffffff)*.
+    - **`AvailableCapacity`**: (``int``). Capacidad disponible para la venta.
 --8<-- "includes/responseBaseDocumentation.es.md"
 
 ### Ejemplo de respuesta

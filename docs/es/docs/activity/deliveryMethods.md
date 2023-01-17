@@ -8,7 +8,7 @@ Como se ha visto en la [obtención de catálogo](catalog.md), los tickets tienen
 
 ## Estructura de la petición
 
-- **`ReservationId`**: identificador de la reserva obtenido al confirmar el carrito.
+- **`ReservationId`**: (``string``). Identificador de la reserva obtenido al confirmar el carrito.
 
 ### Ejemplo de petición
 
@@ -16,26 +16,26 @@ Como se ha visto en la [obtención de catálogo](catalog.md), los tickets tienen
 
 ## Estructura de la respuesta
 
-- **`Methods`**: array de métodos de entrega.
-    - **`Id`**: identificador del método de entrega.
-    - **`Name`**: nombre del método de entrega.
-    - **`Description`**: descripción del método de entrega.
-    - **`Type`**: tipo de método de entrega.
+- **`Methods`**: (``list``). Array de métodos de entrega.
+    - **`Id`**: (``string``). Identificador del método de entrega.
+    - **`Name`**: (``string``). Nombre del método de entrega.
+    - **`Description`**: (``string``). Descripción del método de entrega.
+    - **`Type`**: (``byte``). Tipo de método de entrega.
 
         ??? example "Posibles valores"
             - 0: Envío
             - 1: Recogida
 
-    - **`DeliveryPoints`**: array de puntos de entrega. Esta propiedad sólo aparece cuando `Type == 1` y el método de entrega tiene puntos de entrega establecidos.
-        - **`Id`**: identificador del punto de entrega.
-        - **`Name`**: nombre del punto de entrega.
-        - **`Address`**: dirección.
-        - **`City`**: ciudad.
-        - **`ZipCode`**: código postal.
-        - **`Province`**: provincia.
-        - **`CountryCode`**: código *Alpha-2* del país, según la [norma ISO 3166](https://www.iban.com/country-codes).
-        - **`PhoneNumber`**: número de teléfono.
-        - **`Email`**: correo electrónico.
+    - **`DeliveryPoints`**: (``list``). Array de puntos de entrega. Esta propiedad sólo aparece cuando `Type == 1` y el método de entrega tiene puntos de entrega establecidos.
+        - **`Id`**: (``string``). Identificador del punto de entrega.
+        - **`Name`**: (``string``). Nombre del punto de entrega.
+        - **`Address`**: (``string``). Dirección.
+        - **`City`**: (``string``). Ciudad.
+        - **`ZipCode`**: (``string``). Código postal.
+        - **`Province`**: (``string``). Provincia.
+        - **`CountryCode`**: (``string``). Código *Alpha-2* del país, según la [norma ISO 3166](https://www.iban.com/country-codes).
+        - **`PhoneNumber`**: (``string``). Número de teléfono.
+        - **`Email`**: (``string``). Correo electrónico.
 --8<-- "includes/responseBaseDocumentation.es.md"
 
 ### Ejemplo de respuesta

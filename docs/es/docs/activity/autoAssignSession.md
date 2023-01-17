@@ -1,4 +1,4 @@
-# Comprobar sesiones auto asignadas
+# Comprobar sesiones autoauto asignadas
 
 Pueden existir productos cuyas sesiones no pueden ser elegidas o no es obligatorio elegirlas, en este caso es el sistema el que asigna las sesiones según la disponibilidad.
 
@@ -17,14 +17,14 @@ Una vez lanzada la consulta se devolverá, a modo informativo, la sesión que se
 
 ## Estructura de la petición
 
-- **`LanguageCode`**: define el idioma en que se mostrarán los textos. *Formato ISO 639-1*.
-- **`Products`**: array de productos para los que se quieren comprobar las sesiones.
-    - **`ProductId`**: identificador del producto.
-    - **`Quantity`**: cantidad del producto.
-    - **`AccessDate`**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
-    - **`Tickets`**: array de tickets para los que queremos comprobar la auto asignación.
-        - **`TicketId`**: identificador del ticket.
-        - **`AccessDate`**: *opcional*, si se indica, tiene preferencia sobre la fecha indicada a nivel de producto. *Formato ISO 8601 (yyyy-MM-dd)*.
+- **`LanguageCode`**: (``string``). Define el idioma en que se mostrarán los textos. *Formato ISO 639-1*.
+- **`Products`**: (``list``). Array de productos para los que se quieren comprobar las sesiones.
+    - **`ProductId`**: (``string``). Identificador del producto.
+    - **`Quantity`**: (``int``). Cantidad del producto.
+    - **`AccessDate`**: (``date``). Fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
+    - **`Tickets`**: (``list``). Array de tickets para los que queremos comprobar la auto asignación.
+        - **`TicketId`**: (``string``). Identificador del ticket.
+        - **`AccessDate`**: (``date``) ``Opcional``.  si se indica, tiene preferencia sobre la fecha indicada a nivel de producto. *Formato ISO 8601 (yyyy-MM-dd)*.
 
 ### Ejemplo de petición
 
@@ -32,19 +32,19 @@ Una vez lanzada la consulta se devolverá, a modo informativo, la sesión que se
 
 ## Estructura de la respuesta
 
-- **`Products`**: array que contiene los productos solicitados.
-    - **`ProductId`**: identificador del producto.
-    - **`AccessDate`**: fecha de acceso del producto. *Formato ISO 8601 (yyyy-MM-dd)*.
-    - **`HasTicketEnclosures`**: booleano que indica si el producto tiene recintos.
-    - **`Tickets`**: array de los tickets solicitados del producto.
-        - **`TicketId`**: identificador del ticket.
-        - **`AccessDate`**: fecha de acceso del ticket. *Formato ISO 8601 (yyyy-MM-dd)*.
-        - **`TicketEnclosureId`**: identificador del recinto.
-        - **`SessionId`**: identificador de la sesión asignada.
-        - **`SessionTime`**: hora de la sesión asignada en caso de haber podido asignar alguna.
-        - **`SessionContentId`**: identificador del contenido de sesión.
-        - **`SessionContentName`**: nombre del contenido de sesión.
-        - **`ResultType`**: atributo que indica el resultado de la auto asignación.
+- **`Products`**: (``list``). Array que contiene los productos solicitados.
+    - **`ProductId`**: (``string``). Identificador del producto.
+    - **`AccessDate`**: (``date``). Fecha de acceso del producto. *Formato ISO 8601 (yyyy-MM-dd)*.
+    - **`HasTicketEnclosures`**: (``boolean``). Booleano que indica si el producto tiene recintos.
+    - **`Tickets`**: (``list``). Array de los tickets solicitados del producto.
+        - **`TicketId`**: (``string``). Identificador del ticket.
+        - **`AccessDate`**: (``date``). Fecha de acceso del ticket. *Formato ISO 8601 (yyyy-MM-dd)*.
+        - **`TicketEnclosureId`**: (``string``). Identificador del recinto.
+        - **`SessionId`**: (``string``). Identificador de la sesión asignada.
+        - **`SessionTime`**: (``date``). Hora de la sesión asignada en caso de haber podido asignar alguna.
+        - **`SessionContentId`**: (``string``). Identificador del contenido de sesión.
+        - **`SessionContentName`**: (``string``). Nombre del contenido de sesión.
+        - **`ResultType`**: (``byte``). Atributo que indica el resultado de la auto asignación.
 
             ??? example "Posibles valores"
                 - 0: **Ok**. Auto asignación correcta.

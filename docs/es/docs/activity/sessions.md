@@ -16,13 +16,17 @@ Por lo tanto, se define la estructura de sesiones, para minimizar la carga de da
 
 Para obtener las sesiones podemos utilizar diferentes filtros en el cuerpo del método. Cada filtro se considerará un ***AND***.
 
-- **`SessionsGroupProfileIds`**: array de perfiles de grupos de sesión.
-- **`SessionsGroupIds`**: array de grupos de sesión.
-- **`SessionContentProfileIds`**: array de perfiles de contenido de sesión.
-- **`FromDate`**: filtrado por fecha de inicio. No permite valores menores al día de hoy. El valor por defecto es el día actual. *Formato ISO 8601 (yyyy-MM-dd)*.
-- **`ToDate`**: filtrado por fecha de fin. Su valor por defecto es la fecha correnpondiente a dentro de un año. *Formato ISO 8601 (yyyy-MM-dd)*.
-- **`Dates`**: array de fechas por las que filtrar. *Formato ISO 8601 (yyyy-MM-dd)*.
-- **`LanguageCode`**: código del idioma de los contenidos.
+- **`SessionsGroupProfileIds`**: (``list``). Array de perfiles de grupos de sesión.
+    - **``(string)``**: Identificador del perfil de grupo de sesión.
+- **`SessionsGroupIds`**: (``list``). Array de grupos de sesión.
+    - **``(string)``**: Identificador del grupo de sesión.
+- **`SessionContentProfileIds`**: (``list``). Array de perfiles de contenido de sesión.
+    - **``(string)``**: Identificador del perfil de contenido de sesión.
+- **`FromDate`**: (``string``). Filtrado por fecha de inicio. No permite valores menores al día de hoy. El valor por defecto es el día actual. *Formato ISO 8601 (yyyy-MM-dd)*.
+- **`ToDate`**: (``string``). Filtrado por fecha de fin. Su valor por defecto es la fecha correnpondiente a dentro de un año. *Formato ISO 8601 (yyyy-MM-dd)*.
+- **`Dates`**: (``list``). Array de fechas por las que filtrar. *Formato ISO 8601 (yyyy-MM-dd)*.
+    - **``(date)``**: Identificador del proveedor.
+- **`LanguageCode`**: (``string``). Código del idioma de los contenidos.
 
 ### Ejemplos de petición
 
@@ -30,24 +34,24 @@ Para obtener las sesiones podemos utilizar diferentes filtros en el cuerpo del m
 
 ## Estructura de la respuesta
 
-- **`SessionsGroupProfiles`**: array de perfiles de grupos de sesión.
-    - **`SessionsGroupProfileId`**: identificador del perfil de grupos de sesión.
-    - **`SessionsGroupProfileName`**: nombre del perfil de grupos de sesión.
-    - **`SessionTimeAvailabilityOffset`**: cantidad de minutos antes (si el valor es negativo) o después (si el valor es positivo) en la que la sesión puede estar a la venta con respecto a la hora de la sesión.
-    - **`SessionsGroups`**: array de grupos de sesiones.
-        - **`SessionsGroupId`**: identificador del grupo de sesiones.
-        - **`SessionsGroupName`**: nombre del grupo de sesiones.
-        - **`Sessions`**: array de sesiones.
-            - **`SessionId`**: identificador de la sesión.
-            - **`SessionTime`**: fecha y hora de la sesión.
-            - **`AvailableCapacity`**: valor que indica el aforo de la sesión. Si este campo no existe, es que no hay un aforo limitado. Si sólo se quiere consultar el aforo de una sesión, se puede utilizar el método descrito en [Obtención del aforo disponible](availability.md).
-- **`SessionContentProfiles`**: array de perfiles de contenidos de sesión.
-    - **`SessionContentProfileId`**: identificador del perfil de contenidos de sesión.
-    - **`SessionContentProfileName`**: nombre del perfil de contenidos de sesión.
-    - **`SessionContents`**: array de contenidos de sesión.
-        - **`SessionContentId`**: identificador del contenido de sesión.
-        - **`SessionContentName`**: nombre del contenido de sesión.
-        - **`SessionContentDescription`**: descripción del contenido de sesión.
+- **`SessionsGroupProfiles`**: (``list``). Array de perfiles de grupos de sesión.
+    - **`SessionsGroupProfileId`**: (``string``). Identificador del perfil de grupos de sesión.
+    - **`SessionsGroupProfileName`**: (``string``). Nombre del perfil de grupos de sesión.
+    - **`SessionTimeAvailabilityOffset`**: (``int``). Cantidad de minutos antes (si el valor es negativo) o después (si el valor es positivo) en la que la sesión puede estar a la venta con respecto a la hora de la sesión.
+    - **`SessionsGroups`**: (``list``). Array de grupos de sesiones.
+        - **`SessionsGroupId`**: (``string``). Identificador del grupo de sesiones.
+        - **`SessionsGroupName`**: (``string``). Nombre del grupo de sesiones.
+        - **`Sessions`**: (``list``). Array de sesiones.
+            - **`SessionId`**: (``string``). Identificador de la sesión.
+            - **`SessionTime`**: (``date``). Fecha y hora de la sesión.
+            - **`AvailableCapacity`**: (``int``). Valor que indica el aforo de la sesión. Si este campo no existe, es que no hay un aforo limitado. Si sólo se quiere consultar el aforo de una sesión, se puede utilizar el método descrito en [Obtención del aforo disponible](availability.md).
+- **`SessionContentProfiles`**: (``list``). Array de perfiles de contenidos de sesión.
+    - **`SessionContentProfileId`**: (``string``). Identificador del perfil de contenidos de sesión.
+    - **`SessionContentProfileName`**: (``string``). Nombre del perfil de contenidos de sesión.
+    - **`SessionContents`**: (``list``). Array de contenidos de sesión.
+        - **`SessionContentId`**: (``string``). Identificador del contenido de sesión.
+        - **`SessionContentName`**: (``string``). Nombre del contenido de sesión.
+        - **`SessionContentDescription`**: (``string``). Descripción del contenido de sesión.
 --8<-- "includes/responseBaseDocumentation.es.md"
 
 ### Ejemplo de respuesta

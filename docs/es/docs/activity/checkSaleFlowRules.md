@@ -10,11 +10,11 @@ Una vez lanzada la consulta se devolverá, a modo informativo, los datos suficie
 
 ## Estructura de la petición
 
-- **``AccessDateTime``**: fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
-- **``Products``**: productos que componen la venta.
-    - **``AccessDateTime``**: *opcional*, fecha de acceso. Si se define a nivel de producto tiene precedencia sobre la fecha definida a nivel global.
-    - **``ProductId``**: identificador del producto. *Formato ISO 8601 (yyyy-MM-dd)*.
-    - **``Quantity``**: *opcional*, cantidad. Por defecto su valor es 1.
+- **``AccessDateTime``**: (``date``). Fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
+- **``Products``**: (``list``). Productos que componen la venta.
+    - **``AccessDateTime``**: (``date``) ``Opcional``. Fecha de acceso. Si se define a nivel de producto tiene precedencia sobre la fecha definida a nivel global.
+    - **``ProductId``**: (``string``). Identificador del producto. *Formato ISO 8601 (yyyy-MM-dd)*.
+    - **``Quantity``**: (``int``) ``Opcional``. Cantidad. Por defecto su valor es 1.
 
 ### Ejemplo de petición
 
@@ -27,29 +27,29 @@ Una vez lanzada la consulta se devolverá, a modo informativo, los datos suficie
 
 ## Estructura de la respuesta
 
-- **``NotModifiedProducts``**: array que contiene productos que no han sido modificados.
-    - **``ProductId``**: identificador del producto.
-    - **``AccessDateTime``**: fecha de acceso del producto. *Formato ISO 8601 (yyyy-MM-dd)*.
-    - **``OriginalPrice``**: precio sin modificar del producto.
-    - **``Price``**: precio final producto.
-- **``ModifiedProducts``**: array que contiene productos modificados que ya estaban incluidos en la venta.
-    - **``ProductId``**: identificador del producto.
-    - **``AccessDateTime``**: fecha de acceso del producto. *Formato ISO 8601 (yyyy-MM-dd)*.
-    - **``OriginalPrice``**: precio sin modificar del producto.
-    - **``Price``**: precio final producto.
-    - **``SaleFlowRuleId``**: identificador de la regla.
-    - **``SaleFlowRuleCommercialName``**: nombre descriptivo que se da a la regla para poder mostrar al usuario.
-    - **``SaleFlowRuleDescripción``**: descripción de la regla aplicada.
-    - **``SaleFlowRuleName``**: nombre de la regla aplicada.
-- **``AddedProducts``**: array que contiene productos añadidos que no estaban incluidos en la venta.
-    - **``ProductId``**: identificador del producto.
-    - **``AccessDateTime``**: fecha de acceso del producto. *Formato ISO 8601 (yyyy-MM-dd)*.
-    - **``OriginalPrice``**: precio sin modificar del producto.
-    - **``Price``**: precio final producto.
-    - **``SaleFlowRuleId``**: identificador de la regla.
-    - **``SaleFlowRuleCommercialName``**: nombre descriptivo que se da a la regla para poder mostrar al usuario.
-    - **``SaleFlowRuleDescripción``**: descripción de la regla aplicada.
-    - **``SaleFlowRuleName``**: nombre de la regla aplicada.
+- **``NotModifiedProducts``**: (``list``). Array que contiene productos que no han sido modificados.
+    - **``ProductId``**: (``string``). Identificador del producto.
+    - **``AccessDateTime``**: (``date``). Fecha de acceso del producto. *Formato ISO 8601 (yyyy-MM-dd)*.
+    - **``OriginalPrice``**: (``decimal``). Precio sin modificar del producto.
+    - **``Price``**: (``decimal``). Precio final producto.
+- **``ModifiedProducts``**: (``list``). Array que contiene productos modificados que ya estaban incluidos en la venta.
+    - **``ProductId``**: (``string``). Identificador del producto.
+    - **``AccessDateTime``**: (``date``). Fecha de acceso del producto. *Formato ISO 8601 (yyyy-MM-dd)*.
+    - **``OriginalPrice``**: (``decimal``). Precio sin modificar del producto.
+    - **``Price``**: (``decimal``). Precio final producto.
+    - **``SaleFlowRuleId``**: (``string``). Identificador de la regla.
+    - **``SaleFlowRuleCommercialName``**: (``string``). Nombre descriptivo que se da a la regla para poder mostrar al usuario.
+    - **``SaleFlowRuleDescripción``**: (``string``). Descripción de la regla aplicada.
+    - **``SaleFlowRuleName``**: (``string``). Nombre de la regla aplicada.
+- **``AddedProducts``**: (``list``). Array que contiene productos añadidos que no estaban incluidos en la venta.
+    - **``ProductId``**: (``string``). Identificador del producto.
+    - **``AccessDateTime``**: (``date``). Fecha de acceso del producto. *Formato ISO 8601 (yyyy-MM-dd)*.
+    - **``OriginalPrice``**: (``decimal``). Precio sin modificar del producto.
+    - **``Price``**: (``decimal``). Precio final producto.
+    - **``SaleFlowRuleId``**: (``string``). Identificador de la regla.
+    - **``SaleFlowRuleCommercialName``**: (``string``). Nombre descriptivo que se da a la regla para poder mostrar al usuario.
+    - **``SaleFlowRuleDescripción``**: (``string``). Descripción de la regla aplicada.
+    - **``SaleFlowRuleName``**: (``string``). Nombre de la regla aplicada.
 --8<-- "includes/responseBaseDocumentation.es.md"
 
 ### Ejemplo de respuesta
