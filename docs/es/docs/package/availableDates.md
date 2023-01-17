@@ -40,10 +40,10 @@ Este método nos permite obtener la disponibilidad de fechas para cada actividad
         - **``Id``**: (``string``). ``Requerido``. Identificador de la agrupación ``ProductPaxGroupingId``.
         - **``Date``**: (``date``). ``Requerido``. Fecha de acceso a la actividad.
 
-### Ejemplos
+### Ejemplos de llamadas
 
 ??? tip "Example"
-    
+
     --8<-- "includes/examples/package/availableDates.request.3.md"
 
 ## Estructura de la respuesta
@@ -56,8 +56,8 @@ Este método nos permite obtener la disponibilidad de fechas para cada actividad
 
 --8<-- "includes/experthubResponseBaseDocumentation.es.md"
 
-### Ejemplos
+### Ejemplos de respuesta
 
 ??? tip "Example"
-    
+
     --8<-- "includes/examples/package/availableDates.response.1.md"
