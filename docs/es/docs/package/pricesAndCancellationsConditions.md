@@ -19,16 +19,15 @@ La definición de las agrupaciones (``PaxGroupings``) toma relevancia cuando el 
                 - **``Id``**: (``string``) ``Requerido``. Identificador de la agrupación.
                 - **``AccessDate``**: (``date``) ``Requerido``. Fecha de inicio de la actividad. Formato IS0 8601 (YYYY-MM-DD).
 
-### Ejemplos
+### Ejemplos de llamadas
 
 ??? tip "Example"
-    
+
     --8<-- "includes/examples/package/pricesAndCancellationsConditions.request.1.md"
 
 ## Estructura de la respuesta
 
-- **``EchoToken``**: (``string``). Token que identifica a la secuencia de peticiones. Ver [catálogo extendido](../extendedCatalog#estructura-de-la-respuesta)
-- **``Success``**: (``boolean``). Indica si la solicitud se ha podido satisfacer correctamente.
+- **``EchoToken``**: (``string``). Token que identifica a la secuencia de peticiones. Ver [catálogo extendido](../extendedCatalog#estructura-de-la-respuesta).
 - **``Packages``**: (``list``). Listado de paquetes solicitados en la petición.
     - **``Package``**: (``object``). Información del paquete.
         - **``Id``**: (``string``). Identificador del paquete.
@@ -46,8 +45,10 @@ La definición de las agrupaciones (``PaxGroupings``) toma relevancia cuando el 
 
             - **``Value``**: (``decimal``). Valor de la comisión.
 
-### Ejemplos
+--8<-- "includes/experthubResponseBaseDocumentation.es.md"
+
+### Ejemplos de respuesta
 
 ??? tip "Example"
-    
+
     --8<-- "includes/examples/package/pricesAndCancellationsConditions.response.1.md"

@@ -16,11 +16,12 @@ No hay cuerpo en la petición.
 
 ## Estructura de la respuesta
 
-- **``Success``**: (``boolean``). Indica si la llamada ha sido procesada satisfactoriamente.
 - **``Id``**: (``string``). Identificador del carrito.
 
-### Ejemplos
+--8<-- "includes/experthubResponseBaseDocumentation.es.md"
+
+### Ejemplo de respuesta
 
 ??? tip "Ejemplos"
-    
+
     --8<-- "includes/examples/shoppingCart/create.response.1.md"

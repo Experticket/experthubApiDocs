@@ -12,7 +12,7 @@ Este método permite eliminar un elemento existe en el carrito. Para ello es nec
 - **``ShoppingCartItemIdsToRemove``**: (``list``) ``Requerido``. Listado de identificadores a eliminar.
     - **``(string)``**: ``Requerido``. Identificador a eliminar. Este identificador es mostrado en la respuesta del método [**``Add``**](./add.md#estructura-de-la-respuesta).
 
-### Ejemplos
+### Ejemplo de llamada
 
 ??? tip "Examples"
 
@@ -20,7 +20,9 @@ Este método permite eliminar un elemento existe en el carrito. Para ello es nec
 
 ## Estructura de la respuesta
 
-- **`Success`**: (``boolean``). Indica si la llamada ha sido procesada satisfactoriamente.
+--8<-- "includes/experthubResponseBaseDocumentation.es.md"
+
+### Ejemplo de respuesta
 
 ??? tip "Examples"
 

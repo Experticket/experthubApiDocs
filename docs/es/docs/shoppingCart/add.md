@@ -29,7 +29,7 @@ Podemos añadir uno o varios productos en una o varias llamadas, según las nece
             - **``Package``**: (``object``) ``Requerido``. Información del paquete.
                 - **``Id``**:``Requerido``. Identificador del paquete.
 
-### Ejemplos
+### Ejemplos de llamadas
 
 ??? tip "Examples"
 
@@ -39,7 +39,6 @@ Podemos añadir uno o varios productos en una o varias llamadas, según las nece
 
 Es relevante tener en cuenta las propiedades **``Id``** que son devueltas en la respuesta, dado que serán necesarios para manipular los productos una vez han sido añadidos al carrito.
 
-- **`Success`**: (``boolean``). Indica si la llamada ha sido procesada satisfactoriamente.
 - **`Activities`**: (``list``). Listado de las actividades añadidas en la **petición actual**. Si no se ha añadido actividades, esta propiedad no aparecerá.
     - **`Activity`**: (``object``). Información de la actividad añadida.
         - **`Id`**: (``string``). Identificador que se ha asignado a esta actividad dentro del carrito.
@@ -51,6 +50,10 @@ Es relevante tener en cuenta las propiedades **``Id``** que son devueltas en la 
     - **`Accommodation`**: (``object``). Información del alojamiento añadido.
         - **`Id`**: (``string``). Identificador que se ha asignado a este alojamiento dentro del carrito.
         - **`RateId`**: (``string``). Identificador de la tarifa.
+
+--8<-- "includes/experthubResponseBaseDocumentation.es.md"
+
+### Ejemplos de respuestas
 
 ??? tip "Examples"
 

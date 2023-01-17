@@ -11,6 +11,7 @@ Es relevante tener en cuenta la geolocalización sugerida. Esta se utiliza en lo
 **POST** /Activity/Prepackages
 
 ## Estructura de la petición
+
 Todos los parámetros de la petición son opcionales.
 
 - **``ProviderIds``**: (``list``) ``Opcional``. Listado de proveedores para filtrar.
@@ -37,7 +38,6 @@ Todos los parámetros de la petición son opcionales.
 
 ## Estructura de la respuesta
 
-- **`Success`**: (``boolean``). Indica si la llamada ha sido procesada satisfactoriamente.
 - **`Timestamp`**: (``dateTime``). Instante de tiempo en el que se procesó la petición. Formato ISO 8601 (yyyy-MM-ddThh\:mm\:ss.fffffff).
 - **``PrePackages``**: (``list``). Listado de prepaquetes disponibles.
     - **``PrePackage``**: (``object``). Información del prepaquete.
@@ -62,7 +62,7 @@ Todos los parámetros de la petición son opcionales.
                         - **``Logo``**: (``string``). Url de la imagen con el logotipo del recinto.
                 - **``ValidDays``**: (``int``). Días de validez.
                 - **``ValidDaysType``**: (``int``). Tipo de días de validez.
-                    
+
                     ??? example "Posibles valores"
                         --8<-- "includes/enum/validDayType.md"
 
@@ -72,6 +72,8 @@ Todos los parámetros de la petición son opcionales.
             - **``SuggestedLocation``**: (``object``). Localización sugerida para búsqueda de alojamiento. Suele ser unas coordenadas calculadas céntricas entre todos los recintos del prepaquete.
                 - **`Lat`**: (``decimal``). Coordenadas de latitud.
                 - **`Lng`**: (``decimal``). Coordenadas de longitud.
+
+--8<-- "includes/experthubResponseBaseDocumentation.es.md"
 
 ### Ejemplo de respuesta
 

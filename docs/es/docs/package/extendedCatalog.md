@@ -7,6 +7,7 @@ En este método podemos obtener información extendida sobre los paquetes (activ
 **POST** /Package/FullCatalog
 
 ## Estructura de la petición
+
 - **``People``**: (``list``) ``Requerido``. Listado de personas que componen el paquete. El orden en el cual se añaden las personas en este listado repercute, posteriormente, en el índice a usar en la propiedad ``Room``
     - **``Person``**: (``object``) ``Requerido``. Información de la persona.
         - **``Type``**: (``int``) ``Requerido``. Tipo de persona.
@@ -41,7 +42,6 @@ En este método podemos obtener información extendida sobre los paquetes (activ
 
 ## Estructura de la respuesta
 
-- **`Success`**: (``boolean``). Indica si la llamada ha sido procesada satisfactoriamente.
 - **``Echotoken``**: (``string``). Token necesario para las siguientes peticiones: solicitar precios, añadir elementos al carro, etc.
 - **``Activities``**: (``object``). Propiedad que contiene la definición del [catálogo de actividades](../activity/catalog.md#estructura-de-la-respuesta). Aquí están listadas todas las actividades disponibles para el prepaquete indicado.
 - **``Accommodation``**: (``object``). Información sobre el alojamiento del paquete, indicado en la petición.
@@ -101,7 +101,7 @@ En este método podemos obtener información extendida sobre los paquetes (activ
 
                         ??? example "Posibles valores"
                             --8<-- "includes/enum/accommodationRateClass.md"
-                                        
+
                     - **``Price``**: (``decimal``). Precio de la tarifa.
                     - **``PriceMode``**: (``int``). Tipo de precio.
 
@@ -137,6 +137,8 @@ En este método podemos obtener información extendida sobre los paquetes (activ
                 - **``Rule``**: (``object``). Regla que define esta política de cancelación.
                     - **``HoursInAdvanceOfAccess``**: (``int``).  Horas de antelación respecto a la fecha de acceso sobre el que aplica esta regla.
                     - **``Percentage``**: (``decimal``). Porcentaje de penalización respecto al precio.
+
+--8<-- "includes/experthubResponseBaseDocumentation.es.md"
 
 ### Ejemplo de respuesta
 

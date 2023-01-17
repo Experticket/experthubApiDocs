@@ -1,4 +1,5 @@
-- **``Success``**: booleano `#!csharp true/false` que indica si la llamada ha sido procesada correctamente o no.
-- **``Errors``**: array de errores.
-    - **``ErrorMessage``**: mensaje de error explicando por qué la petición no ha sido correcta. En caso que haya sido correcta, devolverá `#!csharp null`.
-    - **``ErrorCode``**: código que identifica al error.
+- **``Success``**: (``boolean``). Valor que indica si la llamada ha sido procesada correctamente o no.
+- **``Errors``**: (`list`). Array de errores.
+    - **`Error`**: (`object`).
+        - **``ErrorMessage``**: (`string`). Mensaje de error explicando por qué la petición no ha sido correcta. En caso que haya sido correcta, devolverá `#!csharp null`.
+        - **``ErrorCode``**: (`int`). Código que identifica al error.

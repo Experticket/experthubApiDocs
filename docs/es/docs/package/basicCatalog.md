@@ -2,7 +2,7 @@
 
 Este método nos permite obtener la información mínima e indispensable sobre los distintos paquetes. Puede utilizarse, por ejemplo, para crear una página inicial de búsqueda.
 
-El resultado será una matriz de las distintas actividades (``PrePackageIds``) y de los alojamientos disponibles para cada una de esas actividades. 
+El resultado será una matriz de las distintas actividades (``PrePackageIds``) y de los alojamientos disponibles para cada una de esas actividades.
 
 Las actividades pueden tener ninguna, una o varias restricciones de alojamientos configurados internamente, como, por ejemplo, únicamente poder empaquetarse con un alojamiento específico o una restricción de distancia máxima al recinto. Estas restricciones pueden provocar que, aunque haya alojamientos en la zona o radio específicos, no aparezcan en la lista de resultados de paquetes (``Packages``).
 
@@ -12,7 +12,7 @@ Las actividades pueden tener ninguna, una o varias restricciones de alojamientos
 
 ## Estructura de la petición
 
-- **``People``**: (``list``) ``Requerido``. Listado de personas que componen el paquete. El orden en el cual se añaden las personas en este listado repercute, posteriormente, en el índice a usar en la propiedad ``Room`` 
+- **``People``**: (``list``) ``Requerido``. Listado de personas que componen el paquete. El orden en el cual se añaden las personas en este listado repercute, posteriormente, en el índice a usar en la propiedad ``Room``
     - **``Person``**: (``object``) ``Requerido``. Información de la persona.
         - **``Type``**: (``int``) ``Requerido``. Tipo de persona.
 
@@ -59,7 +59,7 @@ Las actividades pueden tener ninguna, una o varias restricciones de alojamientos
 
     - **``AccommodationTypes``**: (``list``) ``Opcional``. Listado de tipos de alojamiento.
         - **``(int)``**: ``Opcional``. Indica el tipo de alojamiento.
-          
+
             ??? example "Posibles valores"
                 --8<-- "includes/enum/accommodationType.md"
 
@@ -83,7 +83,7 @@ Las actividades pueden tener ninguna, una o varias restricciones de alojamientos
     - **``Number``**: (``int``) ``Opcional``. Número de página solicitada.
     - **``Size``**: (``int``) ``Opcional``. Número de elementos por página.
 
-### Ejemplos
+### Ejemplos de llamadas
 
 ??? tip "Example: 2 rooms: "1 adult + 1 child" y "1 adult""
 
@@ -96,7 +96,6 @@ Las actividades pueden tener ninguna, una o varias restricciones de alojamientos
 ## Estructura de la respuesta
 
 - **``TotalPages``**: (``int``). Número total de páginas.
-- **`Success`**: (``boolean``). Indica si la llamada ha sido procesada satisfactoriamente.
 - **``Packages``**: (``list``). Listado de paquetes con base en los criterios de búsqueda: Actividad/es, Alojamiento/s y Filtros.
     - **``Package``**: (``object``). Información del paquete.
         - **``Accommodation``**: (``object``). Información del alojamiento.
@@ -120,7 +119,9 @@ Las actividades pueden tener ninguna, una o varias restricciones de alojamientos
 
         - **``PriceFrom``**: (``decimal``). Precio de la combinatoria más baja para el paquete en cuestión.
 
-### Ejemplos
+--8<-- "includes/experthubResponseBaseDocumentation.es.md"
+
+### Ejemplos de respuesta
 
 ??? tip "Example"
     --8<-- "includes/examples/package/basicCatalog.response.1.md"

@@ -8,9 +8,10 @@ Con este método del API es posible realizar el canje de tickets.
 
 ## Estructura de la petición
 
-- **`Exchanges`**: array con los datos de los tickets que queremos canjear.
-    - **`TicketAccessCode`**: código de acceso del ticket.
-    - **`InternalCode`**: *opcional*, código que queremos asignar al ticket canjeado.
+- **`Exchanges`** (``list``): array con los datos de los tickets que queremos canjear.
+    - **``Exchange``** (``object``): canjeo que se quiere realizar.
+        - **`TicketAccessCode`** (``string``): código de acceso del ticket.
+        - **`InternalCode`** (``string``): *opcional*, código que queremos asignar al ticket canjeado.
 
 ### Ejemplo de petición
 
