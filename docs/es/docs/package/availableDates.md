@@ -1,6 +1,6 @@
 # Disponibilidad de fechas
 
-Este método nos permite obtener la disponibilidad de fechas para cada actividad disponible dentro del paquete solicitado. 
+Este método nos permite obtener la disponibilidad de fechas para cada actividad disponible dentro del paquete solicitado.
 
 ??? important "Implicaciones"
 
@@ -25,7 +25,6 @@ Este método nos permite obtener la disponibilidad de fechas para cada actividad
     === "Ejemplo tercera llamada y sucesivas"
 
         --8<-- "includes/examples/package/availableDates.request.3.md"
-
 
 ## Método de acceso
 
@@ -52,7 +51,7 @@ Este método nos permite obtener la disponibilidad de fechas para cada actividad
     - **``PaxGroupingDates``**: (``object``). Información de la agrupación.
         - **``Id``**: (``string``). Identificador de la agrupación (``PaxGroupingId``).
         - **``Dates``**: (``list``). Listado de fechas disponibles.
-            - **``(date)``**: Fecha con disponibilidad. Formato IS0 8601 (YYYY-MM-DD). 
+            - **``(date)``**: Fecha con disponibilidad. Formato IS0 8601 (YYYY-MM-DD).
 
 --8<-- "includes/experthubResponseBaseDocumentation.es.md"
 
