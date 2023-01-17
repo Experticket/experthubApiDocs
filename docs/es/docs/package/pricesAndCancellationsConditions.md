@@ -1,4 +1,4 @@
-# Disponibilidad de fechas
+# Obtención de precios
 
 Este método nos permite obtener un listado de precios para el conjunto de paquete, grupo y fecha solicitados.
 
@@ -21,7 +21,7 @@ La definición de las agrupaciones (``PaxGroupings``) toma relevancia cuando el 
 
 ### Ejemplos
 
-??? tip "Ejemplos"
+??? tip "Example"
     
     --8<-- "includes/examples/package/pricesAndCancellationsConditions.request.1.md"
 
@@ -48,6 +48,6 @@ La definición de las agrupaciones (``PaxGroupings``) toma relevancia cuando el 
 
 ### Ejemplos
 
-??? tip "Ejemplos"
+??? tip "Example"
     
     --8<-- "includes/examples/package/pricesAndCancellationsConditions.response.1.md"

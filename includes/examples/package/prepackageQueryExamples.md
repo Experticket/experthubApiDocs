@@ -41,7 +41,7 @@
             {
                 "NumberOfAdults": 2,
                 "NumberOfChildren": 2,
-                "ChilAges": 
+                "ChildrenAges": 
                 [
                     10,
                     12
@@ -65,7 +65,7 @@
             {
                 "NumberOfAdults": 2,
                 "NumberOfChildren": 2,
-                "ChilAges": 
+                "ChildrenAges": 
                 [
                     10,
                     12

@@ -53,7 +53,7 @@ Todos los parámetros de la petición son opcionales.
                 - **``ProviderName``**: (``string``). Nombre del proveedor.
                 - **``ProviderLocation``**: (``string``). Localización del proveedor.
                     - **`Lat`**: (``decimal``). Coordenadas de latitud.
-                    - **`Lng`**: (``string``). Coordenadas de longitud.
+                    - **`Lng`**: (``decimal``). Coordenadas de longitud.
                 - **``DatePolicyKey``**: (``int``). Clave de políticas de fecha. Todos los productos con la misma clave, deberán compartir fecha de acceso.
                 - **``TicketEnclosures``**: (``list``). Listado de recintos.
                     - **``TicketEnclosure``**: (``object``). Información del recinto.

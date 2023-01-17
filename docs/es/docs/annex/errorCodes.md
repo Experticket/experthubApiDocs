@@ -3,7 +3,7 @@
 En este anexo se definen los códigos de error que pueden devolver la API en cada llamada y su significado.
 
 !!! important "IMPORTANTE"
-    No todos los errores devolveran un ErrorCode, iremos añadiendo poco a poco todos los casos.
+    No todos los errores devolverán un ErrorCode, iremos añadiendo poco a poco todos los casos.
 
 Lista de códigos de errores:
 

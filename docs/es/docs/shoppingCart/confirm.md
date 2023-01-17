@@ -46,7 +46,8 @@ Una vez que se ha confirmado la reserva, ya no es posible añadir más productos
                     - **`Amount`**: (``decimal``). Valor total de la penalización que se aplicará.
                     - **`FromInclusiveDateTime`**: (``dateTime``). Fecha/hora a partir de la cual se aplicará esta regla.
                     - **`ToExclusiveDateTime`**: (``dateTime``). Fecha/hora hasta la cual se aplicará esta regla.
-- **`Accommodations`**: (``list``). Información sobre los alojamientos/habitaciones añadidos al carrito.
+
+- **`Accommodations`**: (``list``). Información sobre los alojamientos/habitaciones añadidas al carrito.
     - **`Accommodation`**: (``object``). Información sobre el alojamiento.
         - **`ProductId`**: (``string``). Identificador de la tarifa.
         - **`ProductConditions`**: (``string``). Condiciones del producto.
@@ -76,6 +77,7 @@ Una vez que se ha confirmado la reserva, ya no es posible añadir más productos
                     - **`Percentage`**: (``decimal``). Porcentaje de penalización sobre el precio de la entrada.
                     - **`Amount`**: (``decimal``). Valor total de la penalización que se aplicará.
                     - **`FromInclusiveDateTime`**: (``dateTime``). Fecha/hora a partir de la cual se aplicará esta regla.
+                    
 - **`PaymentMethodsNotApplicable`**: (``boolean``). Indica si los método de pago serán aplicables o no a este colaborador. Los colaboradores con contrato "débito" tendrán que aplicar los métodos de pago (`#!csharp PaymentMethodsNotApplicable = false`).
 - **`PaymentMethods`**: (``list``). Métodos de pago soportados para el colaborador en caso de ser a débito.
     - **`PaymentMethod`**: (``object``). Información sobre el método de pago.

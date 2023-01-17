@@ -48,7 +48,7 @@
         "Sort": {
             "Criteria": 1 
         },
-          "Paging" : {
+        "Paging" : {
             "Number" : 1,
             "Size" : 10
         }

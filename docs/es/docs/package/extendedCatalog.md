@@ -26,7 +26,7 @@ En este método podemos obtener información extendida sobre los paquetes (activ
     - **``AccommodationId``**: (``string``) ``Requerido``. Identificador del alojamiento
     - **``CheckIn``**: (``date``) ``Requerido``. Fecha de entrada al alojamiento. Formato ISO 8601 (YYYY-MM-DD).
     - **``CheckOut``**: (``date``) ``Requerido``. Fecha de salida del alojamiento. Formato ISO 8601 (YYYY-MM-DD).
-    - **``Destination``**: coordenadas del destino, para buscar alojamientos cercanos.
+    - **``Destination``**: Coordenadas del destino, para buscar alojamientos cercanos.
         - **``Latitude``**: latitud.
         - **``Longitude``**: longitud.
     - **``RoomDistribution``**: (``list``) ``Requerido``. Listado habitaciones que compondrán el paquete.
@@ -63,8 +63,8 @@ En este método podemos obtener información extendida sobre los paquetes (activ
     - **``CategoryName``**: (``string``). Nombre de la categoría.
     - **``TypeName``**: (``string``). Nombre del tipo de alojamiento.
     - **``Location``**: (``object``). Localización exacta del alojamiento.
-        - **``Longitude``**: (``decimal``). Longitud de la geoposición.
-        - **``Latitude``**: (``decimal``). Latitud de la geoposición.
+        - **``Latitude``**: (``decimal``). Latitud de la geolocalización.
+        - **``Longitude``**: (``decimal``). Longitud de la geolocalización.
     - **``Distances``**: (``list``). Listado de distancia a las diferentes actividades del paquete.
         - **``Distance``**: (``object``). Información de la distancia a la actividad del paquete.
             - **``ActivityProviderId``**: (``string``). Identificador del proveedor de la actividad. Ver [ProviderId en el catálogo de actividades](../activity/catalog.md#estructura-de-la-respuesta).
@@ -123,7 +123,7 @@ En este método podemos obtener información extendida sobre los paquetes (activ
             - **``Activities``**: (``object``). Información de la actividad incluida en el paquete.
                 - **``ActivityId``**: (``string``). Identificador de la actividad.
                 - **``Quantity``**: (``int``). Cantidad que se incluye.
-- **``Packages``**: (``list``) Listado de paquetes. Este listado es la unión entre los prepaquetes solicitados, el alojamineto y las actividaes.
+- **``Packages``**: (``list``) Listado de paquetes. Este listado es la unión entre los prepaquetes solicitados, el alojamiento y las actividades.
     - **``Package``**: (``list``) Información del paquete.
         - **``Id``**: (``string``). Identificador del paquete.
         - **``PrePackageId``**: (``string``). Identificador del prepaquete.
@@ -131,7 +131,7 @@ En este método podemos obtener información extendida sobre los paquetes (activ
         - **``AccommodationId``**: (``string``). Identificador del alojamiento.
         - **``ActivityPackageId``**: (``string``). Identificador del paquete de actividades.
         - **``Price``**: (``decimal``). Precio del paquete.
-        - **``CancellationPolicy``**: (``object``). Politicas de cancelación.
+        - **``CancellationPolicy``**: (``object``). Políticas de cancelación.
             - **``IsRefundable``**: (``boolean``). Indica si el paquete es reembolsable o no en algún momento.
             - **``Rules``**: (``list``). Reglas que definen las políticas de cancelación.
                 - **``Rule``**: (``object``). Regla que define esta política de cancelación.

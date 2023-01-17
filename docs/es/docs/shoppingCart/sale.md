@@ -18,7 +18,7 @@ Este método confirma la reserva realizada previamente en nuestros sistemas.
     - **``DocumentIdentifier``**: (``string``) ``Requerido``. Documento de identidad.
     - **``PhoneNumber``**: (``string``) ``Requerido``. Teléfono.
     - **``Email``**: (``string``) ``Requerido``. Correo electrónico.
-- **``PaymentMethod``**: (``string``) ``Opcional``. Información del método de pago. Únicamente habrá que rellenarlo en caso que el colaborador tenga un contrato a débito.
+- **``PaymentMethod``**: (``string``) ``Opcional``. Información del método de pago. Únicamente habrá que rellenarlo en caso de que el colaborador tenga un contrato a débito.
     - **``PaymentMethodType``**: (``int``) ``Requerido``. Identificador del método de pago.
     - **``ReturnUrlOk``**: (``string``) ``Requerido``. Url en la cual se notificará que el cobro ha ido correctamente.
     - **``ReturnUrlKo``**: (``string``) ``Requerido``. Url en la cual se notificará que el cobro ha sido fallido.

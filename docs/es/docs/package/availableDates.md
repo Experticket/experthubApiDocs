@@ -12,7 +12,7 @@ Este método nos permite obtener la disponibilidad de fechas para cada actividad
 
     Una vez tengamos la información de la primera actividad y la fecha elegida por el cliente, llamaremos nuevamente a este método añadiendo, en ``PaxGroupingsDates``, esta primera elección. La respuesta mostrará un listado con la disponibilidad de las **siguientes** actividades que compongan el paquete, teniendo en cuenta las **posibles** restricciones de su primera elección y, de esta forma, permitir al cliente escoger esa segunda actividad y fecha de acceso.
 
-    Iremos repitiendo esta última acción, con el resto de actividades.
+    Iremos repitiendo esta última acción, con el resto de las actividades.
 
     === "Ejemplo primera llamada"
 
@@ -53,6 +53,8 @@ Este método nos permite obtener la disponibilidad de fechas para cada actividad
         - **``Id``**: (``string``). Identificador de la agrupación (``PaxGroupingId``).
         - **``Dates``**: (``list``). Listado de fechas disponibles.
             - **``(date)``**: Fecha con disponibilidad. Formato IS0 8601 (YYYY-MM-DD). 
+
+--8<-- "includes/experthubResponseBaseDocumentation.es.md"
 
 ### Ejemplos
 

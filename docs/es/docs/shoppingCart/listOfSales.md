@@ -37,10 +37,10 @@ Filtros disponibles para la obtención del listado de ventas. Estos filtros se e
 
 - **`Success`**: (``boolean``). Indica si la llamada ha sido procesada satisfactoriamente.
 - **`Sales`**: (``list``). Listado de ventas.
-- **`PageNumber`**: (``int``). Indica la paágina solicitada.
+- **`PageNumber`**: (``int``). Indica la página solicitada.
 - **`HasPreviousPage`**: (``boolean``). Indica si hay una página previa a la solicitada.
 - **`HasNextPage`**: (``boolean``). Indica si hay una siguiente página.
-- **`IsFirstPage`**: (``boolean``). Indica si la página solicitada corresopnde a la primera página
+- **`IsFirstPage`**: (``boolean``). Indica si la página solicitada corresponde a la primera página
 
 ??? tip "Examples"
 

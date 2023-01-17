@@ -2,9 +2,9 @@
 
 Este método nos permite obtener la información mínima e indispensable sobre los distintos paquetes. Puede utilizarse, por ejemplo, para crear una página inicial de búsqueda.
 
-El resultado será una matriz de las distintas actividades (``PrePackageIds``) y de los alojamientos disponibles para cada uno de esas actividades. 
+El resultado será una matriz de las distintas actividades (``PrePackageIds``) y de los alojamientos disponibles para cada una de esas actividades. 
 
-Las actividades pueden tener ninguna, una o varias restricciones de alojamientos configurados internamente, como por ejemplo, únicamente poder empaquetarse con un alojamiento específico o una restricción de distancia máxima al recinto. Estas restricciones pueden provocar que, aunque haya alojamientos en la zona o radio específicos, no aparezcan en la lista de resultados de paquetes (``Packages``).
+Las actividades pueden tener ninguna, una o varias restricciones de alojamientos configurados internamente, como, por ejemplo, únicamente poder empaquetarse con un alojamiento específico o una restricción de distancia máxima al recinto. Estas restricciones pueden provocar que, aunque haya alojamientos en la zona o radio específicos, no aparezcan en la lista de resultados de paquetes (``Packages``).
 
 ## Método de acceso
 
@@ -31,8 +31,8 @@ Las actividades pueden tener ninguna, una o varias restricciones de alojamientos
     - **``AccommodationIds``**: (``list``) ``Opcional``. Listado que permite obtener únicamente paquetes de un conjunto de alojamientos.
         - **``(string)``**:  ``Opcional``. Identificador del alojamiento.
     - **``Destination``**: (``object``) ``Requerido``. Geolocalización a partir de la cual se realizará la búsqueda de alojamientos. Ver [SuggestedLocation](/experthubApiDocs/es/docs/package/prePackage/#estructura-de-la-respuesta).
-        - **``Latitude``**: (``decimal``) ``Requerido``. Latitud de la geoposición.
-        - **``Longitude``**: (``decimal``) ``Requerido``. Longitud de la geoposición.
+        - **``Latitude``**: (``decimal``) ``Requerido``. Latitud de la geolocalización.
+        - **``Longitude``**: (``decimal``) ``Requerido``. Longitud de la geolocalización.
     - **``CheckIn``**: (``date``) ``Requerido``. Fecha de entrada al alojamiento. Formato ISO 8601 (YYYY-MM-DD).
     - **``CheckOut``**: (``date``) ``Requerido``. Fecha de salida del alojamiento. Formato ISO 8601 (YYYY-MM-DD).
     - **``RoomDistribution``**: (``list``) ``Requerido``. Listado habitaciones que compondrán el paquete.
@@ -65,14 +65,15 @@ Las actividades pueden tener ninguna, una o varias restricciones de alojamientos
 
     - **``Cities``**: (``list``) ``Opcional``. Listado de ciudades.
         - **``(string)``**: ``Opcional``. Nombre de la ciudad.
-    - **``DistanceRanges``**: (``list``) ``Opcional``. Listado de rangos de distancia. En caso de más de un elemento, actuarán como un operador de union ``OR``.
+    - **``DistanceRanges``**: (``list``) ``Opcional``. Listado de rangos de distancia. En caso de más de un elemento, actuarán como un operador de unión ``OR``.
         - **``DistanceRange``**: (``object``) ``Opcional``. Rango de distancia en metros.
             - **``Min``**: (``int``) ``Opcional``. Distancia mínima.
             - **``Max``**: (``int``) ``Opcional``. Distancia máxima.
-        - **``PriceRange``**: ``Opcional``. Rango de precios del paquete. En caso de más de un elemento, actuarán como un operador de union ``OR``.
+        - **``PriceRange``**: ``Opcional``. Rango de precios del paquete. En caso de más de un elemento, actuarán como un operador de unión ``OR``.
             - **``Min``**: (``int``) ``Opcional``. Precio mínimo.
             - **``Max``**: (``int``) ``Opcional``. Precio máximo.
-- **``Sort``**: (``object``) ``Opcional``. Ordenación de los resultados
+
+- **``Sort``**: (``object``) ``Opcional``. Ordenación de los resultados.
     - **``Criteria``**: (``int``) ``Opcional``. Tipo de ordenación.
 
         ??? example "Posibles valores"

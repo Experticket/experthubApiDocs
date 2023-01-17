@@ -45,9 +45,9 @@ Es relevante tener en cuenta las propiedades **``Id``** que son devueltas en la 
         - **`Id`**: (``string``). Identificador que se ha asignado a esta actividad dentro del carrito.
         - **`Activity`**: (``object``). Información de la actividad añadida.
             - **`ProductId`**: (``string``). Identificador de producto.
-            - **`Quantity`**: (``string``). Cantidad añadida.
-            - **`AccessDateTime`**: (``dateTime``). Fecha de acceso. Formato ISO 8601 (YYYY-MM-DDThh\:mm\:ss)
-- **`Accommodations`**: (``list``). Listado de las alojamientos añadidos en la **petición actual**. Si no se ha añadido alojamientos, esta propiedad no aparecerá.
+            - **`Quantity`**: (``int``). Cantidad añadida.
+            - **`AccessDateTime`**: (``dateTime``). Fecha de acceso. Formato ISO 8601 (YYYY-MM-DDThh\:mm\:ss).
+- **`Accommodations`**: (``list``). Listado de los alojamientos añadidos en la **petición actual**. Si no se ha añadido alojamientos, esta propiedad no aparecerá.
     - **`Accommodation`**: (``object``). Información del alojamiento añadido.
         - **`Id`**: (``string``). Identificador que se ha asignado a este alojamiento dentro del carrito.
         - **`RateId`**: (``string``). Identificador de la tarifa.
