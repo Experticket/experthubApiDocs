@@ -1,4 +1,4 @@
-- **`Success`**: booleano `#!csharp true/false` que indica si la llamada ha sido procesada correctamente o no.
-- **`Timestamp`**: instante de tiempo en el que se procesó la petición. *Formato ISO 8601 (yyyy-MM-ddThh\:mm\:ss.fffffff)*.
-- **`ErrorMessage`**: mensaje de error explicando por qué la petición no ha sido correcta. En caso que haya sido correcta, devolverá `#!csharp null`.
-- **`ErrorCodes`**: lista de [códigos](../../annex/errorCodes) que identifican los errores que se hayan producido en la llamada.
+- **`Success`** (``boolean``): valor que indica si la llamada ha sido procesada correctamente o no.
+- **`Timestamp`** (`dateTime`): instante de tiempo en el que se procesó la petición. *Formato ISO 8601 (yyyy-MM-ddThh\:mm\:ss.fffffff)*.
+- **`ErrorMessage`** (`string`): mensaje de error explicando por qué la petición no ha sido correcta. En caso que haya sido correcta, devolverá `#!csharp null`.
+- **`ErrorCodes`** (`string[]`): lista de [códigos](../../annex/errorCodes) que identifican los errores que se hayan producido en la llamada.
