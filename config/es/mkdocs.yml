@@ -69,7 +69,7 @@ plugins:
 #copyright: Copyright &copy; Experticket
 
 nav:
-    - Inicio: index.md
+    #- Inicio: index.md
     - Documentación:
       - Introducción: docs/intro.md 
       - Interfaz de comunicación: docs/connection.md
@@ -91,9 +91,9 @@ nav:
           - Canje de tickets: docs/activity/ticketExchange.md
         - Comprobar cupones descuento: docs/activity/checkDiscountCoupons.md
         - Etiquetas: docs/activity/tags.md
-      - Alojamiento:
-        - Catálogo básico: docs/accommodation/basicCatalog.md
-        - Catálogo completo: docs/accommodation/fullCatalog.md
+      #- Alojamiento:
+        #- Catálogo básico: docs/accommodation/basicCatalog.md
+        #- Catálogo completo: docs/accommodation/fullCatalog.md
       - Paquetes:
         - Prepaquetes: docs/package/prePackage.md
         - Catalogo básico: docs/package/basicCatalog.md
@@ -112,5 +112,5 @@ nav:
         - Listado de ventas: docs/shoppingCart/listOfSales.md
       - Anexos:
         - Códigos de error: docs/annex/errorCodes.md
-    - FAQ: faq.md
-    - Acerca de: about.md
+    #- FAQ: faq.md
+    #- Acerca de: about.md
