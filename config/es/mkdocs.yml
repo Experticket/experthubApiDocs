@@ -96,7 +96,7 @@ nav:
         #- Catálogo completo: docs/accommodation/fullCatalog.md
       - Paquetes:
         - Prepaquetes: docs/package/prePackage.md
-        - Catalogo básico: docs/package/basicCatalog.md
+        - Catálogo básico: docs/package/basicCatalog.md
         - Catálogo extendido: docs/package/extendedCatalog.md
         - Disponibilidad de fechas: docs/package/availableDates.md
         - Precios: docs/package/pricesAndCancellationsConditions.md
