@@ -1,6 +1,6 @@
 # Comprobar reglas de flujo de venta
 
-Antes de hacer una compra podemos comprobar si se va a aplicar alguna de las reglas que hemos visto en [Reglas de flujo de venta](saleFlowRules.md) sin que tenga ningúna consecuencia a efectos prácticos.
+Antes de hacer una compra podemos comprobar si se va a aplicar alguna de las reglas que hemos visto en [Reglas de flujo de venta](saleFlowRules.md) sin que tenga ninguna consecuencia a efectos prácticos.
 
 Una vez lanzada la consulta se devolverá, a modo informativo, los datos suficientes para saber cómo quedaría la compra en caso de finalizarse.
 

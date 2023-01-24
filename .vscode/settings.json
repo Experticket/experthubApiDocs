@@ -5,7 +5,8 @@
         "autoassignsessions",
         "chsarp",
         "Experthub",
-        "Postman"
+        "Postman",
+        "saleflowrules"
     ],
     "cSpell.enabled": true,
     "cSpell.language": "es-ES, en",
