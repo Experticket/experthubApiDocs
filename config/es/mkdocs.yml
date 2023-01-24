@@ -1,6 +1,7 @@
 site_name: Documentación Experthub API
 site_description: Documentación del API de Experthub.
 
+#/* cSpell:disable */
 docs_dir: '../../docs/es'
 site_dir: '../../site/es'
 
@@ -68,6 +69,7 @@ plugins:
         - es
 #copyright: Copyright &copy; Experticket
 
+#/* cSpell:enable */
 nav:
     - Inicio: index.md
     - Documentación:

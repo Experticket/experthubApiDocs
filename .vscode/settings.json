@@ -1,0 +1,15 @@
+{
+    "gitlens.defaultDateFormat": "DD/MM/YYYY HH:MM:ssss",
+    "gitlens.defaultDateShortFormat": "DD/MM/YYYY",
+    "cSpell.words": [
+        "autoassignsessions",
+        "chsarp",
+        "Experthub",
+        "Postman"
+    ],
+    "cSpell.enabled": true,
+    "cSpell.language": "es-ES, en",
+    "cSpell.enableFiletypes": [
+        "!jsonc"
+    ]
+}

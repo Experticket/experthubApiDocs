@@ -14,7 +14,7 @@ Tal y como hemos visto en el punto [obtención de catálogo](catalog.md), los ``
 El aforo concierne a los tickets de tipo aforo (``#!chsarp IsQuotaTicket == true``). Por tanto, el aforo de un producto es la cantidad de tickets de tipo aforo que se pueden vender de ese producto.
 
 ??? info "Ejemplo"
-    Obteniedno la siguiente información del catálogo:
+    Obteniendo la siguiente información del catálogo:
 
     - El siguiente ``Product`` tiene marcados el 15 de agosto y el 17 de abril de 2022 como fechas en la que hay que consultar la disponibilidad.
 
@@ -112,7 +112,7 @@ El aforo concierne a los tickets de tipo aforo (``#!chsarp IsQuotaTicket == true
     - **``(string)``**: Identificador del proveedor.
 - **`Dates`**: (``list``). Array de fechas por las que filtrar. *Formato ISO 8601 (yyyy-MM-dd)*.
     - **``(date)``**: Identificador del proveedor.
-- **`FromDate`**: (``date``). Si se quiere filtrar mediante un rango de fechas, se puede filtar por fecha de inicio. No permite valores anteriores al día de hoy. Su valor por defecto es el día de hoy. *Formato ISO 8601 (yyyy-MM-dd)*.
+- **`FromDate`**: (``date``). Si se quiere filtrar mediante un rango de fechas, se puede filtrar por fecha de inicio. No permite valores anteriores al día de hoy. Su valor por defecto es el día de hoy. *Formato ISO 8601 (yyyy-MM-dd)*.
 - **`ToDate`**: (``date``). Si se quiere filtrar mediante un rango de fechas, se puede filtrar por fecha de fin. Su valor por defecto es la fecha correspondiente a dentro de un año. *Formato ISO 8601 (yyyy-MM-dd)*.
 
 !!! tip "Importante"

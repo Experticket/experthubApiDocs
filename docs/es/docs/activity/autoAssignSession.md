@@ -1,4 +1,4 @@
-# Comprobar sesiones autoauto asignadas
+# Comprobar sesiones auto asignadas
 
 Pueden existir productos cuyas sesiones no pueden ser elegidas o no es obligatorio elegirlas, en este caso es el sistema el que asigna las sesiones según la disponibilidad.
 

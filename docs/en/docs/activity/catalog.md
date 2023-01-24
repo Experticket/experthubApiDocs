@@ -305,7 +305,7 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
 - **`PartnerSettings`**: shows the partner settings.
     - **`DemandClientData`**: boolean `#!csharp true/false` that indicates if is mandatory to tell the client information when sale confirmation is done.
     - **`DemandClientTaxData`**: boolean `#!csharp true/false` that indicates if is mandatory to tell the client tax information when sale confirmation is done.
-    - **`EnableCancellationRequest`**:  boolean `#!csharp true/false` taht indicates if Test It is allowed to request cancellations via API.
+    - **`EnableCancellationRequest`**:  boolean `#!csharp true/false` that indicates if Test It is allowed to request cancellations via API.
     - **`PaymentType`**: indicates the payment type for the partner.
 
         ??? example "Possible values"
