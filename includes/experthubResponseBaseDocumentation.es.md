@@ -3,3 +3,6 @@
     - **`Error`**: (`object`).
         - **``ErrorMessage``**: (`string`). Mensaje de error explicando por qué la petición no ha sido correcta. En caso que haya sido correcta, devolverá `#!csharp null`.
         - **``ErrorCode``**: (`int`). Código que identifica al error.
+- **`ErrorEntityBreakDown`** (`list`): Lista que contiene objetos con el nombre e ID en caso de error.
+    - **`Id`** (`string`): Identificador
+    - **`Name`** (`string`): Nombre relacionado del identificador.

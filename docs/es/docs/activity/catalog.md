@@ -89,6 +89,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
         - **`ZipCode`**: (``string``). Código postal.
         - **`Lat`**: (``double``). Latitud.
         - **`Lng`**: (``double``). Longitud.
+        - **`Region`**: (``string``). Region.
     - **`Ticket enclosures`**: (``list``). Información de los recintos del proveedor.
         - **`TicketEnclosureId`**: (``string``). Identificador del recinto.
         - **`TicketEnclosureName`**: (``string``). Nombre del recinto.

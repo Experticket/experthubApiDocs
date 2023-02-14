@@ -16,7 +16,8 @@
                     "SessionTime": "18:00",
                     "SessionContentId": "nljkasdfjlk87",
                     "SessionContentName": "Viaje al centro de la tierra",
-                    "ResultType": 0
+                    "ResultType": 0,
+                    "SessionStartTimeType": 0
                 }
             ]
         },
@@ -30,7 +31,8 @@
                     "TicketId": "uy456i4yu654i",
                     "AccessDate": "2022-06-02",
                     "TicketEnclosureId": "09aslkdfj354",
-                    "ResultType": 4
+                    "ResultType": 4,
+                    "SessionStartTimeType": 1
                 }
             ]
         }

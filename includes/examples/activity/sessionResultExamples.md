@@ -5,6 +5,7 @@
         {
             "SessionsGroupProfileId": "cwj3q99xa8ara",
             "SessionsGroupProfileName": "Perfil de grupos por defecto",
+            "SessionStartTimeType": 0,
             "SessionsGroups": 
             [
                 {

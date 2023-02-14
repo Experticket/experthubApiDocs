@@ -2,3 +2,6 @@
 - **`Timestamp`** (`dateTime`): instante de tiempo en el que se procesó la petición. *Formato ISO 8601 (yyyy-MM-ddThh\:mm\:ss.fffffff)*.
 - **`ErrorMessage`** (`string`): mensaje de error explicando por qué la petición no ha sido correcta. En caso que haya sido correcta, devolverá `#!csharp null`.
 - **`ErrorCodes`** (`string[]`): lista de [códigos](../../annex/errorCodes) que identifican los errores que se hayan producido en la llamada.
+- **`ErrorEntityBreakDown`** (`list`): Lista que contiene objetos con el nombre e ID en caso de error.
+    - **`Id`** (`string`): Identificador
+    - **`Name`** (`string`): Nombre relacionado del identificador.

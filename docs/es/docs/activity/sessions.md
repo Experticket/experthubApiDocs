@@ -38,6 +38,9 @@ Para obtener las sesiones podemos utilizar diferentes filtros en el cuerpo del m
     - **`SessionsGroupProfileId`**: (``string``). Identificador del perfil de grupos de sesión.
     - **`SessionsGroupProfileName`**: (``string``). Nombre del perfil de grupos de sesión.
     - **`SessionTimeAvailabilityOffset`**: (``int``). Cantidad de minutos antes (si el valor es negativo) o después (si el valor es positivo) en la que la sesión puede estar a la venta con respecto a la hora de la sesión.
+    - **`SessionStartTimeType`**: (``int``). Identificador numérico que indica el tipo de inicio de acceso de la sesión.
+        - **`0`**: (``int``): Acceso a la hora indicada.
+        - **`1`**: (``int``): Acceso a partir de la hora indicada.
     - **`SessionsGroups`**: (``list``). Array de grupos de sesiones.
         - **`SessionsGroupId`**: (``string``). Identificador del grupo de sesiones.
         - **`SessionsGroupName`**: (``string``). Nombre del grupo de sesiones.
