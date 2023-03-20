@@ -70,7 +70,7 @@
         ]
     }
     ```
-    === "Add a package with sessions and question"
+=== "Add a package with sessions and question"
 
     ``` json
 {
