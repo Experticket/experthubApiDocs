@@ -33,31 +33,31 @@
 === "When an question is added"
 
     ``` json
-{
-    "Success": true,
-    "Activities": [
-        {
-            "Id": "mi95gbadopeqk",
-            "Activity": {
-                "ProductId": "ppyibu8qwb88s",
-                "Quantity": 1,
-                "AccessDateTime": "2023-03-18T00:00:00",
-                "ForceNotAutoAssignSeating": false,
-                "Tickets": [
-                    {
-                        "TicketId": "5uztgje33ayyw",
-                        "Questions": [
-                            {
-                                "TicketQuestionId": "6inrbj61drob4",
-                                "StringValue": "response to my question"
-                            }
-                        ]
-                    }
-                ]
+    {
+        "Success": true,
+        "Activities": [
+            {
+                "Id": "mi95gbadopeqk",
+                "Activity": {
+                    "ProductId": "ppyibu8qwb88s",
+                    "Quantity": 1,
+                    "AccessDateTime": "2023-03-18T00:00:00",
+                    "ForceNotAutoAssignSeating": false,
+                    "Tickets": [
+                        {
+                            "TicketId": "5uztgje33ayyw",
+                            "Questions": [
+                                {
+                                    "TicketQuestionId": "6inrbj61drob4",
+                                    "StringValue": "response to my question"
+                                }
+                            ]
+                        }
+                    ]
+                }
             }
-        }
-    ]
-}
+        ]
+    }
     ```
 
 === "When a package is added"
