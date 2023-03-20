@@ -10,7 +10,7 @@ Por lo tanto, se define la estructura de sesiones, para minimizar la carga de da
 
 ## Método de acceso
 
-**POST** actvity/sessions
+**POST** activity/sessions
 
 ## Estructura de la petición
 

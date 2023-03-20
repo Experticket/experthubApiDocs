@@ -83,6 +83,7 @@ nav:
         - Sesiones: docs/activity/sessions.md
         - Comprobar sesiones auto asignadas: docs/activity/autoAssignSession.md
         - Aforo disponible: docs/activity/availability.md
+        - Preguntas de tickets: docs/activity/CheckTicketsQuestions.md
         - Reglas de flujo de venta: 
           - Obtener reglas: docs/activity/saleFlowRules.md
           - Comprobar reglas aplicadas: docs/activity/checkSaleFlowRules.md

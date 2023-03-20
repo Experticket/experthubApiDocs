@@ -214,7 +214,8 @@
                                     "TicketConditions": "Ticket conditions",
                                     "TicketEnclosureId": "geu773xaqzh18",
                                     "FromAccessDay": 1,
-                                    "ToAccessDay": 1
+                                    "ToAccessDay": 1,
+                                    "TicketsQuestionsProfileId": "MyProfilesQuestions"
                                 }, 
                                 {
                                     "TicketId": "2lob55g8w3fff",

@@ -253,6 +253,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                             - 1: **Auto asignados**, los asientos serán asignados automáticamente por el sistema.
                             - 3: **Requiere procesamiento**, los asientos serán asignados posteriormente por el proveedor.
 
+                    - **`TicketsQuestionsProfileId`**: (``string``) Identificador del perfil de una pregunta.
                     - **`FromAccessDay`** y **`ToAccessDay`**: (``byte``). Si están definidos, indican para qué días respecto a la primera fecha de acceso es válido el ticket.
 
                         ???+ tip "Consejo"
