@@ -38,7 +38,8 @@
                 "Address": "Avda. Delfina Viudes, 99",
                 "ZipCode": "03183",
                 "Lat": 37.99,
-                "Lng": -0.68
+                "Lng": -0.68,
+                "Region": "Alicante"
             },
             "Urls": 
             [
@@ -213,7 +214,8 @@
                                     "TicketConditions": "Ticket conditions",
                                     "TicketEnclosureId": "geu773xaqzh18",
                                     "FromAccessDay": 1,
-                                    "ToAccessDay": 1
+                                    "ToAccessDay": 1,
+                                    "TicketsQuestionsProfileId": "MyProfilesQuestions"
                                 }, 
                                 {
                                     "TicketId": "2lob55g8w3fff",

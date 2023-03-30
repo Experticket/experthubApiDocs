@@ -44,6 +44,9 @@ Una vez lanzada la consulta se devolverá, a modo informativo, la sesión que se
         - **`SessionTime`**: (``date``). Hora de la sesión asignada en caso de haber podido asignar alguna.
         - **`SessionContentId`**: (``string``). Identificador del contenido de sesión.
         - **`SessionContentName`**: (``string``). Nombre del contenido de sesión.
+        - **`SessionStartTimeType`**: (``int``). Identificador numérico que indica el tipo de inicio de acceso de la sesión.
+            - **`0`**: (``int``): Acceso a la hora indicada.
+            - **`1`**: (``int``): Acceso a partir de la hora indicada.
         - **`ResultType`**: (``byte``). Atributo que indica el resultado de la auto asignación.
 
             ??? example "Posibles valores"

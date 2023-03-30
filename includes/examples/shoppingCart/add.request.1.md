@@ -29,6 +29,32 @@
     }
     ```
 
+=== "Add a question"
+
+    ``` json
+    {
+        "ShoppingCartId": "48siun8ozecx1",
+        "Activities": [
+            {
+                "ProductId": "ppyibu8qwb88s",
+                "AccessDateTime": "2023-03-18",
+                "Quantity": 1,
+                "Tickets": [
+                    {
+                        "TicketId": "5uztgje33ayyw",
+                        "Questions": [
+                            {
+                                "TicketQuestionId": "6inrbj61drob4",
+                                "StringValue": "response of my question"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+    ```
+
 === "Add a package"
 
     ``` json
@@ -40,6 +66,34 @@
                 "Packages": [
                     {
                         "Id": "4pdc7ad88qota"
+                    }
+                ]
+            }
+        ]
+    }
+    ```
+
+=== "Add a package with sessions and question"
+
+    ``` json
+    {
+        "ShoppingCartId": "hy3gp7cykreog",
+        "Activities": [
+            {
+                "ProductId": "35ro8mcqkzs4q",
+                "AccessDateTime": "2023-03-21",
+                "Quantity": 1,
+                "Tickets": [
+                    {
+                        "TicketId": "6nx1a1pd1wbms",
+                        "Questions": [
+                            {
+                                "TicketQuestionId": "dhci15yyp1y81",
+                                "StringValue": "respuesta"
+                            }
+                        ],
+                        "SessionId": "9zobybtjtou6s",
+                        "AccessDateTime": "2023-03-21"
                     }
                 ]
             }
