@@ -1,3 +1,3 @@
 ```
-{{url}}/ShoppingCart/Documentation?ShoppingCartId=MyShoppingCartId
+{{url}}/ShoppingCart/Documentation?ShoppingCartId=MyShoppingCartId&Language=pt
 ```

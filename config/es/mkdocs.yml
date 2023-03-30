@@ -79,6 +79,7 @@ nav:
       - Actividades:
         - Catálogo: docs/activity/catalog.md
         - Última fecha de actualización del catálogo: docs/activity/lastCatalogUpdatedDate.md
+        - Idiomas disponibles: docs/activity/availableLanguages.md
         - Precios en tiempo real: docs/activity/realTimePrices.md
         - Sesiones: docs/activity/sessions.md
         - Comprobar sesiones auto asignadas: docs/activity/autoAssignSession.md
