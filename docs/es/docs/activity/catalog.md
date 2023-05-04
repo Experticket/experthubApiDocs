@@ -70,6 +70,8 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
             - 1: Alojamiento
             - 2: Transporte
 
+    - **`DemandAccessDateOnOpenDate`**: (``boolean``). Si el producto es de fecha abierta, este parámetro determinará, con verdadero o falso, la necesidad de pedir las fechas de acceso.
+
     - **`PurchaseFlowType`**: (``byte``). Indica el tipo de flujo de venta que tiene el proveedor. Sirve para saber si las entradas y los códigos de acceso estarán disponibles en el momento de la compra o posteriormente.
 
         ??? example "Posibles valores"
