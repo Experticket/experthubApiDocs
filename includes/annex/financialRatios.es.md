@@ -1,0 +1,3 @@
+- **`BasePrice`**: (``double``). Precio base
+- **`Quota`**: (``double``). Comisión
+- **`Total`**: (``double``). Total

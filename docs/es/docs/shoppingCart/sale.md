@@ -36,6 +36,15 @@ Este método confirma la reserva realizada previamente en nuestros sistemas.
 - **`ExperticketSales`**: (``list``). Listado de ventas asociadas.
     - **`ExperticketSale`**: (``object``). Información de la venta.
         - **`Id`**: (``string``). Identificador de la venta.
+            - **`FinancialRatios`**: (``Objeto``). Conceptos económicos de una venta.
+                - **`ReferenceSalePrice`**: (``Objeto``). Precio de venta de referencia.
+                    --8<-- "includes/annex/financialRatios.es.md"
+                - **`Discount`**: (``Objeto``). Descuento comercial.
+                    --8<-- "includes/annex/financialRatios.es.md"
+                - **`Commission`**: (``Objeto``). Coste de colaborador.
+                    --8<-- "includes/annex/financialRatios.es.md"
+                - **`SalePrice`**: (``Objeto``). Precio de venta.
+                    --8<-- "includes/annex/financialRatios.es.md"
 
 --8<-- "includes/experthubResponseBaseDocumentation.es.md"
 

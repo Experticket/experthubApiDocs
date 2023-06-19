@@ -32,6 +32,16 @@ Filtros disponibles para la obtención del listado de ventas. Estos filtros se e
 ## Estructura de la respuesta
 
 - **`Sales`**: (``list``). Listado de ventas.
+    - **`Activities`**: (``list``). Listado de actividades.
+        - **`FinancialRatios`**: (``Objeto``). Conceptos económicos de una venta.
+            - **`ReferenceSalePrice`**: (``Objeto``). Precio de venta de referencia.
+                --8<-- "includes/annex/financialRatios.es.md"
+            - **`Discount`**: (``Objeto``). Descuento comercial.
+                --8<-- "includes/annex/financialRatios.es.md"
+            - **`Commission`**: (``Objeto``). Coste de colaborador.
+                --8<-- "includes/annex/financialRatios.es.md"
+            - **`SalePrice`**: (``Objeto``). Precio de venta.
+                --8<-- "includes/annex/financialRatios.es.md"
 - **`PageNumber`**: (``int``). Indica la página solicitada.
 - **`HasPreviousPage`**: (``boolean``). Indica si hay una página previa a la solicitada.
 - **`HasNextPage`**: (``boolean``). Indica si hay una siguiente página.
