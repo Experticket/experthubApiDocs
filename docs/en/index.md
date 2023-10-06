@@ -1,14 +1,17 @@
-# Welcome to MkDocs INGLES
+---
+hide:
+  - navigation
+---
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# Experthub API Documentation
 
-## Commands
+Through the different sections of the [documentation](/docs/connection/), we will attempt to demonstrate and explain the various ways to effectively work with the Experthub API.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+We are pleased to provide this guide to ensure proper usage of the tool and improve efficiency when making any API-related inquiries.
 
-## Project layout
+For instance, the [Postman](https://www.postman.com/) software allows us to make HTTP requests (``GET``, ``POST``, ``DELETE``, etc.) and receive different responses.
 
---8<-- "includes/catalogQueryExamples.md"
+## Goals and Functions
+
++ Consult the [communication interface](/docs/connection/).
++ View the different supported data
