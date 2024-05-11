@@ -42,4 +42,4 @@ El resultado será un listado de los distintos alojamientos disponibles según l
 ### Ejemplos de respuesta
 
 ??? tip "Example"
---8<-- "includes/examples/accommodation/basicCatalog.response.1.md"
+    --8<-- "includes/examples/accommodation/basicCatalog.response.1.md"
