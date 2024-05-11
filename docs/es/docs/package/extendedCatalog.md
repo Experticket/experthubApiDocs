@@ -5,7 +5,7 @@ En este método podemos obtener información extendida sobre los paquetes (activ
 ## Método de acceso
 
 **POST** /Package/FullCatalog
-~~~~
+
 ## Estructura de la petición
 
 --8<-- "includes/catalog/query/people.md"
