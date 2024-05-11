@@ -5,11 +5,11 @@ En este método podemos obtener información extendida sobre los paquetes (activ
 ## Método de acceso
 
 **POST** /Package/FullCatalog
-
+~~~~
 ## Estructura de la petición
 
 --8<-- "includes/catalog/query/people.md"
-~~~~
+
 - **``Activity``**: (``object``) ``Requerido``. Información sobre la actividad.
     - **``FromDate``**: (``date``) ``Requerido``. Fecha de inicio de la actividad. Formato IS0 8601 (YYYY-MM-DD).
     - **``ToDate``**: (``date``) ``Requerido``. Fecha de finalización de la actividad. Formato IS0 8601 (YYYY-MM-DD).

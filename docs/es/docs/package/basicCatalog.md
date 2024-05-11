@@ -11,7 +11,6 @@ Las actividades pueden tener ninguna, una o varias restricciones de alojamientos
 **POST** /Package/BasicCatalog
 
 ## Estructura de la petición
-
 --8<-- "includes/catalog/query/people.md"
 
 - **``Activity``**: (``object``) ``Requerido``. Información sobre la actividad.
