@@ -131,4 +131,4 @@ In this method we can obtain extended information about the packages (activity +
 
 ### Response example
 
---8<-- "includes/examples/package/extendedCatalogResponseExamples.md"
+--8<-- "includes/examples/package/fullCatalogResponseExamples.md"

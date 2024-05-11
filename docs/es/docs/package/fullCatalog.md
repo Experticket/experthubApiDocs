@@ -63,7 +63,7 @@ En este método solicitamos la información completa sobre los paquetes (activid
             - **``RoomRequestNumber``**: (``string``). Identificador de la distribución solicitada en función de la habitación.
 
                 ??? info "Ejemplo"
-                    --8<-- "includes/examples/package/extendedCatalog.request.2.md"
+                    --8<-- "includes/examples/package/fullCatalog.request.2.md"
 
             - **``TypeName``**: (``string``). Nombre del tipo de habitación.
             - **``AccommodationRoomRates``**: (``list``). Listado array con las tarifas de las habitaciones del alojamiento.

@@ -10,7 +10,7 @@ La definición de las agrupaciones (``PaxGroupings``) toma relevancia cuando el 
 
 ## Estructura de la petición
 
-- **``EchoToken``**: (``string``) ``Requerido``. Token que identifica a la secuencia de peticiones. Ver [catálogo extendido](../extendedCatalog#estructura-de-la-respuesta)
+- **``EchoToken``**: (``string``) ``Requerido``. Token que identifica a la secuencia de peticiones. Ver [catálogo extendido](../fullCatalog#estructura-de-la-respuesta)
 - **``Packages``**: (``list``) ``Requerido``. Listado de paquetes a solicitar.
     - **``Package``**: (``object``) ``Requerido``. Información del paquete.
         - **``Id``**: (``string``) ``Requerido``. Identificador del paquete.
@@ -27,7 +27,7 @@ La definición de las agrupaciones (``PaxGroupings``) toma relevancia cuando el 
 
 ## Estructura de la respuesta
 
-- **``EchoToken``**: (``string``). Token que identifica a la secuencia de peticiones. Ver [catálogo extendido](../extendedCatalog#estructura-de-la-respuesta).
+- **``EchoToken``**: (``string``). Token que identifica a la secuencia de peticiones. Ver [catálogo extendido](../fullCatalog#estructura-de-la-respuesta).
 - **``Packages``**: (``list``). Listado de paquetes solicitados en la petición.
     - **``Package``**: (``object``). Información del paquete.
         - **``Id``**: (``string``). Identificador del paquete.

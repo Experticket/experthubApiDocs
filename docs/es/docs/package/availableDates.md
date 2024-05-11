@@ -32,8 +32,8 @@ Este método nos permite obtener la disponibilidad de fechas para cada actividad
 
 ## Estructura de la petición
 
-- **``EchoToken``**: (``string``). ``Requerido``. Token que identifica a la secuencia de peticiones. Ver [catálogo extendido](../extendedCatalog#estructura-de-la-respuesta)
-- **``PackageId``**: (``string``). ``Requerido``. Identificador del paquete. Ver la propiedad ``Packages.Package.Id`` de [catálogo extendido](../extendedCatalog#estructura-de-la-respuesta)
+- **``EchoToken``**: (``string``). ``Requerido``. Token que identifica a la secuencia de peticiones. Ver [catálogo extendido](../fullCatalog#estructura-de-la-respuesta)
+- **``PackageId``**: (``string``). ``Requerido``. Identificador del paquete. Ver la propiedad ``Packages.Package.Id`` de [catálogo extendido](../fullCatalog#estructura-de-la-respuesta)
 - **``PaxGroupingsDates``**: (``list``). ``Opcional``. Listado de agrupaciones y fechas ya seleccionadas.
     - **``PaxGroupingDates``**: (``object``). ``Opcional``. Información de la agrupación.
         - **``Id``**: (``string``). ``Requerido``. Identificador de la agrupación ``ProductPaxGroupingId``.
