@@ -38,3 +38,8 @@ El resultado será un listado de los distintos alojamientos disponibles según l
 --8<-- "includes/catalog/response/availableFilters.es.md"
 
 --8<-- "includes/experthubResponseBaseDocumentation.es.md"
+
+### Ejemplos de respuesta
+
+??? tip "Example"
+--8<-- "includes/examples/accommodation/basicCatalog.response.1.md"
