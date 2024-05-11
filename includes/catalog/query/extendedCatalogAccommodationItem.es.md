@@ -1,4 +1,5 @@
-﻿- **``AccommodationId``**: (``string``) ``Requerido``. Identificador del alojamiento
+
+- **``AccommodationId``**: (``string``) ``Requerido``. Identificador del alojamiento
 - **``CheckIn``**: (``date``) ``Requerido``. Fecha de entrada al alojamiento. Formato ISO 8601 (YYYY-MM-DD).
 - **``CheckOut``**: (``date``) ``Requerido``. Fecha de salida del alojamiento. Formato ISO 8601 (YYYY-MM-DD).
 - **``RoomDistribution``**: (``list``) ``Requerido``. Listado habitaciones que compondrán el paquete.
