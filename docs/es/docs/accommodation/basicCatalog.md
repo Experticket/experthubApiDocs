@@ -32,6 +32,7 @@ El resultado será un listado de los distintos alojamientos disponibles según l
 
 - **``TotalPages``**: (``int``). Número total de páginas.
 - **``Accommodations``**: (``list``). Listado de alojamientos.
+- 
     --8<-- "includes/catalog/response/accommodationItem.es.md"
 
 
