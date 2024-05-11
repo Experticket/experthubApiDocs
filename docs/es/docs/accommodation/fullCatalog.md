@@ -53,8 +53,8 @@ En este método solicitamos la información completo de un alojamiento. Aquí se
         - **``AccommodationRoom``**: (``object``). Información de la habitación del alojamiento.
             - **``RoomRequestNumber``**: (``string``). Identificador de la distribución solicitada en función de la habitación.
 
-              ??? info "Ejemplo"
-              --8<-- "includes/examples/package/extendedCatalog.request.2.md"
+                ??? info "Ejemplo"
+                    --8<-- "includes/examples/package/extendedCatalog.request.2.md"
 
             - **``TypeName``**: (``string``). Nombre del tipo de habitación.
             - **``AccommodationRoomRates``**: (``list``). Listado array con las tarifas de las habitaciones del alojamiento.
@@ -77,7 +77,7 @@ En este método solicitamos la información completo de un alojamiento. Aquí se
                     - **``PriceMode``**: (``int``). Tipo de precio.
 
                         ??? example "Posibles valores"
-                            --8<-- "includes/enum/priceMode.md" 
+                            --8<-- "includes/enum/priceMode.md"
 
                     - **``Commission``**: (``object``). Información sobre la comisión.
                         - **``Type``**: (``int``). Tipo de comisión
