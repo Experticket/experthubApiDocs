@@ -3,6 +3,6 @@
         - **``Type``**: (``int``) ``Requerido``. Tipo de persona.
 
           ??? example "Posibles valores"
-          --8<-- "includes/enum/personType.md"
+              --8<-- "includes/enum/personType.md"
 
         - **``Age``**: (``int``) ``Opcional``. Edad de la persona. Obligatorio, únicamente, si se trata de un niño o bebé (tipo ``1`` y ``2``).
