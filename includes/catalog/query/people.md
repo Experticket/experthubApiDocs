@@ -1,5 +1,8 @@
-﻿- **``Activity``**: (``object``) ``Requerido``. Información sobre la actividad.
-    - **``FromDate``**: (``date``) ``Requerido``. Fecha de inicio de la actividad. Formato IS0 8601 (YYYY-MM-DD).
-    - **``ToDate``**: (``date``) ``Requerido``. Fecha de finalización de la actividad. Formato IS0 8601 (YYYY-MM-DD).
-    - **``PrePackageIds``**: (``list``) ``Requerido``. Listado de identificadores de prepaquetes de la actividad.
-        - ``(string)``: ``Requerido``. Identificador del prepaquete
+﻿- **``People``**: (``list``) ``Requerido``. Listado de personas que componen el paquete. El orden en el cual se añaden las personas en este listado repercute, posteriormente, en el índice a usar en la propiedad ``Room``
+    - **``Person``**: (``object``) ``Requerido``. Información de la persona.
+        - **``Type``**: (``int``) ``Requerido``. Tipo de persona.
+
+          ??? example "Posibles valores"
+          --8<-- "includes/enum/personType.md"
+
+        - **``Age``**: (``int``) ``Opcional``. Edad de la persona. Obligatorio, únicamente, si se trata de un niño o bebé (tipo ``1`` y ``2``).

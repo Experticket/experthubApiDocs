@@ -11,7 +11,8 @@ Las actividades pueden tener ninguna, una o varias restricciones de alojamientos
 **POST** /Package/BasicCatalog
 
 ## Estructura de la petición
---8<-- "includes/catalog/query/people.md"
+
+--8<-- "includes/responseBaseDocumentation.es.md"
 
 - **``Activity``**: (``object``) ``Requerido``. Información sobre la actividad.
     - **``FromDate``**: (``date``) ``Requerido``. Fecha de inicio de la actividad. Formato IS0 8601 (YYYY-MM-DD).
