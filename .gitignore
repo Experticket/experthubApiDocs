@@ -1,4 +1,5 @@
 site/
+.idea/
 .idea/workspace.xml
 .idea/experthubApiDocs.iml
 .idea/modules.xml

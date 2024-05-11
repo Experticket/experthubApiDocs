@@ -12,14 +12,7 @@ Las actividades pueden tener ninguna, una o varias restricciones de alojamientos
 
 ## Estructura de la petición
 
-- **``People``**: (``list``) ``Requerido``. Listado de personas que componen el paquete. El orden en el cual se añaden las personas en este listado repercute, posteriormente, en el índice a usar en la propiedad ``Room``
-    - **``Person``**: (``object``) ``Requerido``. Información de la persona.
-        - **``Type``**: (``int``) ``Requerido``. Tipo de persona.
-
-            ??? example "Posibles valores"
-                --8<-- "includes/enum/personType.md"
-
-        - **``Age``**: (``int``) ``Opcional``. Edad de la persona. Obligatorio, únicamente, si se trata de un niño (tipo ``1``).
+--8<-- "includes/catalog/query/people.md"
 
 - **``Activity``**: (``object``) ``Requerido``. Información sobre la actividad.
     - **``FromDate``**: (``date``) ``Requerido``. Fecha de inicio de la actividad. Formato IS0 8601 (YYYY-MM-DD).

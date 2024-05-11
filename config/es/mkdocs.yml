@@ -95,9 +95,9 @@ nav:
           - Canje de tickets: docs/activity/ticketExchange.md
         - Comprobar cupones descuento: docs/activity/checkDiscountCoupons.md
         - Etiquetas: docs/activity/tags.md
-      #- Alojamiento:
-        #- Catálogo básico: docs/accommodation/basicCatalog.md
-        #- Catálogo completo: docs/accommodation/fullCatalog.md
+      - Alojamiento:
+        - Catálogo básico: docs/accommodation/basicCatalog.md
+        - Catálogo completo: docs/accommodation/fullCatalog.md
       - Paquetes:
         - Prepaquetes: docs/package/prePackage.md
         - Catálogo básico: docs/package/basicCatalog.md
