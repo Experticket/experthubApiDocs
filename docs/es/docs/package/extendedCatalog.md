@@ -13,7 +13,7 @@ En este método podemos obtener información extendida sobre los paquetes (activ
 --8<-- "includes/catalog/query/activity.es.md"
 
 - **``Accommodation``**: (``object``) ``Requerido``. Información sobre el alojamiento.
-    --8<-- "includes/catalog/query/extendedCatalogAccommodationItem.es.md"
+    --8<-- "includes/catalog/query/extendedAccommodationItem.es.md"
 
 ### Ejemplo de petición
 

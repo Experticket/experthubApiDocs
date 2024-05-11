@@ -17,52 +17,19 @@ Las actividades pueden tener ninguna, una o varias restricciones de alojamientos
 --8<-- "includes/catalog/query/activity.es.md"
 
 - **``Accomodation``**: (``object``) ``Requerido``. Información sobre los alojamientos a obtener.
-    --8<-- "includes/catalog/query/basicCatalogAccommodationItem.es.md"
+    --8<-- "includes/catalog/query/basicAccommodationItem.es.md"
 
-- **``Filter``**: (``list``) ``Opcional``. Filtros para acotar la obtención de paquetes. Los distintos filtros se añaden como si de un operador ``AND`` se tratase.
-    - **``AccommodationBoards``**: (``list``) ``Opcional``. Listado con los regímenes del alojamiento deseados.
-        - **``(int)``**: ``Opcional``. Tipo de régimen alimenticio.
+--8<-- "includes/catalog/query/filter.es.md"
 
-            ??? example "Posibles valores"
-                --8<-- "includes/enum/accommodationBoard.md"
-
-    - **``AccommodationCategories``**: (``list``) ``Opcional``. Listado con las categorías del alojamiento deseadas.
-        - **``(int)``**: ``Opcional``. Tipo de categoría del alojamiento.
-
-            ??? example "Posibles valores"
-                --8<-- "includes/enum/accommodationCategory.md"
-
-    - **``AccommodationRateClasses``**: (``list``) ``Opcional``. Listado de alojamientos con o sin reembolso.
-        - **``(int)``**: ``Opcional``. Indica si se quiere o no con reembolso.
-
-            ??? example "Posibles valores"
-                --8<-- "includes/enum/accommodationRateClass.md"
-
-    - **``AccommodationTypes``**: (``list``) ``Opcional``. Listado de tipos de alojamiento.
-        - **``(int)``**: ``Opcional``. Indica el tipo de alojamiento.
-
-            ??? example "Posibles valores"
-                --8<-- "includes/enum/accommodationType.md"
-
-    - **``Cities``**: (``list``) ``Opcional``. Listado de ciudades.
-        - **``(string)``**: ``Opcional``. Nombre de la ciudad.
-    - **``DistanceRanges``**: (``list``) ``Opcional``. Listado de rangos de distancia. En caso de más de un elemento, actuarán como un operador de unión ``OR``.
-        - **``DistanceRange``**: (``object``) ``Opcional``. Rango de distancia en metros.
+    - **``DistanceRanges``**: (``list``) ``Opcional``. Listado de rangos de distancia con respecto a la actividad. En caso de más de un elemento, actuarán como un operador de unión ``OR``.
+        - **``DistanceRange``**: (``object``) ``Opcional``. Rango de distancia con respecto a la actividad en metros.
             - **``Min``**: (``int``) ``Opcional``. Distancia mínima.
             - **``Max``**: (``int``) ``Opcional``. Distancia máxima.
-        - **``PriceRange``**: ``Opcional``. Rango de precios del paquete. En caso de más de un elemento, actuarán como un operador de unión ``OR``.
-            - **``Min``**: (``int``) ``Opcional``. Precio mínimo.
-            - **``Max``**: (``int``) ``Opcional``. Precio máximo.
 
-- **``Sort``**: (``object``) ``Opcional``. Ordenación de los resultados.
-    - **``Criteria``**: (``int``) ``Opcional``. Tipo de ordenación.
 
-        ??? example "Posibles valores"
-            --8<-- "includes/enum/sortCriteria.md"
+--8<-- "includes/catalog/query/sort.es.md"
 
-- **``Paging``**: (``object``) ``Opcional``. Información de la paginación.
-    - **``Number``**: (``int``) ``Opcional``. Número de página solicitada.
-    - **``Size``**: (``int``) ``Opcional``. Número de elementos por página.
+--8<-- "includes/catalog/query/paging.es.md"
 
 ### Ejemplos de llamadas
 
