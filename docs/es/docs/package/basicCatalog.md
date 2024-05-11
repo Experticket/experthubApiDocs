@@ -47,25 +47,14 @@ Las actividades pueden tener ninguna, una o varias restricciones de alojamientos
 - **``Packages``**: (``list``). Listado de paquetes con base en los criterios de búsqueda: Actividad/es, Alojamiento/s y Filtros.
     - **``Package``**: (``object``). Información del paquete.
         - **``Accommodation``**: (``object``). Información del alojamiento.
+
+            --8<-- "includes/catalog/response/accommodationItem.es.md"
+
             - **``DistanceToActivity``**: (``decimal``). Distancia, en metros, desde el alojamiento hasta el punto inicial de la actividad.
-            - **``MainImageUrl``**: (``string``). Url de la imagen principal del alojamiento.
-            - **``Name``**: (``string``). Nombre del alojamiento.
-            - **``Description``**: (``string``). Descripción del alojamiento.
-            - **``Address``**: (``string``). Dirección del alojamiento.
-            - **``City``**: (``string``). Ciudad donde se ubica el alojamiento.
-            - **``PostalCode``**: (``string``). Código postal del alojamiento.
-            - **``Country``**: (``string``). País donde está ubicado el alojamiento.
-            - **``Type``**: (``string``). Tipo de alojamiento.
-
-                ??? example "Posibles valores"
-                    --8<-- "includes/enum/accommodationType.md"
-
-            - **``Category``**: (``string``). Categoría del alojamiento.
-
-                ??? example "Posibles valores"
-                    --8<-- "includes/enum/accommodationCategory.md"
 
         - **``PriceFrom``**: (``decimal``). Precio de la combinatoria más baja para el paquete en cuestión.
+
+--8<-- "includes/catalog/response/availableFilters.es.md"
 
 --8<-- "includes/experthubResponseBaseDocumentation.es.md"
 

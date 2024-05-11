@@ -27,3 +27,14 @@ El resultado será un listado de los distintos alojamientos disponibles según l
 ??? tip "Ejemplo: 1 habitación: "1 adulto + 1 niño" en alojamiento 3*"
 
 --8<-- "includes/examples/accommodation/basicCatalog.request.2.md"
+
+## Estructura de la respuesta
+
+- **``TotalPages``**: (``int``). Número total de páginas.
+- **``Accommodations``**: (``list``). Listado de alojamientos.
+    --8<-- "includes/catalog/response/accommodationItem.es.md" 
+
+
+--8<-- "includes/catalog/response/availableFilters.es.md"
+
+--8<-- "includes/experthubResponseBaseDocumentation.es.md"
