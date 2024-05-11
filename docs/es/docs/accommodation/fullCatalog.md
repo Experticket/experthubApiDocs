@@ -8,4 +8,6 @@ En este método solicitamos la información completo de un alojamiento. Aquí se
 
 ## Estructura de la petición
 
+--8<-- "includes/catalog/query/people.es.md"
+
 --8<-- "includes/catalog/query/fullAccommodationItem.es.md"

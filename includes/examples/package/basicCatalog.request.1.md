@@ -40,11 +40,6 @@
                 ]
             ]
         },
-        "Filter": {
-            "AccommodationCategories": [
-                3
-            ]
-        },
         "Sort": {
             "Criteria": 1 
         },
