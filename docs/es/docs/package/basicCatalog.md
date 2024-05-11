@@ -14,11 +14,7 @@ Las actividades pueden tener ninguna, una o varias restricciones de alojamientos
 
 --8<-- "includes/catalog/query/people.md"
 
-- **``Activity``**: (``object``) ``Requerido``. Información sobre la actividad.
-    - **``FromDate``**: (``date``) ``Requerido``. Fecha de inicio de la actividad. Formato IS0 8601 (YYYY-MM-DD).
-    - **``ToDate``**: (``date``) ``Requerido``. Fecha de finalización de la actividad. Formato IS0 8601 (YYYY-MM-DD).
-    - **``PrePackageIds``**: (``list``) ``Requerido``. Listado de prepaquetes.
-        - **``(string)``**: ``Requerido``. Identificador del prepaquete.
+--8<-- "includes/catalog/query/activity.md"
 
 - **``Accomodation``**: (``object``) ``Requerido``. Información sobre los alojamientos a obtener.
     - **``AccommodationIds``**: (``list``) ``Opcional``. Listado que permite obtener únicamente paquetes de un conjunto de alojamientos.
