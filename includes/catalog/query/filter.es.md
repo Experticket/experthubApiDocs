@@ -15,7 +15,7 @@
         - **``(int)``**: ``Opcional``. Indica si se quiere o no con reembolso.
 
             ??? example "Posibles valores"
-                --8<-- "includes/enum/accommodationRateClass.md"
+                --8<-- "includes/enum/accommodationRateClass.md"~~~~
 
     - **``AccommodationTypes``**: (``list``) ``Opcional``. Listado de tipos de alojamiento.
         - **``(int)``**: ``Opcional``. Indica el tipo de alojamiento.
