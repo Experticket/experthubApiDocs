@@ -17,9 +17,9 @@ En este método solicitamos la información completa sobre los paquetes (activid
 
 ### Ejemplo de petición
 
-??? tip "Example: 2 rooms: "2 adult + 1 child" y "1 adult""
+??? tip "Ejemplo: 2 habitaciones: "1 adulto + 1 niño" y "1 adulto""
 
-    --8<-- "includes/examples/package/extendedCatalog.request.1.md"
+    --8<-- "includes/examples/package/fullCatalog.request.1.md"
 
 ## Estructura de la respuesta
 

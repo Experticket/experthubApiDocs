@@ -33,7 +33,7 @@ Las actividades pueden tener ninguna, una o varias restricciones de alojamientos
 
 ### Ejemplos de llamadas
 
-??? tip "Ejemplo: 2 habitaciones: "1 adulta + 1 niño" y "1 adulto""
+??? tip "Ejemplo: 2 habitaciones: "1 adulto + 1 niño" y "1 adulto""
 
 --8<-- "includes/examples/package/basicCatalog.request.1.md"
 

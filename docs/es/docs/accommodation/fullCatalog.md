@@ -11,3 +11,9 @@ En este método solicitamos la información completo de un alojamiento. Aquí se
 --8<-- "includes/catalog/query/people.es.md"
 
 --8<-- "includes/catalog/query/fullAccommodationItem.es.md"
+
+### Ejemplo de petición
+
+??? tip "Ejemplo: 2 habitaciones: "1 adulto + 1 niño" y "1 adulto""
+
+    --8<-- "includes/examples/accommodation/fullCatalog.request.1.md"

@@ -9,13 +9,6 @@
                 "Age": 5
             }
         ],
-        "Activity": {
-            "FromDate": "2023-01-25",
-            "ToDate": "2023-01-26",
-            "PrePackageIds": [
-                "1fu1tmxgjrzyh"
-            ]
-        },
         "Destination": {           
             "Latitude": 42.3446912,
             "Longitude": 1.9566978000000
