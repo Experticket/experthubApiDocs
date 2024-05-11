@@ -101,7 +101,7 @@ nav:
       - Paquetes:
         - Prepaquetes: docs/package/prePackage.md
         - Catálogo básico: docs/package/basicCatalog.md
-        - Catálogo extendido: docs/package/extendedCatalog.md
+        - Catálogo completo: docs/package/fullCatalog.md
         - Disponibilidad de fechas: docs/package/availableDates.md
         - Precios: docs/package/pricesAndCancellationsConditions.md
       - Proceso de compra:
@@ -111,7 +111,7 @@ nav:
         - Eliminar elemento del carrito: docs/shoppingCart/remove.md
         - Reserva de productos: docs/shoppingCart/confirm.md
         - Cancelación de la reserva: docs/shoppingCart/cancelConfirm.md
-        - Confirmación de la reseva: docs/shoppingCart/sale.md
+        - Confirmación de la reserva: docs/shoppingCart/sale.md
         - Documentación: docs/shoppingCart/documentation.md
         - Listado de ventas: docs/shoppingCart/listOfSales.md
       - Anexos:

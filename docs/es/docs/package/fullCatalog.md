@@ -1,6 +1,6 @@
-# Catálogo extendido de paquetes
+# Catálogo completo de los paquetes de un alojamiento
 
-En este método podemos obtener información extendida sobre los paquetes (actividad + alojamiento) disponibles. Aquí se incluye información sobre las tarifas de las diferentes habitaciones disponibles del alojamiento.
+En este método solicitamos la información completa sobre los paquetes (actividad + alojamiento) disponibles para un alojamiento en particular. Aquí se incluye información sobre las tarifas de las diferentes habitaciones disponibles del alojamiento.
 
 ## Método de acceso
 
@@ -13,7 +13,7 @@ En este método podemos obtener información extendida sobre los paquetes (activ
 --8<-- "includes/catalog/query/activity.es.md"
 
 - **``Accommodation``**: (``object``) ``Requerido``. Información sobre el alojamiento.
-    --8<-- "includes/catalog/query/extendedAccommodationItem.es.md"
+    --8<-- "includes/catalog/query/fullAccommodationItem.es.md"
 
 ### Ejemplo de petición
 
