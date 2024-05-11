@@ -80,7 +80,7 @@ En este método solicitamos la información completa sobre los paquetes (activid
                     - **``RateClass``**: tipo de tarifa.
 
                         ??? example "Posibles valores"
-                            --8<-- "includes/enum/accommodationRateClass.md"                    
+                            --8<-- "includes/enum/accommodationRateClass.md"         
 
 - **``Flags``**: (``list``). Listado con información adicional.
     - **``IncludesTickets``**: (``boolean``). Indica si incluye tickets.
@@ -115,4 +115,4 @@ En este método solicitamos la información completa sobre los paquetes (activid
 ### Ejemplo de respuesta
 
 ??? tip "Example"
-    --8<-- "includes/examples/package/extendedCatalog.response.1.md"
+    --8<-- "includes/examples/package/fullCatalog.response.1.md"
