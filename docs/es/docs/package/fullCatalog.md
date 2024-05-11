@@ -55,10 +55,9 @@ En este método solicitamos la información completa sobre los paquetes (activid
             - **``Name``**: (``string``). Nombre del servicio.
             - **``IsFree``**: (``string``). Indica si está incluido en el precio.
     - **``AccommodationImages``**: (``list``). Listado de imágenes del alojamiento.
-        - **``AccommodationImage``**: (``object``). Imagen del alojamiento
-            - **``Description``**: (``string``). Descripción de la imagen.
-            - **``Order``**: (``int``). Orden para ser mostradas.
-            - **``Url``**: (``string``). Dirección URL de la imagen.
+        - **``Description``**: (``string``). Descripción de la imagen.
+        - **``Order``**: (``int``). Orden para ser mostradas.
+        - **``Url``**: (``string``). Dirección URL de la imagen.
     - **``AccommodationRooms``**: (``list``). Listado con las distintas habitaciones del alojamiento.
         - **``AccommodationRoom``**: (``object``). Información de la habitación del alojamiento.
             - **``RoomRequestNumber``**: (``string``). Identificador de la distribución solicitada en función de la habitación.
@@ -81,22 +80,14 @@ En este método solicitamos la información completa sobre los paquetes (activid
                     - **``RateClass``**: tipo de tarifa.
 
                         ??? example "Posibles valores"
-                            --8<-- "includes/enum/accommodationRateClass.md"
-
-                    - **``Price``**: (``decimal``). Precio de la tarifa.
-                    - **``PriceMode``**: (``int``). Tipo de precio.
-
-                        ??? example "Posibles valores"
-                            --8<-- "includes/enum/priceMode.md"
+                            --8<-- "includes/enum/accommodationRateClass.md"                    
 
 - **``Flags``**: (``list``). Listado con información adicional.
-    - **``Flag``**: (``object``). Información adicional.
-        - **``IncludesTickets``**: (``boolean``). Indica si incluye tickets.
-        - **``Promoted``**: (``boolean``). Indica si está promocionado.
+    - **``IncludesTickets``**: (``boolean``). Indica si incluye tickets.
+    - **``Promoted``**: (``boolean``). Indica si está promocionado.
 - **``PrePackages``**: (``list``). Listado de prepaquetes disponibles. Este valor concuerda con los prepaquetes solicitados en la petición (``PrePackageIds``).
-    - **``PrePackage``**: (``object``). Información del prepaquete.
-        - **``Id``**: (``string``). Identificador del prepaquete.
-        - **``Name``**: (``string``). Nombre del prepaquete.
+    - **``Id``**: (``string``). Identificador del prepaquete.
+    - **``Name``**: (``string``). Nombre del prepaquete.
 - **``ActivityPackages``**: (``list``). Listado de actividades del paquete.
     - **``ActivityPackage``**: (``object``). Información de la actividad del paquete.
         - **``Id``**: (``string``). Identificador del paquete de actividades
