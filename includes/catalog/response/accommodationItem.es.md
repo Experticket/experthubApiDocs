@@ -1,4 +1,4 @@
-﻿
+
 - **``MainImageUrl``**: (``string``). Url de la imagen principal del alojamiento.
 - **``Name``**: (``string``). Nombre del alojamiento.
 - **``Description``**: (``string``). Descripción del alojamiento.
