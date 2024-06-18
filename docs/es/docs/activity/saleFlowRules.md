@@ -24,7 +24,7 @@ Las reglas de flujo de venta sirven para que se modifiquen o añadan productos a
         - **``ProductId``**: (``string``). Identificador de producto.
     - **``Processors``**: (``lista``). Array de procesadores que se encarga de aplicar las condiciones para los productos del campo ``Inputs``.
         - **``Value``**: (``byte``). cantidad de productos que se deben añadir a la venta para que se aplique este procesador.
-        - **``OutputIfExistsApplicability``**: (``byte``). Valor que indica como se procesarán las salidas producidas por este procesador.
+        - **``OutputIfExistsApplicability``**: (``byte``). Valor que indica cómo se procesarán las salidas producidas por este procesador.
 
             ??? example "Posibles valores"
                 - 0: sin definir.
@@ -61,7 +61,7 @@ Las reglas de flujo de venta sirven para que se modifiquen o añadan productos a
 !!! info ""
     En el siguiente ejemplo podemos ver dos reglas:
 
-    - **Regla descuento**: si la compra contiene los productos "twy5yhbishk91" y "uspeg7nr5st96" se actualiza el producto "twy5yhbishk91" con 5€ de descuento.
+    - **Regla descuento**: si la compra contiene los productos "twy5yhbishk91" o "uspeg7nr5st96" se actualiza el producto "twy5yhbishk91" con 5€ de descuento.
     - **Regla producto gratis (3x2)**: si la compra contiene el producto "hwuk9huaqopwo" con cantidad 2, se añade el producto "twy5yhbishk91" con un 100% de descuento.
 
 --8<-- "includes/examples/activity/saleFlowRulesResponseExamples.md"
