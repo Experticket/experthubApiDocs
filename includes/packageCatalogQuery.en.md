@@ -1,4 +1,4 @@
-- **``Activity``**: activity with which we want the package
+- **``Activity``**: activity with which we want the package.
     - **``PrePackageIds``**: activity prepackage identifier.
     - **``FromDate``**: date from which we want to use the activity.
     - **``ToDate``**: date until we want to make use of the activity.
