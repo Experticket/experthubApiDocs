@@ -114,6 +114,12 @@ nav:
         - Confirmación de la reserva: docs/shoppingCart/sale.md
         - Documentación: docs/shoppingCart/documentation.md
         - Listado de ventas: docs/shoppingCart/listOfSales.md
+      - Opciones sobre ventas:
+          - Introducción: docs/sale/introduction.md
+          - Listado de ventas: docs/shoppingCart/listOfSales.md
+          - Crear solicitud de cancelación: docs/sale/saleCancellationRequest.md
+          - Listado de solicitudes de cancelación: docs/sale/listOfSaleCancellationRequest.md
+          - Documentación: docs/shoppingCart/documentation.md  
       - Anexos:
         - Códigos de error: docs/annex/errorCodes.md
     #- FAQ: faq.md
