@@ -36,7 +36,7 @@ Este método permite crear una solicitud de cancelación para una venta.
     - **``Status``**: (``string``). Estado de la cancelación.
 
         ??? example "Posibles valores"
-            --8<-- "includes/enum/accommodationType.md"
+            --8<-- "includes/enum/cancellationRequestStatus.md"
 
     - **``StatusComments``**: (``string``). Comentarios del estado de la solicitud de cancelación.
     - **``Reason``**: (``byte``). Estado de la cancelación.
