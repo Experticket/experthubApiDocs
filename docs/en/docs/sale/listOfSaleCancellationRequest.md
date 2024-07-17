@@ -27,24 +27,24 @@ This method allows creating a cancellation request for a sale.
 - **`Sales`**: (`list`). List of sales.
   - **`PartnerSaleId`**: (`string`). List of activities.
   - **`CancellationRequests`**: (`object`). Economic concepts of a sale.
-    - **`ExperticketName`**: (`string`). Name of Experticket.
-      - **`CancellationRequestId`**: (`string`). Identifier of the cancellation request.
-      - **`SaleId`**: (`object`). Identifier of the sale.
-      - **`PartnerSaleId`**: (`string`). Identifier of the partner's sale.
-      - **`CreatedDateTime`**: (`date`). Date of the cancellation request.
-      - **`UpdatedDateTime`**: (`date`). Date of the cancellation request update.
-        - **`Status`**: (`string`). Status of the cancellation.
+  - **`ExperticketName`**: (`string`). Name of Experticket.
+  - **`CancellationRequestId`**: (`string`). Identifier of the cancellation request.
+  - **`SaleId`**: (`object`). Identifier of the sale.
+  - **`PartnerSaleId`**: (`string`). Identifier of the partner's sale.
+  - **`CreatedDateTime`**: (`date`). Date of the cancellation request.
+  - **`UpdatedDateTime`**: (`date`). Date of the cancellation request update.
+  - **`Status`**: (`string`). Status of the cancellation.
 
-          ??? example "Possible values"
+      ??? example "Possible values"
           --8<-- "includes/enum/cancellationRequestStatus.md"
 
-      - **`StatusComments`**: (`string`). Comments on the status of the cancellation request.
-        - **`Reason`**: (`byte`). Reason for the cancellation.
+  - **`StatusComments`**: (`string`). Comments on the status of the cancellation request.
+  - **`Reason`**: (`byte`). Reason for the cancellation.
 
-          ??? example "Possible values"
+      ??? example "Possible values"
           --8<-- "includes/enum/cancellationRequestReason.md"
 
-      - **`ReasonComments`**: (`string`). Comments on the reason for the cancellation request.
+  - **`ReasonComments`**: (`string`). Comments on the reason for the cancellation request.
 - **`PageNumber`**: (`int`). Indicates the requested page number.
 - **`HasPreviousPage`**: (`boolean`). Indicates if there is a previous page.
 - **`HasNextPage`**: (`boolean`). Indicates if there is a next page.

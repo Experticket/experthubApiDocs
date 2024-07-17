@@ -9,10 +9,10 @@ Este método permite crear una solicitud de cancelación para una venta.
 ## Estructura de la petición
 
 - **`PartnerSaleId`**: (``string``) ``Requerido``. Identificador del colaborador.
-  - **`Reason`**: (``int``) ``Opcional``. Motivos por los cuales quiere solicitarse la cancelación:
-      
-      ??? example "Posibles valores"
-          --8<-- "includes/enum/cancellationRequestReason.md"
+- **`Reason`**: (``int``) ``Opcional``. Motivos por los cuales quiere solicitarse la cancelación:
+
+    ??? example "Posibles valores"
+        --8<-- "includes/enum/cancellationRequestReason.md"
 
 - **`ReasonComments`**: (``string``). ``Opcional``. Comentarios de la solicitud de cancelación de una transacción.
 

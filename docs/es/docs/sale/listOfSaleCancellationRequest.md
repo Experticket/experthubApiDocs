@@ -36,12 +36,14 @@ Este método permite crear una solicitud de cancelación para una venta.
     - **``Status``**: (``string``). Estado de la cancelación.
 
         ??? example "Posibles valores"
-            --8<-- "includes/enum/cancellationRequestStatus.md"
+            --8<-- "includes/enum/accommodationType.md"
+
     - **``StatusComments``**: (``string``). Comentarios del estado de la solicitud de cancelación.
     - **``Reason``**: (``byte``). Estado de la cancelación.
 
         ??? example "Posibles valores"
             --8<-- "includes/enum/cancellationRequestReason.md"
+
     - **``ReasonComments``**: (``string``). Comentarios del estado de la solicitud de cancelación.
 - **``PageNumber``**: (``int``). Indica la página solicitada.
 - **``HasPreviousPage``**: (``boolean``). Indica si hay una página previa a la solicitada.
