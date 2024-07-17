@@ -1,4 +1,4 @@
-﻿- ``1``: En Proceso.
-- ``2``: Aceptada.
+﻿- ``1``: En Proceso
+- ``2``: Aceptada
 - ``3``: Rechazada
-- ``4``: Fallida.
+- ``4``: Fallida
