@@ -1,5 +1,4 @@
-﻿# Estados de solicitud de cancelación
-
+﻿
 Aquí está la lista de estados de la solicitud de cancelación:
 
 - 0: Ninguno.

@@ -1,4 +1,7 @@
-﻿
+﻿# Ejemplo de JSON
+
+Aquí hay un ejemplo de un objeto JSON formateado:
+
 ```json
 {
     "PartnerSaleId": "stf9gy7i3xawa",
