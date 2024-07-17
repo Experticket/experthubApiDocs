@@ -1,4 +1,5 @@
-﻿- 1: Cambio en fechas de acceso.
+﻿
+- 1: Cambio en fechas de acceso.
 - 2: Cambio de productos.
 - 3: Cambio en cantidad de asistentes.
 - 4: Enfermedad común.
