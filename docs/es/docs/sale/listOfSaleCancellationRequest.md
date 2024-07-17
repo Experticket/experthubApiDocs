@@ -17,9 +17,7 @@ Este método permite crear una solicitud de cancelación para una venta.
 
 ### Ejemplo de llamada
 
-??? tip "Ejemplos"
-
-    --8<-- "includes/examples/sale/listOfSaleCancellationRequest.request.1.md"
+--8<-- "includes/examples/sale/listOfSaleCancellationRequest.request.1.md"
 
 ## Estructura de la respuesta
 
@@ -54,6 +52,4 @@ Este método permite crear una solicitud de cancelación para una venta.
 
 ### Ejemplo de respuesta
 
-??? tip "Examples"
-
-    --8<-- "includes/examples/sale/listOfSaleCancellationRequest.response.1.md"
+--8<-- "includes/examples/sale/listOfSaleCancellationRequest.response.1.md"
