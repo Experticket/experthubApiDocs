@@ -11,7 +11,7 @@
             "StatusComments": "",
             "Reason": 2,
             "ReasonComments": "",
-        }.
+        },
         {
             "CancellationRequestId": "1f48ahtxzphdg",           
             "SaleId": "5056615501717130434",
