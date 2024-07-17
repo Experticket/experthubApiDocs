@@ -1,5 +1,8 @@
-﻿
-```json
+﻿# Ejemplo de JSON
+
+Aquí hay un ejemplo de un objeto JSON formateado:
+
+``` json
 {
     "CancellationRequests": [
         {
@@ -34,3 +37,4 @@
     "Timestamp": "2021-02-18T17:02:27.8165916",
     "ErrorEntityBreakDown": []
 }
+```
