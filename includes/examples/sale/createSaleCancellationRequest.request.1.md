@@ -1,6 +1,5 @@
-﻿# Ejemplo de JSON
-
-Aquí hay un ejemplo de un objeto JSON formateado:
+﻿
+Ejemplo de petición de JSON formateada:
 
 ``` json
 {

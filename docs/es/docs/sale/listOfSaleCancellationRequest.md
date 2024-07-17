@@ -56,11 +56,3 @@ Este método permite crear una solicitud de cancelación para una venta.
 
 ??? tip "Examples"
     --8<-- "includes/examples/sale/listOfSaleCancellationRequest.response.1.md"
-
-### Ejemplo de respuesta 1
-
---8<-- "includes/examples/sale/listOfSaleCancellationRequest.response.1.md"
-
-### Ejemplo de respuesta 2
-
---8<-- "includes/examples/activity/lastCatalogUpdatedDateResponseExamples.md"
