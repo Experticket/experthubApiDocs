@@ -48,10 +48,8 @@
                   - **``FromInclusiveDateTime``**: (``date``). Fecha desde la que se aplica la penalización (incluida). Formato IS0 8601 (YYYY-MM-DD).
                   - **``ToExclusiveDateTime``**: (``date``). Fecha hasta la que se aplica la penalización (excluida). Formato IS0 8601 (YYYY-MM-DD).
                   - **``HoursInAdvanceOfAccess``**: (``int``). Indica la cantidad de horas de antelación con respecto a la fecha de acceso a partir de las cuales se aplicará la penalización de precio indicada en Amount.
-
     - **``Accommodations``**: (``list``). Listado de productos combinados de las actividades incluidos en la venta.
-          --8<-- "includes/sale/response/accommodation.es.md"
-  
+          --8<-- "includes/sale/response/accommodation.es.md"    
     - **``CombinedProducts``**: (``list``). Listado de productos combinados de las actividades incluidos en la venta.
 - **``PageNumber``**: (``int``). Indica la página solicitada.
 - **``HasPreviousPage``**: (``boolean``). Indica si hay una página previa a la solicitada.
