@@ -10,19 +10,9 @@
           - **``ProductName``**: (``string``). Nombre del producto.
           - **``ProviderId``**: (``string``). Identificador del proveedor.
           - **``ProviderName``**: (``string``). Nombre del proveedor.
-          - **``ProviderType``**: (``enum``). Tipo del proveedor:
-          
-              ??? example "Posibles valores"
-                  --8<-- "includes/enum/providerType.md"
-
-          - **``PurchaseFlowType ``**: (``enum``). Indica el tipo de flujo de venta que tiene el proveedor. Sirve para saber si las entradas y los códigos de acceso estarán disponibles en el momento de la compra o posteriormente:
-          
-              ??? example "Posibles valores"
-                  --8<-- "includes/enum/providerFlowType.md"
-
-          - **`Price`**: (``decimal``). Indica el precio al que se ha vendido el producto.
-          - **`PriceWithoutVat`**: (``decimal``). Indica el precio al que se ha vendido el producto sin impuestos.
-          - **`PriceMode`**: (``int``). Tipo de precio:
+          - **``Price``**: (``decimal``). Indica el precio al que se ha vendido el producto.
+          - **``PriceWithoutVat``**: (``decimal``). Indica el precio al que se ha vendido el producto sin impuestos.
+          - **``PriceMode``**: (``int``). Tipo de precio:
             
               ??? example "Posibles valores"
                   --8<-- "includes/enum/priceMode.md"
@@ -32,24 +22,24 @@
               ??? example "Posibles valores"
               --8<-- "includes/enum/activityStatus.md"
 
-          - **`Discount`**: (``decimal``). Descuento total aplicado al producto. Solo aparece si se ha aplicado algún cupón descuento.
-          - **`DiscountCoupons`**: (``list``). Cupones descuento aplicados al producto. Solo aparece en caso de que al producto se le haya aplicado algún cupón descuento.
-          - **`DiscountCouponId`**: (``string``). Identificado del cupón descuento.
-          - **`Name`**: (``string``). Nombre del cupón descuento.
-          - **`Description`**: (``string``). Descripción del cupón descuento.
-          - **`Discount`**: (``decimal``). Descuento que ha generado sobre el producto.
-          - **`Code`**: (``string``). Código usado para la aplicación del cupón descuento.
-          - **`FinancialRatios`**: (``Objeto``). Conceptos económicos de una venta.
-          - **`ReferenceSalePrice`**: (``Objeto``). Precio de venta de referencia.
+          - **``Discount``**: (``decimal``). Descuento total aplicado al producto. Solo aparece si se ha aplicado algún cupón descuento.
+          - **``DiscountCoupons``**: (``list``). Cupones descuento aplicados al producto. Solo aparece en caso de que al producto se le haya aplicado algún cupón descuento.
+          - **``DiscountCouponId``**: (``string``). Identificado del cupón descuento.
+          - **``Name``**: (``string``). Nombre del cupón descuento.
+          - **``Description``**: (``string``). Descripción del cupón descuento.
+          - **``Discount``**: (``decimal``). Descuento que ha generado sobre el producto.
+          - **``Code``**: (``string``). Código usado para la aplicación del cupón descuento.
+          - **``FinancialRatios``**: (``Objeto``). Conceptos económicos de una venta.
+          - **``ReferenceSalePrice``**: (``Objeto``). Precio de venta de referencia.
                 --8<-- "includes/annex/financialRatios.es.md"
 
-          - **`Discount`**: (``Objeto``). Descuento comercial.
+          - **``Discount``**: (``Objeto``). Descuento comercial.
                 --8<-- "includes/annex/financialRatios.es.md"
 
-          - **`Commission`**: (``Objeto``). Coste de colaborador.
+          - **``Commission``**: (``Objeto``). Coste de colaborador.
                 --8<-- "includes/annex/financialRatios.es.md"
 
-          - **`SalePrice`**: (``Objeto``). Precio de venta.
+          - **``SalePrice``**: (``Objeto``). Precio de venta.
                 --8<-- "includes/annex/financialRatios.es.md"
 
           - **``Tickets``**: (``object``) ``Opcional``. Lista con la información del ticket.
@@ -70,14 +60,14 @@
                       ??? example "Posibles valores"
                           --8<-- "includes/enum/examenResponseQuestions.md"
 
-          - **`CancellationConditions`**: (``object``). Indica las políticas de cancelación que se aplican al cancelar la venta de este producto.
-          - **`IsRefundable`**: (``boolean``). Indica si el cliente puede cancelar gratis en algún momento.
-          - **`Rules`**: (``list``). Reglas que se aplican al efectuar la cancelación.
-              - **`Percentage`**: (``decimal``). Porcentaje de penalización sobre el precio de la entrada.
-              - **`Amount`**: (``decimal``). Importe total de la cancelación.
-              - **`FromInclusiveDateTime`**: (``date``). Fecha desde la que se aplica la penalización (incluida). Formato IS0 8601 (YYYY-MM-DD).
-              - **`ToExclusiveDateTime`**: (``date``). Fecha hasta la que se aplica la penalización (excluida). Formato IS0 8601 (YYYY-MM-DD).
-              - **`HoursInAdvanceOfAccess`**: (``int``). Indica la cantidad de horas de antelación con respecto a la fecha de acceso a partir de las cuales se aplicará la penalización de precio indicada en Amount.
+          - **``CancellationConditions``**: (``object``). Indica las políticas de cancelación que se aplican al cancelar la venta de este producto.
+          - **``IsRefundable``**: (``boolean``). Indica si el cliente puede cancelar gratis en algún momento.
+          - **``Rules``**: (``list``). Reglas que se aplican al efectuar la cancelación.
+              - **``Percentage``**: (``decimal``). Porcentaje de penalización sobre el precio de la entrada.
+              - **``Amount``**: (``decimal``). Importe total de la cancelación.
+              - **``FromInclusiveDateTime``**: (``date``). Fecha desde la que se aplica la penalización (incluida). Formato IS0 8601 (YYYY-MM-DD).
+              - **``ToExclusiveDateTime``**: (``date``). Fecha hasta la que se aplica la penalización (excluida). Formato IS0 8601 (YYYY-MM-DD).
+              - **``HoursInAdvanceOfAccess``**: (``int``). Indica la cantidad de horas de antelación con respecto a la fecha de acceso a partir de las cuales se aplicará la penalización de precio indicada en Amount.
 
     - **``Accommodations``**: (``list``). Listado de productos combinados de las actividades incluidos en la venta.
           --8<-- "includes/sale/response/accommodation.es.md"
