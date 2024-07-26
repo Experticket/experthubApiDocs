@@ -1,0 +1,3 @@
+- ``0``: Actividad
+- ``1``: Alojamiento
+- ``2``: Transporte

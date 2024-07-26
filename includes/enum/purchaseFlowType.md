@@ -1,0 +1,2 @@
+- ``1``: Venta libre.
+- ``2``: Requiere tramitación por parte del proveedor.

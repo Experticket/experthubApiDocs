@@ -16,6 +16,7 @@ Podemos añadir uno o varios productos en una o varias llamadas, según las nece
 - **``Activities``**: (``list``) ``Opcional``. Listado de actividades a añadir al carrito.
     - **``Activity``**: (``object``) ``Opcional``. Información de la actividad.
         - **``ProductId``**: (``string``) ``Requerido``. Identificador del producto.
+        - **``CombinedProductId``**: (``string``) ``Opcional``. Identificador del producto combinado.
         - **``AccessDateTime``**: (``date``) ``Requerido``. Fecha de acceso. Formato IS0 8601 (YYYY-MM-DD).
         - **``Quantity``**: (``int``) ``Requerido``. Cantidad de productos.
         - **``Tickets``**: (``object``) ``Opcional``. Lista con la información del ticket.

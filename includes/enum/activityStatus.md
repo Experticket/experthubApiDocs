@@ -1,0 +1,4 @@
+- ``1``: Iniciada.
+- ``2``: Confirmada.
+- ``4``: Cancelada.
+- ``7``: En proceso.
