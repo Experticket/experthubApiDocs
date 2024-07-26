@@ -1,5 +1,4 @@
-﻿
---8<-- "includes/sale/response/sales.es.md"
+﻿--8<-- "includes/sale/response/activity.es.md"
 
 - **``Sales``**: (``list``). Listado de ventas.
     - **``Activities``**: (``list``). Listado de actividades.
