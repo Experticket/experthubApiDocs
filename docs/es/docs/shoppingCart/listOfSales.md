@@ -33,36 +33,6 @@ Filtros disponibles para la obtención del listado de ventas. Estos filtros se e
 
 --8<-- "includes/sale/response/sale.es.md"
 
-- **`Sales`**: (``list``). Listado de ventas.
-    - **`Activities`**: (``list``). Listado de actividades.
-        - **`FinancialRatios`**: (``Objeto``). Conceptos económicos de una venta.
-          - **`ReferenceSalePrice`**: (``Objeto``). Precio de venta de referencia.          
-               --8<-- "includes/annex/financialRatios.es.md"
-          
-          - **`Discount`**: (``Objeto``). Descuento comercial.          
-                --8<-- "includes/annex/financialRatios.es.md"
-              
-          - **`Commission`**: (``Objeto``). Coste de colaborador.                
-               --8<-- "includes/annex/financialRatios.es.md"
-            
-          - **`SalePrice`**: (``Objeto``). Precio de venta.                  
-               --8<-- "includes/annex/financialRatios.es.md"
-
-    - **`Accommodations`**: (``list``). Listado de productos combinados de las actividades incluidos en la venta.
-         --8<-- "includes/sale/response/accommodation.es.md"   
- 
---8<-- "includes/annex/accommodation.es.md"   
-  
-
-    - **`CombinedProducts`**: (``list``). Listado de productos combinados de las actividades incluidos en la venta.
-            
-- **`PageNumber`**: (``int``). Indica la página solicitada.
-- **`HasPreviousPage`**: (``boolean``). Indica si hay una página previa a la solicitada.
-- **`HasNextPage`**: (``boolean``). Indica si hay una siguiente página.
-- **`IsFirstPage`**: (``boolean``). Indica si la página solicitada corresponde a la primera página
-
---8<-- "includes/experthubResponseBaseDocumentation.es.md"
-
 ### Ejemplo de respuesta
 
 ??? tip "Examples"

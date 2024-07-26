@@ -8,25 +8,21 @@
   - **``ProductName``**: (``string``). Nombre del producto.
   - **``ProviderId``**: (``string``). Identificador del proveedor.
   - **``ProviderName``**: (``string``). Nombre del proveedor.
-  - **``ProviderType``**: (``enum``). Tipo del proveedor.
-  
+  - **``ProviderType``**: (``enum``). Tipo del proveedor:  
           ??? example "Posibles valores"
               --8<-- "includes/enum/providerType.md"
   
-  - **``PurchaseFlowType ``**: (``enum``). Indica el tipo de flujo de venta que tiene el proveedor. Sirve para saber si las entradas y los códigos de acceso estarán disponibles en el momento de la compra o posteriormente. 
-          
+  - **``PurchaseFlowType ``**: (``enum``). Indica el tipo de flujo de venta que tiene el proveedor. Sirve para saber si las entradas y los códigos de acceso estarán disponibles en el momento de la compra o posteriormente:          
         ??? example "Posibles valores"
             --8<-- "includes/enum/providerFlowType.md"
   
   - **`Price`**: (``decimal``). Indica el precio al que se ha vendido el producto.
   - **`PriceWithoutVat`**: (``decimal``). Indica el precio al que se ha vendido el producto sin impuestos.
-  - **`PriceMode`**: (``int``). Tipo de precio.
-
-            ??? example "Posibles valores"
-                --8<-- "includes/enum/priceMode.md"
+  - **`PriceMode`**: (``int``). Tipo de precio:            
+          ??? example "Posibles valores"
+                      --8<-- "includes/enum/priceMode.md"
     
   - **``Status``**: (``int``). Tipo de precio.
-
               ??? example "Posibles valores"
                   --8<-- "includes/enum/activityStatus.md"
   
@@ -64,13 +60,14 @@
     - **``AccessCode``**: (``string``) ``Opcional``. Código de barras (si corresponde).
     - **``TicketEnclosureId ``**: (``string``). Identificador del recinto del ticket.
     - **``TicketEnclosureName ``**: (``string``). Nombre del recinto del ticket.
-    - **``Questions``**: (``object``) ``Opcional``. Identificador del ticket.
-      - **``TicketQuestionId``**: (``string``) ``Requerido``. Identificador de la pregunta.
-      - **``Question``**: (``string``). Pregunta.
-      - **``StringValue``**: (``string``) ``Requerido``. Respuesta de la pregunta.
+      - **``Questions``**: (``object``) ``Opcional``. Identificador del ticket.
+        - **``TicketQuestionId``**: (``string``) ``Requerido``. Identificador de la pregunta.
+        - **``Question``**: (``string``). Pregunta.
+        - **``StringValue``**: (``string``) ``Requerido``. Respuesta de la pregunta.
 
-                ??? example "Posibles valores"
-                    --8<-- "includes/enum/examenResponseQuestions.md"
+              ??? example "Posibles valores"
+                      --8<-- "includes/enum/examenResponseQuestions.md"
+      
 - **`CancellationConditions`**: (``object``). Indica las políticas de cancelación que se aplican al cancelar la venta de este producto.
   - **`IsRefundable`**: (``boolean``). Indica si el cliente puede cancelar gratis en algún momento. 
   - **`Rules`**: (``list``). Reglas que se aplican al efectuar la cancelación.
