@@ -28,7 +28,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
 - **`FromDate`**: (``date``) ``Opcional``. Fecha de inicio. No permite valores menores al día actual. *Formato ISO 8601 (yyyy-MM-dd)*.
 - **`ToDate`**: (``date``) ``Opcional``. Fecha de fin. Por defecto su valor es el de la fecha correspondiente a dentro de un año. *Formato ISO 8601 (yyyy-MM-dd)*.
 - **`ReferenceDate`**: (``date``) ``Opcional``. Exige que el día que se tome como referencia para el cálculo de precios y disponibilidades no sea hoy, sino el indicado. Por ejemplo se usará si los precios cambian dependiendo de los días que quedan hasta la fecha de la entrada. *Formato ISO 8601 (yyyy-MM-dd)*
-- **`LanguageCode`**: (``date``) ``Opcional``. Define el idioma en que se mostrarán los textos del catálogo (nombre, descripción, condiciones de proveedor, producto, etc.). Por defecto se devolverá el idioma configurado para el colaborador. *Formato ISO 639-1*.
+- **`LanguageCode`**: (``string``) ``Opcional``. Define el idioma en que se mostrarán los textos del catálogo (nombre, descripción, condiciones de proveedor, producto, etc.). Por defecto se devolverá el idioma configurado para el colaborador. *Formato ISO 639-1*.
 - **`ShowProductsOutOfActiveDateRange`**: (``boolean``) ``Opcional``. Si su valor es `#!csharp true`, la respuesta devolverá productos en los que el día de hoy (o el día indicado en `ReferenceDate`) está fuera de su rango de fechas de venta. Por ejemplo, si estamos en diciembre y hay productos que se pueden vender a partir de enero, poniendo este valor a true nos permitirá descubrir que existen esos productos.
 
 ### Ejemplos de llamadas
@@ -312,6 +312,10 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
     - **`Products`**: (``list``). Array de productos que forman parte del producto combinado.
         - **`ProductId`**: (``string``). Identificador del producto.
     - **`RequiresRealTimePrice`**: (``boolean``). Indica si requiere consultar el precio en tiempo real para el producto combinado. Véase [obtención del precio en tiempo real](realTimePrices.md)
+- **`SaleFlowRules`**: (``object``). 
+    - **`HasSaleFlowRules`**: (``boolean``). Indica si hay productos que tengan alguna regla asociada de flujo de venta. En el caso de ser ``#!csharp true`` se recomienda consultar el método [Comprobar reglas de flujo de venta](checkSaleFlowRules.md) para comprobar qué cambios va a producir la inclusión de este producto a la hora de añadirlo al carrito.
+    - **`ProductIdsWithSaleFlowRules`**: (``list``). Array de identificadores de productos. Indica qué productos del catálogo tienen alguna regla asociada de flujo de venta.
+    - **`DynamicProviderIdsWithSaleFlowRules`**: (``list``). Array de identificadores de proveedores dinámicos. Indica qué proveedores dinámicos del catálogo tienen alguna regla asociada de flujo de venta.
 - **`PartnerSettings`**: (``list``). Indica las configuraciones del colaborador.
     - **`DemandClientData`**: (``boolean``). Valor de verdad `#!csharp true/false` que indica si es obligatorio indicar datos del cliente al confirmar una venta.
     - **`DemandClientTaxData`**: (``boolean``). Valor de verdad `#!csharp true/false` que indica si es obligatorio indicar los datos fiscales del cliente al confirmar una venta.
