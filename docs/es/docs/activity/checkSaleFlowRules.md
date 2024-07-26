@@ -16,9 +16,9 @@ Una vez lanzada la consulta se devolverá, a modo informativo, los datos suficie
     - **``ProductId``**: (``string``). Identificador del producto.
     - **``Quantity``**: (``int``) ``Opcional``. Cantidad. Por defecto su valor es 1.
 - **``DynamicProviders``**: (``list``). Proveedores dinámicos que componen la venta.
-  - **``AccessDateTime``**: (``date``) ``Opcional``. Fecha de acceso. Si se define a nivel de producto tiene precedencia sobre la fecha definida a nivel global. *Formato ISO 8601 (yyyy-MM-dd)*.
-  - **``ProviderId``**: (``string``). Identificador del proveedor dinámico.
-  - **``Quantity``**: (``int``) ``Opcional``. Cantidad. Por defecto su valor es 1.
+    - **``AccessDateTime``**: (``date``) ``Opcional``. Fecha de acceso. Si se define a nivel de producto tiene precedencia sobre la fecha definida a nivel global. *Formato ISO 8601 (yyyy-MM-dd)*.
+    - **``ProviderId``**: (``string``). Identificador del proveedor dinámico.
+    - **``Quantity``**: (``int``) ``Opcional``. Cantidad. Por defecto su valor es 1.
 - **`LanguageCode`**: (``string``) ``Opcional``. Define el idioma en que se mostrarán los textos. Por defecto se devolverá el idioma configurado para el colaborador. *Formato ISO 639-1*.
 
 ### Ejemplo de petición
