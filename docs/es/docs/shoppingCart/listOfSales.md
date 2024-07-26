@@ -33,8 +33,8 @@ Filtros disponibles para la obtención del listado de ventas. Estos filtros se e
 
 - **`Sales`**: (``list``). Listado de ventas.
     - **`Activities`**: (``list``). Listado de actividades.
-         --8<-- "includes/sale/response/activity.es.md" 
-  
+         --8<-- "includes/sale/response/activity.es.md"  
+
         - **`FinancialRatios`**: (``Objeto``). Conceptos económicos de una venta.
           - **`ReferenceSalePrice`**: (``Objeto``). Precio de venta de referencia.          
                --8<-- "includes/annex/financialRatios.es.md"
