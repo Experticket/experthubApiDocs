@@ -31,7 +31,7 @@ Filtros disponibles para la obtención del listado de ventas. Estos filtros se e
 
 ## Estructura de la respuesta
 
---8<-- "includes/sale/response/sale.es.md"
+--8<-- "includes/sale/response/sales.es.md"
 
 ### Ejemplo de respuesta
 
