@@ -11,17 +11,7 @@
           - **``ProviderId``**: (``string``). Identificador del proveedor.
           - **``ProviderName``**: (``string``). Nombre del proveedor.
           - **``Price``**: (``decimal``). Indica el precio al que se ha vendido el producto.
-          - **``PriceWithoutVat``**: (``decimal``). Indica el precio al que se ha vendido el producto sin impuestos.
-          - **``PriceMode``**: (``int``). Tipo de precio:
-            
-              ??? example "Posibles valores"
-                  --8<-- "includes/enum/priceMode.md"
-
-          - **``Status``**: (``int``). Tipo de precio.
-              
-              ??? example "Posibles valores"
-              --8<-- "includes/enum/activityStatus.md"
-
+          - **``PriceWithoutVat``**: (``decimal``). Indica el precio al que se ha vendido el producto sin impuestos.          
           - **``Discount``**: (``decimal``). Descuento total aplicado al producto. Solo aparece si se ha aplicado algún cupón descuento.
           - **``DiscountCoupons``**: (``list``). Cupones descuento aplicados al producto. Solo aparece en caso de que al producto se le haya aplicado algún cupón descuento.
           - **``DiscountCouponId``**: (``string``). Identificado del cupón descuento.
@@ -30,17 +20,17 @@
           - **``Discount``**: (``decimal``). Descuento que ha generado sobre el producto.
           - **``Code``**: (``string``). Código usado para la aplicación del cupón descuento.
           - **``FinancialRatios``**: (``Objeto``). Conceptos económicos de una venta.
-          - **``ReferenceSalePrice``**: (``Objeto``). Precio de venta de referencia.
-                --8<-- "includes/annex/financialRatios.es.md"
+            - **``ReferenceSalePrice``**: (``Objeto``). Precio de venta de referencia.
+                  --8<-- "includes/annex/financialRatios.es.md"
 
-          - **``Discount``**: (``Objeto``). Descuento comercial.
-                --8<-- "includes/annex/financialRatios.es.md"
+            - **``Discount``**: (``Objeto``). Descuento comercial.
+                  --8<-- "includes/annex/financialRatios.es.md"
 
-          - **``Commission``**: (``Objeto``). Coste de colaborador.
-                --8<-- "includes/annex/financialRatios.es.md"
+            - **``Commission``**: (``Objeto``). Coste de colaborador.
+                  --8<-- "includes/annex/financialRatios.es.md"
 
-          - **``SalePrice``**: (``Objeto``). Precio de venta.
-                --8<-- "includes/annex/financialRatios.es.md"
+            - **``SalePrice``**: (``Objeto``). Precio de venta.
+                  --8<-- "includes/annex/financialRatios.es.md"
 
           - **``Tickets``**: (``object``) ``Opcional``. Lista con la información del ticket.
           - **``TicketId``**: (``string``) ``Requerido``. Identificador del ticket.
@@ -55,11 +45,6 @@
               - **``Questions``**: (``object``) ``Opcional``. Identificador del ticket.
                   - **``TicketQuestionId``**: (``string``) ``Requerido``. Identificador de la pregunta.
                   - **``Question``**: (``string``). Pregunta.
-                  - **``StringValue``**: (``string``) ``Requerido``. Respuesta de la pregunta.
-                
-                      ??? example "Posibles valores"
-                          --8<-- "includes/enum/examenResponseQuestions.md"
-
           - **``CancellationConditions``**: (``object``). Indica las políticas de cancelación que se aplican al cancelar la venta de este producto.
           - **``IsRefundable``**: (``boolean``). Indica si el cliente puede cancelar gratis en algún momento.
           - **``Rules``**: (``list``). Reglas que se aplican al efectuar la cancelación.
