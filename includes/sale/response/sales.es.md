@@ -21,11 +21,11 @@
             - **``Code``**: (``string``). Código usado para la aplicación del cupón descuento.
           - **``FinancialRatios``**: (``Objeto``). Conceptos económicos de una venta.
             - **``ReferenceSalePrice``**: (``Objeto``). Precio de venta de referencia. 
---8<-- "includes/annex/financialRatios.es.md"
+                    --8<-- "includes/annex/financialRatios.es.md"
             - **``Discount``**: (``Objeto``). Descuento comercial.
-;--8<-- "includes/annex/financialRatios.es.md"
+                  --8<-- "includes/annex/financialRatios.es.md"
             - **``Commission``**: (``Objeto``). Coste de colaborador.
-                  ;--8<-- "includes/annex/financialRatios.es.md"
+                  --8<-- "includes/annex/financialRatios.es.md"
           - **``SalePrice``**: (``Objeto``). Precio de venta.
           - **``Tickets``**: (``object``) ``Opcional``. Lista con la información del ticket.
             - **``TicketId``**: (``string``) ``Requerido``. Identificador del ticket.
