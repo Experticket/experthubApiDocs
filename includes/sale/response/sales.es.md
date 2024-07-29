@@ -38,16 +38,16 @@
           - **``TicketEnclosureId ``**: (``string``). Identificador del recinto del ticket.
           - **``TicketEnclosureName ``**: (``string``). Nombre del recinto del ticket.
           - **``Questions``**: (``object``) ``Opcional``. Identificador del ticket.
-              - **``TicketQuestionId``**: (``string``) ``Requerido``. Identificador de la pregunta.
-              - **``Question``**: (``string``). Pregunta.
+            - **``TicketQuestionId``**: (``string``) ``Requerido``. Identificador de la pregunta.
+            - **``Question``**: (``string``). Pregunta.
         - **``CancellationConditions``**: (``object``). Indica las políticas de cancelación que se aplican al cancelar la venta de este producto.
-            - **``IsRefundable``**: (``boolean``). Indica si el cliente puede cancelar gratis en algún momento.
-            - **``Rules``**: (``list``). Reglas que se aplican al efectuar la cancelación.
-                - **``Percentage``**: (``decimal``). Porcentaje de penalización sobre el precio de la entrada.
-                - **``Amount``**: (``decimal``). Importe total de la cancelación.
-                - **``FromInclusiveDateTime``**: (``date``). Fecha desde la que se aplica la penalización (incluida). Formato IS0 8601 (YYYY-MM-DD).
-                - **``ToExclusiveDateTime``**: (``date``). Fecha hasta la que se aplica la penalización (excluida). Formato IS0 8601 (YYYY-MM-DD).
-                - **``HoursInAdvanceOfAccess``**: (``int``). Indica la cantidad de horas de antelación con respecto a la fecha de acceso a partir de las cuales se aplicará la penalización de precio indicada en Amount.
+          - **``IsRefundable``**: (``boolean``). Indica si el cliente puede cancelar gratis en algún momento.
+          - **``Rules``**: (``list``). Reglas que se aplican al efectuar la cancelación.
+            - **``Percentage``**: (``decimal``). Porcentaje de penalización sobre el precio de la entrada.
+            - **``Amount``**: (``decimal``). Importe total de la cancelación.
+            - **``FromInclusiveDateTime``**: (``date``). Fecha desde la que se aplica la penalización (incluida). Formato IS0 8601 (YYYY-MM-DD).
+            - **``ToExclusiveDateTime``**: (``date``). Fecha hasta la que se aplica la penalización (excluida). Formato IS0 8601 (YYYY-MM-DD).
+            - **``HoursInAdvanceOfAccess``**: (``int``). Indica la cantidad de horas de antelación con respecto a la fecha de acceso a partir de las cuales se aplicará la penalización de precio indicada en Amount.
   - **``Accommodations``**: (``list``). Listado de productos combinados de las actividades incluidos en la venta.
         --8<-- "includes/sale/response/accommodation.es.md"    
   - **``CombinedProducts``**: (``list``). Listado de productos combinados de las actividades incluidos en la venta.
