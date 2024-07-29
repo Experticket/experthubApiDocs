@@ -1,6 +1,6 @@
 ﻿- **`Sales`**: (`list`). Listado de ventas.
     - **`Activities`**: (`list`). Listado de actividades.
-        - [Actividad](../../annex/activity.es.md)    
+        - [Actividad](../../annex/activity.es/)    
     - **`Accommodations`**: (`list`). Listado de productos combinados de las actividades incluidos en la venta.
         --8<-- "includes/sale/response/accommodation.es.md"
     - **`CombinedProducts`**: (`list`). Listado de productos combinados de las actividades incluidos en la venta.
