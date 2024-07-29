@@ -121,6 +121,7 @@ nav:
           - Listado de solicitudes de cancelación: docs/sale/listOfSaleCancellationRequest.md
           - Documentación: docs/shoppingCart/documentation.md  
       - Anexos:
+        - Actividad: docs/annex/activity.es.md
         - Códigos de error: docs/annex/errorCodes.md
     #- FAQ: faq.md
     #- Acerca de: about.md
