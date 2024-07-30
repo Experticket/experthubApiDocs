@@ -57,6 +57,8 @@ Filtros disponibles para la obtención del listado de ventas. Estos filtros se e
         ??? info "Alojamiento"
             --8<-- "includes/sale/response/activity.es.md"
 
+- **`Actividad`**: (`int`). [actividad](../annex/activity.es.md)
+- **`Listado de ventas`**: (`int`). [List of Sales](../shoppingCart/listOfSales.md)
 - **`PageNumber`**: (`int`). Indica la página solicitada.
 - **`HasPreviousPage`**: (`boolean`). Indica si hay una página previa a la solicitada.
 - **`HasNextPage`**: (`boolean`). Indica si hay una siguiente página.
