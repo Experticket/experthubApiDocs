@@ -48,10 +48,15 @@ Filtros disponibles para la obtención del listado de ventas. Estos filtros se e
             --8<-- "includes/sale/response/combinedProduct.es.md"
 
     - **`Accommodations`**: (`list`). Listado de alojamientos incluidos en la venta.
-
-        ??? info "Alojamiento"
+        
+      - ??? info "Alojamiento"
             --8<-- "includes/sale/response/accommodation.es.md"
-  
+
+    - **`Accommodations`**: (`list`). Listado de alojamientos incluidos en la venta.
+
+        - ??? info "Alojamiento"
+          --8<-- "includes/sale/response/activity.es.md"
+
 - **`PageNumber`**: (`int`). Indica la página solicitada.
 - **`HasPreviousPage`**: (`boolean`). Indica si hay una página previa a la solicitada.
 - **`HasNextPage`**: (`boolean`). Indica si hay una siguiente página.
