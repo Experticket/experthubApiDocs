@@ -49,8 +49,8 @@ Filtros disponibles para la obtención del listado de ventas. Estos filtros se e
 
     - **`Accommodations`**: (`list`). Listado de alojamientos incluidos en la venta.
         
-         ??? info "Alojamiento"
-             --8<-- "includes/sale/response/accommodation.es.md"
+        ??? info "Alojamiento"
+            --8<-- "includes/sale/response/accommodation.es.md"
 
     - **`Accommodations2`**: (`list`). Listado de alojamientos incluidos en la venta.
 
