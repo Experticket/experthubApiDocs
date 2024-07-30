@@ -33,10 +33,10 @@ Filtros disponibles para la obtención del listado de ventas. Estos filtros se e
 
 - **`Sales`**: (`list`). Listado de ventas.
     - **`Activities`**: (`list`). Listado de actividades.
-        --8<-- "includes/sale/response/activity.es.md"
+        --8<-- "includes/sale/response/activity.es.md"~~~~
     - **`Prueba`**: Prueba.
     - **`Accommodations`**: (`list`). Listado de productos combinados de las actividades incluidos en la venta.
-        --8<-- "includes/sale/response/accommodation.es.md"
+        --8<-- "includes/sale/response/accommodation.es.md"~~~~
     - **`Prueba 1`**: Prueba 1.
     - **`CombinedProducts`**: (`list`). Listado de productos combinados de las actividades incluidos en la venta.
 - **`Prueba 2`**: Prueba 2.
