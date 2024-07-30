@@ -47,6 +47,11 @@ Filtros disponibles para la obtención del listado de ventas. Estos filtros se e
         ??? info "Producto"
             --8<-- "includes/sale/response/combinedProduct.es.md"
 
+    - **`Activities`**: (`list`). Listado de actividades.
+
+        ??? info "Actividad"
+            --8<-- "includes/sale/response/activity.es.md"
+  
 - **`PageNumber`**: (`int`). Indica la página solicitada.
 - **`HasPreviousPage`**: (`boolean`). Indica si hay una página previa a la solicitada.
 - **`HasNextPage`**: (`boolean`). Indica si hay una siguiente página.
