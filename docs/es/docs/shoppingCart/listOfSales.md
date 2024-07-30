@@ -49,13 +49,13 @@ Filtros disponibles para la obtención del listado de ventas. Estos filtros se e
 
     - **`Accommodations`**: (`list`). Listado de alojamientos incluidos en la venta.
         
-      - ??? info "Alojamiento"
-            --8<-- "includes/sale/response/accommodation.es.md"
+         ??? info "Alojamiento"
+             --8<-- "includes/sale/response/accommodation.es.md"
 
-    - **`Accommodations`**: (`list`). Listado de alojamientos incluidos en la venta.
+    - **`Accommodations2`**: (`list`). Listado de alojamientos incluidos en la venta.
 
-        - ??? info "Alojamiento"
-          --8<-- "includes/sale/response/activity.es.md"
+        ??? info "Alojamiento"
+            --8<-- "includes/sale/response/activity.es.md"
 
 - **`PageNumber`**: (`int`). Indica la página solicitada.
 - **`HasPreviousPage`**: (`boolean`). Indica si hay una página previa a la solicitada.
