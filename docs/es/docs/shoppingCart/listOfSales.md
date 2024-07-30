@@ -9,14 +9,11 @@ Este método permite obtener el listado de ventas.
 ## Estructura de la petición
 
 Requiere pasarle, como parámetro de la url (query string), los siguientes parámetros:
-Filtros disponibles para la obtención del listado de ventas. Estos filtros se envían como parámetros en la
-URL (`query string`). Filtros disponibles:
+Filtros disponibles para la obtención del listado de ventas. Estos filtros se envían como parámetros en la URL (`query string`). Filtros disponibles:
 
 - **`PartnerSaleId`**: (``string``).  ``Opcional`` Identificador del colaborador.
-- **`FromTransactionDateTime`**: (``date``).  ``Opcional`` Fecha inicial de creación de la transacción. Formato IS0
-  8601 (YYYY-MM-DD).
-- **`ToTransactionDateTime`**: (``date``).  ``Opcional`` Fecha final de creación de la transacción. Formato IS0 8601 (
-  YYYY-MM-DD).
+- **`FromTransactionDateTime`**: (``date``).  ``Opcional`` Fecha inicial de creación de la transacción. Formato IS0 8601 (YYYY-MM-DD).
+- **`ToTransactionDateTime`**: (``date``).  ``Opcional`` Fecha final de creación de la transacción. Formato IS0 8601 (YYYY-MM-DD).
 - **`FromAccessDateTime`**: (``date``).  ``Opcional`` Fecha inicial de acceso. Formato IS0 8601 (YYYY-MM-DD).
 - **`ToAccessDateTime`**: (``date``).  ``Opcional`` Fecha final de acceso. Formato IS0 8601 (YYYY-MM-DD).
 - **`ClientName`**: (``string``).  ``Opcional`` Nombre del cliente.
@@ -25,7 +22,7 @@ URL (`query string`). Filtros disponibles:
 - **`ClientDocumentIdentifier`**: (``string``).  ``Opcional`` Documento de identidad del cliente.
 - **`Page`**: (``int``).  ``Opcional`` Número de página a obtener. Valor por defecto `1`.
 - **`PageSize`**: (``int``).  ``Opcional`` Número de resultados a obtener.
-
+  
 ### Ejemplo de llamada
 
 ??? tip "Examples"
@@ -36,10 +33,13 @@ URL (`query string`). Filtros disponibles:
 
 - **`Sales`**: (`list`). Listado de ventas.
     - **`Activities`**: (`list`). Listado de actividades.
-      --8<-- "includes/sale/response/activity.es.md"
+        --8<-- "includes/sale/response/activity.es.md"
+    - **`Prueba`**: Prueba.
     - **`Accommodations`**: (`list`). Listado de productos combinados de las actividades incluidos en la venta.
-      --8<-- "includes/sale/response/accommodation.es.md"
+        --8<-- "includes/sale/response/accommodation.es.md"
+    - **`Prueba 1`**: Prueba 1.
     - **`CombinedProducts`**: (`list`). Listado de productos combinados de las actividades incluidos en la venta.
+- **`Prueba 2`**: Prueba 2.
 - **`PageNumber`**: (`int`). Indica la página solicitada.
 - **`HasPreviousPage`**: (`boolean`). Indica si hay una página previa a la solicitada.
 - **`HasNextPage`**: (`boolean`). Indica si hay una siguiente página.
