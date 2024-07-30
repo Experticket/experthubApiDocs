@@ -33,32 +33,11 @@ Filtros disponibles para la obtención del listado de ventas. Estos filtros se e
 
 - **`Sales`**: (`list`). Listado de ventas.
     - **`Activities`**: (`list`). Listado de actividades.
-        
-        ??? info "Actividad"
-            --8<-- "includes/sale/response/activity.es.md"
-        
+        - [Anexo: Actividad](../annex/activity.es.md)       
     - **`Accommodations`**: (`list`). Listado de alojamientos incluidos en la venta.
-
-        ??? info "Alojamiento"
-            --8<-- "includes/sale/response/accommodation.es.md"    
-    
+        - [Anexo: Alojamiento](../annex/accommodation.es.md)    
     - **`CombinedProducts`**: (`list`). Listado de productos combinados de las actividades incluidos en la venta.
-
-        ??? info "Producto"
-            --8<-- "includes/sale/response/combinedProduct.es.md"
-
-    - **`Accommodations`**: (`list`). Listado de alojamientos incluidos en la venta.
-        
-        ??? info "Alojamiento"
-            --8<-- "includes/sale/response/accommodation.es.md"
-
-    - **`Accommodations2`**: (`list`). Listado de alojamientos incluidos en la venta.
-
-        ??? info "Alojamiento"
-            --8<-- "includes/sale/response/activity.es.md"
-
-- **`Actividad`**: (`int`). [actividad](../annex/activity.es.md)
-- **`Listado de ventas`**: (`int`). [List of Sales](../shoppingCart/listOfSales.md)
+        - [Anexo: Producto Combinado](../annex/combinedProduct.es.md)
 - **`PageNumber`**: (`int`). Indica la página solicitada.
 - **`HasPreviousPage`**: (`boolean`). Indica si hay una página previa a la solicitada.
 - **`HasNextPage`**: (`boolean`). Indica si hay una siguiente página.
