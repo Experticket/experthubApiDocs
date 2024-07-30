@@ -44,8 +44,6 @@ Filtros disponibles para la obtención del listado de ventas. Estos filtros se e
 
 --8<-- "includes/experthubResponseBaseDocumentation.es.md"
 
---8<-- "includes/sale/response/activity.es.md"
-
 ### Ejemplo de respuesta
 
 ??? tip "Examples"
