@@ -10,6 +10,16 @@
     - **`ProviderName`**: (`string`). Nombre del proveedor.
     - **`Price`**: (`decimal`). Indica el precio al que se ha vendido el producto.
     - **`PriceWithoutVat`**: (`decimal`). Indica el precio al que se ha vendido el producto sin impuestos.
+    - **`PriceMode`**: (`int`). Tipo de precio:
+
+        ??? example "Posibles valores"
+            --8<-- "includes/enum/priceMode.md"
+
+    - **`Status`**: (`int`). Tipo de precio.
+
+        ??? example "Posibles valores"
+            --8<-- "includes/enum/activityStatus.md"
+  
     - **`Discount`**: (`decimal`). Descuento total aplicado al producto. Solo aparece si se ha aplicado algún cupón descuento.
     - **`DiscountCoupons`**: (`list`). Cupones descuento aplicados al producto. Solo aparece en caso de que al producto se le haya aplicado algún cupón descuento.
         - **`DiscountCouponId`**: (`string`). Identificado del cupón descuento.
