@@ -33,9 +33,9 @@ Filtros disponibles para la obtención del listado de ventas. Estos filtros se e
 
 - **`Sales`**: (``list``). Listado de ventas.
     - **`Activities`**: (``list``). Listado de actividades.
-            --8<-- "includes/sale/response/activity.es.md"
+        --8<-- "includes/sale/response/activity.es.md"
     - **`Accommodations`**: (``list``). Listado de productos combinados de las actividades incluidos en la venta.
-          --8<-- "includes/sale/response/accommodation.es.md"
+        --8<-- "includes/sale/response/accommodation.es.md"
     - **`CombinedProducts`**: (``list``). Listado de productos combinados de las actividades incluidos en la venta.
 - **`PageNumber`**: (``int``). Indica la página solicitada.
 - **`HasPreviousPage`**: (``boolean``). Indica si hay una página previa a la solicitada.
