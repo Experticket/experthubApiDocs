@@ -39,8 +39,8 @@ Filtros disponibles para la obtención del listado de ventas. Estos filtros se e
         
     - **`Accommodations`**: (`list`). Listado de productos combinados de las actividades incluidos en la venta.
 
-        ??? info "Alojamiento"
-            --8<-- "includes/sale/response/accommodation.es.md"    
+        ??? info "Actividad"
+              --8<-- "includes/sale/response/activity.es.md"   
 
     - **`CombinedProducts`**: (`list`). Listado de productos combinados de las actividades incluidos en la venta.
 
