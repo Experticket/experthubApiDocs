@@ -49,4 +49,4 @@ Filtros disponibles para la obtención del listado de ventas. Estos filtros se e
 
 ??? tip "Examples"
 
-    --8<-- "includes/examples/shoppingCart/sale.response.1.md"
+    --8<-- "includes/examples/shoppingCart/listOfSales.response.1.md"

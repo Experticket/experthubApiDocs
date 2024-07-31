@@ -13,6 +13,28 @@
     }
     ```
 
+=== "Add a combined activities(Combined product)"
+
+    ``` json
+    {
+        "ShoppingCartId": "stf9gy7i3xawa",
+        "Activities": [
+            {
+                "ProductId": "yt1pgb1k61wdc",
+                "CombinedProductId": "j7gjproc9c6sw",
+                "AccessDateTime": "2023-01-25",
+                "Quantity": 1
+            },
+            {
+                "ProductId": "ppyibu8qwb88s",
+                "CombinedProductId": "j7gjproc9c6sw",
+                "AccessDateTime": "2023-01-26",
+                "Quantity": 1
+            }
+        ]
+    }
+    ```
+
 === "Add an accommodation"
 
     ``` json

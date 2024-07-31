@@ -17,6 +17,36 @@
     }
     ```
 
+=== "When an combined activity is added"
+
+    ``` json
+    {
+        "Success": true,
+        "Activities": [
+            {
+                "Id": "ygqbw4q8owhue",
+                "Activity": {
+                    "ProductId": "yt1pgb1k61wdc",
+                    "CombinedProductId": "j7gjproc9c6sw",
+                    "Quantity": 1,
+                    "AccessDateTime": "2023-01-25T00:00:00",
+                    "ForceNotAutoAssignSeating": false
+                }
+            },
+             {
+                "Id": "sdfhiq8owhue",
+                "Activity": {
+                    "ProductId": "ppyibu8qwb88s",
+                    "CombinedProductId": "j7gjproc9c6sw",
+                    "Quantity": 1,
+                    "AccessDateTime": "2023-01-26T00:00:00",
+                    "ForceNotAutoAssignSeating": false
+                }
+            }
+        ]
+    }
+    ```
+
 === "When an accommodation is added"
 
     ``` json
