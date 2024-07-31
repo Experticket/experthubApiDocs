@@ -24,6 +24,7 @@ Una vez que se ha confirmado la reserva, ya no es posible añadir más productos
 - **`Activities`**: (``object``). Información sobre la actividad añadida.
     - **`Products`**: (``list``). Listado de productos añadidos.
         - **`ProductId`**: (``string``). Identificador del producto añadido.
+        - **`CombinedProductId`**: (``string``). Identificador del producto combinado añadido.
         - **`ProductName`**: (``string``). Nombre del producto añadido.
         - **`AccessDateTime`**: (``dateTime``). Fecha y hora de acceso. Formato IS0 8601 (YYYY-MM-DDThh\:mm\:ss.d).
         - **``Price``**: (``decimal``). Precio de la tarifa.

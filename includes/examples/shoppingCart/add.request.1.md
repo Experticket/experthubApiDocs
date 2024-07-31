@@ -13,7 +13,7 @@
     }
     ```
 
-=== "Add a combined activities(Combined product)"
+=== "Add a combined activity(Combined product)"
 
     ``` json
     {
