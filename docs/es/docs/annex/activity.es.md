@@ -50,7 +50,7 @@
         - **`Questions`**: (`object`) `Opcional`. Identificador del ticket.
             - **`TicketQuestionId`**: (`string`) `Requerido`. Identificador de la pregunta.
             - **`Question`**: (`string`). Pregunta.
-            - **`StringValue`**: (``string``). Respuesta de de ejemplo de tipo `string`.            
+            - **`StringValue`**: (`string`). Respuesta de de ejemplo de tipo `string`.
     - **`CancellationConditions`**: (`object`). Indica las políticas de cancelación que se aplican al cancelar la venta de este producto.
         - **`IsRefundable`**: (`boolean`). Indica si el cliente puede cancelar gratis en algún momento.
         - **`Rules`**: (`list`). Reglas que se aplican al efectuar la cancelación.
