@@ -81,6 +81,7 @@ Es relevante tener en cuenta las propiedades **``Id``** que son devueltas en la 
                 - **`SessionId`**: (``string``). Identificador de la sesión.
                 - **`Questions`**: (``object``). Información sobre las preguntas.
                     - **`TicketQuestionId`**: (``string``). Identificador de la pregunta.
+                    - **`Question`**: (`string`). Pregunta.
                     - **`StringValue`**: (``string``). Respuesta de la pregunta.
                      
                     ??? info "Información adicional"
