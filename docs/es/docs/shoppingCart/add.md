@@ -82,13 +82,11 @@ Es relevante tener en cuenta las propiedades **``Id``** que son devueltas en la 
                 - **`Questions`**: (``object``). Información sobre las preguntas.
                     - **`TicketQuestionId`**: (``string``). Identificador de la pregunta.
                     - **`StringValue`**: (``string``). Respuesta de la pregunta.
-
-                      ??? info "Información adicional"
-                        - Dependiendo del tipo de pregunta se tienen que enviar el valor de la respuesta en una propiedad u otra. Es decir, por ejemplo, si la pregunta es de tipo texto(`DataType`= 0), habría que rellenar la propiedad `StringValue`. 
-                        - Otro ejemplo, en caso de que fuese de tipo fecha(`DataType` = 4), habría que rellenar la propiedad `DateTimeValue` y así sucesivamente.               
-                        ??? example "Posibles valores"
-                            --8<-- "includes/enum/examenResponseQuestions.md"
-
+                     
+                    ??? info "Información adicional"
+                        - Dependiendo del tipo de pregunta se tienen que enviar el valor de la respuesta en una propiedad u otra. Es decir, por ejemplo, si la pregunta es de tipo texto(`DataType`= 0), se devolverá la propiedad `StringValue`. 
+                        - Otro ejemplo, en caso de que fuese de tipo fecha(`DataType` = 4), se devolverá la propiedad `DateTimeValue` y así sucesivamente.
+                         
 - **`Accommodations`**: (``list``). Listado de los alojamientos añadidos en la **petición actual**. Si no se ha añadido alojamientos, esta propiedad no aparecerá.
     - **`Accommodation`**: (``object``). Información del alojamiento añadido.
         - **`Id`**: (``string``). Identificador que se ha asignado a este alojamiento dentro del carrito.
