@@ -1,3 +1,0 @@
-- Cuando alguno de los tickets de los productos del catálogo que queremos añadir al carrito tiene rellena la propiedad `TicketsQuestionsProfileId`(identificador del perfil de una pregunta), debemos de comprobar las [preguntas de tickets](../../docs/activity/CheckTicketQuestions.md) para saber qué preguntas de tickets tiene esa actividad.
-- Dependiendo del tipo de pregunta se tienen que enviar el valor de la respuesta en una propiedad u otra. Es decir, por ejemplo, si la pregunta es de tipo texto(`DataType`= 0), habría que rellenar la propiedad `StringValue`. 
-- Otro ejemplo, en caso de que fuese de tipo fecha(`DataType` = 4), habría que rellenar la propiedada `DateTimeValue` y así sucesivamente.            
