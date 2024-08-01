@@ -51,6 +51,12 @@
             - **`TicketQuestionId`**: (`string`) `Requerido`. Identificador de la pregunta.
             - **`Question`**: (`string`). Pregunta.
             - **`StringValue`**: (`string`). Respuesta de de ejemplo de tipo `string`.
+            ??? info "Información adicional"
+                - Dependiendo del tipo de pregunta se tienen que enviar el valor de la respuesta en una propiedad u otra. Es decir, por ejemplo, si la pregunta es de tipo texto(`DataType`= 0), se devolverá la propiedad `StringValue`. 
+                - Otro ejemplo, en caso de que fuese de tipo fecha(`DataType` = 4), se devolverá la propiedad `DateTimeValue` y así sucesivamente.
+                ??? example "Posibles valores"
+                    --8<-- "includes/enum/examenResponseQuestions.md"
+                
     - **`CancellationConditions`**: (`object`). Indica las políticas de cancelación que se aplican al cancelar la venta de este producto.
         - **`IsRefundable`**: (`boolean`). Indica si el cliente puede cancelar gratis en algún momento.
         - **`Rules`**: (`list`). Reglas que se aplican al efectuar la cancelación.
