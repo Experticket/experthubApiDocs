@@ -13,6 +13,27 @@
     }
     ```
 
+=== "Add an activity with ticket questions"
+
+    ``` json
+    {
+        "ShoppingCartId": "stf9gy7i3xawa",
+        "Activities": [
+            {
+                "ProductId": "yt1pgb1k61wdc",
+                "AccessDateTime": "2023-01-25",
+                "Quantity": 1,
+                "Questions": [
+                    {
+                        "TicketQuestionId": "ik375myid33uq",                      
+                        "DecimalAnswer": 11.2
+                    }
+                ]
+            }
+        ]
+    }
+    ```
+
 === "Add a combined activity(Combined product)"
 
     ``` json

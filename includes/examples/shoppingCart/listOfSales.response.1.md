@@ -55,7 +55,20 @@
                             "AccessEndDateTime": "2024-08-02T00:00:00",
                             "SuggestedAccessDateMessage": "2/8/2024",
                             "EnclosureId": "shcbo55y5am5c",
-                            "EnclosureName": "Recinto 1"
+                            "EnclosureName": "Recinto 1",
+                            "Questions": [
+                                {
+                                    "TicketQuestionId": "ik375myid33uq",
+                                    "Question": "decimal",
+                                    "DecimalAnswer": 11.2
+                                },
+                                {
+                                    "TicketQuestionId": "od4gMH90dh34G",
+                                    "Question": "¿Selector question?",
+                                    "MaxNumberOfValues": 2,
+                                    "Values": []
+                                }
+                            ]
                         }
                     ],
                     "ProviderId": "1tnsbzkpnoz1o",
