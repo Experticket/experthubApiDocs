@@ -23,12 +23,16 @@ Podemos añadir uno o varios productos en una o varias llamadas, según las nece
             - **``TicketId``**: (``string``) ``Requerido``. Identificador del ticket.
             - **``SessionId``**: (``string``) ``Opcional``. Identificador de la sesión.
             - **``AccessDateTime``**: (``date``) ``Requerido``. Fecha de acceso. Formato IS0 8601 (YYYY-MM-DD).
-            - **``Questions``**: (``object``) ``Opcional``. Identificador del ticket.
+            - **``Questions``**: (``list``) ``Opcional``. Listado de respuestas de preguntas sobre tickets.
+            
+                ??? info "Información adicional"
+                     --8<-- "includes/annex/addTicketQuestionInfo.md"
+                  
                 - **``TicketQuestionId``**: (``string``) ``Requerido``. Identificador de la pregunta.
                 - **``StringValue``**: (``string``) ``Requerido``. Respuesta de la pregunta.
-
-            ??? example "Posibles valores"
-                --8<-- "includes/enum/examenResponseQuestions.md"
+           
+                ??? example "Posibles valores"
+                    --8<-- "includes/enum/examenResponseQuestions.md"
 
 - **``Accommodations``**: (``list``) ``Opcional``. Listado de alojamientos a añadir al carrito.
     - **``Accommodation``**: (``object``) ``Opcional``. Información del alojamiento.
