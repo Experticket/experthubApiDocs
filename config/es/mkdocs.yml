@@ -94,6 +94,7 @@ nav:
           - Comprobar método de entrega: docs/activity/checkDeliveryMethods.md
           - Canje de tickets: docs/activity/ticketExchange.md
         - Comprobar cupones descuento: docs/activity/checkDiscountCoupons.md
+        - Comprobar pólizas de seguro: docs/activity/checkInsurancePolicies.md
         - Etiquetas: docs/activity/tags.md
       - Alojamiento:
         - Catálogo básico: docs/accommodation/basicCatalog.md

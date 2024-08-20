@@ -79,7 +79,12 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
             - 2: Requiere tramitación por parte del proveedor.
 
     - **`IsForGroups`**: (``boolean``). Indica si los productos del proveedor están destinados a la venta para grupos.
-    - **``IsForSeasonTickets``**: (``boolean``). Indica si los productos del proveedor son abonos de temporada.
+    - **`IsForSeasonTickets`**: (``boolean``). Indica si los productos del proveedor son abonos de temporada.
+    - **`IsInsurable`**: (`boolean`) `Opcional`. Indica sí para este producto es posible añadir un seguro de cancelación.
+                    
+        ??? tip "Implicaciones"
+            En caso de estar definido como `#!csharp true` será necesario antes de iniciar cualquier venta hacer la llamada para [comprobar pólizas disponibles](checkInsurancePolicies.md). Esta función nos devolverá un listado de polizas disponibles con sus identificadores. Si queremos añadir una de estas polizas a la venta, pasaremos dicho identificador de poliza(`InsurancePolicyId`) al finalizar la venta.
+    - 
     - **`LimitOfNumberOfPeopleToBeGroup`**: (``int``). Límite del número de personas que conforman un producto a partir del cual la venta se considera para "grupos". Por ejemplo, si este límite es "19" y el proveedor no es para grupos (`#!csharp IsForGroups == false`), no se aceptarán ventas con 20 o más personas. Por contra, si el proveedor es para grupos (`#!csharp IsForGroups == true`), solo se aceptarán ventas para 20 o más personas.
     - **`Logo`**: (``string``). Url para descargar la imagen del logotipo del proveedor.
     - **`Tags`**: (``list``). Array de [identificadores de etiquetas](tags.md) aplicadas al proveedor.
@@ -136,6 +141,11 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
             - **`ProductBaseName`**: (``string``). Nombre de la categoría.
             - **`ProductBaseDescription`**: (``string``). DDscripción de la categoría. Suele contener las condiciones comunes al todos sus productos.
             - **`LimitOfNumberOfPeopleToBeGroup`**: (``int``) ``Opcional``. Mismo significado que la propiedad `LimitOfNumberOfPeopleToBeGroup` en el nodo `Provider`. Si está especificado se usará el más restrictivo entre este valor y el de proveedor.
+            - **`IsInsurable`**: (`boolean`) `Opcional`. Indica sí para este producto es posible añadir un seguro de cancelación.
+                    
+                ??? tip "Implicaciones"
+                    En caso de estar definido como `#!csharp true` será necesario antes de iniciar cualquier venta hacer la llamada para [comprobar pólizas disponibles](checkInsurancePolicies.md). Esta función nos devolverá un listado de polizas disponibles con sus identificadores. Si queremos añadir una de estas polizas a la venta, pasaremos dicho identificador de poliza(`InsurancePolicyId`) al finalizar la venta.
+               
             - **`Products`**: (``list``). Array de productos.
                 - **`ProductId`**: (``string``). Identificador del producto. Alfanumérico de 13 caracteres.
                 - **`ProductName`**: (``string``). Nombre del producto.
@@ -169,6 +179,11 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
 
                     ??? tip "Implicaciones"
                         En caso de estar definido como `#!csharp true` será necesario antes de iniciar cualquier venta hacer la llamada para [consultar el precio en tiempo real](realTimePrices.md). Ya que el precio del producto puede ser diferente en función de algunos criterios.
+
+                - **`IsInsurable`**: (`boolean`) `Opcional`. Indica sí para este producto es posible añadir un seguro de cancelación.
+                    
+                    ??? tip "Implicaciones"
+                        En caso de estar definido como `#!csharp true` será necesario antes de iniciar cualquier venta hacer la llamada para [comprobar pólizas disponibles](checkInsurancePolicies.md). Esta función nos devolverá un listado de polizas disponibles con sus identificadores. Si queremos añadir una de estas polizas a la venta, pasaremos dicho identificador de poliza(`InsurancePolicyId`) al finalizar la venta.
 
                 - **``IsForPackaging``**: (``boolean``). Indica si el producto requiere ser empaquetado, por ejemplo, con alojamiento.
                 - **`ValidDays`**: (``int``). Días de validez.
