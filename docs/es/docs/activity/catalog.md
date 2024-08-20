@@ -84,7 +84,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                     
         ??? tip "Implicaciones"
             En caso de estar definido como `#!csharp true` será necesario antes de iniciar cualquier venta hacer la llamada para [comprobar pólizas disponibles](checkInsurancePolicies.md). Esta función nos devolverá un listado de polizas disponibles con sus identificadores. Si queremos añadir una de estas polizas a la venta, pasaremos dicho identificador de poliza(`InsurancePolicyId`) al finalizar la venta.
-    - 
+    
     - **`LimitOfNumberOfPeopleToBeGroup`**: (``int``). Límite del número de personas que conforman un producto a partir del cual la venta se considera para "grupos". Por ejemplo, si este límite es "19" y el proveedor no es para grupos (`#!csharp IsForGroups == false`), no se aceptarán ventas con 20 o más personas. Por contra, si el proveedor es para grupos (`#!csharp IsForGroups == true`), solo se aceptarán ventas para 20 o más personas.
     - **`Logo`**: (``string``). Url para descargar la imagen del logotipo del proveedor.
     - **`Tags`**: (``list``). Array de [identificadores de etiquetas](tags.md) aplicadas al proveedor.

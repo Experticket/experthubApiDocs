@@ -1,16 +1,16 @@
 # Comprobar seguro de reembolso
 
-Mediante este método podemos comprobar las pólizas de seguro de reembolso uno o varios productos, para una o múltiples fechas de acceso, precios.
+Mediante este método podemos comprobar las pólizas de seguro de reembolso para uno o varios productos, una o múltiples fechas de acceso y diferentes precios.
 
 !!! success ""
-    Si el producto no tiene el campo **`IsInsurable`** del [catálogo](catalog.md) definido a `#!csharp true` entonces no es necesario realizar esta llamada.
+    Si el  proveedor/categoría/producto NO tiene el campo **`IsInsurable`** del [catálogo](catalog.md) definido a `#!csharp true` entonces no es necesario realizar esta llamada.
 
 !!! warning ""
-    Si el producto tiene el campo **`IsInsurable`** del [catálogo](catalog.md) definido a `#!csharp true` entonces debemos realizar esta llamada cada vez que queramos ofrecer al cliente dicho producto para conocer si tiene la posibilidad de contratar un seguro de reembolso.
+    Si el proveedor/categoría/producto tiene el campo **`IsInsurable`** del [catálogo](catalog.md) definido a `#!csharp true` entonces debemos realizar esta llamada cada vez que queramos ofrecer al cliente dicho la posibilidad de contratar un seguro de reembolso de 1 o N productos.
 
 !!! info "¿Por qué hablamos de pólizas de seguro de reembolsos?"
 
-    A nivel de producto, categoría y/o proveedor existe la posibilidad de contratar una póliza de seguro de reembolso para una venta.
+    Cuando vamos a finalizar la venta existe la posibilidad de contratar una póliza de seguro de reembolso de 1 o N productos que componen la venta.
 
 ## Método de acceso
 
