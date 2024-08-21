@@ -10,6 +10,11 @@ Este método confirma la reserva realizada previamente en nuestros sistemas.
 
 - **``ShoppingCartId``**: (``string``) ``Requerido``. Identificador del carrito.
 - **``PartnerSaleId``**: (``string``) ``Requerido``. Identificador del colaborador.
+- **``InsurancePolicyId``**: (``string``) ``Opcional``. Identificador de la póliza de seguro de reembolso.
+
+    ??? tip "Información"
+        Este identificador se obtiene al hacer la llamada para [comprobar pólizas disponibles](../activity/checkInsurancePolicies.md). Esta función nos devolverá un listado de polizas disponibles con sus identificadores(Id). Ese identificador es el que debemos usar en este campo.
+
 - **``DiscountCouponCodes``**: (``list``) ``Opcional``. Listado de cupones (descuentos/promociones) que emite el recinto mediante esta plataforma.
     - **``(string)``**: (``list``) ``Requerido``. Código del cupón.
 - **``Client``**: (``object``) ``Opcional``. Información del cliente. Si la venta contiene hoteles, esta propiedad es obligatoria. Si únicamente contiene actividades, este parámetro dependerá de la configuración que se haya acordado con el colaborador.

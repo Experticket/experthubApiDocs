@@ -83,7 +83,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
     - **`IsInsurable`**: (`boolean`) `Opcional`. Indica sí para este producto es posible añadir un seguro de cancelación.
                     
         ??? tip "Implicaciones"
-            En caso de estar definido como `#!csharp true` será necesario antes de iniciar cualquier venta hacer la llamada para [comprobar pólizas disponibles](checkInsurancePolicies.md). Esta función nos devolverá un listado de polizas disponibles con sus identificadores. Si queremos añadir una de estas polizas a la venta, pasaremos dicho identificador de poliza(`InsurancePolicyId`) al finalizar la venta.
+            En caso de estar definido como `#!csharp true` será necesario antes de iniciar cualquier venta hacer la llamada para [comprobar pólizas disponibles](checkInsurancePolicies.md). Esta función nos devolverá un listado de polizas disponibles con sus identificadores. Si queremos añadir una de estas polizas a la venta, pasaremos dicho identificador(`Id`) de poliza en la propiedad `InsurancePolicyId` en la [Confirmación de la reserva](../shoppingCart/sale.md).
     
     - **`LimitOfNumberOfPeopleToBeGroup`**: (``int``). Límite del número de personas que conforman un producto a partir del cual la venta se considera para "grupos". Por ejemplo, si este límite es "19" y el proveedor no es para grupos (`#!csharp IsForGroups == false`), no se aceptarán ventas con 20 o más personas. Por contra, si el proveedor es para grupos (`#!csharp IsForGroups == true`), solo se aceptarán ventas para 20 o más personas.
     - **`Logo`**: (``string``). Url para descargar la imagen del logotipo del proveedor.
@@ -144,7 +144,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
             - **`IsInsurable`**: (`boolean`) `Opcional`. Indica sí para este producto es posible añadir un seguro de cancelación.
                     
                 ??? tip "Implicaciones"
-                    En caso de estar definido como `#!csharp true` será necesario antes de iniciar cualquier venta hacer la llamada para [comprobar pólizas disponibles](checkInsurancePolicies.md). Esta función nos devolverá un listado de polizas disponibles con sus identificadores. Si queremos añadir una de estas polizas a la venta, pasaremos dicho identificador de poliza(`InsurancePolicyId`) al finalizar la venta.
+                    En caso de estar definido como `#!csharp true` será necesario antes de iniciar cualquier venta hacer la llamada para [comprobar pólizas disponibles](checkInsurancePolicies.md). Esta función nos devolverá un listado de polizas disponibles con sus identificadores. Si queremos añadir una de estas polizas a la venta, pasaremos dicho identificador(`Id`) de poliza en la propiedad `InsurancePolicyId` en la [Confirmación de la reserva](../shoppingCart/sale.md).
                
             - **`Products`**: (``list``). Array de productos.
                 - **`ProductId`**: (``string``). Identificador del producto. Alfanumérico de 13 caracteres.
@@ -183,7 +183,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                 - **`IsInsurable`**: (`boolean`) `Opcional`. Indica sí para este producto es posible añadir un seguro de cancelación.
                     
                     ??? tip "Implicaciones"
-                        En caso de estar definido como `#!csharp true` será necesario antes de iniciar cualquier venta hacer la llamada para [comprobar pólizas disponibles](checkInsurancePolicies.md). Esta función nos devolverá un listado de polizas disponibles con sus identificadores. Si queremos añadir una de estas polizas a la venta, pasaremos dicho identificador de poliza(`InsurancePolicyId`) al finalizar la venta.
+                        En caso de estar definido como `#!csharp true` será necesario antes de iniciar cualquier venta hacer la llamada para [comprobar pólizas disponibles](checkInsurancePolicies.md). Esta función nos devolverá un listado de polizas disponibles con sus identificadores. Si queremos añadir una de estas polizas a la venta, pasaremos dicho identificador(`Id`) de poliza en la propiedad `InsurancePolicyId` en la [Confirmación de la reserva](../shoppingCart/sale.md).
 
                 - **``IsForPackaging``**: (``boolean``). Indica si el producto requiere ser empaquetado, por ejemplo, con alojamiento.
                 - **`ValidDays`**: (``int``). Días de validez.
