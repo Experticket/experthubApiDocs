@@ -88,7 +88,9 @@
             ],
             "PointOfSaleCustomCodes": [],
             "EconomicMovementAmount": 0.00,
-            "EconomicMovementAmountWithoutTax": 0.0
+            "EconomicMovementAmountWithoutTax": 0.0,
+            "InsurancePolicyAmount": 0.00,
+            "InsurancePolicyAmountWithoutTax": 0.0
         }
     ],
     "PageNumber": 1,

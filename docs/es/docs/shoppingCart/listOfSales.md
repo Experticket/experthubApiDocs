@@ -32,12 +32,21 @@ Filtros disponibles para la obtención del listado de ventas. Estos filtros se e
 ## Estructura de la respuesta
 
 - **`Sales`**: (`list`). Listado de ventas.
+    - **`PartnerSaleId`**: (`string`). Identificador del colaborador.    
     - **`Activities`**: (`list`). Listado de actividades.
         - [Anexo: Actividad](../annex/activity.es.md)       
     - **`Accommodations`**: (`list`). Listado de alojamientos incluidos en la venta.
         - [Anexo: Alojamiento](../annex/accommodation.es.md)    
     - **`CombinedProducts`**: (`list`). Listado de productos combinados de las actividades incluidos en la venta.
         - [Anexo: Producto Combinado](../annex/combinedProduct.es.md)
+    - **`Client`**: (`object`). Datos del cliente de la venta.
+        - [Anexo: Cliente](../annex/client.es.md)
+    - **`TotalPrice`**: (`decimal`). Indica el precio total de la venta.
+    - **`TotalPriceWithoutVat`**: (`decimal`). Indica el precio total de la venta sin impuestos.
+    - **`TotalDiscount`**: (`decimal`). Descuento total aplicado sobre la venta. Solo aparece si se ha aplicado algún cupón descuento.
+    - **`InsurancePolicyAmount`**: (`decimal`). Indica el precio total del seguro de reembolso.
+    - **`InsurancePolicyAmountWithoutTaxes`**: (`decimal`). Indica el precio total del seguro de reembolso sin impuestos.
+    
 - **`PageNumber`**: (`int`). Indica la página solicitada.
 - **`HasPreviousPage`**: (`boolean`). Indica si hay una página previa a la solicitada.
 - **`HasNextPage`**: (`boolean`). Indica si hay una siguiente página.

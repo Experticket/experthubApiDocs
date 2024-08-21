@@ -24,12 +24,11 @@ This method allows creating a cancellation request for a sale.
 ## Response Structure
 
 - **`Timestamp`**: (`dateTime`). The time when the request was processed. ISO 8601 format (yyyy-MM-ddThh:mm:ss.fffffff).
-- **`Sales`**: (`list`). List of sales.
-  - **`PartnerSaleId`**: (`string`). List of activities.
+- **`Sales`**: (`list`). List of sales.  
   - **`CancellationRequests`**: (`object`). Economic concepts of a sale.
   - **`ExperticketName`**: (`string`). Name of Experticket.
   - **`CancellationRequestId`**: (`string`). Identifier of the cancellation request.
-  - **`SaleId`**: (`object`). Identifier of the sale.
+  - **`SaleId`**: (`string`). Identifier of the sale.
   - **`PartnerSaleId`**: (`string`). Identifier of the partner's sale.
   - **`CreatedDateTime`**: (`date`). Date of the cancellation request.
   - **`UpdatedDateTime`**: (`date`). Date of the cancellation request update.
