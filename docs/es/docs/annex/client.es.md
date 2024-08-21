@@ -1,6 +1,6 @@
-# Información del cliente
+ï»¿# InformaciÃ³n del cliente
 
-- **`Client`**: (``object``). Información sobre el cliente.
+- **`Client`**: (`object`). InformaciÃ³n sobre el cliente.
 	- **`Id`**: (`string`). Identificador del cliente.
 	- **`CreatedDate`**: (`dateTime`). Fecha en que se dio de alta.
 	- **`BirthDate`**: (`dateTime`). Fecha de nacimiento.
@@ -8,11 +8,11 @@
 	- **`Surname`**: (`string`). Apellido 1.
 	- **`Surname2`**: (`string`). Apellido 2.	
 	- **`Email`**: (`string`). Email.
-	- **`PhoneNumber`**: (`string`). Número de teléfono.
-	- **`DocumentIdentifier`**: (`string`). Identificación (DNI, pasaporte...).
-	- **`CountryCode`**: (`string`). Código de país.
+	- **`PhoneNumber`**: (`string`). NÃºmero de telÃ©fono.
+	- **`DocumentIdentifier`**: (`string`). IdentificaciÃ³n (DNI, pasaporte...).
+	- **`CountryCode`**: (`string`). CÃ³digo de paÃ­s.
 	- **`LanguageCode`**: (`string`). Tipo de precio.
 	- **`Gender`**: (`byte`). Sexo (opcional).
 	- **`Province`**: (`string`). Provincia.
 	- **`City`**: (`string`). Ciudad.
-	- **`ZipCode`**: (`string`). Código postal.
+	- **`ZipCode`**: (`string`). CÃ³digo postal.
