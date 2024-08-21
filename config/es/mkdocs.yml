@@ -125,6 +125,7 @@ nav:
         - Actividad: docs/annex/activity.es.md
         - Alojamiento: docs/annex/accommodation.es.md
         - Producto Combinado: docs/annex/combinedProduct.es.md
+        - Cliente: docs/annex/client.es.md
         - Códigos de error: docs/annex/errorCodes.md
     #- FAQ: faq.md
     #- Acerca de: about.md
