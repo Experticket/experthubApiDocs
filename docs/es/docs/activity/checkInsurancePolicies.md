@@ -19,10 +19,10 @@ Mediante este método podemos comprobar las pólizas de seguro de reembolso para
 ## Estructura de la petición
 
 - **`LanguageCode`**: (``string``). Define el idioma en que se mostrarán los textos. *Formato ISO 639-1*.
-- **`Sale`**: (``list``). Array de productos combinados.    
-    - **`Products`**: (``list``). Array de productos incluidos en el producto combinado.
+- **`Sale`**: (``object``). Datos de la venta.    
+    - **`Products`**: (``list``). Array de productos sobre los que se quieren consultar las pólizas de seguros.
         - **`Id`**: (``string``). Identificador del cliente. Este se devolverá en la respuesta.
-        - **`ProductId`**: (``string``). Identificador del producto combinado.
+        - **`ProductId`**: (``string``). Identificador del producto.
         - **`AccessDate`**: (``date``). Fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
         - **`Price`**: (``decimal``). Precio del producto para esa fecha.
 
@@ -37,10 +37,10 @@ Mediante este método podemos comprobar las pólizas de seguro de reembolso para
     - **`Name`**: (``string``). Nombre de póliza.    
     - **`Quote`**: (``decimal``). Impuesto de la póliza.
     - **`CoverageAmount`**: (``decimal``). Cantidad de la cobertura de la póliza.
-    - **`Sale`**: (``list``). Array de productos combinados.    
-        - **`Products`**: (``list``). Array de productos incluidos en el producto combinado.
+    - **`Sale`**: (``object``). Información de la venta.    
+        - **`Products`**: (``list``). Array de productos incluidos.
             - **`Id`**: (``string``). Identificador del cliente. Este se devolverá en la respuesta.
-            - **`ProductId`**: (``string``). Identificador del producto combinado.
+            - **`ProductId`**: (``string``). Identificador del producto.
             - **`AccessDate`**: (``date``). Fecha de acceso. *Formato ISO 8601 (yyyy-MM-dd)*.
             - **`Price`**: (``decimal``). Precio del producto para esa fecha.    
             - **`CoverageAmount`**: (``decimal``). Cantidad que cubre el seguro de reembolso.    
