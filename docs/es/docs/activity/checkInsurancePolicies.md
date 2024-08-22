@@ -35,7 +35,7 @@ Mediante este método podemos comprobar las pólizas de seguro de reembolso para
 - **`InsurancePolicies`**: (``list``). Array de pólizas de seguro de reembolso.
     - **`Id`**: (``string``). Identificador de póliza.
     - **`Name`**: (``string``). Nombre de póliza.    
-    - **`Quote`**: (``decimal``). Valor de cotización de la póliza.
+    - **`Quote`**: (``decimal``). Valor de cotización de la póliza, es decir, el precio que le cuesta la póliza al cliente.
     - **`CoverageAmount`**: (``decimal``). Cantidad de la cobertura de la póliza.
     - **`Sale`**: (``object``). Información de la venta.    
         - **`Products`**: (``list``). Array de productos incluidos.
