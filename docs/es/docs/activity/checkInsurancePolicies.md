@@ -14,7 +14,7 @@ Mediante este método podemos comprobar las pólizas de seguro de reembolso para
 
 ## Método de acceso
 
-**POST** /activity/InsurancePoliciesCheck
+**POST** /activity/InsurancePolicyCheck 
 
 ## Estructura de la petición
 
