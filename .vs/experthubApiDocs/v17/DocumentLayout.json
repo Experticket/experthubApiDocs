@@ -1,0 +1,743 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\checkInsurancePolicies.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\es\\docs\\activity\\checkInsurancePolicies.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\CheckTicketsQuestions.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\es\\docs\\activity\\CheckTicketsQuestions.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\activity\\checkInsurancePoliciesQueryExamples.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:includes\\examples\\activity\\checkInsurancePoliciesQueryExamples.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\shoppingCart\\sale.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\es\\docs\\shoppingCart\\sale.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\config\\es\\mkdocs.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:config\\es\\mkdocs.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\shoppingCart\\confirm.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\es\\docs\\shoppingCart\\confirm.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\annex\\client.es.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\es\\docs\\annex\\client.es.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\annex\\combinedProduct.es.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\es\\docs\\annex\\combinedProduct.es.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\annex\\errorCodes.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\es\\docs\\annex\\errorCodes.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\annex\\activity.es.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\es\\docs\\annex\\activity.es.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\shoppingCart\\listOfSales.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\es\\docs\\shoppingCart\\listOfSales.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\catalog.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\es\\docs\\activity\\catalog.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\shoppingCart\\listOfSales.response.1.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:includes\\examples\\shoppingCart\\listOfSales.response.1.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\annex\\accommodation.es.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\es\\docs\\annex\\accommodation.es.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\en\\docs\\sale\\listOfSaleCancellationRequest.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\en\\docs\\sale\\listOfSaleCancellationRequest.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\shoppingCart\\create.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\es\\docs\\shoppingCart\\create.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\realTimePrices.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\es\\docs\\activity\\realTimePrices.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\activity\\checkInsurancePoliciesResponseExamples.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:includes\\examples\\activity\\checkInsurancePoliciesResponseExamples.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\activity\\ticketExchangeQueryExamples.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:includes\\examples\\activity\\ticketExchangeQueryExamples.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\activity\\sessionsQueryExamples.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:includes\\examples\\activity\\sessionsQueryExamples.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\activity\\realTimePricesQueryExamples.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:includes\\examples\\activity\\realTimePricesQueryExamples.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\autoAssignSession.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\es\\docs\\activity\\autoAssignSession.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\checkDiscountCoupons.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\es\\docs\\activity\\checkDiscountCoupons.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\checkDeliveryMethods.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\es\\docs\\activity\\checkDeliveryMethods.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\shoppingCart\\add.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\es\\docs\\shoppingCart\\add.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\shoppingCart\\add.response.1.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:includes\\examples\\shoppingCart\\add.response.1.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\shoppingCart\\add.request.1.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:includes\\examples\\shoppingCart\\add.request.1.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\shoppingCart\\listOfSales.request.1.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:includes\\examples\\shoppingCart\\listOfSales.request.1.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\package\\fullCatalog.request.2.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:includes\\examples\\package\\fullCatalog.request.2.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\enum\\examenResponseQuestions.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:includes\\enum\\examenResponseQuestions.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\ticketExchange.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\es\\docs\\activity\\ticketExchange.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\ticketQuestions.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\es\\docs\\activity\\ticketQuestions.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\annex\\ticketQuestionDataType.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:includes\\annex\\ticketQuestionDataType.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\annex\\autoAssignSessionType.en.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:includes\\annex\\autoAssignSessionType.en.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\annex\\typeOfPersonDefinition.en.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:includes\\annex\\typeOfPersonDefinition.en.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\annex\\financialRatios.es.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:includes\\annex\\financialRatios.es.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\shoppingCart\\confirm.response.1.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:includes\\examples\\shoppingCart\\confirm.response.1.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\shoppingCart\\confirm.request.1.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:includes\\examples\\shoppingCart\\confirm.request.1.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\annex\\activity.es.old.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:includes\\annex\\activity.es.old.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\shoppingCart\\sale.response.1.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:includes\\examples\\shoppingCart\\sale.response.1.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\shoppingCart\\sale.request.1.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:includes\\examples\\shoppingCart\\sale.request.1.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\annex\\accommodation.es.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:includes\\annex\\accommodation.es.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\sale\\response\\accommodation.es.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:includes\\sale\\response\\accommodation.es.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\sale\\response\\sales.es.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:includes\\sale\\response\\sales.es.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "catalog.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\catalog.md",
+              "RelativeDocumentMoniker": "docs\\es\\docs\\activity\\catalog.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\catalog.md",
+              "RelativeToolTip": "docs\\es\\docs\\activity\\catalog.md",
+              "ViewState": "AQIAACcAAAAAAAAAAAAWwFQAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-01T07:13:14.615Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "sale.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\shoppingCart\\sale.md",
+              "RelativeDocumentMoniker": "docs\\es\\docs\\shoppingCart\\sale.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\shoppingCart\\sale.md",
+              "RelativeToolTip": "docs\\es\\docs\\shoppingCart\\sale.md",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-07-31T08:59:21.077Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CheckTicketsQuestions.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\CheckTicketsQuestions.md",
+              "RelativeDocumentMoniker": "docs\\es\\docs\\activity\\CheckTicketsQuestions.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\CheckTicketsQuestions.md",
+              "RelativeToolTip": "docs\\es\\docs\\activity\\CheckTicketsQuestions.md",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-22T14:22:50.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "activity.es.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\annex\\activity.es.md",
+              "RelativeDocumentMoniker": "docs\\es\\docs\\annex\\activity.es.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\annex\\activity.es.md",
+              "RelativeToolTip": "docs\\es\\docs\\annex\\activity.es.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-07-30T15:38:33.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "confirm.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\shoppingCart\\confirm.md",
+              "RelativeDocumentMoniker": "docs\\es\\docs\\shoppingCart\\confirm.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\shoppingCart\\confirm.md",
+              "RelativeToolTip": "docs\\es\\docs\\shoppingCart\\confirm.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-07-31T09:18:05.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "listOfSales.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\shoppingCart\\listOfSales.md",
+              "RelativeDocumentMoniker": "docs\\es\\docs\\shoppingCart\\listOfSales.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\shoppingCart\\listOfSales.md",
+              "RelativeToolTip": "docs\\es\\docs\\shoppingCart\\listOfSales.md",
+              "ViewState": "AQIAABcAAAAAAAAAAAArwCwAAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-07-31T09:00:10.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "listOfSales.response.1.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\shoppingCart\\listOfSales.response.1.md",
+              "RelativeDocumentMoniker": "includes\\examples\\shoppingCart\\listOfSales.response.1.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\shoppingCart\\listOfSales.response.1.md",
+              "RelativeToolTip": "includes\\examples\\shoppingCart\\listOfSales.response.1.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFwAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-07-31T09:00:56.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "combinedProduct.es.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\annex\\combinedProduct.es.md",
+              "RelativeDocumentMoniker": "docs\\es\\docs\\annex\\combinedProduct.es.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\annex\\combinedProduct.es.md",
+              "RelativeToolTip": "docs\\es\\docs\\annex\\combinedProduct.es.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-07-31T07:21:55.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "mkdocs.yml",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\config\\es\\mkdocs.yml",
+              "RelativeDocumentMoniker": "config\\es\\mkdocs.yml",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\config\\es\\mkdocs.yml",
+              "RelativeToolTip": "config\\es\\mkdocs.yml",
+              "ViewState": "AQIAAGAAAAAAAAAAAAArwGoAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-08-01T07:47:15.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "checkInsurancePolicies.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\checkInsurancePolicies.md",
+              "RelativeDocumentMoniker": "docs\\es\\docs\\activity\\checkInsurancePolicies.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\checkInsurancePolicies.md",
+              "RelativeToolTip": "docs\\es\\docs\\activity\\checkInsurancePolicies.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-20T12:52:28.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "checkInsurancePoliciesQueryExamples.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\activity\\checkInsurancePoliciesQueryExamples.md",
+              "RelativeDocumentMoniker": "includes\\examples\\activity\\checkInsurancePoliciesQueryExamples.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\activity\\checkInsurancePoliciesQueryExamples.md",
+              "RelativeToolTip": "includes\\examples\\activity\\checkInsurancePoliciesQueryExamples.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-20T15:08:17.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "listOfSaleCancellationRequest.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\en\\docs\\sale\\listOfSaleCancellationRequest.md",
+              "RelativeDocumentMoniker": "docs\\en\\docs\\sale\\listOfSaleCancellationRequest.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\en\\docs\\sale\\listOfSaleCancellationRequest.md",
+              "RelativeToolTip": "docs\\en\\docs\\sale\\listOfSaleCancellationRequest.md",
+              "ViewState": "AQIAAAgAAAAAAAAAAAArwCoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-21T11:29:50.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "errorCodes.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\annex\\errorCodes.md",
+              "RelativeDocumentMoniker": "docs\\es\\docs\\annex\\errorCodes.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\annex\\errorCodes.md",
+              "RelativeToolTip": "docs\\es\\docs\\annex\\errorCodes.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-21T13:08:39.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "client.es.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\annex\\client.es.md",
+              "RelativeDocumentMoniker": "docs\\es\\docs\\annex\\client.es.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\annex\\client.es.md",
+              "RelativeToolTip": "docs\\es\\docs\\annex\\client.es.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-21T13:09:01.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "create.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\shoppingCart\\create.md",
+              "RelativeDocumentMoniker": "docs\\es\\docs\\shoppingCart\\create.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\shoppingCart\\create.md",
+              "RelativeToolTip": "docs\\es\\docs\\shoppingCart\\create.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-21T10:43:54.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "accommodation.es.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\annex\\accommodation.es.md",
+              "RelativeDocumentMoniker": "docs\\es\\docs\\annex\\accommodation.es.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\annex\\accommodation.es.md",
+              "RelativeToolTip": "docs\\es\\docs\\annex\\accommodation.es.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-07-31T07:19:58.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "realTimePrices.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\realTimePrices.md",
+              "RelativeDocumentMoniker": "docs\\es\\docs\\activity\\realTimePrices.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\realTimePrices.md",
+              "RelativeToolTip": "docs\\es\\docs\\activity\\realTimePrices.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-20T11:51:56.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ticketExchangeQueryExamples.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\activity\\ticketExchangeQueryExamples.md",
+              "RelativeDocumentMoniker": "includes\\examples\\activity\\ticketExchangeQueryExamples.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\activity\\ticketExchangeQueryExamples.md",
+              "RelativeToolTip": "includes\\examples\\activity\\ticketExchangeQueryExamples.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-20T14:59:09.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "checkInsurancePoliciesResponseExamples.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\activity\\checkInsurancePoliciesResponseExamples.md",
+              "RelativeDocumentMoniker": "includes\\examples\\activity\\checkInsurancePoliciesResponseExamples.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\activity\\checkInsurancePoliciesResponseExamples.md",
+              "RelativeToolTip": "includes\\examples\\activity\\checkInsurancePoliciesResponseExamples.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-20T15:01:22.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "sessionsQueryExamples.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\activity\\sessionsQueryExamples.md",
+              "RelativeDocumentMoniker": "includes\\examples\\activity\\sessionsQueryExamples.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\activity\\sessionsQueryExamples.md",
+              "RelativeToolTip": "includes\\examples\\activity\\sessionsQueryExamples.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-20T14:59:05.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "realTimePricesQueryExamples.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\activity\\realTimePricesQueryExamples.md",
+              "RelativeDocumentMoniker": "includes\\examples\\activity\\realTimePricesQueryExamples.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\activity\\realTimePricesQueryExamples.md",
+              "RelativeToolTip": "includes\\examples\\activity\\realTimePricesQueryExamples.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-20T14:58:52.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "autoAssignSession.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\autoAssignSession.md",
+              "RelativeDocumentMoniker": "docs\\es\\docs\\activity\\autoAssignSession.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\autoAssignSession.md",
+              "RelativeToolTip": "docs\\es\\docs\\activity\\autoAssignSession.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAArwBMAAABpAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-20T14:48:49.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "checkDiscountCoupons.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\checkDiscountCoupons.md",
+              "RelativeDocumentMoniker": "docs\\es\\docs\\activity\\checkDiscountCoupons.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\checkDiscountCoupons.md",
+              "RelativeToolTip": "docs\\es\\docs\\activity\\checkDiscountCoupons.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-20T12:55:17.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "checkDeliveryMethods.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\checkDeliveryMethods.md",
+              "RelativeDocumentMoniker": "docs\\es\\docs\\activity\\checkDeliveryMethods.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\checkDeliveryMethods.md",
+              "RelativeToolTip": "docs\\es\\docs\\activity\\checkDeliveryMethods.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-20T12:56:33.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "add.request.1.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\shoppingCart\\add.request.1.md",
+              "RelativeDocumentMoniker": "includes\\examples\\shoppingCart\\add.request.1.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\shoppingCart\\add.request.1.md",
+              "RelativeToolTip": "includes\\examples\\shoppingCart\\add.request.1.md",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAmwBsAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-07-31T08:47:50.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "listOfSales.request.1.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\shoppingCart\\listOfSales.request.1.md",
+              "RelativeDocumentMoniker": "includes\\examples\\shoppingCart\\listOfSales.request.1.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\shoppingCart\\listOfSales.request.1.md",
+              "RelativeToolTip": "includes\\examples\\shoppingCart\\listOfSales.request.1.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-07-31T09:01:18.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "add.response.1.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\shoppingCart\\add.response.1.md",
+              "RelativeDocumentMoniker": "includes\\examples\\shoppingCart\\add.response.1.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\shoppingCart\\add.response.1.md",
+              "RelativeToolTip": "includes\\examples\\shoppingCart\\add.response.1.md",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAACQAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-07-31T08:51:32.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "add.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\shoppingCart\\add.md",
+              "RelativeDocumentMoniker": "docs\\es\\docs\\shoppingCart\\add.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\shoppingCart\\add.md",
+              "RelativeToolTip": "docs\\es\\docs\\shoppingCart\\add.md",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAmwCIAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-07-31T08:47:18.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "examenResponseQuestions.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\enum\\examenResponseQuestions.md",
+              "RelativeDocumentMoniker": "includes\\enum\\examenResponseQuestions.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\enum\\examenResponseQuestions.md",
+              "RelativeToolTip": "includes\\enum\\examenResponseQuestions.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-01T09:56:54.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "fullCatalog.request.2.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\package\\fullCatalog.request.2.md",
+              "RelativeDocumentMoniker": "includes\\examples\\package\\fullCatalog.request.2.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\package\\fullCatalog.request.2.md",
+              "RelativeToolTip": "includes\\examples\\package\\fullCatalog.request.2.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-01T10:23:35.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ticketExchange.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\ticketExchange.md",
+              "RelativeDocumentMoniker": "docs\\es\\docs\\activity\\ticketExchange.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\ticketExchange.md",
+              "RelativeToolTip": "docs\\es\\docs\\activity\\ticketExchange.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-01T07:46:56.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ticketQuestions.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\ticketQuestions.md",
+              "RelativeDocumentMoniker": "docs\\es\\docs\\activity\\ticketQuestions.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\docs\\es\\docs\\activity\\ticketQuestions.md",
+              "RelativeToolTip": "docs\\es\\docs\\activity\\ticketQuestions.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-01T07:19:56.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ticketQuestionDataType.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\annex\\ticketQuestionDataType.md",
+              "RelativeDocumentMoniker": "includes\\annex\\ticketQuestionDataType.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\annex\\ticketQuestionDataType.md",
+              "RelativeToolTip": "includes\\annex\\ticketQuestionDataType.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-01T07:37:57.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "autoAssignSessionType.en.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\annex\\autoAssignSessionType.en.md",
+              "RelativeDocumentMoniker": "includes\\annex\\autoAssignSessionType.en.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\annex\\autoAssignSessionType.en.md",
+              "RelativeToolTip": "includes\\annex\\autoAssignSessionType.en.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-01T07:38:11.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "typeOfPersonDefinition.en.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\annex\\typeOfPersonDefinition.en.md",
+              "RelativeDocumentMoniker": "includes\\annex\\typeOfPersonDefinition.en.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\annex\\typeOfPersonDefinition.en.md",
+              "RelativeToolTip": "includes\\annex\\typeOfPersonDefinition.en.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-01T07:38:05.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "financialRatios.es.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\annex\\financialRatios.es.md",
+              "RelativeDocumentMoniker": "includes\\annex\\financialRatios.es.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\annex\\financialRatios.es.md",
+              "RelativeToolTip": "includes\\annex\\financialRatios.es.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-01T07:38:00.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "confirm.request.1.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\shoppingCart\\confirm.request.1.md",
+              "RelativeDocumentMoniker": "includes\\examples\\shoppingCart\\confirm.request.1.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\shoppingCart\\confirm.request.1.md",
+              "RelativeToolTip": "includes\\examples\\shoppingCart\\confirm.request.1.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-07-31T09:20:02.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "activity.es.old.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\annex\\activity.es.old.md",
+              "RelativeDocumentMoniker": "includes\\annex\\activity.es.old.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\annex\\activity.es.old.md",
+              "RelativeToolTip": "includes\\annex\\activity.es.old.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-07-31T09:18:57.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "sale.request.1.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\shoppingCart\\sale.request.1.md",
+              "RelativeDocumentMoniker": "includes\\examples\\shoppingCart\\sale.request.1.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\shoppingCart\\sale.request.1.md",
+              "RelativeToolTip": "includes\\examples\\shoppingCart\\sale.request.1.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-07-31T08:59:53.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "confirm.response.1.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\shoppingCart\\confirm.response.1.md",
+              "RelativeDocumentMoniker": "includes\\examples\\shoppingCart\\confirm.response.1.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\shoppingCart\\confirm.response.1.md",
+              "RelativeToolTip": "includes\\examples\\shoppingCart\\confirm.response.1.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-07-31T09:20:05.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "sale.response.1.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\shoppingCart\\sale.response.1.md",
+              "RelativeDocumentMoniker": "includes\\examples\\shoppingCart\\sale.response.1.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\examples\\shoppingCart\\sale.response.1.md",
+              "RelativeToolTip": "includes\\examples\\shoppingCart\\sale.response.1.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-07-31T08:59:48.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "accommodation.es.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\annex\\accommodation.es.md",
+              "RelativeDocumentMoniker": "includes\\annex\\accommodation.es.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\annex\\accommodation.es.md",
+              "RelativeToolTip": "includes\\annex\\accommodation.es.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-07-31T07:20:21.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "accommodation.es.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\sale\\response\\accommodation.es.md",
+              "RelativeDocumentMoniker": "includes\\sale\\response\\accommodation.es.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\sale\\response\\accommodation.es.md",
+              "RelativeToolTip": "includes\\sale\\response\\accommodation.es.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-07-31T07:20:17.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "sales.es.md",
+              "DocumentMoniker": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\sale\\response\\sales.es.md",
+              "RelativeDocumentMoniker": "includes\\sale\\response\\sales.es.md",
+              "ToolTip": "C:\\Projects\\Repositories\\Git\\experthubApiDocs\\includes\\sale\\response\\sales.es.md",
+              "RelativeToolTip": "includes\\sale\\response\\sales.es.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-07-31T07:20:12.453Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

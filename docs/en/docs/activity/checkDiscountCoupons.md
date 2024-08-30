@@ -4,7 +4,7 @@ Through this call, it is verified if one or more discount coupons can be applied
 
 ## Access method
 
-**POST** activity/discountcouponscheck
+**POST** activity/discountcouponcheck
 
 ## Request structure
 

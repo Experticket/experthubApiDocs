@@ -4,7 +4,7 @@ A través de esta llamada se comprueba si se pueden aplicar uno o más cupones d
 
 ## Método de acceso
 
-**POST** activity/discountcouponscheck
+**POST** activity/discountcouponcheck
 
 ## Estructura de la petición
 
