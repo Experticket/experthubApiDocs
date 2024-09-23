@@ -85,16 +85,14 @@ nav:
         - Comprobar sesiones auto asignadas: docs/activity/autoAssignSession.md
         - Aforo disponible: docs/activity/availability.md
         - Preguntas de tickets: docs/activity/CheckTicketsQuestions.md
-        - Reglas de flujo de venta: 
-          #- Obtener reglas: docs/activity/saleFlowRules.md
-          - Comprobar reglas aplicadas: docs/activity/checkSaleFlowRules.md
-        - Métodos de pago: docs/activity/paymentMethods.md
+        - Reglas de flujo de venta: docs/activity/checkSaleFlowRules.md
+        #- Métodos de pago: docs/activity/paymentMethods.md --> La reserva siempre devuelve los métodos de pago
         - Métodos de entrega:
           - Obtener métodos de entrega: docs/activity/deliveryMethods.md
           - Comprobar método de entrega: docs/activity/checkDeliveryMethods.md
           - Canje de tickets: docs/activity/ticketExchange.md
         - Comprobar cupones descuento: docs/activity/checkDiscountCoupons.md
-        - Comprobar pólizas de seguro: docs/activity/checkInsurancePolicies.md
+        - Cotizar pólizas de seguro: docs/activity/checkInsurancePolicies.md
         - Etiquetas: docs/activity/tags.md
       - Alojamiento:
         - Catálogo básico: docs/accommodation/basicCatalog.md
@@ -113,14 +111,14 @@ nav:
         - Reserva de productos: docs/shoppingCart/confirm.md
         - Cancelación de la reserva: docs/shoppingCart/cancelConfirm.md
         - Confirmación de la reserva: docs/shoppingCart/sale.md
-        - Documentación: docs/shoppingCart/documentation.md
+        - Documentación de la venta: docs/shoppingCart/documentation.md
         - Listado de ventas: docs/shoppingCart/listOfSales.md
       - Opciones sobre ventas:
           - Introducción: docs/sale/introduction.md
           - Listado de ventas: docs/shoppingCart/listOfSales.md
           - Crear solicitud de cancelación: docs/sale/saleCancellationRequest.md
           - Listado de solicitudes de cancelación: docs/sale/listOfSaleCancellationRequest.md
-          - Documentación: docs/shoppingCart/documentation.md  
+          - Documentación de la venta: docs/shoppingCart/documentation.md  
       - Anexos:
         - Actividad: docs/annex/activity.es.md
         - Alojamiento: docs/annex/accommodation.es.md

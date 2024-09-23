@@ -331,10 +331,11 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
     - **`HasSaleFlowRules`**: (``boolean``). Indica si hay productos que tengan alguna regla asociada de flujo de venta. En el caso de ser ``#!csharp true`` se recomienda consultar el método [Comprobar reglas de flujo de venta](checkSaleFlowRules.md) para comprobar qué cambios va a producir la inclusión de este producto a la hora de añadirlo al carrito.
     - **`ProductIdsWithSaleFlowRules`**: (``list``). Array de identificadores de productos. Indica qué productos del catálogo tienen alguna regla asociada de flujo de venta.
     - **`DynamicProviderIdsWithSaleFlowRules`**: (``list``). Array de identificadores de proveedores dinámicos. Indica qué proveedores dinámicos del catálogo tienen alguna regla asociada de flujo de venta.
-- **`PartnerSettings`**: (``list``). Indica las configuraciones del colaborador.
+- **`PartnerSettings`**: (``object``). Indica las configuraciones del colaborador.
     - **`DemandClientData`**: (``boolean``). Valor de verdad `#!csharp true/false` que indica si es obligatorio indicar datos del cliente al confirmar una venta.
     - **`DemandClientTaxData`**: (``boolean``). Valor de verdad `#!csharp true/false` que indica si es obligatorio indicar los datos fiscales del cliente al confirmar una venta.
     - **`EnableCancellationRequest`**: (``boolean``). Valor de verdad `#!csharp true/false` que indica si el colaborador tiene permitido solicitar cancelaciones vía API.
+    - **`IsInsurancePolicyEnabled`**: (``boolean``). Valor de verdad `#!csharp true/false` que indica si el colaborador tiene disponible [pólizas de seguro](checkInsurancePolicies.md).
     - **`PaymentType`**: (``byte``). Indica el tipo de pago que realiza el colaborador.
 
         ??? example "Posibles valores"
