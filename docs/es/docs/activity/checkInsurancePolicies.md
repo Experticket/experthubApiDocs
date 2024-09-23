@@ -37,7 +37,7 @@ Mediante este método podemos comprobar las pólizas de seguro de reembolso para
             - **`AccessDate`**: (``date``). Fecha de acceso. Formato ISO 8601 (YYYY-MM-DD).
     - **`Accommodations`**: (``list``). Array de alojamientos.
         -  **`EchoToken`**: (``string``). Token que identifica a la secuencia de peticiones. Ver [catálogo extendido](../fullCatalog#estructura-de-la-respuesta)
-        -  **`RateId`**: (``string``). Identificador de la tarifa~~~~
+        -  **`RateId`**: (``string``). Identificador de la tarifa
 - **`DiscountCouponCodes`**: (``object``). Array de códigos de cupones descuento que forman parte de la venta. Esta información es necesaria para conformar el precio final a cotizar de la póliza.
 
 ### Ejemplos de petición
