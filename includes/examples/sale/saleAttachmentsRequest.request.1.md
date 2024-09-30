@@ -1,5 +1,5 @@
 ﻿
-Ejemplo de petición multipart/formdata:
+Ejemplo de petición multipart/form-data:
 
 Content-Type: multipart/form-data; boundary="----MyGreatBoundary"
 Content-Length: 7383

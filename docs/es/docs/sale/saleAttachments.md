@@ -24,7 +24,9 @@ El Content-Type de la petición debe ser multipart/form-data, incluyendo los sig
 
 ## Estructura de la respuesta
 
-    --8<-- "includes/experthubResponseBaseDocumentation.es.md"
+- **``Timestamp``**: (``dateTime``). Instante de tiempo en el que se procesó la petición. Formato ISO 8601 (yyyy-MM-ddThh\:mm\:ss.fffffff).
+
+--8<-- "includes/experthubResponseBaseDocumentation.es.md"
 
 ### Ejemplo de respuesta
 
