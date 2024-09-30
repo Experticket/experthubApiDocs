@@ -110,8 +110,9 @@ nav:
         - Eliminar elemento del carrito: docs/shoppingCart/remove.md
         - Reserva de productos: docs/shoppingCart/confirm.md
         - Cancelación de la reserva: docs/shoppingCart/cancelConfirm.md
-        - Confirmación de la reserva: docs/shoppingCart/sale.md
+        - Confirmación de la reserva: docs/shoppingCart/sale.md        
         - Documentación de la venta: docs/shoppingCart/documentation.md
+        - Adjuntar documentos a la venta: docs/shoppingCart/saleAttachments.md
         - Listado de ventas: docs/shoppingCart/listOfSales.md
       - Opciones sobre ventas:
           - Introducción: docs/sale/introduction.md
