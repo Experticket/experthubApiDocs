@@ -120,6 +120,7 @@ nav:
           - Crear solicitud de cancelación: docs/sale/saleCancellationRequest.md
           - Listado de solicitudes de cancelación: docs/sale/listOfSaleCancellationRequest.md
           - Documentación de la venta: docs/shoppingCart/documentation.md  
+          - Adjuntar documentos a la venta: docs/sale/saleAttachments.md
       - Anexos:
         - Actividad: docs/annex/activity.es.md
         - Alojamiento: docs/annex/accommodation.es.md

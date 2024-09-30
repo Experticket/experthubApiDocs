@@ -1,4 +1,4 @@
-# Listado de ventas
+# Adjuntar documentos a la venta
 
 Este método permite adjuntar documentos a la venta. Por ejemplo documentos acreditativos de discapacidad/familia numerosa o monoparental.
 
