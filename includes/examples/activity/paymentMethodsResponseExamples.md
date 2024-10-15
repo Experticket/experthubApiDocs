@@ -3,11 +3,13 @@
     "PaymentMethods": 
     [
         {
+            "Id": "c89jkj6jf16zs",
             "Type": 1,
             "Name": "Tarjeta Bancaria",
             "CommercialName": "Tarjeta Bancaria"
         },
         {
+            "Id": "tm558kgc97amr",
             "Type": 2,
             "Name": "Transferencia bancaria",
             "CommercialName": "Transferencia bancaria"

@@ -41,6 +41,7 @@ Este es un paso intermedio que debemos realizar antes de confirmar el carrito. V
             - 1: Númerico
             - 2: Fecha
             - 3: Booleano
+
 --8<-- "includes/responseBaseDocumentation.es.md"
 
 ### Ejemplo de respuesta
