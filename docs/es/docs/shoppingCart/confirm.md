@@ -81,9 +81,25 @@ Una vez que se ha confirmado la reserva, ya no es posible añadir más productos
 - **`PaymentMethodsNotApplicable`**: (``boolean``). Indica si los método de pago serán aplicables o no a este colaborador. Los colaboradores con contrato "débito" tendrán que aplicar los métodos de pago (`#!csharp PaymentMethodsNotApplicable = false`).
 - **`PaymentMethods`**: (``list``). Métodos de pago soportados para el colaborador en caso de ser a débito.
     - **`PaymentMethod`**: (``object``). Información sobre el método de pago.
-        - **`Type`**: (``int``). Identificador del método de pago.
+        - **`Id`**: (``string``). Identificador del método de pago.
+        - **`Type`**: (``byte``). Tipo de método de pago.
         - **`Name`**: (``string``). Nombre del método de pago.
-        - **`EnableSendByEmail`**: (``boolean``). En algunos casos, es posible que el cliente pueda realizar el cobro desde un enlace que se le hace llegar por email. En tal caso se indicará, en esta propiedad, de tal opción.
+        - **`CommercialName`**: (``string``) ``Opcional``. Nombre comercial del método de pago.
+        - **`EnableSendByEmail`**: (``boolean``) ``Opcional``. Indica si es posible utilizar este método de cobro para el envío automático de enlace de cobro por correo.
+        - **`Fields`**: (``list``). Array de campos rellenables asociados al método de pago. Estos campos se pueden especificar en el momento de crear una transacción.
+            - **`Id`**: (``string``). Identificador del campo.
+            - **`Name`**: (``string``). Nombre del campo.
+            - **`IsRequired`**: (``boolean``). Indica si se obligatorio rellenar el campo. 
+            - **`RegexValidation`**: (``string``) ``Opcional``. Expresión regular que se debe cumplir al rellenar el valor del campo.
+            - **`RegexValidationErrorMessage`**: (``string``) ``Opcional``. Mensaje de error a mostrar al usuario en caso de que no se cumpla la expresión regular.
+            - **`DefaultValue`**: (``string``) ``Opcional``. Valor por defecto del campo que se debe mostrar al usuario.
+            - **`DataType`**: (``byte``). Indica el tipo de datos que debe tener el valor del campo.
+
+                ??? example "Posibles valores"
+                    - 0: Texto
+                    - 1: Númerico
+                    - 2: Fecha
+                    - 3: Booleano
 
 --8<-- "includes/experthubResponseBaseDocumentation.es.md"
 
