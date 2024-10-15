@@ -4,11 +4,13 @@
     [
         {
             "Type": 1,
-            "Name": "Tarjeta Bancaria"
+            "Name": "Tarjeta Bancaria",
+            "CommercialName": "Tarjeta Bancaria"
         },
         {
             "Type": 2,
-            "Name": "Transferencia bancaria"
+            "Name": "Transferencia bancaria",
+            "CommercialName": "Transferencia bancaria"
         }
     ],
     "Success": true,
