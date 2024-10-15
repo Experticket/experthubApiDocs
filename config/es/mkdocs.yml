@@ -86,7 +86,7 @@ nav:
         - Aforo disponible: docs/activity/availability.md
         - Preguntas de tickets: docs/activity/CheckTicketsQuestions.md
         - Reglas de flujo de venta: docs/activity/checkSaleFlowRules.md
-        - Métodos de pago: docs/activity/paymentMethods.md
+        #- Métodos de pago: docs/activity/paymentMethods.md -> la información de los métodos de pago viene en la respuesta de la reserva.
         - Métodos de entrega:
           - Obtener métodos de entrega: docs/activity/deliveryMethods.md
           - Comprobar método de entrega: docs/activity/checkDeliveryMethods.md
