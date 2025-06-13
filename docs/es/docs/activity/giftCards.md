@@ -1,10 +1,10 @@
 # Tarjetas regalo
 
-Podemos crear tarjetas regalo añadiendo tantas actividades del [catálogo de actividades](catalog.md) como queramos. La estructura de datos para añadir tarjetas regalo al carrito se detalla en la sección [añadir al carrito](docs/shoppingCart/add.md).
+Podemos crear tarjetas regalo añadiendo tantas actividades del [catálogo de actividades](catalog.md) como queramos. La estructura de datos para añadir tarjetas regalo al carrito se detalla en la sección [añadir al carrito](/docs/shoppingCart/add.md).
 
 Tras la compra de la tarjeta se genera un código único para poder canjearla. En el momento del canje es cuando se elegirán las fechas y las sesiones (si procede) de las actividades.
 
-Para realizar el proceso de canje, los productos que componen la tarjeta se añaden al carrito indicando el código de la tarjeta regalo a la que pertenecen. La estructura de datos para indicar que una actividad pertenece a una tarjeta regalo se detalla en la sección [añadir al carrito](docs/shoppingCart/add.md).
+Para realizar el proceso de canje, los productos que componen la tarjeta se añaden al carrito indicando el código de la tarjeta regalo a la que pertenecen. La estructura de datos para indicar que una actividad pertenece a una tarjeta regalo se detalla en la sección [añadir al carrito](/docs/shoppingCart/add.md).
 
 ## Comprobar tarjeta regalo
 
