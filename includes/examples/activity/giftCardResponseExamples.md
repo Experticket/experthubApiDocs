@@ -5,8 +5,8 @@
     "Message": "",
     "Client": {
         "CreatedDate": "2025-06-05T09:32:18",
-        "FullName": "Sara",
-        "Surname": "Cruz",
+        "FullName": "Sara Cruz",
+        "Surname": "Sara Cruz",
         "CountryCode": "es",
         "LanguageCode": "es",
         "Gender": 0,
@@ -17,7 +17,11 @@
     "Products": [
         {
             "Id": "154864ftfmxh",
-            "Name": "Nombre del producto"
+            "Name": "Nombre del producto 1"
+        },
+        {
+            "Id": "gimas51204d",
+            "Name": "Nombre del producto 2"
         }
     ],
     "HoursInAdvanceOfGiftCardExchange": 0,
