@@ -11,8 +11,8 @@
 	- **`PhoneNumber`**: (`string`). Número de teléfono.
 	- **`DocumentIdentifier`**: (`string`). Identificación (DNI, pasaporte...).
 	- **`CountryCode`**: (`string`). Código de país.
-	- **`LanguageCode`**: (`string`). Tipo de precio.
-	- **`Gender`**: (`byte`). Sexo (opcional).
+	- **`LanguageCode`**: (`string`). Código de idioma.
+	- **`Gender`**: (`byte`). Género (opcional).
 	- **`Province`**: (`string`). Provincia.
 	- **`City`**: (`string`). Ciudad.
 	- **`ZipCode`**: (`string`). Código postal.
