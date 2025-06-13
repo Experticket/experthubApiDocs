@@ -34,7 +34,40 @@
     }
     ```
 
-=== "Add a combined activity(Combined product)"
+=== "Add two activities that belongs to a gift card"
+
+    ``` json
+    {
+        "ShoppingCartId": "stf9gy7i3xawa",
+        "Activities": [
+            {
+                "ProductId": "154864ftfmxh",
+                "AccessDateTime": "2023-01-25",
+                "Quantity": 1,
+                "GiftCardIdentifier": "3167250411491835499"
+            },
+            {
+                "ProductId": "gimas51204d",
+                "AccessDateTime": "2023-01-25",
+                "Quantity": 1,
+                "GiftCardIdentifier": "3167250411491835499"
+            }
+        ]
+    }
+    ```
+
+=== "Add a gift card"
+
+    ``` json
+    {
+        "ProductIds": [ "154864ftfmxh", "gimas51204d" ],
+        "Client":{ "FullName": "Sara Cruz", "Email": "sara.cruz@email.com"},
+        "AccessDateTime": "2023-01-25",
+        "Message": "I got you a present for your anniversary"
+    }
+    ``` 
+
+=== "Add a combined activity (Combined product)"
 
     ``` json
     {
@@ -54,7 +87,7 @@
             }
         ]
     }
-    ```
+    ```    
 
 === "Add an accommodation"
 
