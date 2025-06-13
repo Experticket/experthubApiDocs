@@ -7,13 +7,14 @@
         "CreatedDate": "2025-06-05T09:32:18",
         "FullName": "Sara Cruz",
         "Surname": "Sara Cruz",
+        "Email": "sara.cruz@gmail.com",
         "CountryCode": "es",
         "LanguageCode": "es",
         "Gender": 0,
         "AcceptsEmailContact": false,
         "AllowCustomerProfiling": false
     },
-    "PartnerSaleId": "8305364178833_409",
+    "PartnerSaleId": "9031552178833_102",
     "Products": [
         {
             "Id": "154864ftfmxh",
