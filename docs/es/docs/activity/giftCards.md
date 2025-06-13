@@ -44,4 +44,4 @@ Con este método podemos comprobar si una tarjeta regalo es canjeable a partir d
 
 ### Ejemplo de respuesta
 
---8<-- "includes/examples/activity/checkSaleFlowRulesResponseExamples.md"
+--8<-- "includes/examples/activity/giftCardResponseExamples.md"
