@@ -25,7 +25,7 @@ Podemos añadir uno o varios productos en una o varias llamadas, según las nece
             - **``SessionId``**: (``string``) ``Opcional``. Identificador de la sesión.
             - **``AccessDateTime``**: (``date``) ``Requerido``. Fecha de acceso. Formato IS0 8601 (YYYY-MM-DD).
             - **``Questions``**: (``list``) ``Opcional``. Listado de respuestas de preguntas sobre tickets.
-                - **``TicketQuestionId``**: (``string``) ``Requerido``. Identificador de la pregunta.
+                - **``QuestionId``**: (``string``) ``Requerido``. Identificador de la pregunta.
                 - **``StringValue``**: (``string``) ``Requerido``. Respuesta de la pregunta.
                 
                 ??? info "Información adicional"
