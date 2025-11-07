@@ -116,4 +116,4 @@ Una vez que se ha confirmado la reserva, ya no es posible añadir más productos
 
   | Nombre de la cabecera  | Valor de la cabecera                           |
   |------------------------|------------------------------------------------|
-  | ``AdminPartnerUserId`` | ``identificador del usuario del AdminPartner`` |
+  | ``AdminPartnerUserId`` | ``Identificador del usuario del AdminPartner`` |

@@ -66,4 +66,4 @@ Este método confirma la reserva realizada previamente en nuestros sistemas.
 
   | Nombre de la cabecera  | Valor de la cabecera                           |
   |------------------------|------------------------------------------------|
-  | ``AdminPartnerUserId`` | ``identificador del usuario del AdminPartner`` |
+  | ``AdminPartnerUserId`` | ``Identificador del usuario del AdminPartner`` |
