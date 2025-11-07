@@ -108,3 +108,12 @@ Una vez que se ha confirmado la reserva, ya no es posible añadir más productos
 ??? tip "Examples"
 
     --8<-- "includes/examples/shoppingCart/confirm.response.1.md"
+
+
+## Cabeceras HTTP adicionales
+
+- Esta llamada acepta una cabecera adicional, para indicar el usuario del colaborador que lleva a cabo la confirmación del carrito:
+
+  | Nombre de la cabecera  | Valor de la cabecera                           |
+  |------------------------|------------------------------------------------|
+  | ``AdminPartnerUserId`` | ``identificador del usuario del AdminPartner`` |

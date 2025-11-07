@@ -58,3 +58,12 @@ Este método confirma la reserva realizada previamente en nuestros sistemas.
 ??? tip "Examples"
 
     --8<-- "includes/examples/shoppingCart/sale.response.1.md"
+
+
+## Cabeceras HTTP adicionales
+
+- Esta llamada acepta una cabecera adicional, para indicar el usuario del colaborador que lleva a cabo la venta:
+
+  | Nombre de la cabecera  | Valor de la cabecera                           |
+  |------------------------|------------------------------------------------|
+  | ``AdminPartnerUserId`` | ``identificador del usuario del AdminPartner`` |
