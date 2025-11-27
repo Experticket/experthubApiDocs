@@ -145,6 +145,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                     
                 ??? tip "Implicaciones"
                     En caso de estar definido como `#!csharp true` será necesario antes de iniciar cualquier venta hacer la llamada para [comprobar pólizas disponibles](checkInsurancePolicies.md). Esta función nos devolverá un listado de polizas disponibles con sus identificadores. Si queremos añadir una de estas polizas a la venta, pasaremos dicho identificador(`Id`) de poliza en la propiedad `InsurancePolicyId` en la [Confirmación de la reserva](../shoppingCart/sale.md).
+          
             - **`Tags`**: (``list``). Array de [identificadores de etiquetas](tags.md) aplicadas a la categoría.
               - **``(string)``**: Identificador de la etiqueta.
 
