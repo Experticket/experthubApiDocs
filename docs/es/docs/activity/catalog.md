@@ -148,7 +148,6 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
           
             - **`Tags`**: (``list``). Array de [identificadores de etiquetas](tags.md) aplicadas a la categoría.
                 - **``(string)``**: Identificador de la etiqueta.
-
             - **`Products`**: (``list``). Array de productos.
                 - **`ProductId`**: (``string``). Identificador del producto. Alfanumérico de 13 caracteres.
                 - **`ProductName`**: (``string``). Nombre del producto.
