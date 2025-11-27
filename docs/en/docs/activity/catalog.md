@@ -128,6 +128,8 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
             - **`ProductBaseName`**: category name.
             - **`ProductBaseDescription`**:  category description. It usually contains the conditions common to all its products.
             - **`LimitOfNumberOfPeopleToBeGroup`**: *optional*, same meaning as the `LimitOfNumberOfPeopleToBeGroup` property in the `Provider` node. If specified, the most restrictive between this value and that of the provider will be used.
+            - **`Tags`**: array of [tag identifiers](tags.md) applied to the category.
+              -  **``(string)``**: Tag identifier.
             - **`Products`**: product array.
                 - **`ProductId`**: product identifier. 13 character alphanumeric.
                 - **`ProductName`**: product name.
