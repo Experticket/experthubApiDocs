@@ -1,0 +1,2705 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="API documentation for Experthub.">
+      
+      
+      
+      
+        <link rel="prev" href="../../connection/">
+      
+      
+        <link rel="next" href="../lastCatalogUpdatedDate/">
+      
+      
+        
+          <link rel="alternate" href="/en/" hreflang="en">
+        
+          <link rel="alternate" href="/es/" hreflang="es">
+        
+      
+      
+      <link rel="icon" href="../../../assets/imagotipo.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Catalog - Experthub API Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="experticket" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#activities-catalog" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Experthub API Documentation" class="md-header__button md-logo" aria-label="Experthub API Documentation" data-md-component="logo">
+      
+  <img src="../../../assets/Logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Experthub API Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Catalog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="experticket" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/en/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/es/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../intro/" class="md-tabs__link">
+          
+  
+  
+  Documentation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Acerca de
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Experthub API Documentation" class="md-nav__button md-logo" aria-label="Experthub API Documentation" data-md-component="logo">
+      
+  <img src="../../../assets/Logo.svg" alt="logo">
+
+    </a>
+    Experthub API Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Documentation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../struct/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data specification
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Connection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Activity
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Activity
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catalog
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#access-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Access method
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#request-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request structure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Request structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Response structure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Response structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#response-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Response example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lastCatalogUpdatedDate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Last catalog update date
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../realTimePrices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Real time prices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sessions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../autoAssignSession/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Check auto assigned sessions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../availability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Available capacity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_7" id="__nav_2_4_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sale flow rules
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sale flow rules
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../saleFlowRules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Get rules
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../checkSaleFlowRules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Check applied rules
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paymentMethods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Payment methods
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_9" id="__nav_2_4_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delivery methods
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Delivery methods
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deliveryMethods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Get delivery methods
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../checkDeliveryMethods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Check delivery method
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ticketExchange/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ticket exchange
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../checkDiscountCoupons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Check discount coupons
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tags
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accomodation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Accomodation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../accommodation/basicCatalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../accommodation/fullCatalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Full catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Packages
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Packages
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../package/prePackage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prepackages
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../package/catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../package/fullCatalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Full Catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Annexes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Annexes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../annex/errorCodes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Error codes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Acerca de
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#access-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Access method
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#request-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request structure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Request structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Response structure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Response structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#response-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Response example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="activities-catalog">Activities catalog</h1>
+<p>The first step will be to get the complete catalog of providers, categories (productBases) and products for its internal processing.</p>
+<p>The information in the catalog includes unique identifiers for Provider, Product and Ticket, which will subsequently be used to create a sale.</p>
+<p>It will also include other data such as product price, depending on the dates, or the product’s commercial terms.</p>
+<div class="admonition caution">
+<p class="admonition-title">Misuse of the API</p>
+<p>A misuse of this call could be to perform a query with each sale, the correct use must be to store and process locally and consult periodically the <a href="../lastCatalogUpdatedDate/">date of the last modification of the catalog</a>. Only in the event that this date of modification is later than the one obtained in the catalog must we obtain the catalog again.</p>
+</div>
+<h2 id="access-method">Access method</h2>
+<p><strong>POST</strong> /activity/catalog</p>
+<h2 id="request-structure">Request structure</h2>
+<p>We can filter the catalog result using different filters in the request's body.</p>
+<p>Each filter will be considered an <strong><em>AND</em></strong>. For example, several <em>ProductIds</em> from different providers may be filtered, but it would not make sense to filter by a <em>ProviderId</em> and a <em>ProductId</em> not belonging to this <em>ProviderId</em>.</p>
+<ul>
+<li><strong><code>ProviderIds</code></strong>: provider identifiers list.</li>
+<li><strong><code>ProductBaseIds</code></strong>: list category identifiers.</li>
+<li><strong><code>ProductIds</code></strong>: product identifiers list.</li>
+<li><strong><code>FromDate</code></strong>: start date. Does not allow values less than the current day. <em>ISO 8601 format (yyyy-MM-dd)</em>.</li>
+<li><strong><code>ToDate</code></strong>: ending date. By default, its value is that of the date corresponding to a year from now. <em>ISO 8601 format (yyyy-MM-dd)</em>.</li>
+<li><strong><code>ReferenceDate</code></strong>: requires that the day that is taken as a reference for the calculation of prices and availability is not today, but the indicated one. For example it will be used if the prices change depending on the days left until the date of entry. <em>ISO 8601 format (yyyy-MM-dd)</em></li>
+<li><strong><code>LanguageCode</code></strong>: sets the language in which to display the catalog’s text (name, description, provider conditions, product, etc.). By default it shall return to the language configured for the partner. <em>ISO format 639-1</em>.</li>
+<li><strong><code>ShowProductsOutOfActiveDateRange</code></strong>: when it is <code class="highlight"><span class="k">true</span></code>, the response will return products where today (or the day indicated in <code>ReferenceDate</code>) is outside of their sale date range. For example, if it is December and there are products that can be sold from January, setting this value to true will allow us to discover that those products exist.</li>
+</ul>
+<h3 id="request-example">Request example</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ProviderIds</label><label for="__tabbed_1_2">ProductIds</label><label for="__tabbed_1_3">FromDate-ToDate</label><label for="__tabbed_1_4">ReferenceDate</label><label for="__tabbed_1_5">Combined Filters</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;ProviderIds&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">    </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;dj48vjsyufvyu&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;ajr7v0alt62hl&quot;</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;ProductIds&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">    </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;dj48vjsyufvyu&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;ajr7v0alt62hl&quot;</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;FromDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-06-23&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;ToDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-08-29&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;ReferenceDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-10-05&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;ProviderIds&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">    </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;dj48vjsyufvyu&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;ajr7v0alt62hl&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;ProductBaseIds&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">    </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;duvjsigjscujc&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;ProductIds&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">    </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;fkijskfqnidfk&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;FromDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-06-23&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;ToDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-08-29&quot;</span>
+
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="response-structure">Response structure</h2>
+<ul>
+<li><strong><code>LastUpdatedDateTime</code></strong>: last catalog modification date. <em>ISO 8601 format (yyyy-MM-ddThh:mm:ss.fffffff)</em>.</li>
+<li>
+<p><strong><code>Providers</code></strong>: providers array.</p>
+<ul>
+<li><strong><code>ProviderId</code></strong>: provider identifier. Alphanumeric of 13 characters.</li>
+<li><strong><code>ProviderName</code></strong>: provider name.</li>
+<li><strong><code>ProviderDescription</code></strong>: provider description.</li>
+<li><strong><code>ProviderCommercialConditions</code></strong>: provider comercial terms. This field will not be displayed if it is not defined.</li>
+<li><strong><code>ProviderAccessConditions</code></strong>: provider access conditions. This field will not be displayed if it is not defined.</li>
+<li><strong><code>ExchangeVoucherPoint</code></strong>: place where the tickets can be used or exchabge.</li>
+<li>
+<p><strong><code>AdvancedDateSelectorMethodName</code></strong>: name of the method that determines if product tickets can have their own access date.</p>
+<details class="example">
+<summary>Possible values</summary>
+<p><strong>None</strong></p>
+<p>The tickets <strong>CANNOT</strong> have an access date that differs from that of the sale.</p>
+<p>Therefore, and always in reference to the ticket, when we add the product to the cart, the <code>AccessDateTime</code> from the ticket value will be ignored or it will be left null.</p>
+<p><strong>DatePerTicketEnclosure</strong></p>
+<p>The tickets CAN have an access date that differs from that of the sale.</p>
+<p>As we know, according to Products catalog, As we know, according to Products catalog, the tickets form part of an enclosure (<code>TicketEnclosureId</code>). As such, for the DatePerTicketEnclosure each ticket enclosure can, optionally, have a different access date.</p>
+<p>For instance, imagine a product called “Adult Ticket Amusement Park+Aquatic”, made up of two tickets:</p>
+<ul>
+<li>Adult Amusement Park Ticket. Corresponding to the enclosure "Amusement Park".</li>
+<li>Adult Aquatic Ticket. Corresponding to the enclosure “Aquatic”.</li>
+</ul>
+<p>In the case of DatePerTicketEnclosure we can have the "Adult Amusement Park Ticket” with the entry date of April 1, and the "Adult Aquatic Ticket" with the entry date of May 3.</p>
+<details class="important">
+<summary>Important limitation</summary>
+<p>All access dates, of all tickets which compose one sale, should belong to the same set of <code>PricesAndDates</code>. In other words, we can pick a date with a price of €20, and another with a price of €25.</p>
+</details>
+</details>
+</li>
+<li>
+<p><strong><code>CancellationPolicy</code></strong>: describe the cancellation policies that apply when canceling a sale from this provider. If a specific product does not have cancellation policies these will apply.</p>
+<ul>
+<li><strong><code>IsRefundable</code></strong>: indicates if the customer can cancel for free at some point in time.</li>
+<li><strong><code>Rules</code></strong>: rules that apply when canceling.<ul>
+<li><strong><code>HoursInAdvanceOfAccess</code></strong>: indicates the number of hours in advance regarding the access date from which the cancellation fee set in <code>Percentage</code> will be applied.</li>
+<li><strong><code>Percentage</code></strong>: percentage of the total product amount that won't be refunded in case of cancellation.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><code>DemandAccessDate</code></strong>: indicates whether the access date is needed. If it is not necessary, when adding the product to the cart, the date of purchase must be used.</li>
+<li>
+<p><strong><code>TaxType</code></strong>: indicates the type of tax on the provider's products.</p>
+<details class="example">
+<summary>Possible values</summary>
+<ul>
+<li>0: IVA</li>
+<li>1: IGIC</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>Type</code></strong>: indicates the type of provider. By default is 0.</p>
+<details class="example">
+<summary>Possible values</summary>
+<ul>
+<li>0: Activity</li>
+<li>1: Accommodation</li>
+<li>2: Transport</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>PurchaseFlowType</code></strong>: indicates the sale flow. It can be used to know if the tickets and the access codes are going to be accsibles instantly or if require some processing.</p>
+<details class="example">
+<summary>Possible values</summary>
+<ul>
+<li>1: Open sale.</li>
+<li>2: Requires processing by the provider.</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>IsForGroups</code></strong>: indicates if the provider's products are intended for sale to groups.</p>
+</li>
+<li><strong><code>IsForSeasonTickets</code></strong>: indicates if the provider's products are season tickets.</li>
+<li><strong><code>LimitOfNumberOfPeopleToBeGroup</code></strong>: limits the number of people that make up a product from which the sale is considered for "groups". For example, if this limit is "19" and the provider is not for groups (<code class="highlight"><span class="n">IsForGroups</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="k">false</span></code>), sales with 20 or more people will not be accepted. On the contrary, if the provider is for groups (<code class="highlight"><span class="n">IsForGroups</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="k">true</span></code>), sales for 20 or more people will only be accepted.</li>
+<li><strong><code>Logo</code></strong>: url to download the provider's logo.</li>
+<li><strong><code>Tags</code></strong>: array of <a href="../tags/">tag identifiers</a> applied to the provider.</li>
+<li><strong><code>Location</code></strong>: location information.<ul>
+<li><strong><code>CountryCode</code></strong>: country code (es, fr...).</li>
+<li><strong><code>City</code></strong>: city.</li>
+<li><strong><code>Address</code></strong>: address.</li>
+<li><strong><code>ZipCode</code></strong>: postal code.</li>
+<li><strong><code>Lat</code></strong>: latitude.</li>
+<li><strong><code>Lng</code></strong>: longitude.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Ticket enclosures</code></strong>: provider enclosures information.</p>
+<ul>
+<li><strong><code>TicketEnclosureId</code></strong>: enclosure identifier.</li>
+<li><strong><code>TicketEnclosureName</code></strong>: enclosure name.</li>
+<li><strong><code>TicketEnclosureConditions</code></strong>: <em>optional</em>, enclosure conditions.</li>
+<li>
+<p><strong><code>TypeOfPersonDefinitionTypeChild</code></strong>: <em>optional</em>, indicates which attribute applies to the person to consider him a child.</p>
+<details class="example">
+<summary>Possible values</summary>
+<ul>
+<li>1: Age</li>
+<li>2: Height</li>
+</ul>
+<p>Once the type is indicated by one of the above two options, the value is indicated by a decimal.</p>
+<details class="info" open="open">
+<summary>Example</summary>
+<p>To indicate that we consider a child to be a person under 120 centimeters tall and a senior to be over the age of 65 years old we have to indicate the following value:</p>
+<ul>
+<li>TypeOfPersonDefinitionTypeChild: 2</li>
+<li>TypeOfPersonDefinitionValueChild: 120</li>
+<li>TypeOfPersonDefinitionTypeSenior: 1</li>
+<li>TypeOfPersonDefinitionValueSenior: 65</li>
+</ul>
+</details>
+</details>
+</li>
+<li>
+<p><strong><code>TypeOfPersonDefinitionValueChild</code></strong>: <em>optional</em>, indicates the value assigned to the type of person child.</p>
+</li>
+<li>
+<p><strong><code>TypeOfPersonDefinitionTypeAdult</code></strong>: <em>optional</em>, indicates which attribute applies to the person to consider him an adult.</p>
+<details class="example">
+<summary>Possible values</summary>
+<ul>
+<li>1: Age</li>
+<li>2: Height</li>
+</ul>
+<p>Once the type is indicated by one of the above two options, the value is indicated by a decimal.</p>
+<details class="info" open="open">
+<summary>Example</summary>
+<p>To indicate that we consider a child to be a person under 120 centimeters tall and a senior to be over the age of 65 years old we have to indicate the following value:</p>
+<ul>
+<li>TypeOfPersonDefinitionTypeChild: 2</li>
+<li>TypeOfPersonDefinitionValueChild: 120</li>
+<li>TypeOfPersonDefinitionTypeSenior: 1</li>
+<li>TypeOfPersonDefinitionValueSenior: 65</li>
+</ul>
+</details>
+</details>
+</li>
+<li>
+<p><strong><code>TypeOfPersonDefinitionValueAdult</code></strong>: <em>optional</em>, indicates the value assigned to the type of person adult.</p>
+</li>
+<li>
+<p><strong><code>TypeOfPersonDefinitionTypeSenior</code></strong>: <em>optional</em>, indicates which attribute applies to the person to consider him a senior.</p>
+<details class="example">
+<summary>Possible values</summary>
+<ul>
+<li>1: Age</li>
+<li>2: Height</li>
+</ul>
+<p>Once the type is indicated by one of the above two options, the value is indicated by a decimal.</p>
+<details class="info" open="open">
+<summary>Example</summary>
+<p>To indicate that we consider a child to be a person under 120 centimeters tall and a senior to be over the age of 65 years old we have to indicate the following value:</p>
+<ul>
+<li>TypeOfPersonDefinitionTypeChild: 2</li>
+<li>TypeOfPersonDefinitionValueChild: 120</li>
+<li>TypeOfPersonDefinitionTypeSenior: 1</li>
+<li>TypeOfPersonDefinitionValueSenior: 65</li>
+</ul>
+</details>
+</details>
+</li>
+<li>
+<p><strong><code>TypeOfPersonDefinitionValueSenior</code></strong>: <em>optional</em>, indicates the value assigned to the type of person senior.</p>
+</li>
+<li>
+<p><strong><code>Sessions</code></strong>: <em>optional</em>, defines the relationship between sessions and content. Before continuing, it is essential to study the <a href="../sessions/">sessions section</a>.</p>
+<ul>
+<li><strong><code>SessionContentProfileId</code></strong>: for more information about this identifier, see the <a href="../sessions/">sessions page</a>.</li>
+<li><strong><code>SessionGroupProfileId</code></strong>: for more information about this identifier, see the <a href="../sessions/">sessions page</a>.</li>
+<li><strong><code>HasSeating</code></strong>: indicates if the enclosure has seats, in which case it will be necessary to check the type of seat assignment at ticket level.</li>
+<li><strong><code>SessionsGroupSessionContents</code></strong>: defines the relationship between session groups and session contents. That is, all sessions in the session group will have the session content assigned. <code>SessionsGroupSessionContents</code> is exclusive with respect to <code>SessionSessionContents</code>.<ul>
+<li><strong><code>SessionsGroupId</code></strong>: session group identifier.</li>
+<li><strong><code>SessionContentId</code></strong>: session content identifier.</li>
+</ul>
+</li>
+<li><strong><code>SessionSessionContents</code></strong>: defines the relationship between sessions and session contents. <code>SessionSessionContents</code> is exclusive with respect to <code>SessionsGroupSessionContents</code>.<ul>
+<li><strong><code>SessionId</code></strong>: session identifier.</li>
+<li><strong><code>SessionContentId</code></strong>: session content identifier.</li>
+<li><strong><code>SessionTime</code></strong>: session date and time.</li>
+<li><strong><code>HasLimitedCapacity</code></strong>: indicates if the session has limited capacity. If so, it will be essential to check the availability of the session before creating a sale. More information about it in <a href="../availability/">obtaining available capacity</a>.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>TicketEnclosureAutoAssignSessionType</code></strong>: indicates which attribute is applied when choosing sessions. They can be self-assigned sessions by the system, eligible, or a mixture of the two cases.In the case of self-assigned sessions, you can check which sessions are going to be assigned before adding the product to the cart using the method to <a href="../autoAssignSession/">check the auto-assigned session</a>.</p>
+<details class="example">
+<summary>Possible values</summary>
+<ul>
+<li><strong>0: No</strong>. Sessions will not be auto-assigned. Must be defined during the sales flow.</li>
+<li><strong>1: IfNotSet</strong>. Sessions will be auto-assigned if they have not been defined during the sales flow.</li>
+<li><strong>2: ForceSet</strong>. Sessions will always be forcibly assigned, ignoring if they were defined during the sales flow.</li>
+</ul>
+</details>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>ProductBases</code></strong>: categories array.</p>
+<ul>
+<li><strong><code>ProductBaseId</code></strong>: category identifier. 13 character alphanumeric.</li>
+<li><strong><code>ProductBaseName</code></strong>: category name.</li>
+<li><strong><code>ProductBaseDescription</code></strong>:  category description. It usually contains the conditions common to all its products.</li>
+<li><strong><code>LimitOfNumberOfPeopleToBeGroup</code></strong>: <em>optional</em>, same meaning as the <code>LimitOfNumberOfPeopleToBeGroup</code> property in the <code>Provider</code> node. If specified, the most restrictive between this value and that of the provider will be used.</li>
+<li><strong><code>Tags</code></strong>: array of <a href="../tags/">tag identifiers</a> applied to the category.</li>
+<li><strong><code>(string)</code></strong>: Tag identifier.</li>
+<li>
+<p><strong><code>Products</code></strong>: product array.</p>
+<ul>
+<li><strong><code>ProductId</code></strong>: product identifier. 13 character alphanumeric.</li>
+<li><strong><code>ProductName</code></strong>: product name.</li>
+<li><strong><code>SuggestedSalesProductName</code></strong>: suggested product name for sale.</li>
+<li><strong><code>ProductDescription</code></strong>: product description. It usually contains the conditions of the product.</li>
+<li><strong><code>Tags</code></strong>: array of <a href="../tags/">tag identifiers</a> applied to the product.<ul>
+<li><strong><code>(string)</code></strong>: Tag identifier.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>ProductInternalConsiderations</code></strong>: internal considerations of the product that only the collaborator should know.</p>
+<details class="danger" open="open">
+<summary>Important</summary>
+<p><strong>NEVER</strong> show to end customer.</p>
+</details>
+</li>
+<li>
+<p><strong><code>ProductCancellationConditions</code></strong>: cancellation conditions for the product.</p>
+</li>
+<li><strong><code>CancellationPolicy</code></strong>: indicates the cancellation policies that apply when canceling a sale of this product. If this node is present, it takes precedence over the provider's <code>CancellationPolicy</code> node.<ul>
+<li><strong><code>IsRefundable</code></strong>: indicates if the customer can cancel for free at any time.</li>
+<li><strong><code>Rules</code></strong>: rules that apply when making the cancellation.<ul>
+<li><strong><code>HoursInAdvanceOfAccess</code></strong>: indicates the number of hours in advance with respect to the access date from which the price penalty indicated in <code>Percentage</code> will be applied.</li>
+<li><strong><code>Percentage</code></strong>: percentage of penalty on the ticket price.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><code>StartIsActiveDate</code></strong>: <em>optional</em>, if it exists, it defines the date from which it is possible to sell the product.</li>
+<li><strong><code>EndIsActiveDate</code></strong>: <em>optional</em>, if it exists, it defines the date until which it is possible to sell the product.</li>
+<li><strong><code>DaysWithLimitedCapacity</code></strong>: dates in which the product has a limited capacity. Therefore, it will be essential to check the availability of the product before creating a sale. Dates will be in <em>ISO 8601 format (yyyy-MM-dd)</em>, and will be separated from each other by a comma. More information about it in the section on <a href="../availability/">obtaining available capacity</a>.</li>
+<li><strong><code>HoursInAdvanceOfPurchase</code></strong>: hours in advance of the purchase compared to 00:00 a.m. the day after the visit. For example, if a product has <code>HoursInAdvanceOfPurchase = 4</code>, and a customer makes a purchase for August 15, the time limit that the product has to be sold is 8:00 p.m. on August 15 itself (that is, 4 hours before 00:00 a.m. on August 16). This is important, for example, so that a customer does not buy the products for a day when the venue is already closed.</li>
+<li><strong><code>MaxHoursInAdvanceOfPurchase</code></strong>: <em>optional</em>, maximum hours in advance of the purchase compared to 00:00 a.m. the day after the visit. For example, if a product has <code>MaxHoursInAdvanceOfPurchase = 240</code>, and a customer makes a purchase for August 15, the product cannot be sold before August 6 (that is, 240 hours = 10 days before 00:00 a.m. on August 16). This is useful, for example, to limit the period of sale of a product to a period of days before.</li>
+<li><strong><code>MinimumNumberByTransaction</code></strong>: minimum number of products for each sale. Default is 1. For example, a product of the type "Entry ticket with discount starting from 3 products". In that case, MinimumNumberByTransaction would be 3.</li>
+<li><strong><code>NumberOfPeople</code></strong>: number of people who compute to consider a sale as a "group". That is, it computes for the limit <code>LimitOfNumberOfPeopleToBeGroup</code>.</li>
+<li><strong><code>NumberOfAdults</code></strong>: number of adults, included in the <code>NumberOfPeople</code> field.</li>
+<li><strong><code>NumberOfBabies</code></strong>: number of babies, included in the <code>NumberOfPeople</code> field.</li>
+<li><strong><code>NumberOfChildren</code></strong>: number of children, included in the <code>NumberOfPeople</code> field.</li>
+<li><strong><code>NumberOfSenior</code></strong>: number of seniors, included in the <code>NumberOfPeople</code> field.</li>
+<li><strong><code>NumberOfGeneric</code></strong>: number of generics, included in the <code>NumberOfPeople</code> field. It is a very useful field, for example, if a product is valid for both adults and children as well as for seniors.</li>
+<li>
+<p><strong><code>RequiresRealTimePrice</code></strong>: indicates if the product requires real-time pricing.</p>
+<details class="tip">
+<summary>Implications</summary>
+<p>In case it is defined as <code class="highlight"><span class="k">true</span></code> it will be necessary before starting any sale to make the call to <a href="../realTimePrices/">check the price in real time</a>. Since the product price may be different depending on some criteria.</p>
+</details>
+</li>
+<li>
+<p><strong><code>IsForPackaging</code></strong>: indicates if the product has to be packaged, e.g. with an accommodation.</p>
+</li>
+<li><strong><code>ValidDays</code></strong>: days of validity.</li>
+<li>
+<p><strong><code>ValidDaysType</code></strong>: type of valid days.</p>
+<details class="example">
+<summary>Possible values</summary>
+<ul>
+<li>0: consecutive.</li>
+<li>1: not consecutive.</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>PriceMode</code></strong>: indicate the type of price.</p>
+<details class="example">
+<summary>Possible values</summary>
+<ul>
+<li>1: RRP.</li>
+<li>2: net price.</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>Commission</code></strong>: in case <code>PriceMode = RRP</code>, this indicates the commission.</p>
+<ul>
+<li>
+<p><strong><code>Type</code></strong>: indicates the type of commission applied.</p>
+<details class="example">
+<summary>Possible values</summary>
+<ul>
+<li>1: percentage.</li>
+<li>2: absolute value.</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>Value</code></strong>: value of that commission.</p>
+<details class="info">
+<summary>Example</summary>
+<ul>
+<li>if <code>Type = 1</code> y <code>Value = 10</code>, indicates that the commission is 10% with respect to the <code>Price</code> of the product. That is, if the <code>Price</code> is equal to €100, the calculated commission would be €10.</li>
+<li>if <code>Type = 2</code> y <code>Value = 3</code>, indicates that the commission per product is €3.</li>
+</ul>
+</details>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>AccessDateCriteria</code></strong>: indicates the criteria for the access date.</p>
+<details class="example">
+<summary>Possible values</summary>
+<ul>
+<li>0: <strong>Closed date</strong>. The ticket will be only valid the on specified date.</li>
+<li>1: <strong>Open date</strong>. The ticket will be valid any day of the season. Only in this case we'll take care of <strong><code>AccessDateCriteriaOpenDateSalesDocument</code></strong>:<ul>
+<li>1: Hide access date.</li>
+<li>2: Valid on season.</li>
+<li>3: View conditions.</li>
+<li>4: Access dates range.</li>
+</ul>
+</li>
+<li>3: <strong>Valid during the stay in the selected accomodation</strong>.</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>BarcodeAssignment</code></strong>: <em>optional</em>, indicates what the barcode is to be assigned to.</p>
+<details class="example">
+<summary>Possible values</summary>
+<ul>
+<li>1: Ticket (default value if <code>BarcodeAssignment</code> is not defined).</li>
+<li>2: Person.</li>
+</ul>
+<details class="info" open="open">
+<summary>Example</summary>
+<p>The "Two day ticket" product consisting of one adult and 2 tickets (day 1 ticket, day 2 ticket):</p>
+<ul>
+<li><code>BarcodeAssignment = Ticket</code>: each of the tickets will have its own barcode.</li>
+<li><code>BarcodeAssignment = Person</code>: there will only be one barcode (shared by both tickets). A direct consequence of this case would be when printing a PDF with the tickets, since we would only have to print a PDF of the product, given that despite having two tickets there is only one barcode.</li>
+</ul>
+</details>
+</details>
+</li>
+<li>
+<p><strong><code>PricesAndDates</code></strong>: array of "<em>price and dates</em>". It has a double functionality. On the one hand, it defines what access dates the product is available for, and on the other hand, it defines what price applies to what dates.</p>
+<ul>
+<li><strong><code>Price</code></strong>: price.</li>
+<li><strong><code>Currency</code></strong>: currency.</li>
+<li><strong><code>CurrencyName</code></strong>: name of currency.</li>
+<li><strong><code>Dates</code></strong>: dates will be in <em>ISO 8601 format (yyyy-MM-dd)</em> and will be separated from each other by a comma.</li>
+<li><strong><code>OriginalPrice</code></strong>: <em>optional</em>, price of the product before applying discounts if any.</li>
+<li><strong><code>TaxBreakdown</code></strong>: array with the tax breakdown.<ul>
+<li><strong><code>TaxPercentage</code></strong>: tax percentage (out of 100).</li>
+<li><strong><code>PriceWithoutTaxes</code></strong>: price without tax.</li>
+<li><strong><code>PriceWithTaxes</code></strong>: price with taxes.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Release</code></strong>: <em>optional</em>, number of days in advance required for the customer to cancel the product at no cost.</p>
+<details class="info">
+<summary>Example</summary>
+<ul>
+<li>0: The client can cancel the day of entry to the park at no cost.</li>
+<li>1: The client can cancel one day before the entrance to the park without cost.</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>SalesDocumentSettings</code></strong>: settings regarding the access document (PDF, passbook). This information will also come as a result when confirming a sale.</p>
+<details class="tip">
+<summary>Advice</summary>
+<p>If the documents generated by us are used, it will not be necessary to take these settings into account. Otherwise, you should take them into consideration.</p>
+</details>
+<ul>
+<li><strong><code>Disable</code></strong>: indicates if no access document will be generated for this product.</li>
+<li><strong><code>ShowPrice</code></strong>: indicates if the price should be displayed in the access document.</li>
+<li>
+<p><strong><code>AccessDateCriteriaOpenDateSalesDocument</code></strong>: only in case <code>AccessDateCriteria == 1</code> (open date). Indicates what we must inform the client regarding the date of access.</p>
+<details class="example">
+<summary>Possible values of AccessDateCriteria and AccessDateCriteriaOpenDateSalesDocument</summary>
+<ul>
+<li>0: <strong>Closed date</strong>. The ticket will be only valid the on specified date.</li>
+<li>1: <strong>Open date</strong>. The ticket will be valid any day of the season. Only in this case we'll take care of <strong><code>AccessDateCriteriaOpenDateSalesDocument</code></strong>:<ul>
+<li>1: Hide access date.</li>
+<li>2: Valid on season.</li>
+<li>3: View conditions.</li>
+<li>4: Access dates range.</li>
+</ul>
+</li>
+<li>3: <strong>Valid during the stay in the selected accomodation</strong>.</li>
+</ul>
+</details>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>HasSaleFlowRule</code></strong>: indicates if the product has any associated sales flow rule. In the case of being <code class="highlight"><span class="k">true</span></code>, it is recommended to consult the method <a href="../checkSaleFlowRules/">Check sale flow rules</a> to check what changes the inclusion of this product will produce when adding it to the cart.</p>
+</li>
+<li>
+<p><strong><code>Tickets</code></strong>: <em>optional</em>, ticket array. In case the product does not work with tickets, this field will not exist.</p>
+<ul>
+<li><strong><code>TicketId</code></strong>: ticket identifier. 13 character alphanumeric.</li>
+<li><strong><code>IsQuotaTicket</code></strong>: boolean indicating whether or not the ticket is capacity type, which means that if <code class="highlight"><span class="k">true</span></code> the ticket will compute for the total capacity necessary to reserve the product. For example, if we have a product where it has 3 defined tickets but only 2 of them are capacity type, then when checking the availability for this product we must take into account that at the capacity level it needs 2 availability. In other words, if the available capacity was 1, we could not reserve this product. More information about it in the section on <a href="../availability/">obtaining available capacity</a>.</li>
+<li><strong><code>TicketName</code></strong>: ticket name.</li>
+<li><strong><code>TicketConditions</code></strong>: <em>optional</em>, ticket conditions.</li>
+<li><strong><code>TicketEnclosureId</code></strong>: identifier of the enclosure to which the ticket belongs. Several tickets can belong to the same enclosure.</li>
+<li>
+<p><strong><code>SeatingAssignType</code></strong>: Indicates the type of seat assignment that applies.</p>
+<details class="example">
+<summary>Possible values</summary>
+<ul>
+<li>1: <strong>Auto assigned</strong>, seats will be automatically assigned by the system.</li>
+<li>3: <strong>Processing required</strong>, the seats will be assigned later by the provider.</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>FromAccessDay</code></strong> and <strong><code>ToAccessDay</code></strong>: if they are defined, they indicate for which days with respect to the first date of access the ticket is valid.</p>
+<details class="tip" open="open">
+<summary>Advice</summary>
+<p>The result of the call to confirm a sale already gives us the range of access dates for each ticket. So it's entirely feasible not to handle <code>FromAccessDay</code> and <code>ToAccessDay</code> and rely on what that call returns.</p>
+</details>
+<details class="info">
+<summary>Example</summary>
+<ul>
+<li>If the ticket defines FromAccessDay = 1 and ToAccessDate = 1, the client must use it on the first day of access.</li>
+<li>If the ticket defines FromAccessDay = 2 and ToAccessDate = 2, the client must use it on the second day of access.</li>
+<li>If the ticket defines FromAccessDay = 1 and ToAccessDate = 2, the customer will be able to enter on either the first or second day.</li>
+<li>If the ticket defines FromAccessDay = 2 and ToAccessDate is not defined, the client will be able to enter from the second day to an indefinite day, for example until the end of the season, <em>unless the product conditions indicate otherwise</em>.</li>
+<li>If the ticket does not define either FromAccessDay or ToAccessDate, the customer will only be able to enter on the first day, <em>unless the product conditions indicate otherwise</em>.</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>TypeOfPerson</code></strong>: <em>optional</em>, defines the type of person and their numbering.</p>
+<ul>
+<li>
+<p><strong><code>Type</code></strong>: indicates the type of person.</p>
+<details class="example">
+<summary>Possible values</summary>
+<ul>
+<li>1: Baby</li>
+<li>2: Child</li>
+<li>3: Adult</li>
+<li>4: Senior</li>
+<li>5: Generic</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>PersonNumber</code></strong>: identifier of the person number by type.</p>
+</li>
+</ul>
+<details class="example">
+<summary>Example</summary>
+<ul>
+<li>"3x2 Ticket" product made up of two adults and one child and defined by three tickets:<ul>
+<li>Adult Ticket: adult 1 (Type = 3, PersonNumber = 1)</li>
+<li>Adult Ticket: adult 2 (Type = 3, PersonNumber = 2)</li>
+<li>Child Ticket: child 1 (Type = 2, PersonNumber = 1)</li>
+</ul>
+</li>
+<li>Product "2x1 ticket plus second consecutive day" consisting of two adults and 4 tickets:<ul>
+<li>Adult First Day Ticket: adult 1 (Type = 3, PersonNumber = 1)</li>
+<li>Adult First Day Ticket: adult 2 (Type = 3, PersonNumber = 2)</li>
+<li>Second Day Adult Ticket: adult 1 (Type = 3, PersonNumber = 1)</li>
+<li>Second Day Adult Ticket: adult 2 (Type = 3, PersonNumber = 2)</li>
+</ul>
+</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>RequiresDeliveryManagement</code></strong>: indicates if it is a ticket that requires physical delivery. If so, you will have to choose the delivery method when adding the product to the cart. You can check the available delivery methods in the section <a href="../deliveryMethods/">Get Delivery Methods</a>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>ProductPaxGroupingId</code></strong>: <em>optional</em>, identifier of the product group to which the product belongs.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>ProductPaxGroupings</code></strong>: groupings of products whose main difference is the people who compose it.</p>
+<ul>
+<li><strong><code>ProductPaxGroupingId</code></strong>: grouping identifier. 13 character alphanumeric.</li>
+<li><strong><code>ProductPaxGroupingName</code></strong>: name of the grouping.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Urls</code></strong>: <em>optional</em>, array of urls to access the provider's ticketshop page. Only in the case of having personalized DNS.</p>
+<ul>
+<li><strong><code>LanguageCode</code></strong>: code of the language with which it is going to be accessed. Represented by the <em>ISO format 639-1</em>.</li>
+<li><strong><code>Url</code></strong>: access url.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>CombinedProducts</code></strong>: array of combined products.</p>
+<ul>
+<li><strong><code>CombinedProductId</code></strong>: combined product identifier.</li>
+<li><strong><code>Name</code></strong>: combined product name.</li>
+<li><strong><code>PriceFrom</code></strong>: price "<em>from</em>" for the combined product.</li>
+<li><strong><code>PriceTo</code></strong>: price "<em>to</em>" for combined product.</li>
+<li><strong><code>Products</code></strong>: array of products that are part of the combined product.<ul>
+<li><strong><code>ProductId</code></strong>: product identifier.</li>
+</ul>
+</li>
+<li><strong><code>RequiresRealTimePrice</code></strong>: indicates if you need to consult the price in real time for the combined product. See <a href="../realTimePrices/">obtaining the price in real time</a></li>
+</ul>
+</li>
+<li>
+<p><strong><code>PartnerSettings</code></strong>: shows the partner settings.</p>
+<ul>
+<li><strong><code>DemandClientData</code></strong>: boolean <code class="highlight"><span class="k">true</span><span class="o">/</span><span class="k">false</span></code> that indicates if is mandatory to tell the client information when sale confirmation is done.</li>
+<li><strong><code>DemandClientTaxData</code></strong>: boolean <code class="highlight"><span class="k">true</span><span class="o">/</span><span class="k">false</span></code> that indicates if is mandatory to tell the client tax information when sale confirmation is done.</li>
+<li><strong><code>EnableCancellationRequest</code></strong>:  boolean <code class="highlight"><span class="k">true</span><span class="o">/</span><span class="k">false</span></code> that indicates if Test It is allowed to request cancellations via API.</li>
+<li>
+<p><strong><code>PaymentType</code></strong>: indicates the payment type for the partner.</p>
+<details class="example">
+<summary>Possible values</summary>
+<ul>
+<li>1: Debit</li>
+<li>2: Credit</li>
+<li>3: Credit, except for groups</li>
+<li>4: Prepaid</li>
+</ul>
+</details>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Success</code></strong>: boolean <code class="highlight"><span class="k">true</span><span class="o">/</span><span class="k">false</span></code> that indicates whether or not the call was processed correctly.</p>
+</li>
+<li><strong><code>Timestamp</code></strong>: instant of time in which the request was processed. <em>ISO 8601 format (yyyy-MM-ddThh:mm:ss.fffffff)</em>.</li>
+<li><strong><code>ErrorMessage</code></strong>: error message explaining why the request was not successful. If it was correct, it will return <code class="highlight"><span class="k">null</span></code>.</li>
+<li><strong><code>ErrorCodes</code></strong>: list of <a href="../../annex/errorCodes">codes</a> that identify the errors that have occurred in the API call.</li>
+</ul>
+<h3 id="response-example">Response example</h3>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;Success&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;Timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-01-01T17:02:27.8165916&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;ErrorMessage&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;Providers&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">    </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;ProviderId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;by81fymhsmjgw&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;ProviderName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PTM&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;ProviderDescription&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Provider Description&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;ProviderAccessConditions&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Provider access conditions&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;ExchangeVoucherPoint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Access point&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;AccessCodeMethodName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;TicketWaitForIt&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;AdvancedDateSelectorMethodName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;None&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;CancellationPolicy&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;IsRefundable&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Rules&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">                </span><span class="p">[</span>
+<span class="w">                    </span><span class="p">{</span>
+<span class="w">                        </span><span class="nt">&quot;HoursInAdvanceOfAccess&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span>
+<span class="w">                        </span><span class="nt">&quot;Percentage&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">80</span>
+<span class="w">                    </span><span class="p">},</span>
+<span class="w">                    </span><span class="p">{</span>
+<span class="w">                        </span><span class="nt">&quot;HoursInAdvanceOfAccess&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">120</span><span class="p">,</span>
+<span class="w">                        </span><span class="nt">&quot;Percentage&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">75</span>
+<span class="w">                    </span><span class="p">}</span>
+<span class="w">                </span><span class="p">]</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;IsForGroups&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;LimitOfNumberOfPeopleToBeGroup&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">19</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;Logo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://url.ofthelogo.com&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;Location&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;CountryCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;es&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Torrevieja&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Avda. Delfina Viudes, 99&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;ZipCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;03183&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Lat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">37.99</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Lng&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">-0.68</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Region&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Alicante&quot;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;Urls&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">            </span><span class="p">[</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="nt">&quot;LanguageCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;es&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;Url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://url.com/park1&quot;</span>
+<span class="w">                </span><span class="p">},</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="nt">&quot;LanguageCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;en&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;Url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://en-url.com/park1&quot;</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">],</span>
+<span class="w">            </span><span class="nt">&quot;TicketEnclosures&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">            </span><span class="p">[</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="nt">&quot;TicketEnclosureId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;g5u6m3xew6hxy&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;TicketEnclosureName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Sala 1&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;TicketEnclosureConditions&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Enclosure conditions&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;TypeOfPersonDefinitionTypeChild&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;TypeOfPersonDefinitionValueChild&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">120</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;TypeOfPersonDefinitionTypeSenior&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;TypeOfPersonDefinitionValueSenior&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">65</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;Sessions&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">                    </span><span class="p">{</span>
+<span class="w">                        </span><span class="nt">&quot;SessionsGroupSessionContents&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">                        </span><span class="p">[</span>
+<span class="w">                            </span><span class="p">{</span>
+<span class="w">                                </span><span class="nt">&quot;SessionsGroupId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;7q59grjg1tuxw&quot;</span><span class="p">,</span>
+<span class="w">                                </span><span class="nt">&quot;SessionContentId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;fiajih99h79ak&quot;</span>
+<span class="w">                            </span><span class="p">},</span><span class="w"> </span>
+<span class="w">                            </span><span class="p">{</span>
+<span class="w">                                </span><span class="nt">&quot;SessionsGroupId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;8o9tskd4szqgs&quot;</span><span class="p">,</span>
+<span class="w">                                </span><span class="nt">&quot;SessionContentId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;m6noaxhzr33an&quot;</span>
+<span class="w">                            </span><span class="p">},</span>
+<span class="w">                            </span><span class="p">{</span>
+<span class="w">                                </span><span class="nt">&quot;SessionsGroupId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;i73hiypge5576&quot;</span><span class="p">,</span>
+<span class="w">                                </span><span class="nt">&quot;SessionContentId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;suefs1zzn5ser&quot;</span>
+<span class="w">                            </span><span class="p">}</span>
+<span class="w">                        </span><span class="p">],</span>
+<span class="w">                        </span><span class="nt">&quot;SessionSessionContents&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span>
+<span class="w">                    </span><span class="p">}</span>
+<span class="w">                </span><span class="p">},</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="nt">&quot;TicketEnclosureId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;geu773xaqzh18&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;TicketEnclosureName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Enclosure 2&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;TicketEnclosureConditions&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Enclosure 2 conditions&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;TypeOfPersonDefinitionTypeChild&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;TypeOfPersonDefinitionValueChild&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">120</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;TypeOfPersonDefinitionTypeSenior&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;TypeOfPersonDefinitionValueSenior&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">65</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">],</span>
+<span class="w">            </span><span class="nt">&quot;ProductBases&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">            </span><span class="p">[</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="nt">&quot;ProductBaseId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;gfo753rgjfbw6&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;ProductBaseName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Entradas&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;ProductBaseDescription&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;No se permiten cambios ni devoluciones.&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;DaysWithLimitedCapacity&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-11-01&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;Products&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">                    </span><span class="p">[</span>
+<span class="w">                        </span><span class="p">{</span>
+<span class="w">                            </span><span class="nt">&quot;ProductId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ctgyir9m9q4bo&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ProductName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Entrada Adulto&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ProductDescription&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Entrada para mayores de 12 años.&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ProductInternalConsiderations&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Consideraciones internas&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ProductCancellationConditions&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Condiciones de cancelación&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;CancellationPolicy&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">                            </span><span class="p">{</span>
+<span class="w">                                </span><span class="nt">&quot;IsRefundable&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">                                </span><span class="nt">&quot;Rules&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">                                </span><span class="p">[</span>
+<span class="w">                                    </span><span class="p">{</span>
+<span class="w">                                        </span><span class="nt">&quot;HoursInAdvanceOfAccess&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span>
+<span class="w">                                        </span><span class="nt">&quot;Percentage&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">80</span>
+<span class="w">                                    </span><span class="p">}</span>
+<span class="w">                                </span><span class="p">]</span>
+<span class="w">                            </span><span class="p">},</span>
+<span class="w">                            </span><span class="nt">&quot;DaysWithLimitedCapacity&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;HoursInAdvanceOfPurchase&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;MinimumNumberByTransaction&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfPeople&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfAdults&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfBabies&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfChildren&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfSenior&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfGeneric&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ValidDates&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ValidDatesType&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;AccessDateCriteria&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;PricesAndDates&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">                            </span><span class="p">[</span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;Price&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;20&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Currency&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;€&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;CurrencyName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Euro&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Dates&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-01-01,2022-01-02,2022-01-03,2022-07-31&quot;</span>
+<span class="w">                                </span><span class="p">},</span><span class="w"> </span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;Price&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;30&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Currency&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;€&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;CurrencyName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Euro&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Dates&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-08-01,2022-08-02,2022-08-31&quot;</span>
+<span class="w">                                </span><span class="p">},</span><span class="w"> </span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;Price&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;15&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Currency&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;€&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;CurrencyName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Euro&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Dates&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-09-01,2022-09-02,2022-12-31&quot;</span>
+<span class="w">                                </span><span class="p">}</span>
+<span class="w">                            </span><span class="p">],</span>
+<span class="w">                            </span><span class="nt">&quot;SalesDocumentSettingsViewModel&quot;</span><span class="p">:</span>
+<span class="w">                            </span><span class="p">{</span>
+<span class="w">                                </span><span class="nt">&quot;ShowPrice&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">                            </span><span class="p">},</span>
+<span class="w">                            </span><span class="nt">&quot;Tickets&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">                            </span><span class="p">[</span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1tqgtrf7ctefc&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;IsQuotaTicket&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ticket Adulto&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketEnclosureId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;geu773xaqzh18&quot;</span>
+<span class="w">                                </span><span class="p">}</span>
+<span class="w">                            </span><span class="p">]</span>
+<span class="w">                        </span><span class="p">},</span><span class="w"> </span>
+<span class="w">                        </span><span class="p">{</span>
+<span class="w">                            </span><span class="nt">&quot;ProductId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;htgy4tgm9q21n&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ProductName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Entrada 3x2&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ProductDescription&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Por cada dos adultos, entra un niño gratis.&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;DaysWithLimitedCapacity&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-04-17,2022-08-15&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;HoursInAdvanceOfPurchase&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;MinimumNumberByTransaction&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfPeople&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfAdults&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfChildren&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfSenior&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfGeneric&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ValidDates&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ValidDatesType&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;AccessDateCriteria&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;PricesAndDates&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">                            </span><span class="p">[</span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;Price&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;35&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Currency&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;€&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;CurrencyName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Euro&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Dates&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-01-01,2022-01-02,2022-01-03,2022-07-31&quot;</span>
+<span class="w">                                </span><span class="p">},</span><span class="w"> </span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;Price&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;50&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Currency&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;€&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;CurrencyName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Euro&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Dates&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-08-01,2022-08-02,2022-08-31&quot;</span>
+<span class="w">                                </span><span class="p">},</span><span class="w"> </span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;Price&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;25&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Currency&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;€&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;CurrencyName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Euro&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Dates&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-09-01,2022-09-02,2022-12-31&quot;</span>
+<span class="w">                                </span><span class="p">}</span>
+<span class="w">                            </span><span class="p">],</span>
+<span class="w">                            </span><span class="nt">&quot;SalesDocumentSettingsViewModel&quot;</span><span class="p">:</span>
+<span class="w">                            </span><span class="p">{</span>
+<span class="w">                                </span><span class="nt">&quot;ShowPrice&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">                            </span><span class="p">},</span>
+<span class="w">                            </span><span class="nt">&quot;Tickets&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">                            </span><span class="p">[</span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1tqgtrf7ctefc&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;IsQuotaTicket&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ticket Adulto&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketConditions&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ticket conditions&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketEnclosureId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;geu773xaqzh18&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;FromAccessDay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;ToAccessDay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketsQuestionsProfileId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MyProfilesQuestions&quot;</span>
+<span class="w">                                </span><span class="p">},</span><span class="w"> </span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2lob55g8w3fff&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;IsQuotaTicket&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ticket Adulto segundo día&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketConditions&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ticket conditions&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketEnclosureId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;geu773xaqzh18&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;FromAccessDay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;ToAccessDay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span>
+<span class="w">                                </span><span class="p">},</span><span class="w"> </span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;jkp78j40cnfh3&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;IsQuotaTicket&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ticket Niño&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketEnclosureId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;geu773xaqzh18&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;FromAccessDay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;ToAccessDay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">                                </span><span class="p">},</span><span class="w"> </span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;gggsijt911am4&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;IsQuotaTicket&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ticket Niño segundo día&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketEnclosureId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;geu773xaqzh18&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;FromAccessDay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;ToAccessDay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span>
+<span class="w">                                </span><span class="p">}</span>
+<span class="w">                            </span><span class="p">]</span>
+<span class="w">                        </span><span class="p">},</span><span class="w"> </span>
+<span class="w">                        </span><span class="p">{</span>
+<span class="w">                            </span><span class="nt">&quot;ProductId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;q2oghu9mye7h2&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ProductName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Película de animación 3D&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ProductDescription&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Película de animación para descansar de atracciones&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;DaysWithLimitedCapacity&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;HoursInAdvanceOfPurchase&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;MinimumNumberByTransaction&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfPeople&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfAdults&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfChildren&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfSenior&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfGeneric&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ValidDates&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ValidDatesType&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;AccessDateCriteria&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;PricesAndDates&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">                            </span><span class="p">[</span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;Price&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;5&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Currency&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;€&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;CurrencyName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Euro&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Dates&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-01-01,2022-01-02,2022-01-03,2022-12-31&quot;</span>
+<span class="w">                                </span><span class="p">}</span>
+<span class="w">                            </span><span class="p">],</span>
+<span class="w">                            </span><span class="nt">&quot;SalesDocumentSettingsViewModel&quot;</span><span class="p">:</span>
+<span class="w">                            </span><span class="p">{</span>
+<span class="w">                                </span><span class="nt">&quot;ShowPrice&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="w">                            </span><span class="p">},</span>
+<span class="w">                            </span><span class="nt">&quot;Tickets&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">                            </span><span class="p">[</span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;fb8mcqxyo22rg&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;IsQuotaTicket&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Entrada 3D&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketEnclosureId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;g5u6m3xew6hxy&quot;</span>
+<span class="w">                                </span><span class="p">}</span>
+<span class="w">                            </span><span class="p">]</span>
+<span class="w">                        </span><span class="p">}</span>
+<span class="w">                    </span><span class="p">]</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">]</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:integrations@experticket.com" target="_blank" rel="noopener" title="Contact email" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.top"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

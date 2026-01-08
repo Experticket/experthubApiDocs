@@ -1,0 +1,3308 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentación del API de Experthub.">
+      
+      
+      
+      
+        <link rel="prev" href="../prePackage/">
+      
+      
+        <link rel="next" href="../fullCatalog/">
+      
+      
+        
+          <link rel="alternate" href="/es/" hreflang="es">
+        
+      
+      
+      <link rel="icon" href="../../../assets/imagotipo.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Catálogo básico - Documentación Experthub API</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="experticket" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#catalogo-basico-de-paquetes" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../.." title="Documentación Experthub API" class="md-header__button md-logo" aria-label="Documentación Experthub API" data-md-component="logo">
+      
+  <img src="../../../assets/Logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentación Experthub API
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Catálogo básico
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="experticket" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Seleccionar idioma">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/es/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../connection/" class="md-tabs__link">
+          
+  
+  
+  Documentación
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Documentación Experthub API" class="md-nav__button md-logo" aria-label="Documentación Experthub API" data-md-component="logo">
+      
+  <img src="../../../assets/Logo.svg" alt="logo">
+
+    </a>
+    Documentación Experthub API
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentación
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Documentación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interfaz de comunicación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../struct/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Especificación de datos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Actividades
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Actividades
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../activity/catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../activity/lastCatalogUpdatedDate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Última fecha de actualización del catálogo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../activity/availableLanguages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Idiomas disponibles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../activity/realTimePrices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Precios en tiempo real
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../activity/sessions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesiones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../activity/autoAssignSession/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comprobar sesiones auto asignadas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../activity/availability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aforo disponible
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../activity/CheckTicketsQuestions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preguntas de tickets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../activity/checkSaleFlowRules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reglas de flujo de venta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../activity/giftCards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tarjetas regalo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_11" id="__nav_2_3_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Métodos de entrega
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Métodos de entrega
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../activity/deliveryMethods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Obtener métodos de entrega
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../activity/checkDeliveryMethods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comprobar método de entrega
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../activity/ticketExchange/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Canje de tickets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../activity/checkDiscountCoupons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comprobar cupones descuento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../activity/checkInsurancePolicies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cotizar pólizas de seguro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../activity/tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Etiquetas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alojamiento
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Alojamiento
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../accommodation/basicCatalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo básico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../accommodation/fullCatalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo completo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paquetes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Paquetes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prePackage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prepaquetes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo básico
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo básico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#metodo-de-acceso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Método de acceso
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-de-la-peticion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estructura de la petición
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Estructura de la petición">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos-de-llamadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplos de llamadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-de-la-respuesta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estructura de la respuesta
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Estructura de la respuesta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos-de-respuesta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplos de respuesta
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fullCatalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo completo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../availableDates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Disponibilidad de fechas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pricesAndCancellationsConditions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Precios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proceso de compra
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Proceso de compra
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shoppingCart/introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shoppingCart/create/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Creación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shoppingCart/add/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Añadir al carrito
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shoppingCart/remove/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Eliminar elemento del carrito
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shoppingCart/confirm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reserva de productos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shoppingCart/cancelConfirm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cancelación de la reserva
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shoppingCart/sale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Confirmación de la reserva
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shoppingCart/documentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentación de la venta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sale/saleAttachments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adjuntar documentos a la venta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shoppingCart/listOfSales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Listado de ventas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Opciones sobre ventas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Opciones sobre ventas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sale/introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shoppingCart/listOfSales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Listado de ventas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sale/saleCancellationRequest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Crear solicitud de cancelación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sale/listOfSaleCancellationRequest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Listado de solicitudes de cancelación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shoppingCart/documentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentación de la venta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sale/saleAttachments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adjuntar documentos a la venta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Anexos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../annex/activity.es/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Actividad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../annex/accommodation.es/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alojamiento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../annex/combinedProduct.es/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Producto Combinado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../annex/client.es/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cliente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../annex/errorCodes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Códigos de error
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#metodo-de-acceso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Método de acceso
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-de-la-peticion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estructura de la petición
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Estructura de la petición">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos-de-llamadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplos de llamadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-de-la-respuesta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estructura de la respuesta
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Estructura de la respuesta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos-de-respuesta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplos de respuesta
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="catalogo-basico-de-paquetes">Catálogo básico de paquetes</h1>
+<p>Este método nos permite obtener la información mínima e indispensable sobre los distintos paquetes. Puede utilizarse, por ejemplo, para crear una página inicial de búsqueda.</p>
+<p>El resultado será una matriz de las distintas actividades (<code>PrePackageIds</code>) y de los alojamientos disponibles para cada una de esas actividades.</p>
+<p>Las actividades pueden tener ninguna, una o varias restricciones de alojamientos configurados internamente, como, por ejemplo, únicamente poder empaquetarse con un alojamiento específico o una restricción de distancia máxima al recinto. Estas restricciones pueden provocar que, aunque haya alojamientos en la zona o radio específicos, no aparezcan en la lista de resultados de paquetes (<code>Packages</code>).</p>
+<h2 id="metodo-de-acceso">Método de acceso</h2>
+<p><strong>POST</strong> /Package/BasicCatalog</p>
+<h2 id="estructura-de-la-peticion">Estructura de la petición</h2>
+<ul>
+<li>
+<p><strong><code>People</code></strong>: (<code>list</code>) <code>Requerido</code>. Listado de personas que componen el paquete. El orden en el cual se añaden las personas en este listado repercute, posteriormente, en el índice a usar en la propiedad <code>Room</code></p>
+<ul>
+<li>
+<p><strong><code>Person</code></strong>: (<code>object</code>) <code>Requerido</code>. Información de la persona.</p>
+<ul>
+<li>
+<p><strong><code>Type</code></strong>: (<code>int</code>) <code>Requerido</code>. Tipo de persona.</p>
+<details class="example">
+<summary>Posibles valores</summary>
+<ul>
+<li><code>0</code>: Bebé</li>
+<li><code>1</code>: Niño</li>
+<li><code>2</code>: Adulto</li>
+<li><code>3</code>: Senior</li>
+<li><code>4</code>: Genérico</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>Age</code></strong>: (<code>int</code>) <code>Opcional</code>. Edad de la persona. Obligatorio, únicamente, si se trata de un niño o bebé (tipo <code>1</code> y <code>2</code>).</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Activity</code></strong>: (<code>object</code>) <code>Requerido</code>. Información sobre la actividad.</p>
+<ul>
+<li><strong><code>FromDate</code></strong>: (<code>date</code>) <code>Requerido</code>. Fecha de inicio de la actividad. Formato IS0 8601 (YYYY-MM-DD).</li>
+<li><strong><code>ToDate</code></strong>: (<code>date</code>) <code>Requerido</code>. Fecha de finalización de la actividad. Formato IS0 8601 (YYYY-MM-DD).</li>
+<li><strong><code>PrePackageIds</code></strong>: (<code>list</code>) <code>Requerido</code>. Listado de identificadores de prepaquetes de la actividad.<ul>
+<li><code>(string)</code>: <code>Requerido</code>. Identificador del prepaquete</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Accomodation</code></strong>: (<code>object</code>) <code>Requerido</code>. Información sobre los alojamientos a obtener.</p>
+<ul>
+<li><strong><code>AccommodationIds</code></strong>: (<code>list</code>) <code>Opcional</code>. Listado que permite obtener únicamente paquetes de un conjunto de alojamientos.<ul>
+<li><strong><code>(string)</code></strong>:  <code>Opcional</code>. Identificador del alojamiento.</li>
+</ul>
+</li>
+<li><strong><code>Destination</code></strong>: (<code>object</code>) <code>Requerido</code>. Geolocalización a partir de la cual se realizará la búsqueda de alojamientos. Ver <a href="/experthubApiDocs/es/docs/package/prePackage/#estructura-de-la-respuesta">SuggestedLocation</a>.<ul>
+<li><strong><code>Latitude</code></strong>: (<code>decimal</code>) <code>Requerido</code>. Latitud de la geolocalización.</li>
+<li><strong><code>Longitude</code></strong>: (<code>decimal</code>) <code>Requerido</code>. Longitud de la geolocalización.</li>
+</ul>
+</li>
+<li><strong><code>CheckIn</code></strong>: (<code>date</code>) <code>Requerido</code>. Fecha de entrada al alojamiento. Formato ISO 8601 (YYYY-MM-DD).</li>
+<li><strong><code>CheckOut</code></strong>: (<code>date</code>) <code>Requerido</code>. Fecha de salida del alojamiento. Formato ISO 8601 (YYYY-MM-DD).</li>
+<li><strong><code>RoomDistribution</code></strong>: (<code>list</code>) <code>Requerido</code>. Listado habitaciones que compondrán el paquete.<ul>
+<li><strong><code>Room</code></strong>: (<code>list</code>) <code>Requerido</code>. Información de las Personas que componen esta habitación.<ul>
+<li><strong><code>(int)</code></strong>: <code>Requerido</code>. Índice correspondiente a la posición de la persona en el listado de Personas (People).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Filter</code></strong>: (<code>list</code>) <code>Opcional</code>. Filtros para acotar el resultado. Los distintos filtros se añaden como si de un operador <code>AND</code> se tratase.</p>
+<ul>
+<li>
+<p><strong><code>AccommodationBoards</code></strong>: (<code>list</code>) <code>Opcional</code>. Listado con los regímenes del alojamiento deseados.</p>
+<ul>
+<li>
+<p><strong><code>(int)</code></strong>: <code>Opcional</code>. Tipo de régimen alimenticio.</p>
+<details class="example">
+<summary>Posibles valores</summary>
+<ul>
+<li><code>10</code>: Solo habitación.</li>
+<li><code>20</code>: Habitación y desayuno.</li>
+<li><code>30</code>: Media Pensión.</li>
+<li><code>40</code>: Pensión Completa.</li>
+<li><code>50</code>: Todo incluido.</li>
+</ul>
+</details>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>AccommodationCategories</code></strong>: (<code>list</code>) <code>Opcional</code>. Listado con las categorías del alojamiento deseadas.</p>
+<ul>
+<li>
+<p><strong><code>(int)</code></strong>: <code>Opcional</code>. Tipo de categoría del alojamiento.</p>
+<details class="example">
+<summary>Posibles valores</summary>
+<ul>
+<li><code>0</code>: Desconocida.</li>
+<li><code>1</code>: 1 Estrella.</li>
+<li><code>2</code>: 2 Estrellas.</li>
+<li><code>3</code>: 3 Estrellas.</li>
+<li><code>4</code>: 4 Estrellas.</li>
+<li><code>5</code>: 5 Estrellas.</li>
+</ul>
+</details>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>AccommodationRateClasses</code></strong>: (<code>list</code>) <code>Opcional</code>. Listado de alojamientos con o sin reembolso.</p>
+<ul>
+<li>
+<p><strong><code>(int)</code></strong>: <code>Opcional</code>. Indica si se quiere o no con reembolso.</p>
+<details class="example">
+<summary>Posibles valores</summary>
+<p>--8&lt;-- "includes/enum/accommodationRateClass.md"~~~~</p>
+</details>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>AccommodationTypes</code></strong>: (<code>list</code>) <code>Opcional</code>. Listado de tipos de alojamiento.</p>
+<ul>
+<li>
+<p><strong><code>(int)</code></strong>: <code>Opcional</code>. Indica el tipo de alojamiento.</p>
+<details class="example">
+<summary>Posibles valores</summary>
+<ul>
+<li><code>0</code>: Sin clasificar</li>
+<li><code>1</code>: Hotel</li>
+<li><code>2</code>: Hostal</li>
+<li><code>3</code>: Camping</li>
+<li><code>4</code>: Apartamento</li>
+</ul>
+</details>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Cities</code></strong>: (<code>list</code>) <code>Opcional</code>. Listado de ciudades.</p>
+<ul>
+<li><strong><code>(string)</code></strong>: <code>Opcional</code>. Nombre de la ciudad.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>PriceRange</code></strong>: <code>Opcional</code>. Rango de precios del paquete. En caso de más de un elemento, actuarán como un operador de unión <code>OR</code>.</p>
+<ul>
+<li><strong><code>Min</code></strong>: (<code>int</code>) <code>Opcional</code>. Precio mínimo.</li>
+<li><strong><code>Max</code></strong>: (<code>int</code>) <code>Opcional</code>. Precio máximo.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>DistanceRanges</code></strong>: (<code>list</code>) <code>Opcional</code>. Listado de rangos de distancia con respecto a la actividad. En caso de más de un elemento, actuarán como un operador de unión <code>OR</code>.</p>
+<ul>
+<li><strong><code>DistanceRange</code></strong>: (<code>object</code>) <code>Opcional</code>. Rango de distancia con respecto a la actividad en metros.<ul>
+<li><strong><code>Min</code></strong>: (<code>int</code>) <code>Opcional</code>. Distancia mínima.</li>
+<li><strong><code>Max</code></strong>: (<code>int</code>) <code>Opcional</code>. Distancia máxima.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Sort</code></strong>: (<code>object</code>) <code>Opcional</code>. Ordenación de los resultados.</p>
+<ul>
+<li>
+<p><strong><code>Criteria</code></strong>: (<code>int</code>) <code>Opcional</code>. Tipo de ordenación.</p>
+<details class="example">
+<summary>Posibles valores</summary>
+<ul>
+<li><code>1</code>: Más baratos primero.</li>
+<li><code>2</code>: Más caros primero.</li>
+<li><code>3</code>: Más cercanos primero.</li>
+</ul>
+</details>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Paging</code></strong>: (<code>object</code>) <code>Opcional</code>. Información de la paginación.</p>
+<ul>
+<li><strong><code>Number</code></strong>: (<code>int</code>) <code>Opcional</code>. Número de página solicitada.</li>
+<li><strong><code>Size</code></strong>: (<code>int</code>) <code>Opcional</code>. Número de elementos por página.</li>
+</ul>
+</li>
+</ul>
+<h3 id="ejemplos-de-llamadas">Ejemplos de llamadas</h3>
+<details class="tip">
+<summary>Ejemplo: 2 habitaciones: "1 adulto + 1 niño" y "1 adulto"</summary>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;People&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;Age&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;Activity&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;FromDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-01-25&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;ToDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-01-26&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;PrePackageIds&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">&quot;1fu1tmxgjrzyh&quot;</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;Destination&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">           </span>
+<span class="w">            </span><span class="nt">&quot;Latitude&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">42.3446912</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;Longitude&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.9566978000000</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="nt">&quot;CheckIn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-01-25&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;CheckOut&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-01-28&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;RoomDistribution&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">[</span>
+<span class="w">                </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                </span><span class="mi">2</span>
+<span class="w">            </span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span>
+<span class="w">                </span><span class="mi">3</span>
+<span class="w">            </span><span class="p">]</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;Sort&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;Criteria&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;Paging&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;Number&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;Size&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">10</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+<details class="tip">
+<summary>Ejemplo: 1 habitación: "1 adulto + 1 niño" en alojamiento 3*</summary>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;People&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;Age&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;Activity&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;FromDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-01-25&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;ToDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-01-26&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;PrePackageIds&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">&quot;1fu1tmxgjrzyh&quot;</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;Destination&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">           </span>
+<span class="w">            </span><span class="nt">&quot;Latitude&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">42.3446912</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;Longitude&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.9566978000000</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="nt">&quot;CheckIn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-01-25&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;CheckOut&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-01-28&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;RoomDistribution&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">[</span>
+<span class="w">                </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                </span><span class="mi">1</span>
+<span class="w">            </span><span class="p">]</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;Filter&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;AccommodationCategories&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="mi">3</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;Sort&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;Criteria&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;Paging&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;Number&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;Size&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">10</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+<h2 id="estructura-de-la-respuesta">Estructura de la respuesta</h2>
+<ul>
+<li><strong><code>TotalPages</code></strong>: (<code>int</code>). Número total de páginas.</li>
+<li>
+<p><strong><code>Packages</code></strong>: (<code>list</code>). Listado de paquetes con base en los criterios de búsqueda: Actividad/es, Alojamiento/s y Filtros.</p>
+<ul>
+<li>
+<p><strong><code>Package</code></strong>: (<code>object</code>). Información del paquete.</p>
+<ul>
+<li>
+<p><strong><code>Accommodation</code></strong>: (<code>object</code>). Información del alojamiento.</p>
+<ul>
+<li><strong><code>MainImageUrl</code></strong>: (<code>string</code>). Url de la imagen principal del alojamiento.</li>
+<li><strong><code>Name</code></strong>: (<code>string</code>). Nombre del alojamiento.</li>
+<li><strong><code>Description</code></strong>: (<code>string</code>). Descripción del alojamiento.</li>
+<li><strong><code>Address</code></strong>: (<code>string</code>). Dirección del alojamiento.</li>
+<li><strong><code>City</code></strong>: (<code>string</code>). Ciudad donde se ubica el alojamiento.</li>
+<li><strong><code>PostalCode</code></strong>: (<code>string</code>). Código postal del alojamiento.</li>
+<li><strong><code>Country</code></strong>: (<code>string</code>). País donde está ubicado el alojamiento.</li>
+<li>
+<p><strong><code>Type</code></strong>: (<code>string</code>). Tipo de alojamiento.</p>
+<details class="example">
+<summary>Posibles valores</summary>
+<ul>
+<li><code>0</code>: Sin clasificar</li>
+<li><code>1</code>: Hotel</li>
+<li><code>2</code>: Hostal</li>
+<li><code>3</code>: Camping</li>
+<li><code>4</code>: Apartamento</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>Category</code></strong>: (<code>string</code>). Categoría del alojamiento.</p>
+<details class="example">
+<summary>Posibles valores</summary>
+<ul>
+<li><code>0</code>: Desconocida.</li>
+<li><code>1</code>: 1 Estrella.</li>
+<li><code>2</code>: 2 Estrellas.</li>
+<li><code>3</code>: 3 Estrellas.</li>
+<li><code>4</code>: 4 Estrellas.</li>
+<li><code>5</code>: 5 Estrellas.</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>DistanceToActivity</code></strong>: (<code>decimal</code>). Distancia, en metros, desde el alojamiento hasta el punto inicial de la actividad.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>PriceFrom</code></strong>: (<code>decimal</code>). Precio de la combinatoria más baja para el paquete en cuestión.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>AvailableFilters</code></strong>: (<code>list</code>). Da información de los filtros disponibles según el criterio de búsqueda. Por ejemplo para afinar futuras búsquedas usando el parámetro de llamada "Filter". En todos los casos se devuelve un array de objetos con las propiedades "Value" (coincidente con los valores definidos en "Filter") y "Count" indicando cuántas coincidencias de cada filtro. Se devuelve información sobre (ver definición en parámetro de llamada "Filter"):</p>
+<ul>
+<li><strong><code>AccommodationBoards</code></strong>: (<code>list</code>)</li>
+<li><strong><code>AccommodationCategories</code></strong>: (<code>list</code>)</li>
+<li><strong><code>AccommodationCities</code></strong>: (<code>list</code>)</li>
+<li><strong><code>AccommodationRateClasses</code></strong>: (<code>list</code>)</li>
+<li><strong><code>AccommodationTypes</code></strong>: (<code>list</code>)</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Success</code></strong>: (<code>boolean</code>). Valor que indica si la llamada ha sido procesada correctamente o no.</p>
+</li>
+<li><strong><code>Errors</code></strong>: (<code>list</code>). Array de errores.<ul>
+<li><strong><code>Error</code></strong>: (<code>object</code>).<ul>
+<li><strong><code>ErrorMessage</code></strong>: (<code>string</code>). Mensaje de error explicando por qué la petición no ha sido correcta. En caso que haya sido correcta, devolverá <code class="highlight"><span class="k">null</span></code>.</li>
+<li><strong><code>ErrorCode</code></strong>: (<code>int</code>). Código que identifica al error.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><code>ErrorEntityBreakDown</code></strong> (<code>list</code>): Lista que contiene objetos con el nombre e ID en caso de error.<ul>
+<li><strong><code>Id</code></strong> (<code>string</code>): Identificador</li>
+<li><strong><code>Name</code></strong> (<code>string</code>): Nombre relacionado del identificador.</li>
+</ul>
+</li>
+</ul>
+<h3 id="ejemplos-de-respuesta">Ejemplos de respuesta</h3>
+<details class="tip">
+<summary>Example</summary>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;TotalPages&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;AvailableFilters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;AccommodationBoards&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">19</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="nt">&quot;AccommodationCategories&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="nt">&quot;AccommodationCities&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra La Vella&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Camprodon&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Canillo&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Encamp&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Escaldes Engordany&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Escaldes Engordany - Andorra La Vella&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Font Romeu&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;La Molina&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Les Angles&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Meritxell&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Mollo&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Pas De La Casa&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ransol - Canillo&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ribes De Freser&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Soldeu&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="nt">&quot;AccommodationRateClasses&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="nt">&quot;AccommodationTypes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">18</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;Packages&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">26601.1617431278</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/29/291641/291641a_hb_a_004.jpg&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;291641/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Chalets de l&#39;Isard - Vacanceole&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Esta sencilla residencia se encuentra en Les Angles. Ubicada a 300 metros del centro del pueblo, la propiedad brinda un fácil acceso a todo lo que este destino tiene para ofrecer. El establecimiento está a 10 metros de las pistas. El alojamiento se encuentra a 13. 0 km de las principales conexiones con el transporte público. Chalets de l&#39;Isard - Vacanceole tiene un total de 81 dormitorios disponibles para sus huéspedes. Asimismo, el alojamiento cuenta con Wi-Fi gratuito. Chalets de l&#39;Isard - Vacanceole no ofrece servicio de recepción 24 horas. Desafortunadamente, no hay habitaciones en las que las personas que se hospeden en este alojamiento puedan pedir una cuna para los más pequeños. Las zonas comunes de la propiedad están adaptadas a personas con discapacidad. El establecimiento también dispone de una habitación accesible. Este establecimiento es ecológicamente sostenible. Los huéspedes de este establecimiento podrán aprovechar sus múltiples servicios de salud y bienestar. La residencia puede cobrar el importe de algunos de estos servicios. &quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Route du Pla del Mir&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Les Angles&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;66210&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;France&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">904.8200</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">19014.6253644023</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/14/145242/145242a_hb_a_002.jpg&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;145242/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The Catalogne&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Este maravilloso hotel está convenientemente ubicado en el corazón de Font Romeu, a sólo 200 metros del a telecabina de esquí y de un campo de golf. Entre otros servicios, el establecimiento ofrece alquiler de material de esquí y venta de forfaits en el hotel. Hay acceso a Internet disponible en todo el edificio y los huéspedes que lleguen en coche podrán dejar su vehículo en el aparcamiento del hotel. Este establecimiento consta de un total de 42 apartamentos, todos ellos con vistas espléndidas a la cordillera de los Pirineos. Los huéspedes seguramente disfrutarán de pasar el rato en la acogedora sala de estar con TV, o de relajarse con un buen libro o un refresco en la zona de estar y comedor.&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Avenue D&#39;Espagne, 9 BP49&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Font Romeu&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;66120&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;France&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1309.8960</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">32670.1421390446</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/11/111081/111081a_hb_a_008.jpg&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;111081/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Els LLacs Apartaments Turístics&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Apartamentos situado en Bordes d&#39;Envalira, entre Soldeu y Grau Roig, a 3 km de las pistas de Esquí de Grandvalira,este complejo está situado en un entorno tranquilo rodeado de naturaleza. Ofrece apartamentos exclusivos con las últimas tecnologías y ambiente rústico. Todas las unidades están equipadas con paneles y muebles de madera de primera calidad, electrodomésticos, persianas eléctricas y control de temperatura individual. El baño privado cuenta con secador de pelo, báscula y música para escapadas de parejas. La cocina totalmente equipada con todas las comodidades estándar, además de lavaplatos, tostadora, sandwichera, exprimidor y cafetera Nespreso. Para la recreación, el hotel ofrece un SPA con jacuzzi interior y exterior, baño turco, 1 sauna y gimnasio, así como un mini parque infantil interior.\n\nHorario de recepción online\nCheck-in de 16h a 20h\nCheck-out a las 11h\n\nPara más information puede contactar con los Apartamentos a través de Whatsapp +376 607162\n\nObsequiaremos a nuestros clientes con un Wellcome Pack.\n\nSiempre pensando en el bienestar de nuestros clientes y debido a los protocolos de seguridad del Covid-19, para tramitar el check-in, deberá enviar su documento de identidad escaneado o fotografiado antes del día de su llegada vía correo electrónico \n\nEl horario de check-in (llegada) es online. Si llegarán más tarde, deberán informar dentro del horario de recepción. Después el establacimiento le informará de los pasos a seguir para poder acceder a la llave de su Apartamento. En caso de no informar al establacimiento de su llegada tardía, este no podrá garantizar su Alojamiento.&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ctra. General km 22, 5 C&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Canillo&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AD100&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1118.2830</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">39866.8728760608</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/00/005215/005215a_hb_a_045.jpg&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;5215/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Eurostars Andorra&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;El Eurostars Andorra Centre es el primer hotel Eurostars en Andorra. Hotel de 5* con todo lujo de detalles y comodidades. Se encuentra en pleno centro de Andorra, en la principal calle comercial, la Avinguda Meritxell. El hotel ofrece 66 habitaciones, todas ellas totalmente equipadas. Cuenta también con gimnasio, sauna y aparcamiento cubierto bajo petición y disponibilidad (no incluido en la tarifa). Las habitaciones disponen de aire acondicionado, calefacción, teléfono, televisión, minibar, productos de acogida y mucho más. *Todas las reservas de viernes a lunes incluyen desayuno.&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Avinguda Meritxell, 23-25&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra La Vella&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AD 500&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1144.4225</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">38878.3620049003</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/00/000333/000333a_hb_a_013.jpg&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;333/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Exe Prisma&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ideal para las familias. Pensado para ellos y para todos aquellos que buscan un hotel donde todo está a mano: compras, entretenimiento y ofertas recreativas en Andorra. El Exe Prisma Hotel en Les Escaldes, se encuentra solo a una manzana de la avenida Carlemany, el principal centro comercial y la columna vertebral de Andorra. El hotel está a 5 minutos a pie de la Illa Carlemany, uno de los principales centros comerciales y de ocio de Andorra y a 5 minutos a pie del centro termal de Caldea. El Exe Prisma Hotel es un refugio para familias: Dispone de habitaciones y suites para dos, tres, cuatro y hasta siete! personas. Las habitaciones familiares superiores cuentan con dos dormitorios, dos cuartos de baño, 60 m2 y con capacidad para 7 personas. Con una gran valoración, el Exe Prisma Hotel dispone de 55 habitaciones de diferentes tamaños y capacidades, restaurante de brasa moderna propio, gimnasio, trastero, wifi gratuito en todo el hotel, aparcamiento privado bajo petición y disponibilidad (15,50 EUR/día), salón y chimenea lectura, entre otras instalaciones.&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Avinguda Del Fener, 14&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Escaldes Engordany&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AD 700&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">862.7415</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">39396.4251933958</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/00/004053/004053a_hb_a_023.jpg&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;4053/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Centric Atiram Hotel&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Situado en el centro neurálgico de Andorra la Vella y renovado en 2019, dotado de todo detalle tecnológico y rodeado de prestigiosos comercios, es el hotel ideal para estancias turísticas o de trabajo, disponiendo de 155 habitaciones de las cuales 10 son Junior Suites, perfectamente insonorizadas con baño completo (bañera y ducha individual), TV vía satélite, minibar, teléfono directo y acceso a internet WIFI. Algunas de las habitaciones, poseen una terraza privada. Establecimiento perfecto para Convenciones e incentivos y reuniones de trabajo contando con un total de 4 salas polivalentes y convertibles, con posibilidad de múltiples capacidades equipadas con los más modernos servicios tecnológicos. Sin salir y para los ratos de ocio, el hotel cuenta con una pequeña zona de relax con Jacuzzi, Baño turco, Sauna, Duchas sensaciones, salas de masajes y gimnasio. Completan sus instalaciones: bar-cafetería, servicio de habitaciones, restaurante y salón chimenea. Se encuentra cerca de las pistas de esquí y ofrece guardaesquís.\n\nNOTA: del 12 al 26 de mayo y del 3 al 17 de noviembre de 2019, la zona de relax estará cerrado por trabajos de mantenimiento.\nEntre el 06 de Mayo y el 09 de Junio 2019, el Hotel habilitará una recepción provisional en la 2a planta para dar el servicio pertinente, mientras se lleva a cabo la renovación del Hall de entrada.&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Av Meritxell 87 89, 87-89&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra La Vella&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AD 500&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1119.9045</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1909.79900364912</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/01/015230/015230a_hb_a_002.jpg&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;15230/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Solineu Apartments&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Este apartotel está situado en pleno centro de la estación de esquí de La Molina, en el Pirineo Catalán. Se encuentra en una zona privilegiada por su situación geográfica ya que está cerca de todas las atracciones turísticas de la región en la que se encuentra, la Cerdaña. El aeropuerto de El Prat (Barcelona) dista 130 km.\n\nSe trata de un apartotel adecuado para familias con un total de 50 alojamientos. El establecimiento está provisto de conexión a Internet WiFi, guardaesquíes, lavandería y garaje con aparcacoches. Otras de sus instalaciones incluyen caja fuerte, ascensor, sala de juegos, sala de TV, parque infantil y pizzería.\n\nCada uno de los apartamentos dispone de TV vía satélite/por cable, caja fuerte, conexión a Internet WiFi gratuita, una cocina totalmente equipada con lavaplatos, nevera, horno-microondas y utensilios de cocina. Además, todos cuentan con un cuarto de baño con bañera, así como con cama doble, caja fuerte, cafetera/tetera, calefacción y balcón o terraza.\n\nDesayuno, comida y cena se sirven en forma de bufet y en el recinto hay también una pizzería.&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Av. Supermolina, 7&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;La Molina&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;17537&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;España&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">6373.7370</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">39595.9160538596</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/01/015269/015269a_hb_a_001.jpg&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;15269/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NH Andorra la Vella&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;El hotel NH Andorra La Vella está situado en el corazón de Andorra la Vella y a unos pasos del antiguo casco histórico. Se encuentra en la calle principal y dispone de un fácil acceso al centro de congresos de Andorra y a las pistas de esquí de Grandvalira y Vallnord. Algunos otros puntos de interés cercanos incluyen los lagos de Tristaina, el museo del Tabaco y el santuario de Meritxell. Nuestras acogedoras habitaciones incluyen suelos de madera, wifi gratis, televisores de pantalla plana y minibares. La mayoría de las habitaciones disponen de sofás cama, mientras que las habitaciones Superiores gozan de balcones o terrazas y cafeteras Nespresso. Algunas suites selectas también incorporan área de estar y jacuzzi. Todos los días se sirve un desayuno buffet con platos calientes preparados al gusto. Para almorzar o cenar, los restaurantes locales disponen de servicio de envío a tu habitación y nuestro amable personal estará encantado de ofrecer recomendaciones gastronómicas. Para los huéspedes de negocios, el NH Andorra La Vella incluye un centro de negocios con todos los servicios, como PC, fax, fotocopiadora, impresora y escáner, para satisfacer todas sus necesidades. Ofrecemos servicios de conserjería además de limpieza en seco, lavandería y servicio de despertador diario.&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Avinguda Doctor Mitjavila, 1&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra La Vella&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AD 500&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1114.6030</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1907.17270966338</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/00/002736/002736a_hb_a_033.JPG&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2736/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Solineu&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Este hotel está situado justo en el centro de la estación de esquí La Molina, en el Pirineo catalán, cerca de las principales atracciones turísticas de la región de Cerdaña. En invierno, el esquí es la actividad más popular, pero también hay cantidad de interesantes opciones durante el resto del año, como ciclismo de montaña, senderismo o equitación, en definitiva, hay algo para cada persona. Tras un día de diversión, los huéspedes pueden relajarse en el bar salón del hotel, que cuenta con una acogedora chimenea. Su bar de montaña sirve bebidas y chocolate caliente. Para comer, los clientes pueden probar los ricos y variados platos del restaurante bufé o escoger entre las opciones selectas del restaurante italiano. Independientemente de lo que decidan, podrán satisfacer su apetito con algo realmente delicioso.&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Avenida Supermolina, 7&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;La Molina&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;17537&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;España&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1437.3275</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">34808.9985961328</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/03/037857/037857a_hb_a_001.jpg&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;37857/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Sport Hotel Hermitage&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Este hotel es ideal para escapadas de ciclismo y da la bienvenida a los ciclistas de todo el mundo. El hotel cuenta con instalaciones para apoyar tanto al ciclista de ocio como profesional. Este encantador hotel se encuentra en Soldeu, cerca de la estación de esquí de Grandvalira, a una altura de 1.580 metros. Está rodeado de imponentes montañas y pinares con un magnífico aroma en verano y una gran capa de nieve en invierno, por lo que es el refugio ideal para disfrutar de unas lujosas vacaciones de esquí o para relajarse en verano. Los huéspedes recibirán un reconfortante masaje en el sofisticado centro de bienestar y spa mientras los más pequeños se divierten en el club infantil. El hotel ofrece suites junior, suites y dúplex, todos con un elegante mobiliario, camas extra grandes, sábanas de algodón egipcio, carta de almohadas, hidromasaje y acceso a internet. Los huéspedes pueden hacer uso del servicio de habitaciones las 24 horas del día y acudir a uno de los cinco elegantes restaurantes de este hotel para saborear platos catalanes, fusiones orientales, cocina gourmet y tapas informales junto a una deliciosa copa de vino.\nLos niños menores de 13 años no pueden acceder al Sport Wellness Mountain Spa. Los niños de 13 a 18 años deben estar siempre acompañados por un adulto. Se requiere traje de baño, chanclas y gorro de baño para acceder al circuito de agua \&quot;&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Rc. General Soldeu, s/n&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Soldeu&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AD100&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">3148.1710</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">39829.0202047859</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/00/000362/000362a_hb_a_002.jpg&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;362/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;De l&#39;Isard&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Este encantador hotel está en la zona turística de Andorra La Vella. Es un lugar vacacional para todo el año. Durante los meses invernales es un sitio ideal para aquellos a los que les guste el esquí. Muy cerca del hotel hay zonas comerciales con tiendas, boutiques, bares y restaurantes. Enfrente podrá encontrar una parada de transporte público.\n\nEste atractivo hotel dispone de cinco plantas y un total de 61 habitaciones dobles. Ofrece a sus huéspedes un amplio hall de entrada con recepción abierta las 24 horas, caja fuerte, un ascensor, conexión a Internet y sótano para guardar bicicletas. También cuenta con un acogedor bar, una cafetería y un restaurante a la carta con sillas altas para los niños. Como prestaciones adicionales se ofrecen los servicios de lavandería y de atención médica. En la parte exterior del hotel hay plazas de aparcamiento.\n\nLas habitaciones, decoradas con gusto, disponen de cuarto de baño. También cuentan con teléfono de línea directa, equipo de música, minibar/nevera, calefacción central y caja fuerte de alquiler.\n\nSe ofrece desayuno bufet. Tanto a la hora del almuerzo como de la cena podrá elegir a la carta. Los clientes podrán disfrutar de comida dietética y platos especiales.&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Avinguda Meritxell, 34&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra La Vella&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AD 500&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">778.4350</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">39650.1698782695</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/00/000175/000175a_hb_a_027.jpg&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;175/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Novotel Andorra&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Con una situación fantástica en el centro de Andorra la Vella, cerca de multitud de tiendas, bares y restaurantes, este impresionante hotel ofrece el lugar ideal para disfrutar de una escapada relajante en un entorno extraordinario, envuelto entre montañas y alejado del bullicio de la ciudad. Las estaciones de esquí de Vallnord y Grandvalira están a alrededor de 15 y 20 km de distancia respectivamente. El hotel cuenta con habitaciones modernas y equipadas con ropa de cama que ayudará a los huéspedes a dormir bien, además de ofrecer un ambiente relajante con prácticos servicios para disfrutar de una estancia agradable. Todas ellas incluyen aire acondicionado, acceso WIFI gratuito y TV vía satélite para mayor comodidad. En el hotel podrán también disfrutar del Restaurante El Grill y su Bar, donde los huéspedes podrán relajarse y disfrutar de una refrescante bebida o un delicioso cóctel. Los clientes tendrán acceso gratuito al Spa que se encuentra en el Hotel Mercure, a tan sólo unos pasos del Hotel, y el cual cuenta con sauna, jacuzzi, baño turco, gimnasio, terraza con tumbonas y varias cabinas de masaje. Allí también las familias podrán disfrutar de la sala de juegos con Chiqui Park y consolas.&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Prat De La Creu, 14&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra La Vella&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AD 500&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">5512.0650</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">39711.7930391119</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/00/000331/000331a_hb_a_010.jpg&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;331/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Mercure Andorra&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Este hotel está situado en la zona turística de Andorra la Vella, cerca del río Gran Valira. Hay zonas comerciales con tiendas, boutiques, bares y restaurantes en las proximidades, mientras que los enlaces a la red de transporte público también se hallan en las inmediaciones. Este hotel lleno de encanto tiene un total de 7 plantas y alberga un total de 172 habitaciones. La propiedad ofrece acceso a varias instalaciones entre las que se incluyen una cafetería acogedora, un bar y un restaurante con aire acondicionado con tronas para los bebés. Una zona de juegos infantil está disponible para el entretenimiento de los clientes más jóvenes, y hay un aparcamiento fuera del hotel. Los clientes pueden utilizar la piscina cubierta, las hamacas y las sombrillas, y las instalaciones de ocio incluyen sauna, jacuzzi y servicio de masajes.&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;De La Roda, S/N&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra La Vella&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AD 500&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">5600.1780</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">37571.0883559099</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/00/003363/003363a_hb_a_010.jpg&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3363/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Del Meligar&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Situados en el corazón geográfico de Andorra, en el pueblo de Encamp (localidad tranquila rodeada de montañas) estos apartamentos turísticos de gestión familiar se esfuerzan en conseguir que sus huespedes se sientan como en casa disfrutando de sus vacaciones.\n\nExisten 3 tipos de apartamentos: Estudios y apartamentos con capacidad para 4 personas y apartamentos para 6 personas.\n\nTodos ellos disponen de todo el equipamiento necesario: cocina equipada (utensilios, vitroceramica, nespresso, calentador de agua, microondas, nevera, lavadora etc), toallas, ropa de cama, caja fuerte, secador de pelo, etc). \nTambien dispone de una zona comun con wifi gratuito, pequeño gimnasio y zona infantil asi como un guarda esquies o parquing para bicicletas.\n\nPuerta de acceso a GRANDVALIRA por el Funicamp (transporte gratuito desde Meligar en 5 min) y a solo 4 km de la zona comercial de la capital.&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;La Vena, 9&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Encamp&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AD 200&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1291.9905</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">36851.4004938973</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/06/061363/061363a_hb_a_011.jpg&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;61363/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Calitxo&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Es un hotel rústico de alta montaña que se encuentra en la entrada de la ciudad y a pocos km de Francia. Forma parte de una comarca rica en historia, de naturaleza generosa, paisajes agradables y donde la tradición se llena de contenido. Es el lugar idóneo para disfrutar de una estancia en un ambiente tranquilo, recibiendo un trato familiar y donde la naturaleza acoge su reposo. A un paseo, encontrará algunos restaurantes y una parada de transporte público. El aeropuerto de Gerona está a 100 km y el de Barcelona a 150 km.\n\nNunca olvidará su estancia en este encantador hotel. Se renovó en el 2010 y tiene 4 plantas en las que se reparten un total de 17 habitaciones, 12 de ellas dobles, 2 familiares (para 4 personas) y 3 suites. El hotel dispone de ascensor, sala de TV, restaurantes, aparcamiento y un cuarto para guardar bicicletas.\n\nLas habitaciones y suites son confortables y están decoradas en estilo rústico. Están equipadas con cuarto de baño, secador de pelo, TV y calefacción central.\n\nHay un campo de golf a unos 7 km de distancia.\n\nSe ofrece desayuno en forma de bufet. A la hora de la comida y de la cena puede elegir a la carta o un menú. El cliente también puede encargar comida dietética y platos especiales. Puede reservar media pensión o pensión completa.\n\nSi viene desde el aeropuerto de Barcelona, vaya por la C-17 dirección a Ripoll, la C-26 (Campron) y la carretera de Coll d&#39;Area en dirección a Francia. Desde Gerona, vaya por la C-26 en dirección a la carretera Sant Joan de les Abadesses y la carretera de Camprodon C-38.&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Pasaje Del Serrat, 1&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Mollo&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;17868&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;España&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">6462.1950</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">39036.2155338936</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/13/138547/138547a_hb_a_001.jpg&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;138547/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Mola Park Atiram Hotel&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Situada en el centro de Escaldas, un resorte turístico en Andorra, esta elegante propiedad es el lugar ideal para aquellos que quieran disfrutar de todo el que esta increíble región tiene para ofrecer. El balneario termal de Caldea está muy cerca de esta lujosa propiedad y los visitantes que se alojen podrán ir de compras a la Avenida Carlemany, una de las principales zonas comerciales del principado. Este opulento establecimiento ofrece una gran variedad de espaciosas y elegantes acomodaciones, que incluyendo habitaciones estándar y familiares. El hotel ofrece un gran número de comodidades modernas y un ambiente acogedor, ideal para relajarse después de un día de turismo. En cuanto a las instalaciones, los viajeros de negocios agradecerán las tres salas de reuniones completamente equipadas por acontecimientos de negocio y eventos sociales. Tanto si se trata de un viaje de negocios o de placer, este hotel ofrece la combinación ideal de servicio profesional y una localización única.&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Carrer Josep Viladomat, 22&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Escaldes Engordany - Andorra La Vella&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AD700&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">986.0330</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">32766.6803308023</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/08/085359/085359a_hb_a_001.jpg&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;85359/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Aptos Colells&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Este complejo de apartamentos está en Bordes d&#39;Envalira, un pequeño pueblo situado a unos dos kilómetros del acceso Grandvalira-Grau Roig. La zona de tiendas y restaurantes y el teleférico de Soldeu están a solo tres minutos en coche. Es un lugar maravilloso para disfrutar de unas espléndidas vacaciones en la nieve con toda la familia o con los amigos o para aprovechar el verano para practicar senderismo en un fresco paraje montañoso. Los apartamentos de estilo rústico cuentan con una decoración acogedora y sencilla. Todos tienen sala de estar con televisión, cocina con nevera, horno o microondas y menaje de cocina para que cada cual cocine a su gusto. Se incluyen toallas y ropa de cama. Se admiten mascotas, bajo petición El edificio tiene calefacción y aparcamiento cubierto.\nJusto abajo de los apt hay una tienda de ropa de deporte, tienda de material de ski y un amplio supermercado&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ctra General Bordes D&#39;Envalira, S/N&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Soldeu&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AD100&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1594.3830</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">38079.0539621209</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/12/128413/128413a_hb_a_012.jpg&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;128413/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Hotel L´Ermita B&amp;B&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Este hotel, totalmente renovado en 2016, goza de una excelente ubicación en el corazón de Andorra, en medio de los Pirineos. El establecimiento se encuentra a solo 10 km del centro turístico y comercial de Andorra la vella y a 2,5 km de la estación de esquí de Grandvalira. Los visitantes pueden disfrutar de la proximidad a la zona El Pas de la Casa - Grau Roig o Soldeu - El Tarter. Los huéspedes disfrutarán de la amplia oferta de emocionantes actividades en la zona. Este hotel recibe a los visitantes en un ambiente relajado y acogedor. Las habitaciones, decoradas con buen gusto, ofrecen el escenario perfecto para relajarse tras un largo día en las pistas. El hotel dispone de habitaciones individuales, dobles, triples con altillo (+ 6años), cuadruples con altillo (+ 6 años), cuadruple superior con literas, suite y habitaciones familiars.&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CTRA MERITXELL, 35&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Meritxell&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AD100&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">926.5090</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">37739.5137252176</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/00/001714/001714a_hb_a_007.jpg&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1714/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Montecarlo&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Este hotel de esquí está en Encamp, en el corazón de Andorra. Cuenta con unas maravillosas vistas a las montañas que lo circundan. En los alrededores, en un radio de 500 metros, podrá encontrar diversos comercios, tiendas, cafeterías, bares, restaurantes y discotecas. Desde aquí, podrá llegar a pie a una parada de transporte público.\n\nEl hotel fue restaurado en el 2003. Cuenta con cuatro plantas y un total de 62 habitaciones dobles. El edificio dispone de un hall de entrada, ascensor y una recepción abierta las 24 horas. A disposición de los huéspedes también estarán el bar, la sala de televisión y el restaurante a la carta, con sillas altas para los niños. Podrá aparcar su vehículo tanto en el garaje como en el aparcamiento del propio hotel.\n\nLas habitaciones, equipadas de forma práctica, disponen de baño, teléfono de línea directa, TV vía satélite o por cable, calefacción central y suelo de baldosas.\n\nDado su excelente emplazamiento, es un lugar ideal para quienes les guste el esquí.\n\nSe ofrece desayuno bufet. Tanto a la hora del almuerzo como de la cena podrá elegir un menú.&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Av. Joan Martí, 104&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Encamp&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AD 200&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">788.8080</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">37129.1963007855</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/08/080031/080031a_hb_a_001.jpg&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;80031/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Solana de Ransol&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Los apartamentos Solana de Ransol gozan de una ubicación privilegiada para disfrutar de Andorra durante todo el año. Situados en el pueblo de Ransol, en plena naturaleza y dentro de un enclave de singular belleza, son el puerto de partida ideal para realizar rutas de senderismo, bicicleta y actividades de aventura. Su ubicación, a 500 mts del acceso El Tarter de Grandvalira permite acceder fácilmente a la estación de esquí y numerosas actividades que ofrece Grandvalira.\nLos edificios, construidos en piedra y madera y orientados al sur, constan de 21 apartamentos equipados con cuarto de baño con secador de pelo, TV, cocina equipada con menaje, microondas y nevera. Incluye ropa de cama, toallas, tabla, plancha y kit de limpieza. Caja fuerte y WIFI gratuito. Los apartamentos están ubicados a escasos metros del hotel Segle XX y tienen servicio de recepción y recogida de llaves 24 horas.\nApartamento un dormitorio, capacidad 2-4 personas, una habitación doble y salón comedor con sofá cama doble. \nApartamento dos dormitorios, capacidad 4-6 personas, una habitación doble matrimonio, una habitación doble twin y salón comedor con sofá cama doble. \nLos huéspedes pueden hacer uso de las instalaciones del Hotel SegleXX: piscina interior climatizada de acceso gratuito y sauna, cafetería y restaurante buffet para desayunos y cenas, sala de TV, sala de masajes, sala de juegos y programa de animación diario que ofrece diversas actividades: miniclub con talleres variados, bingo, karaoke, aquagym, waterpolo y ¡mucho más! En el verano se realizan excursiones gratuitas a la montaña, se ofrece alquiler de bicicletas gratuitas y se organizan barbacoas y arroz de montaña en la terraza. El complejo cuenta con gimnasio gratuito, parking interior de pago, y bar terraza en verano. En invierno se ofrece guarda esquís y transfer gratuito a pistas (sector El Tarter, reserva previa y en horarios estipulados) No incluye limpieza de salida (opcional de pago directo).&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CARRETERA GENERAL DE RANSOL, S/N&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ransol - Canillo&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AD100&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1054.7110</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">18064.6818903434</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/54/548103/548103a_hb_a_003.jpg&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;548103/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Hostal Porta De Nuria&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;El Hostal Porta de Nuria está situado en el centro de Ribes, junto a la estación de tren del cremallera del Valle de Nuria. Ofrece habitaciones sencillas con calefacción, TV y baño privado. Hay WiFi gratis en los espacios comunes. Aparcamiento gratuito disponible en las inmediaciones, así como dispone de un lugar para guardar motos y bicicletas, bajo petición y con un suplemento. Hay un restaurante y un bar de estilo rústico, así como una cafetería. Servicio de lavandería y guardaequipaje. El Porta de Nuria tiene un mostrador de información Turística. La estación de esquí de la Molina esta situada a 40 minutos en coche.&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Nuestra Señora de Gracia, 3&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ribes De Freser&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;17534&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;España&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">744.7860</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">39995.8270462602</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/05/051136/051136a_hb_a_004.jpg&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;51136/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Bonavida&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Este acogedor hotel se sitúa en el centro de Canillo, a solo 50 m del teleférico más próximo en la pista de esquí de Grand Valira. En las inmediaciones hay varios medios de transporte público, así como tiendas, restaurantes, bares y pubs. A solo 3 km se encuentra la discoteca más cercana, mientras que a unos 7 km los visitantes encontrarán una pista de esquí de fondo y a aproximadamente 10 km dispondrán de una estación de autobús. El aeropuerto de Barcelona está a 200 km de distancia. El hotel incluye una terraza, un jardín y un agradable vestíbulo con mostrador de recepción. Todas las cómodas habitaciones están alfombradas e incluyen un baño privado con secador, teléfono de marcación directa, TV, radio, cama de matrimonio, calefacción central, caja fuerte de alquiler, sala de estar y balcón o terraza. Los huéspedes podrán degustar un exquisito desayuno tipo bufet y por la noche podrán probar deliciosos platos a la carta.&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Carrer Peu Del Carrer, 1&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Canillo&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AD100&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">987.6890</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">37114.5205321654</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/00/001715/001715a_hb_a_002.jpg&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1715/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Segle XX&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;El hotel Segle XX es el lugar ideal para disfrutar de Andorra en familia durante todo el año. Su ubicación privilegiada en el pueblo de Ransol marca el punto de partida ideal para iniciar numerosas rutas de senderismo, bicicleta y actividades de aventura. Situado a su vez a sólo 500 mts. del acceso El Tarter de Grandvalira permite acceder fácilmente a la estación de esquí y las numerosas actividades que ofrece Grandvalira. ¡En el hotel Segle XX disfrutarás de la naturaleza en todo su esplendor!\n\nEl Hotel dispone de 65 confortables habitaciones equipadas con baño completo con secador de pelo, tv satélite, teléfono y caja fuerte.\n\nCompleta sus instalaciones y servicios con recepción 24 horas, cafetería con aire acondicionado, restaurante buffet (bebidas aparte), sala de TV, sala de juegos, sala de masajes y rayos UVA, gimnasio, acceso gratuito a piscina interior panorámica climatizada y sauna, solárium-terraza y programa de animación diario que ofrece diversas actividades para toda la familia: miniclub con talleres variados, tiro con carabina, bingo, karaoke, aquagym, waterpolo y ¡mucho más! \nEn los meses de verano se realizan excursiones gratuitas a la montaña, se ofrece alquiler de bicicletas gratuito y se organizan barbacoas y arroz de montaña en la terraza. \nEn invierno se ofrece guarda esquís y servicio de traslado a pistas gratuito (sector El Tarter, con reserva previa y en horarios estipulados).\nEl Segle XX dispone de parking interior opcional de pago.\nWifi gratuito en todo el hotel.\nEl hotel admite mascotas por un suplemento.&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ctra. De Ransol, S/N&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Canillo&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AD 100&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1008.3430</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">34099.8746790087</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/66/663407/663407a_hb_a_001.JPG&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;663407/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Cims de Camprodon&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Este agradable hotel se encuentra en el centro de Camprodon, en la Plaza Santa María. Dispone de 22 habitaciones totalmente nuevas y confortables con un ámplio buffette de desayuno con embutidos típicos del Valle de Camprodon. Existen plazas de párking con reserva y su ubicación hace que sea una estancia cómoda por lo céntrico y al mismo tiempo envuelta entre monumentos históricos y el paraje natural.&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PLAZA SANTA MARÍA, 9&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Camprodon&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;17867&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;España&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">906.3035</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">35456.2175110558</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/64/649556/649556a_hb_a_005.jpg&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;649556/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Apartamentos Prat De Les Molleres&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Los Apartamentos Prat de les Molleres se encuentran ubicados en Soldeu, un entorno natural excepcional donde disfrutar de múltiples actividades en pareja o en familia. Durante los meses de verano, este es el lugar ideal para practicar deportes de aventura y turismo activo, gracias a su cercanía múltiples rutas de senderismo en el bello paraje de la Vall de Incles, el parque multiaventura Family Park, reputados campos de golf y otras muchas opciones de ocio. Los más aventureros encontraran a menos de 500 metros del hotel el acceso a Pessons y Ransolas, desde donde se puede subir a multitud de lagos y picos. En la temporada invernal, Soldeu se convierte en un paraíso para los amantes del esquí. A tan solo 5 minutos de los apartamentos, encontraras los telecabinas que dan acceso directo a la estación de esquí de Granvalira. Además, su céntrica localización te permitirá disfrutar de la oferta de restauración y ocio que te ofrece el pueblo. Sus 22 acogedores apartamentos tipo dúplex te ofrecerán todo el confort que buscas durante tu estancia en Soldeu. Cada apartamento, de unso 60 metros cuadrados distribuidos en dos plantas, dispone de cocina equipada, salón comedor, dos habitaciones y dos baños. Asimismo, podrás disfrutar de conexión Wifi gratuita, zona de lavandería, accesos adaptados y aparcamiento cubierto incluido.&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ctra General de Soldeu, 2&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Soldeu&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AD100&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1231.3050</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;Accommodation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;DistanceToActivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">28672.5855153222</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;MainImageUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://some.url.com/giata/66/669755/669755a_hb_a_001.jpg&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;669755/weqn6yqht5bfw&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MERINO&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Este encantador hotel se halla en Pas de la Casa. &quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;les Abelletes, 6&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Pas De La Casa&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;PostalCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AD200&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Andorra&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Category&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;PriceFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">996.8200</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;Success&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.top"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

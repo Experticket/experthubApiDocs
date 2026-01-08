@@ -1,0 +1,3356 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentación del API de Experthub.">
+      
+      
+      
+      
+        <link rel="prev" href="../../struct/">
+      
+      
+        <link rel="next" href="../lastCatalogUpdatedDate/">
+      
+      
+        
+          <link rel="alternate" href="/es/" hreflang="es">
+        
+      
+      
+      <link rel="icon" href="../../../assets/imagotipo.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Catálogo - Documentación Experthub API</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="experticket" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#catalogo-de-actividades" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../.." title="Documentación Experthub API" class="md-header__button md-logo" aria-label="Documentación Experthub API" data-md-component="logo">
+      
+  <img src="../../../assets/Logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentación Experthub API
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Catálogo
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="experticket" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Seleccionar idioma">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/es/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../connection/" class="md-tabs__link">
+          
+  
+  
+  Documentación
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Documentación Experthub API" class="md-nav__button md-logo" aria-label="Documentación Experthub API" data-md-component="logo">
+      
+  <img src="../../../assets/Logo.svg" alt="logo">
+
+    </a>
+    Documentación Experthub API
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentación
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Documentación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interfaz de comunicación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../struct/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Especificación de datos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Actividades
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Actividades
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#metodo-de-acceso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Método de acceso
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-de-la-peticion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estructura de la petición
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Estructura de la petición">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos-de-llamadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplos de llamadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-de-la-respuesta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estructura de la respuesta
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Estructura de la respuesta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-de-respuesta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplo de respuesta
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lastCatalogUpdatedDate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Última fecha de actualización del catálogo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../availableLanguages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Idiomas disponibles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../realTimePrices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Precios en tiempo real
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sesiones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../autoAssignSession/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comprobar sesiones auto asignadas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../availability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aforo disponible
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CheckTicketsQuestions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preguntas de tickets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../checkSaleFlowRules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reglas de flujo de venta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../giftCards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tarjetas regalo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_11" id="__nav_2_3_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Métodos de entrega
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Métodos de entrega
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deliveryMethods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Obtener métodos de entrega
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../checkDeliveryMethods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comprobar método de entrega
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ticketExchange/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Canje de tickets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../checkDiscountCoupons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Comprobar cupones descuento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../checkInsurancePolicies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cotizar pólizas de seguro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Etiquetas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alojamiento
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Alojamiento
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../accommodation/basicCatalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo básico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../accommodation/fullCatalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo completo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paquetes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Paquetes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../package/prePackage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prepaquetes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../package/basicCatalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo básico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../package/fullCatalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catálogo completo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../package/availableDates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Disponibilidad de fechas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../package/pricesAndCancellationsConditions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Precios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proceso de compra
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Proceso de compra
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shoppingCart/introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shoppingCart/create/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Creación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shoppingCart/add/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Añadir al carrito
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shoppingCart/remove/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Eliminar elemento del carrito
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shoppingCart/confirm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reserva de productos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shoppingCart/cancelConfirm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cancelación de la reserva
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shoppingCart/sale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Confirmación de la reserva
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shoppingCart/documentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentación de la venta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sale/saleAttachments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adjuntar documentos a la venta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shoppingCart/listOfSales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Listado de ventas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Opciones sobre ventas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Opciones sobre ventas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sale/introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shoppingCart/listOfSales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Listado de ventas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sale/saleCancellationRequest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Crear solicitud de cancelación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sale/listOfSaleCancellationRequest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Listado de solicitudes de cancelación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shoppingCart/documentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentación de la venta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sale/saleAttachments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adjuntar documentos a la venta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Anexos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../annex/activity.es/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Actividad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../annex/accommodation.es/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alojamiento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../annex/combinedProduct.es/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Producto Combinado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../annex/client.es/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cliente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../annex/errorCodes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Códigos de error
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#metodo-de-acceso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Método de acceso
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-de-la-peticion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estructura de la petición
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Estructura de la petición">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos-de-llamadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplos de llamadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-de-la-respuesta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estructura de la respuesta
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Estructura de la respuesta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-de-respuesta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ejemplo de respuesta
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="catalogo-de-actividades">Catálogo de actividades</h1>
+<p>El primer paso será obtener todo el catálogo completo de proveedores, categorías (productBases) y productos para su tratamiento interno.</p>
+<p>La información del catálogo incluye los identificadores únicos de Proveedor, Producto y Ticket que posteriormente se usarán para añadir cualquier producto al carrito.</p>
+<p>También incluirá otros datos como el precio de los productos dependiendo de las fechas, o las condiciones comerciales del producto.</p>
+<div class="admonition caution">
+<p class="admonition-title">Mal uso del API</p>
+<p>Un mal uso de esta llamada sería realizar una consulta con cada venta que se inicia, el uso correcto debe ser almacenar y procesar de forma local y consultar periódicamente la <a href="../lastCatalogUpdatedDate/">fecha de la última modificación del catálogo</a>. Únicamente en caso de que esa fecha de modificación sea posterior a la obtenida en el catálogo debemos volver a obtener el catálogo.</p>
+</div>
+<h2 id="metodo-de-acceso">Método de acceso</h2>
+<p><strong>POST</strong> /activity/catalog</p>
+<h2 id="estructura-de-la-peticion">Estructura de la petición</h2>
+<p>Para obtener el catálogo podemos utilizar diferentes filtros en el cuerpo del método. Aunque podemos realizar la llamada sin ningún filtro.</p>
+<p>Cada filtro se considerará un <strong><em>AND</em></strong>. Por ejemplo, pueden filtrarse por varios <em>ProductIds</em> pero no tiene sentido filtrar por <em>ProviderIds</em> y por <em>ProductIds</em> siendo este último de un proveedor diferente al del primer filtro.</p>
+<ul>
+<li><strong><code>ProviderIds</code></strong>: (<code>list</code>) <code>Opcional</code>. Lista identificadores de proveedor.<ul>
+<li><strong><code>(string)</code></strong>: <code>Opcional</code>. Identificador del proveedor.</li>
+</ul>
+</li>
+<li><strong><code>ProductBaseIds</code></strong>: (<code>list</code>) <code>Opcional</code>. Lista identificadores de categoría.<ul>
+<li><strong><code>(string)</code></strong>: <code>Opcional</code>. Identificador del ProductBase.</li>
+</ul>
+</li>
+<li><strong><code>ProductIds</code></strong>: (<code>list</code>) <code>Opcional</code>. Lista identificadores de producto.<ul>
+<li><strong><code>(string)</code></strong>: <code>Opcional</code>. Identificador de producto.</li>
+</ul>
+</li>
+<li><strong><code>FromDate</code></strong>: (<code>date</code>) <code>Opcional</code>. Fecha de inicio. No permite valores menores al día actual. <em>Formato ISO 8601 (yyyy-MM-dd)</em>.</li>
+<li><strong><code>ToDate</code></strong>: (<code>date</code>) <code>Opcional</code>. Fecha de fin. Por defecto su valor es el de la fecha correspondiente a dentro de un año. <em>Formato ISO 8601 (yyyy-MM-dd)</em>.</li>
+<li><strong><code>ReferenceDate</code></strong>: (<code>date</code>) <code>Opcional</code>. Exige que el día que se tome como referencia para el cálculo de precios y disponibilidades no sea hoy, sino el indicado. Por ejemplo se usará si los precios cambian dependiendo de los días que quedan hasta la fecha de la entrada. <em>Formato ISO 8601 (yyyy-MM-dd)</em></li>
+<li><strong><code>LanguageCode</code></strong>: (<code>string</code>) <code>Opcional</code>. Define el idioma en que se mostrarán los textos del catálogo (nombre, descripción, condiciones de proveedor, producto, etc.). Por defecto se devolverá el idioma configurado para el colaborador. <em>Formato ISO 639-1</em>.</li>
+<li><strong><code>ShowProductsOutOfActiveDateRange</code></strong>: (<code>boolean</code>) <code>Opcional</code>. Si su valor es <code class="highlight"><span class="k">true</span></code>, la respuesta devolverá productos en los que el día de hoy (o el día indicado en <code>ReferenceDate</code>) está fuera de su rango de fechas de venta. Por ejemplo, si estamos en diciembre y hay productos que se pueden vender a partir de enero, poniendo este valor a true nos permitirá descubrir que existen esos productos.</li>
+</ul>
+<h3 id="ejemplos-de-llamadas">Ejemplos de llamadas</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ProviderIds</label><label for="__tabbed_1_2">ProductIds</label><label for="__tabbed_1_3">FromDate-ToDate</label><label for="__tabbed_1_4">ReferenceDate</label><label for="__tabbed_1_5">Combined Filters</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;ProviderIds&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">    </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;dj48vjsyufvyu&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;ajr7v0alt62hl&quot;</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;ProductIds&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">    </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;dj48vjsyufvyu&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;ajr7v0alt62hl&quot;</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;FromDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-06-23&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;ToDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-08-29&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;ReferenceDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-10-05&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;ProviderIds&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">    </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;dj48vjsyufvyu&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;ajr7v0alt62hl&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;ProductBaseIds&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">    </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;duvjsigjscujc&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;ProductIds&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">    </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;fkijskfqnidfk&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;FromDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-06-23&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;ToDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-08-29&quot;</span>
+
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="estructura-de-la-respuesta">Estructura de la respuesta</h2>
+<ul>
+<li><strong><code>LastUpdatedDateTime</code></strong>: (<code>dateTime</code>). Fecha de la última modificación del catálogo. <em>Formato ISO 8601 (yyyy-MM-ddThh:mm:ss.fffffff)</em>.</li>
+<li>
+<p><strong><code>Providers</code></strong>: (<code>list</code>). Array de proveedores.</p>
+<ul>
+<li><strong><code>ProviderId</code></strong>: (<code>string</code>). Identificador del proveedor. Alfanumérico de 13 caracteres.</li>
+<li><strong><code>ProviderName</code></strong>: (<code>string</code>). Nombre del proveedor.</li>
+<li><strong><code>ProviderDescription</code></strong>: (<code>string</code>). Descripciones del proveedor.</li>
+<li><strong><code>ProviderCommercialConditions</code></strong>: (<code>string</code>) <code>Opcional</code>. Condiciones comerciales de proveedor. Si no existen, este campo no se mostrará.</li>
+<li><strong><code>ProviderAccessConditions</code></strong>: (<code>string</code>) <code>Opcional</code>. Condiciones de acceso del proveedor. Si no existen, este campo no se mostrará.</li>
+<li><strong><code>ExchangeVoucherPoint</code></strong>: (<code>string</code>) <code>Opcional</code>. Lugar en el que las entradas puedes ser usadas o canjeadas.</li>
+<li>
+<p><strong><code>AdvancedDateSelectorMethodName</code></strong>: (<code>string</code>) <code>Opcional</code>. Nombre del método que define si los tickets de un producto pueden tener su propia fecha de acceso particular.</p>
+<details class="example">
+<summary>Posibles valores</summary>
+<p><strong>None</strong></p>
+<p>Los tickets <strong>NO</strong> pueden tener una fecha de acceso diferente a la de la sale.</p>
+<p>Por tanto, y siempre respecto al ticket, al añadir el producto al carrito se prescindirá del valor <code>AccessDateTime</code> o se dejará a null.</p>
+<p><strong>DatePerTicketEnclosure</strong></p>
+<p>Los tickets SÍ pueden tener una fecha de acceso diferente a la de la venta.</p>
+<p>Como sabemos de Catálogo de productos, los tickets forman parte de un recinto (<code>TicketEnclosureId</code>). Pues bien, para el caso de <code>DatePerTicketEnclosure</code> cada recinto de ticket puede, opcionalmente, tener una fecha de acceso diferente.</p>
+<p>Por ejemplo, imaginemos un producto llamado "Entrada Adulto Atracciones+Acuático", compuesto por dos tickets:</p>
+<ul>
+<li>Ticket Adulto Atracciones. Correspondiente al recinto "Atracciones".</li>
+<li>Ticket Adulto Acuático. Correspondiente al recinto "Acuático".</li>
+</ul>
+<p>Para el caso de DatePerTicketEnclosure podremos hacer que el "Ticket Adulto Atracciones" tenga como fecha de entrada el 1 de abril y el "Ticket Adulto Acuático" tenga como fecha de entrada el 3 de mayo.</p>
+<details class="important">
+<summary>Limitación importante</summary>
+<p>Todos las fechas de acceso de todos los tickets que componen una venta deben pertenecer al mismo conjunto de <code>PricesAndDates</code>. Es decir, no podemos coger una fecha con un precio de 20€ y otra fecha con un precio de 25€.</p>
+</details>
+</details>
+</li>
+<li>
+<p><strong><code>CancellationPolicy</code></strong>: (<code>object</code>) <code>Opcional</code>. Indica las políticas de cancelación que se aplican al cancelar una venta de este proveedor. Si un producto concreto no tiene políticas de cancelación se aplicarán estas.</p>
+<ul>
+<li><strong><code>IsRefundable</code></strong>: (<code>boolean</code>). Indica si el cliente puede cancelar gratis en algún momento.</li>
+<li><strong><code>Rules</code></strong>:  (<code>list</code>). Reglas que se aplican al efectuar la cancelación.<ul>
+<li><strong><code>(object)</code></strong>: Tramos de cancelación.<ul>
+<li><strong><code>HoursInAdvanceOfAccess</code></strong>: (<code>decimal</code>). Indica la cantidad de horas de antelación con respecto a la fecha de acceso a partir de las cuales se aplicará la penalización de precio indicada en <code>Percentage</code>.</li>
+<li><strong><code>Percentage</code></strong>: (<code>decimal</code>). Porcentaje de penalización sobre el precio de la entrada.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><code>DemandAccessDate</code></strong>: (<code>boolean</code>). Indica si la fecha de acceso es necesaria. En caso de no ser necesaria, al añadir el producto al carrito debe usarse la fecha de compra.</li>
+<li>
+<p><strong><code>TaxType</code></strong>: (<code>byte</code>). Indica el tipo de impuesto de los productos del proveedor.</p>
+<details class="example">
+<summary>Posibles valores</summary>
+<ul>
+<li>0: IVA</li>
+<li>1: IGIC</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>Type</code></strong>: (<code>byte</code>). Indica el tipo de proveedor. Por defecto será 0.</p>
+<details class="example">
+<summary>Posibles valores</summary>
+<ul>
+<li>0: Actividad</li>
+<li>1: Alojamiento</li>
+<li>2: Transporte</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>DemandAccessDateOnOpenDate</code></strong>: (<code>boolean</code>). Si el producto es de fecha abierta, este parámetro determinará, con verdadero o falso, la necesidad de pedir las fechas de acceso.</p>
+</li>
+<li>
+<p><strong><code>PurchaseFlowType</code></strong>: (<code>byte</code>). Indica el tipo de flujo de venta que tiene el proveedor. Sirve para saber si las entradas y los códigos de acceso estarán disponibles en el momento de la compra o posteriormente.</p>
+<details class="example">
+<summary>Posibles valores</summary>
+<ul>
+<li>1: Venta libre.</li>
+<li>2: Requiere tramitación por parte del proveedor.</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>IsForGroups</code></strong>: (<code>boolean</code>). Indica si los productos del proveedor están destinados a la venta para grupos.</p>
+</li>
+<li><strong><code>IsForSeasonTickets</code></strong>: (<code>boolean</code>). Indica si los productos del proveedor son abonos de temporada.</li>
+<li>
+<p><strong><code>IsInsurable</code></strong>: (<code>boolean</code>) <code>Opcional</code>. Indica sí para este producto es posible añadir un seguro de cancelación.</p>
+<details class="tip">
+<summary>Implicaciones</summary>
+<p>En caso de estar definido como <code class="highlight"><span class="k">true</span></code> será necesario antes de iniciar cualquier venta hacer la llamada para <a href="../checkInsurancePolicies/">comprobar pólizas disponibles</a>. Esta función nos devolverá un listado de polizas disponibles con sus identificadores. Si queremos añadir una de estas polizas a la venta, pasaremos dicho identificador(<code>Id</code>) de poliza en la propiedad <code>InsurancePolicyId</code> en la <a href="../../shoppingCart/sale/">Confirmación de la reserva</a>.</p>
+</details>
+</li>
+<li>
+<p><strong><code>LimitOfNumberOfPeopleToBeGroup</code></strong>: (<code>int</code>). Límite del número de personas que conforman un producto a partir del cual la venta se considera para "grupos". Por ejemplo, si este límite es "19" y el proveedor no es para grupos (<code class="highlight"><span class="n">IsForGroups</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="k">false</span></code>), no se aceptarán ventas con 20 o más personas. Por contra, si el proveedor es para grupos (<code class="highlight"><span class="n">IsForGroups</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="k">true</span></code>), solo se aceptarán ventas para 20 o más personas.</p>
+</li>
+<li><strong><code>Logo</code></strong>: (<code>string</code>). Url para descargar la imagen del logotipo del proveedor.</li>
+<li><strong><code>Tags</code></strong>: (<code>list</code>). Array de <a href="../tags/">identificadores de etiquetas</a> aplicadas al proveedor.<ul>
+<li><strong><code>(string)</code></strong>: Identificador de la etiqueta.</li>
+</ul>
+</li>
+<li><strong><code>Location</code></strong>: (<code>object</code>). Información de localización.<ul>
+<li><strong><code>CountryCode</code></strong>: (<code>string</code>). Código de país (es, fr...).</li>
+<li><strong><code>City</code></strong>: (<code>string</code>). Ciudad.</li>
+<li><strong><code>Address</code></strong>: (<code>string</code>). Dirección.</li>
+<li><strong><code>ZipCode</code></strong>: (<code>string</code>). Código postal.</li>
+<li><strong><code>Lat</code></strong>: (<code>double</code>). Latitud.</li>
+<li><strong><code>Lng</code></strong>: (<code>double</code>). Longitud.</li>
+<li><strong><code>Region</code></strong>: (<code>string</code>). Region.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Ticket enclosures</code></strong>: (<code>list</code>). Información de los recintos del proveedor.</p>
+<ul>
+<li><strong><code>TicketEnclosureId</code></strong>: (<code>string</code>). Identificador del recinto.</li>
+<li><strong><code>TicketEnclosureName</code></strong>: (<code>string</code>). Nombre del recinto.</li>
+<li><strong><code>TicketEnclosureConditions</code></strong>: (<code>string</code>) <code>Opcional</code>. Condiciones del recinto.</li>
+<li>
+<p><strong><code>TypeOfPersonDefinitionTypeChild</code></strong>: (<code>byte</code>) <code>Opcional</code>. Indica qué atributo se aplica a la persona para considerarla niño.</p>
+<details class="example">
+<summary>Posibles valores</summary>
+<ul>
+<li>1: Edad</li>
+<li>2: Altura</li>
+</ul>
+<p>Una vez indicado el tipo mediante una de las dos opciones anteriores, se indica el valor que toma mediante un decimal.</p>
+<details class="info" open="open">
+<summary>Ejemplo</summary>
+<p>Para indicar que consideramos niño a personas de menos de 120 centimetros y consideramos senior a personas mayores de 65 años tendríamos los siguientes valores:</p>
+<ul>
+<li>TypeOfPersonDefinitionTypeChild: 2</li>
+<li>TypeOfPersonDefinitionValueChild: 120</li>
+<li>TypeOfPersonDefinitionTypeSenior: 1</li>
+<li>TypeOfPersonDefinitionValueSenior: 65</li>
+</ul>
+</details>
+</details>
+</li>
+<li>
+<p><strong><code>TypeOfPersonDefinitionValueChild</code></strong>: (<code>decimal</code>) <code>Opcional</code>. Indica el valor asignado al tipo de persona niño.</p>
+</li>
+<li>
+<p><strong><code>TypeOfPersonDefinitionTypeAdult</code></strong>: (<code>byte</code>) <code>Opcional</code>. Indica qué atributo se aplica a la persona para considerarla adulto.</p>
+<details class="example">
+<summary>Posibles valores</summary>
+<ul>
+<li>1: Edad</li>
+<li>2: Altura</li>
+</ul>
+<p>Una vez indicado el tipo mediante una de las dos opciones anteriores, se indica el valor que toma mediante un decimal.</p>
+<details class="info" open="open">
+<summary>Ejemplo</summary>
+<p>Para indicar que consideramos niño a personas de menos de 120 centimetros y consideramos senior a personas mayores de 65 años tendríamos los siguientes valores:</p>
+<ul>
+<li>TypeOfPersonDefinitionTypeChild: 2</li>
+<li>TypeOfPersonDefinitionValueChild: 120</li>
+<li>TypeOfPersonDefinitionTypeSenior: 1</li>
+<li>TypeOfPersonDefinitionValueSenior: 65</li>
+</ul>
+</details>
+</details>
+</li>
+<li>
+<p><strong><code>TypeOfPersonDefinitionValueAdult</code></strong>: (<code>decimal</code>) <code>Opcional</code>. Indica el valor asignado al tipo de persona adulto.</p>
+</li>
+<li>
+<p><strong><code>TypeOfPersonDefinitionTypeSenior</code></strong>: (<code>byte</code>) <code>Opcional</code>. Indica qué atributo se aplica a la persona para considerarla senior.</p>
+<details class="example">
+<summary>Posibles valores</summary>
+<ul>
+<li>1: Edad</li>
+<li>2: Altura</li>
+</ul>
+<p>Una vez indicado el tipo mediante una de las dos opciones anteriores, se indica el valor que toma mediante un decimal.</p>
+<details class="info" open="open">
+<summary>Ejemplo</summary>
+<p>Para indicar que consideramos niño a personas de menos de 120 centimetros y consideramos senior a personas mayores de 65 años tendríamos los siguientes valores:</p>
+<ul>
+<li>TypeOfPersonDefinitionTypeChild: 2</li>
+<li>TypeOfPersonDefinitionValueChild: 120</li>
+<li>TypeOfPersonDefinitionTypeSenior: 1</li>
+<li>TypeOfPersonDefinitionValueSenior: 65</li>
+</ul>
+</details>
+</details>
+</li>
+<li>
+<p><strong><code>TypeOfPersonDefinitionValueSenior</code></strong>: (<code>decimal</code>) <code>Opcional</code>. Indica el valor asignado al tipo de persona senior.</p>
+</li>
+<li>
+<p><strong><code>Sessions</code></strong>:  (<code>object</code>) <code>Opcional</code>. Define la relación entre sesiones y contenido. Antes de continuar, es imprescindible estudiar el apartado <a href="../sessions/">obtención de sesiones</a>.</p>
+<ul>
+<li><strong><code>SessionContentProfileId</code></strong>: (<code>string</code>). Para más información acerca de este identificador, consulte la página de <a href="../sessions/">sesiones</a>.</li>
+<li><strong><code>SessionGroupProfileId</code></strong>: (<code>string</code>). Para más información acerca de este identificador, consulte la página de <a href="../sessions/">sesiones</a>.</li>
+<li><strong><code>HasSeating</code></strong>: (<code>boolean</code>). Indica si el recinto tiene asientos, en tal caso será necesario comprobar el tipo de asignación del asiento a nivel de ticket.</li>
+<li><strong><code>SessionsGroupSessionContents</code></strong>:  (<code>object</code>). Define la relación entre grupos de sesión y contenidos de sesión. Es decir, todas las sesiones del grupo de sesión tendrán asignado el contenido de sesión. <code>SessionsGroupSessionContents</code> es excluyente respecto a <code>SessionSessionContents</code>.<ul>
+<li><strong><code>SessionsGroupId</code></strong>: (<code>string</code>). Identificador del grupo de sesiones.</li>
+<li><strong><code>SessionContentId</code></strong>: (<code>string</code>). Identificador de contenido de sesión.</li>
+</ul>
+</li>
+<li><strong><code>SessionSessionContents</code></strong>: (<code>list</code>). Define la relación entre sesiones y contenidos de sesión. <code>SessionSessionContents</code> es excluyente respecto a <code>SessionsGroupSessionContents</code>.<ul>
+<li><strong><code>SessionId</code></strong>: (<code>string</code>). Identificador de sesión.</li>
+<li><strong><code>SessionContentId</code></strong>: (<code>string</code>). Identificador de contenido de sesión.</li>
+<li><strong><code>SessionTime</code></strong>: (<code>dateTime</code>). Fecha y hora de la sesión.</li>
+<li><strong><code>HasLimitedCapacity</code></strong>: (<code>boolean</code>). Indica si la sesión tiene aforo. De ser así será imprescindible consultar la disponibilidad de la sesión antes de crear una venta. Más información al respecto en <a href="../availability/">obtención de aforo disponible</a>.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>TicketEnclosureAutoAssignSessionType</code></strong>: (<code>byte</code>). Indica qué atributo se aplica a la hora de elegir sesiones. Pueden ser sesiones auto asignadas por el sistema, elegibles, o una mezcla de los dos casos. En el caso de sesiones auto asignadas se puede comprobar qué sesiones se van a asignar antes de añadir el producto al carrito mediante el <a href="../autoAssignSession/">método para comprobar la sesión autoasignada</a>.</p>
+<details class="example">
+<summary>Posibles valores</summary>
+<ul>
+<li><strong>0: No</strong>. Las sesiones no se auto asignarán. Deben definirse durante el flujo de venta.</li>
+<li><strong>1: IfNotSet</strong>. Las sesiones se autoasignarán, siempre y cuando no se haya definido durante el flujo de venta.</li>
+<li><strong>2: ForceSet</strong>. Las sesiones se autoasignarán siempre de forma forzada, ignorando si se han definido durante el flujo de venta.</li>
+</ul>
+</details>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>ProductBases</code></strong>: (<code>list</code>). Array de categorías.</p>
+<ul>
+<li><strong><code>ProductBaseId</code></strong>: (<code>string</code>). Identificador de la categoría. Alfanumérico de 13 caracteres.</li>
+<li><strong><code>ProductBaseName</code></strong>: (<code>string</code>). Nombre de la categoría.</li>
+<li><strong><code>ProductBaseDescription</code></strong>: (<code>string</code>). DDscripción de la categoría. Suele contener las condiciones comunes al todos sus productos.</li>
+<li><strong><code>LimitOfNumberOfPeopleToBeGroup</code></strong>: (<code>int</code>) <code>Opcional</code>. Mismo significado que la propiedad <code>LimitOfNumberOfPeopleToBeGroup</code> en el nodo <code>Provider</code>. Si está especificado se usará el más restrictivo entre este valor y el de proveedor.</li>
+<li>
+<p><strong><code>IsInsurable</code></strong>: (<code>boolean</code>) <code>Opcional</code>. Indica sí para este producto es posible añadir un seguro de cancelación.</p>
+<details class="tip">
+<summary>Implicaciones</summary>
+<p>En caso de estar definido como <code class="highlight"><span class="k">true</span></code> será necesario antes de iniciar cualquier venta hacer la llamada para <a href="../checkInsurancePolicies/">comprobar pólizas disponibles</a>. Esta función nos devolverá un listado de polizas disponibles con sus identificadores. Si queremos añadir una de estas polizas a la venta, pasaremos dicho identificador(<code>Id</code>) de poliza en la propiedad <code>InsurancePolicyId</code> en la <a href="../../shoppingCart/sale/">Confirmación de la reserva</a>.</p>
+</details>
+</li>
+<li>
+<p><strong><code>Tags</code></strong>: (<code>list</code>). Array de <a href="../tags/">identificadores de etiquetas</a> aplicadas a la categoría.</p>
+<ul>
+<li><strong><code>(string)</code></strong>: Identificador de la etiqueta.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Products</code></strong>: (<code>list</code>). Array de productos.</p>
+<ul>
+<li><strong><code>ProductId</code></strong>: (<code>string</code>). Identificador del producto. Alfanumérico de 13 caracteres.</li>
+<li><strong><code>ProductName</code></strong>: (<code>string</code>). Nombre del producto.</li>
+<li><strong><code>SuggestedSalesProductName</code></strong>: (<code>string</code>). Nombre sugerido del producto de cara a la venta.</li>
+<li><strong><code>ProductDescription</code></strong>: (<code>string</code>). Descripción del producto. Suele contener las condiciones del producto.</li>
+<li><strong><code>Tags</code></strong>: (<code>list</code>). Array de <a href="../tags/">identificadores de etiquetas</a> aplicadas al producto.<ul>
+<li><strong><code>(string)</code></strong>: Identificador de la etiqueta.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>ProductInternalConsiderations</code></strong>: (<code>string</code>). Consideraciones internas del producto que solo debe conocer el colaborador.</p>
+<details class="danger" open="open">
+<summary>Importante</summary>
+<p><strong>NUNCA</strong> mostrar al cliente final.</p>
+</details>
+</li>
+<li>
+<p><strong><code>ProductCancellationConditions</code></strong>: (<code>string</code>). Condiciones de cancelación para el producto.</p>
+</li>
+<li><strong><code>CancellationPolicy</code></strong>: (<code>object</code>). Indica las políticas de cancelación que se aplican al cancelar una venta de este producto. Si este nodo está presente, tiene preferencia sobre el nodo <code>CancellationPolicy</code> del proveedor.<ul>
+<li><strong><code>IsRefundable</code></strong>: (<code>boolean</code>). Indica si el cliente puede cancelar gratis en algún momento.</li>
+<li><strong><code>Rules</code></strong>: (<code>list</code>). eglas que se aplican al efectuar la cancelación.</li>
+<li><strong><code>(object)</code></strong>: Tramos de cancelación.<ul>
+<li><strong><code>HoursInAdvanceOfAccess</code></strong>: (<code>decimal</code>). Indica la cantidad de horas de antelación con respecto a la fecha de acceso a partir de las cuales se aplicará la penalización de precio indicada en <code>Percentage</code>.</li>
+<li><strong><code>Percentage</code></strong>: (<code>decimal</code>). Porcentaje de penalización sobre el precio de la entrada.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><code>StartIsActiveDate</code></strong>: (<code>dateTime</code>) <code>Opcional</code>. Si existe, define la fecha a partir de la cual es posible vender el producto.</li>
+<li><strong><code>EndIsActiveDate</code></strong>: (<code>dateTime</code>) <code>Opcional</code>. Si existe, define la fecha hasta la cual es posible vender el producto.</li>
+<li><strong><code>DaysWithLimitedCapacity</code></strong>: (<code>string</code>). Fechas en los que el producto tiene un aforo limitado. Por tanto, será imprescindible consultar la disponibilidad del producto antes de crear una venta. Las fechas tendrán <em>formato ISO 8601 (yyyy-MM-dd)</em>, y estarán separadas entre sí por una coma. Más información al respecto en el punto <a href="../availability/">obtención de aforo disponible</a>.</li>
+<li><strong><code>HoursInAdvanceOfPurchase</code></strong>: (<code>short</code>). Horas de antelación de la compra respecto a las 00:00 del día siguiente al de la visita. Por ejemplo, si un producto tiene <code>HoursInAdvanceOfPurchase = 4</code>, y un cliente realiza una compra para el 15 de Agosto, el límite de tiempo que tiene el producto para venderse son las 20:00 del propio 15 de Agosto (es decir, 4 horas antes de las 00:00 del 16 de Agosto). Esto es importante, por ejemplo, para que un cliente no compre los productos para un día cuando el recinto ya está a cerrado.</li>
+<li><strong><code>MaxHoursInAdvanceOfPurchase</code></strong>: (<code>dateTime</code>) <code>Opcional</code>. Horas máximas de antelación de la compra respecto a las 00:00 del día siguiente al de la visita. Por ejemplo, si un producto tiene <code>MaxHoursInAdvanceOfPurchase = 240</code>, y un cliente realiza una compra para el 15 de Agosto, el producto no puede venderse antes del 6 de Agosto (es decir, 240 horas = 10 días antes de las 00:00 del 16 de Agosto). Esto es útil, por ejemplo, para limitar el período de venta de un producto a un plazo de días previos.</li>
+<li><strong><code>MinimumNumberByTransaction</code></strong>: (<code>int</code>). Cantidad mínima de productos por cada venta. Por defecto es 1. Por ejemplo, imaginemos un producto del tipo "Entrada con descuento a partir de 3 productos". En ese caso MinimumNumberByTransaction sería 3.</li>
+<li><strong><code>NumberOfPeople</code></strong>: (<code>int</code>). Número de personas que computan para considerar una venta como "grupo". Es decir, computa para el límite <code>LimitOfNumberOfPeopleToBeGroup</code>.</li>
+<li><strong><code>NumberOfAdults</code></strong>: (<code>byte</code>). Número de adultos, incluidos en el campo <code>NumberOfPeople</code>.</li>
+<li><strong><code>NumberOfBabies</code></strong>: (<code>byte</code>). Número de bebés, incluidos en el campo <code>NumberOfPeople</code>.</li>
+<li><strong><code>NumberOfChildren</code></strong>: (<code>byte</code>). Número de niños, incluidos en el campo <code>NumberOfPeople</code>.</li>
+<li><strong><code>NumberOfSenior</code></strong>: (<code>byte</code>). Número de seniors, incluidos en el campo <code>NumberOfPeople</code>.</li>
+<li><strong><code>NumberOfGeneric</code></strong>: (<code>byte</code>). Número de genéricos, incluidos en el campo <code>NumberOfPeople</code>. Es un campo muy útil, por ejemplo, si un producto vale tanto para adulto como para niño como para senior.</li>
+<li>
+<p><strong><code>RequiresRealTimePrice</code></strong>: (<code>boolean</code>). Indica si el producto requiere precio en tiempo real.</p>
+<details class="tip">
+<summary>Implicaciones</summary>
+<p>En caso de estar definido como <code class="highlight"><span class="k">true</span></code> será necesario antes de iniciar cualquier venta hacer la llamada para <a href="../realTimePrices/">consultar el precio en tiempo real</a>. Ya que el precio del producto puede ser diferente en función de algunos criterios.</p>
+</details>
+</li>
+<li>
+<p><strong><code>IsInsurable</code></strong>: (<code>boolean</code>) <code>Opcional</code>. Indica sí para este producto es posible añadir un seguro de cancelación.</p>
+<details class="tip">
+<summary>Implicaciones</summary>
+<p>En caso de estar definido como <code class="highlight"><span class="k">true</span></code> será necesario antes de iniciar cualquier venta hacer la llamada para <a href="../checkInsurancePolicies/">comprobar pólizas disponibles</a>. Esta función nos devolverá un listado de polizas disponibles con sus identificadores. Si queremos añadir una de estas polizas a la venta, pasaremos dicho identificador(<code>Id</code>) de poliza en la propiedad <code>InsurancePolicyId</code> en la <a href="../../shoppingCart/sale/">Confirmación de la reserva</a>.</p>
+</details>
+</li>
+<li>
+<p><strong><code>IsForPackaging</code></strong>: (<code>boolean</code>). Indica si el producto requiere ser empaquetado, por ejemplo, con alojamiento.</p>
+</li>
+<li><strong><code>ValidDays</code></strong>: (<code>int</code>). Días de validez.</li>
+<li>
+<p><strong><code>ValidDaysType</code></strong>: (<code>byte</code>). Tipo de días válidos.</p>
+<details class="example">
+<summary>Posibles valores</summary>
+<ul>
+<li>0: consecutivos.</li>
+<li>1: no consecutivos.</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>PriceMode</code></strong>: (<code>byte</code>). Indica el tipo de precio.</p>
+<details class="example">
+<summary>Posibles valores</summary>
+<ul>
+<li>1: PVP.</li>
+<li>2: precio neto.</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>Commission</code></strong>: (<code>list</code>). En caso de que <code>PriceMode = PVP</code>, nos indica la comisión.</p>
+<ul>
+<li>
+<p><strong><code>Type</code></strong>: (<code>int</code>). ndica el tipo de comisión aplicada.</p>
+<details class="example">
+<summary>Posibles valores</summary>
+<ul>
+<li>1: porcentaje.</li>
+<li>2: valor absoluto.</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>Value</code></strong>: (<code>decimal</code>). valor de esa comisión.</p>
+<details class="info">
+<summary>Ejemplo</summary>
+<ul>
+<li>si <code>Type = 1</code> y <code>Value = 10</code>, indica que la comisión es del 10% respecto al <code>Price</code> del producto. Es decir, si el <code>Price</code> es igual a 100€, la comisión calculada sería de 10€.</li>
+<li>si <code>Type = 2</code> y <code>Value = 3</code>, indica que la comisión por producto es de 3€.</li>
+</ul>
+</details>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>AccessDateCriteria</code></strong>: (<code>byte</code>). Indica el criterio para la fecha de acceso.</p>
+<details class="example">
+<summary>Posibles valores</summary>
+<ul>
+<li>0: <strong>Fecha cerrada</strong>. Válida para entrar únicamente el día especificado.</li>
+<li>1: <strong>Fecha abierta</strong>. Válida para entrar cualquier día de la temporada. Solo para este caso, debemos tener en cuenta el valor de <strong><code>AccessDateCriteriaOpenDateSalesDocument</code></strong>:<ul>
+<li>1: Ocultar fecha de acceso.</li>
+<li>2: Válido para toda la temporada.</li>
+<li>3: Ver condiciones.</li>
+<li>4: Rango de fechas de validez del ticket.</li>
+</ul>
+</li>
+<li>3: <strong>Fecha de acceso válida solo para el periodo de alojamiento</strong>.</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>BarcodeAssignment</code></strong>: (<code>byte</code>) <code>Opcional</code>. Indica a qué se va a asignar el código de barras.</p>
+<details class="example">
+<summary>Posibles valores</summary>
+<ul>
+<li>1: Ticket (valor por defecto si <code>BarcodeAssignment</code> no viene definido).</li>
+<li>2: Persona.</li>
+</ul>
+<details class="info" open="open">
+<summary>Ejemplo</summary>
+<p>El producto "Entrada dos días" compuesto por un adulto y 2 tickets (entrada día 1, entrada día 2):</p>
+<ul>
+<li><code>BarcodeAssignment = Ticket</code>: cada uno de los tickets tendrá su propio código de barras.</li>
+<li><code>BarcodeAssignment = Persona</code>: solo habrá un código de barras (compartido por ambos tickets). Una consecuencia directa de este caso la tendríamos a la hora de imprimir un PDF con las entradas, ya que solo tendríamos que imprimir un PDF del producto, dado que a pesar de tener dos tickets solo hay un código de barras.</li>
+</ul>
+</details>
+</details>
+</li>
+<li>
+<p><strong><code>PricesAndDates</code></strong>: (<code>list</code>). Array de "<em>precio y fechas</em>". Tiene una doble funcionalidad. Por una parte nos define qué fechas de acceso tiene disponible el producto, y por otra parte nos define qué precio se aplica a qué fechas.</p>
+<ul>
+<li><strong><code>Price</code></strong>: (<code>decimal</code>). Precio.</li>
+<li><strong><code>Currency</code></strong>: (<code>string</code>). Moneda.</li>
+<li><strong><code>CurrencyName</code></strong>: (<code>string</code>). Nombre de la moneda.</li>
+<li><strong><code>Dates</code></strong>: (<code>string</code>). Las fechas tendrán <em>formato ISO 8601 (yyyy-MM-dd)</em> y estarán separadas entre sí por una coma.</li>
+<li><strong><code>OriginalPrice</code></strong>:  (<code>decimal</code>) <code>Opcional</code>. Precio del producto antes de aplicar descuentos si existen.</li>
+<li><strong><code>TaxBreakdown</code></strong>: (<code>list</code>). Array con el desglose de impuestos.<ul>
+<li><strong><code>TaxPercentage</code></strong>: (<code>decimal</code>). Porcentaje de impuesto (sobre 100).</li>
+<li><strong><code>PriceWithoutTaxes</code></strong>: (<code>decimal</code>). Precio sin impuestos.</li>
+<li><strong><code>PriceWithTaxes</code></strong>: (<code>decimal</code>) Precio con impuestos.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Release</code></strong>: (<code>short</code>) <code>Opcional</code>. Número de días de antelación necesarios para que el cliente pueda cancelar el producto sin coste.</p>
+<details class="info">
+<summary>Ejemplo</summary>
+<ul>
+<li>0: El cliente puede cancelar el día de entrada al parque sin coste.</li>
+<li>1: El cliente puede cancelar un día antes de la entrada al parque sin coste.</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>SalesDocumentSettings</code></strong>: (<code>object</code>). Configuraciones respecto al documento de acceso (pdf, passbook). Esta información también vendrá como resultado al confirmar una venta.</p>
+<details class="tip">
+<summary>Consejo</summary>
+<p>Si se utilizan los documentos generados por nosotros no será necesario tener en cuenta estas configuraciones. De lo contrario, debéis tenerlas en consideración.</p>
+</details>
+<ul>
+<li><strong><code>Disable</code></strong>: (<code>boolean</code>). Indica si no se generará documento de acceso para este producto.</li>
+<li><strong><code>ShowPrice</code></strong>: (<code>boolean</code>). Indica si se debe mostrar el precio en el documento de acceso.</li>
+<li>
+<p><strong><code>AccessDateCriteriaOpenDateSalesDocument</code></strong>: (<code>int</code>) <code>Opcional</code>. Sólo en el caso de que <code>AccessDateCriteria == 1</code> (fecha abierta). Indica qué debemos informar al cliente respecto a la fecha de acceso.</p>
+<details class="example">
+<summary>Posibles valores de AccessDateCriteria y AccessDateCriteriaOpenDateSalesDocument</summary>
+<ul>
+<li>0: <strong>Fecha cerrada</strong>. Válida para entrar únicamente el día especificado.</li>
+<li>1: <strong>Fecha abierta</strong>. Válida para entrar cualquier día de la temporada. Solo para este caso, debemos tener en cuenta el valor de <strong><code>AccessDateCriteriaOpenDateSalesDocument</code></strong>:<ul>
+<li>1: Ocultar fecha de acceso.</li>
+<li>2: Válido para toda la temporada.</li>
+<li>3: Ver condiciones.</li>
+<li>4: Rango de fechas de validez del ticket.</li>
+</ul>
+</li>
+<li>3: <strong>Fecha de acceso válida solo para el periodo de alojamiento</strong>.</li>
+</ul>
+</details>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>HasSaleFlowRules</code></strong>: (<code>boolean</code>). Indica si el producto tiene alguna regla asociada de flujo de venta. En el caso de ser <code class="highlight"><span class="k">true</span></code> se recomienda consultar el método <a href="../checkSaleFlowRules/">Comprobar reglas de flujo de venta</a> para comprobar qué cambios va a producir la inclusión de este producto a la hora de añadirlo al carrito.</p>
+</li>
+<li>
+<p><strong><code>Tickets</code></strong>: (<code>list</code>) <code>Opcional</code>. Array de tickets. En caso de que el producto no trabaje con tickets, este campo no existirá.</p>
+<ul>
+<li><strong><code>TicketId</code></strong>: (<code>string</code>). Identificador de ticket. Alfanumérico de 13 caracteres.</li>
+<li><strong><code>IsQuotaTicket</code></strong>: (<code>boolean</code>). Booleano que indica si el ticket es o no de tipo aforo, lo que quiere decir que en caso de ser <code class="highlight"><span class="k">true</span></code> el ticket computará para el total de aforo necesario para reservar el producto. Por ejemplo, si tenemos un producto donde tiene 3 tickets definidos pero únicamente 2 de ellos son de tipo aforo, entonces al consultar la disponibilidad para esté producto hay que tener en cuenta que a nivel de aforo necesita 2 de disponibilidad. En otras palabras en caso de que el aforo disponible fuese 1 no podríamos reservar este producto. Para más información consulta el endpoint <a href="../availability/">obtención de aforo disponible</a>.</li>
+<li><strong><code>TicketName</code></strong>: (<code>string</code>). Nombre del ticket.</li>
+<li><strong><code>TicketConditions</code></strong>: (<code>string</code>) <code>Opcional</code>. Condiciones del ticket.</li>
+<li><strong><code>TicketEnclosureId</code></strong>: (<code>string</code>). Identificador del recinto al que pertenece el ticket. Varios tickets puede pertenecer al mismo recinto.</li>
+<li>
+<p><strong><code>SeatingAssignType</code></strong>: (<code>byte</code>). Indica el tipo de asignación de asiento que aplica.</p>
+<details class="example">
+<summary>Posibles valores</summary>
+<ul>
+<li>1: <strong>Auto asignados</strong>, los asientos serán asignados automáticamente por el sistema.</li>
+<li>3: <strong>Requiere procesamiento</strong>, los asientos serán asignados posteriormente por el proveedor.</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>TicketsQuestionsProfileId</code></strong>: (<code>string</code>) Identificador del perfil de una pregunta.</p>
+</li>
+<li>
+<p><strong><code>FromAccessDay</code></strong> y <strong><code>ToAccessDay</code></strong>: (<code>byte</code>). Si están definidos, indican para qué días respecto a la primera fecha de acceso es válido el ticket.</p>
+<details class="tip" open="open">
+<summary>Consejo</summary>
+<p>El resultado de la llamada para confirmar una venta ya nos devuelve el rango de fechas de acceso de cada ticket. Por tanto es totalmente factible no tratar <code>FromAccessDay</code> y <code>ToAccessDay</code> y basarnos en lo que nos devuelva dicha llamada.</p>
+</details>
+<details class="info">
+<summary>Ejemplo</summary>
+<ul>
+<li>Si el ticket define FromAccessDay = 1 y ToAccessDate = 1, el cliente deberá usarlo el primer día de acceso.</li>
+<li>Si el ticket define FromAccessDay = 2 y ToAccessDate = 2, el cliente deberá usarlo el segundo día de acceso.</li>
+<li>Si el ticket define FromAccessDay = 1 y ToAccessDate = 2, el cliente podrá entrar o el primer o el segundo día.</li>
+<li>Si el ticket define FromAccessDay = 2 y ToAccessDate no definido, el cliente podrá entrar desde el segundo día hasta un día indefinido, por ejemplo hasta que termine la temporada, <em>salvo que las condiciones del producto indiquen lo contrario</em>.</li>
+<li>Si el ticket no define ni FromAccessDay ni ToAccessDate, el cliente solo podrá entrar el primer día, <em>salvo que se indique lo contrario en las condiciones</em>.</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>TypeOfPerson</code></strong>: (<code>list</code>) <code>Opcional</code>. Define el tipo de persona y su numeración.</p>
+<ul>
+<li>
+<p><strong><code>Type</code></strong>:  (<code>byte</code>). Indica el tipo de persona.</p>
+<details class="example">
+<summary>Posibles valores</summary>
+<ul>
+<li>1: Bebé</li>
+<li>2: Niño</li>
+<li>3: Adulto</li>
+<li>4: Senior</li>
+<li>5: Genérico</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>PersonNumber</code></strong>: (<code>byte</code>). Identificador del número de persona por tipo.</p>
+</li>
+</ul>
+<details class="example">
+<summary>Ejemplo</summary>
+<ul>
+<li>Producto "Entrada 3x2" compuesto por dos adultos y un niño y definido por tres tickets:<ul>
+<li>Ticket Adulto: adulto 1 (Type = 3, PersonNumber = 1)</li>
+<li>Ticket Adulto: adulto 2 (Type = 3, PersonNumber = 2)</li>
+<li>Ticket Niño: niño 1 (Type = 2, PersonNumber = 1)</li>
+</ul>
+</li>
+<li>Producto "Entrada 2x1 más segundo día consecutivo" compuesto por dos adultos y 4 tickets:<ul>
+<li>Ticket Adulto primer día: adulto 1 (Type = 3, PersonNumber = 1)</li>
+<li>Ticket Adulto primer día: adulto 2 (Type = 3, PersonNumber = 2)</li>
+<li>Ticket Adulto segundo día: adulto 1 (Type = 3, PersonNumber = 1)</li>
+<li>Ticket Adulto segundo día: adulto 2 (Type = 3, PersonNumber = 2)</li>
+</ul>
+</li>
+</ul>
+</details>
+</li>
+<li>
+<p><strong><code>RequiresDeliveryManagement</code></strong>: (<code>boolean</code>). Indica si es un ticket que requiere de entrega física. En caso afirmativo, habrá que elegir el método de entrega al añadir el producto al carrito. Puede consultar los métodos de entrega disponibles en el apartado <a href="../deliveryMethods/">Obtener Métodos de entrega</a>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>ProductPaxGroupingId</code></strong>: (<code>string</code>) <code>Opcional</code>. Identificador de la agrupación de productos a la que pertenece el producto.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>ProductPaxGroupings</code></strong>: (<code>list</code>). Agrupaciones de productos cuya diferencia principal son las personas que lo componen.</p>
+<ul>
+<li><strong><code>ProductPaxGroupingId</code></strong>: (<code>string</code>). Identificador de la agrupación. Alfanumérico de 13 caracteres.</li>
+<li><strong><code>ProductPaxGroupingName</code></strong>: (<code>string</code>). Nombre de la agrupación.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Urls</code></strong>: (<code>list</code>) <code>Opcional</code>. Array de urls para acceder a la página de la taquilla del proveedor. Sólo en el caso de tener DNS personalizadas.</p>
+<ul>
+<li><strong><code>LanguageCode</code></strong>: (<code>string</code>). Código del idioma con el que se va a acceder. Representado mediante el <em>formato ISO 639-1</em>.</li>
+<li><strong><code>Url</code></strong>: (<code>string</code>). Url de acceso.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>CombinedProducts</code></strong>: (<code>list</code>). Array de productos combinados.</p>
+<ul>
+<li><strong><code>CombinedProductId</code></strong>: (<code>string</code>). Identificador de producto combinado.</li>
+<li><strong><code>Name</code></strong>: (<code>string</code>). Nombre del producto combinado.</li>
+<li><strong><code>PriceFrom</code></strong>: (<code>decimal</code>). Precio "<em>desde</em>" para el producto combinado.</li>
+<li><strong><code>PriceTo</code></strong>: (<code>decimal</code>). Precio "<em>hasta</em>" para el producto combinado.</li>
+<li><strong><code>Products</code></strong>: (<code>list</code>). Array de productos que forman parte del producto combinado.<ul>
+<li><strong><code>ProductId</code></strong>: (<code>string</code>). Identificador del producto.</li>
+</ul>
+</li>
+<li><strong><code>RequiresRealTimePrice</code></strong>: (<code>boolean</code>). Indica si requiere consultar el precio en tiempo real para el producto combinado. Véase <a href="../realTimePrices/">obtención del precio en tiempo real</a></li>
+</ul>
+</li>
+<li><strong><code>SaleFlowRules</code></strong>: (<code>object</code>). <ul>
+<li><strong><code>HasSaleFlowRules</code></strong>: (<code>boolean</code>). Indica si hay productos que tengan alguna regla asociada de flujo de venta. En el caso de ser <code class="highlight"><span class="k">true</span></code> se recomienda consultar el método <a href="../checkSaleFlowRules/">Comprobar reglas de flujo de venta</a> para comprobar qué cambios va a producir la inclusión de este producto a la hora de añadirlo al carrito.</li>
+<li><strong><code>ProductIdsWithSaleFlowRules</code></strong>: (<code>list</code>). Array de identificadores de productos. Indica qué productos del catálogo tienen alguna regla asociada de flujo de venta.</li>
+<li><strong><code>DynamicProviderIdsWithSaleFlowRules</code></strong>: (<code>list</code>). Array de identificadores de proveedores dinámicos. Indica qué proveedores dinámicos del catálogo tienen alguna regla asociada de flujo de venta.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>PartnerSettings</code></strong>: (<code>object</code>). Indica las configuraciones del colaborador.</p>
+<ul>
+<li><strong><code>DemandClientData</code></strong>: (<code>boolean</code>). Valor de verdad <code class="highlight"><span class="k">true</span><span class="o">/</span><span class="k">false</span></code> que indica si es obligatorio indicar datos del cliente al confirmar una venta.</li>
+<li><strong><code>DemandClientTaxData</code></strong>: (<code>boolean</code>). Valor de verdad <code class="highlight"><span class="k">true</span><span class="o">/</span><span class="k">false</span></code> que indica si es obligatorio indicar los datos fiscales del cliente al confirmar una venta.</li>
+<li><strong><code>EnableCancellationRequest</code></strong>: (<code>boolean</code>). Valor de verdad <code class="highlight"><span class="k">true</span><span class="o">/</span><span class="k">false</span></code> que indica si el colaborador tiene permitido solicitar cancelaciones vía API.</li>
+<li><strong><code>IsInsurancePolicyEnabled</code></strong>: (<code>boolean</code>). Valor de verdad <code class="highlight"><span class="k">true</span><span class="o">/</span><span class="k">false</span></code> que indica si el colaborador tiene disponible <a href="../checkInsurancePolicies/">pólizas de seguro</a>.</li>
+<li>
+<p><strong><code>PaymentType</code></strong>: (<code>byte</code>). Indica el tipo de pago que realiza el colaborador.</p>
+<details class="example">
+<summary>Posibles valores</summary>
+<ul>
+<li>1: Débito</li>
+<li>2: Crédito</li>
+<li>3: Crédito excepto para grupos</li>
+<li>4: Prepago</li>
+</ul>
+</details>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Success</code></strong> (<code>boolean</code>): valor que indica si la llamada ha sido procesada correctamente o no.</p>
+</li>
+<li><strong><code>Timestamp</code></strong> (<code>dateTime</code>): instante de tiempo en el que se procesó la petición. <em>Formato ISO 8601 (yyyy-MM-ddThh:mm:ss.fffffff)</em>.</li>
+<li><strong><code>ErrorMessage</code></strong> (<code>string</code>): mensaje de error explicando por qué la petición no ha sido correcta. En caso que haya sido correcta, devolverá <code class="highlight"><span class="k">null</span></code>.</li>
+<li><strong><code>ErrorCodes</code></strong> (<code>string[]</code>): lista de <a href="../../annex/errorCodes">códigos</a> que identifican los errores que se hayan producido en la llamada.</li>
+<li><strong><code>ErrorEntityBreakDown</code></strong> (<code>list</code>): Lista que contiene objetos con el nombre e ID en caso de error.<ul>
+<li><strong><code>Id</code></strong> (<code>string</code>): Identificador</li>
+<li><strong><code>Name</code></strong> (<code>string</code>): Nombre relacionado del identificador.</li>
+</ul>
+</li>
+</ul>
+<h3 id="ejemplo-de-respuesta">Ejemplo de respuesta</h3>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;Success&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;Timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-01-01T17:02:27.8165916&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;ErrorMessage&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;Providers&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">    </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;ProviderId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;by81fymhsmjgw&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;ProviderName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PTM&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;ProviderDescription&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Provider Description&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;ProviderAccessConditions&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Provider access conditions&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;ExchangeVoucherPoint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Access point&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;AccessCodeMethodName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;TicketWaitForIt&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;AdvancedDateSelectorMethodName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;None&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;CancellationPolicy&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;IsRefundable&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Rules&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">                </span><span class="p">[</span>
+<span class="w">                    </span><span class="p">{</span>
+<span class="w">                        </span><span class="nt">&quot;HoursInAdvanceOfAccess&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span>
+<span class="w">                        </span><span class="nt">&quot;Percentage&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">80</span>
+<span class="w">                    </span><span class="p">},</span>
+<span class="w">                    </span><span class="p">{</span>
+<span class="w">                        </span><span class="nt">&quot;HoursInAdvanceOfAccess&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">120</span><span class="p">,</span>
+<span class="w">                        </span><span class="nt">&quot;Percentage&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">75</span>
+<span class="w">                    </span><span class="p">}</span>
+<span class="w">                </span><span class="p">]</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;IsForGroups&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;LimitOfNumberOfPeopleToBeGroup&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">19</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;Logo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://url.ofthelogo.com&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;Location&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;CountryCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;es&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;City&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Torrevieja&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Avda. Delfina Viudes, 99&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;ZipCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;03183&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Lat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">37.99</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Lng&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">-0.68</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Region&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Alicante&quot;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;Urls&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">            </span><span class="p">[</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="nt">&quot;LanguageCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;es&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;Url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://url.com/park1&quot;</span>
+<span class="w">                </span><span class="p">},</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="nt">&quot;LanguageCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;en&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;Url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://en-url.com/park1&quot;</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">],</span>
+<span class="w">            </span><span class="nt">&quot;TicketEnclosures&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">            </span><span class="p">[</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="nt">&quot;TicketEnclosureId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;g5u6m3xew6hxy&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;TicketEnclosureName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Sala 1&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;TicketEnclosureConditions&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Enclosure conditions&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;TypeOfPersonDefinitionTypeChild&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;TypeOfPersonDefinitionValueChild&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">120</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;TypeOfPersonDefinitionTypeSenior&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;TypeOfPersonDefinitionValueSenior&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">65</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;Sessions&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">                    </span><span class="p">{</span>
+<span class="w">                        </span><span class="nt">&quot;SessionsGroupSessionContents&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">                        </span><span class="p">[</span>
+<span class="w">                            </span><span class="p">{</span>
+<span class="w">                                </span><span class="nt">&quot;SessionsGroupId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;7q59grjg1tuxw&quot;</span><span class="p">,</span>
+<span class="w">                                </span><span class="nt">&quot;SessionContentId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;fiajih99h79ak&quot;</span>
+<span class="w">                            </span><span class="p">},</span><span class="w"> </span>
+<span class="w">                            </span><span class="p">{</span>
+<span class="w">                                </span><span class="nt">&quot;SessionsGroupId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;8o9tskd4szqgs&quot;</span><span class="p">,</span>
+<span class="w">                                </span><span class="nt">&quot;SessionContentId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;m6noaxhzr33an&quot;</span>
+<span class="w">                            </span><span class="p">},</span>
+<span class="w">                            </span><span class="p">{</span>
+<span class="w">                                </span><span class="nt">&quot;SessionsGroupId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;i73hiypge5576&quot;</span><span class="p">,</span>
+<span class="w">                                </span><span class="nt">&quot;SessionContentId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;suefs1zzn5ser&quot;</span>
+<span class="w">                            </span><span class="p">}</span>
+<span class="w">                        </span><span class="p">],</span>
+<span class="w">                        </span><span class="nt">&quot;SessionSessionContents&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span>
+<span class="w">                    </span><span class="p">}</span>
+<span class="w">                </span><span class="p">},</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="nt">&quot;TicketEnclosureId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;geu773xaqzh18&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;TicketEnclosureName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Enclosure 2&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;TicketEnclosureConditions&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Enclosure 2 conditions&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;TypeOfPersonDefinitionTypeChild&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;TypeOfPersonDefinitionValueChild&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">120</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;TypeOfPersonDefinitionTypeSenior&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;TypeOfPersonDefinitionValueSenior&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">65</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">],</span>
+<span class="w">            </span><span class="nt">&quot;ProductBases&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">            </span><span class="p">[</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="nt">&quot;ProductBaseId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;gfo753rgjfbw6&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;ProductBaseName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Entradas&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;ProductBaseDescription&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;No se permiten cambios ni devoluciones.&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;DaysWithLimitedCapacity&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-11-01&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="nt">&quot;Products&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">                    </span><span class="p">[</span>
+<span class="w">                        </span><span class="p">{</span>
+<span class="w">                            </span><span class="nt">&quot;ProductId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ctgyir9m9q4bo&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ProductName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Entrada Adulto&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ProductDescription&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Entrada para mayores de 12 años.&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ProductInternalConsiderations&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Consideraciones internas&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ProductCancellationConditions&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Condiciones de cancelación&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;CancellationPolicy&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">                            </span><span class="p">{</span>
+<span class="w">                                </span><span class="nt">&quot;IsRefundable&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">                                </span><span class="nt">&quot;Rules&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">                                </span><span class="p">[</span>
+<span class="w">                                    </span><span class="p">{</span>
+<span class="w">                                        </span><span class="nt">&quot;HoursInAdvanceOfAccess&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span>
+<span class="w">                                        </span><span class="nt">&quot;Percentage&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">80</span>
+<span class="w">                                    </span><span class="p">}</span>
+<span class="w">                                </span><span class="p">]</span>
+<span class="w">                            </span><span class="p">},</span>
+<span class="w">                            </span><span class="nt">&quot;DaysWithLimitedCapacity&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;HoursInAdvanceOfPurchase&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;MinimumNumberByTransaction&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfPeople&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfAdults&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfBabies&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfChildren&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfSenior&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfGeneric&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ValidDates&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ValidDatesType&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;AccessDateCriteria&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;PricesAndDates&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">                            </span><span class="p">[</span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;Price&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;20&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Currency&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;€&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;CurrencyName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Euro&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Dates&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-01-01,2022-01-02,2022-01-03,2022-07-31&quot;</span>
+<span class="w">                                </span><span class="p">},</span><span class="w"> </span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;Price&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;30&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Currency&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;€&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;CurrencyName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Euro&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Dates&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-08-01,2022-08-02,2022-08-31&quot;</span>
+<span class="w">                                </span><span class="p">},</span><span class="w"> </span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;Price&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;15&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Currency&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;€&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;CurrencyName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Euro&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Dates&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-09-01,2022-09-02,2022-12-31&quot;</span>
+<span class="w">                                </span><span class="p">}</span>
+<span class="w">                            </span><span class="p">],</span>
+<span class="w">                            </span><span class="nt">&quot;SalesDocumentSettingsViewModel&quot;</span><span class="p">:</span>
+<span class="w">                            </span><span class="p">{</span>
+<span class="w">                                </span><span class="nt">&quot;ShowPrice&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">                            </span><span class="p">},</span>
+<span class="w">                            </span><span class="nt">&quot;Tickets&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">                            </span><span class="p">[</span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1tqgtrf7ctefc&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;IsQuotaTicket&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ticket Adulto&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketEnclosureId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;geu773xaqzh18&quot;</span>
+<span class="w">                                </span><span class="p">}</span>
+<span class="w">                            </span><span class="p">]</span>
+<span class="w">                        </span><span class="p">},</span><span class="w"> </span>
+<span class="w">                        </span><span class="p">{</span>
+<span class="w">                            </span><span class="nt">&quot;ProductId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;htgy4tgm9q21n&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ProductName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Entrada 3x2&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ProductDescription&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Por cada dos adultos, entra un niño gratis.&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;DaysWithLimitedCapacity&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-04-17,2022-08-15&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;HoursInAdvanceOfPurchase&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;MinimumNumberByTransaction&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfPeople&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfAdults&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfChildren&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfSenior&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfGeneric&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ValidDates&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ValidDatesType&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;AccessDateCriteria&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;PricesAndDates&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">                            </span><span class="p">[</span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;Price&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;35&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Currency&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;€&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;CurrencyName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Euro&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Dates&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-01-01,2022-01-02,2022-01-03,2022-07-31&quot;</span>
+<span class="w">                                </span><span class="p">},</span><span class="w"> </span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;Price&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;50&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Currency&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;€&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;CurrencyName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Euro&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Dates&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-08-01,2022-08-02,2022-08-31&quot;</span>
+<span class="w">                                </span><span class="p">},</span><span class="w"> </span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;Price&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;25&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Currency&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;€&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;CurrencyName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Euro&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Dates&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-09-01,2022-09-02,2022-12-31&quot;</span>
+<span class="w">                                </span><span class="p">}</span>
+<span class="w">                            </span><span class="p">],</span>
+<span class="w">                            </span><span class="nt">&quot;SalesDocumentSettingsViewModel&quot;</span><span class="p">:</span>
+<span class="w">                            </span><span class="p">{</span>
+<span class="w">                                </span><span class="nt">&quot;ShowPrice&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">                            </span><span class="p">},</span>
+<span class="w">                            </span><span class="nt">&quot;Tickets&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">                            </span><span class="p">[</span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1tqgtrf7ctefc&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;IsQuotaTicket&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ticket Adulto&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketConditions&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ticket conditions&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketEnclosureId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;geu773xaqzh18&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;FromAccessDay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;ToAccessDay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketsQuestionsProfileId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MyProfilesQuestions&quot;</span>
+<span class="w">                                </span><span class="p">},</span><span class="w"> </span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2lob55g8w3fff&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;IsQuotaTicket&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ticket Adulto segundo día&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketConditions&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ticket conditions&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketEnclosureId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;geu773xaqzh18&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;FromAccessDay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;ToAccessDay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span>
+<span class="w">                                </span><span class="p">},</span><span class="w"> </span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;jkp78j40cnfh3&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;IsQuotaTicket&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ticket Niño&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketEnclosureId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;geu773xaqzh18&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;FromAccessDay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;ToAccessDay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">                                </span><span class="p">},</span><span class="w"> </span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;gggsijt911am4&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;IsQuotaTicket&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ticket Niño segundo día&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketEnclosureId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;geu773xaqzh18&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;FromAccessDay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;ToAccessDay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span>
+<span class="w">                                </span><span class="p">}</span>
+<span class="w">                            </span><span class="p">]</span>
+<span class="w">                        </span><span class="p">},</span><span class="w"> </span>
+<span class="w">                        </span><span class="p">{</span>
+<span class="w">                            </span><span class="nt">&quot;ProductId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;q2oghu9mye7h2&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ProductName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Película de animación 3D&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ProductDescription&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Película de animación para descansar de atracciones&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;DaysWithLimitedCapacity&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;HoursInAdvanceOfPurchase&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;MinimumNumberByTransaction&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfPeople&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfAdults&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfChildren&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfSenior&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;NumberOfGeneric&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ValidDates&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;ValidDatesType&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;AccessDateCriteria&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="nt">&quot;PricesAndDates&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">                            </span><span class="p">[</span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;Price&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;5&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Currency&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;€&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;CurrencyName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Euro&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;Dates&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-01-01,2022-01-02,2022-01-03,2022-12-31&quot;</span>
+<span class="w">                                </span><span class="p">}</span>
+<span class="w">                            </span><span class="p">],</span>
+<span class="w">                            </span><span class="nt">&quot;SalesDocumentSettingsViewModel&quot;</span><span class="p">:</span>
+<span class="w">                            </span><span class="p">{</span>
+<span class="w">                                </span><span class="nt">&quot;ShowPrice&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="w">                            </span><span class="p">},</span>
+<span class="w">                            </span><span class="nt">&quot;Tickets&quot;</span><span class="p">:</span><span class="w"> </span>
+<span class="w">                            </span><span class="p">[</span>
+<span class="w">                                </span><span class="p">{</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;fb8mcqxyo22rg&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;IsQuotaTicket&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Entrada 3D&quot;</span><span class="p">,</span>
+<span class="w">                                    </span><span class="nt">&quot;TicketEnclosureId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;g5u6m3xew6hxy&quot;</span>
+<span class="w">                                </span><span class="p">}</span>
+<span class="w">                            </span><span class="p">]</span>
+<span class="w">                        </span><span class="p">}</span>
+<span class="w">                    </span><span class="p">]</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">]</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.top"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
