@@ -153,6 +153,8 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                 - **`ProductName`**: (``string``). Nombre del producto.
                 - **`SuggestedSalesProductName`**: (``string``). Nombre sugerido del producto de cara a la venta.
                 - **`ProductDescription`**: (``string``). Descripción del producto. Suele contener las condiciones del producto.
+                - **`Tags`**: (``list``). Array de [identificadores de etiquetas](tags.md) aplicadas al producto.
+                    - **``(string)``**: Identificador de la etiqueta.
                 - **`ProductInternalConsiderations`**: (``string``). Consideraciones internas del producto que solo debe conocer el colaborador.
 
                     ???+ danger "Importante"

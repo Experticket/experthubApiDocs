@@ -135,6 +135,8 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
                 - **`ProductName`**: product name.
                 - **`SuggestedSalesProductName`**: suggested product name for sale.
                 - **`ProductDescription`**: product description. It usually contains the conditions of the product.
+                - **`Tags`**: array of [tag identifiers](tags.md) applied to the product.
+                    - **``(string)``**: Tag identifier.
                 - **`ProductInternalConsiderations`**: internal considerations of the product that only the collaborator should know.
 
                     ???+ danger "Important"
