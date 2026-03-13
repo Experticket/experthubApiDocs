@@ -184,6 +184,8 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                     ??? tip "Implicaciones"
                         En caso de estar definido como `#!csharp true` será necesario antes de iniciar cualquier venta hacer la llamada para [consultar el precio en tiempo real](realTimePrices.md). Ya que el precio del producto puede ser diferente en función de algunos criterios.
 
+                - **`CanOnlyBeSoldAsPartOfCombinedProduct`**: (``boolean``) `Opcional`. Si vale `true`, el producto no puede venderse individualmente, pero sí puede venderse como parte de al menos un **`CombinedProduct`** disponible en la consulta actual.
+
                 - **`IsInsurable`**: (`boolean`) `Opcional`. Indica sí para este producto es posible añadir un seguro de cancelación.
                     
                     ??? tip "Implicaciones"

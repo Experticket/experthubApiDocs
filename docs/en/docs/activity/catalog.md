@@ -165,6 +165,8 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
                     ??? tip "Implications"
                         In case it is defined as `#!csharp true` it will be necessary before starting any sale to make the call to [check the price in real time](realTimePrices.md). Since the product price may be different depending on some criteria.
 
+                - **`CanOnlyBeSoldAsPartOfCombinedProduct`**: *optional*, If `#!csharp true`, the product cannot be sold on its own, but it can be sold as part of at least one **`CombinedProduct`** available in the current query.
+
                 - **``IsForPackaging``**: indicates if the product has to be packaged, e.g. with an accommodation.
                 - **`ValidDays`**: days of validity.
                 - **`ValidDaysType`**: type of valid days.
