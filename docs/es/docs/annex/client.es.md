@@ -1,4 +1,4 @@
-﻿		- **`Client`**: (`object`). Información sobre el cliente.
+		- **`Client`**: (`object`). Información sobre el cliente.
 			- **`Id`**: (`string`). Identificador del cliente.
 			- **`CreatedDate`**: (`dateTime`). Fecha en que se dio de alta.
 			- **`BirthDate`**: (`dateTime`). Fecha de nacimiento.

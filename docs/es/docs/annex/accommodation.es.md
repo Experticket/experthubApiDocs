@@ -1,4 +1,4 @@
-﻿		- **`Accommodation`**: (``object``). Información sobre el alojamiento.
+		- **`Accommodation`**: (``object``). Información sobre el alojamiento.
 			- **`ProductId`**: (`string`). Identificador de la tarifa.
 			- **`ProductConditions`**: (`string`). Condiciones del producto.
 			- **`AccessDateTime`**: (`dateTime`). Fecha de entrada.

@@ -1,4 +1,4 @@
-﻿        - **`CombinedProductId`**: (`string`). Identificador del producto combinado.
+        - **`CombinedProductId`**: (`string`). Identificador del producto combinado.
         - **`CombinedProductDiscriminator`**: (`string`). Relación existente entre producto(Array de Products) y producto
         combinado.
         - **`Price`**: (`decimal`). Precio de cada producto combinado.
