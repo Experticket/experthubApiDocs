@@ -8,7 +8,7 @@ As seen when obtaining the [catalog](catalog.md), the tickets have the `Requires
 
 ## Request structure
 
-- **`ReservationId`**: identifier of the reservation obtained when confirming the cart.
+- **`ReservationId`**: (``string``). Identifier of the reservation obtained when confirming the cart.
 
 ### Request example
 
@@ -16,26 +16,26 @@ As seen when obtaining the [catalog](catalog.md), the tickets have the `Requires
 
 ## Response structure
 
-- **`Methods`**: delivery methods array.
-    - **`Id`**: delivery method identifier.
-    - **`Name`**: delivery method name.
-    - **`Description`**: delivery method description.
-    - **`Type`**:  delivery method type.
+- **`Methods`**: (``list``). Delivery methods array.
+    - **`Id`**: (``string``). Delivery method identifier.
+    - **`Name`**: (``string``). Delivery method name.
+    - **`Description`**: (``string``). Delivery method description.
+    - **`Type`**: (``byte``). Delivery method type.
 
         ??? example "Possible values"
             - 0: Shipping
             - 1: Pickup
 
-    - **`DeliveryPoints`**: delivery point array. This property will only apper if `Type == 1` and the delivery method has delivery points defined.
-        - **`Id`**: delivery point identifier.
-        - **`Name`**: delivery point name.
-        - **`Address`**: address.
-        - **`City`**: city.
-        - **`ZipCode`**: postal code.
-        - **`Province`**: province.
-        - **`CountryCode`**: *Alpha-2* country code, according to [ISO 3166](https://www.iban.com/country-codes).
-        - **`PhoneNumber`**: telephone number.
-        - **`Email`**: email.
+    - **`DeliveryPoints`**: (``list``). Delivery points array. This property only appears when `Type == 1` and the delivery method has delivery points set.
+        - **`Id`**: (``string``). Delivery point identifier.
+        - **`Name`**: (``string``). Delivery point name.
+        - **`Address`**: (``string``). Address.
+        - **`City`**: (``string``). City.
+        - **`ZipCode`**: (``string``). Postal code.
+        - **`Province`**: (``string``). Province.
+        - **`CountryCode`**: (``string``). *Alpha-2* country code, according to [ISO 3166](https://www.iban.com/country-codes).
+        - **`PhoneNumber`**: (``string``). Telephone number.
+        - **`Email`**: (``string``). Email.
 --8<-- "includes/responseBaseDocumentation.en.md"
 
 ### Response example
