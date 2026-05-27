@@ -1,4 +1,4 @@
-=== "Pregunta Texto"
+=== "Text question"
 
     ``` json
     {
@@ -23,7 +23,7 @@
         }
     }
     ```
-=== "Pregunta Booleano"
+=== "Boolean question"
 
     ``` json
     {
@@ -49,7 +49,7 @@
     }
     ```
 
-=== "Pregunta Fecha"
+=== "Date question"
 
     ``` json
         {
@@ -72,7 +72,7 @@
             "Timestamp": "2023-03-13T00:00:00"
         }
     ```
-=== "Pregunta Número Entero"
+=== "Integer question"
 
     ``` json
         {
@@ -95,7 +95,7 @@
             "Timestamp": "2023-03-13T00:00:00"
         }
     ```
-=== "Pregunta Número Entero"
+=== "Decimal question"
 
     ``` json
         {
@@ -118,7 +118,7 @@
             "Timestamp": "2023-03-13T00:00:00"
         }
     ```
-=== "Pregunta selección de un valor entre un conjunto de valores predefinidos"
+=== "Single predefined value question"
 
     ``` json
         {
@@ -142,7 +142,7 @@
             "Timestamp": "2023-03-13T00:00:00"
         }
     ```
-=== "Pregunta selección de varios valores entre un conjunto de valores predefinidos"
+=== "Multiple predefined values question"
 
     ``` json
         {
@@ -167,7 +167,7 @@
             "Timestamp": "2023-03-13T00:00:00"
         }
     ```
-=== "Pregunta Archivos"
+=== "File question"
 
     ``` json
         {
