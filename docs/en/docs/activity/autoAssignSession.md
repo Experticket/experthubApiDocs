@@ -17,14 +17,14 @@ Once the query is launched, the session that will be assigned when the cart is c
 
 ## Request structure
 
-- **`LanguageCode`**: defines the language in which the texts will be displayed. *ISO 639-1 Format*.
-- **`Products`**: array of products for which you want to check the sessions.
-    - **`ProductId`**: product identifier.
-    - **`Quantity`**: product quantity.
-    - **`AccessDate`**: access date. *ISO 8601 format (yyyy-MM-dd)*.
-    - **`Tickets`**: array of tickets for which we want to check auto assignment.
-        - **`TicketId`**: ticket identifier.
-        - **`AccessDate`**: *optional*, if indicated, it takes priority over the date indicated at the product level. *ISO 8601 format (yyyy-MM-dd)*.
+- **`LanguageCode`**: (``string``). Defines the language in which the texts will be displayed. *ISO 639-1 format*.
+- **`Products`**: (``list``). Array of products for which you want to check the sessions.
+    - **`ProductId`**: (``string``). Product identifier.
+    - **`Quantity`**: (``int``). Product quantity.
+    - **`AccessDate`**: (``date``). Access date. *ISO 8601 format (yyyy-MM-dd)*.
+    - **`Tickets`**: (``list``). Array of tickets for which we want to check auto assignment.
+        - **`TicketId`**: (``string``). Ticket identifier.
+        - **`AccessDate`**: (``date``) ``Optional``. If indicated, it takes priority over the date indicated at the product level. *ISO 8601 format (yyyy-MM-dd)*.
 
 ### Request example
 
@@ -32,22 +32,22 @@ Once the query is launched, the session that will be assigned when the cart is c
 
 ## Response structure
 
-- **`Products`**: array containing the requested products.
-    - **`ProductId`**: product identifier.
-    - **`AccessDate`**: product access date. *ISO 8601 format (yyyy-MM-dd)*.
-    - **`HasTicketEnclosures`**: boolean indicating whether the product has enclosures.
-    - **`Tickets`**: array of requested product tickets.
-        - **`TicketId`**: ticket identifier.
-        - **`AccessDate`**: ticket access date. *ISO 8601 format (yyyy-MM-dd)*.
-        - **`TicketEnclosureId`**: enclosure identifier.
-        - **`SessionId`**: assigned session identifier.
-        - **`SessionTime`**: time of the assigned session in case of having been able to assign any.
-        - **`SessionContentId`**: session content identifier.
-        - **`SessionContentName`**: session content name.
-        - **`SessionStartTimeType`**: numeric identifier that indicates the session access start type.
-            - **`0`**: access at the indicated time.
-            - **`1`**: access from the indicated time onwards.
-        - **`ResultType`**: attribute indicating the result of the auto assignment.
+- **`Products`**: (``list``). Array containing the requested products.
+    - **`ProductId`**: (``string``). Product identifier.
+    - **`AccessDate`**: (``date``). Product access date. *ISO 8601 format (yyyy-MM-dd)*.
+    - **`HasTicketEnclosures`**: (``boolean``). Boolean indicating whether the product has enclosures.
+    - **`Tickets`**: (``list``). Array of requested product tickets.
+        - **`TicketId`**: (``string``). Ticket identifier.
+        - **`AccessDate`**: (``date``). Ticket access date. *ISO 8601 format (yyyy-MM-dd)*.
+        - **`TicketEnclosureId`**: (``string``). Enclosure identifier.
+        - **`SessionId`**: (``string``). Assigned session identifier.
+        - **`SessionTime`**: (``date``). Time of the assigned session in case one could be assigned.
+        - **`SessionContentId`**: (``string``). Session content identifier.
+        - **`SessionContentName`**: (``string``). Session content name.
+        - **`SessionStartTimeType`**: (``int``). Numeric identifier that indicates the session access start type.
+            - **`0`**: (``int``): Access at the indicated time.
+            - **`1`**: (``int``): Access from the indicated time onwards.
+        - **`ResultType`**: (``byte``). Attribute indicating the result of the auto assignment.
 
             ??? example "Possible values"
                 - 0: **Ok**. Auto assignment was successful.
