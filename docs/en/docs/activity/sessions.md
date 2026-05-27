@@ -2,11 +2,11 @@
 
 A session is defined by date and time, content, and, optionally, available capacity.
 
-Under this definition, we understand a given session can be shared by multiple products. E.g. products "Adult Ticket", "Children’s Ticket", "Junior Ticket", "Senior Ticket" and "Special Needs Ticket” can be associated with the same sessions in the present year, e.g. 10 sessions per day, 365 days of the year.
+According to this definition, the same session can be shared by several tickets. The tickets "Adult Ticket", "Child Ticket", "Junior Ticket", "Senior Ticket" and "Disabled Ticket" can be associated with the same sessions during the current year (for example, 10 sessions per day during the 365 days of the year).
 
-As this series may be common, we have sought to separate the sessions’ structure from the [products catalog](catalog.md) structure as much as possible. Using the above example, if we define the session in the products catalog, we would have 10 sessions x 365 days = 3650 sessions for each one of the 5 products ("Adult Ticket", "Children’s Ticket", "Junior Ticket", "Senior Ticket" and "Special Needs Person’s Ticket")... and we are talking about just an example of products from a single provider.
+Because this situation can be common, we have tried to separate the session structure from the [product catalog](catalog.md) as much as possible. Following the previous example, if the sessions were defined in the product catalog, we would have 10 sessions x 365 days = 3650 sessions for each of the 5 tickets ("Adult Ticket", "Child Ticket", "Junior Ticket", "Senior Ticket" and "Disabled Ticket").
 
-Therefore, to minimize the uploading of data, and to prioritize the best possible sessions catalog, we will define the sessions’ structure in the units presented below.
+Therefore, the session structure is defined to minimize the data load and organize the session catalog as well as possible.
 
 ## Access method
 
@@ -16,19 +16,17 @@ Therefore, to minimize the uploading of data, and to prioritize the best possibl
 
 To obtain the sessions we can use different filters in the body of the method. Each filter will be considered an ***AND***.
 
-The following data structure must be specified in the method body.
-
-- **`SessionsGroupProfileIds`**: (`list`). Array of session group profiles.
-    - **``(string)``**: session group profile identifier.
-- **`SessionsGroupIds`**: (`list`). Array of session groups.
-    - **``(string)``**: session group identifier.
-- **`SessionContentProfileIds`**: (`list`). Array of session content profiles.
-    - **``(string)``**: session content profile identifier.
-- **`FromDate`**: filtering by starting date. It does not allow earlier date values other than the one of today . Its value is by default today’s date. *ISO 8601 formt (yyyy-MM-dd)*.
-- **`ToDate`**: filtering by ending date. The default value is the corresponding date within a year. *ISO 8601 format (yyyy-MM-dd)*.
-- **`Dates`**: (`list`). Array of dates to filter by. *ISO 8601 format (yyyy-MM-dd)*.
-    - **``(date)``**: provider identifier.
-- **`LanguageCode`**: contents language code.
+- **`SessionsGroupProfileIds`**: (``list``). Array of session group profiles.
+    - **``(string)``**: Session group profile identifier.
+- **`SessionsGroupIds`**: (``list``). Array of session groups.
+    - **``(string)``**: Session group identifier.
+- **`SessionContentProfileIds`**: (``list``). Array of session content profiles.
+    - **``(string)``**: Session content profile identifier.
+- **`FromDate`**: (``string``). Filter by start date. Does not allow values earlier than today. The default value is the current day. *ISO 8601 format (yyyy-MM-dd)*.
+- **`ToDate`**: (``string``). Filter by end date. Its default value is the date corresponding to one year from now. *ISO 8601 format (yyyy-MM-dd)*.
+- **`Dates`**: (``list``). Array of dates to filter by. *ISO 8601 format (yyyy-MM-dd)*.
+    - **``(date)``**: Date to filter by.
+- **`LanguageCode`**: (``string``). Content language code.
 
 ### Request examples
 
@@ -36,43 +34,43 @@ The following data structure must be specified in the method body.
 
 ## Response structure
 
-- **`SessionsGroupProfiles`**: array of session groups profile.
-    - **`SessionsGroupProfileId`**: identifier of session groups profile.
-    - **`SessionsGroupProfileName`**: name of the session groups profile.
-    - **`SessionTimeAvailabilityOffset`**: amount of minutes before (negative value) or after (positive value) the session time when the session can be available to purchase.
-    - **`SessionStartTimeType`**: numeric identifier that indicates the session access start type.
-        - **`0`**: access at the indicated time.
-        - **`1`**: access from the indicated time onwards.
-    - **`SessionsGroups`**: array of session groups.
-        - **`SessionsGroupId`**: the session’s group identifier.
-        - **`SessionsGroupName`**: name of the sessions group.
-        - **`Sessions`**: array of sessions.
-            - **`SessionId`**: session identifier.
-            - **`SessionTime`**: date and time of the session.
-            - **`AvailableCapacity`**: value that indicates the session’s capacity. If this field does not exist it is because there is no limited capacity. If one only wants to see a session’s capacity, use the method described in the unit on [obtaining available capacity](availability.md).
-- **`SessionContentProfiles`**: array of session contents profile.
-    - **`SessionContentProfileId`**: session contents profile identifier.
-    - **`SessionContentProfileName`**: name of session contents profile.
-    - **`SessionContents`**: Session contents.
-        - **`SessionContentId`**: the session’s content identifier.
-        - **`SessionContentName`**: session content name.
-        - **`SessionContentDescription`**: session content description.
+- **`SessionsGroupProfiles`**: (``list``). Array of session group profiles.
+    - **`SessionsGroupProfileId`**: (``string``). Session group profile identifier.
+    - **`SessionsGroupProfileName`**: (``string``). Session group profile name.
+    - **`SessionTimeAvailabilityOffset`**: (``int``). Number of minutes before (if the value is negative) or after (if the value is positive) when the session can be on sale with respect to the session time.
+    - **`SessionStartTimeType`**: (``int``). Numeric identifier that indicates the session access start type.
+        - **`0`**: (``int``): Access at the indicated time.
+        - **`1`**: (``int``): Access from the indicated time onwards.
+    - **`SessionsGroups`**: (``list``). Array of session groups.
+        - **`SessionsGroupId`**: (``string``). Session group identifier.
+        - **`SessionsGroupName`**: (``string``). Session group name.
+        - **`Sessions`**: (``list``). Array of sessions.
+            - **`SessionId`**: (``string``). Session identifier.
+            - **`SessionTime`**: (``date``). Session date and time.
+            - **`AvailableCapacity`**: (``int``). Value that indicates the session capacity. If this field does not exist, there is no limited capacity. If you only want to check the capacity of a session, you can use the method described in [Obtaining available capacity](availability.md).
+- **`SessionContentProfiles`**: (``list``). Array of session content profiles.
+    - **`SessionContentProfileId`**: (``string``). Session content profile identifier.
+    - **`SessionContentProfileName`**: (``string``). Session content profile name.
+    - **`SessionContents`**: (``list``). Array of session contents.
+        - **`SessionContentId`**: (``string``). Session content identifier.
+        - **`SessionContentName`**: (``string``). Session content name.
+        - **`SessionContentDescription`**: (``string``). Session content description.
 --8<-- "includes/responseBaseDocumentation.en.md"
 
 ### Response example
 
-See the example below. The "Provider with sessions" has a default session groups profile, and a default session contents profile.
+As an example, suppose we have a default session group profile and a default session content profile.
 
-Therefore, within the session groups profile there will be two session groups:
+Within the session group profile we can see that there are two session groups:
 
-- Morning sessions, which groups the 10:00 a.m. sessions.
-- Afternoon sessions, which groups the 5:00 p.m. sessions.
+- Morning sessions, which group the 10:00 a.m. sessions.
+- Afternoon sessions, which group the 5:00 p.m. sessions.
 
-Within the session contents profile we see that there will be three session contents, which define movies (1, 2 and 3).
+In the session content profile we have three session contents, which define movies (1, 2 and 3).
 
-Seen from a reverse point of view, the most important entities are the sessions on the one hand, and the contents on the other. Both entities have upper clusters (groups and profiles), with the sole purpose ranking the structure.
+Seen from the reverse point of view, the most important entities are sessions on one side and contents on the other. Both entities have higher-level groupings (groups and profiles), with the sole purpose of organizing the structure.
 
-!!! warning "Important note"
-    At this point we have only defined which sessions and contents there are, but we do not know the relationship existing between sessions and content. That is treated in the [products catalog](catalog.md) section.
+!!! warning "Important"
+    At this point we have only defined which sessions and contents exist, but we do not know the relationship between sessions and contents. That is the responsibility of the sessions section of the [product catalog](catalog.md).
 
 --8<-- "includes/examples/activity/sessionResultExamples.md"

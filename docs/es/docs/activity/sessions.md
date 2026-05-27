@@ -4,7 +4,7 @@ Una sesión está definida por una fecha y hora, un contenido y, opcionalmente, 
 
 Según esta definición, se entiende que una misma sesión puede ser compartida por varios tickets. Los tickets "Entrada adulto", "Entrada niño", "Entrada junior", "Entrada senior" y "Entrada discapacitado" pueden tener asociadas las mismas sesiones durante el año en curso (por ejemplo, 10 sesiones al día durante los 365 días del año).
 
-Como esta casuística puede ser habitual, se ha procurado separar lo máximo posible la estructura de sesiones del catálogo de productos. Siguiendo con el ejemplo anterior, si se definiesen las sesiones en el catálogo de productos tendríamos 10 sesiones x 365 días = 3650 sesiones para cada uno de los 5 tickets ("Entrada adulto, "Entrada niño", "Entrada junior", "Entrada senior" y "Entrada discapacitado").
+Como esta casuística puede ser habitual, se ha procurado separar lo máximo posible la estructura de sesiones del [catálogo de productos](catalog.md). Siguiendo con el ejemplo anterior, si se definiesen las sesiones en el catálogo de productos tendríamos 10 sesiones x 365 días = 3650 sesiones para cada uno de los 5 tickets ("Entrada adulto, "Entrada niño", "Entrada junior", "Entrada senior" y "Entrada discapacitado").
 
 Por lo tanto, se define la estructura de sesiones, para minimizar la carga de datos y jerarquizar lo mejor posible el catálogo de sesiones.
 
@@ -71,6 +71,6 @@ En el perfil de contenidos de sesión tenemos tres contenidos de sesión, que de
 Observado desde un punto de vista inverso, las entidades más importantes son las sesiones por una parte y los contenidos por otra. Ambas entidades tienen agrupaciones superiores (grupos y perfiles), con el único objetivo de jerarquizar la estructura.
 
 !!! warning "Importante"
-    En este punto sólo se ha definido qué sesiones hay y qué contenidos existen, pero no sabemos qué relación hay entre sesiones y contenidos. Eso es responsabilidad del apartado de sesiones del catálogo de productos.
+    En este punto sólo se ha definido qué sesiones hay y qué contenidos existen, pero no sabemos qué relación hay entre sesiones y contenidos. Eso es responsabilidad del apartado de sesiones del [catálogo de productos](catalog.md).
 
 --8<-- "includes/examples/activity/sessionResultExamples.md"
