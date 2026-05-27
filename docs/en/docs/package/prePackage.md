@@ -1,10 +1,10 @@
 # Prepackages
 
-With this method we can obtain the available activity prepackages.
+This method allows us to obtain the available activity prepackages.
 
-Prepackages are structures that exist before creating a package and can be composed of one or more enclosures (e.g. "Oceanogràfic + Bioparc"). Each prepackage, in turn, will have one or more product groups (`ProductPaxGroupings`).
+Prepackages are preliminary structures used to create a package and can be composed of one or more enclosures (e.g. "Oceanogràfic + Bioparc"). Each prepackage, in turn, will have one or more product groups (`ProductPaxGroupings`).
 
-It is important to take the suggested geolocation into account. This is used in the different catalog methods to locate an area from which hotels will be searched.
+It is important to take the suggested geolocation into account. It is used by the different catalog methods to locate an area from which to search for hotels.
 
 ## Access method
 

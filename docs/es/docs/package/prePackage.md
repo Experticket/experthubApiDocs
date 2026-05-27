@@ -2,7 +2,7 @@
 
 Con este método podemos obtener los prepaquetes de actividades disponibles.
 
-Los prepaquetes son estructuras previas a la creación de un paquete y pueden estar compuestos por uno o más recintos (ej. "Oceanogràfic + Bioparc"). Cada prepaquete, a su vez, dispondrá de uno o varios grupos de productos (ProductPaxGroupings).
+Los prepaquetes son estructuras previas a la creación de un paquete y pueden estar compuestos por uno o más recintos (ej. "Oceanogràfic + Bioparc"). Cada prepaquete, a su vez, dispondrá de uno o varios grupos de productos (`ProductPaxGroupings`).
 
 Es relevante tener en cuenta la geolocalización sugerida. Esta se utiliza en los distintos métodos de catálogo para ubicar una zona a partir de la cual buscar hoteles.
 
