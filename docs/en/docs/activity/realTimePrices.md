@@ -18,17 +18,17 @@ Through this method we can calculate the prices of one or several products, for 
 
 ## Request structure
 
-- **`ProductIds`**: (`list`). Array of product identifiers.
-    - **``(string)``**: product identifier.
-- **`AccessDates`**: (`string`). Array of access dates we want to query. *ISO 8601 format (yyyy-MM-dd)*.
-    - **``(date)``**: dates to query.
-- **`StartDate`**: start of the input date range we want to query. Complements `AccessDates` and requires `EndDate` to be specified. *ISO 8601 format (yyyy-MM-dd)*.
-- **`EndDate`**: end of the input date range we want to query. Complements `AccessDates` and requires `StartDate` to be specified. *ISO 8601 format (yyyy-MM-dd)*.
-- **`CombinedProducts`**: array of combined products.
-    - **`CombinedProductId`**: combined product identifier.
-    - **`Products`**: array of products included in the combined product.
-        - **`ProductId`**: combined product identifier.
-        - **`AccessDate`**: access date. *ISO 8601 format (yyyy-MM-dd)*.
+- **`ProductIds`**: (``list``). Array of product identifiers.
+    - **``(string)``**: Product identifier.
+- **`AccessDates`**: (``string``). Array of access dates we want to query. *ISO 8601 format (yyyy-MM-dd)*.
+    - **``(date)``**: Dates to query.
+- **`StartDate`**: (``date``). Start of the access date range we want to query. Complements `AccessDates` and requires `EndDate` to be specified. *ISO 8601 format (yyyy-MM-dd)*.
+- **`EndDate`**: (``date``). End of the access date range we want to query. Complements `AccessDates` and requires `StartDate` to be specified. *ISO 8601 format (yyyy-MM-dd)*.
+- **`CombinedProducts`**: (``list``). Array of combined products.
+    - **`CombinedProductId`**: (``string``). Combined product identifier.
+    - **`Products`**: (``list``). Array of products included in the combined product.
+        - **`ProductId`**: (``string``). Combined product identifier.
+        - **`AccessDate`**: (``date``). Access date. *ISO 8601 format (yyyy-MM-dd)*.
 
 ### Request examples
 
@@ -36,20 +36,20 @@ Through this method we can calculate the prices of one or several products, for 
 
 ## Response structure
 
-- **`ProductsRealTimePrices`**: array of prices in real time.
-    - **`ProductId`**: product identifier.
-    - **`AccessDate`**: access date. *ISO 8601 format (yyyy-MM-dd)*.
-    - **`Price`**: price at which the product should be sold.
-    - **`PriceMode`**: price kind.
+- **`ProductsRealTimePrices`**: (``list``). Array of real-time prices.
+    - **`ProductId`**: (``string``). Product identifier.
+    - **`AccessDate`**: (``date``). Access date. *ISO 8601 format (yyyy-MM-dd)*.
+    - **`Price`**: (``decimal``). Price at which the product should be sold.
+    - **`PriceMode`**: (``byte``). Price type.
 
         ??? example "Possible values"
             - 1: Retail price
             - 2: Net price
 
-    - **`CombinedProductId`**: combined product identifier.
-    - **`CombinedProductProducts`**: array of products included in the combined product.
-        - **`ProductId`**: product identifier.
-        - **`AccessDate`**: access date. *ISO 8601 format (yyyy-MM-dd)*.
+    - **`CombinedProductId`**: (``string``). Combined product identifier.
+    - **`CombinedProductProducts`**: (``string``). Array of products included in the combined product.
+        - **`ProductId`**: (``string``). Product identifier.
+        - **`AccessDate`**: (``date``). Access date. *ISO 8601 format (yyyy-MM-dd)*.
     --8<-- "includes/responseBaseDocumentation.en.md"
 
 --8<-- "includes/responseBaseDocumentation.en.md"
