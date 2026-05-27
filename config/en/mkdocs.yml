@@ -119,10 +119,6 @@ nav:
         - Sale documentation: docs/shoppingCart/documentation.md
         - Attach documents to a sale: docs/sale/saleAttachments.md
       - Annexes:
-        - Activity: docs/annex/activity.en.md
-        - Accommodation: docs/annex/accommodation.en.md
-        - Combined product: docs/annex/combinedProduct.en.md
-        - Client: docs/annex/client.en.md
         - Error codes: docs/annex/errorCodes.md
     #- FAQ: faq.md
     #- About: about.md

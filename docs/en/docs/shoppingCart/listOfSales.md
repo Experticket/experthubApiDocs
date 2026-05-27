@@ -33,13 +33,21 @@ The following parameters must be passed as URL query string parameters. Availabl
 - **`Sales`**: (`list`). List of sales.
     - **`PartnerSaleId`**: (`string`). Partner identifier.
     - **`Activities`**: (`list`). List of activities.
-        - [Annex: Activity](../annex/activity.en.md)
+
+--8<-- "docs/en/docs/annex/activity.en.md"
+
     - **`Accommodations`**: (`list`). List of accommodations included in the sale.
-        - [Annex: Accommodation](../annex/accommodation.en.md)
+
+--8<-- "docs/en/docs/annex/accommodation.en.md"
+
     - **`CombinedProducts`**: (`list`). List of combined products from the activities included in the sale.
-        - [Annex: Combined product](../annex/combinedProduct.en.md)
+
+--8<-- "docs/en/docs/annex/combinedProduct.en.md"
+
     - **`Client`**: (`object`). Sale customer data.
-        - [Annex: Client](../annex/client.en.md)
+
+--8<-- "docs/en/docs/annex/client.en.md"
+
     - **`TotalPrice`**: (`decimal`). Total sale price.
     - **`TotalPriceWithoutVat`**: (`decimal`). Total sale price without taxes.
     - **`TotalDiscount`**: (`decimal`). Total discount applied to the sale. It only appears if a discount coupon has been applied.
