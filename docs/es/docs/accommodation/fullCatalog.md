@@ -68,7 +68,7 @@ En este método solicitamos la información completo de un alojamiento. Aquí se
                     - **``BoardName``**: (``string``). Nombre del tipo de alojamiento.
                     - **``Adults``**: (``int``). Número de adultos.
                     - **``Children``**: (``int``). Número de niños.
-                    - **``RateClass``**: tipo de tarifa.
+                    - **``RateClass``**: (``int``). Tipo de tarifa.
 
                         ??? example "Posibles valores"
                             --8<-- "includes/enum/accommodationRateClass.md"

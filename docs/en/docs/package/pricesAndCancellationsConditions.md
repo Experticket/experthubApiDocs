@@ -41,7 +41,7 @@ The definition of the groupings (`PaxGroupings`) becomes relevant when the packa
             - **`Type`**: (`int`). Commission type.
 
                 ??? example "Possible values"
-                    --8<-- "includes/enum/comissionType.md"
+                    --8<-- "includes/enum/comissionType.en.md"
 
             - **`Value`**: (`decimal`). Commission value.
 

@@ -63,7 +63,7 @@ With this method we request the complete information about the packages (activit
             - **``RoomRequestNumber``**: (``string``). Identifier of the requested distribution according to the room.
 
                 ??? info "Example"
-                    --8<-- "includes/examples/package/fullCatalog.request.2.md"
+                    --8<-- "includes/examples/package/fullCatalog.request.2.en.md"
 
             - **``TypeName``**: (``string``). Room type name.
             - **``AccommodationRoomRates``**: (``list``). Array list with the rates of the accommodation rooms.

@@ -53,7 +53,7 @@ With this method we request the full information of an accommodation. It include
             - **`RoomRequestNumber`**: (`string`). Requested distribution identifier according to the room.
 
                 ??? info "Example"
-                    --8<-- "includes/examples/package/fullCatalog.request.2.md"
+                    --8<-- "includes/examples/package/fullCatalog.request.2.en.md"
 
             - **`TypeName`**: (`string`). Room type name.
             - **`AccommodationRoomRates`**: (`list`). Array with the accommodation room rates.
@@ -67,7 +67,7 @@ With this method we request the full information of an accommodation. It include
                     - **`BoardName`**: (`string`). Board type name.
                     - **`Adults`**: (`int`). Number of adults.
                     - **`Children`**: (`int`). Number of children.
-                    - **`RateClass`**: Rate type.
+                    - **`RateClass`**: (``int``). Rate type.
 
                         ??? example "Possible values"
                             --8<-- "includes/enum/accommodationRateClass.en.md"
@@ -82,7 +82,7 @@ With this method we request the full information of an accommodation. It include
                         - **`Type`**: (`int`). Commission type.
 
                             ??? example "Possible values"
-                                --8<-- "includes/enum/comissionType.md"
+                                --8<-- "includes/enum/comissionType.en.md"
 
                         - **`Value`**: (`decimal`). Commission value.
 
