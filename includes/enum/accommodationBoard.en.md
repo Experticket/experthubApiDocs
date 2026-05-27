@@ -1,0 +1,5 @@
+- ``10``: Room only.
+- ``20``: Bed and breakfast.
+- ``30``: Half board.
+- ``40``: Full board.
+- ``50``: All inclusive.

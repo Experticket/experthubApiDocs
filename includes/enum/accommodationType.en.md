@@ -1,0 +1,5 @@
+- ``0``: Unclassified
+- ``1``: Hotel
+- ``2``: Hostel
+- ``3``: Campsite
+- ``4``: Apartment

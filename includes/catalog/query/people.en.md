@@ -3,6 +3,6 @@
         - **`Type`**: (`int`) `Required`. Person type.
 
             ??? example "Possible values"
-                --8<-- "includes/enum/personType.md"
+                --8<-- "includes/enum/personType.en.md"
 
         - **`Age`**: (`int`) `Optional`. Person age. Required only if the person is a child or a baby (types `1` and `2`).

@@ -32,12 +32,12 @@ With this method we request the full information of an accommodation. It include
     - **`Type`**: (`int`). Accommodation type.
 
         ??? example "Possible values"
-            --8<-- "includes/enum/accommodationType.md"
+            --8<-- "includes/enum/accommodationType.en.md"
 
     - **`Category`**: (`int`). Category type.
 
         ??? example "Possible values"
-            --8<-- "includes/enum/accommodationCategory.md"
+            --8<-- "includes/enum/accommodationCategory.en.md"
 
     - **`Location`**: (`object`). Exact accommodation location.
         - **`Latitude`**: (`decimal`). Location latitude.
@@ -62,7 +62,7 @@ With this method we request the full information of an accommodation. It include
                     - **`BoardCode`**: (`int`). Board type code.
 
                         ??? example "Possible values"
-                            --8<-- "includes/enum/accommodationBoard.md"
+                            --8<-- "includes/enum/accommodationBoard.en.md"
 
                     - **`BoardName`**: (`string`). Board type name.
                     - **`Adults`**: (`int`). Number of adults.
@@ -70,7 +70,7 @@ With this method we request the full information of an accommodation. It include
                     - **`RateClass`**: Rate type.
 
                         ??? example "Possible values"
-                            --8<-- "includes/enum/accommodationRateClass.md"
+                            --8<-- "includes/enum/accommodationRateClass.en.md"
 
                     - **`Price`**: (`decimal`). Rate price.
                     - **`PriceMode`**: (`int`). Price type.

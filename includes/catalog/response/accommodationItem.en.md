@@ -8,9 +8,9 @@
 - **`Type`**: (`string`). Accommodation type.
 
     ??? example "Possible values"
-        --8<-- "includes/enum/accommodationType.md"
+        --8<-- "includes/enum/accommodationType.en.md"
 
 - **`Category`**: (`string`). Accommodation category.
 
     ??? example "Possible values"
-        --8<-- "includes/enum/accommodationCategory.md"
+        --8<-- "includes/enum/accommodationCategory.en.md"

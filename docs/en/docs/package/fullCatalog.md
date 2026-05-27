@@ -34,12 +34,12 @@ With this method we request the complete information about the packages (activit
     - **``Type``**: (``int``). Accommodation type.
 
         ??? example "Possible values"
-            --8<-- "includes/enum/accommodationType.md"
+            --8<-- "includes/enum/accommodationType.en.md"
 
     - **``Category``**: (``int``). Category type.
 
         ??? example "Possible values"
-            --8<-- "includes/enum/accommodationCategory.md"
+            --8<-- "includes/enum/accommodationCategory.en.md"
 
     - **``CategoryName``**: (``string``). Category name.
     - **``TypeName``**: (``string``). Accommodation type name.
@@ -72,7 +72,7 @@ With this method we request the complete information about the packages (activit
                     - **``BoardCode``**: (``int``) board type code.
 
                         ??? example "Possible values"
-                            --8<-- "includes/enum/accommodationBoard.md"
+                            --8<-- "includes/enum/accommodationBoard.en.md"
 
                     - **``BoardName``**: (``string``). Board type name.
                     - **``Adults``**: (``int``). Number of adults.
@@ -80,7 +80,7 @@ With this method we request the complete information about the packages (activit
                     - **``RateClass``**: rate type.
 
                         ??? example "Possible values"
-                            --8<-- "includes/enum/accommodationRateClass.md"
+                            --8<-- "includes/enum/accommodationRateClass.en.md"
 
 - **``Flags``**: (``list``). List with additional information.
     - **``IncludesTickets``**: (``boolean``). Indicates whether tickets are included.

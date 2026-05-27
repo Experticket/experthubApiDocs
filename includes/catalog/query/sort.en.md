@@ -2,4 +2,4 @@
     - **`Criteria`**: (`int`) `Optional`. Sort type.
 
         ??? example "Possible values"
-            --8<-- "includes/enum/sortCriteria.md"
+            --8<-- "includes/enum/sortCriteria.en.md"

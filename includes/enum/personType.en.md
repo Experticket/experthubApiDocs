@@ -1,0 +1,5 @@
+- ``0``: Baby
+- ``1``: Child
+- ``2``: Adult
+- ``3``: Senior
+- ``4``: Generic

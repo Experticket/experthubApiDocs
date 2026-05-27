@@ -1,0 +1,2 @@
+- ``1``: Non-refundable
+- ``2``: Refundable.

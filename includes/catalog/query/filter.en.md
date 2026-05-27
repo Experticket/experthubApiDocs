@@ -3,25 +3,25 @@
         - **`(int)`**: `Optional`. Board type.
 
             ??? example "Possible values"
-                --8<-- "includes/enum/accommodationBoard.md"
+                --8<-- "includes/enum/accommodationBoard.en.md"
 
     - **`AccommodationCategories`**: (`list`) `Optional`. List of desired accommodation categories.
         - **`(int)`**: `Optional`. Accommodation category type.
 
             ??? example "Possible values"
-                --8<-- "includes/enum/accommodationCategory.md"
+                --8<-- "includes/enum/accommodationCategory.en.md"
 
     - **`AccommodationRateClasses`**: (`list`) `Optional`. List of refundable or non-refundable accommodations.
         - **`(int)`**: `Optional`. Indicates whether refundable rates are desired.
 
             ??? example "Possible values"
-                --8<-- "includes/enum/accommodationRateClass.md"
+                --8<-- "includes/enum/accommodationRateClass.en.md"
 
     - **`AccommodationTypes`**: (`list`) `Optional`. List of accommodation types.
         - **`(int)`**: `Optional`. Accommodation type.
 
             ??? example "Possible values"
-                --8<-- "includes/enum/accommodationType.md"
+                --8<-- "includes/enum/accommodationType.en.md"
 
     - **`Cities`**: (`list`) `Optional`. List of cities.
         - **`(string)`**: `Optional`. City name.
