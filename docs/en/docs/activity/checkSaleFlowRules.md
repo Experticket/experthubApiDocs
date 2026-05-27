@@ -15,11 +15,16 @@ Once the query is launched, sufficient data will be returned, for information pu
     - **``AccessDateTime``**: *optional*, access date. If defined, it has precedence over the date defined globally. *ISO 8601 format (yyyy-MM-dd)*.
     - **``ProductId``**: product identifier.
     - **``Quantity``**: *optional*, amount. By default its value is 1.
+- **``DynamicProviders``**: dynamic providers that make up the sale.
+    - **``AccessDateTime``**: *optional*, access date. If defined at product level, it has precedence over the date defined globally. *ISO 8601 format (yyyy-MM-dd)*.
+    - **``ProviderId``**: dynamic provider identifier.
+    - **``Quantity``**: *optional*, quantity. By default its value is 1.
+- **`LanguageCode`**: (``string``) ``Optional``. Defines the language in which the texts will be displayed. By default, the language configured for the partner will be returned. *ISO 639-1 format*.
 
 ### Request example
 
 !!! info "Example 1: free product rule (3x2)"
-    In this example we are going to choose 4 products "hwuk9huaqopwo". Therefore, in the output data we should see the rule "Regla producto gratis 3x2" applied, seen in the [examples Sales flow rules](saleFlowRules.md#ejemplo-de-respuesta). That is, since we order 4 "hwuk9huaqopwo" products, we must obtain two "twy5yhbishk91" products for free.
+    In this example we are going to choose 4 products "hwuk9huaqopwo". Therefore, in the output data we should see the rule "Regla producto gratis 3x2" applied, seen in the [examples Sales flow rules](saleFlowRules.md#response-example). That is, since we order 4 "hwuk9huaqopwo" products, we must obtain two "twy5yhbishk91" products for free.
 !!! info "Example 2: discount product rule and different access date (Discount)"
     In this example we are going to choose a product "twy5yhbishk91" and a product "uspeg7nr5st96" with a different access date. Therefore, in the output data we should see the "Regla Descuento" rule applied, seen in the [examples Sales flow rules](saleFlowRules.md#response-example). That is, we will see a €5 discount on the product "twy5yhbishk91".
 

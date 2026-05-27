@@ -70,34 +70,59 @@ plugins:
 nav:
     - Home: index.md
     - Documentation:
-      - Introduction: docs/intro.md 
-      - Data specification: docs/struct.md
       - Connection: docs/connection.md
+      - Data specification: docs/struct.md
       - Activity:
         - Catalog: docs/activity/catalog.md
         - Last catalog update date: docs/activity/lastCatalogUpdatedDate.md
+        - Available languages: docs/activity/availableLanguages.md
         - Real time prices: docs/activity/realTimePrices.md
         - Sessions: docs/activity/sessions.md
         - Check auto assigned sessions: docs/activity/autoAssignSession.md
         - Available capacity: docs/activity/availability.md
-        - Sale flow rules: 
-          - Get rules: docs/activity/saleFlowRules.md
-          - Check applied rules: docs/activity/checkSaleFlowRules.md
-        - Payment methods: docs/activity/paymentMethods.md
+        - Ticket questions: docs/activity/CheckTicketsQuestions.md
+        - Sale flow rules: docs/activity/checkSaleFlowRules.md
+        - Gift cards: docs/activity/giftCards.md
+        #- Payment methods: docs/activity/paymentMethods.md -> payment method information is returned in the reservation response.
         - Delivery methods:
           - Get delivery methods: docs/activity/deliveryMethods.md
           - Check delivery method: docs/activity/checkDeliveryMethods.md
           - Ticket exchange: docs/activity/ticketExchange.md
         - Check discount coupons: docs/activity/checkDiscountCoupons.md
+        - Quote insurance policies: docs/activity/checkInsurancePolicies.md
         - Tags: docs/activity/tags.md
-      - Accomodation: 
+      - Accommodation:
         - Basic catalog: docs/accommodation/basicCatalog.md
         - Full catalog: docs/accommodation/fullCatalog.md
       - Packages:
         - Prepackages: docs/package/prePackage.md
-        - Catalog: docs/package/catalog.md
-        - Full Catalog: docs/package/fullCatalog.md
+        - Basic catalog: docs/package/basicCatalog.md
+        - Full catalog: docs/package/fullCatalog.md
+        - Available dates: docs/package/availableDates.md
+        - Prices: docs/package/pricesAndCancellationsConditions.md
+      - Purchase process:
+        - Introduction: docs/shoppingCart/introduction.md
+        - Create: docs/shoppingCart/create.md
+        - Add to cart: docs/shoppingCart/add.md
+        - Remove cart item: docs/shoppingCart/remove.md
+        - Reserve products: docs/shoppingCart/confirm.md
+        - Cancel reservation: docs/shoppingCart/cancelConfirm.md
+        - Confirm reservation: docs/shoppingCart/sale.md
+        - Sale documentation: docs/shoppingCart/documentation.md
+        - Attach documents to a sale: docs/sale/saleAttachments.md
+        - List of sales: docs/shoppingCart/listOfSales.md
+      - Sale options:
+        - Introduction: docs/sale/introduction.md
+        - List of sales: docs/shoppingCart/listOfSales.md
+        - Create cancellation request: docs/sale/saleCancellationRequest.md
+        - List of cancellation requests: docs/sale/listOfSaleCancellationRequest.md
+        - Sale documentation: docs/shoppingCart/documentation.md
+        - Attach documents to a sale: docs/sale/saleAttachments.md
       - Annexes:
+        - Activity: docs/annex/activity.en.md
+        - Accommodation: docs/annex/accommodation.en.md
+        - Combined product: docs/annex/combinedProduct.en.md
+        - Client: docs/annex/client.en.md
         - Error codes: docs/annex/errorCodes.md
-    - FAQ: faq.md
-    - Acerca de: about.md
+    #- FAQ: faq.md
+    #- About: about.md

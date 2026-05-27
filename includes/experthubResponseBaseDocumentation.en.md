@@ -1,4 +1,8 @@
-- **``Success``**: boolean `#!csharp true/false` that indicates whether or not the call was processed correctly.
-- **``Errors``**: array of errors.
-    - **``ErrorMessage``**: error message explaining why the request was not successful. If it was correct, it will return `#!csharp null`.
-    - **``ErrorCode``**: code that identify the error.
+- **``Success``**: (``boolean``). Value that indicates whether the call was processed correctly or not.
+- **``Errors``**: (`list`). Array of errors.
+    - **`Error`**: (`object`).
+        - **``ErrorMessage``**: (`string`). Error message explaining why the request was not successful. If it was correct, it will return `#!csharp null`.
+        - **``ErrorCode``**: (`int`). Code that identifies the error.
+- **`ErrorEntityBreakDown`** (`list`): list that contains objects with the name and ID in case of error.
+    - **`Id`** (`string`): identifier
+    - **`Name`** (`string`): related name of the identifier.

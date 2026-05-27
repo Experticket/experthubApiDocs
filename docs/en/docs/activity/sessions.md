@@ -18,12 +18,16 @@ To obtain the sessions we can use different filters in the body of the method. E
 
 The following data structure must be specified in the method body.
 
-- **`SessionsGroupProfileIds`**: profile of session groups.
-- **`SessionsGroupIds`**: session groups.
-- **`SessionContentProfileIds`**: sessions content profile.
+- **`SessionsGroupProfileIds`**: (`list`). Array of session group profiles.
+    - **``(string)``**: session group profile identifier.
+- **`SessionsGroupIds`**: (`list`). Array of session groups.
+    - **``(string)``**: session group identifier.
+- **`SessionContentProfileIds`**: (`list`). Array of session content profiles.
+    - **``(string)``**: session content profile identifier.
 - **`FromDate`**: filtering by starting date. It does not allow earlier date values other than the one of today . Its value is by default today’s date. *ISO 8601 formt (yyyy-MM-dd)*.
 - **`ToDate`**: filtering by ending date. The default value is the corresponding date within a year. *ISO 8601 format (yyyy-MM-dd)*.
-- **`Dates`**: list of dates to filter by. *ISO 8601 format (yyyy-MM-dd)*.
+- **`Dates`**: (`list`). Array of dates to filter by. *ISO 8601 format (yyyy-MM-dd)*.
+    - **``(date)``**: provider identifier.
 - **`LanguageCode`**: contents language code.
 
 ### Request examples
@@ -36,6 +40,9 @@ The following data structure must be specified in the method body.
     - **`SessionsGroupProfileId`**: identifier of session groups profile.
     - **`SessionsGroupProfileName`**: name of the session groups profile.
     - **`SessionTimeAvailabilityOffset`**: amount of minutes before (negative value) or after (positive value) the session time when the session can be available to purchase.
+    - **`SessionStartTimeType`**: numeric identifier that indicates the session access start type.
+        - **`0`**: access at the indicated time.
+        - **`1`**: access from the indicated time onwards.
     - **`SessionsGroups`**: array of session groups.
         - **`SessionsGroupId`**: the session’s group identifier.
         - **`SessionsGroupName`**: name of the sessions group.

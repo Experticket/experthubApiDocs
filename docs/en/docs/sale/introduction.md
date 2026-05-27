@@ -5,4 +5,4 @@ Once the [Cart is Confirmed](../shoppingCart/sale.md) in the [Purchase Process](
 1. [Obtain Documentation](../shoppingCart/documentation.md)
 2. [List of Sales](../shoppingCart/listOfSales.md)
 3. [Request for Cancellation](./saleCancellationRequest.md)
-4. [List of Cancellation Requests](./saleCancellationRequest.md)
+4. [List of Cancellation Requests](./listOfSaleCancellationRequest.md)

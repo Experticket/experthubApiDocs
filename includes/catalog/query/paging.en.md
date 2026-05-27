@@ -1,0 +1,3 @@
+- **`Paging`**: (`object`) `Optional`. Pagination information.
+    - **`Number`**: (`int`) `Optional`. Requested page number.
+    - **`Size`**: (`int`) `Optional`. Number of items per page.

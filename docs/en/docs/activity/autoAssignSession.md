@@ -44,6 +44,9 @@ Once the query is launched, the session that will be assigned when the cart is c
         - **`SessionTime`**: time of the assigned session in case of having been able to assign any.
         - **`SessionContentId`**: session content identifier.
         - **`SessionContentName`**: session content name.
+        - **`SessionStartTimeType`**: numeric identifier that indicates the session access start type.
+            - **`0`**: access at the indicated time.
+            - **`1`**: access from the indicated time onwards.
         - **`ResultType`**: attribute indicating the result of the auto assignment.
 
             ??? example "Possible values"

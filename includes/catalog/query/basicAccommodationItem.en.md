@@ -1,0 +1,10 @@
+- **`AccommodationIds`**: (`list`) `Optional`. List that allows retrieving packages only from a specific set of accommodations.
+    - **`(string)`**: `Optional`. Accommodation identifier.
+- **`Destination`**: (`object`) `Required`. Geolocation used to search for accommodations. See [SuggestedLocation](/experthubApiDocs/en/docs/package/prePackage/#response-structure).
+    - **`Latitude`**: (`decimal`) `Required`. Geolocation latitude.
+    - **`Longitude`**: (`decimal`) `Required`. Geolocation longitude.
+- **`CheckIn`**: (`date`) `Required`. Accommodation check-in date. ISO 8601 format (yyyy-MM-dd).
+- **`CheckOut`**: (`date`) `Required`. Accommodation check-out date. ISO 8601 format (yyyy-MM-dd).
+- **`RoomDistribution`**: (`list`) `Required`. List of rooms that will make up the package.
+    - **`Room`**: (`list`) `Required`. Information about the people who make up this room.
+        - **`(int)`**: `Required`. Index corresponding to the position of the person in the People list.

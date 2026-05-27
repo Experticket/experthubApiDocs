@@ -105,9 +105,13 @@ Available capacity refers to quota type tickets (``#!csharp IsQuotaTicket == tru
 
 ## Request structure
 
-- **`ProductIds`**: array of product identifiers to filter by.
-- **`SessionIds`**: array of session identifiers to filter by.
-- **`Dates`**: array of dates to filter by. *ISO 8601 format (yyyy-MM-dd)*.
+- **`ProductIds`**: (`list`). Array of product identifiers to filter by.
+    - **``(string)``**: product identifier.
+
+- **`SessionIds`**: (`list`). Array of session identifiers to filter by.
+    - **``(string)``**: provider identifier.
+- **`Dates`**: (`list`). Array of dates to filter by. *ISO 8601 format (yyyy-MM-dd)*.
+    - **``(date)``**: provider identifier.
 - **`FromDate`**: if you want to filter by a range of dates, you can filter by start date. Does not allow values prior to today. Its default value is today. *ISO 8601 format (yyyy-MM-dd)*.
 - **`ToDate`**: if you want to filter by a range of dates, you can filter by end date. Its default value is the date corresponding to one year from now. *ISO 8601 format (yyyy-MM-dd)*.
 

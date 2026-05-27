@@ -77,7 +77,7 @@ En este método solicitamos la información completo de un alojamiento. Aquí se
                     - **``PriceMode``**: (``int``). Tipo de precio.
 
                         ??? example "Posibles valores"
-                            --8<-- "includes/enum/priceMode.md"
+                            --8<-- "includes/enum/priceMode.es.md"
 
                     - **``Commission``**: (``object``). Información sobre la comisión.
                         - **``Type``**: (``int``). Tipo de comisión

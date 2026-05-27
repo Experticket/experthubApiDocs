@@ -1,0 +1,6 @@
+- **`AccommodationId`**: (`string`) `Required`. Accommodation identifier.
+- **`CheckIn`**: (`date`) `Required`. Accommodation check-in date. ISO 8601 format (yyyy-MM-dd).
+- **`CheckOut`**: (`date`) `Required`. Accommodation check-out date. ISO 8601 format (yyyy-MM-dd).
+- **`RoomDistribution`**: (`list`) `Required`. List of rooms that will make up the package.
+    - **`Room`**: (`list`) `Required`. Information about the people who make up this room.
+        - **`(int)`**: `Required`. Index corresponding to the position of the person in the People list.

@@ -1,0 +1,6 @@
+- **`AvailableFilters`**: (`list`). Provides information about the filters available according to the search criteria, for example to refine future searches using the `Filter` request parameter. In all cases, an array of objects is returned with `Value` (matching the values defined in `Filter`) and `Count` indicating how many matches exist for each filter. Information is returned for the following filters (see the `Filter` request parameter definition):
+    -  **`AccommodationBoards`**: (`list`)
+    -  **`AccommodationCategories`**: (`list`)
+    -  **`AccommodationCities`**: (`list`)
+    -  **`AccommodationRateClasses`**: (`list`)
+    -  **`AccommodationTypes`**: (`list`)

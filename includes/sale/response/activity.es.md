@@ -12,7 +12,7 @@
 - **`PriceMode`**: (`int`). Tipo de precio:
 
     ??? example "Posibles valores"
-        --8<-- "includes/enum/priceMode.md"
+        --8<-- "includes/enum/priceMode.es.md"
 
 - **`Status`**: (`int`). Tipo de precio.
 

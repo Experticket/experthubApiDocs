@@ -1,58 +1,58 @@
-﻿# List of Cancellation Requests
+# List of cancellation requests
 
-This method allows creating a cancellation request for a sale.
+This method allows cancellation requests for a sale to be listed.
 
-## Access Method
+## Access method
 
 **GET** /salecancellationrequest
 
-## Request Structure
+## Request structure
 
-- **`PartnerSaleIds`**: (`list`) **Required**. List of partner identifiers.
-- **`FromCreatedDateTime`**: (`date`). **Optional** Initial creation date of the transaction. ISO 8601 format (YYYY-MM-DD).
-- **`ToCreatedDateTime`**: (`date`). **Optional** Final creation date of the transaction. ISO 8601 format (YYYY-MM-DD).
-- **`FromUpdatedDateTime`**: (`date`). **Optional** Initial access date. ISO 8601 format (YYYY-MM-DD).
-- **`ToUpdatedDateTime`**: (`date`). **Optional** Final access date. ISO 8601 format (YYYY-MM-DD).
-- **`Page`**: (`int`). **Optional** Page number to retrieve. Default value `1`.
+- **``PartnerSaleIds``**: (``list``) ``Required``. List of partner identifiers.
+- **``FromCreatedDateTime``**: (``date``).  ``Optional`` Initial transaction creation date. ISO 8601 format (YYYY-MM-DD).
+- **``ToCreatedDateTime``**: (``date``).  ``Optional`` Final transaction creation date. ISO 8601 format (YYYY-MM-DD).
+- **``FromUpdatedDateTime``**: (``date``).  ``Optional`` Initial access date. ISO 8601 format (YYYY-MM-DD).
+- **``ToUpdatedDateTime``**: (``date``).  ``Optional`` Final access date. ISO 8601 format (YYYY-MM-DD).
+- **``Page``**: (``int``).  ``Optional`` Page number to retrieve. Default value `1`.
 
-### Example Call
+### Request example
 
 ??? tip "Examples"
 
     --8<-- "includes/examples/sale/listOfSaleCancellationRequest.request.1.md"
 
-## Response Structure
+## Response structure
 
-- **`Timestamp`**: (`dateTime`). The time when the request was processed. ISO 8601 format (yyyy-MM-ddThh:mm:ss.fffffff).
-- **`Sales`**: (`list`). List of sales.  
-  - **`CancellationRequests`**: (`object`). Economic concepts of a sale.
-  - **`ExperticketName`**: (`string`). Name of Experticket.
-  - **`CancellationRequestId`**: (`string`). Identifier of the cancellation request.
-  - **`SaleId`**: (`string`). Identifier of the sale.
-  - **`PartnerSaleId`**: (`string`). Identifier of the partner's sale.
-  - **`CreatedDateTime`**: (`date`). Date of the cancellation request.
-  - **`UpdatedDateTime`**: (`date`). Date of the cancellation request update.
-  - **`Status`**: (`string`). Status of the cancellation.
+- **``Timestamp``**: (``dateTime``). Time at which the request was processed. ISO 8601 format (yyyy-MM-ddThh\:mm\:ss.fffffff).
+- **``Sales``**: (``list``). List of sales.
+    - **``PartnerSaleId``**: (``string``). List of activities.
+    - **``CancellationRequests``**: (``Object``). Economic concepts of a sale.
+    - **``ExperticketName``**: (``string``). Experticket name.
+    - **``CancellationRequestId``**: (``string``). Cancellation request identifier.
+    - **``SaleId``**: (``Object``). Sale identifier.
+    - **``PartnerSaleId``**: (``string``). Partner sale identifier.
+    - **``CreatedDateTime``**: (``date``). Cancellation request date.
+    - **``UpdatedDateTime``**: (``date``). Cancellation request date.
+    - **``Status``**: (``string``). Cancellation status.
 
-      ??? example "Possible values"
-          --8<-- "includes/enum/cancellationRequestStatus.md"
+        ??? example "Possible values"
+            --8<-- "includes/enum/cancellationRequestStatus.md"
 
-  - **`StatusComments`**: (`string`). Comments on the status of the cancellation request.
-  - **`Reason`**: (`byte`). Reason for the cancellation.
+    - **``StatusComments``**: (``string``). Cancellation request status comments.
+    - **``Reason``**: (``byte``). Cancellation status.
 
-      ??? example "Possible values"
-          --8<-- "includes/enum/cancellationRequestReason.md"
+        ??? example "Possible values"
+            --8<-- "includes/enum/cancellationRequestReason.md"
 
-  - **`ReasonComments`**: (`string`). Comments on the reason for the cancellation request.
-- **`PageNumber`**: (`int`). Indicates the requested page number.
-- **`HasPreviousPage`**: (`boolean`). Indicates if there is a previous page.
-- **`HasNextPage`**: (`boolean`). Indicates if there is a next page.
-- **`IsFirstPage`**: (`boolean`). Indicates if the requested page is the first page.
+    - **``ReasonComments``**: (``string``). Cancellation request status comments.
+- **``PageNumber``**: (``int``). Indicates the requested page.
+- **``HasPreviousPage``**: (``boolean``). Indicates whether there is a previous page before the requested one.
+- **``HasNextPage``**: (``boolean``). Indicates whether there is a next page.
+- **``IsFirstPage``**: (``boolean``). Indicates whether the requested page corresponds to the first page.
 
 --8<-- "includes/experthubResponseBaseDocumentation.en.md"
 
-### Example Response
+### Response example
 
 ??? tip "Examples"
-
     --8<-- "includes/examples/sale/listOfSaleCancellationRequest.response.1.md"

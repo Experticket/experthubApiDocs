@@ -1,4 +1,7 @@
-- **`Success`**: boolean `#!csharp true/false` that indicates whether or not the call was processed correctly.
-- **`Timestamp`**: instant of time in which the request was processed. *ISO 8601 format (yyyy-MM-ddThh\:mm\:ss.fffffff)*.
-- **`ErrorMessage`**: error message explaining why the request was not successful. If it was correct, it will return `#!csharp null`.
-- **`ErrorCodes`**: list of [codes](../../annex/errorCodes) that identify the errors that have occurred in the API call.
+- **`Success`** (``boolean``): value that indicates whether the call was processed correctly or not.
+- **`Timestamp`** (`dateTime`): time at which the request was processed. *ISO 8601 format (yyyy-MM-ddThh\:mm\:ss.fffffff)*.
+- **`ErrorMessage`** (`string`): error message explaining why the request was not successful. If it was correct, it will return `#!csharp null`.
+- **`ErrorCodes`** (`string[]`): list of [codes](../annex/errorCodes.md) that identify the errors that occurred in the call.
+- **`ErrorEntityBreakDown`** (`list`): list that contains objects with the name and ID in case of error.
+    - **`Id`** (`string`): identifier
+    - **`Name`** (`string`): related name of the identifier.

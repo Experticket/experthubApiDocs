@@ -1,134 +1,118 @@
-# Extended package catalog
+# Full catalog of accommodation packages
 
-In this method we can obtain extended information about the packages (activity + hotel) available. Here is information on the rates of the different rooms available at the hotel.
+With this method we request the complete information about the packages (activity + accommodation) available for a specific accommodation. It includes information about the rates of the different rooms available for the accommodation.
 
 ## Access method
 
-**POST** package/fullcatalog
+**POST** /Package/FullCatalog
 
 ## Request structure
 
---8<-- "includes/packageCatalogQuery.en.md"
+--8<-- "includes/catalog/query/people.en.md"
+
+--8<-- "includes/catalog/query/activity.en.md"
+
+- **``Accommodation``**: (``object``) ``Required``. Accommodation information.
+    --8<-- "includes/catalog/query/fullAccommodationItem.en.md"
 
 ### Request example
 
---8<-- "includes/examples/package/catalogQueryExamples.md"
+??? tip "Example: 2 rooms: \"1 adult + 1 child\" and \"1 adult\""
+
+    --8<-- "includes/examples/package/fullCatalog.request.1.md"
 
 ## Response structure
 
-- **``Echotoken``**: token needed to be able to add packages to the cart.
-- **``Activities``**: this field contains the definition of the [activity catalog](../activity/catalog.md#response-structure).
-- **``Accommodation``**: package accommodation information.
-    - **``Id``**: accommodation identifier.
-    - **``Name``**: accommodation name.
-    - **``Description``**: accommodation description.
-    - **``Address``**: accommodation address.
-    - **``City``**: accommodation city.
-    - **``Type``**: type of accommodation.
+- **``Echotoken``**: (``string``). Token needed for subsequent requests: request prices, add items to the cart, etc.
+- **``Activities``**: (``object``). Property that contains the definition of the [activities catalog](../activity/catalog.md#response-structure). All activities available for the requested prepackage are listed here.
+- **``Accommodation``**: (``object``). Information about the package accommodation indicated in the request.
+    - **``Id``**: (``string``). Accommodation identifier.
+    - **``Name``**: (``string``). Accommodation name.
+    - **``Description``**: (``string``). Accommodation description.
+    - **``Address``**: (``string``). Accommodation address.
+    - **``City``**: (``string``). Accommodation city.
+    - **``Type``**: (``int``). Accommodation type.
 
         ??? example "Possible values"
-            - 0: Unclassified
-            - 1: Hotel
-            - 2: Hostel
-            - 3: Camping
-            - 4: Apartment
+            --8<-- "includes/enum/accommodationType.md"
 
-    - **``Category``**: category type.
+    - **``Category``**: (``int``). Category type.
 
         ??? example "Possible values"
-            - 0: Unclassified
-            - 1: One star :star:
-            - 2: Two stars :star::star:
-            - 3: Three stars :star::star::star:
-            - 4: Four stars :star::star::star::star:
-            - 5: Five stars :star::star::star::star::star:
+            --8<-- "includes/enum/accommodationCategory.md"
 
-    - **``CategoryName``**: category name.
-    - **``TypeName``**: accommodation type name.
-    - **``Location``**: exact location of the accommodation.
-        - **``Longitude``**: longitudinal coordinates.
-        - **``Latitude``**: latitudinal coordinates.
-    - **``Distances``**: array of distance to the different activities of the package.
-        - **``ActivityProviderId``**: identifier of the activity provider.
-        - **``Distance``**: distance between accommodation and activity.
-    - **``AccommodationServices``**: array of services available in the accommodation.
-        - **``Name``**: service name.
-        - **``IsFree``**: indicate if it is included in the price.
-    - **``AccommodationImages``**: array of images of the accommodation.
-        - **``Description``**: image description.
-        - **``Order``**: order to be displayed.
-        - **``Url``**: image url.
-    - **``AccommodationRooms``**: different rooms of the accommodation.
-        - **``RoomRequestNumber``**: identifier of the requested distribution according to the room.
+    - **``CategoryName``**: (``string``). Category name.
+    - **``TypeName``**: (``string``). Accommodation type name.
+    - **``Location``**: (``object``). Exact accommodation location.
+        - **``Latitude``**: (``decimal``). Geolocation latitude.
+        - **``Longitude``**: (``decimal``). Geolocation longitude.
+    - **``Distances``**: (``list``). List of distances to the different package activities.
+        - **``Distance``**: (``object``). Information about the distance to the package activity.
+            - **``ActivityProviderId``**: (``string``). Activity provider identifier. See [ProviderId in the activities catalog](../activity/catalog.md#response-structure).
+            - **``Distance``**: (``decimal``). Distance between the accommodation and the activity in meters.
+    - **``AccommodationServices``**: (``list``). List of services available in the accommodation.
+    - **``AccommodationService``**: (``object``). Information about the service available in the accommodation.
+            - **``Name``**: (``string``). Service name.
+            - **``IsFree``**: (``string``). Indicates whether it is included in the price.
+    - **``AccommodationImages``**: (``list``). List of accommodation images.
+        - **``Description``**: (``string``). Image description.
+        - **``Order``**: (``int``). Display order.
+        - **``Url``**: (``string``). Image URL address.
+    - **``AccommodationRooms``**: (``list``). List with the different accommodation rooms.
+        - **``AccommodationRoom``**: (``object``). Accommodation room information.
+            - **``RoomRequestNumber``**: (``string``). Identifier of the requested distribution according to the room.
 
-            ??? info "Example"
-                - If 3 rooms of 2 adults each are requested.
+                ??? info "Example"
+                    --8<-- "includes/examples/package/fullCatalog.request.2.md"
 
-                    In this case, the identifiers defined between 1 and 3 will appear, but it will be possible to select the rooms as desired. Examples:
+            - **``TypeName``**: (``string``). Room type name.
+            - **``AccommodationRoomRates``**: (``list``). Array list with the rates of the accommodation rooms.
+                - **``AccommodationRoomRate``**: (``list``). Information about the accommodation room rate.
+                    - **``Id``**: (``string``). Room identifier.
+                    - **``BoardCode``**: (``int``) board type code.
 
-                    - 3 of type ``RoomRequestNumber = 1``
-                    - 2 of type ``RoomRequestNumber = 1`` and 1 of type ``RoomRequestNumber = 3``
-                    - 1 of type ``RoomRequestNumber = 1``, other of type ``RoomRequestNumber = 2`` and another of type ``RoomRequestNumber = 3``
+                        ??? example "Possible values"
+                            --8<-- "includes/enum/accommodationBoard.md"
 
-                - If 3 rooms are requested, one for 2 adults, one for 2 children and one for 1 child and 1 adult.
+                    - **``BoardName``**: (``string``). Board type name.
+                    - **``Adults``**: (``int``). Number of adults.
+                    - **``Children``**: (``int``). Number of children.
+                    - **``RateClass``**: rate type.
 
-                    It will be necessary to select one of the type ``RoomRequestNumber = 1``, one ``RoomRequestNumber = 2`` and another ``RoomRequestNumber = 3``.
+                        ??? example "Possible values"
+                            --8<-- "includes/enum/accommodationRateClass.md"
 
-        - **``TypeName``**: room type name.
-        - **``AccommodationRoomRates``**: array with the room rates of the accommodation.
-            - **``Id``**: room identifier.
-            - **``Code``**: room code.
-            - **``RateId``**: rate identifier.
-            - **``RateComments``**: rate comments.
-            - **``BoardCode``**: board type code.
+- **``Flags``**: (``list``). List with additional information.
+    - **``IncludesTickets``**: (``boolean``). Indicates whether tickets are included.
+    - **``Promoted``**: (``boolean``). Indicates whether it is promoted.
+- **``PrePackages``**: (``list``). List of available prepackages. This value matches the prepackages requested in the call (``PrePackageIds``).
+    - **``Id``**: (``string``). Prepackage identifier.
+    - **``Name``**: (``string``). Prepackage name.
+- **``ActivityPackages``**: (``list``). List of package activities.
+    - **``ActivityPackage``**: (``object``). Package activity information.
+        - **``Id``**: (``string``). Activity package identifier.
+        - **``Activities``**: (``list``). List of activities included in the package.
+            - **``Activities``**: (``object``). Information about the activity included in the package.
+                - **``ActivityId``**: (``string``). Activity identifier.
+                - **``Quantity``**: (``int``). Quantity included.
+- **``Packages``**: (``list``) List of packages. This list is the union between the requested prepackages, the accommodation, and the activities.
+    - **``Package``**: (``list``) Package information.
+        - **``Id``**: (``string``). Package identifier.
+        - **``PrePackageId``**: (``string``). Prepackage identifier.
+        - **``AccommodationRateId``**: (``string``). Accommodation rate identifier.
+        - **``AccommodationId``**: (``string``). Accommodation identifier.
+        - **``ActivityPackageId``**: (``string``). Activity package identifier.
+        - **``Price``**: (``decimal``). Package price.
+        - **``CancellationPolicy``**: (``object``). Cancellation policies.
+            - **``IsRefundable``**: (``boolean``). Indicates whether the package is refundable at any point.
+            - **``Rules``**: (``list``). Rules that define the cancellation policies.
+                - **``Rule``**: (``object``). Rule that defines this cancellation policy.
+                    - **``HoursInAdvanceOfAccess``**: (``int``). Hours in advance with respect to the access date to which this rule applies.
+                    - **``Percentage``**: (``decimal``). Penalty percentage with respect to the price.
 
-                ??? example "Possible values"
-                    - 10: accommodation only
-                    - 20: bed and breakfast
-                    - 30: half board
-                    - 40: full board
-                    - 50: all included
-
-            - **``BoardName``**: board name.
-            - **``Adults``**: number of adults.
-            - **``Children``**: number of children.
-            - **``RateClass``**: rate type.
-
-                ??? example "Possible values"
-                    - 1: non refundable
-                    - 2: refundable
-
-            - **``Price``**: rate price.
-            - **``PriceMode``**: kind of price.
-
-                ??? example "Possible values"
-                    - 1: RRP
-                    - 2: Net price
-
-    - **``Flags``**: additional information.
-        - **``IncludesTickets``**: indicates if it includes tickets.
-        - **``Promoted``**: indicates if it is promoted.
-- **``PrePackages``**: prepackage array.
-    - **``Id``**: prepackage identifier.
-    - **``Name``**: prepackage name.
-- **``ActivityPackages``**: array of package activities.
-    - **``Id``**: activity pack identifier
-    - **``Activities``**: array of activities included in the package.
-        - **``ActivityId``**: activity identifier.
-        - **``Quantity``**: amount included.
-- **``Packages``**: array of packages.
-    - **``Id``**: package identifier.
-    - **``PrePackageId``**: prepackage identifier.
-    - **``AccommodationRateId``**: accommodation rate identifier.
-    - **``AccommodationId``**: accommodation identifier.
-    - **``ActivityPackageId``**: activity pack identifier.
-    - **``Price``**: package price.
-    - **``CancellationPolicy``**: cancellation policies.
-        - **``IsRefundable``**: indicates whether or not the package is refundable at any point.
-        - **``Rules``**: rules that define cancellation policies.
-            - **``HoursInAdvanceOfAccess``**: hours in advance of the date of access to which this rule applies.
-            - **``Percentage``**: percentage of penalty with respect to the price.
+--8<-- "includes/experthubResponseBaseDocumentation.en.md"
 
 ### Response example
 
---8<-- "includes/examples/package/fullCatalogResponseExamples.md"
+??? tip "Example"
+    --8<-- "includes/examples/package/fullCatalog.response.1.md"

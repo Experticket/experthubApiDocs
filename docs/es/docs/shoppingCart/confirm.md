@@ -31,7 +31,7 @@ Una vez que se ha confirmado la reserva, ya no es posible añadir más productos
         - **``PriceMode``**: (``int``). Tipo de precio.
 
             ??? example "Posibles valores"
-                --8<-- "includes/enum/priceMode.md"
+                --8<-- "includes/enum/priceMode.es.md"
 
         - **``Success``**: (``boolean``). Si ha sido correctamente reservado.
         - **``Tickets``**: (``list``). Listado de tickets que conforman este producto.
@@ -58,7 +58,7 @@ Una vez que se ha confirmado la reserva, ya no es posible añadir más productos
         - **``PriceMode``**: (``int``). Tipo de precio.
 
             ??? example "Posibles valores"
-                --8<-- "includes/enum/priceMode.md"
+                --8<-- "includes/enum/priceMode.es.md"
 
         - **``Success``**: (``boolean``). Si ha sido correctamente reservado.
         - **``ErrorMessage``**: (``boolean``). En caso de error en la reserva, mensaje asociado.

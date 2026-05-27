@@ -5,7 +5,7 @@ hide:
 
 # Experthub API Documentation
 
-Through the different sections of the [documentation](/docs/connection/), we will attempt to demonstrate and explain the various ways to effectively work with the Experthub API.
+Through the different sections of the [documentation](docs/connection.md), we will attempt to demonstrate and explain the various ways to effectively work with the Experthub API.
 
 We are pleased to provide this guide to ensure proper usage of the tool and improve efficiency when making any API-related inquiries.
 
@@ -14,4 +14,7 @@ For instance, the [Postman](https://www.postman.com/) software allows us to make
 ## Goals and Functions
 
 + Consult the [communication interface](/docs/connection/).
-+ View the different supported data
++ View the different supported data types. [Data specification](/docs/struct/).
++ Obtain the catalog and its different peculiarities for [packages](/docs/package/prePackage/) or [activities](/docs/activity/catalog/)
++ Understand the correct flow of the [purchase processes](/docs/shoppingCart/introduction/).
++ Consult the [error codes](/docs/annex/errorCodes/).

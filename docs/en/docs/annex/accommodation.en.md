@@ -1,0 +1,10 @@
+# Accommodation information
+
+- **`Accommodation`**: (`object`). Accommodation information.
+	- **`ProductId`**: (`string`). Rate identifier.
+	- **`ProductConditions`**: (`string`). Product conditions.
+	- **`AccessDateTime`**: (`dateTime`). Check-in date.
+	- **`AccessEndDateTime`**: (`dateTime`). Check-out date.
+	- **`Quantity`**: (`int`). Quantity of units added.
+	- **`Price`**: (`decimal`). Rate price.
+	- **`PriceMode`**: (`int`). Price type.

@@ -1,0 +1,2 @@
+- 1: Retail price
+- 2: Net

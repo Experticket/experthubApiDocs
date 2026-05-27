@@ -1,0 +1,5 @@
+- **`Activity`**: (`object`) `Required`. Activity information.
+    - **`FromDate`**: (`date`) `Required`. Activity start date. ISO 8601 format (yyyy-MM-dd).
+    - **`ToDate`**: (`date`) `Required`. Activity end date. ISO 8601 format (yyyy-MM-dd).
+    - **`PrePackageIds`**: (`list`) `Required`. List of activity prepackage identifiers.
+        - `(string)`: `Required`. Prepackage identifier.

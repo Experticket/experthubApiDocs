@@ -18,8 +18,10 @@ Through this method we can calculate the prices of one or several products, for 
 
 ## Request structure
 
-- **`ProductIds`**: array of product identifiers.
-- **`AccessDates`**: array of input dates that we want to query. *ISO 8601 format (yyyy-MM-dd)**.
+- **`ProductIds`**: (`list`). Array of product identifiers.
+    - **``(string)``**: product identifier.
+- **`AccessDates`**: (`string`). Array of access dates we want to query. *ISO 8601 format (yyyy-MM-dd)*.
+    - **``(date)``**: dates to query.
 - **`StartDate`**: start of the input date range we want to query. Complements `AccessDates` and requires `EndDate` to be specified. *ISO 8601 format (yyyy-MM-dd)*.
 - **`EndDate`**: end of the input date range we want to query. Complements `AccessDates` and requires `StartDate` to be specified. *ISO 8601 format (yyyy-MM-dd)*.
 - **`CombinedProducts`**: array of combined products.
@@ -41,16 +43,16 @@ Through this method we can calculate the prices of one or several products, for 
     - **`PriceMode`**: price kind.
 
         ??? example "Possible values"
-            - 1: RRP
+            - 1: Retail price
             - 2: Net price
 
     - **`CombinedProductId`**: combined product identifier.
     - **`CombinedProductProducts`**: array of products included in the combined product.
         - **`ProductId`**: product identifier.
         - **`AccessDate`**: access date. *ISO 8601 format (yyyy-MM-dd)*.
-    --8<-- "includes/responseBaseDocumentation.es.md"
+    --8<-- "includes/responseBaseDocumentation.en.md"
 
---8<-- "includes/responseBaseDocumentation.es.md"
+--8<-- "includes/responseBaseDocumentation.en.md"
 
 ### Response examples
 

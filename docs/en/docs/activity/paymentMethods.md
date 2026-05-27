@@ -1,11 +1,11 @@
 # Payment methods
 
-This is an intermediate step that we must perform before confirming the cart. See the ``PartnerSettings`` field in the [catalog](catalog.md).
+This is an intermediate step that must be performed before confirming the cart. See the `PartnerSettings` field in the [catalog](catalog.md).
 
 !!! success ""
-    If **``PaymentType``** in the catalog indicates that our payment method is different from debit, this call is irrelevant for us.
+    If **`PaymentType`** in the catalog indicates that our payment method is different from debit, this call is irrelevant for us.
 !!! warning ""
-    If **``PaymentType``** in the catalog indicates that our payment method to the distributor is debit, we must use this call.
+    If **`PaymentType`** in the catalog indicates that our payment method to the distributor is debit, this call must be used.
 
 ## Access method
 
@@ -13,7 +13,7 @@ This is an intermediate step that we must perform before confirming the cart. Se
 
 ## Request structure
 
-- **`ReservationId`**: reservation identifier obtained when confirming the cart.
+- **`ReservationId`**: (`string`). Reservation identifier obtained when confirming the cart.
 
 ### Request example
 
@@ -21,10 +21,27 @@ This is an intermediate step that we must perform before confirming the cart. Se
 
 ## Response structure
 
-- **`PaymentMethods`**: array of payment methods.
-    - **``Type``**: payment method type identifier.
-    - **``Name``**: payment method name.
-    - **``EnableSendByEmails``**: indicates if we can use this payment method to automatically send a payment link to the end customer via email.
+- **`PaymentMethods`**: (`list`). Array of payment methods.
+  - **`Id`**: (`string`). Payment method identifier.
+  - **`Type`**: (`byte`). Payment method type.
+  - **`Name`**: (`string`). Payment method name.
+  - **`CommercialName`**: (`string`) `Optional`. Payment method commercial name.
+  - **`EnableSendByEmail`**: (`boolean`) `Optional`. Indicates whether this payment method can be used to automatically send a payment link by email.
+  - **`Fields`**: (`list`). Array of fillable fields associated with the payment method. These fields can be specified when creating a transaction.
+    - **`Id`**: (`string`). Field identifier.
+    - **`Name`**: (`string`). Field name.
+    - **`IsRequired`**: (`boolean`). Indicates whether the field is required.
+    - **`RegexValidation`**: (`string`) `Optional`. Regular expression that the value entered in the field must satisfy.
+    - **`RegexValidationErrorMessage`**: (`string`) `Optional`. Error message to show to the user if the regular expression is not satisfied.
+    - **`DefaultValue`**: (`string`) `Optional`. Default field value to show to the user.
+    - **`DataType`**: (`byte`). Indicates the data type the field value must have.
+
+        ??? example "Possible values"
+            - 0: Text
+            - 1: Numeric
+            - 2: Date
+            - 3: Boolean
+
 --8<-- "includes/responseBaseDocumentation.en.md"
 
 ### Response example

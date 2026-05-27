@@ -8,9 +8,10 @@ With this API method it is possible to exchange tickets.
 
 ## Request structure
 
-- **`Exchanges`**: array with the data of the tickets that we want to exchange.
-    - **`TicketAccessCode`**: ticket access code.
-    - **`InternalCode`**: *optional*, code that we want to assign to the exchanged ticket.
+- **`Exchanges`** (``list``): array with the data of the tickets that we want to exchange.
+    - **``Exchange``** (``object``): exchange to be performed.
+        - **`TicketAccessCode`** (``string``): ticket access code.
+        - **`InternalCode`** (``string``): *optional*, code that we want to assign to the exchanged ticket.
 
 ### Request example
 
@@ -18,7 +19,7 @@ With this API method it is possible to exchange tickets.
 
 ## Response structure
 
---8<-- "includes/responseBaseDocumentation.es.md"
+--8<-- "includes/responseBaseDocumentation.en.md"
 
 ### Response example
 
