@@ -109,9 +109,9 @@ El aforo concierne a los tickets de tipo aforo (``#!chsarp IsQuotaTicket == true
     - **``(string)``**: Identificador del producto.
 
 - **`SessionIds`**: (``list``). Array de identificadores de sesión por los que filtrar.
-    - **``(string)``**: Identificador del proveedor.
+    - **``(string)``**: Identificador de la sesión.
 - **`Dates`**: (``list``). Array de fechas por las que filtrar. *Formato ISO 8601 (yyyy-MM-dd)*.
-    - **``(date)``**: Identificador del proveedor.
+    - **``(date)``**: Fecha por la que filtrar.
 - **`FromDate`**: (``date``). Si se quiere filtrar mediante un rango de fechas, se puede filtrar por fecha de inicio. No permite valores anteriores al día de hoy. Su valor por defecto es el día de hoy. *Formato ISO 8601 (yyyy-MM-dd)*.
 - **`ToDate`**: (``date``). Si se quiere filtrar mediante un rango de fechas, se puede filtrar por fecha de fin. Su valor por defecto es la fecha correspondiente a dentro de un año. *Formato ISO 8601 (yyyy-MM-dd)*.
 

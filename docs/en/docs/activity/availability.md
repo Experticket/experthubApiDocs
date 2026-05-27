@@ -99,21 +99,21 @@ Available capacity refers to quota type tickets (``#!csharp IsQuotaTicket == tru
         }
         ```
 
-## Access Method
+## Access method
 
 **POST** /availablecapacity
 
 ## Request structure
 
-- **`ProductIds`**: (`list`). Array of product identifiers to filter by.
-    - **``(string)``**: product identifier.
+- **`ProductIds`**: (``list``). Array of product identifiers to filter by.
+    - **``(string)``**: Product identifier.
 
-- **`SessionIds`**: (`list`). Array of session identifiers to filter by.
-    - **``(string)``**: provider identifier.
-- **`Dates`**: (`list`). Array of dates to filter by. *ISO 8601 format (yyyy-MM-dd)*.
-    - **``(date)``**: provider identifier.
-- **`FromDate`**: if you want to filter by a range of dates, you can filter by start date. Does not allow values prior to today. Its default value is today. *ISO 8601 format (yyyy-MM-dd)*.
-- **`ToDate`**: if you want to filter by a range of dates, you can filter by end date. Its default value is the date corresponding to one year from now. *ISO 8601 format (yyyy-MM-dd)*.
+- **`SessionIds`**: (``list``). Array of session identifiers to filter by.
+    - **``(string)``**: Session identifier.
+- **`Dates`**: (``list``). Array of dates to filter by. *ISO 8601 format (yyyy-MM-dd)*.
+    - **``(date)``**: Date to filter by.
+- **`FromDate`**: (``date``). If you want to filter by a date range, you can filter by start date. Does not allow values prior to today. Its default value is today. *ISO 8601 format (yyyy-MM-dd)*.
+- **`ToDate`**: (``date``). If you want to filter by a date range, you can filter by end date. Its default value is the date corresponding to one year from now. *ISO 8601 format (yyyy-MM-dd)*.
 
 !!! tip "Important"
     At least one `ProductId`, or `SessionId` must be defined. You can add as many as you want and they will be considered an ***OR***.
@@ -124,14 +124,14 @@ Available capacity refers to quota type tickets (``#!csharp IsQuotaTicket == tru
 
 ## Response structure
 
-- **`Products`**: array containing the requested products. Corresponds to each day with limited access to each of the products.
-    - **`ProductId`**: identificador del producto.
-    - **`Date`**: access date. *ISO 8601 format (yyyy-MM-dd)*.
-    - **`AvailableCapacity`**: capacity available for sale.
-- **`Sessions`**: array containing the requested sessions. Corresponds to each day with limited access to each of the sessions.
-    - **`SessionId`**: identificador de la sesión.
-    - **`Date`**: access date. *ISO 8601 format (yyyy-MM-ddThh\:mm\:ss.fffffff)*.
-    - **`AvailableCapacity`**: capacity available for sale.
+- **`Products`**: (``list``). Array containing the requested products. Corresponds to each limited-access day of each product.
+    - **`ProductId`**: (``string``). Product identifier.
+    - **`Date`**: (``date``). Access date. *ISO 8601 format (yyyy-MM-dd)*.
+    - **`AvailableCapacity`**: (``int``). Capacity available for sale.
+- **`Sessions`**: (``list``). Array containing the requested sessions. Corresponds to each limited-access day of each session.
+    - **`SessionId`**: (``string``). Session identifier.
+    - **`Date`**: (``date``). Access date. *ISO 8601 format (yyyy-MM-ddThh\:mm\:ss.fffffff)*.
+    - **`AvailableCapacity`**: (``int``). Capacity available for sale.
 --8<-- "includes/responseBaseDocumentation.en.md"
 
 ### Response example
