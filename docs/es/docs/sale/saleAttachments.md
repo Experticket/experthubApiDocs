@@ -14,7 +14,7 @@ El Content-Type de la petición debe ser multipart/form-data, incluyendo los sig
 - **``Attachments``**: (``list[list]``) ``Requerido``. Un array en el que cada elemento es un array de bytes del documento a adjuntar. 
 
 ??? tip "Información"
-        El identificador de la venta se obtiene en la respuesta de la llamada a [confirmación de la reserva](../ShoppingCart/sale.md). Esta función nos devolverá un listado de ventas con sus identificadores(Id). Ese identificador es el que debemos usar en este campo.
+    El identificador de la venta se obtiene en la respuesta de la llamada a [confirmación de la reserva](../shoppingCart/sale.md). Esta función nos devolverá un listado de ventas con sus identificadores(Id). Ese identificador es el que debemos usar en este campo.
   
 ### Ejemplo de llamada
 
