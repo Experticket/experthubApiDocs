@@ -8,10 +8,10 @@ This call checks if a delivery method allows delivery to an address, the estimat
 
 ## Request structure
 
-- **`ReservationId`**: reservation identifier obtained when confirming the cart.
-- **`DeliveryMethodId`**: identifier of the delivery method obtained in the call to [delivery methods](deliveryMethods.md).
-- **`CountryCode`**: country *Alpha-2* code, according to [ISO 3166 standard](https://www.iban.com/country-codes).
-- **`ZipCode`**: postal code.
+- **`ReservationId`**: (``string``). Reservation identifier obtained when confirming the cart.
+- **`DeliveryMethodId`**: (``string``). Identifier of the delivery method obtained in the call to [delivery methods](deliveryMethods.md).
+- **`CountryCode`**: (``string``). *Alpha-2* country code, according to [ISO 3166 standard](https://www.iban.com/country-codes).
+- **`ZipCode`**: (``string``). Postal code.
 
 ### Request example
 
@@ -19,8 +19,8 @@ This call checks if a delivery method allows delivery to an address, the estimat
 
 ## Response structure
 
-- **`ShippingCosts`**: shipping costs.
-- **`DeliveryDays`**: estimation of the days needed for the products to arrive at their destination.
+- **`ShippingCosts`**: (``decimal``). Shipping costs.
+- **`DeliveryDays`**: (``short``). Estimation of the days needed for the products to arrive at their destination.
 --8<-- "includes/responseBaseDocumentation.en.md"
 
 ### Response example
