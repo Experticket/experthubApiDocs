@@ -15,7 +15,7 @@ A través de esta llamada se comprueba si se pueden aplicar uno o más cupones d
         - **``Id``**: (``string``). Identificador único del producto generado por el colaborador.
         - **``ProductId``**: (``string``). Identificador del producto.
         - **``Price``**: (``decimal``). Precio del producto.
-        - **``AccessDate``**: (``date``) ``Opcional``. Fecha de acceso del produto.
+        - **``AccessDate``**: (``date``) ``Opcional``. Fecha de acceso del producto.
 
 ### Ejemplo de petición
 
@@ -36,7 +36,7 @@ A través de esta llamada se comprueba si se pueden aplicar uno o más cupones d
         - **`Price`**: (``decimal``). Precio final, después de aplicar los descuentos.
         - **`Discounts`**: (``decimal``). Descuento total aplicado.
         - **`PriceWithoutDiscounts`**: (``decimal``). Precio del producto antes de aplicar los descuentos.
-        - **`AppliedCoupons`**: (``lista``). Cupones aplicados.
+        - **`AppliedCoupons`**: (``list``). Cupones aplicados.
             - **`Id`**: (``string``). Identificador de cupón de descuento.
             - **`Code`**: (``string``). Código de cupón de descuento.
             - **`Discount`**: (``decimal``). Descuento generado por el cupón.
