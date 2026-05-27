@@ -77,7 +77,7 @@ En este método solicitamos la información completa sobre los paquetes (activid
                     - **``BoardName``**: (``string``). Nombre del tipo de alojamiento.
                     - **``Adults``**: (``int``). Número de adultos.
                     - **``Children``**: (``int``). Número de niños.
-                    - **``RateClass``**: tipo de tarifa.
+                    - **``RateClass``**: (``int``). Tipo de tarifa.
 
                         ??? example "Posibles valores"
                             --8<-- "includes/enum/accommodationRateClass.md"

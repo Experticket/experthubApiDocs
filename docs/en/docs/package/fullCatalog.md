@@ -77,7 +77,7 @@ With this method we request the complete information about the packages (activit
                     - **``BoardName``**: (``string``). Board type name.
                     - **``Adults``**: (``int``). Number of adults.
                     - **``Children``**: (``int``). Number of children.
-                    - **``RateClass``**: rate type.
+                    - **``RateClass``**: (``int``). Rate type.
 
                         ??? example "Possible values"
                             --8<-- "includes/enum/accommodationRateClass.en.md"
