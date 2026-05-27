@@ -44,7 +44,7 @@ Una vez lanzada la consulta se devolverá, a modo informativo, los datos suficie
     - **``Price``**: (``decimal``). Precio final producto.
     - **``SaleFlowRuleId``**: (``string``). Identificador de la regla.
     - **``SaleFlowRuleCommercialName``**: (``string``). Nombre descriptivo que se da a la regla para poder mostrar al usuario.
-    - **``SaleFlowRuleDescripción``**: (``string``). Descripción de la regla aplicada.
+    - **``SaleFlowRuleDescription``**: (``string``). Descripción de la regla aplicada.
     - **``SaleFlowRuleName``**: (``string``). Nombre de la regla aplicada.
 - **``AddedProducts``**: (``list``). Array que contiene productos añadidos que no estaban incluidos en la venta.
     - **``ProductId``**: (``string``). Identificador del producto.
@@ -53,7 +53,7 @@ Una vez lanzada la consulta se devolverá, a modo informativo, los datos suficie
     - **``Price``**: (``decimal``). Precio final producto.
     - **``SaleFlowRuleId``**: (``string``). Identificador de la regla.
     - **``SaleFlowRuleCommercialName``**: (``string``). Nombre descriptivo que se da a la regla para poder mostrar al usuario.
-    - **``SaleFlowRuleDescripción``**: (``string``). Descripción de la regla aplicada.
+    - **``SaleFlowRuleDescription``**: (``string``). Descripción de la regla aplicada.
     - **``SaleFlowRuleName``**: (``string``). Nombre de la regla aplicada.
 --8<-- "includes/responseBaseDocumentation.es.md"
 

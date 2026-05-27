@@ -10,15 +10,15 @@ Once the query is launched, sufficient data will be returned, for information pu
 
 ## Request structure
 
-- **``AccessDateTime``**: access date. *ISO 8601 format (yyyy-MM-dd)*.
-- **``Products``**: products that make up the sale.
-    - **``AccessDateTime``**: *optional*, access date. If defined, it has precedence over the date defined globally. *ISO 8601 format (yyyy-MM-dd)*.
-    - **``ProductId``**: product identifier.
-    - **``Quantity``**: *optional*, amount. By default its value is 1.
-- **``DynamicProviders``**: dynamic providers that make up the sale.
-    - **``AccessDateTime``**: *optional*, access date. If defined at product level, it has precedence over the date defined globally. *ISO 8601 format (yyyy-MM-dd)*.
-    - **``ProviderId``**: dynamic provider identifier.
-    - **``Quantity``**: *optional*, quantity. By default its value is 1.
+- **``AccessDateTime``**: (``date``). Access date. *ISO 8601 format (yyyy-MM-dd)*.
+- **``Products``**: (``list``). Products that make up the sale.
+    - **``AccessDateTime``**: (``date``) ``Optional``. Access date. If defined at product level, it takes precedence over the date defined globally. *ISO 8601 format (yyyy-MM-dd)*.
+    - **``ProductId``**: (``string``). Product identifier.
+    - **``Quantity``**: (``int``) ``Optional``. Quantity. By default its value is 1.
+- **``DynamicProviders``**: (``list``). Dynamic providers that make up the sale.
+    - **``AccessDateTime``**: (``date``) ``Optional``. Access date. If defined at product level, it takes precedence over the date defined globally. *ISO 8601 format (yyyy-MM-dd)*.
+    - **``ProviderId``**: (``string``). Dynamic provider identifier.
+    - **``Quantity``**: (``int``) ``Optional``. Quantity. By default its value is 1.
 - **`LanguageCode`**: (``string``) ``Optional``. Defines the language in which the texts will be displayed. By default, the language configured for the partner will be returned. *ISO 639-1 format*.
 
 ### Request example
@@ -32,29 +32,29 @@ Once the query is launched, sufficient data will be returned, for information pu
 
 ## Response structure
 
-- **``NotModifiedProducts``**: array containing products that have not been modified.
-    - **``ProductId``**: product identifier.
-    - **``AccessDateTime``**: product access date. *ISO 8601 format (yyyy-MM-dd)*.
-    - **``OriginalPrice``**: unchanged price of the product.
-    - **``Price``**: final product price.
-- **``ModifiedProducts``**: array containing modified products that were already included in the sale.
-    - **``ProductId``**: product identifier.
-    - **``AccessDateTime``**: product access date. *ISO 8601 format (yyyy-MM-dd)*.
-    - **``OriginalPrice``**: unchanged price of the product.
-    - **``Price``**: final product price.
-    - **``SaleFlowRuleId``**: rule identifier.
-    - **``SaleFlowRuleCommercialName``**: descriptive name given to the rule to display to the user.
-    - **``SaleFlowRuleDescripción``**: description of the applied rule.
-    - **``SaleFlowRuleName``**: applied rule name.
-- **``AddedProducts``**: array containing added products that were not included in the sale.
-    - **``ProductId``**: product identifier.
-    - **``AccessDateTime``**: product access date. *ISO 8601 format (yyyy-MM-dd)*.
-    - **``OriginalPrice``**: unchanged price of the product.
-    - **``Price``**: final product price.
-    - **``SaleFlowRuleId``**: rule identifier.
-    - **``SaleFlowRuleCommercialName``**: descriptive name given to the rule to display to the user.
-    - **``SaleFlowRuleDescripción``**: description of the applied rule.
-    - **``SaleFlowRuleName``**: applied rule name.
+- **``NotModifiedProducts``**: (``list``). Array containing products that have not been modified.
+    - **``ProductId``**: (``string``). Product identifier.
+    - **``AccessDateTime``**: (``date``). Product access date. *ISO 8601 format (yyyy-MM-dd)*.
+    - **``OriginalPrice``**: (``decimal``). Unchanged price of the product.
+    - **``Price``**: (``decimal``). Final product price.
+- **``ModifiedProducts``**: (``list``). Array containing modified products that were already included in the sale.
+    - **``ProductId``**: (``string``). Product identifier.
+    - **``AccessDateTime``**: (``date``). Product access date. *ISO 8601 format (yyyy-MM-dd)*.
+    - **``OriginalPrice``**: (``decimal``). Unchanged price of the product.
+    - **``Price``**: (``decimal``). Final product price.
+    - **``SaleFlowRuleId``**: (``string``). Rule identifier.
+    - **``SaleFlowRuleCommercialName``**: (``string``). Descriptive name given to the rule so it can be displayed to the user.
+    - **``SaleFlowRuleDescription``**: (``string``). Description of the applied rule.
+    - **``SaleFlowRuleName``**: (``string``). Name of the applied rule.
+- **``AddedProducts``**: (``list``). Array containing added products that were not included in the sale.
+    - **``ProductId``**: (``string``). Product identifier.
+    - **``AccessDateTime``**: (``date``). Product access date. *ISO 8601 format (yyyy-MM-dd)*.
+    - **``OriginalPrice``**: (``decimal``). Unchanged price of the product.
+    - **``Price``**: (``decimal``). Final product price.
+    - **``SaleFlowRuleId``**: (``string``). Rule identifier.
+    - **``SaleFlowRuleCommercialName``**: (``string``). Descriptive name given to the rule so it can be displayed to the user.
+    - **``SaleFlowRuleDescription``**: (``string``). Description of the applied rule.
+    - **``SaleFlowRuleName``**: (``string``). Name of the applied rule.
 --8<-- "includes/responseBaseDocumentation.en.md"
 
 ### Response example
