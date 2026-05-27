@@ -36,13 +36,13 @@ We can add one or several products in one or several calls, depending on the nee
                         --8<-- "includes/enum/examenResponseQuestions.md"
 
 - **`GiftCards`**: (`list`) `Optional`. List of gift cards to add to the cart.
-    - **`ProductIds`**: (`list<string>`). List of activity identifiers included in the gift card.
+    - **`ProductIds`**: (`list`). List of activity identifiers included in the gift card.
+        - **`(string)`**: Activity identifier.
     - **`AccessDateTime`**: (`date`) `Required`. Approximate access date. It is only used for statistical purposes; the customer who redeems the card will be able to choose the actual access dates. ISO 8601 format (yyyy-MM-dd).
     - **`Message`**: (`string`) `Optional`. Message from the purchaser to the person who will redeem the gift card.
     - **`Client`**: (`object`) `Optional`. Data of the customer who will redeem the gift card.
         - **`FullName`**: (`string`) `Optional`. Name.
         - **`Email`**: (`string`) `Optional`. If this field is provided, the person redeeming the gift card will receive it by email.
-        - 
 
 - **`Accommodations`**: (`list`) `Optional`. List of accommodations to add to the cart.
     - **`Accommodation`**: (`object`) `Optional`. Accommodation information.

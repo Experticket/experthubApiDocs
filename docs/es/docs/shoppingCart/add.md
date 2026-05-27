@@ -36,13 +36,13 @@ Podemos añadir uno o varios productos en una o varias llamadas, según las nece
                         --8<-- "includes/enum/examenResponseQuestions.md"         
                 
 - **``GiftCards``**: (``list``) ``Opcional``. Listado de tarjetas regalo a añadir al carrito.
-    - **``ProductIds``**: (``list<string>``). Listado de identificadores de las actividades que componen la tarjeta regalo.
+    - **``ProductIds``**: (``list``). Listado de identificadores de las actividades que componen la tarjeta regalo.
+        - **``(string)``**: Identificador de la actividad.
     - **``AccessDateTime``**: (``date``) ``Requerido``. Fecha aproximada de acceso. Sólo se usa para fines estadísticos, el cliente que vaya a canjear la tarjeta podrá elegir las fechas de acceso reales. Formato IS0 8601 (YYYY-MM-DD).
     - **``Message``**: (``string``) ``Opcional``. Mensaje del comprador de la tarjeta dirigido a la persona que va a canjearla.
     - **``Client``**: (``object``) ``Opcional``. Datos del cliente que va a canjear la tarjeta.        
         - **``FullName``**: (``string``) ``Opcional``. Nombre.
         - **``Email``**: (``string``) ``Opcional``. Si se rellena este campo, la persona que va a canjear la tarjeta la recibirá mediante email.
-        -         
 - **``Accommodations``**: (``list``) ``Opcional``. Listado de alojamientos a añadir al carrito.
     - **``Accommodation``**: (``object``) ``Opcional``. Información del alojamiento.
         - **``EchoToken``**: (``string``) ``Requerido``. Token obtenido en la petición de alojamientos.
