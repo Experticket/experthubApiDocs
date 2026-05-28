@@ -35,19 +35,19 @@ Filtros disponibles para la obtención del listado de ventas. Estos filtros se e
     - **`PartnerSaleId`**: (`string`). Identificador del colaborador.    
     - **`Activities`**: (`list`). Listado de actividades.
 
---8<-- "docs/es/docs/annex/activity.es.md"
+--8<-- "includes/sale/response/listOfSales/activity.es.md"
 
     - **`Accommodations`**: (`list`). Listado de alojamientos incluidos en la venta.
 
---8<-- "docs/es/docs/annex/accommodation.es.md"
+--8<-- "includes/sale/response/listOfSales/accommodation.es.md"
 
     - **`CombinedProducts`**: (`list`). Listado de productos combinados de las actividades incluidos en la venta.
 
---8<-- "docs/es/docs/annex/combinedProduct.es.md"
+--8<-- "includes/sale/response/listOfSales/combinedProduct.es.md"
 
     - **`Client`**: (`object`). Datos del cliente de la venta.
 
---8<-- "docs/es/docs/annex/client.es.md"
+--8<-- "includes/sale/response/listOfSales/client.es.md"
 
     - **`TotalPrice`**: (`decimal`). Indica el precio total de la venta.
     - **`TotalPriceWithoutVat`**: (`decimal`). Indica el precio total de la venta sin impuestos.

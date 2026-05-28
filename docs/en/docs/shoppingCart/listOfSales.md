@@ -34,19 +34,19 @@ The following parameters must be passed as URL query string parameters. Availabl
     - **`PartnerSaleId`**: (`string`). Partner identifier.
     - **`Activities`**: (`list`). List of activities.
 
---8<-- "docs/en/docs/annex/activity.en.md"
+--8<-- "includes/sale/response/listOfSales/activity.en.md"
 
     - **`Accommodations`**: (`list`). List of accommodations included in the sale.
 
---8<-- "docs/en/docs/annex/accommodation.en.md"
+--8<-- "includes/sale/response/listOfSales/accommodation.en.md"
 
     - **`CombinedProducts`**: (`list`). List of combined products from the activities included in the sale.
 
---8<-- "docs/en/docs/annex/combinedProduct.en.md"
+--8<-- "includes/sale/response/listOfSales/combinedProduct.en.md"
 
     - **`Client`**: (`object`). Sale customer data.
 
---8<-- "docs/en/docs/annex/client.en.md"
+--8<-- "includes/sale/response/listOfSales/client.en.md"
 
     - **`TotalPrice`**: (`decimal`). Total sale price.
     - **`TotalPriceWithoutVat`**: (`decimal`). Total sale price without taxes.

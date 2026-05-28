@@ -1,7 +1,7 @@
         - **`Activity`**: (`object`). Activity information.
             - **`ProductId`**: (`string`). Product identifier.
             - **`CombinedProductId`**: (`string`) `Optional`. Combined product identifier.
-            - **`CombinedProductDiscriminator`**: (`byte`) `Optional`. Indicates which combined product it belongs to within the [Combined product annex](../annex/combinedProduct.en.md) array.
+            - **`CombinedProductDiscriminator`**: (`byte`) `Optional`. Indicates which combined product it belongs to within the `CombinedProducts` array.
             - **`AccessCode`**: (`string`) `Optional`. Barcode, when applicable.
             - **`AccessDateTime`**: (`date`) `Required`. Access date. ISO 8601 format (yyyy-MM-dd).
             - **`Quantity`**: (`int`) `Required`. Product quantity.
