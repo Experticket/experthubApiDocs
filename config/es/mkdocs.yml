@@ -36,9 +36,9 @@ extra_css:
     - stylesheets/extra.css
 extra:
     alternate:
-        #- name: English
-        #  link: /en/
-        #  lang: en
+        - name: English
+          link: /en/
+          lang: en
         - name: Español
           link: /es/
           lang: es
