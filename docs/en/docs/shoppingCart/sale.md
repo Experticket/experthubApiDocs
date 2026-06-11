@@ -29,7 +29,7 @@ This method confirms the reservation previously made in our systems.
     - **`ReturnUrlKo`**: (`string`) `Required`. URL that will be notified if the payment fails.
     - **`SendByEmail`**: (`boolean`) `Required`. Indicates that we want to send the customer a payment link by email, if the option is available. See [PaymentMethods.PaymentMethod.EnableSendByEmail](./confirm.md#response-structure).
 
-In this step you can send the answers to the **sale**, **travel**, **provider** and **client** level questions. If they were already sent when [reserving](confirm.md), they can be sent again here. See the [introduction to question profiles](../activity/questions.md).
+In this step you can send the answers to the **sale**, **provider** and **client** level questions. If they were already sent when [reserving](confirm.md), they can be sent again here. See the [introduction to question profiles](../activity/questions.md).
 
 --8<-- "includes/questions/answersRequest.en.md"
 

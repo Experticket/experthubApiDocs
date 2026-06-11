@@ -8,7 +8,6 @@
             "sale7yq2k9wla",
             "cli9q2k9wla3c"
         ],
-        "IncludeSaleTravelQuestionsProfiles": true,
         "LanguageCode": "es"
     }
     ```

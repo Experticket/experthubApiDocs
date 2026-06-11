@@ -1,4 +1,4 @@
-- **`Id`**: (``string``). Identificador del perfil de preguntas. Coincide con el identificador expuesto en el [catálogo](catalog.md) (`TicketsQuestionsProfileId`, `ProviderQuestionsProfileIds`, `SaleQuestionProfileIds`, `SaleTravelQuestionProfileIds` o `ClientQuestionProfileIds` según el nivel).
+- **`Id`**: (``string``). Identificador del perfil de preguntas. Coincide con el identificador expuesto en el [catálogo](catalog.md) (`TicketsQuestionsProfileId`, `ProviderQuestionsProfileIds`, `SaleQuestionProfileIds` o `ClientQuestionProfileIds` según el nivel).
 - **`Name`**: (``string``). Nombre del perfil.
 - **`CommercialName`**: (``string``) ``Opcional``. Nombre comercial del perfil.
 - **`AreDynamicQuestions`**: (``boolean``). Indica si el perfil contiene preguntas **dinámicas**. Si es `#!csharp true`, las preguntas se generan en tiempo real a partir de la integración del proveedor y, para obtenerlas, la consulta debe incluir los productos con su fecha de acceso. Si es `#!csharp false`, el perfil contiene preguntas **estáticas** definidas en configuración. Consulta [tipos de preguntas](questions.md#tipos-de-preguntas).

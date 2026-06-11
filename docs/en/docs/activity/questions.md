@@ -1,11 +1,11 @@
 # Question profiles
 
-Experticket lets you attach configurable **questions** to different entities of the sale process. Questions are grouped into **question profiles** (a profile contains one or more questions) and each profile is associated with a specific **level**: ticket, provider, sale, travel or client.
+Experticket lets you attach configurable **questions** to different entities of the sale process. Questions are grouped into **question profiles** (a profile contains one or more questions) and each profile is associated with a specific **level**: ticket, provider, sale or client.
 
 This page explains the **types** of questions and the **API flow** to query and answer them. The documentation for each endpoint involved is linked throughout the text.
 
 !!! note "Ticket questions"
-    **Ticket** questions were already documented and follow a slightly different flow from the rest (they are answered when [adding the product to the cart](../shoppingCart/add.md)). The remaining levels —provider, sale, travel and client— are documented on this page and are answered when [reserving](../shoppingCart/confirm.md) or [confirming the sale](../shoppingCart/sale.md).
+    **Ticket** questions were already documented and follow a slightly different flow from the rest (they are answered when [adding the product to the cart](../shoppingCart/add.md)). The remaining levels —provider, sale and client— are documented on this page and are answered when [reserving](../shoppingCart/confirm.md) or [confirming the sale](../shoppingCart/sale.md).
 
 ## Question levels
 
@@ -14,9 +14,8 @@ Each question profile belongs to one of the following levels. The table shows wh
 | Level | Description | Profile identifier in the catalog | Where it is answered |
 | --- | --- | --- | --- |
 | **Ticket** | Questions associated with a specific product ticket (e.g. attendee name). | `Tickets[].TicketsQuestionsProfileId` | [Add to cart](../shoppingCart/add.md) (per ticket) |
-| **Provider** | Provider-level questions, applicable to the reservation of its products. Some are only returned if the session is indicated in the tickets. | `Providers[].ProviderQuestionsProfileIds` | [Reserve](../shoppingCart/confirm.md) / [Confirm sale](../shoppingCart/sale.md) |
+| **Provider** | Provider-level questions, applicable to the reservation of its products. If they are dynamic, some are only returned when the session is indicated in the tickets. | `Providers[].ProviderQuestionsProfileIds` | [Reserve](../shoppingCart/confirm.md) / [Confirm sale](../shoppingCart/sale.md) |
 | **Sale** | Sale-level questions, common to the whole transaction. | `SaleQuestionProfiles.SaleQuestionProfileIds` | [Reserve](../shoppingCart/confirm.md) / [Confirm sale](../shoppingCart/sale.md) |
-| **Travel** | Questions related to the travel information of the sale. | `SaleQuestionProfiles.SaleTravelQuestionProfileIds` | [Reserve](../shoppingCart/confirm.md) / [Confirm sale](../shoppingCart/sale.md) |
 | **Client** | Questions associated with the buying client. | `SaleQuestionProfiles.ClientQuestionProfileIds` | [Reserve](../shoppingCart/confirm.md) / [Confirm sale](../shoppingCart/sale.md) |
 
 ## Question types
@@ -49,7 +48,7 @@ The path to work with questions through the API is as follows:
 2. **Check question profiles.** With those identifiers (and, for dynamic profiles, the products with their access date), call [checking question profiles](CheckTicketsQuestions.md), which returns, per level, the profiles with their questions, data types, mandatory flags, validations and predefined values.
 3. **Answer.**
     - **Ticket** questions are answered when [adding the product to the cart](../shoppingCart/add.md), within each ticket.
-    - **Provider, sale, travel and client** questions are answered in the `QuestionsProfiles` field when [reserving](../shoppingCart/confirm.md) or [confirming the sale](../shoppingCart/sale.md).
+    - **Provider, sale and client** questions are answered in the `QuestionsProfiles` field when [reserving](../shoppingCart/confirm.md) or [confirming the sale](../shoppingCart/sale.md).
 
 ## Flow across the different sales channels
 

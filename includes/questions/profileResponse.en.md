@@ -1,4 +1,4 @@
-- **`Id`**: (`string`). Question profile identifier. It matches the identifier exposed in the [catalog](catalog.md) (`TicketsQuestionsProfileId`, `ProviderQuestionsProfileIds`, `SaleQuestionProfileIds`, `SaleTravelQuestionProfileIds` or `ClientQuestionProfileIds` depending on the level).
+- **`Id`**: (`string`). Question profile identifier. It matches the identifier exposed in the [catalog](catalog.md) (`TicketsQuestionsProfileId`, `ProviderQuestionsProfileIds`, `SaleQuestionProfileIds` or `ClientQuestionProfileIds` depending on the level).
 - **`Name`**: (`string`). Profile name.
 - **`CommercialName`**: (`string`) `Optional`. Commercial name of the profile.
 - **`AreDynamicQuestions`**: (`boolean`). Indicates whether the profile contains **dynamic** questions. If `#!csharp true`, the questions are generated in real time from the provider's integration and, to retrieve them, the query must include the products with their access date. If `#!csharp false`, the profile contains **static** questions defined in configuration. See [question types](questions.md#question-types).

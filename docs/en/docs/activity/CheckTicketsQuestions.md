@@ -1,11 +1,11 @@
 # Check question profiles
 
-This method retrieves the **question profiles** and their questions for the different levels: ticket, provider, sale, travel and client. For each question, the response includes its text, whether it is mandatory, its data type, validations and possible predefined values.
+This method retrieves the **question profiles** and their questions for the different levels: ticket, provider, sale and client. For each question, the response includes its text, whether it is mandatory, its data type, validations and possible predefined values.
 
 !!! tip "Before you start"
     It is advisable to read the [introduction to question profiles](questions.md), which explains the levels, the types (static/dynamic and public/private) and the full API flow.
 
-The profile identifiers queried here are obtained beforehand from the [catalog](catalog.md): `TicketsQuestionsProfileId` (ticket), `ProviderQuestionsProfileIds` (provider) and `SaleQuestionProfiles` (sale, travel and client).
+The profile identifiers queried here are obtained beforehand from the [catalog](catalog.md): `TicketsQuestionsProfileId` (ticket), `ProviderQuestionsProfileIds` (provider) and `SaleQuestionProfiles` (sale and client).
 
 ## Access method
 
@@ -23,11 +23,10 @@ To build the request, create an object with the following fields. All are option
         - **`TicketId`**: (`string`) `Required`. Ticket identifier.
         - **`SessionId`**: (`string`) `Optional`. Session identifier.
         - **`AccessDate`**: (`date`) `Optional`. Ticket access date. *ISO 8601 format (yyyy-MM-dd)*.
-- **`IncludeSaleTravelQuestionsProfiles`**: (`boolean`) `Optional`. If `#!csharp true`, the response will include the **travel** level profiles (`SaleTravelQuestionsProfiles`). Defaults to `#!csharp false`.
 - **`LanguageCode`**: (`string`) `Optional`. Language in which the question texts will be returned. *ISO 639-1 format*.
 
 !!! note "Provider questions by session"
-    Some provider questions are only returned if the session (`SessionId`) is indicated in the tickets sent in `Products`.
+    Some **dynamic** provider questions are only returned if the session (`SessionId`) is indicated in the tickets sent in `Products`.
 
 ### Request examples
 
@@ -52,10 +51,9 @@ The response groups profiles by level. It also includes two mapping lists (`Prod
 - **`TicketQuestionsProfiles`**: (`list`). **Ticket** level question profiles.
 - **`ProviderQuestionsProfiles`**: (`list`). **Provider** level question profiles.
 - **`SaleQuestionsProfiles`**: (`list`). **Sale** level question profiles.
-- **`SaleTravelQuestionsProfiles`**: (`list`). **Travel** level question profiles. Returned only if the request sets `IncludeSaleTravelQuestionsProfiles = true`.
 - **`ClientQuestionsProfiles`**: (`list`). **Client** level question profiles.
 
-All profile lists (`TicketQuestionsProfiles`, `ProviderQuestionsProfiles`, `SaleQuestionsProfiles`, `SaleTravelQuestionsProfiles` and `ClientQuestionsProfiles`) share the following **profile** structure:
+All profile lists (`TicketQuestionsProfiles`, `ProviderQuestionsProfiles`, `SaleQuestionsProfiles` and `ClientQuestionsProfiles`) share the following **profile** structure:
 
 --8<-- "includes/questions/profileResponse.en.md"
 

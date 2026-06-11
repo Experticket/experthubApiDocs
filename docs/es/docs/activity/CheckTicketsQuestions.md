@@ -1,11 +1,11 @@
 # Consultar perfiles de preguntas
 
-Con este método se obtienen los **perfiles de preguntas** y sus preguntas para los distintos niveles: ticket, proveedor, venta, viaje y cliente. La respuesta incluye, por cada pregunta, su texto, obligatoriedad, tipo de dato, validaciones y posibles valores predefinidos.
+Con este método se obtienen los **perfiles de preguntas** y sus preguntas para los distintos niveles: ticket, proveedor, venta y cliente. La respuesta incluye, por cada pregunta, su texto, obligatoriedad, tipo de dato, validaciones y posibles valores predefinidos.
 
 !!! tip "Antes de empezar"
     Conviene leer la [introducción a los perfiles de preguntas](questions.md), que explica los niveles, los tipos (estáticas/dinámicas y públicas/privadas) y el flujo completo en la API.
 
-Los identificadores de perfil que se consultan aquí se obtienen previamente del [catálogo](catalog.md): `TicketsQuestionsProfileId` (ticket), `ProviderQuestionsProfileIds` (proveedor) y `SaleQuestionProfiles` (venta, viaje y cliente).
+Los identificadores de perfil que se consultan aquí se obtienen previamente del [catálogo](catalog.md): `TicketsQuestionsProfileId` (ticket), `ProviderQuestionsProfileIds` (proveedor) y `SaleQuestionProfiles` (venta y cliente).
 
 ## Método de acceso
 
@@ -23,11 +23,10 @@ Para generar la petición se construye un objeto con los siguientes campos. Todo
         - **`TicketId`**: (``string``) ``Requerido``. Identificador del ticket.
         - **`SessionId`**: (``string``) ``Opcional``. Identificador de la sesión.
         - **`AccessDate`**: (``date``) ``Opcional``. Fecha de acceso del ticket. *Formato ISO 8601 (yyyy-MM-dd)*.
-- **`IncludeSaleTravelQuestionsProfiles`**: (``boolean``) ``Opcional``. Si su valor es `#!csharp true`, la respuesta incluirá los perfiles de nivel **viaje** (`SaleTravelQuestionsProfiles`). Por defecto es `#!csharp false`.
 - **`LanguageCode`**: (``string``) ``Opcional``. Idioma en que se devolverán los textos de las preguntas. *Formato ISO 639-1*.
 
 !!! note "Preguntas de proveedor por sesión"
-    Algunas preguntas de proveedor solo se devuelven si se indica la sesión (`SessionId`) en los tickets enviados en `Products`.
+    Algunas preguntas de proveedor **dinámicas** solo se devuelven si se indica la sesión (`SessionId`) en los tickets enviados en `Products`.
 
 ### Ejemplos de petición
 
@@ -52,10 +51,9 @@ La respuesta agrupa los perfiles por nivel. Además, incluye dos listas de mapeo
 - **`TicketQuestionsProfiles`**: (``list``). Perfiles de preguntas de nivel **ticket**.
 - **`ProviderQuestionsProfiles`**: (``list``). Perfiles de preguntas de nivel **proveedor**.
 - **`SaleQuestionsProfiles`**: (``list``). Perfiles de preguntas de nivel **venta**.
-- **`SaleTravelQuestionsProfiles`**: (``list``). Perfiles de preguntas de nivel **viaje**. Solo se devuelve si en la petición `IncludeSaleTravelQuestionsProfiles = true`.
 - **`ClientQuestionsProfiles`**: (``list``). Perfiles de preguntas de nivel **cliente**.
 
-Todas las listas de perfiles (`TicketQuestionsProfiles`, `ProviderQuestionsProfiles`, `SaleQuestionsProfiles`, `SaleTravelQuestionsProfiles` y `ClientQuestionsProfiles`) comparten la siguiente estructura de **perfil**:
+Todas las listas de perfiles (`TicketQuestionsProfiles`, `ProviderQuestionsProfiles`, `SaleQuestionsProfiles` y `ClientQuestionsProfiles`) comparten la siguiente estructura de **perfil**:
 
 --8<-- "includes/questions/profileResponse.es.md"
 

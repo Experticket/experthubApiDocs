@@ -30,7 +30,6 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
 - **`ReferenceDate`**: (``date``) ``Optional``. Requires that the day that is taken as a reference for the calculation of prices and availability is not today, but the indicated one. For example it will be used if the prices change depending on the days left until the date of entry. *ISO 8601 format (yyyy-MM-dd)*
 - **`LanguageCode`**: (``string``) ``Optional``. Sets the language in which the catalog texts will be displayed (name, description, provider conditions, product, etc.). By default, the language configured for the partner will be returned. *ISO 639-1 format*.
 - **`ShowProductsOutOfActiveDateRange`**: (``boolean``) ``Optional``. When it is `#!csharp true`, the response will return products where today (or the day indicated in `ReferenceDate`) is outside of their sale date range. For example, if it is December and there are products that can be sold from January, setting this value to true will allow us to discover that those products exist.
-- **`IncludeSaleTravelQuestionsProfiles`**: (``boolean``) ``Optional``. If `#!csharp true`, the response will include in `SaleQuestionProfiles` the **travel** level question profile identifiers (`SaleTravelQuestionProfileIds`). Defaults to `#!csharp false`.
 
 ### Request examples
 
@@ -340,10 +339,8 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
     - **`HasSaleFlowRules`**: (``boolean``). Indicates whether there are products with any associated sale flow rule. If it is `#!csharp true`, it is recommended to consult the [Check sale flow rules](checkSaleFlowRules.md) method to check what changes adding this product to the cart will produce.
     - **`ProductIdsWithSaleFlowRules`**: (``list``). Array of product identifiers. Indicates which catalog products have any associated sale flow rule.
     - **`DynamicProviderIdsWithSaleFlowRules`**: (``list``). Array of dynamic provider identifiers. Indicates which dynamic catalog providers have any associated sale flow rule.
-- **`SaleQuestionProfiles`**: (``object``). Identifiers of the **sale**, **travel** and **client** level question profiles, applicable to the whole sale. See [question profiles](CheckTicketsQuestions.md) and the [introduction to question profiles](questions.md).
+- **`SaleQuestionProfiles`**: (``object``). Identifiers of the **sale** and **client** level question profiles, applicable to the whole sale. See [question profiles](CheckTicketsQuestions.md) and the [introduction to question profiles](questions.md).
     - **`SaleQuestionProfileIds`**: (``list``). Array of **sale** level profile identifiers.
-        - **``(string)``**: Profile identifier.
-    - **`SaleTravelQuestionProfileIds`**: (``list``). Array of **travel** level profile identifiers. Populated only if the request sets `IncludeSaleTravelQuestionsProfiles = true`.
         - **``(string)``**: Profile identifier.
     - **`ClientQuestionProfileIds`**: (``list``). Array of **client** level profile identifiers.
         - **``(string)``**: Profile identifier.

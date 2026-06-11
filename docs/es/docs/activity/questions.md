@@ -1,11 +1,11 @@
 # Perfiles de preguntas
 
-Experticket permite asociar **preguntas** configurables a distintas entidades del proceso de venta. Las preguntas se agrupan en **perfiles de preguntas** (un perfil contiene una o más preguntas) y cada perfil se asocia a un **nivel** concreto: ticket, proveedor, venta, viaje o cliente.
+Experticket permite asociar **preguntas** configurables a distintas entidades del proceso de venta. Las preguntas se agrupan en **perfiles de preguntas** (un perfil contiene una o más preguntas) y cada perfil se asocia a un **nivel** concreto: ticket, proveedor, venta o cliente.
 
 Esta página explica los **tipos** de preguntas y el **flujo** de la API para consultarlas y responderlas. La documentación de cada endpoint implicado está enlazada a lo largo del texto.
 
 !!! note "Preguntas de ticket"
-    Las preguntas de **ticket** ya disponían de documentación previa y siguen un flujo ligeramente distinto al resto (se responden al [añadir el producto al carrito](../shoppingCart/add.md)). El resto de niveles —proveedor, venta, viaje y cliente— se documentan en esta página y se responden al [reservar](../shoppingCart/confirm.md) o [confirmar la venta](../shoppingCart/sale.md).
+    Las preguntas de **ticket** ya disponían de documentación previa y siguen un flujo ligeramente distinto al resto (se responden al [añadir el producto al carrito](../shoppingCart/add.md)). El resto de niveles —proveedor, venta y cliente— se documentan en esta página y se responden al [reservar](../shoppingCart/confirm.md) o [confirmar la venta](../shoppingCart/sale.md).
 
 ## Niveles de preguntas
 
@@ -14,9 +14,8 @@ Cada perfil de preguntas pertenece a uno de los siguientes niveles. La tabla ind
 | Nivel | Descripción | Identificador de perfil en el catálogo | Dónde se responde |
 | --- | --- | --- | --- |
 | **Ticket** | Preguntas asociadas a un ticket concreto del producto (p. ej. nombre del asistente). | `Tickets[].TicketsQuestionsProfileId` | [Añadir al carrito](../shoppingCart/add.md) (por ticket) |
-| **Proveedor** | Preguntas a nivel de proveedor, aplicables a la reserva de sus productos. Algunas solo se devuelven si se indica la sesión en los tickets. | `Providers[].ProviderQuestionsProfileIds` | [Reservar](../shoppingCart/confirm.md) / [Confirmar venta](../shoppingCart/sale.md) |
+| **Proveedor** | Preguntas a nivel de proveedor, aplicables a la reserva de sus productos. Si son dinámicas, algunas solo se devuelven al indicar la sesión en los tickets. | `Providers[].ProviderQuestionsProfileIds` | [Reservar](../shoppingCart/confirm.md) / [Confirmar venta](../shoppingCart/sale.md) |
 | **Venta** | Preguntas a nivel de venta, comunes a toda la transacción. | `SaleQuestionProfiles.SaleQuestionProfileIds` | [Reservar](../shoppingCart/confirm.md) / [Confirmar venta](../shoppingCart/sale.md) |
-| **Viaje** | Preguntas relacionadas con la información de viaje de la venta. | `SaleQuestionProfiles.SaleTravelQuestionProfileIds` | [Reservar](../shoppingCart/confirm.md) / [Confirmar venta](../shoppingCart/sale.md) |
 | **Cliente** | Preguntas asociadas al cliente comprador. | `SaleQuestionProfiles.ClientQuestionProfileIds` | [Reservar](../shoppingCart/confirm.md) / [Confirmar venta](../shoppingCart/sale.md) |
 
 ## Tipos de preguntas
@@ -49,7 +48,7 @@ El recorrido para trabajar con preguntas a través de la API es el siguiente:
 2. **Consultar perfiles de preguntas.** Con esos identificadores (y, para perfiles dinámicos, los productos con su fecha de acceso) se llama a [consultar perfiles de preguntas](CheckTicketsQuestions.md), que devuelve, por nivel, los perfiles con sus preguntas, tipos de dato, obligatoriedad, validaciones y valores predefinidos.
 3. **Responder.**
     - Las preguntas de **ticket** se responden al [añadir el producto al carrito](../shoppingCart/add.md), dentro de cada ticket.
-    - Las preguntas de **proveedor, venta, viaje y cliente** se responden en el campo `QuestionsProfiles` al [reservar](../shoppingCart/confirm.md) o al [confirmar la venta](../shoppingCart/sale.md).
+    - Las preguntas de **proveedor, venta y cliente** se responden en el campo `QuestionsProfiles` al [reservar](../shoppingCart/confirm.md) o al [confirmar la venta](../shoppingCart/sale.md).
 
 ## Flujo en las diferentes taquillas
 

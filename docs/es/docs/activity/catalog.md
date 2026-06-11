@@ -30,7 +30,6 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
 - **`ReferenceDate`**: (``date``) ``Opcional``. Exige que el día que se tome como referencia para el cálculo de precios y disponibilidades no sea hoy, sino el indicado. Por ejemplo se usará si los precios cambian dependiendo de los días que quedan hasta la fecha de la entrada. *Formato ISO 8601 (yyyy-MM-dd)*
 - **`LanguageCode`**: (``string``) ``Opcional``. Define el idioma en que se mostrarán los textos del catálogo (nombre, descripción, condiciones de proveedor, producto, etc.). Por defecto se devolverá el idioma configurado para el colaborador. *Formato ISO 639-1*.
 - **`ShowProductsOutOfActiveDateRange`**: (``boolean``) ``Opcional``. Si su valor es `#!csharp true`, la respuesta devolverá productos en los que el día de hoy (o el día indicado en `ReferenceDate`) está fuera de su rango de fechas de venta. Por ejemplo, si estamos en diciembre y hay productos que se pueden vender a partir de enero, poniendo este valor a true nos permitirá descubrir que existen esos productos.
-- **`IncludeSaleTravelQuestionsProfiles`**: (``boolean``) ``Opcional``. Si su valor es `#!csharp true`, la respuesta incluirá en `SaleQuestionProfiles` los identificadores de perfiles de preguntas de nivel **viaje** (`SaleTravelQuestionProfileIds`). Por defecto es `#!csharp false`.
 
 ### Ejemplos de llamadas
 
@@ -340,10 +339,8 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
     - **`HasSaleFlowRules`**: (``boolean``). Indica si hay productos que tengan alguna regla asociada de flujo de venta. En el caso de ser ``#!csharp true`` se recomienda consultar el método [Comprobar reglas de flujo de venta](checkSaleFlowRules.md) para comprobar qué cambios va a producir la inclusión de este producto a la hora de añadirlo al carrito.
     - **`ProductIdsWithSaleFlowRules`**: (``list``). Array de identificadores de productos. Indica qué productos del catálogo tienen alguna regla asociada de flujo de venta.
     - **`DynamicProviderIdsWithSaleFlowRules`**: (``list``). Array de identificadores de proveedores dinámicos. Indica qué proveedores dinámicos del catálogo tienen alguna regla asociada de flujo de venta.
-- **`SaleQuestionProfiles`**: (``object``). Identificadores de los perfiles de preguntas a nivel de **venta**, **viaje** y **cliente**, aplicables a toda la venta. Ver [perfiles de preguntas](CheckTicketsQuestions.md) y la [introducción a los perfiles de preguntas](questions.md).
+- **`SaleQuestionProfiles`**: (``object``). Identificadores de los perfiles de preguntas a nivel de **venta** y **cliente**, aplicables a toda la venta. Ver [perfiles de preguntas](CheckTicketsQuestions.md) y la [introducción a los perfiles de preguntas](questions.md).
     - **`SaleQuestionProfileIds`**: (``list``). Array de identificadores de perfiles de nivel **venta**.
-        - **``(string)``**: Identificador del perfil.
-    - **`SaleTravelQuestionProfileIds`**: (``list``). Array de identificadores de perfiles de nivel **viaje**. Solo se rellena si en la petición `IncludeSaleTravelQuestionsProfiles = true`.
         - **``(string)``**: Identificador del perfil.
     - **`ClientQuestionProfileIds`**: (``list``). Array de identificadores de perfiles de nivel **cliente**.
         - **``(string)``**: Identificador del perfil.
