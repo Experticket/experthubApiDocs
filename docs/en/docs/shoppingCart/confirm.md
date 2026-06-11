@@ -11,6 +11,11 @@ Once the reservation has been confirmed, it is no longer possible to add more pr
 ## Request structure
 
 - **`ShoppingCartId`**: (`string`) `Required`. Cart identifier.
+- **`LanguageCode`**: (`string`) `Optional`. Language of the returned texts. *ISO 639-1 format*.
+
+Optionally, in this step you can send the answers to the **sale**, **provider** and **client** level questions. They can also be sent when [confirming the sale](sale.md). See the [introduction to question profiles](../activity/questions.md).
+
+--8<-- "includes/questions/answersRequest.en.md"
 
 ### Request examples
 

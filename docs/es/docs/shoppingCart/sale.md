@@ -29,6 +29,10 @@ Este método confirma la reserva realizada previamente en nuestros sistemas.
     - **``ReturnUrlKo``**: (``string``) ``Requerido``. Url en la cual se notificará que el cobro ha sido fallido.
     - **``SendByEmail``**: (``boolean``) ``Requerido``. Indica que queremos hacerle llegar un enlace por email al cliente para que realice el pago, en caso de tener la opción de hacer llegar un enlace de pago al cliente por email disponible. Ver [PaymentMethods.PaymentMethod.EnableSendByEmail](./confirm.md#estructura-de-la-respuesta)
 
+En este paso pueden enviarse las respuestas a las preguntas de niveles **venta**, **proveedor** y **cliente**. Si ya se enviaron al [reservar](confirm.md), pueden volver a enviarse aquí. Consulta la [introducción a los perfiles de preguntas](../activity/questions.md).
+
+--8<-- "includes/questions/answersRequest.es.md"
+
 ### Ejemplo de llamada
 
 ??? tip "Examples"

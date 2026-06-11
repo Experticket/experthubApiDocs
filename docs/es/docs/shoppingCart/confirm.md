@@ -11,6 +11,11 @@ Una vez que se ha confirmado la reserva, ya no es posible añadir más productos
 ## Estructura de la petición
 
 - **``ShoppingCartId``**: (``string``) ``Requerido``. Identificador del carrito.
+- **``LanguageCode``**: (``string``) ``Opcional``. Idioma de los textos devueltos. *Formato ISO 639-1*.
+
+En este paso pueden enviarse, opcionalmente, las respuestas a las preguntas de niveles **venta**, **proveedor** y **cliente**. También pueden enviarse al [confirmar la venta](sale.md). Consulta la [introducción a los perfiles de preguntas](../activity/questions.md).
+
+--8<-- "includes/questions/answersRequest.es.md"
 
 ### Ejemplos de llamadas
 

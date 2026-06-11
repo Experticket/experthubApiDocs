@@ -87,6 +87,8 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
 
     - **`LimitOfNumberOfPeopleToBeGroup`**: (``int``). Limits the number of people that make up a product from which the sale is considered for "groups". For example, if this limit is "19" and the provider is not for groups (`#!csharp IsForGroups == false`), sales with 20 or more people will not be accepted. On the contrary, if the provider is for groups (`#!csharp IsForGroups == true`), sales for 20 or more people will only be accepted.
     - **`Logo`**: (``string``). URL to download the provider's logo.
+    - **`ProviderQuestionsProfileIds`**: (``list``) ``Optional``. Array of **provider** level question profile identifiers associated with the provider. If the provider has no questions attached, it will be empty. See [question profiles](CheckTicketsQuestions.md).
+        - **``(string)``**: Question profile identifier.
     - **`Tags`**: (``list``). Array of [tag identifiers](tags.md) applied to the provider.
         - **``(string)``**: tag identifier.
     - **`Location`**: (``object``). Location information.
@@ -276,7 +278,7 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
                             - 1: **Auto assigned**, seats will be automatically assigned by the system.
                             - 3: **Processing required**, the seats will be assigned later by the provider.
 
-                    - **`TicketsQuestionsProfileId`**: (``string``)  question profile identifier.
+                    - **`TicketsQuestionsProfileId`**: (``string``) ``Optional``. Ticket question profile identifier. If present, the [ticket questions](CheckTicketsQuestions.md) must be checked and answered when [adding the product to the cart](../shoppingCart/add.md).
                     - **`FromAccessDay`** and **`ToAccessDay`**: if they are defined, they indicate for which days with respect to the first date of access the ticket is valid.
 
                         ???+ tip "Advice"
@@ -337,6 +339,11 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
     - **`HasSaleFlowRules`**: (``boolean``). Indicates whether there are products with any associated sale flow rule. If it is `#!csharp true`, it is recommended to consult the [Check sale flow rules](checkSaleFlowRules.md) method to check what changes adding this product to the cart will produce.
     - **`ProductIdsWithSaleFlowRules`**: (``list``). Array of product identifiers. Indicates which catalog products have any associated sale flow rule.
     - **`DynamicProviderIdsWithSaleFlowRules`**: (``list``). Array of dynamic provider identifiers. Indicates which dynamic catalog providers have any associated sale flow rule.
+- **`SaleQuestionProfiles`**: (``object``). Identifiers of the **sale** and **client** level question profiles, applicable to the whole sale. See [question profiles](CheckTicketsQuestions.md) and the [introduction to question profiles](questions.md).
+    - **`SaleQuestionProfileIds`**: (``list``). Array of **sale** level profile identifiers.
+        - **``(string)``**: Profile identifier.
+    - **`ClientQuestionProfileIds`**: (``list``). Array of **client** level profile identifiers.
+        - **``(string)``**: Profile identifier.
 - **`PartnerSettings`**: (``object``). Shows the partner settings.
     - **`DemandClientData`**: (``boolean``). Boolean `#!csharp true/false` that indicates if is mandatory to tell the client information when sale confirmation is done.
     - **`DemandClientTaxData`**: (``boolean``). Boolean `#!csharp true/false` that indicates if is mandatory to tell the client tax information when sale confirmation is done.

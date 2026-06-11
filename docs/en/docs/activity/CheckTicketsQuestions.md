@@ -1,8 +1,11 @@
-# CheckTicketsQuestions
+# Check question profiles
 
-This method allows queries to determine which requirements tickets may have.
+This method retrieves the **question profiles** and their questions for the different levels: ticket, provider, sale and client. For each question, the response includes its text, whether it is mandatory, its data type, validations and possible predefined values.
 
-Thanks to this, when we call this method, the response will return the information as questions together with the indications that were previously defined for their use.
+!!! tip "Before you start"
+    It is advisable to read the [introduction to question profiles](questions.md), which explains the levels, the types (static/dynamic and public/private) and the full API flow.
+
+The profile identifiers queried here are obtained beforehand from the [catalog](catalog.md): `TicketsQuestionsProfileId` (ticket), `ProviderQuestionsProfileIds` (provider) and `SaleQuestionProfiles` (sale and client).
 
 ## Access method
 
@@ -10,11 +13,20 @@ Thanks to this, when we call this method, the response will return the informati
 
 ## Request structure
 
-To generate the request structure, an object must be sent with the following fields.
+To build the request, create an object with the following fields. All are optional, but at least one source of profiles must be provided (`QuestionsProfileIds` or `Products`).
 
-- **`ProductIds`**: (`list`). Array of product identifiers.
-- **`TicketsQuestionsProfileIds`**: (`list`). Array of question profile identifiers associated with the ticket.
-- **`LanguageCode`**: (`list`). Language code.
+- **`QuestionsProfileIds`**: (`list`) `Optional`. Array of question profile identifiers to query (of any level).
+- **`Products`**: (`list`) `Optional`. List of products for which to retrieve the questions. It is **mandatory** to retrieve **dynamic questions**, since they depend on the product and the access date. See [question types](questions.md#question-types).
+    - **`ProductId`**: (`string`) `Required`. Product identifier.
+    - **`AccessDate`**: (`date`) `Required`. Access date. *ISO 8601 format (yyyy-MM-dd)*.
+    - **`Tickets`**: (`list`) `Optional`. Product tickets for which to retrieve the ticket questions.
+        - **`TicketId`**: (`string`) `Required`. Ticket identifier.
+        - **`SessionId`**: (`string`) `Optional`. Session identifier.
+        - **`AccessDate`**: (`date`) `Optional`. Ticket access date. *ISO 8601 format (yyyy-MM-dd)*.
+- **`LanguageCode`**: (`string`) `Optional`. Language in which the question texts will be returned. *ISO 639-1 format*.
+
+!!! note "Provider questions by session"
+    Some **dynamic** provider questions are only returned if the session (`SessionId`) is indicated in the tickets sent in `Products`.
 
 ### Request examples
 
@@ -22,37 +34,37 @@ To generate the request structure, an object must be sent with the following fie
 
 ## Response structure
 
-The response structure is very similar to the request, but includes some additional fields.
+The response groups profiles by level. It also includes two mapping lists (`Products` and `Providers`) that relate each queried entity to its profiles.
 
-- **`Products`**: (`list`). List of products.
+- **`Products`**: (`list`). Relates each queried product/ticket to its ticket question profile.
     - **`ProductId`**: (`string`). Product identifier.
+    - **`AccessDate`**: (`dateTime`) `Optional`. Access date.
+    - **`ProviderId`**: (`string`). Identifier of the product's provider.
     - **`Tickets`**: (`list`). List of tickets.
         - **`TicketId`**: (`string`). Ticket identifier.
-        - **`TicketQuestionsProfileId`**: (`string`). Question profile identifier.
+        - **`SessionId`**: (`string`) `Optional`. Session identifier.
+        - **`TicketQuestionsProfileId`**: (`string`). Ticket question profile identifier.
+        - **`AccessDate`**: (`dateTime`) `Optional`. Ticket access date.
+- **`Providers`**: (`list`). Relates each queried provider to its provider question profiles.
+    - **`ProviderId`**: (`string`). Provider identifier.
+    - **`ProviderQuestionsProfileIds`**: (`list`). Array of question profile identifiers associated with the provider.
+- **`TicketQuestionsProfiles`**: (`list`). **Ticket** level question profiles.
+- **`ProviderQuestionsProfiles`**: (`list`). **Provider** level question profiles.
+- **`SaleQuestionsProfiles`**: (`list`). **Sale** level question profiles.
+- **`ClientQuestionsProfiles`**: (`list`). **Client** level question profiles.
 
-- **`TicketQuestionsProfiles`**: (`list`). List of question profiles.
-    - **`Id`**: (`string`). Identifier.
-    - **`Questions`**: (`list`). List of the corresponding questions.
-        - **`Id`**: (`string`). Question identifier.
-        - **`Question`**: (`string`). Main question.
-        - **`ShortQuestion`**: (`string`). Short question.
-        - **`Required`**: (`boolean`). Indicates whether the question is mandatory.
-        - **`DataType`**: (`numeric`). Question data type. It can take the following values.
+All profile lists (`TicketQuestionsProfiles`, `ProviderQuestionsProfiles`, `SaleQuestionsProfiles` and `ClientQuestionsProfiles`) share the following **profile** structure:
 
-            ??? example "Possible values"
-                - 0: Text
-                - 2: Boolean
-                - 4: Date
-                - 6: Integer number
-                - 8: Decimal number
-                - 10: Select one value from a predefined set of values.
-                - 11: Select multiple values from a predefined set of values.
-                - 12: File.
-
-        - **`Values`**: (`string`). Array with the corresponding values.
+--8<-- "includes/questions/profileResponse.en.md"
 
 --8<-- "includes/responseBaseDocumentation.en.md"
 
 ### Response examples
+
+Example with profiles of several levels (ticket, provider, sale and client):
+
+--8<-- "includes/examples/activity/CheckQuestionsAllLevelsResponseExample.md"
+
+Examples of a question node depending on its data type:
 
 --8<-- "includes/examples/activity/CheckTicketsQuestionsResponseExamples.md"
