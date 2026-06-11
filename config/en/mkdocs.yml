@@ -81,7 +81,9 @@ nav:
         - Sessions: docs/activity/sessions.md
         - Check auto assigned sessions: docs/activity/autoAssignSession.md
         - Available capacity: docs/activity/availability.md
-        - Ticket questions: docs/activity/CheckTicketsQuestions.md
+        - Questions:
+          - Introduction: docs/activity/questions.md
+          - Check question profiles: docs/activity/CheckTicketsQuestions.md
         - Sale flow rules: docs/activity/checkSaleFlowRules.md
         - Gift cards: docs/activity/giftCards.md
         #- Payment methods: docs/activity/paymentMethods.md -> payment method information is returned in the reservation response.

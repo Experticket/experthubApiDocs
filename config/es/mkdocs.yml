@@ -84,7 +84,9 @@ nav:
         - Sesiones: docs/activity/sessions.md
         - Comprobar sesiones auto asignadas: docs/activity/autoAssignSession.md
         - Aforo disponible: docs/activity/availability.md
-        - Preguntas de tickets: docs/activity/CheckTicketsQuestions.md
+        - Preguntas:
+          - Introducción: docs/activity/questions.md
+          - Consultar perfiles de preguntas: docs/activity/CheckTicketsQuestions.md
         - Reglas de flujo de venta: docs/activity/checkSaleFlowRules.md
         - Tarjetas regalo: docs/activity/giftCards.md
         #- Métodos de pago: docs/activity/paymentMethods.md -> la información de los métodos de pago viene en la respuesta de la reserva.

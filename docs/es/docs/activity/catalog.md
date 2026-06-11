@@ -30,6 +30,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
 - **`ReferenceDate`**: (``date``) ``Opcional``. Exige que el día que se tome como referencia para el cálculo de precios y disponibilidades no sea hoy, sino el indicado. Por ejemplo se usará si los precios cambian dependiendo de los días que quedan hasta la fecha de la entrada. *Formato ISO 8601 (yyyy-MM-dd)*
 - **`LanguageCode`**: (``string``) ``Opcional``. Define el idioma en que se mostrarán los textos del catálogo (nombre, descripción, condiciones de proveedor, producto, etc.). Por defecto se devolverá el idioma configurado para el colaborador. *Formato ISO 639-1*.
 - **`ShowProductsOutOfActiveDateRange`**: (``boolean``) ``Opcional``. Si su valor es `#!csharp true`, la respuesta devolverá productos en los que el día de hoy (o el día indicado en `ReferenceDate`) está fuera de su rango de fechas de venta. Por ejemplo, si estamos en diciembre y hay productos que se pueden vender a partir de enero, poniendo este valor a true nos permitirá descubrir que existen esos productos.
+- **`IncludeSaleTravelQuestionsProfiles`**: (``boolean``) ``Opcional``. Si su valor es `#!csharp true`, la respuesta incluirá en `SaleQuestionProfiles` los identificadores de perfiles de preguntas de nivel **viaje** (`SaleTravelQuestionProfileIds`). Por defecto es `#!csharp false`.
 
 ### Ejemplos de llamadas
 
@@ -87,6 +88,8 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
     
     - **`LimitOfNumberOfPeopleToBeGroup`**: (``int``). Límite del número de personas que conforman un producto a partir del cual la venta se considera para "grupos". Por ejemplo, si este límite es "19" y el proveedor no es para grupos (`#!csharp IsForGroups == false`), no se aceptarán ventas con 20 o más personas. Por contra, si el proveedor es para grupos (`#!csharp IsForGroups == true`), solo se aceptarán ventas para 20 o más personas.
     - **`Logo`**: (``string``). Url para descargar la imagen del logotipo del proveedor.
+    - **`ProviderQuestionsProfileIds`**: (``list``) ``Opcional``. Array de identificadores de perfiles de preguntas de nivel **proveedor** asociados al proveedor. Si el proveedor no tiene preguntas asociadas, vendrá vacío. Ver [perfiles de preguntas](CheckTicketsQuestions.md).
+        - **``(string)``**: Identificador del perfil de preguntas.
     - **`Tags`**: (``list``). Array de [identificadores de etiquetas](tags.md) aplicadas al proveedor.
         - **``(string)``**: Identificador de la etiqueta.
     - **`Location`**: (``object``). Información de localización.
@@ -276,7 +279,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                             - 1: **Auto asignados**, los asientos serán asignados automáticamente por el sistema.
                             - 3: **Requiere procesamiento**, los asientos serán asignados posteriormente por el proveedor.
 
-                    - **`TicketsQuestionsProfileId`**: (``string``) Identificador del perfil de una pregunta.
+                    - **`TicketsQuestionsProfileId`**: (``string``) ``Opcional``. Identificador del perfil de preguntas del ticket. Si está presente, deben consultarse las [preguntas de tickets](CheckTicketsQuestions.md) y responderlas al [añadir el producto al carrito](../shoppingCart/add.md).
                     - **`FromAccessDay`** y **`ToAccessDay`**: (``byte``). Si están definidos, indican para qué días respecto a la primera fecha de acceso es válido el ticket.
 
                         ???+ tip "Consejo"
@@ -337,6 +340,13 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
     - **`HasSaleFlowRules`**: (``boolean``). Indica si hay productos que tengan alguna regla asociada de flujo de venta. En el caso de ser ``#!csharp true`` se recomienda consultar el método [Comprobar reglas de flujo de venta](checkSaleFlowRules.md) para comprobar qué cambios va a producir la inclusión de este producto a la hora de añadirlo al carrito.
     - **`ProductIdsWithSaleFlowRules`**: (``list``). Array de identificadores de productos. Indica qué productos del catálogo tienen alguna regla asociada de flujo de venta.
     - **`DynamicProviderIdsWithSaleFlowRules`**: (``list``). Array de identificadores de proveedores dinámicos. Indica qué proveedores dinámicos del catálogo tienen alguna regla asociada de flujo de venta.
+- **`SaleQuestionProfiles`**: (``object``). Identificadores de los perfiles de preguntas a nivel de **venta**, **viaje** y **cliente**, aplicables a toda la venta. Ver [perfiles de preguntas](CheckTicketsQuestions.md) y la [introducción a los perfiles de preguntas](questions.md).
+    - **`SaleQuestionProfileIds`**: (``list``). Array de identificadores de perfiles de nivel **venta**.
+        - **``(string)``**: Identificador del perfil.
+    - **`SaleTravelQuestionProfileIds`**: (``list``). Array de identificadores de perfiles de nivel **viaje**. Solo se rellena si en la petición `IncludeSaleTravelQuestionsProfiles = true`.
+        - **``(string)``**: Identificador del perfil.
+    - **`ClientQuestionProfileIds`**: (``list``). Array de identificadores de perfiles de nivel **cliente**.
+        - **``(string)``**: Identificador del perfil.
 - **`PartnerSettings`**: (``object``). Indica las configuraciones del colaborador.
     - **`DemandClientData`**: (``boolean``). Valor de verdad `#!csharp true/false` que indica si es obligatorio indicar datos del cliente al confirmar una venta.
     - **`DemandClientTaxData`**: (``boolean``). Valor de verdad `#!csharp true/false` que indica si es obligatorio indicar los datos fiscales del cliente al confirmar una venta.

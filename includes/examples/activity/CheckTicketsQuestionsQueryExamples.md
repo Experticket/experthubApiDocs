@@ -1,34 +1,36 @@
-=== "ProductIds"
+=== "QuestionsProfileIds"
 
     ``` json
     {
-        "ProductIds": 
+        "QuestionsProfileIds":
         [
-            "MyProductId01",
-            "MyProductId02",
-            "MyProductId03"
-        ]
+            "pdk563qjqkyns",
+            "sale7yq2k9wla",
+            "cli9q2k9wla3c"
+        ],
+        "IncludeSaleTravelQuestionsProfiles": true,
+        "LanguageCode": "es"
     }
     ```
-=== "TicketsQuestionsProfileIds"
+=== "Products (dynamic questions)"
 
     ``` json
     {
-        "TicketsQuestionsProfileIds": 
+        "Products":
         [
-            "MyTicketsQuestionsProfileIds01",
-            "MyTicketsQuestionsProfileIds02",
-            "MyTicketsQuestionsProfileIds03"
-        ]
-    }
-    ```
-=== "LanguageCode"
-
-    ``` json
-    {
-        "LanguageCode": 
-        [
-            null
-        ]
+            {
+                "ProductId": "MyProductId01",
+                "AccessDate": "2026-07-15",
+                "Tickets":
+                [
+                    {
+                        "TicketId": "MyTicketId01",
+                        "SessionId": null,
+                        "AccessDate": "2026-07-15"
+                    }
+                ]
+            }
+        ],
+        "LanguageCode": "es"
     }
     ```
