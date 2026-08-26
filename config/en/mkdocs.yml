@@ -111,9 +111,6 @@ nav:
         - Reserve products: docs/shoppingCart/confirm.md
         - Cancel reservation: docs/shoppingCart/cancelConfirm.md
         - Confirm reservation: docs/shoppingCart/sale.md
-        - Sale documentation: docs/shoppingCart/documentation.md
-        - Attach documents to a sale: docs/sale/saleAttachments.md
-        - List of sales: docs/shoppingCart/listOfSales.md
       - Sale options:
         - Introduction: docs/sale/introduction.md
         - List of sales: docs/shoppingCart/listOfSales.md
