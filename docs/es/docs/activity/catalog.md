@@ -121,6 +121,13 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                 --8<-- "includes/annex/typeOfPersonDefinition.es.md"
 
         - **`TypeOfPersonDefinitionValueSenior`**: (``decimal``) ``Opcional``. Indica el valor asignado al tipo de persona senior.
+        - **`ParentTicketEnclosureId`**: (``string``) ``Opcional``. Identificador del recinto padre. Solo se devuelve si el recinto tiene padre.
+        - **`ParentType`**: (``byte``) ``Opcional``. Si el recinto tiene padre, indica el tipo de parentesco.
+
+            ??? example "Posibles valores"
+                - **0: Contenido en**. Los recintos hijos están contenidos en el tiempo de acceso del recinto padre.
+                - **1: Posterior a**. Los recintos hijos son siempre posteriores al tiempo de acceso del recinto padre.
+
         - **`Sessions`**:  (``object``) ``Opcional``. Define la relación entre sesiones y contenido. Antes de continuar, es imprescindible estudiar el apartado [obtención de sesiones](sessions.md).
             - **`SessionContentProfileId`**: (``string``). Para más información acerca de este identificador, consulte la página de [sesiones](sessions.md).
             - **`SessionGroupProfileId`**: (``string``). Para más información acerca de este identificador, consulte la página de [sesiones](sessions.md).
@@ -322,6 +329,10 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
         - **`ProductPaxGroupings`**: (``list``). Agrupaciones de productos cuya diferencia principal son las personas que lo componen.
             - **`ProductPaxGroupingId`**: (``string``). Identificador de la agrupación. Alfanumérico de 13 caracteres.
             - **`ProductPaxGroupingName`**: (``string``). Nombre de la agrupación.
+
+    - **`TicketEnclosureTree`**: (``list``) ``Opcional``. Árbol de jerarquía de los recintos del proveedor, construido a partir de `ParentTicketEnclosureId`. La lista contiene los recintos sin padre, cada uno con sus hijos anidados. No se devuelve si ningún recinto del proveedor tiene padre.
+        - **`Id`**: (``string``). Identificador del recinto (`TicketEnclosureId`).
+        - **`Children`**: (``list``) ``Opcional``. Recintos hijos, con las mismas propiedades (`Id` y `Children`). No se devuelve si el recinto no tiene hijos.
 
     - **`Urls`**: (``list``) ``Opcional``. Array de urls para acceder a la página de la taquilla del proveedor. Sólo en el caso de tener DNS personalizadas.
         - **`LanguageCode`**: (``string``). Código del idioma con el que se va a acceder. Representado mediante el *formato ISO 639-1*.
