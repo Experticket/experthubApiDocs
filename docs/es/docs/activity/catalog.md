@@ -121,12 +121,12 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
                 --8<-- "includes/annex/typeOfPersonDefinition.es.md"
 
         - **`TypeOfPersonDefinitionValueSenior`**: (``decimal``) ``Opcional``. Indica el valor asignado al tipo de persona senior.
-        - **`ParentTicketEnclosureId`**: (``string``) ``Opcional``. Identificador del recinto padre. Solo se devuelve si el recinto tiene padre.
-        - **`ParentType`**: (``byte``) ``Opcional``. Si el recinto tiene padre, indica el tipo de parentesco.
+        - **`ParentTicketEnclosureId`**: (``string``) ``Opcional``. Identificador del recinto padre. Solo se devuelve si el recinto tiene padre y la cuenta tiene activa la fecha de acceso por entrada. Puede apuntar a un recinto que no está en el catálogo, por ejemplo uno inactivo.
+        - **`ParentType`**: (``byte``) ``Opcional``. Tipo de parentesco con su recinto padre. Solo se devuelve si la cuenta tiene activa la fecha de acceso por entrada.
 
             ??? example "Posibles valores"
-                - **0: Contenido en**. Los recintos hijos están contenidos en el tiempo de acceso del recinto padre.
-                - **1: Posterior a**. Los recintos hijos son siempre posteriores al tiempo de acceso del recinto padre.
+                - **0: Contenido en**. El tiempo de acceso de este recinto está contenido en el de su recinto padre.
+                - **1: Posterior a**. El tiempo de acceso de este recinto es siempre posterior al de su recinto padre.
 
         - **`Sessions`**:  (``object``) ``Opcional``. Define la relación entre sesiones y contenido. Antes de continuar, es imprescindible estudiar el apartado [obtención de sesiones](sessions.md).
             - **`SessionContentProfileId`**: (``string``). Para más información acerca de este identificador, consulte la página de [sesiones](sessions.md).
@@ -330,7 +330,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
             - **`ProductPaxGroupingId`**: (``string``). Identificador de la agrupación. Alfanumérico de 13 caracteres.
             - **`ProductPaxGroupingName`**: (``string``). Nombre de la agrupación.
 
-    - **`TicketEnclosureTree`**: (``list``) ``Opcional``. Árbol de jerarquía de los recintos del proveedor, construido a partir de `ParentTicketEnclosureId`. La lista contiene los recintos sin padre, cada uno con sus hijos anidados. No se devuelve si ningún recinto del proveedor tiene padre.
+    - **`TicketEnclosureTree`**: (``list``) ``Opcional``. Árbol de jerarquía de los recintos del proveedor, construido a partir de `ParentTicketEnclosureId`. La lista contiene los recintos raíz (los que no tienen padre o cuyo padre no está en el catálogo), cada uno con sus hijos anidados. No se devuelve si ningún recinto del catálogo tiene hijos, ni si la cuenta no tiene activa la fecha de acceso por entrada.
         - **`Id`**: (``string``). Identificador del recinto (`TicketEnclosureId`).
         - **`Children`**: (``list``) ``Opcional``. Recintos hijos, con las mismas propiedades (`Id` y `Children`). No se devuelve si el recinto no tiene hijos.
 
