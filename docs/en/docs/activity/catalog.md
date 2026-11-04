@@ -122,7 +122,7 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
 
         - **`TypeOfPersonDefinitionValueSenior`**: (``decimal``) ``Optional``. Indicates the value assigned to the type of person senior.
         - **`ParentTicketEnclosureId`**: (``string``) ``Optional``. Identifier of the parent enclosure. It is only returned when the enclosure has a parent and the account has access date by ticket enabled. It may point to an enclosure that is not in the catalog, for example an inactive one.
-        - **`ParentType`**: (``byte``) ``Optional``. Type of parentage with its parent enclosure. It is only returned when the account has access date by ticket enabled.
+        - **`ParentType`**: (``byte``) ``Optional``. Type of parentage with its parent enclosure. It is only returned when the enclosure has a parent and the account has access date by ticket enabled.
 
             ??? example "Possible values"
                 - **0: Contained in**. The access time of this enclosure is contained within that of its parent enclosure.
@@ -330,7 +330,7 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
             - **`ProductPaxGroupingId`**: (``string``). Grouping identifier. 13 character alphanumeric.
             - **`ProductPaxGroupingName`**: (``string``). Name of the grouping.
 
-    - **`TicketEnclosureTree`**: (``list``) ``Optional``. Hierarchy tree of the provider's enclosures, built from `ParentTicketEnclosureId`. The list contains the root enclosures (those without a parent, or whose parent is not in the catalog), each with its children nested. It is not returned when no enclosure in the catalog has children, or when the account does not have access date by ticket enabled.
+    - **`TicketEnclosureTree`**: (``list``) ``Optional``. Hierarchy tree of the provider's enclosures, built from `ParentTicketEnclosureId`. The list contains the root enclosures (those without a parent, or whose parent is not in the catalog), each with its children nested. It is not returned when no enclosure of the provider in the catalog has children, or when the account does not have access date by ticket enabled.
         - **`Id`**: (``string``). Enclosure identifier (`TicketEnclosureId`).
         - **`Children`**: (``list``) ``Optional``. Child enclosures, with the same properties (`Id` and `Children`). It is not returned when the enclosure has no children.
 
