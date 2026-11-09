@@ -122,7 +122,7 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
 
         - **`TypeOfPersonDefinitionValueSenior`**: (``decimal``) ``Opcional``. Indica el valor asignado al tipo de persona senior.
         - **`ParentTicketEnclosureId`**: (``string``) ``Opcional``. Identificador del recinto padre. Solo se devuelve si el recinto tiene padre y la cuenta tiene activa la fecha de acceso por entrada. Puede apuntar a un recinto que no está en el catálogo, por ejemplo uno inactivo.
-        - **`ParentType`**: (``byte``) ``Opcional``. Tipo de parentesco con su recinto padre. Solo se devuelve si el recinto tiene padre y la cuenta tiene activa la fecha de acceso por entrada.
+        - **`ParentType`**: (``byte``) ``Opcional``. Tipo de parentesco con su recinto padre. Solo tiene sentido si el recinto tiene `ParentTicketEnclosureId`; solo se devuelve si la cuenta tiene activa la fecha de acceso por entrada.
 
             ??? example "Posibles valores"
                 - **0: Contenido en**. El tiempo de acceso de este recinto está contenido en el de su recinto padre.

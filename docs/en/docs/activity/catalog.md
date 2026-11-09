@@ -122,7 +122,7 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
 
         - **`TypeOfPersonDefinitionValueSenior`**: (``decimal``) ``Optional``. Indicates the value assigned to the type of person senior.
         - **`ParentTicketEnclosureId`**: (``string``) ``Optional``. Identifier of the parent enclosure. It is only returned when the enclosure has a parent and the account has access date by ticket enabled. It may point to an enclosure that is not in the catalog, for example an inactive one.
-        - **`ParentType`**: (``byte``) ``Optional``. Type of parentage with its parent enclosure. It is only returned when the enclosure has a parent and the account has access date by ticket enabled.
+        - **`ParentType`**: (``byte``) ``Optional``. Type of parentage with its parent enclosure. It only applies when the enclosure has `ParentTicketEnclosureId`; it is only returned when the account has access date by ticket enabled.
 
             ??? example "Possible values"
                 - **0: Contained in**. The access time of this enclosure is contained within that of its parent enclosure.
