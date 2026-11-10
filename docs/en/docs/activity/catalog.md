@@ -50,6 +50,8 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
         ??? example "Possible values"
             --8<-- "includes/annex/advancedDateSelector.en.md"
 
+    - **`DatePerTicketEnclosureMaxAccessDateInterval`**: (``short``) ``Optional``. Maximum interval, in days, between the access dates of the enclosures of the same product. It only applies when `AdvancedDateSelectorMethodName` is `DatePerTicketEnclosure`. If it does not exist or is 0, there is no limit when selecting dates. Otherwise, in products with several tickets that need a date, the difference in days between the farthest dates of those tickets can never be greater than this interval.
+
     - **`CancellationPolicy`**: (``object``) ``Optional``. Indicates the cancellation policies that apply when canceling a sale from this provider. If a specific product does not have cancellation policies, these will apply.
         - **`IsRefundable`**: (``boolean``). Indicates if the customer can cancel for free at some point in time.
         - **`Rules`**:  (``list``). Rules that apply when making the cancellation.

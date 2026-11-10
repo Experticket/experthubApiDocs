@@ -50,6 +50,8 @@ Cada filtro se considerará un ***AND***. Por ejemplo, pueden filtrarse por vari
         ??? example "Posibles valores"
             --8<-- "includes/annex/advancedDateSelector.es.md"
 
+    - **`DatePerTicketEnclosureMaxAccessDateInterval`**: (``short``) ``Opcional``. Intervalo máximo, en días, entre las fechas de acceso de los recintos de un mismo producto. Solo se aplica cuando `AdvancedDateSelectorMethodName` es `DatePerTicketEnclosure`. Si no existe o es 0, no hay límite al elegir las fechas. Si no, en los productos con varios tickets a los que hay que dar fecha, la diferencia de días entre las fechas más alejadas de esos tickets nunca puede ser mayor que este intervalo.
+
     - **`CancellationPolicy`**: (``object``) ``Opcional``. Indica las políticas de cancelación que se aplican al cancelar una venta de este proveedor. Si un producto concreto no tiene políticas de cancelación se aplicarán estas.
         - **`IsRefundable`**: (``boolean``). Indica si el cliente puede cancelar gratis en algún momento.
         - **`Rules`**:  (``list``). Reglas que se aplican al efectuar la cancelación.

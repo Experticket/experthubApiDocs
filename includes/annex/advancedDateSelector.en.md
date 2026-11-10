@@ -8,7 +8,7 @@ Therefore, and always in reference to the ticket, when we add the product to the
 
 The tickets CAN have an access date that differs from that of the sale.
 
-As we know, according to Products catalog, As we know, according to Products catalog, the tickets form part of an enclosure (`TicketEnclosureId`). As such, for the DatePerTicketEnclosure each ticket enclosure can, optionally, have a different access date.
+As we know, according to Products catalog, the tickets form part of an enclosure (`TicketEnclosureId`). As such, for the DatePerTicketEnclosure each ticket enclosure can, optionally, have a different access date.
 
 For instance, imagine a product called “Adult Ticket Amusement Park+Aquatic”, made up of two tickets:
 
@@ -16,6 +16,8 @@ For instance, imagine a product called “Adult Ticket Amusement Park+Aquatic”
 - Adult Aquatic Ticket. Corresponding to the enclosure “Aquatic”.
 
 In the case of DatePerTicketEnclosure we can have the "Adult Amusement Park Ticket” with the entry date of April 1, and the "Adult Aquatic Ticket" with the entry date of May 3.
+
+If the provider has `DatePerTicketEnclosureMaxAccessDateInterval`, those dates cannot be further apart than that number of days: with an interval of 7, April 1 and May 3 could not be combined.
 
 ??? important "Important limitation"
     All access dates, of all tickets which compose one sale, should belong to the same set of `PricesAndDates`. In other words, we can pick a date with a price of €20, and another with a price of €25.

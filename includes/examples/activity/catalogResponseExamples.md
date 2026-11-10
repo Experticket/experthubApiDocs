@@ -12,7 +12,8 @@
             "ProviderAccessConditions": "Provider access conditions",
             "ExchangeVoucherPoint": "Access point",
             "AccessCodeMethodName": "TicketWaitForIt",
-            "AdvancedDateSelectorMethodName": "None",
+            "AdvancedDateSelectorMethodName": "DatePerTicketEnclosure",
+            "DatePerTicketEnclosureMaxAccessDateInterval": 7,
             "CancellationPolicy": 
             {
                 "IsRefundable": true,
