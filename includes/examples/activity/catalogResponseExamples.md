@@ -89,7 +89,21 @@
                     "TypeOfPersonDefinitionTypeChild": 2,
                     "TypeOfPersonDefinitionValueChild": 120,
                     "TypeOfPersonDefinitionTypeSenior": 1,
-                    "TypeOfPersonDefinitionValueSenior": 65
+                    "TypeOfPersonDefinitionValueSenior": 65,
+                    "ParentTicketEnclosureId": "g5u6m3xew6hxy",
+                    "ParentType": 0
+                }
+            ],
+            "TicketEnclosureTree":
+            [
+                {
+                    "Id": "g5u6m3xew6hxy",
+                    "Children":
+                    [
+                        {
+                            "Id": "geu773xaqzh18"
+                        }
+                    ]
                 }
             ],
             "ProductBases": 

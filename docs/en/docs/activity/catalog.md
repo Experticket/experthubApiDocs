@@ -121,6 +121,13 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
                 --8<-- "includes/annex/typeOfPersonDefinition.en.md"
 
         - **`TypeOfPersonDefinitionValueSenior`**: (``decimal``) ``Optional``. Indicates the value assigned to the type of person senior.
+        - **`ParentTicketEnclosureId`**: (``string``) ``Optional``. Identifier of the parent enclosure. It is only returned when the enclosure has a parent and the account has access date by ticket enabled. It may point to an enclosure that is not in the catalog, for example an inactive one.
+        - **`ParentType`**: (``byte``) ``Optional``. Type of parentage with its parent enclosure. It only applies when the enclosure has `ParentTicketEnclosureId`; it is only returned when the account has access date by ticket enabled.
+
+            ??? example "Possible values"
+                - **0: Contained in**. The access time of this enclosure is contained within that of its parent enclosure.
+                - **1: Subsequent to**. The access time of this enclosure always follows that of its parent enclosure.
+
         - **`Sessions`**:  (``object``) ``Optional``. Defines the relationship between sessions and content. Before continuing, it is essential to study the [sessions section](sessions.md).
             - **`SessionContentProfileId`**: (``string``). For more information about this identifier, see the [sessions page](sessions.md).
             - **`SessionGroupProfileId`**: (``string``). For more information about this identifier, see the [sessions page](sessions.md).
@@ -322,6 +329,10 @@ Each filter will be considered an ***AND***. For example, several *ProductIds* f
         - **`ProductPaxGroupings`**: (``list``). Groupings of products whose main difference is the people who compose it.
             - **`ProductPaxGroupingId`**: (``string``). Grouping identifier. 13 character alphanumeric.
             - **`ProductPaxGroupingName`**: (``string``). Name of the grouping.
+
+    - **`TicketEnclosureTree`**: (``list``) ``Optional``. Hierarchy tree of the provider's enclosures, built from `ParentTicketEnclosureId`. The list contains the root enclosures (those without a parent, or whose parent is not in the catalog), each with its children nested. It is not returned when no enclosure of the provider in the catalog has children, or when the account does not have access date by ticket enabled.
+        - **`Id`**: (``string``). Enclosure identifier (`TicketEnclosureId`).
+        - **`Children`**: (``list``) ``Optional``. Child enclosures, with the same properties (`Id` and `Children`). It is not returned when the enclosure has no children.
 
     - **`Urls`**: (``list``) ``Optional``. Array of URLs to access the provider's ticket office page. Only when using custom DNS.
         - **`LanguageCode`**: (``string``). Code of the language with which it is going to be accessed. Represented by the *ISO format 639-1*.
